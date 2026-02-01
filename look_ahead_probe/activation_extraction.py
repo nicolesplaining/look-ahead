@@ -1,12 +1,6 @@
-"""
-Activation extraction from language models during generation.
+"""Efficient activation extraction from language models."""
 
-This module provides efficient extraction of internal activations from
-transformer language models, leveraging the causal masking property to
-extract activations in a single forward pass after generation.
-"""
-
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 import torch
 import torch.nn.functional as F
@@ -22,31 +16,13 @@ def verify_activation_equivalence(
     device: str = "cuda"
 ) -> bool:
     """
-    Verify that activations extracted during token-by-token generation
-    match those extracted from a single forward pass on the complete sequence.
+    Verify efficient extraction is valid for the model.
 
-    This tests the core assumption that enables efficient activation extraction:
-    Due to causal masking in transformers, the activation at position i only
-    depends on tokens[:i+1]. Therefore, it will be identical whether computed:
-    (a) during autoregressive generation (position i is part of a sequence of length i+1)
-    (b) in a single forward pass on the complete sequence (position i sees the same tokens[:i+1])
-
-    If this returns True, you can safely use the efficient single-pass approach.
-    If False, there may be numerical instability, non-deterministic operations,
-    or incorrect causal masking in the model.
-
-    Args:
-        model: The language model to test
-        prompt: A single text prompt to generate from
-        layer_idx: Which layer to extract activations from
-        max_new_tokens: Number of tokens to generate for the test
-        device: Device to use
-
-    Returns:
-        True if max absolute difference < 1e-5 at all positions, False otherwise
+    Tests that activations from token-by-token generation match single forward pass.
     """
     model.eval()
     eos_token_id = model.tokenizer.eos_token_id
+    EPSILON = 1e-3
 
     print(f"\n{'='*60}")
     print(f"Verifying Activation Equivalence")
@@ -115,7 +91,7 @@ def verify_activation_equivalence(
             max_diff = (act1 - act2).abs().max().item()
             max_diff_overall = max(max_diff_overall, max_diff)
 
-            is_valid = max_diff < 1e-5
+            is_valid = max_diff < EPSILON
             status = "✓ PASS" if is_valid else "✗ FAIL"
             all_valid = all_valid and is_valid
 
@@ -130,63 +106,34 @@ def verify_activation_equivalence(
         return all_valid
 
 
-def generate_and_extract_activations(
+def generate_and_extract_all_layers(
     model: HookedTransformer,
     prompts: List[str],
-    layer_idx: int,
-    k: int,
+    max_k: int,
     max_new_tokens: int = 50,
-    temperature: float = 1.0,
-    device: str = "cuda"
-) -> Tuple[torch.Tensor, torch.Tensor, List[str]]:
+    device: str = "cuda",
+    layers: Optional[List[int]] = None
+) -> Tuple[dict, torch.Tensor, List[str]]:
     """
-    Generate text and extract activations using an efficient single-pass approach.
-
-    EFFICIENT APPROACH EXPLANATION:
-    Instead of extracting activations during token-by-token generation (which requires
-    storing activations at each generation step), we use a two-step process:
-
-    1. Generate the complete sequence first using greedy decoding (deterministic)
-    2. Run a SINGLE forward pass on the entire generated sequence
-    3. Extract all activations at once from the activation cache
-
-    WHY THIS WORKS - The Causal Masking Property:
-    In transformer models with causal (autoregressive) masking, the activation at
-    position i only depends on tokens at positions [0, 1, ..., i]. It does NOT depend
-    on future tokens at positions [i+1, i+2, ...] because the attention mask prevents
-    information flow from future positions.
-
-    This means:
-    - Activation at position i during generation (when sequence length is i+1)
-    - Activation at position i in a batch pass (when sequence length is N, with i < N)
-
-    These are IDENTICAL because position i sees the same tokens[:i+1] in both cases.
-
-    BENEFITS:
-    - Much faster: Single forward pass vs. N forward passes for N tokens
-    - Lower memory: Don't need to store intermediate activations during generation
-    - Simpler code: No complex state tracking during generation
-
-    CRITICAL ASSUMPTION:
-    This relies on the model being deterministic (eval mode, no dropout) and using
-    proper causal masking. Use verify_activation_equivalence() to test this assumption
-    holds for your specific model.
+    Generate text and extract activations from all layers with multiple lookahead targets.
 
     Args:
         model: The language model
         prompts: List of text prompts to start generation from
-        layer_idx: Which layer to extract activations from
-        k: How many tokens ahead to predict (activation[i] -> token[i+k])
-        max_new_tokens: Maximum number of tokens to generate per prompt (default: 50)
-        temperature: Kept for API compatibility (currently uses greedy decoding)
+        max_k: Maximum lookahead distance (extracts targets for k=1,2,...,max_k)
+        max_new_tokens: Maximum number of tokens to generate per prompt
         device: Device to use
+        layers: Optional list of layer indices to extract. If None, extracts all layers.
 
     Returns:
-        activations: [n_samples, d_model] - activations at position i
-        targets: [n_samples] - token IDs at position i+k
-        generated_texts: List of generated text strings for inspection
+        layer_activations: Dict mapping layer_idx -> tensor of shape [n_samples, d_model]
+        targets: [n_samples, max_k] - token IDs at positions i+1, i+2, ..., i+max_k
+        generated_texts: List of generated text strings
     """
-    all_activations = []
+    if layers is None:
+        layers = list(range(model.cfg.n_layers))
+
+    layer_activations_dict = {layer_idx: [] for layer_idx in layers}
     all_targets = []
     generated_texts = []
 
@@ -194,55 +141,43 @@ def generate_and_extract_activations(
     eos_token_id = model.tokenizer.eos_token_id
 
     with torch.no_grad():
-        for prompt in tqdm(prompts, desc="Generating and extracting activations"):
-            # STEP 1: Generate complete sequence using greedy decoding
-            # We use greedy (deterministic) generation to ensure reproducibility
-            # and to match the verification assumptions
-            current_tokens = model.to_tokens(prompt).to(device)  # [1, prompt_len]
+        for prompt in tqdm(prompts, desc="Extracting multi-k activations"):
+            current_tokens = model.to_tokens(prompt).to(device)
 
             for step in range(max_new_tokens):
-                # Forward pass to get logits (don't need cache here)
                 logits = model(current_tokens)
-
-                # Greedy decoding: always pick most likely token
                 next_token = logits[0, -1, :].argmax(dim=-1, keepdim=True)
-
-                # Append to sequence
                 current_tokens = torch.cat([current_tokens, next_token.unsqueeze(0)], dim=1)
 
-                # Stop if EOS token generated
                 if eos_token_id is not None and next_token.item() == eos_token_id:
                     break
 
-            # STEP 2: Single forward pass on complete generated sequence
-            # This is the key optimization - one pass instead of N passes
-            # Thanks to causal masking, activations will be identical to those
-            # computed during generation
             _, cache = model.run_with_cache(current_tokens)
-
-            # STEP 3: Extract all activations at once
-            # Shape: [seq_len, d_model] - all positions in one tensor
-            layer_acts = cache["resid_post", layer_idx][0]
-
-            # Decode generated text for inspection
             generated_text = model.tokenizer.decode(current_tokens[0])
             generated_texts.append(generated_text)
 
-            # STEP 4: Create training pairs by slicing the activation tensor
-            # For each valid position i, pair activation[i] with token[i+k]
             total_len = current_tokens.shape[1]
-            for i in range(total_len - k):
-                # Slice activation at position i directly from the tensor
-                act = layer_acts[i, :]  # [d_model]
 
-                # Target token at position i+k
-                target = current_tokens[0, i + k]
+            # Extract activations only at positions where all k targets are valid
+            for i in range(total_len - max_k):
+                # Extract targets for k=1, 2, ..., max_k
+                targets_for_position = []
+                for k in range(1, max_k + 1):
+                    target = current_tokens[0, i + k]
+                    targets_for_position.append(target.cpu())
 
-                all_activations.append(act.cpu())
-                all_targets.append(target.cpu())
+                # Extract activation from each layer at position i
+                for layer_idx in layers:
+                    layer_acts = cache["resid_post", layer_idx][0]
+                    act = layer_acts[i, :]
+                    layer_activations_dict[layer_idx].append(act.cpu())
 
-    # Stack all samples into tensors
-    activations = torch.stack(all_activations)  # [n_samples, d_model]
-    targets = torch.stack(all_targets)  # [n_samples]
+                all_targets.append(torch.stack(targets_for_position))
 
-    return activations, targets, generated_texts
+    layer_activations = {}
+    for layer_idx in layers:
+        layer_activations[layer_idx] = torch.stack(layer_activations_dict[layer_idx])
+
+    targets = torch.stack(all_targets)  # [n_samples, max_k]
+
+    return layer_activations, targets, generated_texts

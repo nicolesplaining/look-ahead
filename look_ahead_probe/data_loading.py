@@ -1,9 +1,4 @@
-"""
-Data loading utilities for activation extraction.
-
-This module handles loading prompts from JSONL files and creating
-PyTorch datasets for training probes.
-"""
+"""Data loading utilities."""
 
 import json
 from pathlib import Path
@@ -22,26 +17,7 @@ def load_jsonl_prompts(
     default_split: str = "train",
     max_examples: Optional[int] = None,
 ) -> List[str]:
-    """
-    Load prompts from a JSONL file.
-
-    Expected schema (per line): {"text": "...", "split": "train"|"val"|"test", ...}
-
-    Args:
-        path: Path to a .jsonl file.
-        text_field: JSON key to read prompt text from.
-        split_field: JSON key to read split name from. If None, do not use splits.
-        split_value: If provided, only keep examples whose split equals this.
-        default_split: Used when split_field exists but is missing on a row.
-        max_examples: If provided, stop after loading this many prompts.
-
-    Returns:
-        List of prompt strings
-
-    Raises:
-        FileNotFoundError: If the file doesn't exist
-        ValueError: If file is not .jsonl or contains invalid data
-    """
+    """Load prompts from JSONL file with optional split filtering."""
     prompts: List[str] = []
     p = Path(path)
     if not p.exists():
@@ -99,3 +75,44 @@ class ActivationDataset(Dataset):
 
     def __getitem__(self, idx):
         return self.activations[idx], self.targets[idx]
+
+
+def load_extracted_dataset(dataset_path: str, layer_idx: Optional[int] = None, k: Optional[int] = None):
+    """
+    Load extracted activation dataset.
+
+    Args:
+        dataset_path: Path to .pt file
+        layer_idx: Layer index to load (None = all layers)
+        k: Lookahead distance to use (None = return all targets)
+
+    Returns:
+        (activations, targets, metadata) where:
+        - activations: [n_samples, d_model] if layer_idx specified, else dict
+        - targets: [n_samples] if k specified, else [n_samples, max_k]
+        - metadata: dict
+    """
+    data = torch.load(dataset_path)
+
+    layer_activations = data['layer_activations']
+    all_targets = data['targets']  # [n_samples, max_k]
+    metadata = data['metadata']
+
+    # Select targets for specific k if requested
+    if k is not None:
+        if k < 1 or k > metadata['max_k']:
+            raise ValueError(f"k={k} out of range [1, {metadata['max_k']}]")
+        targets = all_targets[:, k - 1]  # k=1 is index 0
+    else:
+        targets = all_targets
+
+    # Select specific layer if requested
+    if layer_idx is not None:
+        if layer_idx not in layer_activations:
+            available_layers = sorted(layer_activations.keys())
+            raise ValueError(
+                f"Layer {layer_idx} not in dataset. Available: {available_layers}"
+            )
+        return layer_activations[layer_idx], targets, metadata
+    else:
+        return layer_activations, targets, metadata

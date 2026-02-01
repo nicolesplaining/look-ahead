@@ -1,21 +1,24 @@
-"""
-look_ahead_probe: Train probes to predict future tokens from LM activations.
-
-This package provides tools for extracting activations from language models
-during generation and training probes to predict future tokens.
-"""
+"""Train probes to predict future tokens from LM activations."""
 
 from .activation_extraction import (
-    generate_and_extract_activations,
+    generate_and_extract_all_layers,
     verify_activation_equivalence,
 )
-from .data_loading import ActivationDataset, load_jsonl_prompts
+from .data_loading import (
+    ActivationDataset,
+    load_jsonl_prompts,
+    load_extracted_dataset,
+)
 from .probe import FutureTokenProbe
+from .train_probe import train_probe, evaluate_probe
 
 __all__ = [
     "FutureTokenProbe",
     "ActivationDataset",
     "load_jsonl_prompts",
-    "generate_and_extract_activations",
+    "load_extracted_dataset",
+    "generate_and_extract_all_layers",
     "verify_activation_equivalence",
+    "train_probe",
+    "evaluate_probe",
 ]
