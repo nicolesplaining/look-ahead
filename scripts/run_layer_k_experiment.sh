@@ -9,15 +9,14 @@ echo ""
 
 python scripts/layer_k_experiment.py \
     --model_name meta-llama/Llama-3.2-1B \
-    --train_dataset_path data/example_dataset.jsonl \
+    --train_dataset_path data/example_train.jsonl \
     --val_dataset_path data/example_val.jsonl \
-    --max_k 1 \
-    --max_prompts 10 \
-    --max_new_tokens 20 \
-    --probe_type linear \
-    --num_epochs 1 \
-    --batch_size 32 \
-    --output_dir experiment_results
+    --max_k 3 \
+    --max_new_tokens 64 \
+    --probe_type mlp \
+    --num_epochs 10 \
+    --batch_size 128 \
+    --output_dir experiment_results_mlp
 
 echo ""
 echo "✓ Pipeline test complete! Check experiment_results/ for outputs"
