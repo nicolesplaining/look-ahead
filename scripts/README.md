@@ -4,7 +4,11 @@ Helper scripts for experiments and testing.
 
 ## Available Scripts
 
-### `layer_k_experiment.py` ⭐
+## Python Modules
+
+The Python modules have been moved to `src/look_ahead_probe/`. They can be run using `python -m`:
+
+### `layer_k_experiment` ⭐
 **Purpose:** End-to-end layer-k probing experiment pipeline
 
 **What it does:**
@@ -18,7 +22,7 @@ Orchestrates the 3-step pipeline:
 **Usage:**
 ```bash
 # With validation set
-python scripts/layer_k_experiment.py \
+python -m look_ahead_probe.layer_k_experiment \
     --model_name meta-llama/Llama-3.2-1B-Instruct \
     --train_dataset_path data/train.jsonl \
     --val_dataset_path data/val.jsonl \
@@ -27,7 +31,7 @@ python scripts/layer_k_experiment.py \
     --num_epochs 10
 
 # Training only (no validation)
-python scripts/layer_k_experiment.py \
+python -m look_ahead_probe.layer_k_experiment \
     --model_name meta-llama/Llama-3.2-1B-Instruct \
     --train_dataset_path data/example_dataset.jsonl \
     --max_k 3 \
@@ -60,6 +64,38 @@ experiment_results/
 - `--probe_type` - "linear" or "mlp"
 - `--skip_check` - Skip model compatibility check
 
+---
+
+### `visualize_results`
+**Purpose:** Visualize experimental results from layer-k probe experiments
+
+**What it does:**
+Creates separate plots for each k value showing validation accuracy across layers
+
+**Usage:**
+```bash
+# Generate plots
+python -m look_ahead_probe.visualize_results \
+    --results_path experiment_results/experiment_results.json \
+    --output_dir experiment_results/
+
+# Include training accuracy
+python -m look_ahead_probe.visualize_results \
+    --results_path experiment_results/experiment_results.json \
+    --output_dir experiment_results/ \
+    --show_train
+```
+
+**Output:**
+- `val_accuracy_k{k}.png` - Validation accuracy plots
+- `train_val_accuracy_k{k}.png` - Combined train/val plots (if --show_train)
+
+---
+
+## Shell Script Wrappers
+
+The shell scripts below are convenient wrappers for common tasks. All scripts use absolute paths and can be run from any directory.
+
 ### `run_layer_k_experiment.sh`
 **Purpose:** Quick pipeline test with small parameters
 
@@ -68,29 +104,18 @@ Runs `layer_k_experiment.py` with small test parameters to verify the pipeline w
 
 **Usage:**
 ```bash
+# Can be run from any directory
 bash scripts/run_layer_k_experiment.sh
+
+# Or from anywhere
+bash /path/to/look-ahead/scripts/run_layer_k_experiment.sh
 ```
 
 **Test parameters:**
-- 10 prompts, 20 tokens, k=1,2,3
-- Linear probe, 2 epochs
+- Example train/val datasets
+- k=1,2,3, 64 tokens
+- MLP probe, 10 epochs
 - Fast execution (~5-10 minutes)
-
----
-
-### `test_run.sh`
-**Purpose:** Quick smoke test of the full pipeline
-
-**What it does:**
-1. Checks model integrity
-2. Builds small test dataset
-3. Trains a single probe to verify everything works
-
-**Usage:**
-```bash
-cd look_ahead_probe
-./test_run.sh
-```
 
 ---
 
@@ -102,14 +127,17 @@ cd look_ahead_probe
 ./check_model.sh
 ```
 
-## Running from Root
+## Running Scripts
 
-All scripts should be run from their respective directories. If you want to run from project root:
+All scripts use absolute paths and can be run from any directory:
 
 ```bash
-# For experiments
+# From project root
 bash scripts/run_layer_k_experiment.sh
 
-# For testing
-bash look_ahead_probe/test_run.sh
+# From anywhere
+bash /path/to/look-ahead/scripts/run_layer_k_experiment.sh
+
+# Or cd to scripts directory
+cd scripts && bash run_layer_k_experiment.sh
 ```

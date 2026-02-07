@@ -50,7 +50,6 @@ venv.bak/
 test_datasets/
 test_probes/
 datasets/
-results/
 probes/
 outputs/
 *.jsonl

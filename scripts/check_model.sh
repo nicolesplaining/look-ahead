@@ -1,6 +1,15 @@
 #!/bin/bash
 # Check model compatibility for activation extraction
-# Run from project root: bash scripts/check_model.sh
+# Can be run from any directory
+
+set -e
+
+# Get absolute path to project root
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# Add src to PYTHONPATH so package is importable
+export PYTHONPATH="$PROJECT_ROOT/src:$PYTHONPATH"
 
 python -m look_ahead_probe.check_model \
     --model_name meta-llama/Llama-3.2-1B-Instruct \

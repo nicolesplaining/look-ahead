@@ -25,14 +25,6 @@ python -m look_ahead_probe.train_all_layers \
     --val_dataset datasets/val.pt \
     --k 5 \
     --output_dir results/
-
-# Or train on specific layer
-python -m look_ahead_probe.main \
-    --train_dataset datasets/train.pt \
-    --layer 6 \
-    --k 5 \
-    --probe_type mlp \
-    --save_path probe.pt
 ```
 
 ## Key Features
@@ -43,14 +35,18 @@ python -m look_ahead_probe.main \
 
 ## Files
 
+**Library modules** (imported by users):
+- `probe.py` - Probe architectures (linear, MLP)
+- `data_loading.py` - Dataset loading utilities
+- `activation_extraction.py` - Efficient multi-layer, multi-k extraction
+- `train_probe.py` - Training and evaluation functions
+
+**Executable modules** (callable via `python -m look_ahead_probe.<module>`):
 - `check_model.py` - Inspect model and verify extraction assumptions
 - `build_look_ahead_activation_dataset.py` - Extract activations and save to disk
-- `main.py` - Train probe on specific layer and k value
 - `train_all_layers.py` - Train probes on all layers for a k value
-- `train_probe.py` - Training and evaluation functions for probes
-- `activation_extraction.py` - Efficient multi-layer, multi-k extraction
-- `data_loading.py` - Dataset loading utilities
-- `probe.py` - Probe architectures (linear, MLP)
+- `layer_k_experiment.py` - End-to-end experiment pipeline (check → extract → train)
+- `visualize_results.py` - Generate plots from experiment results
 
 ## Dataset Format
 
