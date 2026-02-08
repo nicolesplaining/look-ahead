@@ -52,10 +52,6 @@ test_probes/
 datasets/
 probes/
 outputs/
-*.jsonl
-!data/example*.jsonl  # Keep example datasets
-data/*
-!data/example*.jsonl
 
 # Model caches
 .cache/
