@@ -236,6 +236,36 @@ poem_results/
 
 ---
 
+### `plot_results.sh`
+**Purpose:** Generate plots from experiment results JSON
+
+**What it does:**
+Visualizes experiment results by creating accuracy plots across layers.
+
+**Usage:**
+```bash
+# 1. Edit the script to set RESULTS_PATH and flags
+nano scripts/plot_results.sh
+
+# 2. Run the script
+bash scripts/plot_results.sh
+```
+
+**Edit these in the script:**
+```bash
+RESULTS_PATH="$PROJECT_ROOT/experiment_results_linear/experiment_results.json"
+
+# Add/remove flags as needed:
+python -m look_ahead_probe.visualize_results \
+    "$RESULTS_PATH" \
+    --show-train \   # Include this for training accuracy
+    --show-top5      # Include this for top-5 accuracy
+```
+
+**Default:** Shows validation + top-5 accuracy
+
+---
+
 ### `check_model.sh`
 **Purpose:** Verify model compatibility for activation extraction
 
