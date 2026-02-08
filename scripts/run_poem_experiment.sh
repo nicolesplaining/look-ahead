@@ -22,10 +22,10 @@ echo ""
 export PYTHONPATH="$PROJECT_ROOT/src:$PYTHONPATH"
 
 python -m poem_probe.poem_experiment \
-    --model_name meta-llama/Llama-3.2-1B \
+    --model_name meta-llama/Llama-3.1-8B \
     --poems_path "$PROJECT_ROOT/data/poems.jsonl" \
     --max_new_tokens 30 \
-    --probe_type mlp \
+    --probe_type linear \
     --num_epochs 20 \
     --batch_size 16 \
     --output_dir "$PROJECT_ROOT/poem_results"
