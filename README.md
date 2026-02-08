@@ -5,6 +5,11 @@ Train probes to predict future tokens from language model activations.
 ## Quick Start
 
 ```bash
+# 0. Create training data from The Pile (optional - or use your own data)
+python -m utils.create_pile_datasets \
+    --n_train 10000 \
+    --n_val 2000
+
 # 1. Check model compatibility (optional)
 python -m look_ahead_probe.check_model --model_name gpt2-small
 
