@@ -197,31 +197,104 @@ def main():
     run_step("STEP 4: Train Probes", train_cmd)
 
     # =========================================================================
-    # Print Summary
+    # Save Results and Generated Poems
     # =========================================================================
 
-    # Load results
+    # Load training results
     summary_path = probes_dir / "training_summary.pt"
+    all_results = {}
+
     if summary_path.exists():
         summary = torch.load(summary_path, weights_only=False)
 
-        print("\n" + "=" * 80)
-        print("EXPERIMENT COMPLETE")
-        print("=" * 80)
-        print(f"Results saved to: {args.output_dir}")
-        print("\nAccuracy by Layer:")
-        print("-" * 80)
-
-        for key, data in sorted(summary['all_results'].items()):
+        # Extract results for each layer
+        for key, data in summary['all_results'].items():
             layer = data['layer']
-            train_acc = data['history']['train_acc'][-1]
-            if data['results']:
-                val_acc = data['results']['accuracy']
-                print(f"  Layer {layer:2d}: Train={train_acc:.2%}, Val={val_acc:.2%}")
-            else:
-                print(f"  Layer {layer:2d}: Train={train_acc:.2%}")
 
-        print("=" * 80)
+            result_entry = {
+                'layer': layer,
+                'train_accuracy': float(data['history']['train_acc'][-1]),
+                'train_loss': float(data['history']['train_loss'][-1]),
+                'probe_path': data['save_path'],
+            }
+
+            # Add validation metrics if available
+            if data['results']:
+                result_entry['val_accuracy'] = float(data['results']['accuracy'])
+                result_entry['val_top5_accuracy'] = float(data['results']['top5_accuracy'])
+                result_entry['val_loss'] = float(data['results']['loss'])
+
+            all_results[f"layer{layer}"] = result_entry
+
+    # Load generated poems from datasets
+    train_data = torch.load(train_dataset_path, weights_only=False)
+    val_data = torch.load(val_dataset_path, weights_only=False)
+
+    generated_poems = {
+        'train': train_data['generated_texts'],
+        'val': val_data['generated_texts'],
+    }
+
+    # Save results to JSON
+    results_file = output_dir / "experiment_results.json"
+    results_data = {
+        'config': {
+            'model_name': args.model_name,
+            'poems_path': args.poems_path,
+            'probe_type': args.probe_type,
+            'num_epochs': args.num_epochs,
+            'batch_size': args.batch_size,
+            'learning_rate': args.learning_rate,
+            'max_new_tokens': args.max_new_tokens,
+        },
+        'metadata': {
+            'n_train_poems': len(train_data['generated_texts']),
+            'n_val_poems': len(val_data['generated_texts']),
+            'd_model': train_data['metadata']['d_model'],
+            'vocab_size': train_data['metadata']['vocab_size'],
+            'layers': train_data['metadata']['layers'],
+        },
+        'results': all_results,
+    }
+
+    with open(results_file, 'w') as f:
+        json.dump(results_data, f, indent=2)
+
+    # Save generated poems to JSON
+    poems_file = output_dir / "generated_poems.json"
+    poems_data = {
+        'train_poems': generated_poems['train'],
+        'val_poems': generated_poems['val'],
+        'n_train': len(generated_poems['train']),
+        'n_val': len(generated_poems['val']),
+    }
+
+    with open(poems_file, 'w') as f:
+        json.dump(poems_data, f, indent=2)
+
+    # Print Summary
+    print("\n" + "=" * 80)
+    print("EXPERIMENT COMPLETE")
+    print("=" * 80)
+    print(f"Results saved to: {output_dir}")
+    print(f"  - Probes: {probes_dir}")
+    print(f"  - Results JSON: {results_file}")
+    print(f"  - Generated poems JSON: {poems_file}")
+    print("\nAccuracy by Layer:")
+    print("-" * 80)
+
+    for key, data in sorted(all_results.items()):
+        layer = data['layer']
+        train_acc = data['train_accuracy']
+        if 'val_accuracy' in data:
+            val_acc = data['val_accuracy']
+            print(f"  Layer {layer:2d}: Train={train_acc:.2%}, Val={val_acc:.2%}")
+        else:
+            print(f"  Layer {layer:2d}: Train={train_acc:.2%}")
+
+    print("-" * 80)
+    print(f"Generated {len(generated_poems['train'])} train poems, {len(generated_poems['val'])} val poems")
+    print("=" * 80)
 
 
 if __name__ == "__main__":
