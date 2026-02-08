@@ -1,0 +1,519 @@
+{
+  "config": {
+    "model_name": "meta-llama/Llama-3.2-1B",
+    "dataset_path": "data/example_train.jsonl",
+    "max_k": 3,
+    "probe_type": "mlp",
+    "num_epochs": 10,
+    "batch_size": 128,
+    "learning_rate": 0.001
+  },
+  "metadata": {
+    "model_name": "meta-llama/Llama-3.2-1B",
+    "max_k": 3,
+    "max_new_tokens": 64,
+    "n_prompts": 90,
+    "d_model": 2048,
+    "vocab_size": 128256,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "results": {
+    "layer0_k1": {
+      "layer": 0,
+      "k": 1,
+      "train_accuracy": 0.7622938642103699,
+      "train_loss": 0.8108217873663273,
+      "val_accuracy": 0.2,
+      "val_top5_accuracy": 0.3586666666666667,
+      "val_loss": 9.859442075093588,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_0_k1_mlp.pt"
+    },
+    "layer1_k1": {
+      "layer": 1,
+      "k": 1,
+      "train_accuracy": 0.901203387312435,
+      "train_loss": 0.3636411720851682,
+      "val_accuracy": 0.22533333333333333,
+      "val_top5_accuracy": 0.38533333333333336,
+      "val_loss": 10.205420335133871,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_1_k1_mlp.pt"
+    },
+    "layer2_k1": {
+      "layer": 2,
+      "k": 1,
+      "train_accuracy": 0.9319566186302184,
+      "train_loss": 0.2556447979976546,
+      "val_accuracy": 0.224,
+      "val_top5_accuracy": 0.4093333333333333,
+      "val_loss": 10.052783012390137,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_2_k1_mlp.pt"
+    },
+    "layer3_k1": {
+      "layer": 3,
+      "k": 1,
+      "train_accuracy": 0.9552815332045759,
+      "train_loss": 0.17880162568587177,
+      "val_accuracy": 0.24133333333333334,
+      "val_top5_accuracy": 0.4053333333333333,
+      "val_loss": 9.903802235921225,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_3_k1_mlp.pt"
+    },
+    "layer4_k1": {
+      "layer": 4,
+      "k": 1,
+      "train_accuracy": 0.9677611053335314,
+      "train_loss": 0.14338566390973218,
+      "val_accuracy": 0.24666666666666667,
+      "val_top5_accuracy": 0.42,
+      "val_loss": 10.009504318237305,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_4_k1_mlp.pt"
+    },
+    "layer5_k1": {
+      "layer": 5,
+      "k": 1,
+      "train_accuracy": 0.9689496360124795,
+      "train_loss": 0.13460478819203828,
+      "val_accuracy": 0.2733333333333333,
+      "val_top5_accuracy": 0.42933333333333334,
+      "val_loss": 10.257417360941568,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_5_k1_mlp.pt"
+    },
+    "layer6_k1": {
+      "layer": 6,
+      "k": 1,
+      "train_accuracy": 0.9740008913980092,
+      "train_loss": 0.11576761649745815,
+      "val_accuracy": 0.2813333333333333,
+      "val_top5_accuracy": 0.432,
+      "val_loss": 10.50562604268392,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_6_k1_mlp.pt"
+    },
+    "layer7_k1": {
+      "layer": 7,
+      "k": 1,
+      "train_accuracy": 0.9763779527559056,
+      "train_loss": 0.10345463537312341,
+      "val_accuracy": 0.3,
+      "val_top5_accuracy": 0.43733333333333335,
+      "val_loss": 10.64393170674642,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_7_k1_mlp.pt"
+    },
+    "layer8_k1": {
+      "layer": 8,
+      "k": 1,
+      "train_accuracy": 0.9748922894072203,
+      "train_loss": 0.10978454917247565,
+      "val_accuracy": 0.30666666666666664,
+      "val_top5_accuracy": 0.44666666666666666,
+      "val_loss": 10.603548208872477,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_8_k1_mlp.pt"
+    },
+    "layer9_k1": {
+      "layer": 9,
+      "k": 1,
+      "train_accuracy": 0.9735551923934036,
+      "train_loss": 0.11388603534619764,
+      "val_accuracy": 0.292,
+      "val_top5_accuracy": 0.464,
+      "val_loss": 10.293877760569254,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_9_k1_mlp.pt"
+    },
+    "layer10_k1": {
+      "layer": 10,
+      "k": 1,
+      "train_accuracy": 0.9716238300401129,
+      "train_loss": 0.11979162977692091,
+      "val_accuracy": 0.36133333333333334,
+      "val_top5_accuracy": 0.48933333333333334,
+      "val_loss": 9.188939730326334,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_10_k1_mlp.pt"
+    },
+    "layer11_k1": {
+      "layer": 11,
+      "k": 1,
+      "train_accuracy": 0.9665725746545832,
+      "train_loss": 0.1316665621860972,
+      "val_accuracy": 0.37466666666666665,
+      "val_top5_accuracy": 0.5013333333333333,
+      "val_loss": 8.922736088434855,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_11_k1_mlp.pt"
+    },
+    "layer12_k1": {
+      "layer": 12,
+      "k": 1,
+      "train_accuracy": 0.9653840439756352,
+      "train_loss": 0.13704630142112947,
+      "val_accuracy": 0.4026666666666667,
+      "val_top5_accuracy": 0.5106666666666667,
+      "val_loss": 8.782349109649658,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_12_k1_mlp.pt"
+    },
+    "layer13_k1": {
+      "layer": 13,
+      "k": 1,
+      "train_accuracy": 0.9585499925716833,
+      "train_loss": 0.16252149177609748,
+      "val_accuracy": 0.392,
+      "val_top5_accuracy": 0.516,
+      "val_loss": 8.288872639338175,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_13_k1_mlp.pt"
+    },
+    "layer14_k1": {
+      "layer": 14,
+      "k": 1,
+      "train_accuracy": 0.9589956915762888,
+      "train_loss": 0.16430307186718257,
+      "val_accuracy": 0.39066666666666666,
+      "val_top5_accuracy": 0.5106666666666667,
+      "val_loss": 7.967873493830363,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_14_k1_mlp.pt"
+    },
+    "layer15_k1": {
+      "layer": 15,
+      "k": 1,
+      "train_accuracy": 0.9468132521170702,
+      "train_loss": 0.2152256393488848,
+      "val_accuracy": 0.3546666666666667,
+      "val_top5_accuracy": 0.49733333333333335,
+      "val_loss": 8.892139673233032,
+      "probe_path": "experiment_results_mlp/probes/k1/probe_layer_15_k1_mlp.pt"
+    },
+    "layer0_k2": {
+      "layer": 0,
+      "k": 2,
+      "train_accuracy": 0.691873421482692,
+      "train_loss": 1.0587947706006609,
+      "val_accuracy": 0.11733333333333333,
+      "val_top5_accuracy": 0.25466666666666665,
+      "val_loss": 10.942063649495443,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_0_k2_mlp.pt"
+    },
+    "layer1_k2": {
+      "layer": 1,
+      "k": 2,
+      "train_accuracy": 0.8587134155400387,
+      "train_loss": 0.5082529513341076,
+      "val_accuracy": 0.13333333333333333,
+      "val_top5_accuracy": 0.25866666666666666,
+      "val_loss": 11.267309506734213,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_1_k2_mlp.pt"
+    },
+    "layer2_k2": {
+      "layer": 2,
+      "k": 2,
+      "train_accuracy": 0.9075917397117813,
+      "train_loss": 0.35181319095053765,
+      "val_accuracy": 0.12666666666666668,
+      "val_top5_accuracy": 0.264,
+      "val_loss": 11.39394760131836,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_2_k2_mlp.pt"
+    },
+    "layer3_k2": {
+      "layer": 3,
+      "k": 2,
+      "train_accuracy": 0.9416134303966721,
+      "train_loss": 0.24410400455290415,
+      "val_accuracy": 0.116,
+      "val_top5_accuracy": 0.296,
+      "val_loss": 11.298588593800863,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_3_k2_mlp.pt"
+    },
+    "layer4_k2": {
+      "layer": 4,
+      "k": 2,
+      "train_accuracy": 0.956470063883524,
+      "train_loss": 0.19682420185714397,
+      "val_accuracy": 0.12266666666666666,
+      "val_top5_accuracy": 0.2986666666666667,
+      "val_loss": 11.473721186319986,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_4_k2_mlp.pt"
+    },
+    "layer5_k2": {
+      "layer": 5,
+      "k": 2,
+      "train_accuracy": 0.9622641509433962,
+      "train_loss": 0.17923013837832324,
+      "val_accuracy": 0.12133333333333333,
+      "val_top5_accuracy": 0.3253333333333333,
+      "val_loss": 11.86688232421875,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_5_k2_mlp.pt"
+    },
+    "layer6_k2": {
+      "layer": 6,
+      "k": 2,
+      "train_accuracy": 0.964789778636161,
+      "train_loss": 0.16169233279267572,
+      "val_accuracy": 0.13466666666666666,
+      "val_top5_accuracy": 0.32266666666666666,
+      "val_loss": 12.230383714040121,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_6_k2_mlp.pt"
+    },
+    "layer7_k2": {
+      "layer": 7,
+      "k": 2,
+      "train_accuracy": 0.9673154063289259,
+      "train_loss": 0.16032269048803258,
+      "val_accuracy": 0.15466666666666667,
+      "val_top5_accuracy": 0.328,
+      "val_loss": 12.102557023366293,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_7_k2_mlp.pt"
+    },
+    "layer8_k2": {
+      "layer": 8,
+      "k": 2,
+      "train_accuracy": 0.968503937007874,
+      "train_loss": 0.15198682796842647,
+      "val_accuracy": 0.14933333333333335,
+      "val_top5_accuracy": 0.3373333333333333,
+      "val_loss": 12.328105131785074,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_8_k2_mlp.pt"
+    },
+    "layer9_k2": {
+      "layer": 9,
+      "k": 2,
+      "train_accuracy": 0.9655326103105036,
+      "train_loss": 0.1517541001216983,
+      "val_accuracy": 0.15066666666666667,
+      "val_top5_accuracy": 0.3333333333333333,
+      "val_loss": 12.404133160909018,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_9_k2_mlp.pt"
+    },
+    "layer10_k2": {
+      "layer": 10,
+      "k": 2,
+      "train_accuracy": 0.9586985589065518,
+      "train_loss": 0.17100940103519638,
+      "val_accuracy": 0.15733333333333333,
+      "val_top5_accuracy": 0.3626666666666667,
+      "val_loss": 11.30294926961263,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_10_k2_mlp.pt"
+    },
+    "layer11_k2": {
+      "layer": 11,
+      "k": 2,
+      "train_accuracy": 0.9517159411677314,
+      "train_loss": 0.1990446944562894,
+      "val_accuracy": 0.17066666666666666,
+      "val_top5_accuracy": 0.356,
+      "val_loss": 11.065192858378092,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_11_k2_mlp.pt"
+    },
+    "layer12_k2": {
+      "layer": 12,
+      "k": 2,
+      "train_accuracy": 0.952161640172337,
+      "train_loss": 0.20317582961804462,
+      "val_accuracy": 0.16666666666666666,
+      "val_top5_accuracy": 0.36133333333333334,
+      "val_loss": 10.694678942362467,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_12_k2_mlp.pt"
+    },
+    "layer13_k2": {
+      "layer": 13,
+      "k": 2,
+      "train_accuracy": 0.9471103847868073,
+      "train_loss": 0.2090187800942727,
+      "val_accuracy": 0.17733333333333334,
+      "val_top5_accuracy": 0.352,
+      "val_loss": 10.560438315073648,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_13_k2_mlp.pt"
+    },
+    "layer14_k2": {
+      "layer": 14,
+      "k": 2,
+      "train_accuracy": 0.9425048284058832,
+      "train_loss": 0.23173247629179144,
+      "val_accuracy": 0.16933333333333334,
+      "val_top5_accuracy": 0.3453333333333333,
+      "val_loss": 10.535545667012533,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_14_k2_mlp.pt"
+    },
+    "layer15_k2": {
+      "layer": 15,
+      "k": 2,
+      "train_accuracy": 0.9120487297578369,
+      "train_loss": 0.34081940577839903,
+      "val_accuracy": 0.164,
+      "val_top5_accuracy": 0.31866666666666665,
+      "val_loss": 11.725642522176107,
+      "probe_path": "experiment_results_mlp/probes/k2/probe_layer_15_k2_mlp.pt"
+    },
+    "layer0_k3": {
+      "layer": 0,
+      "k": 3,
+      "train_accuracy": 0.6632001188530678,
+      "train_loss": 1.1833708691147138,
+      "val_accuracy": 0.07333333333333333,
+      "val_top5_accuracy": 0.19466666666666665,
+      "val_loss": 11.042091051737467,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_0_k3_mlp.pt"
+    },
+    "layer1_k3": {
+      "layer": 1,
+      "k": 3,
+      "train_accuracy": 0.8389540930025257,
+      "train_loss": 0.5830420188184054,
+      "val_accuracy": 0.084,
+      "val_top5_accuracy": 0.2,
+      "val_loss": 11.862372080485025,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_1_k3_mlp.pt"
+    },
+    "layer2_k3": {
+      "layer": 2,
+      "k": 3,
+      "train_accuracy": 0.8957064329222998,
+      "train_loss": 0.4019577022431032,
+      "val_accuracy": 0.07333333333333333,
+      "val_top5_accuracy": 0.18533333333333332,
+      "val_loss": 11.81057850519816,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_2_k3_mlp.pt"
+    },
+    "layer3_k3": {
+      "layer": 3,
+      "k": 3,
+      "train_accuracy": 0.9304709552815332,
+      "train_loss": 0.2891008457485235,
+      "val_accuracy": 0.08133333333333333,
+      "val_top5_accuracy": 0.192,
+      "val_loss": 11.872481187184652,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_3_k3_mlp.pt"
+    },
+    "layer4_k3": {
+      "layer": 4,
+      "k": 3,
+      "train_accuracy": 0.9454761551032536,
+      "train_loss": 0.23906824779960345,
+      "val_accuracy": 0.088,
+      "val_top5_accuracy": 0.19866666666666666,
+      "val_loss": 12.025949001312256,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_4_k3_mlp.pt"
+    },
+    "layer5_k3": {
+      "layer": 5,
+      "k": 3,
+      "train_accuracy": 0.9566186302183926,
+      "train_loss": 0.20465292486379733,
+      "val_accuracy": 0.08133333333333333,
+      "val_top5_accuracy": 0.224,
+      "val_loss": 12.626397609710693,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_5_k3_mlp.pt"
+    },
+    "layer6_k3": {
+      "layer": 6,
+      "k": 3,
+      "train_accuracy": 0.9634526816223444,
+      "train_loss": 0.17379710225845282,
+      "val_accuracy": 0.076,
+      "val_top5_accuracy": 0.24133333333333334,
+      "val_loss": 12.580177942911783,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_6_k3_mlp.pt"
+    },
+    "layer7_k3": {
+      "layer": 7,
+      "k": 3,
+      "train_accuracy": 0.9630069826177389,
+      "train_loss": 0.179260734820141,
+      "val_accuracy": 0.08266666666666667,
+      "val_top5_accuracy": 0.24266666666666667,
+      "val_loss": 12.889339447021484,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_7_k3_mlp.pt"
+    },
+    "layer8_k3": {
+      "layer": 8,
+      "k": 3,
+      "train_accuracy": 0.964195513296687,
+      "train_loss": 0.1703179804783947,
+      "val_accuracy": 0.08933333333333333,
+      "val_top5_accuracy": 0.25466666666666665,
+      "val_loss": 12.855133215586344,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_8_k3_mlp.pt"
+    },
+    "layer9_k3": {
+      "layer": 9,
+      "k": 3,
+      "train_accuracy": 0.9581042935670777,
+      "train_loss": 0.1785393995496462,
+      "val_accuracy": 0.09333333333333334,
+      "val_top5_accuracy": 0.2853333333333333,
+      "val_loss": 12.44449249903361,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_9_k3_mlp.pt"
+    },
+    "layer10_k3": {
+      "layer": 10,
+      "k": 3,
+      "train_accuracy": 0.9520130738374685,
+      "train_loss": 0.1973358269007701,
+      "val_accuracy": 0.09466666666666666,
+      "val_top5_accuracy": 0.2866666666666667,
+      "val_loss": 11.95404307047526,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_10_k3_mlp.pt"
+    },
+    "layer11_k3": {
+      "layer": 11,
+      "k": 3,
+      "train_accuracy": 0.9488931808052296,
+      "train_loss": 0.2094811368382202,
+      "val_accuracy": 0.092,
+      "val_top5_accuracy": 0.24666666666666667,
+      "val_loss": 12.42661746342977,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_11_k3_mlp.pt"
+    },
+    "layer12_k3": {
+      "layer": 12,
+      "k": 3,
+      "train_accuracy": 0.94785321646115,
+      "train_loss": 0.20593744586661178,
+      "val_accuracy": 0.09733333333333333,
+      "val_top5_accuracy": 0.25866666666666666,
+      "val_loss": 11.849894205729166,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_12_k3_mlp.pt"
+    },
+    "layer13_k3": {
+      "layer": 13,
+      "k": 3,
+      "train_accuracy": 0.9414648640618036,
+      "train_loss": 0.23102877134422087,
+      "val_accuracy": 0.09466666666666666,
+      "val_top5_accuracy": 0.24266666666666667,
+      "val_loss": 11.738491217295328,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_13_k3_mlp.pt"
+    },
+    "layer14_k3": {
+      "layer": 14,
+      "k": 3,
+      "train_accuracy": 0.9386421036993018,
+      "train_loss": 0.2457714537685772,
+      "val_accuracy": 0.08666666666666667,
+      "val_top5_accuracy": 0.244,
+      "val_loss": 11.910574436187744,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_14_k3_mlp.pt"
+    },
+    "layer15_k3": {
+      "layer": 15,
+      "k": 3,
+      "train_accuracy": 0.8887238151834794,
+      "train_loss": 0.41730505959042963,
+      "val_accuracy": 0.07066666666666667,
+      "val_top5_accuracy": 0.2,
+      "val_loss": 12.833433628082275,
+      "probe_path": "experiment_results_mlp/probes/k3/probe_layer_15_k3_mlp.pt"
+    }
+  }
+}
