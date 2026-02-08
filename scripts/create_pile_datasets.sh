@@ -17,7 +17,7 @@ echo ""
 
 python -m utils.create_pile_datasets \
     --dataset_name monology/pile-uncopyrighted \
-    --model_name meta-llama/Llama-3.2-1B \
+    --model_name meta-llama/Llama-3.1-8B \
     --output_dir "$PROJECT_ROOT/data" \
     --n_train 10000 \
     --n_val 2000 \

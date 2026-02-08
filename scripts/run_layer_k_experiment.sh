@@ -26,16 +26,21 @@ echo ""
 # Add src to PYTHONPATH so package is importable
 export PYTHONPATH="$PROJECT_ROOT/src:$PYTHONPATH"
 
+MODEL_NAME=meta-llama/Llama-3.1-8B
+
 python -m look_ahead_probe.layer_k_experiment \
-    --model_name meta-llama/Llama-3.2-1B \
-    --train_dataset_path "$PROJECT_ROOT/data/example_train.jsonl" \
-    --val_dataset_path "$PROJECT_ROOT/data/example_val.jsonl" \
+    --model_name $MODEL_NAME \
+    --train_dataset_path "$PROJECT_ROOT/data/train-pile.jsonl" \
+    --val_dataset_path "$PROJECT_ROOT/data/val-pile.jsonl" \
     --max_k 3 \
-    --max_new_tokens 64 \
-    --probe_type mlp \
-    --num_epochs 10 \
-    --batch_size 128 \
-    --output_dir "$PROJECT_ROOT/experiment_results_mlp"
+    --max_train_prompts 100 \
+    --max_val_prompts 20 \
+    --max_new_tokens 32 \
+    --probe_type linear \
+    --num_epochs 3 \
+    --learning_rate 5e-4 \
+    --batch_size 256 \
+    --output_dir "$PROJECT_ROOT/experiment_results_linear"
 
 echo ""
 echo "✓ Pipeline test complete! Check $PROJECT_ROOT/experiment_results_mlp/ for outputs"
