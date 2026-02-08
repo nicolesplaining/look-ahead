@@ -8,6 +8,56 @@ Helper scripts for experiments and testing.
 
 The Python modules have been moved to `src/look_ahead_probe/`. They can be run using `python -m`:
 
+---
+
+### `create_pile_datasets`
+**Purpose:** Sample training data from The Pile corpus
+
+**What it does:**
+Creates training and validation datasets by sampling random token sequences from The Pile (a large, diverse text corpus). Generates both full and small datasets for testing.
+
+**Usage:**
+```bash
+# Using defaults (recommended)
+python -m utils.create_pile_datasets
+
+# Custom configuration
+python -m utils.create_pile_datasets \
+    --dataset_name monology/pile-uncopyrighted \
+    --model_name meta-llama/Llama-3.2-3B \
+    --output_dir data/ \
+    --n_train 10000 \
+    --n_val 2000 \
+    --n_small_train 50 \
+    --n_small_val 10 \
+    --min_tokens 64 \
+    --max_tokens 256
+
+# Sample from specific Pile subset
+python -m utils.create_pile_datasets \
+    --subset "Wikipedia_(en)" \
+    --n_train 5000
+```
+
+**Output:**
+Creates 4 JSONL files in output directory:
+- `train-pile.jsonl` (10,000 sequences)
+- `val-pile.jsonl` (2,000 sequences)
+- `small-train-pile.jsonl` (50 sequences for quick testing)
+- `small-val-pile.jsonl` (10 sequences for quick testing)
+
+**Key arguments:**
+- `--dataset_name` - HuggingFace Pile dataset (default: monology/pile-uncopyrighted)
+- `--model_name` - Model for tokenizer (default: meta-llama/Llama-3.2-1B)
+- `--n_train/--n_val` - Number of sequences to sample
+- `--min_tokens/--max_tokens` - Sequence length range (default: 64-256)
+- `--subset` - Specific Pile subset (e.g., "Wikipedia_(en)", "ArXiv")
+
+**About The Pile:**
+The Pile is an 825GB diverse text corpus containing 22 data sources including web text, scientific papers, code, books, and more. Using `monology/pile-uncopyrighted` excludes potentially copyrighted content (Books3, etc.) while retaining 95% of the data.
+
+---
+
 ### `layer_k_experiment` ⭐
 **Purpose:** End-to-end layer-k probing experiment pipeline
 
@@ -96,6 +146,33 @@ python -m look_ahead_probe.visualize_results \
 
 The shell scripts below are convenient wrappers for common tasks. All scripts use absolute paths and can be run from any directory.
 
+### `create_pile_datasets.sh`
+**Purpose:** Quick dataset creation from The Pile with default settings
+
+**What it does:**
+Calls `create_pile_datasets.py` with sensible defaults to create train/val datasets from The Pile.
+
+**Usage:**
+```bash
+bash scripts/create_pile_datasets.sh
+```
+
+**Output:**
+Creates 4 files in `data/`:
+- `train-pile.jsonl` (10K sequences)
+- `val-pile.jsonl` (2K sequences)
+- `small-train-pile.jsonl` (50 sequences)
+- `small-val-pile.jsonl` (10 sequences)
+
+**Defaults:**
+- Dataset: `monology/pile-uncopyrighted`
+- Tokenizer: `meta-llama/Llama-3.2-1B`
+- Sequence length: 64-256 tokens
+- Random seed: 42
+
+---
+
+
 ### `run_layer_k_experiment.sh`
 **Purpose:** Quick pipeline test with small parameters
 
@@ -116,6 +193,46 @@ bash /path/to/look-ahead/scripts/run_layer_k_experiment.sh
 - k=1,2,3, 64 tokens
 - MLP probe, 10 epochs
 - Fast execution (~5-10 minutes)
+
+---
+
+### `run_poem_experiment.sh`
+**Purpose:** End-to-end poem rhyme probe experiment
+
+**What it does:**
+Complete pipeline from raw poems to trained probes:
+1. Split poems into train/val (80/20)
+2. Extract activation datasets (train + val)
+3. Train probes on all layers
+4. Save results with accuracy per layer
+
+**Usage:**
+```bash
+# Default: Llama-3.2-1B, MLP, 20 epochs
+bash scripts/run_poem_experiment.sh
+```
+
+**Test parameters:**
+- 100 poems (80 train, 20 val)
+- MLP probe, 20 epochs
+- 30 max tokens per generation
+- Execution time: ~10-15 minutes (with GPU)
+
+**Output:**
+```
+poem_results/
+├── data/
+│   ├── poems_train.jsonl   # Train split
+│   ├── poems_val.jsonl     # Val split
+│   ├── train.pt            # Training activations
+│   └── val.pt              # Validation activations
+└── probes/
+    ├── layer0_probe.pt     # Probes for each layer
+    ├── ...
+    └── training_summary.pt # Results ⭐
+```
+
+**Expected output:** Accuracy by layer showing if model "knows" rhyme
 
 ---
 
