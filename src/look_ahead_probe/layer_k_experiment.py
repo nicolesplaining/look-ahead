@@ -48,8 +48,10 @@ def main():
                         help="Maximum lookahead distance")
 
     # Optional parameters
-    parser.add_argument("--max_prompts", type=int, default=None,
-                        help="Max prompts to use")
+    parser.add_argument("--max_train_prompts", type=int, default=None,
+                        help="Max training prompts to use")
+    parser.add_argument("--max_val_prompts", type=int, default=None,
+                        help="Max validation prompts to use")
     parser.add_argument("--max_new_tokens", type=int, default=30,
                         help="Max tokens to generate per prompt")
 
@@ -127,8 +129,8 @@ def main():
         "--device", args.device,
     ]
 
-    if args.max_prompts:
-        build_cmd.extend(["--max_prompts", str(args.max_prompts)])
+    if args.max_train_prompts:
+        build_cmd.extend(["--max_prompts", str(args.max_train_prompts)])
 
     run_step("STEP 2: Build Activation Dataset (Training)", build_cmd)
 
@@ -143,8 +145,8 @@ def main():
             "--output_path", str(val_dataset_path),
             "--device", args.device,
         ]
-        if args.max_prompts:
-            val_build_cmd.extend(["--max_prompts", str(args.max_prompts)])
+        if args.max_val_prompts:
+            val_build_cmd.extend(["--max_prompts", str(args.max_val_prompts)])
 
         run_step("STEP 2b: Build Activation Dataset (Validation)", val_build_cmd)
 
