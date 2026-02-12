@@ -1,14 +1,4 @@
-# Core dependencies
 torch>=2.0.0
 transformer-lens>=2.0.0  # Includes transformers as dependency
 tqdm>=4.60.0
-
-# Optional (for visualization scripts)
-# matplotlib>=3.5.0
-
-# Optional: For reproducibility, pin exact versions
-# torch==2.10.0
-# transformer-lens==2.16.1
-# transformers==5.0.0
-# tqdm==4.67.2
-# numpy==1.26.4
+matplotlib>=3.5.0
