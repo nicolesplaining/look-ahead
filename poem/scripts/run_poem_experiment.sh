@@ -9,8 +9,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # Validate required files exist
-if [ ! -f "$PROJECT_ROOT/probe/data/poems.jsonl" ]; then
-    echo "ERROR: Poems file not found at $PROJECT_ROOT/probe/data/poems.jsonl"
+if [ ! -f "$PROJECT_ROOT/poem/data/poems.jsonl" ]; then
+    echo "ERROR: Poems file not found at $PROJECT_ROOT/poem/data/poems.jsonl"
     exit 1
 fi
 
@@ -18,17 +18,17 @@ echo "Running poem rhyme probe experiment from: $PROJECT_ROOT"
 echo "Running poem experiment (100 poems, MLP probe, 20 epochs)..."
 echo ""
 
-# Add src to PYTHONPATH so package is importable
-export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
+# poem_probe lives in poem/src; it imports from look_ahead_probe which lives in probe/src
+export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 python -m poem_probe.poem_experiment \
     --model_name meta-llama/Llama-3.1-8B \
-    --poems_path "$PROJECT_ROOT/probe/data/poems.jsonl" \
+    --poems_path "$PROJECT_ROOT/poem/data/poems.jsonl" \
     --max_new_tokens 30 \
     --probe_type linear \
     --num_epochs 20 \
     --batch_size 16 \
-    --output_dir "$PROJECT_ROOT/probe/poem_results"
+    --output_dir "$PROJECT_ROOT/poem/results"
 
 echo ""
-echo "✓ Poem experiment complete! Check $PROJECT_ROOT/probe/poem_results/ for outputs"
+echo "✓ Poem experiment complete! Check $PROJECT_ROOT/poem/results/ for outputs"

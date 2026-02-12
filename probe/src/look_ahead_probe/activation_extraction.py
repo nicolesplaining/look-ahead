@@ -112,7 +112,8 @@ def generate_and_extract_all_layers(
     max_k: int,
     max_new_tokens: int = 50,
     device: str = "cuda",
-    layers: Optional[List[int]] = None
+    layers: Optional[List[int]] = None,
+    chunk_size: int = 128,
 ) -> Tuple[dict, torch.Tensor, List[str]]:
     """
     Generate text and extract activations from all layers with multiple lookahead targets.
@@ -124,6 +125,8 @@ def generate_and_extract_all_layers(
         max_new_tokens: Maximum number of tokens to generate per prompt
         device: Device to use
         layers: Optional list of layer indices to extract. If None, extracts all layers.
+        chunk_size: Every this many prompts, consolidate accumulated 1-D activation
+            tensors into a single 2-D chunk to keep CPU RAM bounded.
 
     Returns:
         layer_activations: Dict mapping layer_idx -> tensor of shape [n_samples, d_model]
@@ -133,7 +136,10 @@ def generate_and_extract_all_layers(
     if layers is None:
         layers = list(range(model.cfg.n_layers))
 
-    layer_activations_dict = {layer_idx: [] for layer_idx in layers}
+    # layer_act_chunks: completed 2-D stacked chunks (consolidated every chunk_size prompts)
+    layer_act_chunks = {layer_idx: [] for layer_idx in layers}
+    # layer_act_buf: 1-D tensors accumulating for the current chunk
+    layer_act_buf = {layer_idx: [] for layer_idx in layers}
     all_targets = []
     generated_texts = []
 
@@ -141,7 +147,7 @@ def generate_and_extract_all_layers(
     eos_token_id = model.tokenizer.eos_token_id
 
     with torch.no_grad():
-        for prompt in tqdm(prompts, desc="Extracting multi-k activations"):
+        for prompt_idx, prompt in enumerate(tqdm(prompts, desc="Extracting multi-k activations")):
             current_tokens = model.to_tokens(prompt).to(device)
 
             for step in range(max_new_tokens):
@@ -170,13 +176,33 @@ def generate_and_extract_all_layers(
                 for layer_idx in layers:
                     layer_acts = cache["resid_post", layer_idx][0]
                     act = layer_acts[i, :]
-                    layer_activations_dict[layer_idx].append(act.cpu())
+                    layer_act_buf[layer_idx].append(act.cpu())
 
                 all_targets.append(torch.stack(targets_for_position))
 
+            # Free GPU memory promptly after each prompt's extraction is done
+            del cache
+            torch.cuda.empty_cache()
+
+            # Every chunk_size prompts, consolidate 1-D tensors into a single 2-D chunk
+            if (prompt_idx + 1) % chunk_size == 0:
+                for layer_idx in layers:
+                    if layer_act_buf[layer_idx]:
+                        layer_act_chunks[layer_idx].append(
+                            torch.stack(layer_act_buf[layer_idx])
+                        )
+                        layer_act_buf[layer_idx] = []
+
+    # Consolidate any remaining buffered tensors
+    for layer_idx in layers:
+        if layer_act_buf[layer_idx]:
+            layer_act_chunks[layer_idx].append(
+                torch.stack(layer_act_buf[layer_idx])
+            )
+
     layer_activations = {}
     for layer_idx in layers:
-        layer_activations[layer_idx] = torch.stack(layer_activations_dict[layer_idx])
+        layer_activations[layer_idx] = torch.cat(layer_act_chunks[layer_idx])
 
     targets = torch.stack(all_targets)  # [n_samples, max_k]
 
