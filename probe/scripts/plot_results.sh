@@ -6,13 +6,13 @@ set -e
 
 # Get absolute path to project root
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # Add src to PYTHONPATH so package is importable
-export PYTHONPATH="$PROJECT_ROOT/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 # Path to results JSON
-RESULTS_PATH="$PROJECT_ROOT/experiment_results_linear/experiment_results.json"
+RESULTS_PATH="$PROJECT_ROOT/probe/experiment_results_linear/experiment_results.json"
 
 echo "Plotting results from: $RESULTS_PATH"
 echo ""

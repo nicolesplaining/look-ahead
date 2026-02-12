@@ -6,10 +6,10 @@ set -e
 
 # Get absolute path to project root
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # Add src to PYTHONPATH so package is importable
-export PYTHONPATH="$PROJECT_ROOT/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 # MODEL_NAME=meta-llama/Llama-3.2-1B
 # MODEL_NAME=meta-llama/Llama-3.2-3B
