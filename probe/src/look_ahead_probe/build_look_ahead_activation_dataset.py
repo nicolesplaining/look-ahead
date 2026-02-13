@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 
 import torch
-from transformer_lens import HookedTransformer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from .activation_extraction import generate_and_extract_all_layers
 from .data_loading import load_jsonl_prompts
@@ -34,9 +34,13 @@ def main():
     args = parser.parse_args()
 
     print(f"Loading model: {args.model_name}")
-    model = HookedTransformer.from_pretrained(
-        args.model_name, device=args.device, dtype=torch.bfloat16
-    )
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model_name,
+        torch_dtype=torch.bfloat16,
+    ).to(args.device)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token_id = tokenizer.eos_token_id
 
     if args.layers is not None:
         layers = [int(x.strip()) for x in args.layers.split(',')]
@@ -62,7 +66,7 @@ def main():
 
     print(f"Extracting activations (max_k={args.max_k})...")
     layer_activations, targets, generated_texts = generate_and_extract_all_layers(
-        model=model, prompts=prompts, max_k=args.max_k,
+        model=model, tokenizer=tokenizer, prompts=prompts, max_k=args.max_k,
         max_new_tokens=args.max_new_tokens, device=args.device, layers=layers
     )
 
@@ -75,9 +79,9 @@ def main():
         'max_k': args.max_k,
         'max_new_tokens': args.max_new_tokens,
         'n_prompts': len(prompts),
-        'd_model': model.cfg.d_model,
-        'vocab_size': model.cfg.d_vocab,
-        'layers': layers if layers is not None else list(range(model.cfg.n_layers)),
+        'd_model': model.config.hidden_size,
+        'vocab_size': model.config.vocab_size,
+        'layers': layers if layers is not None else list(range(model.config.num_hidden_layers)),
     }
 
     dataset = {

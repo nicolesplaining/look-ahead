@@ -1,113 +1,15 @@
-"""Efficient activation extraction from language models."""
+"""Activation extraction from language models using HuggingFace Transformers."""
 
 from typing import List, Optional, Tuple
 
 import torch
-import torch.nn.functional as F
-from transformer_lens import HookedTransformer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
 
-def verify_activation_equivalence(
-    model: HookedTransformer,
-    prompt: str,
-    layer_idx: int,
-    max_new_tokens: int,
-    device: str = "cuda"
-) -> bool:
-    """
-    Verify efficient extraction is valid for the model.
-
-    Tests that activations from token-by-token generation match single forward pass.
-    """
-    model.eval()
-    eos_token_id = model.tokenizer.eos_token_id
-    EPSILON = 1e-3
-
-    print(f"\n{'='*60}")
-    print(f"Verifying Activation Equivalence")
-    print(f"{'='*60}")
-    print(f"Prompt: {prompt[:50]}...")
-    print(f"Layer: {layer_idx}, Max new tokens: {max_new_tokens}\n")
-
-    with torch.no_grad():
-        # METHOD 1: Token-by-token generation (storing activations as we go)
-        current_tokens = model.to_tokens(prompt).to(device)
-        method1_activations = {}
-
-        for step in range(max_new_tokens):
-            logits, cache = model.run_with_cache(current_tokens)
-            layer_acts = cache["resid_post", layer_idx][0]  # [seq_len, d_model]
-
-            # Store activations for positions we haven't stored yet
-            for pos in range(current_tokens.shape[1]):
-                if pos not in method1_activations:
-                    method1_activations[pos] = layer_acts[pos].cpu()
-
-            # Greedy generation
-            next_token = logits[0, -1, :].argmax(dim=-1, keepdim=True)
-            current_tokens = torch.cat([current_tokens, next_token.unsqueeze(0)], dim=1)
-
-            if eos_token_id is not None and next_token.item() == eos_token_id:
-                break
-
-        final_tokens_method1 = current_tokens
-
-        # METHOD 2: Generate first, then single forward pass
-        # (Re-generate to ensure same tokens)
-        current_tokens = model.to_tokens(prompt).to(device)
-
-        for step in range(max_new_tokens):
-            logits = model(current_tokens)
-            next_token = logits[0, -1, :].argmax(dim=-1, keepdim=True)
-            current_tokens = torch.cat([current_tokens, next_token.unsqueeze(0)], dim=1)
-
-            if eos_token_id is not None and next_token.item() == eos_token_id:
-                break
-
-        # Single forward pass on complete sequence
-        _, cache = model.run_with_cache(current_tokens)
-        method2_activations = cache["resid_post", layer_idx][0]  # [seq_len, d_model]
-
-        final_tokens_method2 = current_tokens
-
-        # Verify tokens are identical
-        if not torch.equal(final_tokens_method1, final_tokens_method2):
-            print("ERROR: Generated tokens differ between methods!")
-            return False
-
-        # Compare activations at each position
-        print(f"Comparing activations at {len(method1_activations)} positions:\n")
-        print(f"{'Position':<10} {'Max Difference':<20} {'Status':<10}")
-        print(f"{'-'*40}")
-
-        all_valid = True
-        max_diff_overall = 0.0
-
-        for pos in sorted(method1_activations.keys()):
-            act1 = method1_activations[pos]
-            act2 = method2_activations[pos].cpu()
-
-            max_diff = (act1 - act2).abs().max().item()
-            max_diff_overall = max(max_diff_overall, max_diff)
-
-            is_valid = max_diff < EPSILON
-            status = "✓ PASS" if is_valid else "✗ FAIL"
-            all_valid = all_valid and is_valid
-
-            print(f"{pos:<10} {max_diff:<20.2e} {status:<10}")
-
-        print(f"{'-'*40}")
-        print(f"Overall max difference: {max_diff_overall:.2e}")
-        print(f"Threshold: 1e-5")
-        print(f"\nResult: {'✓ EQUIVALENCE VERIFIED' if all_valid else '✗ EQUIVALENCE FAILED'}")
-        print(f"{'='*60}\n")
-
-        return all_valid
-
-
 def generate_and_extract_all_layers(
-    model: HookedTransformer,
+    model: AutoModelForCausalLM,
+    tokenizer: AutoTokenizer,
     prompts: List[str],
     max_k: int,
     max_new_tokens: int = 50,
@@ -116,78 +18,80 @@ def generate_and_extract_all_layers(
     chunk_size: int = 128,
 ) -> Tuple[dict, torch.Tensor, List[str]]:
     """
-    Generate text and extract activations from all layers with multiple lookahead targets.
+    Generate text and extract residual-stream activations from all layers.
+
+    For each prompt:
+    1. Generate continuation with model.generate() (greedy, uses KV cache).
+    2. Run a single forward pass with output_hidden_states=True on the full sequence.
+    3. Collect (activation, targets) pairs for every position with max_k valid targets.
+
+    hidden_states[0] = embedding output.
+    hidden_states[L+1] = residual stream after transformer block L (= resid_post for layer L).
 
     Args:
-        model: The language model
-        prompts: List of text prompts to start generation from
-        max_k: Maximum lookahead distance (extracts targets for k=1,2,...,max_k)
-        max_new_tokens: Maximum number of tokens to generate per prompt
-        device: Device to use
-        layers: Optional list of layer indices to extract. If None, extracts all layers.
-        chunk_size: Every this many prompts, consolidate accumulated 1-D activation
-            tensors into a single 2-D chunk to keep CPU RAM bounded.
+        model: HuggingFace causal LM (should already be on the target device)
+        tokenizer: Corresponding tokenizer
+        prompts: Text prompts
+        max_k: Maximum lookahead distance
+        max_new_tokens: Tokens to generate per prompt
+        device: Device for input tensors
+        layers: Layer indices to extract (None = all)
+        chunk_size: Consolidate every this many prompts to bound CPU RAM
 
     Returns:
-        layer_activations: Dict mapping layer_idx -> tensor of shape [n_samples, d_model]
-        targets: [n_samples, max_k] - token IDs at positions i+1, i+2, ..., i+max_k
-        generated_texts: List of generated text strings
+        layer_activations: Dict layer_idx -> Tensor[n_samples, d_model]
+        targets: Tensor[n_samples, max_k]
+        generated_texts: List of generated strings
     """
+    n_layers = model.config.num_hidden_layers
     if layers is None:
-        layers = list(range(model.cfg.n_layers))
+        layers = list(range(n_layers))
 
-    # layer_act_chunks: completed 2-D stacked chunks (consolidated every chunk_size prompts)
     layer_act_chunks = {layer_idx: [] for layer_idx in layers}
-    # layer_act_buf: 1-D tensors accumulating for the current chunk
     layer_act_buf = {layer_idx: [] for layer_idx in layers}
     all_targets = []
     generated_texts = []
 
     model.eval()
-    eos_token_id = model.tokenizer.eos_token_id
+    pad_token_id = tokenizer.pad_token_id or tokenizer.eos_token_id
 
     with torch.no_grad():
-        for prompt_idx, prompt in enumerate(tqdm(prompts, desc="Extracting multi-k activations")):
-            current_tokens = model.to_tokens(prompt).to(device)
+        for prompt_idx, prompt in enumerate(tqdm(prompts, desc="Extracting activations")):
+            input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
 
-            for step in range(max_new_tokens):
-                logits = model(current_tokens)
-                next_token = logits[0, -1, :].argmax(dim=-1, keepdim=True)
-                current_tokens = torch.cat([current_tokens, next_token.unsqueeze(0)], dim=1)
+            # Step 1: generate continuation (efficient, KV cache used internally)
+            generated_ids = model.generate(
+                input_ids,
+                max_new_tokens=max_new_tokens,
+                do_sample=False,
+                pad_token_id=pad_token_id,
+            )  # [1, prompt_len + generated_len]
 
-                if eos_token_id is not None and next_token.item() == eos_token_id:
-                    break
+            # Step 2: single forward pass to get hidden states at all layers
+            outputs = model(generated_ids, output_hidden_states=True)
+            # outputs.hidden_states: tuple of (n_layers+1) tensors, each [1, seq_len, d_model]
+            # index 0 = embedding output; index L+1 = after transformer block L
 
-            _, cache = model.run_with_cache(
-                current_tokens,
-                names_filter=lambda name: name.endswith("hook_resid_post"),
-            )
-            generated_text = model.tokenizer.decode(current_tokens[0])
+            generated_text = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
             generated_texts.append(generated_text)
 
-            total_len = current_tokens.shape[1]
+            total_len = generated_ids.shape[1]
 
-            # Extract activations only at positions where all k targets are valid
+            # Collect (activation, targets) at every position with max_k valid look-ahead tokens
             for i in range(total_len - max_k):
-                # Extract targets for k=1, 2, ..., max_k
-                targets_for_position = []
-                for k in range(1, max_k + 1):
-                    target = current_tokens[0, i + k]
-                    targets_for_position.append(target.cpu())
-
-                # Extract activation from each layer at position i
+                targets_for_position = [
+                    generated_ids[0, i + k].cpu()
+                    for k in range(1, max_k + 1)
+                ]
                 for layer_idx in layers:
-                    layer_acts = cache["resid_post", layer_idx][0]
-                    act = layer_acts[i, :]
+                    act = outputs.hidden_states[layer_idx + 1][0, i, :]
                     layer_act_buf[layer_idx].append(act.cpu())
-
                 all_targets.append(torch.stack(targets_for_position))
 
-            # Free GPU memory promptly after each prompt's extraction is done
-            del cache
+            del outputs
             torch.cuda.empty_cache()
 
-            # Every chunk_size prompts, consolidate 1-D tensors into a single 2-D chunk
+            # Consolidate every chunk_size prompts to keep CPU RAM bounded
             if (prompt_idx + 1) % chunk_size == 0:
                 for layer_idx in layers:
                     if layer_act_buf[layer_idx]:
@@ -196,17 +100,15 @@ def generate_and_extract_all_layers(
                         )
                         layer_act_buf[layer_idx] = []
 
-    # Consolidate any remaining buffered tensors
+    # Final consolidation
     for layer_idx in layers:
         if layer_act_buf[layer_idx]:
-            layer_act_chunks[layer_idx].append(
-                torch.stack(layer_act_buf[layer_idx])
-            )
+            layer_act_chunks[layer_idx].append(torch.stack(layer_act_buf[layer_idx]))
 
-    layer_activations = {}
-    for layer_idx in layers:
-        layer_activations[layer_idx] = torch.cat(layer_act_chunks[layer_idx])
-
-    targets = torch.stack(all_targets)  # [n_samples, max_k]
+    layer_activations = {
+        layer_idx: torch.cat(layer_act_chunks[layer_idx])
+        for layer_idx in layers
+    }
+    targets = torch.stack(all_targets)
 
     return layer_activations, targets, generated_texts
