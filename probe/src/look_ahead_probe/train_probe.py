@@ -17,11 +17,12 @@ def train_probe(
     val_loader: Optional[DataLoader],
     num_epochs: int,
     learning_rate: float,
+    weight_decay: float = 1e-3,
     device: str = "cuda"
 ) -> dict:
     """Train probe and return history dict."""
     probe = probe.to(device)
-    optimizer = torch.optim.Adam(probe.parameters(), lr=learning_rate)
+    optimizer = torch.optim.AdamW(probe.parameters(), lr=learning_rate, weight_decay=weight_decay)
 
     best_val_acc = 0.0
     history = {"train_loss": [], "train_acc": [], "val_loss": [], "val_acc": []}
@@ -34,7 +35,7 @@ def train_probe(
         train_total = 0
 
         for activations, targets in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}"):
-            activations = activations.to(device)
+            activations = activations.to(device=device, dtype=torch.float32)
             targets = targets.to(device)
 
             # Forward pass
@@ -64,7 +65,7 @@ def train_probe(
 
             with torch.no_grad():
                 for activations, targets in val_loader:
-                    activations = activations.to(device)
+                    activations = activations.to(device=device, dtype=torch.float32)
                     targets = targets.to(device)
 
                     logits = probe(activations)
@@ -111,7 +112,7 @@ def evaluate_probe(
 
     with torch.no_grad():
         for activations, targets in tqdm(test_loader, desc="Evaluating"):
-            activations = activations.to(device)
+            activations = activations.to(device=device, dtype=torch.float32)
             targets = targets.to(device)
 
             logits = probe(activations)
@@ -132,7 +133,7 @@ def evaluate_probe(
     top5_correct = 0
     with torch.no_grad():
         for activations, targets in test_loader:
-            activations = activations.to(device)
+            activations = activations.to(device=device, dtype=torch.float32)
             targets = targets.to(device)
 
             logits = probe(activations)

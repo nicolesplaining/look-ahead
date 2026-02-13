@@ -20,6 +20,7 @@ def train_all_layers(
     num_epochs: int = 10,
     batch_size: int = 64,
     learning_rate: float = 1e-3,
+    weight_decay: float = 1e-3,
     output_dir: str = "./trained_probes",
     device: str = "cuda"
 ):
@@ -78,6 +79,7 @@ def train_all_layers(
             val_loader=val_loader,
             num_epochs=num_epochs,
             learning_rate=learning_rate,
+            weight_decay=weight_decay,
             device=device
         )
 
@@ -138,6 +140,7 @@ def main():
     parser.add_argument("--num_epochs", type=int, default=10)
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--learning_rate", type=float, default=1e-3)
+    parser.add_argument("--weight_decay", type=float, default=1e-3)
 
     parser.add_argument("--output_dir", type=str, default="./trained_probes")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
@@ -157,6 +160,7 @@ def main():
         num_epochs=args.num_epochs,
         batch_size=args.batch_size,
         learning_rate=args.learning_rate,
+        weight_decay=args.weight_decay,
         output_dir=args.output_dir,
         device=args.device
     )

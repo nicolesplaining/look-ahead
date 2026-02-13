@@ -19,10 +19,9 @@ OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/probe/results/experiment_results_linear}
 MAX_K=3
 PROBE_TYPE=linear
 NUM_EPOCHS=10
-
-# NOTE: increase batch size on GPU to fully utilize memory (nvidia-smi to check vRAM usage)
-BATCH_SIZE=4096
-LEARNING_RATE=5e-4
+BATCH_SIZE=256
+LEARNING_RATE=1e-4
+WEIGHT_DECAY=1e-3
 DEVICE="${DEVICE:-cuda}"
 
 if [ ! -f "$TRAIN_DATASET" ]; then
@@ -45,6 +44,7 @@ TRAIN_CMD=(
     --num_epochs "$NUM_EPOCHS"
     --batch_size "$BATCH_SIZE"
     --learning_rate "$LEARNING_RATE"
+    --weight_decay "$WEIGHT_DECAY"
     --device "$DEVICE"
 )
 
