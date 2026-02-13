@@ -13,9 +13,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="${MODEL_NAME:-}"  # Only needed for .texts.jsonl or .pt inputs
+MODEL_NAME=Qwen/Qwen3-32B 
 
-# Prefer .tokens.jsonl (exact token IDs, no re-tokenization) > .texts.jsonl > .pt
 if [ -f "$PROJECT_ROOT/probe/data/activations_train.tokens.jsonl" ]; then
     TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train.tokens.jsonl}"
     VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val.tokens.jsonl}"
