@@ -2,7 +2,6 @@
 
 from .activation_extraction import (
     generate_and_extract_all_layers,
-    verify_activation_equivalence,
 )
 from .data_loading import (
     ActivationDataset,
@@ -18,7 +17,6 @@ __all__ = [
     "load_jsonl_prompts",
     "load_extracted_dataset",
     "generate_and_extract_all_layers",
-    "verify_activation_equivalence",
     "train_probe",
     "evaluate_probe",
 ]
