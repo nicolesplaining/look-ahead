@@ -17,14 +17,15 @@ echo ""
 
 python -m utils.create_pile_datasets \
     --dataset_name monology/pile-uncopyrighted \
-    --model_name meta-llama/Llama-3.1-8B \
+    --model_name Qwen/Qwen3-1.7B \
     --output_dir "$PROJECT_ROOT/probe/data" \
-    --n_train 10000 \
-    --n_val 2000 \
+    --subsets "Wikipedia_(en),OpenWebText2,Gutenberg_(PG-19),PubMed_Abstracts,HackerNews,PhilPapers" \
+    --n_train 1000 \
+    --n_val 200 \
     --n_small_train 50 \
     --n_small_val 10 \
-    --min_tokens 64 \
-    --max_tokens 256 \
+    --min_tokens 32 \
+    --max_tokens 64 \
     --seed 42
 
 echo ""

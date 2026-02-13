@@ -28,7 +28,7 @@ def sample_sequences_from_pile(
     min_tokens: int = 64,
     max_tokens: int = 256,
     seed: int = 42,
-    subset: str = None
+    subsets: List[str] = None,
 ) -> List[str]:
     """
     Sample random token sequences from The Pile.
@@ -40,49 +40,31 @@ def sample_sequences_from_pile(
         min_tokens: Minimum sequence length in tokens
         max_tokens: Maximum sequence length in tokens
         seed: Random seed for reproducibility
-        subset: Specific subset of The Pile to use (None = all)
+        subsets: List of Pile subset names to sample from (None = all).
+            Multiple subsets are interleaved equally.
 
     Returns:
         List of text sequences
     """
     print(f"\nLoading dataset: {dataset_name}")
-    if subset:
-        print(f"  Subset: {subset}")
+    if subsets:
+        print(f"  Subsets: {', '.join(subsets)}")
     print(f"  Target sequences: {n_sequences}")
     print(f"  Token length: {min_tokens}-{max_tokens}")
 
-    # Load dataset in streaming mode (doesn't download everything)
-    try:
-        if subset:
-            dataset = load_dataset(
-                dataset_name,
-                subset,
-                split="train",
-                streaming=True,
-                trust_remote_code=True
-            )
-        else:
-            dataset = load_dataset(
-                dataset_name,
-                split="train",
-                streaming=True,
-                trust_remote_code=True
-            )
-    except Exception as e:
-        print(f"\n⚠️  Warning: Could not load with streaming. Trying without...")
-        if subset:
-            dataset = load_dataset(
-                dataset_name,
-                subset,
-                split="train",
-                trust_remote_code=True
-            )
-        else:
-            dataset = load_dataset(
-                dataset_name,
-                split="train",
-                trust_remote_code=True
-            )
+    # monology/pile-uncopyrighted only has a 'default' config; subsets are
+    # identified by the meta.pile_set_name field (uses spaces, e.g. "Wikipedia (en)").
+    # We normalise underscore notation → space notation for convenience.
+    def _to_pile_name(s):
+        return s.replace('_', ' ')
+
+    dataset = load_dataset(dataset_name, split="train", streaming=True)
+
+    if subsets:
+        target_names = {_to_pile_name(s) for s in subsets}
+        dataset = dataset.filter(
+            lambda ex: ex.get('meta', {}).get('pile_set_name', '') in target_names
+        )
 
     sequences = []
     random.seed(seed)
@@ -216,27 +198,29 @@ def main():
         help="Random seed (default: 42)"
     )
     parser.add_argument(
-        "--subset",
+        "--subsets",
         type=str,
         default=None,
-        help="Specific Pile subset to use (e.g., 'Wikipedia_(en)')"
+        help="Comma-separated Pile subsets to interleave (e.g., 'Wikipedia_(en),OpenWebText2'). "
+             "None = full pile."
     )
 
     args = parser.parse_args()
+
+    subsets = [s.strip() for s in args.subsets.split(",")] if args.subsets else None
 
     output_dir = Path(args.output_dir)
 
     print("=" * 80)
     print("PILE DATASET CREATION")
     print("=" * 80)
-    print(f"Dataset: {args.dataset_name}")
-    print(f"Tokenizer: {args.model_name}")
-    print(f"Output directory: {output_dir}")
-    print(f"Training sequences: {args.n_train}")
-    print(f"Validation sequences: {args.n_val}")
-    print(f"Small train/val: {args.n_small_train}/{args.n_small_val}")
+    print(f"Dataset:    {args.dataset_name}")
+    print(f"Subsets:    {', '.join(subsets) if subsets else '(all)'}")
+    print(f"Tokenizer:  {args.model_name}")
+    print(f"Output:     {output_dir}")
+    print(f"Train/Val:  {args.n_train} / {args.n_val}")
     print(f"Token range: {args.min_tokens}-{args.max_tokens}")
-    print(f"Random seed: {args.seed}")
+    print(f"Seed:       {args.seed}")
     print("=" * 80)
 
     # Load tokenizer
@@ -255,7 +239,7 @@ def main():
         min_tokens=args.min_tokens,
         max_tokens=args.max_tokens,
         seed=args.seed,
-        subset=args.subset
+        subsets=subsets,
     )
 
     # Sample validation sequences (different seed)
@@ -269,7 +253,7 @@ def main():
         min_tokens=args.min_tokens,
         max_tokens=args.max_tokens,
         seed=args.seed + 1,  # Different seed for val
-        subset=args.subset
+        subsets=subsets,
     )
 
     # Save full datasets
