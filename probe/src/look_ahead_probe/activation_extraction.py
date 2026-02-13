@@ -158,7 +158,10 @@ def generate_and_extract_all_layers(
                 if eos_token_id is not None and next_token.item() == eos_token_id:
                     break
 
-            _, cache = model.run_with_cache(current_tokens)
+            _, cache = model.run_with_cache(
+                current_tokens,
+                names_filter=lambda name: name.endswith("hook_resid_post"),
+            )
             generated_text = model.tokenizer.decode(current_tokens[0])
             generated_texts.append(generated_text)
 

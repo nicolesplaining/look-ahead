@@ -34,7 +34,9 @@ def main():
     args = parser.parse_args()
 
     print(f"Loading model: {args.model_name}")
-    model = HookedTransformer.from_pretrained(args.model_name, device=args.device)
+    model = HookedTransformer.from_pretrained(
+        args.model_name, device=args.device, dtype=torch.bfloat16
+    )
 
     if args.layers is not None:
         layers = [int(x.strip()) for x in args.layers.split(',')]

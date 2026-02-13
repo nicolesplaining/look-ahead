@@ -116,7 +116,10 @@ def extract_poem_activations(
                 continue
 
             # Single forward pass for activations
-            _, cache = model.run_with_cache(current_tokens)
+            _, cache = model.run_with_cache(
+                current_tokens,
+                names_filter=lambda name: name.endswith("hook_resid_post"),
+            )
 
             target_token = current_tokens[0, target_idx]
             all_targets.append(target_token.cpu())
@@ -203,7 +206,9 @@ def main():
     print("=" * 80 + "\n")
 
     print("Loading model...")
-    model = HookedTransformer.from_pretrained(args.model_name, device=args.device)
+    model = HookedTransformer.from_pretrained(
+        args.model_name, device=args.device, dtype=torch.bfloat16
+    )
     print(f"✓ Loaded {args.model_name}  (layers={model.cfg.n_layers}, d_model={model.cfg.d_model})\n")
 
     print("Loading poems...")
