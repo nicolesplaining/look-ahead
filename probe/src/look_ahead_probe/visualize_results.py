@@ -6,6 +6,7 @@ Creates separate plots for each k value showing validation accuracy across layer
 
 import json
 import argparse
+import sys
 import matplotlib.pyplot as plt
 from pathlib import Path
 from collections import defaultdict
@@ -49,7 +50,8 @@ def organize_results_by_k(results):
     return results_by_k
 
 
-def plot_results(results_by_k, output_dir, show_val=False, show_train=False, show_top5=False):
+def plot_results(results_by_k, output_dir, show_val=False, show_train=False, show_top5=False,
+                 acc_min=0.0, acc_max=1.0):
     """
     Create separate plots for each k value.
 
@@ -111,7 +113,7 @@ def plot_results(results_by_k, output_dir, show_val=False, show_train=False, sho
         plt.xlabel('Layer', fontsize=12)
         plt.ylabel('Accuracy', fontsize=12)
         plt.title(title, fontsize=14, fontweight='bold')
-        plt.ylim(0, 1)
+        plt.ylim(acc_min, acc_max)
         plt.grid(True, alpha=0.3)
 
         if plot_count > 1:
@@ -155,6 +157,18 @@ def main():
         action='store_true',
         help='Include top-5 validation accuracy on plots'
     )
+    parser.add_argument(
+        '--acc-min',
+        type=float,
+        default=0.0,
+        help='Lower bound of accuracy y-axis (default: 0.0)'
+    )
+    parser.add_argument(
+        '--acc-max',
+        type=float,
+        default=1.0,
+        help='Upper bound of accuracy y-axis (default: 1.0)'
+    )
 
     args = parser.parse_args()
 
@@ -191,7 +205,9 @@ def main():
     plot_results(results_by_k, output_dir,
                  show_val=args.show_val,
                  show_train=args.show_train,
-                 show_top5=args.show_top5)
+                 show_top5=args.show_top5,
+                 acc_min=args.acc_min,
+                 acc_max=args.acc_max)
 
     print("Done!")
 
