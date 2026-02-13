@@ -1,105 +1,105 @@
-# look-ahead
+# Probe
 
-Train probes to predict future tokens from language model activations.
+Train linear/MLP probes on LM residual stream activations to predict tokens k steps ahead, across all layers.
 
-## Quick Start
+## Pipeline
+
+The pipeline has three decoupled steps. Steps 1 and 2 can run on different machines.
+
+### Step 0 — Create input data (one-time)
 
 ```bash
-# 0. Create training data from The Pile (optional - or use your own data)
-python -m utils.create_pile_datasets \
-    --n_train 10000 \
-    --n_val 2000
-
-# 1. Check model compatibility (optional)
-python -m look_ahead_probe.check_model --model_name gpt2-small
-
-# 2. Build activation datasets
-python -m look_ahead_probe.build_look_ahead_activation_dataset \
-    --model_name gpt2-small \
-    --dataset_path data/train.jsonl \
-    --max_k 10 \
-    --output_path datasets/train.pt
-
-# 3. Train probes on all layers
-python -m look_ahead_probe.train_all_layers \
-    --train_dataset datasets/train.pt \
-    --val_dataset datasets/val.pt \
-    --k 5 \
-    --output_dir results/
-
-# Or run complete experiment pipeline
-python -m look_ahead_probe.layer_k_experiment \
-    --model_name meta-llama/Llama-3.2-1B \
-    --train_dataset_path data/train.jsonl \
-    --val_dataset_path data/val.jsonl \
-    --max_k 5 \
-    --probe_type mlp \
-    --num_epochs 10
-
-# Or visualize results
-python -m look_ahead_probe.visualize_results \
-    --results_path experiment_results/experiment_results.json \
-    --output_dir experiment_results/
+bash probe/scripts/create_pile_datasets.sh
+# → probe/data/train-pile.jsonl, val-pile.jsonl
 ```
 
-## Repository Structure
+Or bring your own JSONL with a `"text"` field.
 
-```
-look-ahead/
-├── src/look_ahead_probe/              # Main package
-│   # Library modules (imported by users)
-│   ├── probe.py                       # Probe architectures (linear, MLP)
-│   ├── data_loading.py                # Data utilities
-│   ├── activation_extraction.py       # Activation extraction
-│   ├── train_probe.py                 # Training functions
-│   # Executable modules (run via python -m)
-│   ├── check_model.py                 # Model compatibility checker
-│   ├── build_look_ahead_activation_dataset.py  # Dataset builder
-│   ├── train_all_layers.py            # Multi-layer trainer
-│   ├── layer_k_experiment.py          # Full experiment pipeline
-│   └── visualize_results.py           # Results visualization
-├── scripts/                           # Shell script wrappers
-│   ├── run_layer_k_experiment.sh      # Quick test script
-│   └── check_model.sh                 # Model checker wrapper
-├── data/                              # Training/validation data
-│   ├── example_train.jsonl
-│   └── example_val.jsonl
-└── results/                           # Experiment outputs (git-ignored)
+---
+
+### Step 1 — Extract activations (needs GPU + model)
+
+```bash
+bash probe/scripts/build_dataset.sh
+# → probe/data/activations_train.pt      (activations + targets, ~60 GB for 32B)
+#   probe/data/activations_train.tokens.jsonl  (raw token IDs, lightweight)
+#   probe/data/activations_train.texts.jsonl   (decoded text, for inspection)
+# same files for val
 ```
 
-## Key Features
+Key env vars: `MODEL_NAME`, `MAX_K`, `MAX_NEW_TOKENS`, `MAX_TRAIN_PROMPTS`, `DEVICE`
 
-- **Multi-k extraction**: One dataset contains targets for all k values (k=1 to max_k)
-- **Multi-layer extraction**: Extract all model layers in a single pass
-- **Reusable datasets**: Run expensive inference once, train many probes
-- **Modular design**: Library modules for programmatic use, executable modules for CLI
+The `.pt` file schema:
+```
+{
+  layer_activations: {layer_idx → Tensor[N, d_model]},   # bfloat16
+  targets:           Tensor[N, max_k],                   # token IDs
+  generated_texts:   List[str],
+  metadata:          {model_name, max_k, d_model, vocab_size, layers, ...}
+}
+```
+`N` = total (position, prompt) pairs where position `i` has `max_k` valid look-ahead tokens.
 
-## Python API
-
-```python
-from look_ahead_probe import (
-    generate_and_extract_all_layers,
-    load_extracted_dataset,
-    FutureTokenProbe,
-    train_probe,
-    evaluate_probe,
-)
-from transformer_lens import HookedTransformer
-
-# Extract activations
-model = HookedTransformer.from_pretrained("gpt2-small")
-layer_acts, targets, texts = generate_and_extract_all_layers(
-    model=model, prompts=["Example"], max_k=10
-)
-
-# Load and train
-acts, targets, metadata = load_extracted_dataset("dataset.pt", layer_idx=6, k=5)
-probe = FutureTokenProbe(metadata['d_model'], metadata['vocab_size'], "linear")
-train_probe(probe, train_loader, val_loader, num_epochs=10)
+To push/pull from HuggingFace:
+```bash
+bash probe/scripts/push_dataset.sh   # upload .pt + sidecars to nick-rui/probe-data
+bash probe/scripts/pull_dataset.sh   # download them
 ```
 
-## Documentation
+---
 
-- See `src/look_ahead_probe/README.md` for detailed package documentation
-- See `scripts/README.md` for experiment scripts documentation
+### Step 2 — Train probes (no model needed, small GPU ok)
 
+```bash
+bash probe/scripts/train_probes.sh
+# → probe/results/experiment_results_linear/experiment_results.json
+```
+
+Key env vars: `TRAIN_DATASET`, `VAL_DATASET`, `OUTPUT_DIR`, `MAX_K`, `PROBE_TYPE` (`linear`/`mlp`), `NUM_EPOCHS`, `BATCH_SIZE`, `LEARNING_RATE`, `WEIGHT_DECAY`
+
+Probe weights are **not** saved by default (add `--save_weights` to save them; ~9 GB per layer for 32B).
+
+---
+
+### Step 3 — Plot results
+
+```bash
+# Edit RESULTS_PATH in the script, then:
+bash probe/scripts/plot_results.sh
+# → PNG files alongside the JSON
+```
+
+Env vars: `RESULTS_PATH`, `ACC_MIN`, `ACC_MAX` (y-axis range, default 0–0.5)
+
+---
+
+### Baselines
+
+N-gram (unigram/bigram/trigram) baselines using skip-k context — same "view" as the probe.
+
+```bash
+bash probe/scripts/run_baselines.sh
+# → probe/results/baselines/{unigram,bigram,trigram}_results.json
+# Feed any of these into plot_results.sh via RESULTS_PATH=...
+```
+
+Reads `.tokens.jsonl` by default (exact token IDs, no re-tokenization). Falls back to `.texts.jsonl` or `.pt` if needed (set `MODEL_NAME` for those).
+
+---
+
+## Source layout
+
+```
+probe/src/look_ahead_probe/
+├── activation_extraction.py          # generate + extract residual stream
+├── build_look_ahead_activation_dataset.py  # CLI for step 1
+├── train_probe.py                    # single-probe training loop
+├── train_all_layers.py               # train across all layers for one k
+├── train_probes.py                   # CLI for step 2 (loops over k)
+├── probe.py                          # FutureTokenProbe (linear / MLP)
+├── data_loading.py                   # dataset loading utilities
+├── baseline.py                       # n-gram baselines
+├── visualize_results.py              # CLI for step 3
+├── layer_k_experiment.py             # all-in-one shortcut (steps 1+2)
+└── check_model.py                    # inspect model config
+```
