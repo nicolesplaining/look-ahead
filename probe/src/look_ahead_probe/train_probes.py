@@ -33,6 +33,8 @@ def main():
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--learning_rate", type=float, default=1e-3)
     parser.add_argument("--weight_decay", type=float, default=1e-3)
+    parser.add_argument("--save_weights", action="store_true", default=False,
+                        help="Save probe weight files (large: ~3GB each for 32B models)")
     parser.add_argument("--device", type=str,
                         default="cuda" if torch.cuda.is_available() else "cpu")
 
@@ -80,6 +82,7 @@ def main():
             batch_size=args.batch_size,
             learning_rate=args.learning_rate,
             weight_decay=args.weight_decay,
+            save_weights=args.save_weights,
             output_dir=str(k_output_dir),
             device=args.device,
         )

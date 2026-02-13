@@ -21,6 +21,7 @@ def train_all_layers(
     batch_size: int = 64,
     learning_rate: float = 1e-3,
     weight_decay: float = 1e-3,
+    save_weights: bool = False,
     output_dir: str = "./trained_probes",
     device: str = "cuda"
 ):
@@ -88,21 +89,23 @@ def train_all_layers(
             results = evaluate_probe(probe, val_loader, device)
             print(f"Results: Loss={results['loss']:.4f}, Acc={results['accuracy']:.4f}, Top-5={results['top5_accuracy']:.4f}")
 
-        save_path = output_path / f"probe_layer_{layer_idx}_k{k}_{probe_type}.pt"
-        torch.save({
-            'probe_state_dict': probe.state_dict(),
-            'layer_idx': layer_idx,
-            'k': k,
-            'probe_type': probe_type,
-            'metadata': metadata,
-            'history': history,
-            'results': results,
-        }, save_path)
+        save_path = None
+        if save_weights:
+            save_path = output_path / f"probe_layer_{layer_idx}_k{k}_{probe_type}.pt"
+            torch.save({
+                'probe_state_dict': probe.state_dict(),
+                'layer_idx': layer_idx,
+                'k': k,
+                'probe_type': probe_type,
+                'metadata': metadata,
+                'history': history,
+                'results': results,
+            }, save_path)
 
         all_results[layer_idx] = {
             'history': history,
             'results': results,
-            'save_path': str(save_path)
+            'save_path': str(save_path) if save_path else None,
         }
 
     summary_path = output_path / f"training_summary_k{k}.pt"
@@ -141,6 +144,8 @@ def main():
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--learning_rate", type=float, default=1e-3)
     parser.add_argument("--weight_decay", type=float, default=1e-3)
+    parser.add_argument("--save_weights", action="store_true", default=False,
+                        help="Save probe weight files (large: ~3GB each for 32B models)")
 
     parser.add_argument("--output_dir", type=str, default="./trained_probes")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
@@ -161,6 +166,7 @@ def main():
         batch_size=args.batch_size,
         learning_rate=args.learning_rate,
         weight_decay=args.weight_decay,
+        save_weights=args.save_weights,
         output_dir=args.output_dir,
         device=args.device
     )
