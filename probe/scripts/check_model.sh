@@ -13,7 +13,8 @@ export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 # MODEL_NAME=meta-llama/Llama-3.2-1B
 # MODEL_NAME=meta-llama/Llama-3.2-3B
-MODEL_NAME=meta-llama/Llama-3.1-8B
+# MODEL_NAME=meta-llama/Llama-3.1-8B
+MODEL_NAME=Qwen/Qwen3-1.7B
 
 python -m look_ahead_probe.check_model \
     --model_name $MODEL_NAME \

@@ -16,11 +16,13 @@ export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train.pt}"
 VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val.pt}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/probe/results/experiment_results_linear}"
-MAX_K="${MAX_K:-3}"
-PROBE_TYPE="${PROBE_TYPE:-linear}"
-NUM_EPOCHS="${NUM_EPOCHS:-10}"
-BATCH_SIZE="${BATCH_SIZE:-256}"
-LEARNING_RATE="${LEARNING_RATE:-5e-4}"
+MAX_K=3
+PROBE_TYPE=linear
+NUM_EPOCHS=10
+
+# NOTE: increase batch size on GPU to fully utilize memory (nvidia-smi to check vRAM usage)
+BATCH_SIZE=4096
+LEARNING_RATE=5e-4
 DEVICE="${DEVICE:-cuda}"
 
 if [ ! -f "$TRAIN_DATASET" ]; then

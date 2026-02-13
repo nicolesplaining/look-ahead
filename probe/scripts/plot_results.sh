@@ -12,7 +12,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 # Path to results JSON
-RESULTS_PATH="$PROJECT_ROOT/probe/experiment_results_linear/experiment_results.json"
+RESULTS_PATH="$PROJECT_ROOT/probe/results/experiment_results_linear/experiment_results.json"
 
 echo "Plotting results from: $RESULTS_PATH"
 echo ""
