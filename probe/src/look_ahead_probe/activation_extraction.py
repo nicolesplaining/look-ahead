@@ -16,7 +16,7 @@ def generate_and_extract_all_layers(
     device: str = "cuda",
     layers: Optional[List[int]] = None,
     chunk_size: int = 128,
-) -> Tuple[dict, torch.Tensor, List[str]]:
+) -> Tuple[dict, torch.Tensor, List[str], List[List[int]]]:
     """
     Generate text and extract residual-stream activations from all layers.
 
@@ -42,6 +42,7 @@ def generate_and_extract_all_layers(
         layer_activations: Dict layer_idx -> Tensor[n_samples, d_model]
         targets: Tensor[n_samples, max_k]
         generated_texts: List of generated strings
+        generated_token_ids: List[List[int]] raw token IDs (no decode/re-encode roundtrip)
     """
     n_layers = model.config.num_hidden_layers
     if layers is None:
@@ -51,6 +52,7 @@ def generate_and_extract_all_layers(
     layer_act_buf = {layer_idx: [] for layer_idx in layers}
     all_targets = []
     generated_texts = []
+    generated_token_ids = []  # raw token ID sequences, no decode/re-encode roundtrip
 
     model.eval()
     pad_token_id = tokenizer.pad_token_id or tokenizer.eos_token_id
@@ -74,6 +76,7 @@ def generate_and_extract_all_layers(
 
             generated_text = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
             generated_texts.append(generated_text)
+            generated_token_ids.append(generated_ids[0].tolist())
 
             total_len = generated_ids.shape[1]
 
@@ -111,4 +114,4 @@ def generate_and_extract_all_layers(
     }
     targets = torch.stack(all_targets)
 
-    return layer_activations, targets, generated_texts
+    return layer_activations, targets, generated_texts, generated_token_ids

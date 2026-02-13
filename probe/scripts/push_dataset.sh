@@ -14,6 +14,10 @@ HF_REPO="nick-rui/probe-data"
 
 TRAIN_PT="$PROJECT_ROOT/probe/data/activations_train.pt"
 VAL_PT="$PROJECT_ROOT/probe/data/activations_val.pt"
+TRAIN_TEXTS="$PROJECT_ROOT/probe/data/activations_train.texts.jsonl"
+VAL_TEXTS="$PROJECT_ROOT/probe/data/activations_val.texts.jsonl"
+TRAIN_TOKENS="$PROJECT_ROOT/probe/data/activations_train.tokens.jsonl"
+VAL_TOKENS="$PROJECT_ROOT/probe/data/activations_val.tokens.jsonl"
 
 if [ ! -f "$TRAIN_PT" ]; then
     echo "ERROR: $TRAIN_PT not found. Run build_dataset.sh first."
@@ -49,6 +53,23 @@ api.upload_file(
 print("✓ Uploaded probe/activations_val.pt")
 EOF
 fi
+
+# Push lightweight sidecars (tokens + texts; tiny files, always useful)
+python - <<EOF
+import os
+from huggingface_hub import HfApi
+api = HfApi()
+for local, remote in [
+    ("${TRAIN_TOKENS}", "probe/activations_train.tokens.jsonl"),
+    ("${VAL_TOKENS}",   "probe/activations_val.tokens.jsonl"),
+    ("${TRAIN_TEXTS}",  "probe/activations_train.texts.jsonl"),
+    ("${VAL_TEXTS}",    "probe/activations_val.texts.jsonl"),
+]:
+    if os.path.exists(local):
+        api.upload_file(path_or_fileobj=local, path_in_repo=remote,
+                        repo_id="${HF_REPO}", repo_type="dataset")
+        print(f"✓ Uploaded {remote}")
+EOF
 
 echo ""
 echo "✓ Done. Pull with: HF_REPO=$HF_REPO bash probe/scripts/pull_dataset.sh"

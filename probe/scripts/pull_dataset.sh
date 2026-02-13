@@ -29,8 +29,12 @@ def pull(filename, dest):
     except Exception as e:
         print(f"  (skipped {filename}: {e})")
 
-pull("probe/activations_train.pt", "${DATA_DIR}/activations_train.pt")
-pull("probe/activations_val.pt",   "${DATA_DIR}/activations_val.pt")
+pull("probe/activations_train.pt",           "${DATA_DIR}/activations_train.pt")
+pull("probe/activations_val.pt",             "${DATA_DIR}/activations_val.pt")
+pull("probe/activations_train.tokens.jsonl", "${DATA_DIR}/activations_train.tokens.jsonl")
+pull("probe/activations_val.tokens.jsonl",   "${DATA_DIR}/activations_val.tokens.jsonl")
+pull("probe/activations_train.texts.jsonl",  "${DATA_DIR}/activations_train.texts.jsonl")
+pull("probe/activations_val.texts.jsonl",    "${DATA_DIR}/activations_val.texts.jsonl")
 EOF
 
 echo ""

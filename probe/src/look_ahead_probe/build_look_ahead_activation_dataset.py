@@ -1,6 +1,7 @@
 """Build look-ahead activation dataset for probe training."""
 
 import argparse
+import json
 from pathlib import Path
 
 import torch
@@ -65,7 +66,7 @@ def main():
     print(f"Loaded {len(prompts)} prompts")
 
     print(f"Extracting activations (max_k={args.max_k})...")
-    layer_activations, targets, generated_texts = generate_and_extract_all_layers(
+    layer_activations, targets, generated_texts, generated_token_ids = generate_and_extract_all_layers(
         model=model, tokenizer=tokenizer, prompts=prompts, max_k=args.max_k,
         max_new_tokens=args.max_new_tokens, device=args.device, layers=layers
     )
@@ -95,7 +96,22 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(dataset, output_path)
 
-    print(f"\nDataset saved to: {output_path}")
+    # Save raw token IDs as a lightweight JSONL sidecar.
+    # Baselines use these directly — no decode/re-encode roundtrip.
+    tokens_path = output_path.with_suffix('.tokens.jsonl')
+    with open(tokens_path, 'w', encoding='utf-8') as f:
+        for token_ids in generated_token_ids:
+            f.write(json.dumps({'tokens': token_ids}) + '\n')
+
+    # Also save human-readable texts for inspection.
+    texts_path = output_path.with_suffix('.texts.jsonl')
+    with open(texts_path, 'w', encoding='utf-8') as f:
+        for text in generated_texts:
+            f.write(json.dumps({'text': text}) + '\n')
+
+    print(f"\nDataset saved to:  {output_path}")
+    print(f"Token IDs saved to: {tokens_path}  ({tokens_path.stat().st_size // 1024} KB)")
+    print(f"Texts saved to:    {texts_path}  ({texts_path.stat().st_size // 1024} KB)")
     print(f"Layers: {sorted(layer_activations.keys())}")
     print(f"Samples: {len(targets)}, Targets shape: {targets.shape}")
 
