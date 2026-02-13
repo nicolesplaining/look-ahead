@@ -4,7 +4,7 @@
 # Can be run from any directory.
 #
 # Override defaults via env vars, e.g.:
-#   MODEL_NAME=gpt2 MAX_PROMPTS=50 bash poem/scripts/build_dataset.sh
+#   MODEL_NAME=gpt2 MAX_TRAIN_PROMPTS=400 MAX_VAL_PROMPTS=100 bash poem/scripts/build_dataset.sh
 
 set -e
 
@@ -16,7 +16,8 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 MODEL_NAME="${MODEL_NAME:-meta-llama/Llama-3.1-8B}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
-MAX_PROMPTS="${MAX_PROMPTS:-}"
+MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
+MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
 
 TRAIN_INPUT="$PROJECT_ROOT/poem/data/poems-train.jsonl"
@@ -45,8 +46,8 @@ TRAIN_CMD=(
     --max_new_tokens "$MAX_NEW_TOKENS"
     --device "$DEVICE"
 )
-if [ -n "$MAX_PROMPTS" ]; then
-    TRAIN_CMD+=(--max_prompts "$MAX_PROMPTS")
+if [ -n "$MAX_TRAIN_PROMPTS" ]; then
+    TRAIN_CMD+=(--max_prompts "$MAX_TRAIN_PROMPTS")
 fi
 "${TRAIN_CMD[@]}"
 
@@ -62,8 +63,8 @@ if [ -f "$VAL_INPUT" ]; then
         --max_new_tokens "$MAX_NEW_TOKENS"
         --device "$DEVICE"
     )
-    if [ -n "$MAX_PROMPTS" ]; then
-        VAL_CMD+=(--max_prompts "$MAX_PROMPTS")
+    if [ -n "$MAX_VAL_PROMPTS" ]; then
+        VAL_CMD+=(--max_prompts "$MAX_VAL_PROMPTS")
     fi
     "${VAL_CMD[@]}"
 else
