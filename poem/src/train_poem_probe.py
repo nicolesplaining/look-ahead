@@ -14,7 +14,7 @@ Outputs:
 """
 
 from pathlib import Path
-from typing import Optional
+from typing import List, Optional
 
 import torch
 from torch.utils.data import DataLoader, TensorDataset
@@ -35,6 +35,7 @@ def train_all_layers_at_position(
     output_dir: str = "poem_results",
     device: str = "cuda",
     save_weights: bool = False,
+    tokenizer=None,
 ) -> dict:
     """
     Train probes on all layers using activations at position i = train_position.
@@ -123,8 +124,17 @@ def train_all_layers_at_position(
         )
 
         results = None
+        decoded_predictions: Optional[List[dict]] = None
         if val_loader is not None:
             results = evaluate_probe(probe, val_loader, device=device)
+            if tokenizer is not None:
+                decoded_predictions = [
+                    {
+                        "predicted": tokenizer.decode([int(p)]).strip(),
+                        "target":    tokenizer.decode([int(t)]).strip(),
+                    }
+                    for p, t in zip(results["predictions"], results["targets"])
+                ]
 
         save_path = None
         if save_weights:
@@ -143,6 +153,7 @@ def train_all_layers_at_position(
             'k': train_position,   # 'k' field used by visualize_results.py for grouping
             'history': history,
             'results': results,
+            'decoded_predictions': decoded_predictions,
             'save_path': save_path,
         }
 
@@ -169,6 +180,8 @@ def make_experiment_results_json(all_results: dict, metadata: dict, config: dict
             entry['val_accuracy'] = float(data['results']['accuracy'])
             entry['val_top5_accuracy'] = float(data['results']['top5_accuracy'])
             entry['val_loss'] = float(data['results']['loss'])
+        if data.get('decoded_predictions') is not None:
+            entry['decoded_predictions'] = data['decoded_predictions']
         if data.get('save_path'):
             entry['probe_path'] = data['save_path']
         results[key] = entry

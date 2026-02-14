@@ -49,6 +49,42 @@ def load_poem_prompts(jsonl_path: str, max_prompts: Optional[int] = None) -> Lis
     return prompts
 
 
+def _try_generate(
+    model: AutoModelForCausalLM,
+    tokenizer: AutoTokenizer,
+    prompt_tokens: torch.Tensor,
+    prompt_length: int,
+    max_new_tokens: int,
+    pad_token_id: int,
+    do_sample: bool = False,
+) -> Optional[Tuple[torch.Tensor, int]]:
+    """
+    Attempt to generate a second line.
+
+    Returns (generated_ids, target_seq_pos) on success, or None if:
+      - no newline was generated within max_new_tokens
+      - the second line is empty (newline was the very first generated token)
+    """
+    generated_ids = model.generate(
+        prompt_tokens,
+        max_new_tokens=max_new_tokens,
+        do_sample=do_sample,
+        temperature=1.0 if do_sample else None,
+        pad_token_id=pad_token_id,
+    )
+
+    newline2_pos: Optional[int] = None
+    for i in range(prompt_length, generated_ids.shape[1]):
+        if '\n' in tokenizer.decode([generated_ids[0, i].item()]):
+            newline2_pos = i
+            break
+
+    if newline2_pos is None or newline2_pos == prompt_length:
+        return None
+
+    return generated_ids, newline2_pos - 1  # target_seq_pos
+
+
 def extract_poem_activations(
     model: AutoModelForCausalLM,
     tokenizer: AutoTokenizer,
@@ -95,30 +131,23 @@ def extract_poem_activations(
             # i = 0 is the last prompt token (the final \n of the first line)
             newline_seq_pos = prompt_length - 1
 
-            # Generate the second line
-            generated_ids = model.generate(
-                prompt_tokens,
-                max_new_tokens=max_new_tokens,
-                do_sample=False,
-                pad_token_id=pad_token_id,
-            )  # [1, prompt_len + generated_len]
-
-            # Find first newline in the generated (second-line) portion
-            newline2_pos: Optional[int] = None
-            for i in range(prompt_length, generated_ids.shape[1]):
-                if '\n' in tokenizer.decode([generated_ids[0, i].item()]):
-                    newline2_pos = i
+            # Try up to 3 times: first greedy, then with sampling.
+            gen_result = None
+            for attempt in range(3):
+                gen_result = _try_generate(
+                    model, tokenizer, prompt_tokens, prompt_length,
+                    max_new_tokens, pad_token_id,
+                    do_sample=(attempt > 0),
+                )
+                if gen_result is not None:
                     break
 
-            # Skip if no newline or if it's the very first generated token
-            if newline2_pos is None or newline2_pos <= prompt_length:
+            if gen_result is None:
                 n_skipped += 1
                 continue
 
-            # Target = last token before the terminating newline (the rhyming word)
-            target_seq_pos = newline2_pos - 1
+            generated_ids, target_seq_pos = gen_result
             target_token = generated_ids[0, target_seq_pos]
-            target_i = target_seq_pos - newline_seq_pos  # always >= 1
 
             # Valid range in sequence space:
             #   start: as far back as possible, capped at max_back tokens before newline

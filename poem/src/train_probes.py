@@ -37,6 +37,8 @@ def main():
     parser.add_argument("--weight_decay", type=float, default=1e-3)
     parser.add_argument("--save_weights", action="store_true",
                         help="Save probe weights to disk (off by default)")
+    parser.add_argument("--model_name", type=str, default=None,
+                        help="HuggingFace model name for tokenizer (enables decoded_predictions in JSON)")
     parser.add_argument("--device", type=str,
                         default="cuda" if torch.cuda.is_available() else "cpu")
 
@@ -47,6 +49,14 @@ def main():
     run_dir = Path(args.output_dir) / i_label
     run_dir.mkdir(parents=True, exist_ok=True)
     probes_dir = run_dir / "probes"
+
+    # Optionally load tokenizer for decoding predictions → English
+    tokenizer = None
+    if args.model_name:
+        from transformers import AutoTokenizer
+        print(f"Loading tokenizer: {args.model_name}")
+        tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+        print("✓ Tokenizer loaded\n")
 
     # Load metadata (no model needed)
     data = torch.load(args.train_dataset, weights_only=False)
@@ -75,6 +85,7 @@ def main():
         output_dir=str(probes_dir),
         device=args.device,
         save_weights=args.save_weights,
+        tokenizer=tokenizer,
     )
 
     # Save training summary
