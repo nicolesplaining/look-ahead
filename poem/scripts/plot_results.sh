@@ -14,6 +14,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/poem/results/experiment_results_linear/experiment_results.json}"
+ACC_MIN="${ACC_MIN:-0}"
+ACC_MAX="${ACC_MAX:-0.5}"
 
 if [ ! -f "$RESULTS_PATH" ]; then
     echo "ERROR: Results file not found at $RESULTS_PATH"
@@ -22,12 +24,14 @@ if [ ! -f "$RESULTS_PATH" ]; then
 fi
 
 echo "Plotting poem results from: $RESULTS_PATH"
+echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
 python -m look_ahead_probe.visualize_results \
     "$RESULTS_PATH" \
     --show-val \
-    --show-top5
+    --acc-min "$ACC_MIN" \
+    --acc-max "$ACC_MAX"
 
 echo ""
 echo "✓ Plots created in $(dirname "$RESULTS_PATH")/"

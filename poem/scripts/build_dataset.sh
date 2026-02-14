@@ -14,8 +14,9 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 # poem_probe imports look_ahead_probe, so both src dirs are needed
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="${MODEL_NAME:-meta-llama/Llama-3.1-8B}"
-MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
+MODEL_NAME="${MODEL_NAME:-Qwen/Qwen2.5-32B}"
+MAX_BACK="${MAX_BACK:-8}"          # tokens before the first-line \n to store (i = -1 ... -MAX_BACK)
+MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-32}"
 MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
 MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
@@ -32,6 +33,7 @@ fi
 
 echo "Building poem activation datasets from: $PROJECT_ROOT"
 echo "Model:          $MODEL_NAME"
+echo "max_back:       $MAX_BACK"
 echo "max_new_tokens: $MAX_NEW_TOKENS"
 echo "Device:         $DEVICE"
 echo ""
@@ -39,10 +41,11 @@ echo ""
 # --- Step 1a: training activations ---
 echo "=== Step 1a: Building training activations ==="
 TRAIN_CMD=(
-    python -m poem_probe.extract_poem_dataset
+    python -m extract_poem_dataset
     --model_name "$MODEL_NAME"
     --poems_path "$TRAIN_INPUT"
     --output_path "$TRAIN_OUTPUT"
+    --max_back "$MAX_BACK"
     --max_new_tokens "$MAX_NEW_TOKENS"
     --device "$DEVICE"
 )
@@ -56,10 +59,11 @@ if [ -f "$VAL_INPUT" ]; then
     echo ""
     echo "=== Step 1b: Building validation activations ==="
     VAL_CMD=(
-        python -m poem_probe.extract_poem_dataset
+        python -m extract_poem_dataset
         --model_name "$MODEL_NAME"
         --poems_path "$VAL_INPUT"
         --output_path "$VAL_OUTPUT"
+        --max_back "$MAX_BACK"
         --max_new_tokens "$MAX_NEW_TOKENS"
         --device "$DEVICE"
     )
