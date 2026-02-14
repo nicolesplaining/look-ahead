@@ -73,6 +73,7 @@ python -m visualize_results \
     --show-val \
     --show-top5 \
     --show-rhyme \
+    --show-rhyme5 \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR"

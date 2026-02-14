@@ -76,18 +76,16 @@ with open("$RESULTS_FILE") as f:
     data = json.load(f)
 
 entries = sorted(data["results"].values(), key=lambda x: x["layer"])
-has_val   = any("val_accuracy"   in e for e in entries)
-has_rhyme = any("rhyme_accuracy" in e for e in entries)
+has_val    = any("val_accuracy"        in e for e in entries)
+has_rhyme  = any("rhyme_accuracy"      in e for e in entries)
+has_rhyme5 = any("top5_rhyme_accuracy" in e for e in entries)
 
-if has_val and has_rhyme:
-    header = f"{'Layer':>5} | {'Train Acc':>9} | {'Val Acc':>8} | {'Top-5':>6} | {'Rhyme%':>7}"
-    sep    = "=" * 62
-elif has_val:
-    header = f"{'Layer':>5} | {'Train Acc':>9} | {'Val Acc':>8} | {'Top-5':>6}"
-    sep    = "=" * 47
-else:
-    header = f"{'Layer':>5} | {'Train Acc':>9}"
-    sep    = "=" * 20
+cols = [("Layer", 5), ("Train Acc", 9)]
+if has_val:    cols += [("Val Acc", 8), ("Top-5", 6)]
+if has_rhyme:  cols += [("Rhyme@1", 7)]
+if has_rhyme5: cols += [("Rhyme@5", 7)]
+header = " | ".join(f"{name:>{w}}" for name, w in cols)
+sep    = "=" * len(header)
 
 print("\n" + sep)
 print(header)
@@ -97,24 +95,28 @@ best_layer, best_acc = None, -1.0
 for e in entries:
     row = f"{e['layer']:>5} | {e['train_accuracy']:>9.4f}"
     if has_val:
-        val_str  = f"{e['val_accuracy']:.4f}"      if "val_accuracy"      in e else "     —"
-        top5_str = f"{e['val_top5_accuracy']:.4f}" if "val_top5_accuracy" in e else "     —"
+        val_str  = f"{e['val_accuracy']:.4f}"      if "val_accuracy"      in e else "      —"
+        top5_str = f"{e['val_top5_accuracy']:.4f}" if "val_top5_accuracy" in e else "      —"
         row += f" | {val_str:>8} | {top5_str:>6}"
         if e.get("val_accuracy", -1.0) > best_acc:
             best_acc, best_layer = e["val_accuracy"], e["layer"]
     if has_rhyme:
-        rhyme_str = f"{e['rhyme_accuracy']:.4f}" if "rhyme_accuracy" in e else "      —"
-        row += f" | {rhyme_str:>7}"
+        row += f" | {e['rhyme_accuracy']:.4f}" if "rhyme_accuracy" in e else " |       —"
+    if has_rhyme5:
+        row += f" | {e['top5_rhyme_accuracy']:.4f}" if "top5_rhyme_accuracy" in e else " |       —"
     print(row)
 
 print(sep)
 if best_layer is not None:
-    print(f"Best val acc: Layer {best_layer}  ({best_acc:.4f})")
+    print(f"Best val acc:    Layer {best_layer}  ({best_acc:.4f})")
 if has_rhyme:
-    best_rhyme = max((e.get("rhyme_accuracy", -1.0) for e in entries), default=None)
-    best_rl    = next((e["layer"] for e in entries if e.get("rhyme_accuracy") == best_rhyme), None)
-    if best_rhyme is not None and best_rhyme >= 0:
-        print(f"Best rhyme%:  Layer {best_rl}  ({best_rhyme:.4f})")
+    best_r1 = max(e.get("rhyme_accuracy", -1.0) for e in entries)
+    best_r1l = next(e["layer"] for e in entries if e.get("rhyme_accuracy") == best_r1)
+    print(f"Best Rhyme@1:    Layer {best_r1l}  ({best_r1:.4f})")
+if has_rhyme5:
+    best_r5 = max(e.get("top5_rhyme_accuracy", -1.0) for e in entries)
+    best_r5l = next(e["layer"] for e in entries if e.get("top5_rhyme_accuracy") == best_r5)
+    print(f"Best Rhyme@5:    Layer {best_r5l}  ({best_r5:.4f})")
 EOF
 fi
 

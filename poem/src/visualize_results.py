@@ -30,9 +30,10 @@ def organize_results_by_i(results):
             layer = value['layer']
             i_val = value.get('k')   # 'k' stores train_position (the i value)
             metrics = {
-                'val_accuracy':      value.get('val_accuracy'),
-                'val_top5_accuracy': value.get('val_top5_accuracy'),
-                'rhyme_accuracy':    value.get('rhyme_accuracy'),
+                'val_accuracy':       value.get('val_accuracy'),
+                'val_top5_accuracy':  value.get('val_top5_accuracy'),
+                'rhyme_accuracy':     value.get('rhyme_accuracy'),
+                'top5_rhyme_accuracy': value.get('top5_rhyme_accuracy'),
             }
             results_by_i[i_val].append((layer, metrics))
     for i in results_by_i:
@@ -41,7 +42,7 @@ def organize_results_by_i(results):
 
 
 def plot_results(all_results_by_i, labels, colors, output_dir,
-                 show_val=False, show_top5=False, show_rhyme=False,
+                 show_val=False, show_top5=False, show_rhyme=False, show_rhyme5=False,
                  acc_min=0.0, acc_max=1.0):
     # Resolve unspecified colors from matplotlib's default cycle
     prop_cycle = plt.rcParams['axes.prop_cycle']
@@ -52,9 +53,10 @@ def plot_results(all_results_by_i, labels, colors, output_dir,
     ]
 
     metric_specs = []
-    if show_val:   metric_specs.append(('val_accuracy',      'Top-1',    '-'))
-    if show_top5:  metric_specs.append(('val_top5_accuracy', 'Top-5',  '--'))
-    if show_rhyme: metric_specs.append(('rhyme_accuracy',    'Rhyme%', ':'))
+    if show_val:    metric_specs.append(('val_accuracy',        'Top-1',      '-'))
+    if show_top5:   metric_specs.append(('val_top5_accuracy',   'Top-5',      '--'))
+    if show_rhyme:  metric_specs.append(('rhyme_accuracy',      'Rhyme@1',    ':'))
+    if show_rhyme5: metric_specs.append(('top5_rhyme_accuracy', 'Rhyme@5',    '-.'))
 
     multi_metric = len(metric_specs) > 1
 
@@ -136,14 +138,15 @@ def main():
     )
     parser.add_argument('--show-val',   action='store_true', help='Plot val accuracy')
     parser.add_argument('--show-top5',  action='store_true', help='Plot top-5 val accuracy')
-    parser.add_argument('--show-rhyme', action='store_true', help='Plot rhyme accuracy')
+    parser.add_argument('--show-rhyme',  action='store_true', help='Plot top-1 rhyme accuracy')
+    parser.add_argument('--show-rhyme5', action='store_true', help='Plot top-5 rhyme accuracy')
     parser.add_argument('--acc-min', type=float, default=0.0, help='Y-axis lower bound (default: 0.0)')
     parser.add_argument('--acc-max', type=float, default=1.0, help='Y-axis upper bound (default: 1.0)')
 
     args = parser.parse_args()
 
-    if not (args.show_val or args.show_top5 or args.show_rhyme):
-        print("ERROR: specify at least one of --show-val, --show-top5, --show-rhyme")
+    if not (args.show_val or args.show_top5 or args.show_rhyme or args.show_rhyme5):
+        print("ERROR: specify at least one of --show-val, --show-top5, --show-rhyme, --show-rhyme5")
         sys.exit(1)
 
     n = len(args.results_json)
@@ -179,6 +182,7 @@ def main():
                  show_val=args.show_val,
                  show_top5=args.show_top5,
                  show_rhyme=args.show_rhyme,
+                 show_rhyme5=args.show_rhyme5,
                  acc_min=args.acc_min,
                  acc_max=args.acc_max)
 

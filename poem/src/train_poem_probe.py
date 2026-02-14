@@ -145,7 +145,7 @@ def train_all_layers_at_position(
         results = None
         decoded_predictions: Optional[List[dict]] = None
         rhyme_accuracy: Optional[float] = None
-        rhyme_n_checked: int = 0
+        top5_rhyme_accuracy: Optional[float] = None
         if val_loader is not None:
             results = evaluate_probe(probe, val_loader, device=device)
             if tokenizer is not None:
@@ -156,16 +156,32 @@ def train_all_layers_at_position(
                     }
                     for p, t in zip(results["predictions"], results["targets"])
                 ]
+
+                # Top-1 rhyme: None (not in CMU dict) counts as non-rhyme
                 rhyme_scores = [
                     _rhyme_score(d["predicted"], d["target"])
                     for d in decoded_predictions
                 ]
-                # None (word not in CMU dict) counts as a non-rhyme.
-                # n is always the total number of val examples.
                 n_total = len(rhyme_scores)
-                n_rhyming = sum(1 for r in rhyme_scores if r is True)
-                rhyme_n_checked = n_total
-                rhyme_accuracy = n_rhyming / n_total if n_total else None
+                rhyme_accuracy = sum(1 for r in rhyme_scores if r is True) / n_total if n_total else None
+
+                # Top-5 rhyme: collect top-5 token IDs with a second forward pass
+                all_top5_preds: List[List[int]] = []
+                probe.eval()
+                with torch.no_grad():
+                    for acts, _ in val_loader:
+                        acts = acts.to(device=device, dtype=torch.float32)
+                        top5 = probe(acts).topk(5, dim=-1).indices
+                        all_top5_preds.extend(top5.cpu().tolist())
+
+                top5_rhyme_scores = [
+                    any(
+                        _rhyme_score(tokenizer.decode([int(p_id)]).strip(), d["target"]) is True
+                        for p_id in top5_ids
+                    )
+                    for top5_ids, d in zip(all_top5_preds, decoded_predictions)
+                ]
+                top5_rhyme_accuracy = sum(top5_rhyme_scores) / len(top5_rhyme_scores) if top5_rhyme_scores else None
 
         save_path = None
         if save_weights:
@@ -186,7 +202,7 @@ def train_all_layers_at_position(
             'results': results,
             'decoded_predictions': decoded_predictions,
             'rhyme_accuracy': rhyme_accuracy,
-            'rhyme_n_checked': rhyme_n_checked,
+            'top5_rhyme_accuracy': top5_rhyme_accuracy,
             'save_path': save_path,
         }
 
@@ -196,6 +212,8 @@ def train_all_layers_at_position(
             msg += f"  val={results['accuracy']:.4f}  top5={results['top5_accuracy']:.4f}"
         if rhyme_accuracy is not None:
             msg += f"  rhyme={rhyme_accuracy:.4f}"
+        if top5_rhyme_accuracy is not None:
+            msg += f"  rhyme@5={top5_rhyme_accuracy:.4f}"
         print(msg)
 
     return all_results
@@ -219,7 +237,8 @@ def make_experiment_results_json(all_results: dict, metadata: dict, config: dict
             entry['decoded_predictions'] = data['decoded_predictions']
         if data.get('rhyme_accuracy') is not None:
             entry['rhyme_accuracy'] = float(data['rhyme_accuracy'])
-            entry['rhyme_n_checked'] = int(data['rhyme_n_checked'])
+        if data.get('top5_rhyme_accuracy') is not None:
+            entry['top5_rhyme_accuracy'] = float(data['top5_rhyme_accuracy'])
         if data.get('save_path'):
             entry['probe_path'] = data['save_path']
         results[key] = entry
