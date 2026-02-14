@@ -52,7 +52,7 @@ def plot_results(all_results_by_i, labels, colors, output_dir,
     ]
 
     metric_specs = []
-    if show_val:   metric_specs.append(('val_accuracy',      'Val',    '-'))
+    if show_val:   metric_specs.append(('val_accuracy',      'Top-1',    '-'))
     if show_top5:  metric_specs.append(('val_top5_accuracy', 'Top-5',  '--'))
     if show_rhyme: metric_specs.append(('rhyme_accuracy',    'Rhyme%', ':'))
 
