@@ -66,15 +66,10 @@ echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
 echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
-<<<<<<< Updated upstream
 python -m visualize_results \
-    "${ORDERED[@]}" \
-=======
-python -m visualize \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
->>>>>>> Stashed changes
     --show-val \
     --show-top5 \
     --show-rhyme \
