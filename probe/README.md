@@ -64,12 +64,13 @@ Probe weights are **not** saved by default (add `--save_weights` to save them; ~
 ### Step 3 — Plot results
 
 ```bash
-# Edit RESULTS_PATH in the script, then:
 bash probe/scripts/plot_results.sh
-# → PNG files alongside the JSON
+# → probe/results/plots/*.png
+# Overlays probe + all three baseline JSONs on a single plot per k value.
+# Any of the four result files may be absent — script skips missing ones.
 ```
 
-Env vars: `RESULTS_PATH`, `ACC_MIN`, `ACC_MAX` (y-axis range, default 0–0.5)
+Key env vars: `PROBE_RESULTS`, `UNIGRAM_RESULTS`, `BIGRAM_RESULTS`, `TRIGRAM_RESULTS`, `OUTPUT_DIR`, `ACC_MIN`, `ACC_MAX`
 
 ---
 
@@ -99,7 +100,6 @@ probe/src/look_ahead_probe/
 ├── probe.py                          # FutureTokenProbe (linear / MLP)
 ├── data_loading.py                   # dataset loading utilities
 ├── baseline.py                       # n-gram baselines
-├── visualize_results.py              # CLI for step 3
-├── layer_k_experiment.py             # all-in-one shortcut (steps 1+2)
+├── visualize_results.py              # CLI for step 3 (multi-JSON overlay)
 └── check_model.py                    # inspect model config
 ```
