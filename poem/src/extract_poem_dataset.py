@@ -39,6 +39,9 @@ def load_poem_prompts(jsonl_path: str, max_prompts: Optional[int] = None) -> Lis
     prompts = []
     with open(jsonl_path, 'r') as f:
         for line in f:
+            line = line.strip()
+            if not line:
+                continue
             data = json.loads(line)
             prompts.append(data['text'])
             if max_prompts is not None and len(prompts) >= max_prompts:

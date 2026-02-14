@@ -43,6 +43,12 @@ The `.pt` file schema:
 ```
 `N` = total (position, poem) pairs; each poem contributes multiple samples (one per valid position i).
 
+To push/pull from HuggingFace:
+```bash
+bash poem/scripts/push_dataset.sh   # upload .pt files to nick-rui/probe-data
+bash poem/scripts/pull_dataset.sh   # download them
+```
+
 ---
 
 ### Step 2 — Train probes at a specific position (no model needed)
@@ -91,6 +97,8 @@ poem/src/
 
 poem/scripts/
 ├── build_dataset.sh          # step 1 wrapper  (env: MAX_BACK)
+├── push_dataset.sh           # upload .pt to HuggingFace
+├── pull_dataset.sh           # download .pt from HuggingFace
 ├── train_probes.sh           # step 2 wrapper  (env: TRAIN_POSITION)
 └── plot_results.sh           # step 3 wrapper
 ```
