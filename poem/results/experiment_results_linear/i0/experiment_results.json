@@ -1,0 +1,7871 @@
+{
+  "config": {
+    "model_name": "Qwen/Qwen2.5-7B",
+    "task": "poem_rhyme_prediction_i_indexed",
+    "train_position": 0,
+    "train_dataset": "/home/ubuntu/look-ahead/poem/data/activations_train.pt",
+    "val_dataset": "/home/ubuntu/look-ahead/poem/data/activations_val.pt",
+    "probe_type": "linear",
+    "num_epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.001
+  },
+  "metadata": {
+    "model_name": "Qwen/Qwen2.5-7B",
+    "max_back": 8,
+    "n_poems": 341,
+    "n_samples": 5887,
+    "d_model": 3584,
+    "vocab_size": 152064,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "task": "poem_rhyme_prediction_i_indexed",
+    "i_range": [
+      -8,
+      14
+    ]
+  },
+  "results": {
+    "layer0_i0": {
+      "layer": 0,
+      "k": 0,
+      "train_accuracy": 0.017595307917888565,
+      "train_loss": 5.489717960357666,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 10.180131276448568,
+      "decoded_predictions": [
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "see",
+          "target": "aloud"
+        },
+        {
+          "predicted": "see",
+          "target": "raft"
+        },
+        {
+          "predicted": "see",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "see",
+          "target": "land"
+        },
+        {
+          "predicted": "see",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "see",
+          "target": "sky"
+        },
+        {
+          "predicted": "see",
+          "target": "love"
+        },
+        {
+          "predicted": "see",
+          "target": "dream"
+        },
+        {
+          "predicted": "see",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "see",
+          "target": "east"
+        },
+        {
+          "predicted": "see",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "see",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "see",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "see",
+          "target": "home"
+        },
+        {
+          "predicted": "see",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "see",
+          "target": "see"
+        },
+        {
+          "predicted": "see",
+          "target": "tea"
+        },
+        {
+          "predicted": "see",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "see",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "see",
+          "target": "mystery"
+        },
+        {
+          "predicted": "see",
+          "target": "couch"
+        },
+        {
+          "predicted": "see",
+          "target": "alone"
+        },
+        {
+          "predicted": "see",
+          "target": "lick"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "see",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "see",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "air"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "see",
+          "target": "span"
+        },
+        {
+          "predicted": "see",
+          "target": "again"
+        },
+        {
+          "predicted": "see",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer1_i0": {
+      "layer": 1,
+      "k": 0,
+      "train_accuracy": 0.02932551319648094,
+      "train_loss": 5.22084192796187,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 10.366039594014486,
+      "decoded_predictions": [
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "see",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "see",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "away",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "away",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "see",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "away",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "see",
+          "target": "tea"
+        },
+        {
+          "predicted": "away",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "away",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "away",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "away",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "away",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "see",
+          "target": "span"
+        },
+        {
+          "predicted": "away",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer2_i0": {
+      "layer": 2,
+      "k": 0,
+      "train_accuracy": 0.02346041055718475,
+      "train_loss": 5.034694628282026,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 10.562003135681152,
+      "decoded_predictions": [
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "see",
+          "target": "aloud"
+        },
+        {
+          "predicted": "see",
+          "target": "raft"
+        },
+        {
+          "predicted": "see",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "see",
+          "target": "land"
+        },
+        {
+          "predicted": "see",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "see",
+          "target": "sky"
+        },
+        {
+          "predicted": "see",
+          "target": "love"
+        },
+        {
+          "predicted": "see",
+          "target": "dream"
+        },
+        {
+          "predicted": "see",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "see",
+          "target": "east"
+        },
+        {
+          "predicted": "see",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "see",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "see",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "see",
+          "target": "home"
+        },
+        {
+          "predicted": "see",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "night",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "see",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "see",
+          "target": "mystery"
+        },
+        {
+          "predicted": "see",
+          "target": "couch"
+        },
+        {
+          "predicted": "see",
+          "target": "alone"
+        },
+        {
+          "predicted": "see",
+          "target": "lick"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "see",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "air"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "see",
+          "target": "span"
+        },
+        {
+          "predicted": "see",
+          "target": "again"
+        },
+        {
+          "predicted": "see",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer3_i0": {
+      "layer": 3,
+      "k": 0,
+      "train_accuracy": 0.0967741935483871,
+      "train_loss": 4.7032224915244365,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 10.738188743591309,
+      "decoded_predictions": [
+        {
+          "predicted": "night",
+          "target": "rain"
+        },
+        {
+          "predicted": "lee",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "night",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "night",
+          "target": "great"
+        },
+        {
+          "predicted": "night",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "night",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "night",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "night",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "night",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "away",
+          "target": "dwell"
+        },
+        {
+          "predicted": "night",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "night",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "night",
+          "target": "mark"
+        },
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "night",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "away",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "away",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "lee",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "night",
+          "target": "seemed"
+        },
+        {
+          "predicted": "night",
+          "target": "tune"
+        },
+        {
+          "predicted": "away",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "again",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "night",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "away",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer4_i0": {
+      "layer": 4,
+      "k": 0,
+      "train_accuracy": 0.15835777126099707,
+      "train_loss": 4.51572695645419,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 11.166906356811523,
+      "decoded_predictions": [
+        {
+          "predicted": "lee",
+          "target": "rain"
+        },
+        {
+          "predicted": "indeed",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "away",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "lee",
+          "target": "through"
+        },
+        {
+          "predicted": "lee",
+          "target": "great"
+        },
+        {
+          "predicted": "lee",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "see",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "lee",
+          "target": "east"
+        },
+        {
+          "predicted": "see",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "night",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "day",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "see",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "indeed",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "night",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "away",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "away",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "indeed",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "away",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "again",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "night",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "away",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer5_i0": {
+      "layer": 5,
+      "k": 0,
+      "train_accuracy": 0.10557184750733138,
+      "train_loss": 4.568984768607399,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 11.356754938761393,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "see",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "see",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "see",
+          "target": "love"
+        },
+        {
+          "predicted": "see",
+          "target": "dream"
+        },
+        {
+          "predicted": "see",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "again",
+          "target": "east"
+        },
+        {
+          "predicted": "see",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "see",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "see",
+          "target": "home"
+        },
+        {
+          "predicted": "see",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "again",
+          "target": "see"
+        },
+        {
+          "predicted": "see",
+          "target": "tea"
+        },
+        {
+          "predicted": "again",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "see",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "see",
+          "target": "mystery"
+        },
+        {
+          "predicted": "see",
+          "target": "couch"
+        },
+        {
+          "predicted": "again",
+          "target": "alone"
+        },
+        {
+          "predicted": "see",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "see",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "air"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "again",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "again",
+          "target": "again"
+        },
+        {
+          "predicted": "see",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "again",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer6_i0": {
+      "layer": 6,
+      "k": 0,
+      "train_accuracy": 0.3020527859237537,
+      "train_loss": 4.2517634305087,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.422807375590006,
+      "decoded_predictions": [
+        {
+          "predicted": "lee",
+          "target": "rain"
+        },
+        {
+          "predicted": "lee",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "late",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "lee",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "lee",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "lee",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "away",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "lee",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "look",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "away",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "air"
+        },
+        {
+          "predicted": "lee",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "away",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "away",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer7_i0": {
+      "layer": 7,
+      "k": 0,
+      "train_accuracy": 0.6041055718475073,
+      "train_loss": 3.722277511249889,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.242191314697266,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "ring",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "again",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "again",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "lee",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "ring",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "away",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "away",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "away",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "again",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "see",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "night",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "pass",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "lee",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "again",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "again",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer8_i0": {
+      "layer": 8,
+      "k": 0,
+      "train_accuracy": 0.5689149560117303,
+      "train_loss": 3.693412260575728,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 11.350788116455078,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "ring",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "see",
+          "target": "love"
+        },
+        {
+          "predicted": "again",
+          "target": "dream"
+        },
+        {
+          "predicted": "again",
+          "target": "panse"
+        },
+        {
+          "predicted": "day",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "see",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "night",
+          "target": "home"
+        },
+        {
+          "predicted": "found",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "kept",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "dwell"
+        },
+        {
+          "predicted": "sleep",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "night",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "dear",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "all"
+        },
+        {
+          "predicted": "night",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "night",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "night",
+          "target": "alone"
+        },
+        {
+          "predicted": "found",
+          "target": "lick"
+        },
+        {
+          "predicted": "night",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "see",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "arranged",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "down",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "see",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer9_i0": {
+      "layer": 9,
+      "k": 0,
+      "train_accuracy": 0.6217008797653959,
+      "train_loss": 3.8296228755604136,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.66010570526123,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "pocket",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "ring",
+          "target": "land"
+        },
+        {
+          "predicted": "lee",
+          "target": "through"
+        },
+        {
+          "predicted": "lee",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "night",
+          "target": "love"
+        },
+        {
+          "predicted": "night",
+          "target": "dream"
+        },
+        {
+          "predicted": "night",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "night",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "lee",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "land",
+          "target": "ated"
+        },
+        {
+          "predicted": "night",
+          "target": "crowd"
+        },
+        {
+          "predicted": "lee",
+          "target": "unseen"
+        },
+        {
+          "predicted": "late",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "night",
+          "target": "world"
+        },
+        {
+          "predicted": "night",
+          "target": "home"
+        },
+        {
+          "predicted": "see",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "sleep",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "fed",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "lee",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "late",
+          "target": "rain"
+        },
+        {
+          "predicted": "lee",
+          "target": "all"
+        },
+        {
+          "predicted": "night",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "tower",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "night",
+          "target": "couch"
+        },
+        {
+          "predicted": "night",
+          "target": "alone"
+        },
+        {
+          "predicted": "lee",
+          "target": "lick"
+        },
+        {
+          "predicted": "barred",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "lee",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "again",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "kept",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "late",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "lee",
+          "target": "blue"
+        },
+        {
+          "predicted": "night",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer10_i0": {
+      "layer": 10,
+      "k": 0,
+      "train_accuracy": 0.39882697947214074,
+      "train_loss": 3.825217853892933,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.795646985371908,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "away",
+          "target": "through"
+        },
+        {
+          "predicted": "thin",
+          "target": "great"
+        },
+        {
+          "predicted": "night",
+          "target": "sky"
+        },
+        {
+          "predicted": "night",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "night",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "night",
+          "target": "crowd"
+        },
+        {
+          "predicted": "late",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "night",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "thin",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "away",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "away",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "away",
+          "target": "soon"
+        },
+        {
+          "predicted": "away",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "night",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "away",
+          "target": "place"
+        },
+        {
+          "predicted": "lee",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "night",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "night",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer11_i0": {
+      "layer": 11,
+      "k": 0,
+      "train_accuracy": 0.44281524926686217,
+      "train_loss": 3.7696386250582608,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.645792961120605,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "away",
+          "target": "through"
+        },
+        {
+          "predicted": "blue",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "away",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "away",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "again",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "fate",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "play",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "blue",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "blue",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "again",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "ring",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "sand",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer12_i0": {
+      "layer": 12,
+      "k": 0,
+      "train_accuracy": 0.5835777126099707,
+      "train_loss": 3.745561968196522,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.949023564656576,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "indeed",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "rock",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "again",
+          "target": "dream"
+        },
+        {
+          "predicted": "again",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "away",
+          "target": "foot"
+        },
+        {
+          "predicted": "again",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "lee",
+          "target": "spare"
+        },
+        {
+          "predicted": "lee",
+          "target": "might"
+        },
+        {
+          "predicted": "me",
+          "target": "ated"
+        },
+        {
+          "predicted": "again",
+          "target": "crowd"
+        },
+        {
+          "predicted": "world",
+          "target": "unseen"
+        },
+        {
+          "predicted": "again",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "lee",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "away",
+          "target": "world"
+        },
+        {
+          "predicted": "again",
+          "target": "home"
+        },
+        {
+          "predicted": "lee",
+          "target": "old"
+        },
+        {
+          "predicted": "thin",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "away",
+          "target": "dwell"
+        },
+        {
+          "predicted": "again",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "again",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "rock",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "away",
+          "target": "soon"
+        },
+        {
+          "predicted": "rock",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "again",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "rock",
+          "target": "place"
+        },
+        {
+          "predicted": "lee",
+          "target": "glare"
+        },
+        {
+          "predicted": "rock",
+          "target": "apart"
+        },
+        {
+          "predicted": "pass",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "indeed",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "ring",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "again",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "izzy",
+          "target": "real"
+        },
+        {
+          "predicted": "lee",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer13_i0": {
+      "layer": 13,
+      "k": 0,
+      "train_accuracy": 0.5865102639296188,
+      "train_loss": 3.3813584717837246,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 11.724201838175455,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "night",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "lee",
+          "target": "through"
+        },
+        {
+          "predicted": "away",
+          "target": "great"
+        },
+        {
+          "predicted": "night",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "night",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "night",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "away",
+          "target": "world"
+        },
+        {
+          "predicted": "night",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "night",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "away",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "away",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "fed",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "away",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "away",
+          "target": "place"
+        },
+        {
+          "predicted": "stare",
+          "target": "glare"
+        },
+        {
+          "predicted": "fed",
+          "target": "apart"
+        },
+        {
+          "predicted": "night",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "start",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "day",
+          "target": "air"
+        },
+        {
+          "predicted": "ring",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "away",
+          "target": "again"
+        },
+        {
+          "predicted": "away",
+          "target": "shelf"
+        },
+        {
+          "predicted": "away",
+          "target": "real"
+        },
+        {
+          "predicted": "away",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer14_i0": {
+      "layer": 14,
+      "k": 0,
+      "train_accuracy": 0.4281524926686217,
+      "train_loss": 3.8453567028045654,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.014925373134328358,
+      "val_loss": 11.952401796976725,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "again",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "away",
+          "target": "through"
+        },
+        {
+          "predicted": "rock",
+          "target": "great"
+        },
+        {
+          "predicted": "day",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "again",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "away",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "away",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "away",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "ground",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "away",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "indeed",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "tower",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "again",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "again",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "rock",
+          "target": "place"
+        },
+        {
+          "predicted": "indeed",
+          "target": "glare"
+        },
+        {
+          "predicted": "rock",
+          "target": "apart"
+        },
+        {
+          "predicted": "see",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "day",
+          "target": "air"
+        },
+        {
+          "predicted": "kept",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "see",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer15_i0": {
+      "layer": 15,
+      "k": 0,
+      "train_accuracy": 0.4398826979472141,
+      "train_loss": 3.6357862515883013,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.014925373134328358,
+      "val_loss": 11.929293950398764,
+      "decoded_predictions": [
+        {
+          "predicted": "again",
+          "target": "rain"
+        },
+        {
+          "predicted": "pocket",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "pocket",
+          "target": "past"
+        },
+        {
+          "predicted": "see",
+          "target": "pain"
+        },
+        {
+          "predicted": "below",
+          "target": "land"
+        },
+        {
+          "predicted": "see",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "day",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "day",
+          "target": "dream"
+        },
+        {
+          "predicted": "again",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "see",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "me",
+          "target": "ated"
+        },
+        {
+          "predicted": "see",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "again",
+          "target": "home"
+        },
+        {
+          "predicted": "see",
+          "target": "old"
+        },
+        {
+          "predicted": "see",
+          "target": "dry"
+        },
+        {
+          "predicted": "see",
+          "target": "strong"
+        },
+        {
+          "predicted": "blessed",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "see",
+          "target": "tea"
+        },
+        {
+          "predicted": "look",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "see",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "sun",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "tree",
+          "target": "couch"
+        },
+        {
+          "predicted": "day",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "see",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "see",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "smile",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "kept",
+          "target": "say"
+        },
+        {
+          "predicted": "warm",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "see",
+          "target": "real"
+        },
+        {
+          "predicted": "lee",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer16_i0": {
+      "layer": 16,
+      "k": 0,
+      "train_accuracy": 0.5953079178885631,
+      "train_loss": 3.576963251287287,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.0,
+      "val_loss": 12.235854784647623,
+      "decoded_predictions": [
+        {
+          "predicted": "sleep",
+          "target": "rain"
+        },
+        {
+          "predicted": "pocket",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "away",
+          "target": "past"
+        },
+        {
+          "predicted": "blast",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "away",
+          "target": "through"
+        },
+        {
+          "predicted": "away",
+          "target": "great"
+        },
+        {
+          "predicted": "day",
+          "target": "sky"
+        },
+        {
+          "predicted": "away",
+          "target": "love"
+        },
+        {
+          "predicted": "away",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "away",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "despair"
+        },
+        {
+          "predicted": "away",
+          "target": "far"
+        },
+        {
+          "predicted": "away",
+          "target": "world"
+        },
+        {
+          "predicted": "away",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "night",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "indeed",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "sleep",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "see",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "day",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "away",
+          "target": "place"
+        },
+        {
+          "predicted": "stare",
+          "target": "glare"
+        },
+        {
+          "predicted": "rock",
+          "target": "apart"
+        },
+        {
+          "predicted": "away",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "see",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "day",
+          "target": "air"
+        },
+        {
+          "predicted": "ring",
+          "target": "say"
+        },
+        {
+          "predicted": "arranged",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "sand",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "away",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer17_i0": {
+      "layer": 17,
+      "k": 0,
+      "train_accuracy": 0.6979472140762464,
+      "train_loss": 3.4035697850314053,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.014925373134328358,
+      "val_loss": 12.17807420094808,
+      "decoded_predictions": [
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "page",
+          "target": "aloud"
+        },
+        {
+          "predicted": "sleep",
+          "target": "raft"
+        },
+        {
+          "predicted": "dear",
+          "target": "past"
+        },
+        {
+          "predicted": "thin",
+          "target": "pain"
+        },
+        {
+          "predicted": "found",
+          "target": "land"
+        },
+        {
+          "predicted": "lee",
+          "target": "through"
+        },
+        {
+          "predicted": "see",
+          "target": "great"
+        },
+        {
+          "predicted": "night",
+          "target": "sky"
+        },
+        {
+          "predicted": "ground",
+          "target": "love"
+        },
+        {
+          "predicted": "dear",
+          "target": "dream"
+        },
+        {
+          "predicted": "sun",
+          "target": "panse"
+        },
+        {
+          "predicted": "found",
+          "target": "gems"
+        },
+        {
+          "predicted": "night",
+          "target": "foot"
+        },
+        {
+          "predicted": "night",
+          "target": "east"
+        },
+        {
+          "predicted": "away",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "me",
+          "target": "ated"
+        },
+        {
+          "predicted": "night",
+          "target": "crowd"
+        },
+        {
+          "predicted": "thin",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "see",
+          "target": "world"
+        },
+        {
+          "predicted": "dear",
+          "target": "home"
+        },
+        {
+          "predicted": "found",
+          "target": "old"
+        },
+        {
+          "predicted": "thin",
+          "target": "dry"
+        },
+        {
+          "predicted": "away",
+          "target": "strong"
+        },
+        {
+          "predicted": "ground",
+          "target": "dwell"
+        },
+        {
+          "predicted": "sleep",
+          "target": "see"
+        },
+        {
+          "predicted": "see",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "sun",
+          "target": "grace"
+        },
+        {
+          "predicted": "night",
+          "target": "embrace"
+        },
+        {
+          "predicted": "dear",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "night",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "see",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "found",
+          "target": "couch"
+        },
+        {
+          "predicted": "seed",
+          "target": "alone"
+        },
+        {
+          "predicted": "lee",
+          "target": "lick"
+        },
+        {
+          "predicted": "barred",
+          "target": "say"
+        },
+        {
+          "predicted": "page",
+          "target": "on"
+        },
+        {
+          "predicted": "see",
+          "target": "place"
+        },
+        {
+          "predicted": "lee",
+          "target": "glare"
+        },
+        {
+          "predicted": "rock",
+          "target": "apart"
+        },
+        {
+          "predicted": "night",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "lee",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "see",
+          "target": "grace"
+        },
+        {
+          "predicted": "found",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "see",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "lee",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer18_i0": {
+      "layer": 18,
+      "k": 0,
+      "train_accuracy": 0.9618768328445748,
+      "train_loss": 2.2931638847697866,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 12.214801152547201,
+      "decoded_predictions": [
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "sleep",
+          "target": "raft"
+        },
+        {
+          "predicted": "world",
+          "target": "past"
+        },
+        {
+          "predicted": "away",
+          "target": "pain"
+        },
+        {
+          "predicted": "late",
+          "target": "land"
+        },
+        {
+          "predicted": "lee",
+          "target": "through"
+        },
+        {
+          "predicted": "away",
+          "target": "great"
+        },
+        {
+          "predicted": "stump",
+          "target": "sky"
+        },
+        {
+          "predicted": "night",
+          "target": "love"
+        },
+        {
+          "predicted": "great",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "away",
+          "target": "gems"
+        },
+        {
+          "predicted": "rain",
+          "target": "foot"
+        },
+        {
+          "predicted": "away",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "late",
+          "target": "spare"
+        },
+        {
+          "predicted": "lee",
+          "target": "might"
+        },
+        {
+          "predicted": "me",
+          "target": "ated"
+        },
+        {
+          "predicted": "away",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "lee",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "lee",
+          "target": "despair"
+        },
+        {
+          "predicted": "mat",
+          "target": "far"
+        },
+        {
+          "predicted": "izzy",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "ground",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "away",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "away",
+          "target": "grace"
+        },
+        {
+          "predicted": "grace",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "late",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "all"
+        },
+        {
+          "predicted": "away",
+          "target": "order"
+        },
+        {
+          "predicted": "down",
+          "target": "city"
+        },
+        {
+          "predicted": "late",
+          "target": "soon"
+        },
+        {
+          "predicted": "wide",
+          "target": "bleak"
+        },
+        {
+          "predicted": "thin",
+          "target": "mystery"
+        },
+        {
+          "predicted": "late",
+          "target": "couch"
+        },
+        {
+          "predicted": "world",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "open",
+          "target": "on"
+        },
+        {
+          "predicted": "down",
+          "target": "place"
+        },
+        {
+          "predicted": "stare",
+          "target": "glare"
+        },
+        {
+          "predicted": "rock",
+          "target": "apart"
+        },
+        {
+          "predicted": "rain",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "lee",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "kept",
+          "target": "say"
+        },
+        {
+          "predicted": "lee",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "sleep",
+          "target": "again"
+        },
+        {
+          "predicted": "me",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer19_i0": {
+      "layer": 19,
+      "k": 0,
+      "train_accuracy": 0.9765395894428153,
+      "train_loss": 1.2446736747568303,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.014925373134328358,
+      "val_loss": 12.450723012288412,
+      "decoded_predictions": [
+        {
+          "predicted": "town",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "dear",
+          "target": "past"
+        },
+        {
+          "predicted": "keep",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "down",
+          "target": "through"
+        },
+        {
+          "predicted": "away",
+          "target": "great"
+        },
+        {
+          "predicted": "town",
+          "target": "sky"
+        },
+        {
+          "predicted": "sand",
+          "target": "love"
+        },
+        {
+          "predicted": "look",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "keep",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "day",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "away",
+          "target": "spare"
+        },
+        {
+          "predicted": "see",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "town",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "day",
+          "target": "despair"
+        },
+        {
+          "predicted": "thin",
+          "target": "far"
+        },
+        {
+          "predicted": "look",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "away",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "keep",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "glance",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "wall",
+          "target": "grace"
+        },
+        {
+          "predicted": "breeze",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "away",
+          "target": "city"
+        },
+        {
+          "predicted": "free",
+          "target": "soon"
+        },
+        {
+          "predicted": "see",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "late",
+          "target": "couch"
+        },
+        {
+          "predicted": "day",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "down",
+          "target": "place"
+        },
+        {
+          "predicted": "ball",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "rain",
+          "target": "seemed"
+        },
+        {
+          "predicted": "wall",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "glow",
+          "target": "grace"
+        },
+        {
+          "predicted": "pass",
+          "target": "air"
+        },
+        {
+          "predicted": "kept",
+          "target": "say"
+        },
+        {
+          "predicted": "glow",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "tired",
+          "target": "again"
+        },
+        {
+          "predicted": "eyes",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "land",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer20_i0": {
+      "layer": 20,
+      "k": 0,
+      "train_accuracy": 0.9853372434017595,
+      "train_loss": 0.6392994252118197,
+      "val_accuracy": 0.0,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 12.787334760030111,
+      "decoded_predictions": [
+        {
+          "predicted": "town",
+          "target": "rain"
+        },
+        {
+          "predicted": "town",
+          "target": "aloud"
+        },
+        {
+          "predicted": "town",
+          "target": "raft"
+        },
+        {
+          "predicted": "town",
+          "target": "past"
+        },
+        {
+          "predicted": "shame",
+          "target": "pain"
+        },
+        {
+          "predicted": "late",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "flame",
+          "target": "sky"
+        },
+        {
+          "predicted": "tall",
+          "target": "love"
+        },
+        {
+          "predicted": "look",
+          "target": "dream"
+        },
+        {
+          "predicted": "town",
+          "target": "panse"
+        },
+        {
+          "predicted": "tale",
+          "target": "gems"
+        },
+        {
+          "predicted": "am",
+          "target": "foot"
+        },
+        {
+          "predicted": "town",
+          "target": "east"
+        },
+        {
+          "predicted": "desire",
+          "target": "fair"
+        },
+        {
+          "predicted": "last",
+          "target": "spare"
+        },
+        {
+          "predicted": "lee",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "flame",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "sealed",
+          "target": "despair"
+        },
+        {
+          "predicted": "indeed",
+          "target": "far"
+        },
+        {
+          "predicted": "look",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "black",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "indeed",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "ime",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "gain",
+          "target": "embrace"
+        },
+        {
+          "predicted": "away",
+          "target": "mark"
+        },
+        {
+          "predicted": "down",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "town",
+          "target": "order"
+        },
+        {
+          "predicted": "fed",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "wide",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "late",
+          "target": "couch"
+        },
+        {
+          "predicted": "wall",
+          "target": "alone"
+        },
+        {
+          "predicted": "dark",
+          "target": "lick"
+        },
+        {
+          "predicted": "town",
+          "target": "say"
+        },
+        {
+          "predicted": "town",
+          "target": "on"
+        },
+        {
+          "predicted": "down",
+          "target": "place"
+        },
+        {
+          "predicted": "again",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "rain",
+          "target": "seemed"
+        },
+        {
+          "predicted": "do",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "ime",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "ring",
+          "target": "say"
+        },
+        {
+          "predicted": "ime",
+          "target": "keen"
+        },
+        {
+          "predicted": "dark",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "tired",
+          "target": "again"
+        },
+        {
+          "predicted": "leaf",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer21_i0": {
+      "layer": 21,
+      "k": 0,
+      "train_accuracy": 0.9970674486803519,
+      "train_loss": 0.20930870283733716,
+      "val_accuracy": 0.029850746268656716,
+      "val_top5_accuracy": 0.05970149253731343,
+      "val_loss": 13.287014961242676,
+      "decoded_predictions": [
+        {
+          "predicted": "flame",
+          "target": "rain"
+        },
+        {
+          "predicted": "grand",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "dear",
+          "target": "past"
+        },
+        {
+          "predicted": "indeed",
+          "target": "pain"
+        },
+        {
+          "predicted": "late",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "flame",
+          "target": "sky"
+        },
+        {
+          "predicted": "gold",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "see",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "day",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "late",
+          "target": "spare"
+        },
+        {
+          "predicted": "late",
+          "target": "might"
+        },
+        {
+          "predicted": "dark",
+          "target": "ated"
+        },
+        {
+          "predicted": "flame",
+          "target": "crowd"
+        },
+        {
+          "predicted": "see",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "late",
+          "target": "despair"
+        },
+        {
+          "predicted": "mat",
+          "target": "far"
+        },
+        {
+          "predicted": "look",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "keep",
+          "target": "dwell"
+        },
+        {
+          "predicted": "again",
+          "target": "see"
+        },
+        {
+          "predicted": "indeed",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "wall",
+          "target": "grace"
+        },
+        {
+          "predicted": "gain",
+          "target": "embrace"
+        },
+        {
+          "predicted": "night",
+          "target": "mark"
+        },
+        {
+          "predicted": "rain",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "see",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "unseen",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "late",
+          "target": "couch"
+        },
+        {
+          "predicted": "look",
+          "target": "alone"
+        },
+        {
+          "predicted": "dark",
+          "target": "lick"
+        },
+        {
+          "predicted": "vine",
+          "target": "say"
+        },
+        {
+          "predicted": "ground",
+          "target": "on"
+        },
+        {
+          "predicted": "late",
+          "target": "place"
+        },
+        {
+          "predicted": "ball",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "flame",
+          "target": "seemed"
+        },
+        {
+          "predicted": "day",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "friend",
+          "target": "grace"
+        },
+        {
+          "predicted": "late",
+          "target": "air"
+        },
+        {
+          "predicted": "thin",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "dark",
+          "target": "hen"
+        },
+        {
+          "predicted": "adow",
+          "target": "span"
+        },
+        {
+          "predicted": "tired",
+          "target": "again"
+        },
+        {
+          "predicted": "late",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "again",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer22_i0": {
+      "layer": 22,
+      "k": 0,
+      "train_accuracy": 1.0,
+      "train_loss": 0.10229606926441193,
+      "val_accuracy": 0.029850746268656716,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 13.561571756998697,
+      "decoded_predictions": [
+        {
+          "predicted": "town",
+          "target": "rain"
+        },
+        {
+          "predicted": "away",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "vine",
+          "target": "past"
+        },
+        {
+          "predicted": "indeed",
+          "target": "pain"
+        },
+        {
+          "predicted": "land",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "town",
+          "target": "sky"
+        },
+        {
+          "predicted": "gold",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "world",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "again",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "see",
+          "target": "spare"
+        },
+        {
+          "predicted": "lee",
+          "target": "might"
+        },
+        {
+          "predicted": "away",
+          "target": "ated"
+        },
+        {
+          "predicted": "dirt",
+          "target": "crowd"
+        },
+        {
+          "predicted": "kept",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "night",
+          "target": "despair"
+        },
+        {
+          "predicted": "world",
+          "target": "far"
+        },
+        {
+          "predicted": "look",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "fate",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "see",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "ath",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "wall",
+          "target": "grace"
+        },
+        {
+          "predicted": "gain",
+          "target": "embrace"
+        },
+        {
+          "predicted": "night",
+          "target": "mark"
+        },
+        {
+          "predicted": "see",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "night",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "wide",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "down",
+          "target": "couch"
+        },
+        {
+          "predicted": "look",
+          "target": "alone"
+        },
+        {
+          "predicted": "down",
+          "target": "lick"
+        },
+        {
+          "predicted": "clean",
+          "target": "say"
+        },
+        {
+          "predicted": "day",
+          "target": "on"
+        },
+        {
+          "predicted": "down",
+          "target": "place"
+        },
+        {
+          "predicted": "panse",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "flame",
+          "target": "seemed"
+        },
+        {
+          "predicted": "day",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "see",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "world",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "dark",
+          "target": "hen"
+        },
+        {
+          "predicted": "stone",
+          "target": "span"
+        },
+        {
+          "predicted": "dark",
+          "target": "again"
+        },
+        {
+          "predicted": "dark",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "night",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer23_i0": {
+      "layer": 23,
+      "k": 0,
+      "train_accuracy": 1.0,
+      "train_loss": 0.0517397170717066,
+      "val_accuracy": 0.029850746268656716,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 14.853048960367838,
+      "decoded_predictions": [
+        {
+          "predicted": "flame",
+          "target": "rain"
+        },
+        {
+          "predicted": "town",
+          "target": "aloud"
+        },
+        {
+          "predicted": "night",
+          "target": "raft"
+        },
+        {
+          "predicted": "sun",
+          "target": "past"
+        },
+        {
+          "predicted": "tower",
+          "target": "pain"
+        },
+        {
+          "predicted": "land",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "away",
+          "target": "sky"
+        },
+        {
+          "predicted": "gold",
+          "target": "love"
+        },
+        {
+          "predicted": "am",
+          "target": "dream"
+        },
+        {
+          "predicted": "away",
+          "target": "panse"
+        },
+        {
+          "predicted": "world",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "panse",
+          "target": "east"
+        },
+        {
+          "predicted": "again",
+          "target": "fair"
+        },
+        {
+          "predicted": "tomb",
+          "target": "spare"
+        },
+        {
+          "predicted": "late",
+          "target": "might"
+        },
+        {
+          "predicted": "dark",
+          "target": "ated"
+        },
+        {
+          "predicted": "dirt",
+          "target": "crowd"
+        },
+        {
+          "predicted": "den",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "thin",
+          "target": "strong"
+        },
+        {
+          "predicted": "sealed",
+          "target": "despair"
+        },
+        {
+          "predicted": "world",
+          "target": "far"
+        },
+        {
+          "predicted": "down",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "while",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "keep",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "indeed",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "grand",
+          "target": "grace"
+        },
+        {
+          "predicted": "breeze",
+          "target": "embrace"
+        },
+        {
+          "predicted": "start",
+          "target": "mark"
+        },
+        {
+          "predicted": "rain",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "down",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "unseen",
+          "target": "bleak"
+        },
+        {
+          "predicted": "gone",
+          "target": "mystery"
+        },
+        {
+          "predicted": "away",
+          "target": "couch"
+        },
+        {
+          "predicted": "start",
+          "target": "alone"
+        },
+        {
+          "predicted": "dark",
+          "target": "lick"
+        },
+        {
+          "predicted": "grand",
+          "target": "say"
+        },
+        {
+          "predicted": "blue",
+          "target": "on"
+        },
+        {
+          "predicted": "lane",
+          "target": "place"
+        },
+        {
+          "predicted": "wall",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "flame",
+          "target": "seemed"
+        },
+        {
+          "predicted": "vine",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "smile",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "found",
+          "target": "air"
+        },
+        {
+          "predicted": "self",
+          "target": "say"
+        },
+        {
+          "predicted": "indeed",
+          "target": "keen"
+        },
+        {
+          "predicted": "ground",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "tired",
+          "target": "again"
+        },
+        {
+          "predicted": "dark",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "last",
+          "target": "blue"
+        },
+        {
+          "predicted": "lee",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer24_i0": {
+      "layer": 24,
+      "k": 0,
+      "train_accuracy": 1.0,
+      "train_loss": 0.031326243823224846,
+      "val_accuracy": 0.029850746268656716,
+      "val_top5_accuracy": 0.05970149253731343,
+      "val_loss": 15.147754351298014,
+      "decoded_predictions": [
+        {
+          "predicted": "sleep",
+          "target": "rain"
+        },
+        {
+          "predicted": "sun",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "dear",
+          "target": "past"
+        },
+        {
+          "predicted": "shame",
+          "target": "pain"
+        },
+        {
+          "predicted": "dark",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "bright",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "see",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "world",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "town",
+          "target": "east"
+        },
+        {
+          "predicted": "fleet",
+          "target": "fair"
+        },
+        {
+          "predicted": "mind",
+          "target": "spare"
+        },
+        {
+          "predicted": "late",
+          "target": "might"
+        },
+        {
+          "predicted": "dark",
+          "target": "ated"
+        },
+        {
+          "predicted": "again",
+          "target": "crowd"
+        },
+        {
+          "predicted": "away",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "indeed",
+          "target": "strong"
+        },
+        {
+          "predicted": "sealed",
+          "target": "despair"
+        },
+        {
+          "predicted": "world",
+          "target": "far"
+        },
+        {
+          "predicted": "sand",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "while",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "smile",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "instead",
+          "target": "tea"
+        },
+        {
+          "predicted": "me",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "wall",
+          "target": "grace"
+        },
+        {
+          "predicted": "breeze",
+          "target": "embrace"
+        },
+        {
+          "predicted": "look",
+          "target": "mark"
+        },
+        {
+          "predicted": "rain",
+          "target": "rain"
+        },
+        {
+          "predicted": "lee",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "kept",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "unseen",
+          "target": "bleak"
+        },
+        {
+          "predicted": "ring",
+          "target": "mystery"
+        },
+        {
+          "predicted": "fan",
+          "target": "couch"
+        },
+        {
+          "predicted": "world",
+          "target": "alone"
+        },
+        {
+          "predicted": "dark",
+          "target": "lick"
+        },
+        {
+          "predicted": "clean",
+          "target": "say"
+        },
+        {
+          "predicted": "street",
+          "target": "on"
+        },
+        {
+          "predicted": "dark",
+          "target": "place"
+        },
+        {
+          "predicted": "panse",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "flame",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "all",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "day",
+          "target": "air"
+        },
+        {
+          "predicted": "world",
+          "target": "say"
+        },
+        {
+          "predicted": "see",
+          "target": "keen"
+        },
+        {
+          "predicted": "dark",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "away",
+          "target": "again"
+        },
+        {
+          "predicted": "while",
+          "target": "shelf"
+        },
+        {
+          "predicted": "indeed",
+          "target": "real"
+        },
+        {
+          "predicted": "slate",
+          "target": "blue"
+        },
+        {
+          "predicted": "down",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer25_i0": {
+      "layer": 25,
+      "k": 0,
+      "train_accuracy": 1.0,
+      "train_loss": 0.016018785366957836,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 18.412593205769856,
+      "decoded_predictions": [
+        {
+          "predicted": "sleep",
+          "target": "rain"
+        },
+        {
+          "predicted": "again",
+          "target": "aloud"
+        },
+        {
+          "predicted": "land",
+          "target": "raft"
+        },
+        {
+          "predicted": "town",
+          "target": "past"
+        },
+        {
+          "predicted": "shame",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "town",
+          "target": "through"
+        },
+        {
+          "predicted": "away",
+          "target": "great"
+        },
+        {
+          "predicted": "town",
+          "target": "sky"
+        },
+        {
+          "predicted": "sleep",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "world",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "look",
+          "target": "east"
+        },
+        {
+          "predicted": "fleet",
+          "target": "fair"
+        },
+        {
+          "predicted": "away",
+          "target": "spare"
+        },
+        {
+          "predicted": "black",
+          "target": "might"
+        },
+        {
+          "predicted": "dark",
+          "target": "ated"
+        },
+        {
+          "predicted": "town",
+          "target": "crowd"
+        },
+        {
+          "predicted": "den",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "world",
+          "target": "strong"
+        },
+        {
+          "predicted": "sealed",
+          "target": "despair"
+        },
+        {
+          "predicted": "mat",
+          "target": "far"
+        },
+        {
+          "predicted": "look",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "down",
+          "target": "old"
+        },
+        {
+          "predicted": "while",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "keep",
+          "target": "dwell"
+        },
+        {
+          "predicted": "glow",
+          "target": "see"
+        },
+        {
+          "predicted": "instead",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "grand",
+          "target": "grace"
+        },
+        {
+          "predicted": "vine",
+          "target": "embrace"
+        },
+        {
+          "predicted": "wall",
+          "target": "mark"
+        },
+        {
+          "predicted": "down",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "head",
+          "target": "order"
+        },
+        {
+          "predicted": "down",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "unseen",
+          "target": "bleak"
+        },
+        {
+          "predicted": "ring",
+          "target": "mystery"
+        },
+        {
+          "predicted": "lee",
+          "target": "couch"
+        },
+        {
+          "predicted": "look",
+          "target": "alone"
+        },
+        {
+          "predicted": "away",
+          "target": "lick"
+        },
+        {
+          "predicted": "grand",
+          "target": "say"
+        },
+        {
+          "predicted": "phony",
+          "target": "on"
+        },
+        {
+          "predicted": "down",
+          "target": "place"
+        },
+        {
+          "predicted": "panse",
+          "target": "glare"
+        },
+        {
+          "predicted": "see",
+          "target": "apart"
+        },
+        {
+          "predicted": "ush",
+          "target": "seemed"
+        },
+        {
+          "predicted": "grand",
+          "target": "tune"
+        },
+        {
+          "predicted": "blessed",
+          "target": "wait"
+        },
+        {
+          "predicted": "phony",
+          "target": "night"
+        },
+        {
+          "predicted": "again",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "world",
+          "target": "say"
+        },
+        {
+          "predicted": "indeed",
+          "target": "keen"
+        },
+        {
+          "predicted": "dark",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "dark",
+          "target": "again"
+        },
+        {
+          "predicted": "mat",
+          "target": "shelf"
+        },
+        {
+          "predicted": "seen",
+          "target": "real"
+        },
+        {
+          "predicted": "slate",
+          "target": "blue"
+        },
+        {
+          "predicted": "away",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer26_i0": {
+      "layer": 26,
+      "k": 0,
+      "train_accuracy": 1.0,
+      "train_loss": 0.009923444552855059,
+      "val_accuracy": 0.014925373134328358,
+      "val_top5_accuracy": 0.029850746268656716,
+      "val_loss": 20.53322919209798,
+      "decoded_predictions": [
+        {
+          "predicted": "late",
+          "target": "rain"
+        },
+        {
+          "predicted": "sun",
+          "target": "aloud"
+        },
+        {
+          "predicted": "again",
+          "target": "raft"
+        },
+        {
+          "predicted": "hum",
+          "target": "past"
+        },
+        {
+          "predicted": "head",
+          "target": "pain"
+        },
+        {
+          "predicted": "away",
+          "target": "land"
+        },
+        {
+          "predicted": "again",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "again",
+          "target": "sky"
+        },
+        {
+          "predicted": "gold",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "clear",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "look",
+          "target": "east"
+        },
+        {
+          "predicted": "fleet",
+          "target": "fair"
+        },
+        {
+          "predicted": "away",
+          "target": "spare"
+        },
+        {
+          "predicted": "black",
+          "target": "might"
+        },
+        {
+          "predicted": "sleep",
+          "target": "ated"
+        },
+        {
+          "predicted": "again",
+          "target": "crowd"
+        },
+        {
+          "predicted": "den",
+          "target": "unseen"
+        },
+        {
+          "predicted": "see",
+          "target": "spoke"
+        },
+        {
+          "predicted": "warm",
+          "target": "strong"
+        },
+        {
+          "predicted": "ail",
+          "target": "despair"
+        },
+        {
+          "predicted": "self",
+          "target": "far"
+        },
+        {
+          "predicted": "grin",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "fate",
+          "target": "dry"
+        },
+        {
+          "predicted": "bloom",
+          "target": "strong"
+        },
+        {
+          "predicted": "at",
+          "target": "dwell"
+        },
+        {
+          "predicted": "town",
+          "target": "see"
+        },
+        {
+          "predicted": "ath",
+          "target": "tea"
+        },
+        {
+          "predicted": "best",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "grace",
+          "target": "embrace"
+        },
+        {
+          "predicted": "look",
+          "target": "mark"
+        },
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "dark",
+          "target": "order"
+        },
+        {
+          "predicted": "down",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "unseen",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "late",
+          "target": "couch"
+        },
+        {
+          "predicted": "town",
+          "target": "alone"
+        },
+        {
+          "predicted": "dark",
+          "target": "lick"
+        },
+        {
+          "predicted": "away",
+          "target": "say"
+        },
+        {
+          "predicted": "away",
+          "target": "on"
+        },
+        {
+          "predicted": "rock",
+          "target": "place"
+        },
+        {
+          "predicted": "wall",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "ush",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "aisle",
+          "target": "wait"
+        },
+        {
+          "predicted": "vine",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "dark",
+          "target": "air"
+        },
+        {
+          "predicted": "world",
+          "target": "say"
+        },
+        {
+          "predicted": "last",
+          "target": "keen"
+        },
+        {
+          "predicted": "core",
+          "target": "hen"
+        },
+        {
+          "predicted": "away",
+          "target": "span"
+        },
+        {
+          "predicted": "night",
+          "target": "again"
+        },
+        {
+          "predicted": "dark",
+          "target": "shelf"
+        },
+        {
+          "predicted": "sand",
+          "target": "real"
+        },
+        {
+          "predicted": "slate",
+          "target": "blue"
+        },
+        {
+          "predicted": "dark",
+          "target": "minute"
+        }
+      ]
+    },
+    "layer27_i0": {
+      "layer": 27,
+      "k": 0,
+      "train_accuracy": 0.9970674486803519,
+      "train_loss": 0.115767625245181,
+      "val_accuracy": 0.029850746268656716,
+      "val_top5_accuracy": 0.04477611940298507,
+      "val_loss": 14.771644910176596,
+      "decoded_predictions": [
+        {
+          "predicted": "flame",
+          "target": "rain"
+        },
+        {
+          "predicted": "vine",
+          "target": "aloud"
+        },
+        {
+          "predicted": "away",
+          "target": "raft"
+        },
+        {
+          "predicted": "town",
+          "target": "past"
+        },
+        {
+          "predicted": "might",
+          "target": "pain"
+        },
+        {
+          "predicted": "land",
+          "target": "land"
+        },
+        {
+          "predicted": "away",
+          "target": "through"
+        },
+        {
+          "predicted": "world",
+          "target": "great"
+        },
+        {
+          "predicted": "away",
+          "target": "sky"
+        },
+        {
+          "predicted": "night",
+          "target": "love"
+        },
+        {
+          "predicted": "down",
+          "target": "dream"
+        },
+        {
+          "predicted": "panse",
+          "target": "panse"
+        },
+        {
+          "predicted": "world",
+          "target": "gems"
+        },
+        {
+          "predicted": "ush",
+          "target": "foot"
+        },
+        {
+          "predicted": "land",
+          "target": "east"
+        },
+        {
+          "predicted": "fleet",
+          "target": "fair"
+        },
+        {
+          "predicted": "son",
+          "target": "spare"
+        },
+        {
+          "predicted": "lee",
+          "target": "might"
+        },
+        {
+          "predicted": "sleep",
+          "target": "ated"
+        },
+        {
+          "predicted": "dirt",
+          "target": "crowd"
+        },
+        {
+          "predicted": "away",
+          "target": "unseen"
+        },
+        {
+          "predicted": "day",
+          "target": "spoke"
+        },
+        {
+          "predicted": "ring",
+          "target": "strong"
+        },
+        {
+          "predicted": "sealed",
+          "target": "despair"
+        },
+        {
+          "predicted": "mat",
+          "target": "far"
+        },
+        {
+          "predicted": "land",
+          "target": "world"
+        },
+        {
+          "predicted": "aisle",
+          "target": "home"
+        },
+        {
+          "predicted": "phony",
+          "target": "old"
+        },
+        {
+          "predicted": "kept",
+          "target": "dry"
+        },
+        {
+          "predicted": "tower",
+          "target": "strong"
+        },
+        {
+          "predicted": "at",
+          "target": "dwell"
+        },
+        {
+          "predicted": "away",
+          "target": "see"
+        },
+        {
+          "predicted": "ath",
+          "target": "tea"
+        },
+        {
+          "predicted": "sleep",
+          "target": "dictionary"
+        },
+        {
+          "predicted": "wall",
+          "target": "grace"
+        },
+        {
+          "predicted": "tease",
+          "target": "embrace"
+        },
+        {
+          "predicted": "look",
+          "target": "mark"
+        },
+        {
+          "predicted": "away",
+          "target": "rain"
+        },
+        {
+          "predicted": "rain",
+          "target": "all"
+        },
+        {
+          "predicted": "grand",
+          "target": "order"
+        },
+        {
+          "predicted": "in",
+          "target": "city"
+        },
+        {
+          "predicted": "vine",
+          "target": "soon"
+        },
+        {
+          "predicted": "away",
+          "target": "bleak"
+        },
+        {
+          "predicted": "kept",
+          "target": "mystery"
+        },
+        {
+          "predicted": "down",
+          "target": "couch"
+        },
+        {
+          "predicted": "world",
+          "target": "alone"
+        },
+        {
+          "predicted": "late",
+          "target": "lick"
+        },
+        {
+          "predicted": "town",
+          "target": "say"
+        },
+        {
+          "predicted": "ring",
+          "target": "on"
+        },
+        {
+          "predicted": "away",
+          "target": "place"
+        },
+        {
+          "predicted": "wall",
+          "target": "glare"
+        },
+        {
+          "predicted": "away",
+          "target": "apart"
+        },
+        {
+          "predicted": "ush",
+          "target": "seemed"
+        },
+        {
+          "predicted": "away",
+          "target": "tune"
+        },
+        {
+          "predicted": "town",
+          "target": "wait"
+        },
+        {
+          "predicted": "phony",
+          "target": "night"
+        },
+        {
+          "predicted": "town",
+          "target": "grace"
+        },
+        {
+          "predicted": "away",
+          "target": "air"
+        },
+        {
+          "predicted": "ring",
+          "target": "say"
+        },
+        {
+          "predicted": "bakery",
+          "target": "keen"
+        },
+        {
+          "predicted": "away",
+          "target": "hen"
+        },
+        {
+          "predicted": "again",
+          "target": "span"
+        },
+        {
+          "predicted": "meal",
+          "target": "again"
+        },
+        {
+          "predicted": "dark",
+          "target": "shelf"
+        },
+        {
+          "predicted": "indeed",
+          "target": "real"
+        },
+        {
+          "predicted": "look",
+          "target": "blue"
+        },
+        {
+          "predicted": "dark",
+          "target": "minute"
+        }
+      ]
+    }
+  }
+}
