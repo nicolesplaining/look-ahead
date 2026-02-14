@@ -18,6 +18,7 @@ TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/poem/data/activations_train.pt}"
 VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/poem/data/activations_val.pt}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
 TRAIN_POSITION="${TRAIN_POSITION:-0}"   # i=0 = first-line \n; negative = earlier in first line
+MODEL_NAME="${MODEL_NAME:-}"            # set to enable decoded_predictions in JSON
 PROBE_TYPE="${PROBE_TYPE:-linear}"
 NUM_EPOCHS="${NUM_EPOCHS:-10}"
 BATCH_SIZE="${BATCH_SIZE:-512}"
@@ -53,8 +54,54 @@ TRAIN_CMD=(
 if [ -f "$VAL_DATASET" ]; then
     TRAIN_CMD+=(--val_dataset "$VAL_DATASET")
 fi
+if [ -n "$MODEL_NAME" ]; then
+    TRAIN_CMD+=(--model_name "$MODEL_NAME")
+fi
 
 "${TRAIN_CMD[@]}"
+
+# Print a results summary table from the JSON
+if [ "$TRAIN_POSITION" -ge 0 ] 2>/dev/null; then
+    I_LABEL="i${TRAIN_POSITION}"
+else
+    I_LABEL="i_neg${TRAIN_POSITION#-}"
+fi
+RESULTS_FILE="$OUTPUT_DIR/$I_LABEL/experiment_results.json"
+
+if [ -f "$RESULTS_FILE" ]; then
+python - <<EOF
+import json
+
+with open("$RESULTS_FILE") as f:
+    data = json.load(f)
+
+entries = sorted(data["results"].values(), key=lambda x: x["layer"])
+has_val = any("val_accuracy" in e for e in entries)
+
+print("\n" + "=" * 55)
+if has_val:
+    print(f"{'Layer':>5} | {'Train Acc':>9} | {'Val Acc':>8} | {'Top-5':>6}")
+else:
+    print(f"{'Layer':>5} | {'Train Acc':>9}")
+print("-" * 55)
+
+best_layer, best_acc = None, -1.0
+for e in entries:
+    if has_val:
+        val_str  = f"{e['val_accuracy']:.4f}"       if "val_accuracy"      in e else "     —"
+        top5_str = f"{e['val_top5_accuracy']:.4f}"  if "val_top5_accuracy" in e else "     —"
+        print(f"{e['layer']:>5} | {e['train_accuracy']:>9.4f} | {val_str:>8} | {top5_str:>6}")
+        if e.get("val_accuracy", -1.0) > best_acc:
+            best_acc   = e["val_accuracy"]
+            best_layer = e["layer"]
+    else:
+        print(f"{e['layer']:>5} | {e['train_accuracy']:>9.4f}")
+
+print("=" * 55)
+if best_layer is not None:
+    print(f"Best val acc: Layer {best_layer}  ({best_acc:.4f})")
+EOF
+fi
 
 echo ""
 echo "✓ Poem training complete! Results in $OUTPUT_DIR/"
