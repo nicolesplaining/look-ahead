@@ -1,67 +1,80 @@
 #!/bin/bash
 # Plot poem probe results (Step 3 of decoupled pipeline).
-# Auto-discovers all trained i-position results under RESULTS_DIR.
 # Can be run from any directory.
 #
-# Override defaults via env vars, e.g.:
-#   RESULTS_DIR=/path/to/results ACC_MAX=0.3 bash poem/scripts/plot_results.sh
+# Configure up to 4 result slots via env vars:
+#   RESULT1=/path/to/i0/experiment_results.json
+#   LABEL1="i=0"
+#   COLOR1="steelblue"
+#
+# Example — overlay three positions:
+#   RESULT1=poem/results/.../i_neg3/experiment_results.json LABEL1="i=-3" \
+#   RESULT2=poem/results/.../i0/experiment_results.json    LABEL2="i=0"  \
+#   RESULT3=poem/results/.../i2/experiment_results.json    LABEL3="i=2"  \
+#   bash poem/scripts/plot_results.sh
 
 set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
-# poem/src needed for visualize.py; probe/src for look_ahead_probe imports
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
+RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/plots}"
 ACC_MIN="${ACC_MIN:-0}"
 ACC_MAX="${ACC_MAX:-0.5}"
 
+# ------------------------------------------------------------------
+# Result slots — set path, label, and color for each
+# ------------------------------------------------------------------
+RESULT1="${RESULT1:-$RESULTS_BASE/i0/experiment_results.json}"
+RESULT2="${RESULT2:-}"
+RESULT3="${RESULT3:-}"
+RESULT4="${RESULT4:-}"
+
+LABEL1="${LABEL1:-i=0}"
+LABEL2="${LABEL2:-}"
+LABEL3="${LABEL3:-}"
+LABEL4="${LABEL4:-}"
+
+COLOR1="${COLOR1:-steelblue}"
+COLOR2="${COLOR2:-tomato}"
+COLOR3="${COLOR3:-orange}"
+COLOR4="${COLOR4:-seagreen}"
+
 mkdir -p "$OUTPUT_DIR"
 
 # ------------------------------------------------------------------
-# Auto-discover all i-position result JSONs, sorted numerically
-# (i_neg8, i_neg7, ..., i_neg1, i0, i1, i2, ...) via Python
+# Build argument lists — only include slots where the file exists
 # ------------------------------------------------------------------
-ORDERED_JSONS=$(python - "$RESULTS_DIR" <<'EOF'
-import sys, re
-from pathlib import Path
+JSONS=()
+LABELS=()
+COLORS=()
 
-results_dir = Path(sys.argv[1])
-jsons = list(results_dir.glob("*/experiment_results.json"))
+if [ -f "$RESULT1" ]; then JSONS+=("$RESULT1"); LABELS+=("$LABEL1"); COLORS+=("$COLOR1"); fi
+if [ -f "$RESULT2" ]; then JSONS+=("$RESULT2"); LABELS+=("$LABEL2"); COLORS+=("$COLOR2"); fi
+if [ -f "$RESULT3" ]; then JSONS+=("$RESULT3"); LABELS+=("$LABEL3"); COLORS+=("$COLOR3"); fi
+if [ -f "$RESULT4" ]; then JSONS+=("$RESULT4"); LABELS+=("$LABEL4"); COLORS+=("$COLOR4"); fi
 
-def sort_key(p):
-    name = p.parent.name          # e.g. "i_neg3", "i0", "i2"
-    m = re.match(r"i_neg(\d+)$", name)
-    if m:
-        return -int(m.group(1))   # i_neg8 → -8
-    m = re.match(r"i(\d+)$", name)
-    if m:
-        return int(m.group(1))    # i0 → 0, i2 → 2
-    return 0
-
-jsons.sort(key=sort_key)
-for j in jsons:
-    print(j)
-EOF
-)
-
-if [ -z "$ORDERED_JSONS" ]; then
-    echo "ERROR: No experiment_results.json found under $RESULTS_DIR"
-    echo "Run train_probes.sh first."
+if [ ${#JSONS[@]} -eq 0 ]; then
+    echo "ERROR: No result JSONs found. Set RESULT1 (and optionally RESULT2–4), or run train_probes.sh first."
     exit 1
 fi
 
-mapfile -t ORDERED <<< "$ORDERED_JSONS"
-
-echo "Plotting ${#ORDERED[@]} i-position result(s) → $OUTPUT_DIR"
+echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
 echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
+<<<<<<< Updated upstream
 python -m visualize_results \
     "${ORDERED[@]}" \
+=======
+python -m visualize \
+    "${JSONS[@]}" \
+    --labels "${LABELS[@]}" \
+    --colors "${COLORS[@]}" \
+>>>>>>> Stashed changes
     --show-val \
     --show-top5 \
     --show-rhyme \
