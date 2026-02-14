@@ -69,7 +69,7 @@ def _try_generate(
         prompt_tokens,
         max_new_tokens=max_new_tokens,
         do_sample=do_sample,
-        temperature=1.0 if do_sample else None,
+        temperature=0.7 if do_sample else None,
         pad_token_id=pad_token_id,
     )
 
