@@ -14,9 +14,9 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 # poem_probe imports look_ahead_probe, so both src dirs are needed
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="${MODEL_NAME:-Qwen/Qwen2.5-32B}"
+MODEL_NAME=Qwen/Qwen2.5-7B
 MAX_BACK="${MAX_BACK:-8}"          # tokens before the first-line \n to store (i = -1 ... -MAX_BACK)
-MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-32}"
+MAX_NEW_TOKENS=16
 MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
 MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
