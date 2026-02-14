@@ -60,7 +60,7 @@ echo "Plotting ${#ORDERED[@]} i-position result(s) → $OUTPUT_DIR"
 echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
-python -m visualize \
+python -m visualize_results \
     "${ORDERED[@]}" \
     --show-val \
     --show-top5 \
