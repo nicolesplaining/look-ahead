@@ -160,9 +160,12 @@ def train_all_layers_at_position(
                     _rhyme_score(d["predicted"], d["target"])
                     for d in decoded_predictions
                 ]
-                checked = [r for r in rhyme_scores if r is not None]
-                rhyme_n_checked = len(checked)
-                rhyme_accuracy = sum(checked) / rhyme_n_checked if rhyme_n_checked else None
+                # None (word not in CMU dict) counts as a non-rhyme.
+                # n is always the total number of val examples.
+                n_total = len(rhyme_scores)
+                n_rhyming = sum(1 for r in rhyme_scores if r is True)
+                rhyme_n_checked = n_total
+                rhyme_accuracy = n_rhyming / n_total if n_total else None
 
         save_path = None
         if save_weights:
@@ -192,7 +195,7 @@ def train_all_layers_at_position(
         if results:
             msg += f"  val={results['accuracy']:.4f}  top5={results['top5_accuracy']:.4f}"
         if rhyme_accuracy is not None:
-            msg += f"  rhyme={rhyme_accuracy:.4f} (n={rhyme_n_checked})"
+            msg += f"  rhyme={rhyme_accuracy:.4f}"
         print(msg)
 
     return all_results
