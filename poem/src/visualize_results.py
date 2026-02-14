@@ -69,15 +69,16 @@ def plot_results(all_results_by_i, labels, colors, output_dir,
         for results_by_i, label, color in zip(all_results_by_i, labels, resolved_colors):
             if i_val not in results_by_i:
                 continue
-            layers = [layer for layer, _ in results_by_i[i_val]]
             for metric_key, metric_name, linestyle in metric_specs:
-                vals = [
-                    m[metric_key]
-                    for _, m in results_by_i[i_val]
+                # Filter layers and vals together so they always have the same length
+                pairs = [
+                    (layer, m[metric_key])
+                    for layer, m in results_by_i[i_val]
                     if m.get(metric_key) is not None
                 ]
-                if not vals:
+                if not pairs:
                     continue
+                layers, vals = zip(*pairs)
                 legend_label = f"{label} ({metric_name})" if multi_metric else label
                 ax.plot(layers, vals, linewidth=2,
                         linestyle=linestyle, color=color, label=legend_label)
