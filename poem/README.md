@@ -73,17 +73,24 @@ Key env vars: `TRAIN_DATASET`, `VAL_DATASET`, `OUTPUT_DIR`, `TRAIN_POSITION` (re
 ### Step 3 — Plot and compare positions
 
 ```bash
-# Single position
+# Auto-discovers all trained positions and overlays them
 bash poem/scripts/plot_results.sh
+# → poem/results/plots/*.png
+# Shows val, top-5, and rhyme accuracy on a single plot per i-position.
 
-# Overlay multiple positions (using visualize_results directly)
-python -m look_ahead_probe.visualize_results \
-    poem/results/experiment_results_linear/i0/experiment_results.json \
+# Manual overlay with custom labels/colors
+python -m visualize \
     poem/results/experiment_results_linear/i_neg3/experiment_results.json \
-    poem/results/experiment_results_linear/i_neg6/experiment_results.json \
-    --labels "i=0" "i=-3" "i=-6" \
-    --show-val --acc-min 0 --acc-max 0.5
+    poem/results/experiment_results_linear/i0/experiment_results.json \
+    poem/results/experiment_results_linear/i2/experiment_results.json \
+    --labels "i=-3" "i=0" "i=2" \
+    --show-val --show-top5 --show-rhyme \
+    --acc-min 0 --acc-max 0.5
 ```
+
+Key env vars: `RESULTS_DIR`, `OUTPUT_DIR`, `ACC_MIN`, `ACC_MAX`
+
+Flags: `--show-val`, `--show-top5`, `--show-rhyme` (any combination)
 
 ---
 
@@ -93,7 +100,8 @@ python -m look_ahead_probe.visualize_results \
 poem/src/
 ├── extract_poem_dataset.py   # CLI for step 1 (i-indexed multi-position extraction)
 ├── train_poem_probe.py       # library: train_all_layers_at_position()
-└── train_probes.py           # CLI for step 2 (single i value, all layers)
+├── train_probes.py           # CLI for step 2 (single i value, all layers)
+└── visualize.py              # CLI for step 3 (overlay multiple i-positions)
 
 poem/scripts/
 ├── build_dataset.sh          # step 1 wrapper  (env: MAX_BACK)
