@@ -22,6 +22,25 @@ from torch.utils.data import DataLoader, TensorDataset
 from look_ahead_probe.probe import FutureTokenProbe
 from look_ahead_probe.train_probe import train_probe, evaluate_probe
 
+try:
+    import pronouncing
+    _HAS_PRONOUNCING = True
+except ImportError:
+    _HAS_PRONOUNCING = False
+
+
+def _rhyme_score(w1: str, w2: str) -> Optional[bool]:
+    """True if w1 and w2 rhyme, False if they don't, None if either is unknown."""
+    if not _HAS_PRONOUNCING:
+        return None
+    p1 = pronouncing.phones_for_word(w1.lower().strip())
+    p2 = pronouncing.phones_for_word(w2.lower().strip())
+    if not p1 or not p2:
+        return None
+    rp1 = pronouncing.rhyming_part(p1[0])
+    rp2 = pronouncing.rhyming_part(p2[0])
+    return (rp1 == rp2) if (rp1 and rp2) else None
+
 
 def train_all_layers_at_position(
     train_position: int,
@@ -125,6 +144,8 @@ def train_all_layers_at_position(
 
         results = None
         decoded_predictions: Optional[List[dict]] = None
+        rhyme_accuracy: Optional[float] = None
+        rhyme_n_checked: int = 0
         if val_loader is not None:
             results = evaluate_probe(probe, val_loader, device=device)
             if tokenizer is not None:
@@ -135,6 +156,13 @@ def train_all_layers_at_position(
                     }
                     for p, t in zip(results["predictions"], results["targets"])
                 ]
+                rhyme_scores = [
+                    _rhyme_score(d["predicted"], d["target"])
+                    for d in decoded_predictions
+                ]
+                checked = [r for r in rhyme_scores if r is not None]
+                rhyme_n_checked = len(checked)
+                rhyme_accuracy = sum(checked) / rhyme_n_checked if rhyme_n_checked else None
 
         save_path = None
         if save_weights:
@@ -154,13 +182,17 @@ def train_all_layers_at_position(
             'history': history,
             'results': results,
             'decoded_predictions': decoded_predictions,
+            'rhyme_accuracy': rhyme_accuracy,
+            'rhyme_n_checked': rhyme_n_checked,
             'save_path': save_path,
         }
 
         train_acc = history['train_acc'][-1]
         msg = f"  Layer {layer_idx:2d}: train={train_acc:.4f}"
         if results:
-            msg += f"  val={results['accuracy']:.4f}"
+            msg += f"  val={results['accuracy']:.4f}  top5={results['top5_accuracy']:.4f}"
+        if rhyme_accuracy is not None:
+            msg += f"  rhyme={rhyme_accuracy:.4f} (n={rhyme_n_checked})"
         print(msg)
 
     return all_results
@@ -182,6 +214,9 @@ def make_experiment_results_json(all_results: dict, metadata: dict, config: dict
             entry['val_loss'] = float(data['results']['loss'])
         if data.get('decoded_predictions') is not None:
             entry['decoded_predictions'] = data['decoded_predictions']
+        if data.get('rhyme_accuracy') is not None:
+            entry['rhyme_accuracy'] = float(data['rhyme_accuracy'])
+            entry['rhyme_n_checked'] = int(data['rhyme_n_checked'])
         if data.get('save_path'):
             entry['probe_path'] = data['save_path']
         results[key] = entry

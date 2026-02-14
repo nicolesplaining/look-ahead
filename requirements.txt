@@ -2,3 +2,4 @@ torch>=2.0.0
 transformer-lens>=2.0.0  # Includes transformers as dependency
 tqdm>=4.60.0
 matplotlib>=3.5.0
+pronouncing>=0.2.0
