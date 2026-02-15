@@ -22,18 +22,18 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
 RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/plots}"
-ACC_MIN="${ACC_MIN:-0}"
-ACC_MAX="${ACC_MAX:-0.5}"
+ACC_MIN=0
+ACC_MAX=1
 
 # ------------------------------------------------------------------
 # Result slots — set path, label, and color for each
 # ------------------------------------------------------------------
-RESULT1="${RESULT1:-$RESULTS_BASE/i0/experiment_results.json}"
+RESULT1="${RESULT1:-$RESULTS_BASE/i4/experiment_results.json}"
 RESULT2="${RESULT2:-}"
 RESULT3="${RESULT3:-}"
 RESULT4="${RESULT4:-}"
 
-LABEL1="${LABEL1:-i=0}"
+LABEL1="${LABEL1:-i=4}"
 LABEL2="${LABEL2:-}"
 LABEL3="${LABEL3:-}"
 LABEL4="${LABEL4:-}"
