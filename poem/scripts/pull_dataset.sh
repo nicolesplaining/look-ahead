@@ -3,7 +3,8 @@
 # Requires: huggingface-cli login  (or HF_TOKEN env var set)
 #
 # Usage:
-#   HF_REPO=username/repo bash poem/scripts/pull_dataset.sh
+#   MODEL_NAME=Qwen/Qwen2.5-7B bash poem/scripts/pull_dataset.sh
+#   HF_REPO=username/repo MODEL_NAME=Qwen/Qwen2.5-7B bash poem/scripts/pull_dataset.sh
 
 set -e
 
@@ -11,11 +12,16 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 HF_REPO="${HF_REPO:-nick-rui/probe-data}"
+MODEL_NAME="${MODEL_NAME:-Qwen/Qwen2.5-7B}"
+
+# Replace '/' with '--' for use in the repo path (e.g. Qwen/Qwen2.5-7B → Qwen--Qwen2.5-7B)
+MODEL_SLUG="${MODEL_NAME//\//"--"}"
+REMOTE_DIR="poem/${MODEL_SLUG}"
 
 DATA_DIR="$PROJECT_ROOT/poem/data"
 mkdir -p "$DATA_DIR"
 
-echo "Pulling poem datasets from $HF_REPO ..."
+echo "Pulling poem datasets from $HF_REPO/$REMOTE_DIR ..."
 
 python - <<EOF
 import shutil
@@ -29,8 +35,8 @@ def pull(filename, dest):
     except Exception as e:
         print(f"  (skipped {filename}: {e})")
 
-pull("poem/activations_train.pt", "${DATA_DIR}/activations_train.pt")
-pull("poem/activations_val.pt",   "${DATA_DIR}/activations_val.pt")
+pull("${REMOTE_DIR}/activations_train.pt", "${DATA_DIR}/activations_train.pt")
+pull("${REMOTE_DIR}/activations_val.pt",   "${DATA_DIR}/activations_val.pt")
 EOF
 
 echo ""
