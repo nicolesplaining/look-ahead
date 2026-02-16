@@ -262,8 +262,6 @@ def main():
     parser.add_argument("--max_new_tokens", type=int, default=16)
     parser.add_argument("--max_poems",      type=int, default=None,
                         help="Cap number of poems (default: all)")
-    parser.add_argument("--device",         type=str,
-                        default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
 
     modes = ["with_newline", "without_newline"] if args.mode == "both" else [args.mode]
@@ -281,15 +279,20 @@ def main():
     print(f"Loaded {len(prompts)} prompts from {args.poems_path}")
 
     # Load model + tokenizer once
+    # device_map="auto" places shards directly on GPU(s) during loading,
+    # avoiding a separate .to(device) call that can hit CUDA error 802.
     print(f"Loading model: {args.model_name}")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        torch_dtype=torch.bfloat16,
-    ).to(args.device)
+        dtype=torch.bfloat16,
+        device_map="auto",
+    )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
-    print(f"✓ Loaded\n")
+    # Determine the device to place input tensors on (first shard's device)
+    input_device = next(model.parameters()).device
+    print(f"✓ Loaded (input device: {input_device})\n")
 
     # Run each mode and collect results
     all_results = {}
@@ -298,7 +301,7 @@ def main():
             model, tokenizer, prompts,
             mode=mode,
             max_new_tokens=args.max_new_tokens,
-            device=args.device,
+            device=input_device,
         )
         all_results[mode] = out
 
