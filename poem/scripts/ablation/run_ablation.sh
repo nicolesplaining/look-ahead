@@ -9,7 +9,6 @@
 #   OUTPUT_DIR=/path/to/output
 #   MAX_NEW_TOKENS=16
 #   MAX_POEMS=600              # default: all
-#   DEVICE=cuda
 
 set -e
 
@@ -23,7 +22,6 @@ POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-original-truncated-shuff
 MODE="${MODE:-both}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
-DEVICE="${DEVICE:-cuda}"
 
 MAX_POEMS_ARG=()
 [ -n "$MAX_POEMS" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
@@ -44,7 +42,6 @@ python -m ablation.evaluate_rhyming \
     --mode           "$MODE" \
     --max_new_tokens "$MAX_NEW_TOKENS" \
     --output_dir     "$OUTPUT_DIR" \
-    --device         "$DEVICE" \
     "${MAX_POEMS_ARG[@]}"
 
 echo ""
