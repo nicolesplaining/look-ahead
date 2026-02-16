@@ -1,16 +1,16 @@
 #!/bin/bash
-# Plot poem probe results (Step 3 of decoupled pipeline).
+# Compare one metric across i=0..9 on a single plot.
 # Can be run from any directory.
 #
-# Defaults: i=0 in one color, i=1..9 in another, Rhyme@5 only.
 # Override via env vars:
 #   RESULTS_BASE=/path/to/results/dir
 #   OUTPUT_DIR=/path/to/output
-#   COLOR_I0=tomato   COLOR_REST=steelblue
-#   STYLE_I0="-"      STYLE_REST="--"   (any matplotlib linestyle)
+#   METRIC=rhyme5          (val | top5 | rhyme | rhyme5)
+#   COLOR_I0=tomato        COLOR_REST=steelblue
+#   STYLE_I0=solid         STYLE_REST=dashed   (solid|dashed|dotted|dashdot)
 #
 # Optional argument:
-#   --file_name rhyme5_qwen3.png
+#   --file_name my_plot.png
 
 set -e
 
@@ -19,30 +19,28 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/qwen3-32B}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/qwen3-32B/plots}"
+RESULTS_BASE=$PROJECT_ROOT/poem/results/qwen3-32B
+OUTPUT_DIR=$PROJECT_ROOT/poem/results/qwen3-32B/plots
+METRIC=rhyme
 ACC_MIN=0
 ACC_MAX=1
 
 COLOR_I0="${COLOR_I0:-tomato}"
 COLOR_REST="${COLOR_REST:-steelblue}"
-STYLE_I0="${STYLE_I0:--}"        # linestyle for i=0 (default: solid)
-STYLE_REST="${STYLE_REST:---}"   # linestyle for i=1..9 (default: dashed)
-OUTPUT_NAME=summary
+STYLE_I0="${STYLE_I0:-solid}"
+STYLE_REST="${STYLE_REST:-dashed}"
 
-# Parse arguments
+FILE_NAME=summary-$METRIC
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        --file_name) OUTPUT_NAME="$2"; shift 2 ;;
+        --file_name) FILE_NAME="$2"; shift 2 ;;
         *) echo "Unknown argument: $1"; exit 1 ;;
     esac
 done
 
 mkdir -p "$OUTPUT_DIR"
 
-# ------------------------------------------------------------------
-# Build argument lists
-# ------------------------------------------------------------------
 JSONS=()
 LABELS=()
 COLORS=()
@@ -63,23 +61,22 @@ if [ ${#JSONS[@]} -eq 0 ]; then
     exit 1
 fi
 
-echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
-echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
+NAME_ARG=()
+[ -n "$FILE_NAME" ] && NAME_ARG=(--file_name "$FILE_NAME")
+
+echo "Comparing ${#JSONS[@]} result(s), metric=$METRIC → $OUTPUT_DIR"
 echo ""
 
-NAME_ARG=()
-[ -n "$OUTPUT_NAME" ] && NAME_ARG=(--file_name "$OUTPUT_NAME")
-
-python -m visualize_results \
+python -m compare_results \
     "${JSONS[@]}" \
+    --metric "$METRIC" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
     --linestyles "${STYLES[@]}" \
-    --show-rhyme5 \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR" \
     "${NAME_ARG[@]}"
 
 echo ""
-echo "✓ Plots saved to $OUTPUT_DIR/"
+echo "✓ Plot saved to $OUTPUT_DIR/"
