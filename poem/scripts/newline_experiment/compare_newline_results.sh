@@ -15,15 +15,15 @@
 set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
+PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/poem/results/newline_experiment}"
+RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/poem/results/qwen3-32B/newline_experiment}"
 RESULT_JSON="$RESULTS_DIR/experiment_results.json"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
-METRIC=top5
-MAX_K="${MAX_K:-5}"
+METRIC=val
+MAX_K=2
 FILE_NAME=""
 
 while [[ $# -gt 0 ]]; do
@@ -70,7 +70,7 @@ EOF
 # ------------------------------------------------------------------
 # Build argument lists — one entry per k
 # ------------------------------------------------------------------
-COLORS=(tomato steelblue seagreen orange mediumpurple saddlebrown)
+COLORS=(tomato steelblue seagreen)
 JSONS=()
 LABELS=()
 USED_COLORS=()
@@ -102,7 +102,7 @@ python -m compare_results \
     --labels    "${LABELS[@]}" \
     --colors    "${USED_COLORS[@]}" \
     --acc-min   0 \
-    --acc-max   1 \
+    --acc-max   0.5 \
     --output-dir "$OUTPUT_DIR" \
     "${NAME_ARG[@]}"
 
