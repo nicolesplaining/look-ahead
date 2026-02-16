@@ -64,28 +64,27 @@ def _get_second_line_targets(
         if '\n' in tokenizer.decode([tid])
     ]
 
-    # Need at least two newlines: end-of-first-line and end-of-second-line
-    if len(nl_positions) < 2:
+    # Structure: preamble\n (index 0), first-line\n (index 1), second-line\n (index 2).
+    # The model generates beyond the second-line \n (max_new_tokens keeps running),
+    # so there may be extra \n tokens after index 2.  Always use index 1 and 2,
+    # NOT -2 and -1, to avoid indexing into trailing generated content.
+    if len(nl_positions) < 3:
         return [stored_k0] + [None] * max_k
 
-    last_nl   = nl_positions[-1]   # end of second line
-    second_nl = nl_positions[-2]   # end of first line (upper bound of search)
+    last_nl   = nl_positions[2]   # end of second line  (3rd \n in the text)
+    second_nl = nl_positions[1]   # end of first line   (2nd \n in the text)
 
     # Find the anchor (k=0 position) by scanning backwards through the second
-    # line for stored_k0.  This handles cases where re-tokenisation differs
-    # from the original (e.g. "word.\n" fused differently), because we
-    # always trust stored_k0 and use it to locate the surrounding tokens.
+    # line for stored_k0, then step back k tokens for k=1..max_k.
     k0_anchor: Optional[int] = None
     for pos in range(last_nl - 1, second_nl, -1):
         if token_ids[pos] == stored_k0:
             k0_anchor = pos
             break
 
-    # k=0 always from stored; k=1..max_k from anchor
     targets: List[Optional[int]] = [stored_k0]
 
     if k0_anchor is None:
-        # Cannot reliably locate k=1..max_k positions
         return [stored_k0] + [None] * max_k
 
     for k in range(1, max_k + 1):
@@ -147,14 +146,14 @@ def build_newline_dataset(
     # -----------------------------------------------------------------------
     print(f"\nRecovering targets for k=1..{max_k} from generated texts (k=0 from stored)...")
     all_targets: List[List[int]] = []   # shape [M, max_k+1], -1 = unavailable
-    n_anchor_not_found = 0
+    n_fallback = 0
 
     for poem_idx, text in enumerate(tqdm(generated_texts, desc="Building targets")):
         stored_k0 = int(i0_targets_k0[poem_idx].item())
         row = _get_second_line_targets(text, tokenizer, max_k, stored_k0=stored_k0)
 
         if any(t is None for t in row[1:]):
-            n_anchor_not_found += 1
+            n_fallback += 1
 
         # Replace None with -1 for storage
         all_targets.append([t if t is not None else -1 for t in row])
@@ -162,7 +161,7 @@ def build_newline_dataset(
     targets_tensor = torch.tensor(all_targets, dtype=torch.long)  # [M, max_k+1]
 
     print(f"\n✓ Built targets tensor: {list(targets_tensor.shape)}")
-    print(f"  Poems where anchor not found (k>0 set to -1): {n_anchor_not_found}")
+    print(f"  Poems using fallback anchor (short second line): {n_fallback}")
 
     for k in range(max_k + 1):
         valid = int((targets_tensor[:, k] != -1).sum())
