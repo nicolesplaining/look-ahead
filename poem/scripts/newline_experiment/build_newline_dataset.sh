@@ -16,7 +16,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="${MODEL_NAME:-Qwen/Qwen2.5-7B}"
+MODEL_NAME=Qwen/Qwen3-32B
 DATA_DIR="${DATA_DIR:-$PROJECT_ROOT/poem/data}"
 OUT_DIR="${OUT_DIR:-$PROJECT_ROOT/poem/data}"
 MAX_K="${MAX_K:-5}"

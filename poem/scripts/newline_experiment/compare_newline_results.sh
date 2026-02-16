@@ -22,7 +22,7 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/poem/results/newline_experiment}"
 RESULT_JSON="$RESULTS_DIR/experiment_results.json"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
-METRIC="${METRIC:-val}"
+METRIC=top5
 MAX_K="${MAX_K:-5}"
 FILE_NAME=""
 
