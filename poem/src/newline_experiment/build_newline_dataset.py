@@ -41,48 +41,59 @@ def _get_second_line_targets(
     text: str,
     tokenizer,
     max_k: int,
-    expected_k0: Optional[int] = None,
+    stored_k0: int,
 ) -> List[Optional[int]]:
     """
-    Tokenise `text` (a full "A rhyming couplet:\\nLine1\\nLine2\\n" string) and
-    return [target_k0, target_k1, ..., target_kmax_k].
+    Return [target_k0, target_k1, ..., target_kmax_k].
 
-    target_ki = token at k steps before the final token of the second line.
-    k=0 is the rhyme word (last token before the terminating \\n of line 2).
+    k=0 is always `stored_k0` (the target already present in the .pt file —
+    trusted as ground truth).
 
-    Returns None entries for k values where the second line is too short.
-    If expected_k0 is given and doesn't match, all entries are None (mismatch
-    means the re-tokenisation differs from the original extraction).
+    k=1..max_k are found by re-tokenising `text`, locating the second line,
+    searching backwards for `stored_k0` as an anchor, then stepping back k
+    tokens from there.
+
+    Returns None for k values where the second line is too short or the anchor
+    token cannot be found in the re-tokenised sequence.
     """
     token_ids = tokenizer.encode(text, add_special_tokens=False)
 
-    # Scan for positions whose decoded token contains '\n'
+    # Positions of tokens whose decoded form contains '\n'
     nl_positions = [
         i for i, tid in enumerate(token_ids)
         if '\n' in tokenizer.decode([tid])
     ]
 
-    # Need at least two newlines: end of first line + end of second line
+    # Need at least two newlines: end-of-first-line and end-of-second-line
     if len(nl_positions) < 2:
-        return [None] * (max_k + 1)
+        return [stored_k0] + [None] * max_k
 
     last_nl   = nl_positions[-1]   # end of second line
-    second_nl = nl_positions[-2]   # end of first line
+    second_nl = nl_positions[-2]   # end of first line (upper bound of search)
 
-    # Targets are at positions last_nl-1 (k=0), last_nl-2 (k=1), ...
-    # but must stay within the second line (> second_nl)
-    targets = []
-    for k in range(max_k + 1):
-        pos = last_nl - 1 - k
+    # Find the anchor (k=0 position) by scanning backwards through the second
+    # line for stored_k0.  This handles cases where re-tokenisation differs
+    # from the original (e.g. "word.\n" fused differently), because we
+    # always trust stored_k0 and use it to locate the surrounding tokens.
+    k0_anchor: Optional[int] = None
+    for pos in range(last_nl - 1, second_nl, -1):
+        if token_ids[pos] == stored_k0:
+            k0_anchor = pos
+            break
+
+    # k=0 always from stored; k=1..max_k from anchor
+    targets: List[Optional[int]] = [stored_k0]
+
+    if k0_anchor is None:
+        # Cannot reliably locate k=1..max_k positions
+        return [stored_k0] + [None] * max_k
+
+    for k in range(1, max_k + 1):
+        pos = k0_anchor - k
         if pos <= second_nl:
             targets.append(None)
         else:
             targets.append(int(token_ids[pos]))
-
-    # Verify k=0 against the stored target if provided
-    if expected_k0 is not None and targets[0] is not None:
-        if targets[0] != expected_k0:
-            return [None] * (max_k + 1)
 
     return targets
 
@@ -134,30 +145,24 @@ def build_newline_dataset(
     # -----------------------------------------------------------------------
     # Recover targets for k = 0 .. max_k via re-tokenisation
     # -----------------------------------------------------------------------
-    print(f"\nRecovering targets for k=0..{max_k} from generated texts...")
+    print(f"\nRecovering targets for k=1..{max_k} from generated texts (k=0 from stored)...")
     all_targets: List[List[int]] = []   # shape [M, max_k+1], -1 = unavailable
-    n_mismatch = 0
-    n_short    = 0
+    n_anchor_not_found = 0
 
     for poem_idx, text in enumerate(tqdm(generated_texts, desc="Building targets")):
-        expected_k0 = int(i0_targets_k0[poem_idx].item())
-        row = _get_second_line_targets(text, tokenizer, max_k, expected_k0=expected_k0)
+        stored_k0 = int(i0_targets_k0[poem_idx].item())
+        row = _get_second_line_targets(text, tokenizer, max_k, stored_k0=stored_k0)
 
-        if row[0] is None:
-            n_mismatch += 1
+        if any(t is None for t in row[1:]):
+            n_anchor_not_found += 1
 
         # Replace None with -1 for storage
         all_targets.append([t if t is not None else -1 for t in row])
 
-        # Count poems where any k > 0 is unavailable
-        if any(t == -1 for t in all_targets[-1][1:]):
-            n_short += 1
-
     targets_tensor = torch.tensor(all_targets, dtype=torch.long)  # [M, max_k+1]
 
     print(f"\n✓ Built targets tensor: {list(targets_tensor.shape)}")
-    print(f"  Tokenisation mismatches (k=0 mismatch, all set to -1): {n_mismatch}")
-    print(f"  Poems with short second lines (some k > 0 unavailable): {n_short}")
+    print(f"  Poems where anchor not found (k>0 set to -1): {n_anchor_not_found}")
 
     for k in range(max_k + 1):
         valid = int((targets_tensor[:, k] != -1).sum())
