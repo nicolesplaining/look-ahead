@@ -1,0 +1,3611 @@
+{
+  "mode": "without_newline",
+  "model_name": "Qwen/Qwen3-32B",
+  "n_total": 600,
+  "n_attempted": 600,
+  "n_rhymed": 335,
+  "n_unknown": 6,
+  "rhyme_rate": 0.5583333333333333,
+  "results": [
+    {
+      "status": "rhyme",
+      "first_word": "vine",
+      "second_word": "align",
+      "continuation": "And watched the sun and stars align. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "block",
+      "second_word": "danced",
+      "continuation": "His shadow danced, a ghostly clock. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pine",
+      "second_word": "mine",
+      "continuation": "But time and weather made them mine. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "remain",
+      "second_word": "go",
+      "continuation": "But he had to go. A rhyming couplet is a pair of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swell",
+      "second_word": "on",
+      "continuation": "As the storm raged on, a tempest to tell. The ocean's"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "slow",
+      "second_word": "show",
+      "continuation": "But still he drove with speed and show. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gold",
+      "second_word": "hold",
+      "continuation": "But never had a tale to hold. To refine the couplet and enhance its"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stake",
+      "second_word": "lute",
+      "continuation": "The jester laughed and played his lute. To continue the narrative in a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fit",
+      "second_word": "in",
+      "continuation": "But lost her keys and couldn't get in. The rhyme scheme is AABB,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tight",
+      "second_word": "open",
+      "continuation": "But the wind blew it open, and the cat took flight. The user provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "attain",
+      "second_word": "attain",
+      "continuation": "The knowledge they were meant to attain. The teacher helped students attain, The knowledge"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "crown",
+      "continuation": "With a frown on his face and a heavy crown. The rhyme scheme of"
+    },
+    {
+      "status": "unknown",
+      "first_word": "wristband",
+      "second_word": "band",
+      "continuation": "But it was only a phantom band. The couplet you've written is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "so",
+      "second_word": "slow",
+      "continuation": "But she was falling for him slow. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "steak",
+      "second_word": "cheese",
+      "continuation": "With coffee black and bread with cheese. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flat",
+      "second_word": "hat",
+      "continuation": "To see if the hawk had flown off to the hat. The prairie dog"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fit",
+      "second_word": "couch",
+      "continuation": "While the couch, with snacks, was his citadel bit by bit. The"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "heat",
+      "continuation": "And danced with joy and danced with heat. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shine",
+      "second_word": "aligned",
+      "continuation": "As the sun set in the west and the stars aligned. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "treat",
+      "continuation": "While the bakers made their treat. The joggers ran down the street,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mat",
+      "second_word": "cat",
+      "continuation": "A lazy cat, with a lazy hat. The feline stretched out on the"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tell",
+      "second_word": "start",
+      "continuation": "Of how he'd loved her from the start. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shake",
+      "second_word": "straight",
+      "continuation": "And knew the storm was coming straight. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wombat",
+      "second_word": "large",
+      "continuation": "Which is a kind of large, round, flat, fat wombat. The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "danced",
+      "continuation": "But no one danced, they all stood tall. The king hosted a royal ball"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heat",
+      "second_word": "might",
+      "continuation": "But still he ran with all his might. The marathon ruer felt the heat"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "string",
+      "continuation": "But it was only the cat on the string. A rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spit",
+      "second_word": "said",
+      "continuation": "But the patient said, \"I can't quit!\" To improve the given rh"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "aim",
+      "second_word": "dream",
+      "continuation": "But the target was a dream. He tried hard to aim, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "cold",
+      "second_word": "hold",
+      "continuation": "But found a warmer way to hold. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bell",
+      "second_word": "hell",
+      "continuation": "And felt the world was full of hell. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "string",
+      "second_word": "empty",
+      "continuation": "The box was empty, nothing within it at all. The package arrived tied with"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swing",
+      "second_word": "there",
+      "continuation": "And thought of how she'd once had fun there, too, and sung."
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hold",
+      "second_word": "was",
+      "continuation": "Of a love that was, and a love that was told. The couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bright",
+      "second_word": "night",
+      "continuation": "A beacon in the night. The lighthouse warned ships with its bright, A"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "sing",
+      "continuation": "And all would sing. The bells would loudly ring, And all would sing."
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "band",
+      "second_word": "star",
+      "continuation": "Now he's a star, a famous man. A rhyming couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pane",
+      "second_word": "stain",
+      "continuation": "The floor had a water stain. The couplet you've provided is a good"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "know",
+      "continuation": "And found a heart he didn't know. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hall",
+      "second_word": "him",
+      "continuation": "She knew it was him, after all. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fall",
+      "second_word": "her",
+      "continuation": "And thought of her, and how it all began to call. The second line"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "near",
+      "second_word": "anymore",
+      "continuation": "He had no strength to fight anymore. He felt his end drawing near, He"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "away",
+      "continuation": "The wind was howling far away. The first line of the couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "long",
+      "continuation": "But the weather turned and it rained all day long. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "ring",
+      "continuation": "He heard the doorbells ring. Now, let's analyze the given rh"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spring",
+      "second_word": "sing",
+      "continuation": "As the snow began to melt and the flowers began to sing. The couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "maintain",
+      "second_word": "scale",
+      "continuation": "The balance of the scale, sustain. The rhyme is correct, and the meter"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "unfold",
+      "second_word": "gold",
+      "continuation": "A tale of love and loss and gold. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fear",
+      "second_word": "near",
+      "continuation": "As shadows danced and whispers near. The couplet you've provided is a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "cake",
+      "second_word": "cake",
+      "continuation": "But then forgot to bake the cake. The chef prepared a chocolate cake, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tear",
+      "second_word": "smiled",
+      "continuation": "And smiled, but it wasn't clear. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "sand",
+      "continuation": "Leaving behind a trail of handprints in the sand. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "dock",
+      "second_word": "stock",
+      "continuation": "As the sun set in the west so stock. Is the rhyme in the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sake",
+      "second_word": "break",
+      "continuation": "She'd never let her heart break. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "eat",
+      "continuation": "With books and plants and things to eat. The apartment was small but neat,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "writ",
+      "second_word": "to",
+      "continuation": "And sentenced the man to ... knitting? What? The judge read the legal writ"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tear",
+      "second_word": "hear",
+      "continuation": "For all the things he could not hear. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "know",
+      "second_word": "below",
+      "continuation": "From the books that he read in his study below. The rhyme scheme of this"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "land",
+      "second_word": "understand",
+      "continuation": "To grow the crops and understand. The farmer worked hard on his land, To"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clock",
+      "second_word": "clock",
+      "continuation": "The minutes ticking like a clock. The second line of the couplet should rhyme"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flat",
+      "second_word": "that",
+      "continuation": "But some preferred to squat like that. The first line ends with \"flat,\""
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gown",
+      "second_word": "town",
+      "continuation": "Her smile was the highlight of the town. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mitt",
+      "second_word": "grin",
+      "continuation": "He caught it with a grin, a perfect mitt. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bat",
+      "second_word": "matches",
+      "continuation": "And a box of matches, and a cat. A classic! Here's a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sit",
+      "second_word": "quit",
+      "continuation": "And watched the sun go down to quit. The couplet you've written is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "unseated",
+      "continuation": "And then she felt a bit unseated. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hay",
+      "second_word": "day",
+      "continuation": "While the sun sank low and kissed the day. The farmer stacked the golden hay"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "night",
+      "second_word": "light",
+      "continuation": "And danced with moon in silver light. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "play",
+      "second_word": "away",
+      "continuation": "They chased the clouds away. The children went outside to play, <br>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sing",
+      "second_word": "a",
+      "continuation": "But couldn't carry a tune in a ___? The answer to the riddle"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "wall",
+      "continuation": "But they were only figments of her wall. The second line of the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "divine",
+      "continuation": "And found a truth that was divine. The couplet you've provided is well"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "game",
+      "second_word": "loud",
+      "continuation": "The crowd was loud, the stakes were high. The teams competed in the game"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stay",
+      "second_word": "nay",
+      "continuation": "But the innkeeper said nay. The travelers plaed to stay, But"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "stand",
+      "continuation": "A place where dreams and memories stand. The beach stretched out with golden sand,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "day",
+      "continuation": "To paint a stormy sky at day. The artist mixed colors of blue and"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "grapevine",
+      "second_word": "sky",
+      "continuation": "The moon shone bright in the night sky. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "shine",
+      "continuation": "To where the wildflowers shine. She followed the railroad line, To where the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "land",
+      "continuation": "The meaning of this foreign land. The couplet you've provided is a well"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "holiday",
+      "second_word": "tinsel",
+      "continuation": "With lights and tinsel, joy to display. She decorated for the holiday"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clear",
+      "second_word": "surreal",
+      "continuation": "But the task was still quite surreal. The instructions were perfectly clear, But the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "same",
+      "second_word": "tame",
+      "continuation": "But the journey was not tame. The result turned out the same, <br"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "meet",
+      "second_word": "late",
+      "continuation": "But the train was late, and he was late to meet. A rhym"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "take",
+      "continuation": "To find a treasure none could take. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "land",
+      "second_word": "stand",
+      "continuation": "With a rifle and a brand new stand. The first line of the couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beat",
+      "second_word": "other",
+      "continuation": "The clock and each other, no cheat. The given text is a rhym"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bureaucrat",
+      "second_word": "now",
+      "continuation": "But he's one now, and it's not that great. The couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pane",
+      "second_word": "aid",
+      "continuation": "With soap and water and a squeegee's aid. The couplet you"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fear",
+      "second_word": "laughter",
+      "continuation": "He roared with laughter, they had much to share. The rhyme scheme of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "again",
+      "continuation": "The sun came out again. The given text is a rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beer",
+      "second_word": "here",
+      "continuation": "But now he's stuck with a hangover here. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tall",
+      "second_word": "was",
+      "continuation": "A mirror that showed a room twice as large as it was. The couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pain",
+      "second_word": "brain",
+      "continuation": "As if a thousand needles were in his brain. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "beat",
+      "continuation": "A burden he could not beat. The couplet you've provided is a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "go",
+      "continuation": "But she still had a long way to go. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fine",
+      "second_word": "heart",
+      "continuation": "But in her heart, she knew it was not. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "squall",
+      "continuation": "The students all jumped up with a yawn and a squall. The couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "obtain",
+      "second_word": "gain",
+      "continuation": "A man who would be her gain. She hoped to one day obtain, A"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "bound",
+      "continuation": "The fate of all was bound. The coin spun round and round, The fate"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "around",
+      "continuation": "The lightning flashed around. The thunder made a booming sound, The lightning flashed around"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "right",
+      "continuation": "To guide the lost and set things right. That's a beautiful rhyming"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "great",
+      "continuation": "The jockey shouted with great _________. What is the missing word? The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shock",
+      "second_word": "work",
+      "continuation": "She was late for work, and it was 3 o'clock. The rhyme"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cold",
+      "second_word": "heart",
+      "continuation": "But in my heart, a tale retold. The winter air was bitter cold"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "out",
+      "continuation": "And watched the stars come out. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heat",
+      "second_word": "walked",
+      "continuation": "But still he walked, and walked, and beat. The second line of the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flock",
+      "second_word": "flock",
+      "continuation": "And led them to a new flock. The shepherd gathered his flock, And led"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shine",
+      "second_word": "line",
+      "continuation": "While I was stuck in line. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "shine",
+      "continuation": "For the ride that would make her shine. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tight",
+      "second_word": "light",
+      "continuation": "But then he saw the mirror's light. The mirror's light reveals the truth"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "around",
+      "second_word": "found",
+      "continuation": "But forgot the treat he found. He walked the dog around, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "heat",
+      "continuation": "But still he couldn't beat the heat. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "planned",
+      "continuation": "The truth was not what she had planned. The truth is, I'm not"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mine",
+      "second_word": "fine",
+      "continuation": "And found a diamond that was truly fine. The user provided a rhyming"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wit",
+      "second_word": "twist",
+      "continuation": "By solving the case with a clever twist. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "lit",
+      "continuation": "But the lock was still lit. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pain",
+      "second_word": "soft",
+      "continuation": "With a touch so soft, so kind, so plain. The second line of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "ground",
+      "continuation": "And a shadow on the ground. He heard footsteps with a creeping sound, <"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "feet",
+      "continuation": "Then threw a party for her feet. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wake",
+      "second_word": "concrete",
+      "continuation": "A trail of broken branches and cracked concrete. The storm left damage in its wake"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "caveat",
+      "second_word": "said",
+      "continuation": "But the poet said, \"Let's not be so caveated.\" The couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "snow",
+      "second_word": "so",
+      "continuation": "While I sat warm and wrote this poem so. The couplet you've written"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "break",
+      "second_word": "cake",
+      "continuation": "And go to the lake to make a cake. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "appear",
+      "second_word": "near",
+      "continuation": "But winter still lingered near. She waited for spring to appear, <br"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "blow",
+      "second_word": "meadow",
+      "continuation": "As he walked through the meadow. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "left",
+      "continuation": "But now he's left, and he doesn't go. The second line of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shine",
+      "second_word": "whispered",
+      "continuation": "And whispered, \"I'll be there in time.\" Based on the given rh"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tell",
+      "second_word": "swell",
+      "continuation": "But the plot was a bit of a swell. The author had a story to"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "plain",
+      "continuation": "And thunder shook the plain. The storm brought torrential rain, And thunder shook"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "day",
+      "continuation": "To find the path that leads to day. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "bright",
+      "continuation": "With a smile so wide and bright. He crossed the finish line, With a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "frown",
+      "continuation": "To the depths of the ocean's frown. The rhyme is correct, but"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clear",
+      "second_word": "near",
+      "continuation": "The stars were shining bright and near. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sign",
+      "second_word": "shine",
+      "continuation": "And the world began to shine. The couplet you've provided is a nice"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frown",
+      "second_word": "known",
+      "continuation": "The mirror showed a face she'd never known. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fall",
+      "second_word": "heart",
+      "continuation": "And thought of her with a heavy heart. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clear",
+      "second_word": "ear",
+      "continuation": "The answer was right in my ear. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lit",
+      "second_word": "forgot",
+      "continuation": "And then it was promptly forgot. The candle was carefully lit, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "night",
+      "continuation": "The stars danced in the velvet night. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "deep",
+      "continuation": "To read the words that were so deep. The first line has 8 syll"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "brown",
+      "second_word": "fawn",
+      "continuation": "And hung a bell to keep the fawn. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spring",
+      "second_word": "thing",
+      "continuation": "Her feet did not touch the floor for a thing. The first line of the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "ground",
+      "continuation": "As waves crashed on the jagged ground. The two lines of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "delight",
+      "second_word": "right",
+      "continuation": "Of being in the right. 1. **He felt the thrill and pure"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "disappear",
+      "second_word": "life",
+      "continuation": "A new life, a new frontier. He watched the coastline disappear, A new"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "knock",
+      "second_word": "door",
+      "continuation": "He opened the door, and then dropped. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "around",
+      "second_word": "sound",
+      "continuation": "But still the neighbors made a sound. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "weed",
+      "second_word": "place",
+      "continuation": "And in its place, a rose instead. The couplet you've written is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tall",
+      "second_word": "hall",
+      "continuation": "To keep the hounds from the hall. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frame",
+      "second_word": "place",
+      "continuation": "But not the face that stared in its place. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fold",
+      "second_word": "told",
+      "continuation": "And counted them twice to be sure they were all told. The shepherd gathered every"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "down",
+      "continuation": "Where the sun always shone down. The rhyme scheme of this couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "fame",
+      "continuation": "For the things he did to claim fame. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bell",
+      "second_word": "fell",
+      "continuation": "A sound that echoed through the fell. The church tower rang its bell, A"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "everything",
+      "second_word": "thing",
+      "continuation": "But never learned to read a thing. The riddle is solved! The answer"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "brown",
+      "second_word": "comb",
+      "continuation": "With a bristle brush and a silver comb. He brushed the coat of chest"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shell",
+      "second_word": "lived",
+      "continuation": "A relic of a life once well lived, now still. She examined the empty"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "night",
+      "continuation": "So he took a trip to the moon at night. The photographer needed better light"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "said",
+      "continuation": "But he just smiled and said, \"No, no, no, no,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "proclaim",
+      "second_word": "name",
+      "continuation": "The truth of her name. The couplet you've provided is a rhym"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "down",
+      "continuation": "While the moonlight shone down. The carousel horses went round, <br"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "command",
+      "second_word": "grand",
+      "continuation": "To build a wall that would stand so grand. The king issued his royal decree"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "maintain",
+      "second_word": "mind",
+      "continuation": "A healthy body and mind. He exercised to maintain, A healthy body and mind"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "show",
+      "second_word": "glow",
+      "continuation": "With a heart full of hope and glow. She stood up for the theater show"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rack",
+      "second_word": "to",
+      "continuation": "Then sat down and began to _________. What word fits best in the blank"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tame",
+      "second_word": "blame",
+      "continuation": "But the tamer was not to blame. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "might",
+      "continuation": "And loosed it with all her might. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sting",
+      "second_word": "spring",
+      "continuation": "But it was worth it for the spring. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "sweet",
+      "continuation": "But forgot the one thing that made it sweet. The one thing that made it"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ring",
+      "second_word": "heart",
+      "continuation": "But in his heart, he knew it was wrong. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "chat",
+      "second_word": "charm",
+      "continuation": "With clever wit and charm, she'd never lack. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hand",
+      "second_word": "stand",
+      "continuation": "And played a tune that made the whole world stand. The musician picked up his"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clown",
+      "second_word": "frown",
+      "continuation": "Who could juggle and walk a tightrope without a frown. The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tight",
+      "second_word": "love",
+      "continuation": "A mother's love, a beacon bright. She held her baby nestled tight,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "need",
+      "continuation": "But still arrived in need. The couplet you've provided is a clever play"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doorbell",
+      "second_word": "door",
+      "continuation": "She opened the door. He rang the doorbell, She opened the door."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "say",
+      "second_word": "away",
+      "continuation": "So he just walked away. A rhyming couplet is a pair of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "offering",
+      "second_word": "offering",
+      "continuation": "He gave her a large offering. To continue the story in a rhyming"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heed",
+      "second_word": "was",
+      "continuation": "But the truth was, he had no need. A rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "unfold",
+      "second_word": "world",
+      "continuation": "Of a new world, a world of gold. The prophet's vision did unfold"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spray",
+      "second_word": "said",
+      "continuation": "Then said, \"I hope it doesn't make you sick today.\" The couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shake",
+      "second_word": "take",
+      "continuation": "The weight of truth she could not take. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "down",
+      "continuation": "But had no clue what went down. The mayor governed the entire town, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sweet",
+      "second_word": "queasy",
+      "continuation": "But made my tummy feel quite queasy. The candy tasted very sweet,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sit",
+      "second_word": "run",
+      "continuation": "But he was not the one who did the hit and run. The correct version"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "string",
+      "second_word": "and",
+      "continuation": "Then tied a bow that was big and __________. stringing. He wrapped"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "land",
+      "continuation": "But the tide came in and washed it from the land. The couplet you"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sat",
+      "second_word": "waiting",
+      "continuation": "But the cat was waiting, ready to pounce and pat. The mouse sc"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "bold",
+      "continuation": "But her favorite was the brave Sir Bold. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "grand",
+      "continuation": "With sword in hand and heart so grand. The general made his final stand,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "loud",
+      "continuation": "The train was going fast and loud. A couplet is a pair of lines"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "grow",
+      "second_word": "step",
+      "continuation": "With every step, she'd learned to know. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "crown",
+      "second_word": "head",
+      "continuation": "On her head, the crown was found. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "bright",
+      "continuation": "When she saw the stars that shone so bright. A rhyming couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ray",
+      "second_word": "fair",
+      "continuation": "Now it's buried deep and fair. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "format",
+      "second_word": "had",
+      "continuation": "But lacked the passion that it should have had. The document followed legal format,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "brown",
+      "second_word": "gown",
+      "continuation": "To make a dress for her young daughter's gown. The second line of this"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "aim",
+      "second_word": "aim",
+      "continuation": "But missed the mark with his aim. The archer learned how to aim,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wine",
+      "second_word": "moon",
+      "continuation": "And smiled at the moon, so divine. She sipped the sparkling Valentine wine"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hat",
+      "second_word": "chat",
+      "continuation": "And took a seat to have his chat. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "banned",
+      "continuation": "With a voice that could not be banned. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "gall",
+      "continuation": "To fight for the right and the good and the gall. The couplet you"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "smell",
+      "second_word": "stale",
+      "continuation": "But the muffins were a little stale. The bakery had a sweet smell,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cell",
+      "second_word": "hours",
+      "continuation": "He counted the hours, the minutes, the hell. The prisoner sat in his"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lit",
+      "second_word": "fit",
+      "continuation": "But someone had a different fit. The torch was ready to be lit, But"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "gold",
+      "continuation": "Of how the world was made of gold. The next line should rhyme with \""
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "volleyball",
+      "second_word": "overthrown",
+      "continuation": "His dreams would not be overthrown. He practiced with the volleyball, day after"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "right",
+      "second_word": "new",
+      "continuation": "But now she's stuck on something new. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "train",
+      "second_word": "began",
+      "continuation": "Whistled a tune as it began. A rhyming couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sock",
+      "second_word": "still",
+      "continuation": "But still her toes were cold and stock-still. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "town",
+      "continuation": "But then he found a brand new town. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rake",
+      "second_word": "wake",
+      "continuation": "While the wind played tricks in the morning's wake. She gathered leaves with her"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cake",
+      "second_word": "see",
+      "continuation": "With a heart and two doves in flight\u2014so nice to see. The"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "name",
+      "second_word": "name",
+      "continuation": "And then she signed her real name. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "know",
+      "continuation": "And thought of all he'd come to know. He watched the river gently flow"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "know",
+      "second_word": "snow",
+      "continuation": "But now he's just a ghost of snow. The first line of the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "drain",
+      "second_word": "rain",
+      "continuation": "But the moon still shone in the rain. The water flowed down the drain"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "defeat",
+      "continuation": "With a heart that was full of defeat. She walked down the busy street,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bit",
+      "second_word": "precise",
+      "continuation": "With timing so precise, it was pure wit. The structure of a **rh"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "acrobat",
+      "second_word": "grace",
+      "continuation": "Then bowed with grace, the crowd gave a clap. The gymnast performed a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ground",
+      "second_word": "sound",
+      "continuation": "And made a crown for the forest sound. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bold",
+      "second_word": "dragon",
+      "continuation": "He fought the dragon, fierce and cold. The knight's courage was brave and"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "string",
+      "second_word": "sing",
+      "continuation": "As if her soul had something to sing. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "all",
+      "continuation": "But the ice was too slippery for all. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "king",
+      "second_word": "string",
+      "continuation": "His crown was made of gold and studded with a string. The second line"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "show",
+      "second_word": "out",
+      "continuation": "And cried her eyes out, you know. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spell",
+      "second_word": "bee",
+      "continuation": "With flash cards and a spelling bee. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "wit",
+      "continuation": "The tailor stitched with a needle and wit. The seamstress measured for outfit to"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "shone",
+      "continuation": "While stars in silence shone. The Earth kept spinning round, While stars in"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "king",
+      "second_word": "ring",
+      "continuation": "With sword and crown and royal ring. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "hand",
+      "continuation": "The teacher gave a hand, a guiding hand. The child needed help to understand"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doormat",
+      "second_word": "flat",
+      "continuation": "The sun was bright and the sky was flat. The second line of the couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bold",
+      "second_word": "heart",
+      "continuation": "A hero's heart, both brave and _________. old Let's analyze the"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "underground",
+      "second_word": "sound",
+      "continuation": "In search of a new sound. She explored the underground, In search of a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "weed",
+      "second_word": "need",
+      "continuation": "But only made it worse with need. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blame",
+      "second_word": "same",
+      "continuation": "And the truth was not the same. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "slow",
+      "second_word": "lost",
+      "continuation": "He thought of all the time he'd lost. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "fell",
+      "continuation": "But all he got was a cold and fell. The second line of the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flight",
+      "second_word": "night",
+      "continuation": "But the plane was stuck in the night. The pilot checked his gauges for"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "crock",
+      "second_word": "clock",
+      "continuation": "He wore a hat that looked like a clock. A rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tier",
+      "second_word": "there",
+      "continuation": "And found the truth was waiting there. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "heat",
+      "continuation": "And made the ground shake with heat. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "call",
+      "continuation": "A symphony of nature's call. The waterfall's cascade and fall, A"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feed",
+      "second_word": "need",
+      "continuation": "While the young girl watched with a gentle need. The cattle grazed and would"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "her",
+      "continuation": "And thought of her, with a frown. He watched the sun slowly go"
+    },
+    {
+      "status": "unknown",
+      "first_word": "glit",
+      "second_word": "lit",
+      "continuation": "Then he took a small chisel and carved in it lit. The couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "peer",
+      "second_word": "fear",
+      "continuation": "But all he saw was sand and fear. The first line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flock",
+      "second_word": "dock",
+      "continuation": "And brought them to the market dock. The farmer herded all his flock,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "crowned",
+      "second_word": "ribbon",
+      "continuation": "With a trophy and a ribbon, a spelling crown. A couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clay",
+      "second_word": "day",
+      "continuation": "And brought them to life each day. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lake",
+      "second_word": "smoke",
+      "continuation": "And vanished in a flash of flame and smoke. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "feed",
+      "second_word": "bread",
+      "continuation": "But only on the crumbs from bread. The hungry animals would feed, <br"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ascertain",
+      "second_word": "empty",
+      "continuation": "If the glass was half full or half empty. She was certain. The glass"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rear",
+      "second_word": "hair",
+      "continuation": "The wind in her hair, the sea near. A rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "acclaim",
+      "second_word": "right",
+      "continuation": "A star in her own right, not just a name. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "break",
+      "second_word": "make",
+      "continuation": "And watched the clouds in shapes they'd make. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "name",
+      "continuation": "And I was left with the name. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "downtown",
+      "second_word": "town",
+      "continuation": "He gave a trim to every town. To improve the given rhyming couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hit",
+      "second_word": "fit",
+      "continuation": "But the audience was not fit. The comedian's jokes were a hit, <"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "year",
+      "second_word": "fear",
+      "continuation": "For spring to come and melt the fear. The next line of the rhym"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sting",
+      "second_word": "poet",
+      "continuation": "The poet, in turn, penned a scathing sting of his own. The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gain",
+      "second_word": "long",
+      "continuation": "The knowledge that she'd longed for so long. She studied hard to gain"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "aristocrat",
+      "second_word": "office",
+      "continuation": "While he was away at the vet's office, no doubt. The couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "show",
+      "continuation": "As the night sky began to show. The couplet you've written is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "astray",
+      "continuation": "But they still went astray. The couplet you've provided is a good"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "band",
+      "second_word": "end",
+      "continuation": "But snapped back when it reached its end. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "plain",
+      "second_word": "rain",
+      "continuation": "A shadow in the morning rain. The couplet you've provided is a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "pain",
+      "continuation": "The shingles were in direst pain. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bay",
+      "second_word": "day",
+      "continuation": "The moon was shining bright that day. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "good",
+      "continuation": "Though the odds were not good. She refused to back down, Though the odds"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clock",
+      "second_word": "clock",
+      "continuation": "Its ticking made her feel so clock. The second line of the couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "frown",
+      "continuation": "To find a cure for her heart's frown. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gold",
+      "second_word": "gold",
+      "continuation": "But found a new friend instead of gold. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "knock",
+      "second_word": "lock",
+      "continuation": "And opened up the lock. The couplet you've provided is a perfect example"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "train",
+      "second_word": "remain",
+      "continuation": "To see the world and not remain. To see the world and not remain."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "all",
+      "continuation": "She wore a dress of red and all. The user provided a rhyming"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fame",
+      "second_word": "name",
+      "continuation": "By being a very bad name. The couplet you've provided is a clever"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pine",
+      "second_word": "divine",
+      "continuation": "And hung the stars in the sky each night divine. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "seat",
+      "continuation": "While he fixed the broken seat. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "king",
+      "continuation": "But knew it wasn't the king. The user provided a rhyming couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "explain",
+      "second_word": "understand",
+      "continuation": "But he just didn't understand. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "rubber",
+      "continuation": "He had a rubber _________. ball. ball. ball. ball. ball"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "delight",
+      "second_word": "night",
+      "continuation": "The stars came out to shine that night. The fireworks exploded in delight, The"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "frown",
+      "second_word": "down",
+      "continuation": "A man with a burden so down. The next line should rhyme with \"down"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sing",
+      "second_word": "bring",
+      "continuation": "Their harmonies were truly something to bring. The choir gathered together to sing,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stock",
+      "second_word": "made",
+      "continuation": "Now she's rich and feels she's got it made. The couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hand",
+      "second_word": "planned",
+      "continuation": "And played the notes that he had planned. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "understand",
+      "second_word": "journey",
+      "continuation": "That learning is a journey, not a demand. The teacher helped the students understand"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shock",
+      "second_word": "locked",
+      "continuation": "As if his soul had been hacked and locked. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "yell",
+      "second_word": "dog",
+      "continuation": "\"I'm not a dog, I'm not a ___!\" Well, the answer"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pit",
+      "second_word": "instead",
+      "continuation": "But the plum had a soft one instead. The cherry had a hard center pit"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flame",
+      "second_word": "frame",
+      "continuation": "And danced in the night's dark frame. The fire burned with fierce flame,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lock",
+      "second_word": "talk",
+      "continuation": "Then took a seat and began to talk. A rhyming couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bow",
+      "second_word": "sky",
+      "continuation": "And shot the moon from out the sky. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ground",
+      "second_word": "sound",
+      "continuation": "To plant a seed and make it sound. The rhyming couplet you"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fat",
+      "second_word": "mad",
+      "continuation": "It made a sizzle like a snake that's mad. The pancake landed"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grand",
+      "second_word": "hand",
+      "continuation": "With a wave of his hand, he made things stand. The magician performed tricks"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gown",
+      "second_word": "crown",
+      "continuation": "With a heart full of hope and a crown. The duchess arrived in"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "mall",
+      "continuation": "And left her house to help the mall. The second line of the couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "at",
+      "second_word": "smart",
+      "continuation": "But it was a globe that made the trick so smart. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flame",
+      "second_word": "frame",
+      "continuation": "And watched it dance in golden frame. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "complete",
+      "continuation": "With all her toys in rows complete. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "block",
+      "second_word": "drum",
+      "continuation": "His heart a drum, his breath a smoke. The couplet you've written"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lead",
+      "second_word": "tread",
+      "continuation": "And found a path where the righteous would tread. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "feet",
+      "second_word": "state",
+      "continuation": "A shadow of his former state. The couplet you've provided is a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "cold",
+      "continuation": "Its stones worn and weathered cold. The mansion stood from days of old,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cold",
+      "second_word": "smiled",
+      "continuation": "But still she smiled, her heart full of gold. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "game",
+      "second_word": "face",
+      "continuation": "Now he plays with his ex-wife's face. The couplet you've written"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bold",
+      "second_word": "to",
+      "continuation": "She found her voice and began to ___ ___ ___ ___ ___ ___ ___ ___ ___"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rattlesnake",
+      "second_word": "way",
+      "continuation": "She screamed and ran the whole long way. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flight",
+      "second_word": "light",
+      "continuation": "Its wings a blur in morning light. The bird took off in graceful flight,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "row",
+      "second_word": "color",
+      "continuation": "Each one a different color, you know. The garden beds were planted in a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grand",
+      "second_word": "hand",
+      "continuation": "And now she's a boss with a wealthy hand. The couplet you've"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "dear",
+      "second_word": "year",
+      "continuation": "But still he went to war one year. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gold",
+      "second_word": "bold",
+      "continuation": "And danced in the wind so bold. The autumn leaves turned bronze and gold,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "bold",
+      "continuation": "But the museum was still bold. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pain",
+      "second_word": "see",
+      "continuation": "But it was plain to see. He tried to hide his pain, <br"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sock",
+      "second_word": "sock",
+      "continuation": "But the hole was not in the sock. It was in the floor. She"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "misspell",
+      "continuation": "But still couldn't spell \"Misspell\". A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fame",
+      "second_word": "frame",
+      "continuation": "But now he's just a ghost in a frame. The athlete earned international fame"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "look",
+      "continuation": "With ropes and chalk and a chalky look. A rhyming couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "knit",
+      "second_word": "bit",
+      "continuation": "And made a sweater for her bit. The second line of the couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swing",
+      "second_word": "sorrow",
+      "continuation": "From joy to sorrow, from spring to spring. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "hand",
+      "continuation": "But still they held each other's hand. The quicksand pulled at where they"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fit",
+      "second_word": "twist",
+      "continuation": "He took the tape and gave it a twist. The rhyme scheme of the given"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "masterpiece",
+      "continuation": "A masterpiece, a work of shock. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "found",
+      "second_word": "gems",
+      "continuation": "A treasure chest with gold and gems, the ground was strewed. The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "told",
+      "second_word": "here",
+      "continuation": "But still he's here, and I'm the old. The second line of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "grow",
+      "second_word": "yore",
+      "continuation": "With every seed he'd sown of yore. The farmer watched his garden"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mine",
+      "second_word": "designed",
+      "continuation": "For a treasure that was not designed. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lock",
+      "second_word": "jewels",
+      "continuation": "And took out the jewels, then vanished like smoke. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "unlock",
+      "second_word": "heart",
+      "continuation": "The door to his heart, a lock. The first line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rake",
+      "second_word": "lake",
+      "continuation": "But none were there to make a lake. The garden needed leaves to rake,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "say",
+      "second_word": "away",
+      "continuation": "\"May I be excused to go away?\" 1. She asked permission"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clock",
+      "second_word": "town",
+      "continuation": "He'd wake the whole town, and that was a shock. The farmer's"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "steed",
+      "second_word": "feed",
+      "continuation": "Through fields where dreams and visions feed. Now, let's analyze this rhym"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sustain",
+      "second_word": "plain",
+      "continuation": "But the truth was he was plain. The first line of the couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "disappear",
+      "second_word": "fear",
+      "continuation": "But still I climbed with all my fear. The summit seemed to disappear, But"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "break",
+      "continuation": "Where once he'd made a break. The first line is in iambic"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "cold",
+      "continuation": "And now she's in a world of cold. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fold",
+      "second_word": "cold",
+      "continuation": "A tale of love that's lost and cold. The curtains hung in every fold"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "awake",
+      "second_word": "snake",
+      "continuation": "But sleep pulled him in like a snake. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tight",
+      "second_word": "light",
+      "continuation": "His eyes were fixed on the light. The user provided a rhyming couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sound",
+      "second_word": "heart",
+      "continuation": "Of her own heart, so deep and round. She listened to the drumbeat"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "defeat",
+      "continuation": "His heart was full of defeat. The couplet you've provided is a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clear",
+      "second_word": "dear",
+      "continuation": "A mirror of the sky so dear. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wall",
+      "second_word": "all",
+      "continuation": "To see what was going on at all. He climbed over the garden wall,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seeds",
+      "second_word": "skies",
+      "continuation": "And watched the springtime skies. He scattered wildflower seeds, <br>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "pocket",
+      "continuation": "And in her pocket, she did lock. Based on the couplet, what"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ear",
+      "second_word": "cheer",
+      "continuation": "Of love and dreams and tender cheer. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beat",
+      "second_word": "regret",
+      "continuation": "With a heart full of regret. The couplet you've provided is a well"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "take",
+      "second_word": "disaster",
+      "continuation": "But the cake was a disaster, not a cake. The recipe told her which"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "neat",
+      "second_word": "snacks",
+      "continuation": "He brought snacks, forgot the beat. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bouquet",
+      "second_word": "roses",
+      "continuation": "Of roses, daisies, and a tuxedo. The structure of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shame",
+      "second_word": "chain",
+      "continuation": "And found a way to break the chain. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fold",
+      "second_word": "himself",
+      "continuation": "Then returned to the fold himself, feeling bold. The user's query is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "flame",
+      "continuation": "But she had a plan to escape the flame. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "all",
+      "continuation": "But dropped the one that mattered most of all. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flat",
+      "second_word": "that",
+      "continuation": "But the floor was wobbly and the walls were not that. A rh"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "it",
+      "second_word": "to",
+      "continuation": "But then he saw a donkey and had to **[?]** it."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mistake",
+      "second_word": "jake",
+      "continuation": "Now he's stuck in a traffic **jake**. (pun on \""
+    },
+    {
+      "status": "rhyme",
+      "first_word": "meet",
+      "second_word": "eat",
+      "continuation": "But still had no time to eat. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bright",
+      "second_word": "light",
+      "continuation": "The stars themselves felt the light. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mound",
+      "second_word": "profound",
+      "continuation": "And the secrets it held were quite profound. She discovered an ancient burial mound,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "how",
+      "continuation": "To help him remember how. A rhyming couplet is a pair of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "deep",
+      "continuation": "And fell into a deep, dark shock. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "bold",
+      "continuation": "Of a hero who'd long been bold. The next line should rhyme with \""
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "acclaim",
+      "second_word": "ovation",
+      "continuation": "The audience gave a standing ovation, no shame. The actors performed the play"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "all",
+      "continuation": "But gravity was his undoing all. The acrobat tried not to fall,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "thing",
+      "continuation": "But it was just a plastic thing. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flame",
+      "second_word": "firm",
+      "continuation": "The knight stood firm, no need to name. The dragon breathed fire and flame"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "away",
+      "continuation": "And danced the night away. The couplet you've provided is a classic example"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "train",
+      "second_word": "again",
+      "continuation": "She missed the last one again. The couplet you've written is a simple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "call",
+      "second_word": "last",
+      "continuation": "And knew her fate was sealed at last. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "train",
+      "second_word": "pain",
+      "continuation": "With a heart full of pain. The next line of the rhyming couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sell",
+      "second_word": "tell",
+      "continuation": "But the customer had no coin to tell. The merchant had items to sell,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "seed",
+      "second_word": "indeed",
+      "continuation": "And watched them grow with joy indeed. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "treat",
+      "second_word": "sweet",
+      "continuation": "But she preferred the chocolate sweet. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bring",
+      "second_word": "spring",
+      "continuation": "A smile to his face and a song in his spring. The couplet you"
+    },
+    {
+      "status": "unknown",
+      "first_word": "acrobat",
+      "second_word": "deftness",
+      "continuation": "Who walked on tightropes with utmost dexterity and deftness. A"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "gone",
+      "continuation": "But now he's gone, and we're left with the seed. The couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doormat",
+      "second_word": "cat",
+      "continuation": "But still the wind blew in the cat. To enhance the rhyming couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "row",
+      "second_word": "hope",
+      "continuation": "With care and hope, they watched them grow. The crops were planted row by"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "underground",
+      "second_word": "around",
+      "continuation": "A tremor shaking the ground around. Now continue the poem with another rhym"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flake",
+      "second_word": "cake",
+      "continuation": "But the syrup was still on the cake. The couplet you've written is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "thermostat",
+      "second_word": "order",
+      "continuation": "But found the heat was not in order. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "band",
+      "second_word": "hand",
+      "continuation": "And played the snare drum with his left hand. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "treat",
+      "second_word": "sprinkles",
+      "continuation": "A chocolate cake with sprinkles, great. The user provided a rhyming"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "land",
+      "continuation": "He looked for signs of shifting land. The builder inspected where the house would stand"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shock",
+      "second_word": "rock",
+      "continuation": "As if the ground had turned to rock. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sand",
+      "second_word": "grains",
+      "continuation": "A life in grains, a shifting stand. The couplet you've written is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "vet",
+      "continuation": "And now she's a vet, and she's doing just so. The couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hound",
+      "second_word": "ground",
+      "continuation": "And the wolf's howl in the ground. The couplet you've written"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "stay",
+      "continuation": "And now she's on her way to stay. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "prey",
+      "second_word": "way",
+      "continuation": "The moon shone bright on the snow-laden way. The user provided a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stock",
+      "second_word": "rich",
+      "continuation": "And now he's rich, and we are not. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "explain",
+      "second_word": "constrained",
+      "continuation": "Why he felt so constrained. The couplet you've provided is a well-"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "year",
+      "second_word": "clear",
+      "continuation": "When leaves would fall and skies would clear. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "breed",
+      "continuation": "To find a way to flee the breed. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "glow",
+      "continuation": "And the earth began to shake and glow. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "frame",
+      "second_word": "name",
+      "continuation": "But couldn't quite recall the name. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "restrain",
+      "second_word": "rain",
+      "continuation": "The urge to dance in the rain. The rhyme scheme of this couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grain",
+      "second_word": "plain",
+      "continuation": "And watched the crops grow strong and plain. The farmer planted fields of grain,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "well",
+      "second_word": "well",
+      "continuation": "And made a wish that she held so well. The couplet you've provided"
+    },
+    {
+      "status": "unknown",
+      "first_word": "clothesline",
+      "second_word": "fine",
+      "continuation": "While the sun shone bright and the breeze was fine. The couplet you"
+    },
+    {
+      "status": "unknown",
+      "first_word": "firepit",
+      "second_word": "higher",
+      "continuation": "The flames danced higher, and the night felt less bitter. The rhyme scheme here"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pine",
+      "second_word": "design",
+      "continuation": "Now the forest is his design. The couplet you've provided is a good"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "homeland",
+      "second_word": "same",
+      "continuation": "But the wind was not the same. The couplet you've written is quite"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seed",
+      "second_word": "green",
+      "continuation": "A world of green, a world indeed. The garden sprouted from each seed"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "around",
+      "second_word": "profound",
+      "continuation": "With joy and grace so profound. She danced and twirled around, With"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "drown",
+      "continuation": "But the weight of the world was just too much to drown. The couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sweet",
+      "second_word": "indeed",
+      "continuation": "But the bees were very mean indeed. The flowers smelled incredibly sweet, The bees"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hotel",
+      "second_word": "wine",
+      "continuation": "He checked out with a bottle of wine. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fear",
+      "second_word": "courage",
+      "continuation": "With courage, strength, and crystal clear. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hat",
+      "second_word": "bat",
+      "continuation": "She wore a dress of red satin bat. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blow",
+      "second_word": "below",
+      "continuation": "The moonlight danced on the floor below. The couplet you've written is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "greed",
+      "continuation": "But the winner was the one who ran with greed. The marathon required stamina and"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spring",
+      "second_word": "ring",
+      "continuation": "And tucked it in her hair like a ring. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "weed",
+      "second_word": "need",
+      "continuation": "And gave the roses what they need. The first line ends with \"weed\""
+    },
+    {
+      "status": "rhyme",
+      "first_word": "submit",
+      "second_word": "grit",
+      "continuation": "She's got a will of steel and grit. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "night",
+      "continuation": "But they were lost in the night. He needed glasses for his sight, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ballet",
+      "second_word": "flat",
+      "continuation": "But her legs were too flat. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "seed",
+      "second_word": "indeed",
+      "continuation": "With hope and joy he did indeed. The farmer planted every seed, With hope"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "year",
+      "second_word": "spare",
+      "continuation": "With champagne and joy to spare. She celebrated the new year, With champagne and"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "year",
+      "second_word": "single",
+      "continuation": "He never missed a single _______? The answer is \"day.\" The completed"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "well",
+      "second_word": "water",
+      "continuation": "But found no water, only hell. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "touchdown",
+      "second_word": "rough",
+      "continuation": "But the defense was tough and the game was rough. The football player rushed for"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "smell",
+      "second_word": "green",
+      "continuation": "The sky was blue and the grass was green. The flowers gave off a lovely"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sustain",
+      "second_word": "brain",
+      "continuation": "The weight of the world on his brain. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "name",
+      "second_word": "nobody",
+      "continuation": "But he was just a nobody, plain as the same. The second line of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "night",
+      "second_word": "light",
+      "continuation": "Its flame a soft and steady light. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tell",
+      "second_word": "spells",
+      "continuation": "He was a man of few words and many spells. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fold",
+      "second_word": "comfort",
+      "continuation": "A cocoon of comfort, soft and bold. She wrapped herself in fabric fold"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sat",
+      "second_word": "cat",
+      "continuation": "Then tucked the blanket in the cat. The second line of the couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pound",
+      "second_word": "ground",
+      "continuation": "As he stared at the ground. The rhythm and rhyme in this couplet create"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grand",
+      "second_word": "land",
+      "continuation": "With towers and turrets so tall and so land. The castle was built to"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pit",
+      "second_word": "caught",
+      "continuation": "And filled it with what he had caught. A rhyming couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swing",
+      "second_word": "what",
+      "continuation": "And won the match with a *what*? 1. First, I"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feed",
+      "second_word": "need",
+      "continuation": "While the mother watched with joy and need. The baby birds opened wide their be"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clear",
+      "second_word": "here",
+      "continuation": "The truth was right in front of me here. The message was clear and right"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "circle",
+      "continuation": "Then made a circle, quite divine. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "strain",
+      "second_word": "again",
+      "continuation": "But still he ran the trail again. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "racquetball",
+      "second_word": "wall",
+      "continuation": "But he had a weak left wall. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "dock",
+      "second_word": "final",
+      "continuation": "The captain gave the final _________. What is the missing word? The missing"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "shine",
+      "continuation": "And watched the ripples dance and shine. The fisherman cast out his line"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beat",
+      "second_word": "meet",
+      "continuation": "Their graceful strokes a dream to see and meet. The synchronized swimmers moved in"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bay",
+      "second_word": "day",
+      "continuation": "The moonlight lit its path each day. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sold",
+      "second_word": "told",
+      "continuation": "But none could match the tales he told. The merchant's wares were bought"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "vine",
+      "second_word": "coin",
+      "continuation": "And found a golden coin. He trimmed the overgrown vine, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wit",
+      "second_word": "lit",
+      "continuation": "A tale of love and loss and lit. The second line could be improved for"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "indeed",
+      "continuation": "And passed the first with ease indeed. The ruer increased her racing speed,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "wake",
+      "continuation": "The sun would set and stars would wake. The couplet you've written is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gold",
+      "second_word": "bold",
+      "continuation": "But found a greater treasure bold. The couplet you've provided is a classic"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "decay",
+      "second_word": "play",
+      "continuation": "The stars came out to play. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wall",
+      "second_word": "bright",
+      "continuation": "Its colors bright, its frame of gold. The painting hung upon the wall,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clown",
+      "second_word": "frown",
+      "continuation": "He made the kids laugh and the parents frown. The structure of a **"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flat",
+      "second_word": "work",
+      "continuation": "He wore it to work, then gave it a pat. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "spring",
+      "continuation": "He gave it to her with a wink and a spring. The rhyme scheme of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "feed",
+      "continuation": "The sun and time to grow and feed. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "brown",
+      "continuation": "And felt the world was turning brown. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sit",
+      "second_word": "fit",
+      "continuation": "And watch the stars come out to fit. The stars come out to \"fit"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "combat",
+      "second_word": "what",
+      "continuation": "While the general talked of combat's what? The answer to this riddle in"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "white",
+      "second_word": "moonlight",
+      "continuation": "With stars that danced in the pale moonlight. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "day",
+      "continuation": "To solve the problem in a day. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "writ",
+      "second_word": "bit",
+      "continuation": "By candlelight and by starlight bit by bit. The manuscript was carefully writ"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tight",
+      "second_word": "care",
+      "continuation": "With love and care, she gave it light. The couplet you've written"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "blow",
+      "continuation": "As the night winds started to blow. The fireflies began to glow, <"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hand",
+      "second_word": "understand",
+      "continuation": "And watched the world begin to understand. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "claim",
+      "second_word": "name",
+      "continuation": "But the gold was not his name. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tell",
+      "second_word": "well",
+      "continuation": "But the others didn't make it well. The user provided a rhyming"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fright",
+      "second_word": "night",
+      "continuation": "As he saw the bear in the night. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "sight",
+      "continuation": "And knocked his opponent out of sight. The boxer landed a powerful right, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mine",
+      "second_word": "mind",
+      "continuation": "But I found it was all in his mind. A rhyming couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "sound",
+      "continuation": "It rolled and spun and made a sound. The ball bounced up and down and"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "name",
+      "second_word": "divine",
+      "continuation": "To something more divine. She changed her last name to something more divine. She"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stay",
+      "second_word": "away",
+      "continuation": "But then he went away. A rhyming couplet is a pair of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "row",
+      "second_word": "snow",
+      "continuation": "While he sipped his tea and watched the snow. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "same",
+      "second_word": "all",
+      "continuation": "But the question was not the same at all. The answer was exactly the same"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "awake",
+      "second_word": "awake",
+      "continuation": "Its rumble shook the forest awake. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grain",
+      "second_word": "stain",
+      "continuation": "A golden sea without a stain. The harvest fields of grain, A golden sea"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sake",
+      "second_word": "sake",
+      "continuation": "The sun shone for its own sake. The rhyme is correct, but the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "ball",
+      "continuation": "With a sword and a silver ball. The second line of the couplet is"
+    },
+    {
+      "status": "unknown",
+      "first_word": "bowstring",
+      "second_word": "mile",
+      "continuation": "The arrow flew and the target was missed by a mile. The archer pulled"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "indeed",
+      "continuation": "And left her fate to luck indeed. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "around",
+      "second_word": "love",
+      "continuation": "A symbol of her love, so profound. She wrapped the scarf tightly around,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fine",
+      "second_word": "rain",
+      "continuation": "But now I'm stuck in pouring rain. The weather forecast looked just fine,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fat",
+      "second_word": "good",
+      "continuation": "The soup was good, but not that great. The first line of the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clock",
+      "second_word": "shock",
+      "continuation": "And found the time was still a shock. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "day",
+      "continuation": "And rode a horse each day. The knight wore armor shiny gray, <br"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "say",
+      "second_word": "way",
+      "continuation": "And then she would go on her way. She learned what the teacher would say"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "excel",
+      "second_word": "tell",
+      "continuation": "But now he speaks it just to tell. To refine the couplet for greater"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rake",
+      "second_word": "cake",
+      "continuation": "To spread the dough on every cake. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fell",
+      "second_word": "well",
+      "continuation": "A jolly laugh he gave as well. The rhyme scheme is AABB, with"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "farewell",
+      "second_word": "farewell",
+      "continuation": "With a sigh and a final farewell. The first line is \"He bid the"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rear",
+      "second_word": "clear",
+      "continuation": "And found a box that was quite clear. He moved the furniture to the rear"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wing",
+      "second_word": "spring",
+      "continuation": "And flew up to the sky so blue and spring. The user provided a rh"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "ground",
+      "continuation": "But then the ground began to ground. The second line of the couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "string",
+      "second_word": "thing",
+      "continuation": "And found her voice within the thing. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "swell",
+      "second_word": "shell",
+      "continuation": "To find the shipwreck's silver shell. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "compete",
+      "second_word": "street",
+      "continuation": "But lost the race to the street. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seashell",
+      "second_word": "vessel",
+      "continuation": "That was a perfect vessel. The couplet you've provided is already a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "bit",
+      "continuation": "As if he'd found the perfect bit. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "deed",
+      "second_word": "freed",
+      "continuation": "And the world was forever freed. The couplet you've written is quite impactful"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "block",
+      "second_word": "strong",
+      "continuation": "A fortress strong, a lonely rock. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spear",
+      "second_word": "beer",
+      "continuation": "And bled the dawn to golden beer. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bright",
+      "second_word": "light",
+      "continuation": "A symbol of eternal light. The diamond sparkled clear and bright, A symbol"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "claim",
+      "second_word": "name",
+      "continuation": "The house that was her family's name. To continue the story in a rh"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "time",
+      "continuation": "With care and time, and heart and mind. The poet crafted every line,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "night",
+      "continuation": "A perfect fit for day or night. The couplet you've provided is well"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bat",
+      "second_word": "night",
+      "continuation": "And flew into the night, so black. The vampire turned into a flying bat"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "ground",
+      "continuation": "But the roots of the tree still remain on the ground. The building was torn"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sand",
+      "second_word": "follow",
+      "continuation": "A path to follow, hand in hand. The couplet you've provided is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "sweet",
+      "continuation": "Where the neighbors were always so sweet. A rhyming couplet is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mistake",
+      "second_word": "late",
+      "continuation": "And never let it get too late. The couplet you've provided is well"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "handshake",
+      "second_word": "task",
+      "continuation": "She gave a smile that was a task. The second line of the couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sit",
+      "second_word": "flit",
+      "continuation": "Then flew away with a quick flit. The bird landed softly and would sit"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "below",
+      "continuation": "As shadows danced on the wall below. The couplet you've provided is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ground",
+      "second_word": "around",
+      "continuation": "And watched them sprout and grow around. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "scowled",
+      "continuation": "While the adults sipped their coffee and scowled. The children played on"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "ground",
+      "continuation": "But it was just the chair on the ground. The first line of the couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "found",
+      "second_word": "hound",
+      "continuation": "The perfect gift for her beloved hound. The perfect gift for her beloved h"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "scotch",
+      "continuation": "While sipping on his favorite brand of scotch, with a frown."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "treat",
+      "second_word": "beat",
+      "continuation": "A chocolate cake with a cherry on the beat. The rhyme in the couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frame",
+      "second_word": "windows",
+      "continuation": "She made the windows, pane by pane. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "parallel",
+      "second_word": "clear",
+      "continuation": "Where time and space were not so clear. He plunged into parallel, <br"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sign",
+      "second_word": "time",
+      "continuation": "A dream she'd had since high school time. The couplet you've provided"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "night",
+      "continuation": "And gazed at the stars in the night. A rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "old",
+      "second_word": "changed",
+      "continuation": "But the world had changed, and the stories grew cold. The couplet you"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lit",
+      "second_word": "night",
+      "continuation": "The flames would rise and burn the night. The spark ignited and would quickly light"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "command",
+      "second_word": "hand",
+      "continuation": "But his wife was a real pain in the hand. The humor in this rh"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stock",
+      "second_word": "what",
+      "continuation": "While the waiter poured a glass of what? A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "night",
+      "continuation": "But the numbers were wrong in the dead of night. The referee checked the score"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "borderline",
+      "second_word": "been",
+      "continuation": "To where the old mill had been. He followed the county borderline, To where"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "life",
+      "continuation": "To make a new life, and not just for greed. The couplet you"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "layer",
+      "second_word": "player",
+      "continuation": "The barman was quite a player. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bat",
+      "second_word": "chat",
+      "continuation": "And went to play in the front yard chat. The second line of the couple"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hand",
+      "second_word": "desert",
+      "continuation": "But her heart was a desert, so dry and so grand. The couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beat",
+      "second_word": "complete",
+      "continuation": "That made the dancers feel complete. The music had a catchy beat, That made"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sock",
+      "second_word": "small",
+      "continuation": "But it was too small, so it walked about. The baby wore a tiny"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "renowned",
+      "second_word": "high",
+      "continuation": "But the popcorn was priced too high, unkind. The theater showed plays renowned"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bell",
+      "second_word": "shell",
+      "continuation": "And heard the wind in every shell. The first line ends with \"bell\""
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "brown",
+      "second_word": "ground",
+      "continuation": "And falling to the ground. The couplet you've provided is already a well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mall",
+      "second_word": "mall",
+      "continuation": "With a bag full of shopping mall. She walked down the shopping mall, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fight",
+      "second_word": "shield",
+      "continuation": "With sword and shield, he'd do or die. The warrior prepared to fight"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fine",
+      "second_word": "divine",
+      "continuation": "It made the stars feel quite divine. The restaurant served food so fine, It"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "hand",
+      "continuation": "He caught it with his hand. She threw the teis ball, He caught"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hall",
+      "second_word": "flowers",
+      "continuation": "With flowers, candles, and a ball. A rhyming couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bow",
+      "second_word": "most",
+      "continuation": "And gave it to the one she loved the most. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sign",
+      "second_word": "love",
+      "continuation": "A symbol of love, so divine. The message ended with a sign, <"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heartache",
+      "second_word": "ruins",
+      "continuation": "But from the ruins, hope will take. The storm left destruction and heartache"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "blow",
+      "second_word": "you",
+      "continuation": "And thought of you, and thought of you below. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "brown",
+      "second_word": "ground",
+      "continuation": "It curled up in a ball on the ground. The structure of a rhym"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fame",
+      "second_word": "name",
+      "continuation": "With a name that's known to all her fans by name. The couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wine",
+      "second_word": "drain",
+      "continuation": "Then poured the rest down the drain. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rear",
+      "second_word": "instead",
+      "continuation": "But found the mirror's frame instead, and not the back of where. The"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "quit",
+      "second_word": "fight",
+      "continuation": "She was determined to win the fight. The couplet you've provided is well"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sweet",
+      "second_word": "treat",
+      "continuation": "With sprinkles and chocolate treat. The baker made cookies sweet, With sprinkles"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "wall",
+      "continuation": "They chased it down the garden wall. The children kicked around the ball, They"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "play",
+      "second_word": "rhyme",
+      "continuation": "With rhythm and rhyme, they did convey. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mall",
+      "second_word": "call",
+      "continuation": "But found no time to call. He visited the shopping mall, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wing",
+      "second_word": "spring",
+      "continuation": "And danced on the breeze with a fluttering spring. The butterfly stretched its delicate"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bray",
+      "second_word": "say",
+      "continuation": "While the horse would just say, \"Not today.\" A rhyming couple"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "found",
+      "second_word": "unbound",
+      "continuation": "But his heart was still unbound. The couplet you've provided is a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cake",
+      "second_word": "sprinkles",
+      "continuation": "With sprinkles, and a cherry on the ___? A. top B."
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "deed",
+      "second_word": "end",
+      "continuation": "But in the end, he lost his need. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "birthday",
+      "second_word": "day",
+      "continuation": "But it never came that day. He waited for his birthday, <br>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hold",
+      "second_word": "rolled",
+      "continuation": "As the storm raged and the winds rolled. The next line of the rh"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hat",
+      "second_word": "that",
+      "continuation": "But found a ghost inside instead of that. The rhyme scheme of this couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "light",
+      "second_word": "fast",
+      "continuation": "Her feet so fast, a blur of white. The ballerina pirou"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "knit",
+      "second_word": "grit",
+      "continuation": "A tale of love and loss and grit. The seamstress worked with needles to"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "overnight",
+      "second_word": "light",
+      "continuation": "With dreams of freedom and light. She packed her suitcase overnight, With dreams of"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beat",
+      "second_word": "heat",
+      "continuation": "Her heart full of joy and heat. She danced to the pulsing beat,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pay",
+      "second_word": "lay",
+      "continuation": "But she had no money to lay. The bills arrived that she must pay,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "everything",
+      "second_word": "behind",
+      "continuation": "But left her heart behind. The couplet you've provided is a poignant and"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "crown",
+      "second_word": "gown",
+      "continuation": "And the queen wore her golden gown. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "height",
+      "second_word": "might",
+      "continuation": "Then dove down with all its might. The eagle soared to a great height,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tall",
+      "second_word": "wall",
+      "continuation": "Its windows glowing like a dragon's wall. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "red",
+      "continuation": "A dress of red, a sword, and speed. The couplet you've"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "foretell",
+      "second_word": "future",
+      "continuation": "The future, past, and present well. A rhyming couplet is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flame",
+      "second_word": "peace",
+      "continuation": "A symbol of peace, a symbol of fame. The torch carrier held the Olympic"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "snowflake",
+      "second_word": "said",
+      "continuation": "He kissed it and said, \"I'll keep it safe.\" A rhym"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "deer",
+      "second_word": "fear",
+      "continuation": "He raised his bow with great fear. The hunter spotted a graceful deer, He"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "tell",
+      "continuation": "To summon a demon to tell. The wizard prepared his spell, To summon a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "basketball",
+      "second_word": "well",
+      "continuation": "He played it well. He played it fast. He played it with flair and"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "below",
+      "continuation": "Upon the fields of white below. The moonlight cast a silver sheen,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "plain",
+      "continuation": "And thunder shook the plain. The couplet you've provided is a good example"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "proceed",
+      "second_word": "lead",
+      "continuation": "But she was lost and had no lead. The instructions told her to proceed,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pound",
+      "second_word": "ground",
+      "continuation": "As she danced on the ground. A rhyming couplet is a pair"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "smell",
+      "second_word": "perfume",
+      "continuation": "Of her mother's perfume, soft and real. The couplet you've provided"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gold",
+      "second_word": "control",
+      "continuation": "A symbol of the king's control. The crown was forged with ancient might,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "foretold",
+      "second_word": "bold",
+      "continuation": "Of a child who would be bold. The next rhyming couplet could"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "show",
+      "continuation": "The trees were in full show. A rhyming couplet is a pair"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "seed",
+      "second_word": "feed",
+      "continuation": "But one small plant just wouldn't feed. The gardener watered every seed"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ground",
+      "second_word": "time",
+      "continuation": "A testament to time, both strong and sound. The river carved its path through"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wake",
+      "second_word": "lake",
+      "continuation": "But she was still half in a daze and a lake.  The second"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "quit",
+      "second_word": "fit",
+      "continuation": "He reached the top and felt it fit. The couplet you've provided is"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hear",
+      "second_word": "near",
+      "continuation": "The stars above were drawing near. The user provided a rhyming couplet"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "understand",
+      "second_word": "cad",
+      "continuation": "The groom was a bit of a cad. The rhyme scheme in this couplet"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hold",
+      "second_word": "gold",
+      "continuation": "But freedom was her heart's gold. A rhyming couplet is a"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "highway",
+      "second_word": "subway",
+      "continuation": "And the highway went above the subway. To craft a rhyming couplet"
+    }
+  ]
+}

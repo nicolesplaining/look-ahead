@@ -1,0 +1,3611 @@
+{
+  "mode": "without_newline",
+  "model_name": "Qwen/Qwen2.5-72B",
+  "n_total": 600,
+  "n_attempted": 600,
+  "n_rhymed": 332,
+  "n_unknown": 6,
+  "rhyme_rate": 0.5533333333333333,
+  "results": [
+    {
+      "status": "no_rhyme",
+      "first_word": "vine",
+      "second_word": "grow",
+      "continuation": "And watched them grow, one at a time.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "block",
+      "second_word": "pizza",
+      "continuation": "To get a slice of pizza, he did not stop.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pine",
+      "second_word": "mine",
+      "continuation": "And then he carved his name in mine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "remain",
+      "second_word": "away",
+      "continuation": "But the wind blew her away.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "swell",
+      "second_word": "hell",
+      "continuation": "As the sun set and the sky turned to hell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "slow",
+      "second_word": "below",
+      "continuation": "And wished he'd taken the subway below.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gold",
+      "second_word": "again",
+      "continuation": "And then he counted them over and over again.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stake",
+      "second_word": "mistake",
+      "continuation": "And then his rival made a mistake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "it",
+      "continuation": "And wore them to the ball with it.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tight",
+      "second_word": "bed",
+      "continuation": "And then she went to bed, goodnight.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "attain",
+      "second_word": "sustain",
+      "continuation": "The knowledge they needed to sustain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "crown",
+      "continuation": "And he saw a girl with a crown.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "wristband",
+      "second_word": "banned",
+      "continuation": "And knew that she was banned.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "so",
+      "second_word": "slow",
+      "continuation": "But he was just too slow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "steak",
+      "second_word": "bite",
+      "continuation": "And I was glad to take a bite.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flat",
+      "second_word": "said",
+      "continuation": "And said, \u201cI\u2019m glad I\u2019m not a cat!\u201d<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "it",
+      "continuation": "By eating healthy and exercising it.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "neat",
+      "continuation": "And her toes were cold and her feet were neat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shine",
+      "second_word": "decline",
+      "continuation": "As the sun began to rise and the moon to decline.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "heat",
+      "continuation": "They were running to beat the heat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mat",
+      "second_word": "back",
+      "continuation": "The dog was sleeping on the cat's back.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tell",
+      "second_word": "her",
+      "continuation": "Of how he'd loved her, and how well.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shake",
+      "second_word": "make",
+      "continuation": "And then she heard the thunder make.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wombat",
+      "second_word": "clitoris",
+      "continuation": "As a bear without a tail or a clitoris.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "fall",
+      "continuation": "To celebrate his daughter's fall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "heat",
+      "second_word": "feet",
+      "continuation": "But he kept on running with his feet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ring",
+      "second_word": "said",
+      "continuation": "And said, \"Hello, how are you doing, my friend?\"<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spit",
+      "second_word": "did",
+      "continuation": "And she did, but she missed the spittoon a bit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "aim",
+      "second_word": "mile",
+      "continuation": "But he missed the target by a mile.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cold",
+      "second_word": "along",
+      "continuation": "And wished he'd brought his gloves along.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bell",
+      "second_word": "tell",
+      "continuation": "And he knew it was time to tell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "string",
+      "second_word": "friend",
+      "continuation": "A gift from a friend, a lovely thing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swing",
+      "second_word": "wrong",
+      "continuation": "And thought of all the things she\u2019d done wrong.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hold",
+      "second_word": "ones",
+      "continuation": "Of the time she spent with her loved ones, bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bright",
+      "second_word": "light",
+      "continuation": "Shining light, so they wouldn't collide at night.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "sing",
+      "continuation": "When the firemen came to sing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "band",
+      "second_word": "hand",
+      "continuation": "He played the guitar with his left hand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pane",
+      "second_word": "rain",
+      "continuation": "And the wind blew in through the rain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "glow",
+      "continuation": "And he saw a rainbow glow.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hall",
+      "second_word": "wall",
+      "continuation": "And then a knock upon the wall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "call",
+      "continuation": "And felt the chill of autumn's call.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "near",
+      "second_word": "fear",
+      "continuation": "But he had no fear.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gray",
+      "second_word": "long",
+      "continuation": "The rain was falling all day long.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "park",
+      "continuation": "And they played in the park, and had a great time all.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "sing",
+      "continuation": "He thought he heard them sing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spring",
+      "second_word": "sing",
+      "continuation": "As the snow melted away and the flowers began to sing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "maintain",
+      "second_word": "game",
+      "continuation": "His position as the top dog in the game.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "unfold",
+      "second_word": "turned",
+      "continuation": "As the pages turned, her heart began to hold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fear",
+      "second_word": "dark",
+      "continuation": "As she walked through the dark, deserted street.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "cake",
+      "second_word": "wake",
+      "continuation": "And then he baked it in the oven's wake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tear",
+      "second_word": "said",
+      "continuation": "And said, \"I'm sorry, my dear.\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "hand",
+      "continuation": "Feeling the warmth of the sun on her hand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "dock",
+      "second_word": "toll",
+      "continuation": "As the sun set and the day took its toll.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sake",
+      "second_word": "secret",
+      "continuation": "To keep her husband's secret, for his sake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "street",
+      "continuation": "With a view of the street.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "writ",
+      "second_word": "charge",
+      "continuation": "And then he gave the jury its charge.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tear",
+      "second_word": "said",
+      "continuation": "And then he said, \"I'm not a queer.\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "know",
+      "second_word": "go",
+      "continuation": "From the books he read and the places he'd go.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "land",
+      "second_word": "end",
+      "continuation": "Toiling from dawn till the day's end.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clock",
+      "second_word": "dock",
+      "continuation": "And then she went to the dock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flat",
+      "second_word": "mat",
+      "continuation": "The students were all sitting on a mat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gown",
+      "second_word": "town",
+      "continuation": "And danced the night away in town.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mitt",
+      "second_word": "out",
+      "continuation": "And the batter was out, he was not a bit fit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bat",
+      "second_word": "park",
+      "continuation": "And went to play with her friends in the park.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sit",
+      "second_word": "work",
+      "continuation": "And waited for the bus to come and pick her up and take her to work"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "bed",
+      "continuation": "And finished it before she went to bed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hay",
+      "second_word": "lay",
+      "continuation": "And then he went to bed to lay.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "night",
+      "second_word": "light",
+      "continuation": "And lit the world with their soft light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "play",
+      "second_word": "day",
+      "continuation": "And they had a wonderful day.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sing",
+      "second_word": "ring",
+      "continuation": "But he couldn't carry a tune in a ring.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "hall",
+      "continuation": "And went to meet them at the hall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "time",
+      "continuation": "And found the meaning of the time.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "game",
+      "second_word": "points",
+      "continuation": "The winner was the one with the most points.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stay",
+      "second_word": "day",
+      "continuation": "In the inn for the day.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sand",
+      "second_word": "in",
+      "continuation": "The waves crashed in, a rhythmic hand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "day",
+      "continuation": "To paint a picture of a cloudy day.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grapevine",
+      "second_word": "grapevine",
+      "continuation": "The grapes ripened on the grapevine, and the sun shone bright above"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "sunshine",
+      "continuation": "And found a new life in the sunshine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "understand",
+      "second_word": "rhyme",
+      "continuation": "The meaning of the word \"rhyme\".<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "holiday",
+      "second_word": "mistletoe",
+      "continuation": "With a wreath of holly and mistletoe.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clear",
+      "second_word": "listening",
+      "continuation": "But the student was not listening, I fear.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "same",
+      "second_word": "out",
+      "continuation": "The same result turned out.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "meet",
+      "second_word": "compete",
+      "continuation": "But he was not ready to compete.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "sake",
+      "continuation": "To find the treasure for his sake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "land",
+      "second_word": "stand",
+      "continuation": "To find a place where he could stand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beat",
+      "second_word": "meet",
+      "continuation": "The other team and win the meet.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bureaucrat",
+      "second_word": "technocrat",
+      "continuation": "Who was a bit of a technocrat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pane",
+      "second_word": "again",
+      "continuation": "And then he washed his hands again.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fear",
+      "second_word": "lion",
+      "continuation": "And the lion, in turn, showed no fear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "sustain",
+      "continuation": "The rain did not fail to sustain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beer",
+      "second_word": "clear",
+      "continuation": "While watching the game on his TV screen clear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tall",
+      "second_word": "tall",
+      "continuation": "The curtains draped from ceiling to floor so tall, A grand display of elegance,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pain",
+      "second_word": "faint",
+      "continuation": "And then he fell to the ground in a faint.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "beat",
+      "continuation": "And sighed with a weary beat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "flow",
+      "continuation": "As she learned to code and let her creativity flow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fine",
+      "second_word": "eyes",
+      "continuation": "Until she saw the look in his eyes.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "call",
+      "second_word": "class",
+      "continuation": "To the students who were falling asleep in class.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "obtain",
+      "second_word": "car",
+      "continuation": "A new car, a new home, a new mate.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "ground",
+      "continuation": "And then it fell to the ground.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sound",
+      "second_word": "light",
+      "continuation": "The lightning made a blinding light.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "dance",
+      "continuation": "A cosmic dance, a cosmic sign.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "made",
+      "continuation": "The rider's heart beat with each stride he made.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shock",
+      "second_word": "work",
+      "continuation": "She was late for work, she was a clock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cold",
+      "second_word": "fell",
+      "continuation": "The snowflakes fell, the ground was bold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "and",
+      "continuation": "And, with a smile, she turned around.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heat",
+      "second_word": "breeze",
+      "continuation": "And longed for the coolness of the sea breeze.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flock",
+      "second_word": "rock",
+      "continuation": "And the sheep followed him to the rock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shine",
+      "second_word": "chime",
+      "continuation": "As the birds sang their sweetest chime.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "pie",
+      "continuation": "For her turn to buy a slice of pie.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tight",
+      "second_word": "breathe",
+      "continuation": "He couldn't breathe, he couldn't fight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "around",
+      "second_word": "home",
+      "continuation": "And then he came back home.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "eat",
+      "continuation": "And then he started to eat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "land",
+      "continuation": "That she was not the only one in the land.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mine",
+      "second_word": "kind",
+      "continuation": "And found a diamond of the finest kind.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wit",
+      "second_word": "bit",
+      "continuation": "As she solved the puzzle with a clever bit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "bit",
+      "continuation": "But the lock was too tight for a bit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pain",
+      "second_word": "again",
+      "continuation": "And then she massaged again.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "around",
+      "continuation": "And then a voice that made him turn around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "meet",
+      "continuation": "And then she swept the dust to meet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wake",
+      "second_word": "rain",
+      "continuation": "The wind and rain, a force to break.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "caveat",
+      "second_word": "computer",
+      "continuation": "That the universe is not a computer, but a cave.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "snow",
+      "second_word": "snow",
+      "continuation": "And then he shoveled some more snow.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "break",
+      "second_word": "cake",
+      "continuation": "And he went to the park to make a cake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "appear",
+      "second_word": "falling",
+      "continuation": "But the snow kept falling, year after year.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blow",
+      "second_word": "below",
+      "continuation": "As he walked down the street below.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "did",
+      "continuation": "But she never did, and he never showed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shine",
+      "second_word": "you",
+      "continuation": "And thought of you, her heart entwine.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tell",
+      "second_word": "sell",
+      "continuation": "But he couldn't find the right words to sell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "plain",
+      "continuation": "And lightning flashed across the plain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "lay",
+      "continuation": "And found her way to where she lay.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "line",
+      "second_word": "smile",
+      "continuation": "And won the race with a smile.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "town",
+      "continuation": "And then he rode it back up town.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clear",
+      "second_word": "blue",
+      "continuation": "The sky was a deep blue, without a speck of fear.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sign",
+      "second_word": "drive",
+      "continuation": "And then she went out for a drive.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frown",
+      "second_word": "puffy",
+      "continuation": "Her eyes were red and puffy, her face was drawn.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "call",
+      "continuation": "As the wind blew and the trees did call.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clear",
+      "second_word": "clear",
+      "continuation": "The truth became suddenly clear, I had to face my fear.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lit",
+      "second_word": "soft",
+      "continuation": "The flame was a soft, golden bit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "night",
+      "continuation": "As the stars shone bright in the night.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "world",
+      "continuation": "To see the world, and all its need.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "brown",
+      "second_word": "brown",
+      "continuation": "And the window sills a lighter brown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spring",
+      "second_word": "wing",
+      "continuation": "Her feet light as a bird on wing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "ground",
+      "continuation": "As the ship sailed through the misty ground.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "delight",
+      "second_word": "night",
+      "continuation": "As he gazed upon the starry night.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "disappear",
+      "second_word": "sea",
+      "continuation": "As the ship sailed out to sea.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "knock",
+      "second_word": "door",
+      "continuation": "He opened the door, and there stood a dog.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "around",
+      "second_word": "bounds",
+      "continuation": "To keep the cattle in and the thieves out of bounds.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "weed",
+      "second_word": "one",
+      "continuation": "And then he pulled another one, indeed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tall",
+      "second_word": "fall",
+      "continuation": "To keep the sheep safe from the fall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frame",
+      "second_word": "moved",
+      "continuation": "And the way she moved, the way she danced, the way she sang,"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fold",
+      "second_word": "them",
+      "continuation": "And then he counted them, and found that there were told.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "around",
+      "continuation": "Where the people were friendly and kind all around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "name",
+      "continuation": "For the things he had done in his name.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bell",
+      "second_word": "hell",
+      "continuation": "And the people all went to hell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "everything",
+      "second_word": "colors",
+      "continuation": "And they all passed with flying colors.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "brown",
+      "second_word": "down",
+      "continuation": "And then he brushed the horse down.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shell",
+      "second_word": "well",
+      "continuation": "And the world she knew so well.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "bright",
+      "continuation": "So he used a flash to make it bright.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "blue",
+      "continuation": "Why the sky was so blue, and the grass so green below.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "proclaim",
+      "second_word": "shame",
+      "continuation": "That she was not a woman of shame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "round",
+      "continuation": "The carousel horses went round and round.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "command",
+      "second_word": "kingdom",
+      "continuation": "To the people of his kingdom, he did demand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "maintain",
+      "second_word": "sanity",
+      "continuation": "His health and his sanity.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "show",
+      "second_word": "down",
+      "continuation": "And then she sat back down, oh no!<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rack",
+      "second_word": "snacks",
+      "continuation": "And then he went to the store to buy some snacks.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tame",
+      "second_word": "blame",
+      "continuation": "But the lion tamer was not to blame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "might",
+      "continuation": "And hit the target with all her might.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sting",
+      "second_word": "pain",
+      "continuation": "And cried out in pain, \"Ow, that thing!\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "feed",
+      "continuation": "To make a cake that was fit to feed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "thing",
+      "continuation": "And he knew that he had won the thing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "chat",
+      "second_word": "said",
+      "continuation": "And then she said, \"I'm glad I'm here at last.\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hand",
+      "second_word": "grand",
+      "continuation": "And played a tune that was so grand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clown",
+      "second_word": "around",
+      "continuation": "Who made the children laugh and shout around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tight",
+      "second_word": "light",
+      "continuation": "And sang a lullaby so sweet and light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "steed",
+      "continuation": "And he was a very good steed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doorbell",
+      "second_word": "away",
+      "continuation": "And then he ran away.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "say",
+      "second_word": "away",
+      "continuation": "So he just smiled and walked away.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "offering",
+      "second_word": "thing",
+      "continuation": "A gift of a small thing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heed",
+      "second_word": "wise",
+      "continuation": "The words of the wise, he would indeed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "unfold",
+      "second_word": "world",
+      "continuation": "A future world, both bright and bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spray",
+      "second_word": "day",
+      "continuation": "And the scent of roses filled the day.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shake",
+      "second_word": "call",
+      "continuation": "As she reached for the phone to make a call.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "renown",
+      "continuation": "He was a man of great renown.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sweet",
+      "second_word": "sleep",
+      "continuation": "I ate it all and went to sleep.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sit",
+      "second_word": "sit",
+      "continuation": "The jury watched the defendant in the witness sit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "string",
+      "second_word": "top",
+      "continuation": "And tied it up with a bow on top.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "hand",
+      "continuation": "And watched the waves erase her hand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sat",
+      "second_word": "that",
+      "continuation": "The cat purred and the mouse was that.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "cold",
+      "continuation": "And dreamed of a love that would never grow cold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "band",
+      "continuation": "His army was a ragtag band.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "and",
+      "continuation": "The train kept moving on and on and on and on and on and on and"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "show",
+      "continuation": "As she learned to let her true self show.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "crown",
+      "second_word": "king",
+      "continuation": "On the head of the new king, now brown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "light",
+      "continuation": "When she saw the sun rise in the morning light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ray",
+      "second_word": "away",
+      "continuation": "And then he went away.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "format",
+      "second_word": "contract",
+      "continuation": "It was a contract, not a sonnet.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "brown",
+      "second_word": "town",
+      "continuation": "And sewed a dress to wear in town.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "aim",
+      "second_word": "flame",
+      "continuation": "And shot an arrow at a flame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wine",
+      "second_word": "shine",
+      "continuation": "And felt her heart begin to shine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hat",
+      "second_word": "said",
+      "continuation": "And said, \"I'm glad that's over with that.\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "sand",
+      "continuation": "And took her place in the sand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "call",
+      "second_word": "god",
+      "continuation": "To be a man of God, to stand tall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "smell",
+      "second_word": "swell",
+      "continuation": "The bread was fresh and it was swell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "cell",
+      "second_word": "tell",
+      "continuation": "And thought of the world he could tell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lit",
+      "second_word": "hit",
+      "continuation": "The crowd was ready to be hit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "old",
+      "continuation": "And she knew that she was getting old.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "volleyball",
+      "second_word": "volleyball",
+      "continuation": "He practiced with the volleyball, he practiced with the volleyball, he practiced with the"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "right",
+      "second_word": "happy",
+      "continuation": "She was so happy, she danced all night.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "train",
+      "second_word": "engine",
+      "continuation": "Is a diesel engine, not a steam train.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sock",
+      "second_word": "rock",
+      "continuation": "And a hat that was made of a rock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "heavy",
+      "continuation": "His heart was heavy, full of woe.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rake",
+      "second_word": "sack",
+      "continuation": "And then she put them in a sack.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cake",
+      "second_word": "sale",
+      "continuation": "And then she baked a pie for the bake sale.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "name",
+      "second_word": "game",
+      "continuation": "And then she went to play a game.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "glow",
+      "continuation": "And felt his heart begin to glow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "man",
+      "continuation": "That he was not a man, but a crow.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "drain",
+      "second_word": "plain",
+      "continuation": "And the rain fell on the plain.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "street",
+      "second_word": "face",
+      "continuation": "With a smile on her face, so sweet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bit",
+      "second_word": "delight",
+      "continuation": "And the audience laughed and clapped with delight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "acrobat",
+      "second_word": "mat",
+      "continuation": "And then she did a handstand on a mat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ground",
+      "second_word": "town",
+      "continuation": "And made a fire to warm the town.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bold",
+      "second_word": "dragon",
+      "continuation": "As he fought the dragon, fierce and cold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "string",
+      "second_word": "sing",
+      "continuation": "As she strummed the chords and began to sing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "hall",
+      "continuation": "But her feet were too big for the hall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "king",
+      "second_word": "him",
+      "continuation": "His subjects bowed and knelt before him, bringing gifts and singing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "show",
+      "second_word": "it",
+      "continuation": "And she loved it, she loved it so.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "well",
+      "continuation": "And they did it very well.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "fit",
+      "continuation": "The tailor measured for a suit to fit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "round",
+      "continuation": "And round and round and round.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "king",
+      "second_word": "sing",
+      "continuation": "And made the people sing and sing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "hand",
+      "continuation": "So the teacher gave him a hand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doormat",
+      "second_word": "again",
+      "continuation": "And then he stepped back in again, and that was that.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bold",
+      "second_word": "hero",
+      "continuation": "He was a hero, brave and bold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "underground",
+      "second_word": "astounds",
+      "continuation": "And found a treasure that astounds.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "weed",
+      "second_word": "budge",
+      "continuation": "But it wouldn't budge, it wouldn't yield.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blame",
+      "second_word": "blame",
+      "continuation": "He was not the one to blame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "slow",
+      "second_word": "go",
+      "continuation": "He wished he could just make it go.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spell",
+      "second_word": "one",
+      "continuation": "But it was not a very good one.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flight",
+      "second_word": "night",
+      "continuation": "And then he took off into the night.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "crock",
+      "second_word": "dock",
+      "continuation": "And then she placed it on the kitchen dock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "tier",
+      "second_word": "atmosphere",
+      "continuation": "To see the view and feel the atmosphere.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "beat",
+      "continuation": "And then he started to beat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fall",
+      "second_word": "wondrous",
+      "continuation": "A sight that's truly wondrous, all. Can you provide a continuation of"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "feed",
+      "second_word": "worried",
+      "continuation": "But the farmer was worried, he knew what he'd need.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "end",
+      "continuation": "As the day came to an end, he felt a frown.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "glit",
+      "second_word": "more",
+      "continuation": "And then he polished it some more, just for a bit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "peer",
+      "second_word": "clear",
+      "continuation": "But the darkness was too thick to clear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flock",
+      "second_word": "shock",
+      "continuation": "And then he counted every shock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "crowned",
+      "second_word": "best",
+      "continuation": "She was the best, she was the most renowned.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clay",
+      "second_word": "sun",
+      "continuation": "And then he baked them in the sun.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "lake",
+      "second_word": "fishes",
+      "continuation": "And swam with the fishes, for his sake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "feed",
+      "second_word": "sleep",
+      "continuation": "And then they'd sleep, and then they'd breed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ascertain",
+      "second_word": "ascertain",
+      "continuation": "The meaning of the word \"ascertain\".<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rear",
+      "second_word": "disappear",
+      "continuation": "And watched the waves disappear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "acclaim",
+      "second_word": "fame",
+      "continuation": "A star in the firmament of fame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "break",
+      "second_word": "cake",
+      "continuation": "And then he went to take a cake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shame",
+      "second_word": "do",
+      "continuation": "For the crime she didn't do, what a shame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "downtown",
+      "second_word": "renown",
+      "continuation": "He was a man of great renown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hit",
+      "second_word": "lit",
+      "continuation": "The audience laughed and felt lit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "year",
+      "second_word": "cheer",
+      "continuation": "For the day he could finally cheer.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sting",
+      "second_word": "wing",
+      "continuation": "And then it flew away on its wing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gain",
+      "second_word": "life",
+      "continuation": "A degree in the game of life.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "aristocrat",
+      "second_word": "purred",
+      "continuation": "And the cat purred, \"I'm a cat, not a rat!\""
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "blow",
+      "continuation": "As the night wind began to blow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "way",
+      "second_word": "tea",
+      "continuation": "To make a good cup of tea.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "band",
+      "second_word": "snapped",
+      "continuation": "And then it snapped, and I felt so grand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "plain",
+      "second_word": "rain",
+      "continuation": "And then she walked across the rain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "drain",
+      "continuation": "The water dripped down the drain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bay",
+      "second_word": "lay",
+      "continuation": "The sailors sang a merry lay.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "power",
+      "continuation": "She was a woman of strength and power.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clock",
+      "second_word": "clock",
+      "continuation": "As the hands moved around the clock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "town",
+      "second_word": "crown",
+      "continuation": "To buy a dress and a new crown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gold",
+      "second_word": "old",
+      "continuation": "But found only a pile of old, moldy mold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "knock",
+      "second_word": "knock",
+      "continuation": "And opened the door to a stranger's knock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "train",
+      "second_word": "world",
+      "continuation": "To see the world, she had to gain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "all",
+      "continuation": "And the audience applauded her all.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fame",
+      "second_word": "game",
+      "continuation": "By playing the part of a rhyming game.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pine",
+      "second_word": "door",
+      "continuation": "And a wreath on the door, a sign of the season divine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "neat",
+      "second_word": "vase",
+      "continuation": "In a vase, a lovely treat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ring",
+      "second_word": "law",
+      "continuation": "He knew it was his mother-in-law, he thought he'd sing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "explain",
+      "second_word": "understand",
+      "continuation": "But he just couldn't understand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ball",
+      "second_word": "hoop",
+      "continuation": "And then he shot it through the hoop.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "delight",
+      "second_word": "might",
+      "continuation": "As the crowd cheered with all their might.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "frown",
+      "second_word": "clock",
+      "continuation": "And wished he could turn back the clock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sing",
+      "second_word": "sing",
+      "continuation": "The choir gathered together to sing, their voices blending in perfect harmony, bringing joy"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stock",
+      "second_word": "flock",
+      "continuation": "And her portfolio was a mixed flock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hand",
+      "second_word": "command",
+      "continuation": "And played the music as he did command.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "command",
+      "continuation": "The students understood the teacher's command.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "shock",
+      "second_word": "clack",
+      "continuation": "And then he fell to the floor with a thud and a clack."
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "yell",
+      "second_word": "made",
+      "continuation": "When she saw the mess he'd made.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pit",
+      "second_word": "pit",
+      "continuation": "The peach had a soft center pit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flame",
+      "second_word": "intense",
+      "continuation": "The heat was intense, it was a shame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lock",
+      "second_word": "block",
+      "continuation": "To keep the intruders from his block.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bow",
+      "second_word": "below",
+      "continuation": "And shot it at the target below.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ground",
+      "second_word": "found",
+      "continuation": "To find the treasure that he'd found.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fat",
+      "second_word": "hit",
+      "continuation": "It made a sizzling sound that was quite a hit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "grand",
+      "second_word": "hands",
+      "continuation": "He made the audience clap their hands.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gown",
+      "second_word": "frown",
+      "continuation": "And the duke was there to greet her with a frown.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "call",
+      "second_word": "phone",
+      "continuation": "And then she hung up the phone, and all was well.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "at",
+      "second_word": "territory",
+      "continuation": "But the map was not the territory. (1931, Alfred Kor"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flame",
+      "second_word": "game",
+      "continuation": "And watched the shadows play a game.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "beat",
+      "continuation": "But her kitchen was a mess to beat. A rhyming couplet is"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "block",
+      "second_word": "block",
+      "continuation": "The ruer sprinted past the starting block, with speed and grace, he"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lead",
+      "second_word": "indeed",
+      "continuation": "And he found that the path was a narrow one indeed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feet",
+      "second_word": "street",
+      "continuation": "And fell down on the street.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "gold",
+      "continuation": "A stately home of stone and gold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "cold",
+      "second_word": "ached",
+      "continuation": "Her heart ached, her soul felt old.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "game",
+      "second_word": "grandmaster",
+      "continuation": "He was a chess grandmaster, a checkers king, a backgammon"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bold",
+      "second_word": "old",
+      "continuation": "She was a woman who was never old.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rattlesnake",
+      "second_word": "bite",
+      "continuation": "And then she felt a sharp snake bite.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flight",
+      "second_word": "light",
+      "continuation": "And soared above the morning light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "row",
+      "second_word": "glow",
+      "continuation": "With flowers blooming in the sun's warm glow.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grand",
+      "second_word": "land",
+      "continuation": "And now she's the owner of a candy land.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "dear",
+      "second_word": "them",
+      "continuation": "And he was always there for them, year after year.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gold",
+      "second_word": "blew",
+      "continuation": "As the wind blew, they danced and twirled.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "old",
+      "second_word": "cold",
+      "continuation": "And the museum was very cold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pain",
+      "second_word": "again",
+      "continuation": "But his eyes gave him away again.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sock",
+      "second_word": "rock",
+      "continuation": "And now her toe is cold and rock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "tell",
+      "continuation": "So she could write a poem that would tell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fame",
+      "second_word": "soccer",
+      "continuation": "For his prowess in the game of soccer.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "pick",
+      "continuation": "With a rope and a pick, he did not stop.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "knit",
+      "second_word": "cat",
+      "continuation": "And made a sweater for her cat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "swing",
+      "second_word": "ticked",
+      "continuation": "As the clock ticked, the seconds sing.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stand",
+      "second_word": "stand",
+      "continuation": "The quicksand pulled at where they'd stand, The quicksand pulled at where"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fit",
+      "second_word": "tight",
+      "continuation": "But the pants were too tight, he couldn't sit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "gold",
+      "continuation": "And then he painted it with a brush of gold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "found",
+      "second_word": "knowledge",
+      "continuation": "A treasure trove of knowledge, a wealth of wisdom profound.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "told",
+      "continuation": "He never did as he was told, he never did as he was told."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grow",
+      "second_word": "below",
+      "continuation": "And the sun shone on the rows below.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mine",
+      "second_word": "fine",
+      "continuation": "To find the treasure that was so fine.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lock",
+      "second_word": "rock",
+      "continuation": "And found a treasure trove of gold and rock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "unlock",
+      "second_word": "heart",
+      "continuation": "The door to his heart, he was broke.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rake",
+      "second_word": "rake",
+      "continuation": "So I went out to take the rake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "say",
+      "second_word": "dance",
+      "continuation": "\u201cMay I have this dance, please?\u201d<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clock",
+      "second_word": "say",
+      "continuation": "The farmer's wife would say, \"That's a cocky rooster!\""
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "steed",
+      "second_word": "head",
+      "continuation": "And then he fell off and broke his head.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sustain",
+      "second_word": "maintain",
+      "continuation": "But he couldn't maintain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "disappear",
+      "second_word": "year",
+      "continuation": "The sky was full of stars that year.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "break",
+      "continuation": "And saw a duck on a break.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "old",
+      "continuation": "And so she was sent to her room to grow old.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fold",
+      "second_word": "gold",
+      "continuation": "And the carpet was of crimson gold.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "awake",
+      "second_word": "bore",
+      "continuation": "But the book was a bore, and he couldn't take it.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tight",
+      "second_word": "night",
+      "continuation": "As he drove through the night.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "bound",
+      "continuation": "And danced around the room with boundless joy and bound.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "beat",
+      "continuation": "His heart pounding with every beat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clear",
+      "second_word": "still",
+      "continuation": "The water was perfectly still.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wall",
+      "second_word": "hall",
+      "continuation": "And stole the flowers from the hall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seeds",
+      "second_word": "bees",
+      "continuation": "And now his garden is filled with bees.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "home",
+      "continuation": "And put them in her pocket to take home.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ear",
+      "second_word": "clear",
+      "continuation": "And he heard her words loud and clear.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beat",
+      "second_word": "gone",
+      "continuation": "And then he was gone, oh so sweet.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "take",
+      "second_word": "cake",
+      "continuation": "But she didn't know how to bake a cake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "neat",
+      "second_word": "eat",
+      "continuation": "For the guests to sit and eat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bouquet",
+      "second_word": "roses",
+      "continuation": "Of roses, lilies, and daisies, oh so gay.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "fame",
+      "continuation": "And now she's a woman of fame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fold",
+      "second_word": "cold",
+      "continuation": "And then he went to bed and lay down cold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shame",
+      "second_word": "same",
+      "continuation": "When she realized she was the same.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "fall",
+      "continuation": "And never let one fall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flat",
+      "second_word": "level",
+      "continuation": "He used a spirit level, not a hat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "it",
+      "second_word": "it",
+      "continuation": "He ate it up and then he had to crap it.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mistake",
+      "second_word": "date",
+      "continuation": "He forgot to take his date.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "meet",
+      "second_word": "complete",
+      "continuation": "But his efforts were never complete.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bright",
+      "second_word": "light",
+      "continuation": "It lit up the night like a beacon of light.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mound",
+      "second_word": "crown",
+      "continuation": "And found a skeleton with a crown.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "found",
+      "continuation": "To remember what he had found.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rock",
+      "second_word": "deep",
+      "continuation": "And fell into a deep, dark dock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "told",
+      "second_word": "bold",
+      "continuation": "Of a man who was brave and bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "acclaim",
+      "second_word": "name",
+      "continuation": "The audience applauded and cheered their name.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fall",
+      "second_word": "ball",
+      "continuation": "He balanced on the ball.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ring",
+      "second_word": "love",
+      "continuation": "A symbol of love, forever to cling.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flame",
+      "second_word": "name",
+      "continuation": "And the knight fought with all his might and name.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "lay",
+      "continuation": "And in her hand a lily lay.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "train",
+      "second_word": "again",
+      "continuation": "And then he caught the train again.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "call",
+      "continuation": "She heard the telephone call, and her heart began to stall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "train",
+      "second_word": "plain",
+      "continuation": "And then she rode it to the plain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sell",
+      "second_word": "swell",
+      "continuation": "But he was a bit of a swell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seed",
+      "second_word": "bloom",
+      "continuation": "And now they bloom, a sight to see indeed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "treat",
+      "second_word": "chocolate",
+      "continuation": "But he hated the chocolate, it made him beat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bring",
+      "second_word": "sing",
+      "continuation": "As he watched the sun rise and sing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "acrobat",
+      "second_word": "tightrope",
+      "continuation": "Who performed tricks on a tightrope, high and flat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "decreed",
+      "continuation": "But his actions were far from what he decreed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "doormat",
+      "second_word": "hat",
+      "continuation": "And then he bought a new hat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "row",
+      "second_word": "done",
+      "continuation": "And the farmer's work was done, you know.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "underground",
+      "second_word": "round",
+      "continuation": "And knew the quake was coming round.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flake",
+      "second_word": "bake",
+      "continuation": "The pancakes started to bake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "thermostat",
+      "second_word": "thermostat",
+      "continuation": "The landlord checked the old thermostat, And found it was a bit too hot."
+    },
+    {
+      "status": "rhyme",
+      "first_word": "band",
+      "second_word": "band",
+      "continuation": "And played the flute in the marching band.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "treat",
+      "second_word": "cream",
+      "continuation": "A cake with chocolate and cream.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stand",
+      "second_word": "said",
+      "continuation": "And said, \"The ground is soft, the house will fall, my friend"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "shock",
+      "second_word": "rock",
+      "continuation": "And then she heard the thunder's rock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sand",
+      "second_word": "hand",
+      "continuation": "To find the time he'd lost in hand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "know",
+      "second_word": "living",
+      "continuation": "To make a living, and to make a home.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hound",
+      "second_word": "down",
+      "continuation": "And saw the fox run down.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "gay",
+      "continuation": "To make her life more bright and gay.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "prey",
+      "second_word": "way",
+      "continuation": "The moonlight shone on the way.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "stock",
+      "second_word": "dropped",
+      "continuation": "And then he sold them when they dropped.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "explain",
+      "second_word": "pain",
+      "continuation": "The reason for his pain.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "year",
+      "second_word": "brown",
+      "continuation": "When leaves turned red and gold and brown, and disappeared.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "speed",
+      "continuation": "To find a place to pee with speed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "glow",
+      "continuation": "As the volcano erupted in a fiery glow.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "frame",
+      "second_word": "name",
+      "continuation": "And then she stepped back to admire its name.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "restrain",
+      "second_word": "rain",
+      "continuation": "Her love for the rain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grain",
+      "second_word": "again",
+      "continuation": "And then he plowed them all again.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "well",
+      "second_word": "well",
+      "continuation": "And hoped her wish would be fulfilled well.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "clothesline",
+      "second_word": "wine",
+      "continuation": "And then she went to get some wine.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "firepit",
+      "second_word": "flit",
+      "continuation": "And then he sat down to watch the flames flicker and flit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pine",
+      "second_word": "fine",
+      "continuation": "And the tree grew tall and fine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "homeland",
+      "second_word": "blew",
+      "continuation": "And the wind of his homeland blew.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seed",
+      "second_word": "bloomed",
+      "continuation": "A flower bloomed, a tree was freed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "around",
+      "second_word": "ground",
+      "continuation": "Her feet light on the ground.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "was",
+      "continuation": "But the truth was, she was feeling quite a frown.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sweet",
+      "second_word": "buzzing",
+      "continuation": "The bees were buzzing, the birds were tweeting.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hotel",
+      "second_word": "motel",
+      "continuation": "And then he went to the motel.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fear",
+      "second_word": "persevere",
+      "continuation": "And found the courage to persevere.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "hat",
+      "second_word": "pat",
+      "continuation": "And his shoes were polished to a pat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blow",
+      "second_word": "blow",
+      "continuation": "The curtains swayed in winds that blow, A gentle dance, a soft tableau"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "steve",
+      "continuation": "The winner was a man named Steve.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spring",
+      "second_word": "pain",
+      "continuation": "And wished for a love that would never bring pain.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "weed",
+      "second_word": "bed",
+      "continuation": "And then he went to bed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "submit",
+      "second_word": "quit",
+      "continuation": "She's a woman who won't quit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "light",
+      "continuation": "But he couldn't see the light.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ballet",
+      "second_word": "late",
+      "continuation": "But she was a bit too late.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "seed",
+      "second_word": "weed",
+      "continuation": "And then he waited for the weed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "year",
+      "second_word": "tear",
+      "continuation": "With a glass of champagne and a tear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "year",
+      "second_word": "ear",
+      "continuation": "And was always there to lend an ear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "well",
+      "second_word": "hell",
+      "continuation": "And pulled up a bucket full of hell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "touchdown",
+      "second_word": "sound",
+      "continuation": "The crowd cheered and the stadium shook with sound.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "smell",
+      "second_word": "dell",
+      "continuation": "And the bees were buzzing around the dell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sustain",
+      "second_word": "brain",
+      "continuation": "The weight of the world on his brain.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "name",
+      "second_word": "nobody",
+      "continuation": "But he was a nobody, not a somebody, not a somebody, not a"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "night",
+      "second_word": "morning",
+      "continuation": "And in the morning, it was light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tell",
+      "second_word": "smell",
+      "continuation": "That he was a man who loved to smell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fold",
+      "second_word": "gold",
+      "continuation": "And then she went to bed and slept like gold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sat",
+      "second_word": "mat",
+      "continuation": "And then she sat upon the mat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pound",
+      "second_word": "ground",
+      "continuation": "As he stood on the edge of the ground.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "grand",
+      "second_word": "ruin",
+      "continuation": "But now it's a ruin, a sad, sad land.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pit",
+      "second_word": "shit",
+      "continuation": "And filled it with a ton of shit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "swing",
+      "second_word": "ring",
+      "continuation": "And then he knocked the other guy out with a ring.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "feed",
+      "second_word": "need",
+      "continuation": "The mother bird dropped worms in each bird\u2019s need.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "clear",
+      "second_word": "clear",
+      "continuation": "The message came through loud and clear, I'll be there, my dear,"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "line",
+      "continuation": "And then she drew a perfectly straight line.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "strain",
+      "second_word": "again",
+      "continuation": "As he lifted the heavy weight again.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "racquetball",
+      "second_word": "tall",
+      "continuation": "But he was not very tall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "dock",
+      "second_word": "rock",
+      "continuation": "The sailors were ready to rock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "divine",
+      "continuation": "And caught a fish that was divine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beat",
+      "second_word": "see",
+      "continuation": "Their graceful movements were a sight to see, so sweet.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "bay",
+      "second_word": "day",
+      "continuation": "The sun shone bright on that summer day.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sold",
+      "second_word": "square",
+      "continuation": "In the market square, both young and old.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "vine",
+      "second_word": "fine",
+      "continuation": "And the plant grew to be fine.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wit",
+      "second_word": "knit",
+      "continuation": "A story that would make people sit and knit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "speed",
+      "second_word": "lead",
+      "continuation": "And the racer increased her ruling lead.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lake",
+      "second_word": "ache",
+      "continuation": "And felt her heart begin to ache.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gold",
+      "second_word": "again",
+      "continuation": "And he was never seen again, so bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "decay",
+      "second_word": "play",
+      "continuation": "The moonlight started to play.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wall",
+      "second_word": "masterpiece",
+      "continuation": "A masterpiece, a work of art for all.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clown",
+      "second_word": "amused",
+      "continuation": "And the teacher was not amused.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flat",
+      "second_word": "fat",
+      "continuation": "Then she sewed the seams with a needle and thread that was fat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ring",
+      "second_word": "spring",
+      "continuation": "It sparkled and shone like a star in the spring.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "grow",
+      "continuation": "To grow, a little more than weed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "before",
+      "continuation": "And thought of all the times before.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sit",
+      "second_word": "it",
+      "continuation": "And pondered what her life was in it.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "combat",
+      "second_word": "diplomat",
+      "continuation": "The combat was discussed by the diplomat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "white",
+      "second_word": "light",
+      "continuation": "And then she painted the sky a deep blue light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "way",
+      "second_word": "day",
+      "continuation": "To get to work each day.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "writ",
+      "second_word": "witt",
+      "continuation": "And the author was a man named Witt.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tight",
+      "second_word": "bright",
+      "continuation": "And tied it up with string so bright.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "go",
+      "continuation": "As the sun began to go.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hand",
+      "second_word": "grow",
+      "continuation": "And watched them grow, a farmer's grand.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "claim",
+      "second_word": "game",
+      "continuation": "But he was too late to the game.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tell",
+      "second_word": "fell",
+      "continuation": "The tale of the day he fell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fright",
+      "second_word": "light",
+      "continuation": "As he saw the ghostly light.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "sight",
+      "continuation": "And knocked his opponent out of sight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mine",
+      "second_word": "lie",
+      "continuation": "But I knew it was a lie, all the time.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "round",
+      "second_word": "high",
+      "continuation": "It bounced so high, it was quite profound.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "name",
+      "second_word": "lame",
+      "continuation": "To make it sound more lame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stay",
+      "second_word": "away",
+      "continuation": "And he would not go away.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "row",
+      "second_word": "mowed",
+      "continuation": "While the gardeners mowed and mowed and mowed.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "same",
+      "second_word": "different",
+      "continuation": "But the question was different, and that's the game.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "awake",
+      "second_word": "shake",
+      "continuation": "The lava started to erupt and shake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "grain",
+      "second_word": "plain",
+      "continuation": "Are now a barren plain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sake",
+      "second_word": "sake",
+      "continuation": "And the snake slithered for its own sake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "call",
+      "second_word": "all",
+      "continuation": "And he saved the day from all.<|endoftext|>"
+    },
+    {
+      "status": "unknown",
+      "first_word": "bowstring",
+      "second_word": "fly",
+      "continuation": "And let the arrow fly, singing.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "speed",
+      "second_word": "tree",
+      "continuation": "And crashed into a tree, indeed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "around",
+      "second_word": "ground",
+      "continuation": "To keep her neck warm in the cold ground.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fine",
+      "second_word": "fire",
+      "continuation": "But the rain came down and put out the fire.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fat",
+      "second_word": "sat",
+      "continuation": "The sugar made it sweet and sat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "clock",
+      "second_word": "watch",
+      "continuation": "And then she checked the clock against her watch.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "gray",
+      "second_word": "day",
+      "continuation": "And rode a horse that neighed all day.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "say",
+      "second_word": "way",
+      "continuation": "And she learned it the very same way.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "excel",
+      "second_word": "well",
+      "continuation": "And now he speaks it very well.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rake",
+      "second_word": "cake",
+      "continuation": "To stir the dough and make a cake.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fell",
+      "second_word": "bull",
+      "continuation": "And up jumped Johnny Bull.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "farewell",
+      "second_word": "spell",
+      "continuation": "And went to the pub for a swig and a spell.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rear",
+      "second_word": "chair",
+      "continuation": "And then he sat down in the chair.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wing",
+      "second_word": "spring",
+      "continuation": "And flew away from the spring.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sound",
+      "second_word": "around",
+      "continuation": "When she was in her mother's arms around.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "string",
+      "second_word": "hero",
+      "continuation": "And now she's a guitar hero.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "swell",
+      "second_word": "shell",
+      "continuation": "To find the treasure in the shell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "compete",
+      "second_word": "heat",
+      "continuation": "But she couldn't beat the heat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seashell",
+      "second_word": "tell",
+      "continuation": "And she knew it was a treasure to tell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fit",
+      "second_word": "wit",
+      "continuation": "As he solved the riddle with a wit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "deed",
+      "second_word": "indeed",
+      "continuation": "And the world was a better place indeed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "block",
+      "second_word": "rock",
+      "continuation": "And then he built a block from every rock.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "spear",
+      "second_word": "dead",
+      "continuation": "And fell down dead, and that was the end of her.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bright",
+      "second_word": "love",
+      "continuation": "A symbol of love, a precious sight.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "claim",
+      "second_word": "game",
+      "continuation": "The prize she won in the game.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "line",
+      "second_word": "wine",
+      "continuation": "With words that flowed like wine.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "night",
+      "continuation": "As he lay down to sleep at night.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bat",
+      "second_word": "night",
+      "continuation": "And flew away into the night, so fast.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "down",
+      "second_word": "found",
+      "continuation": "And in its place a new one was found.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sand",
+      "second_word": "said",
+      "continuation": "And said, \"This is where I stand.\"<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "street",
+      "second_word": "sweet",
+      "continuation": "Where the houses were neat and the gardens were sweet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mistake",
+      "second_word": "twice",
+      "continuation": "And never made the same one twice.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "handshake",
+      "second_word": "it",
+      "continuation": "But I was too shy to take it.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sit",
+      "second_word": "tree",
+      "continuation": "On the branch of a tree, and not a bit,<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "glow",
+      "second_word": "darker",
+      "continuation": "As the night grew darker, the shadows grew low.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ground",
+      "second_word": "grow",
+      "continuation": "And watched them grow, a sight profound.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "round",
+      "second_word": "around",
+      "continuation": "Their laughter echoed all around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "down",
+      "continuation": "He felt the elevator going down.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "found",
+      "second_word": "books",
+      "continuation": "A treasure trove of books, both old and new, around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "down",
+      "second_word": "drown",
+      "continuation": "And felt his heart start to drown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "treat",
+      "second_word": "neat",
+      "continuation": "A perfect end to a meal so neat.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "frame",
+      "second_word": "name",
+      "continuation": "And then he built the house's name. A clever couplet! Here's"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "parallel",
+      "second_word": "pickle",
+      "continuation": "And found himself in a pickle.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sign",
+      "second_word": "shine",
+      "continuation": "And she knew she was going to shine.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "sight",
+      "second_word": "bright",
+      "continuation": "To see the stars shining bright.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "old",
+      "second_word": "children",
+      "continuation": "And she wanted to pass them on to her children, young and bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "lit",
+      "second_word": "quit",
+      "continuation": "The fire grew and the flames would not quit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "command",
+      "second_word": "troops",
+      "continuation": "To the troops, to stand and defend the land.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "stock",
+      "second_word": "lock",
+      "continuation": "And added it to the soup pot with a lock.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "right",
+      "second_word": "right",
+      "continuation": "The score was right, the referee was right.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "borderline",
+      "second_word": "it",
+      "continuation": "And he found the place where the river winds around it.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "need",
+      "second_word": "delicious",
+      "continuation": "To make a delicious, tasty treat.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "layer",
+      "second_word": "lager",
+      "continuation": "It was a lager, not a layer.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bat",
+      "second_word": "catch",
+      "continuation": "And ran to the field to play a game of catch.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hand",
+      "second_word": "finger",
+      "continuation": "And a ring on every finger, and a band.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "beat",
+      "second_word": "feet",
+      "continuation": "And everyone was on their feet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sock",
+      "second_word": "cap",
+      "continuation": "And on his head a little cap.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "renowned",
+      "second_word": "renowned",
+      "continuation": "The actors were all well-renowned.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bell",
+      "second_word": "tolling",
+      "continuation": "And heard the sound of the bell tolling.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "brown",
+      "second_word": "town",
+      "continuation": "And the wind blew them all around town.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "mall",
+      "second_word": "ball",
+      "continuation": "And bought a new dress for the ball.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fight",
+      "second_word": "sight",
+      "continuation": "With his sword and shield in sight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "fine",
+      "second_word": "chime",
+      "continuation": "It made my taste buds sing and chime.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "wall",
+      "continuation": "And it hit the wall.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hall",
+      "second_word": "flowers",
+      "continuation": "With a thousand flowers, big and small.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bow",
+      "second_word": "shoes",
+      "continuation": "And then she tied her shoes, you know.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sign",
+      "second_word": "mind",
+      "continuation": "A symbol of the heart and mind.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "heartache",
+      "second_word": "hope",
+      "continuation": "But the sun will rise and bring new hope.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "blow",
+      "second_word": "glow",
+      "continuation": "And thought of the summer's warm glow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "brown",
+      "second_word": "round",
+      "continuation": "And a wagging tail that went round and round.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "fame",
+      "second_word": "shame",
+      "continuation": "By singing songs of love and shame.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "wine",
+      "second_word": "wine",
+      "continuation": "And then he served a glass of white wine.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "rear",
+      "second_word": "there",
+      "continuation": "And saw a car that was not there.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "quit",
+      "second_word": "fit",
+      "continuation": "She was determined to make it fit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "sweet",
+      "second_word": "glee",
+      "continuation": "And the children ate them with glee.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "ball",
+      "second_word": "hall",
+      "continuation": "And played with it in the hall.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "play",
+      "second_word": "day",
+      "continuation": "A tale of love and a tragic day.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "mall",
+      "second_word": "feet",
+      "continuation": "And bought a new pair of shoes for his feet, that's all.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wing",
+      "second_word": "breeze",
+      "continuation": "And fluttered away on a gentle spring breeze.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "bray",
+      "second_word": "face",
+      "continuation": "And the camel would spit in your face.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "found",
+      "second_word": "around",
+      "continuation": "But his socks were not around.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "cake",
+      "second_word": "make",
+      "continuation": "With a candle for each year she'd make.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "deed",
+      "second_word": "nobleman",
+      "continuation": "But he was not a nobleman.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "birthday",
+      "second_word": "play",
+      "continuation": "To get a new toy to play.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hold",
+      "second_word": "whispered",
+      "continuation": "And whispered, \"I'll never let go.\"<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hat",
+      "second_word": "instead",
+      "continuation": "But found a snake instead, and that was that.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "light",
+      "second_word": "sight",
+      "continuation": "Her grace and beauty a wondrous sight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "knit",
+      "second_word": "son",
+      "continuation": "A sweater for her son, a perfect fit.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "overnight",
+      "second_word": "flight",
+      "continuation": "And left the next morning in flight.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "beat",
+      "second_word": "swaying",
+      "continuation": "Her body swaying, her feet fleet.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "pay",
+      "second_word": "money",
+      "continuation": "She had no money, so she prayed all day.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "everything",
+      "second_word": "say",
+      "continuation": "And left him with nothing to say.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "crown",
+      "second_word": "gown",
+      "continuation": "And the queen wore her royal gown.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "height",
+      "second_word": "might",
+      "continuation": "And the sun shone with all its might.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "tall",
+      "second_word": "tall",
+      "continuation": "The building stood incredibly tall, it seemed to touch the sky, a testament to"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "need",
+      "second_word": "speed",
+      "continuation": "To make her garden grow with speed.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "foretell",
+      "second_word": "well",
+      "continuation": "The future of the world so well.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "flame",
+      "second_word": "streets",
+      "continuation": "As he ran through the streets, he felt no shame.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "snowflake",
+      "second_word": "cake",
+      "continuation": "And he handed over the cake.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "deer",
+      "second_word": "fear",
+      "continuation": "He aimed his gun and took aim with fear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "spell",
+      "second_word": "yell",
+      "continuation": "And then he cast it with a yell.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "basketball",
+      "second_word": "basketball",
+      "continuation": "He played basketball, and he played it well.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "glow",
+      "second_word": "below",
+      "continuation": "As the night wind softly blew below.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "rain",
+      "second_word": "pain",
+      "continuation": "The rain brought a flood of pain.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "proceed",
+      "second_word": "lead",
+      "continuation": "But she was too scared to take the lead.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "pound",
+      "second_word": "around",
+      "continuation": "As she danced around and around.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "smell",
+      "second_word": "door",
+      "continuation": "Of the old man who lived next door.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "gold",
+      "second_word": "power",
+      "continuation": "A symbol of power, a story untold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "foretold",
+      "second_word": "old",
+      "continuation": "And heeded the words of the wise and old.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "flow",
+      "second_word": "slow",
+      "continuation": "The water was cold and slow.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "seed",
+      "second_word": "glee",
+      "continuation": "And soon the garden grew with glee.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "ground",
+      "second_word": "time",
+      "continuation": "A testament to time, a force profound.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "wake",
+      "second_word": "date",
+      "continuation": "But she was still late for her date.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "quit",
+      "second_word": "winner",
+      "continuation": "He was a winner, he was a hit.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hear",
+      "second_word": "sweet",
+      "continuation": "Her words were sweet, like honey so dear.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "understand",
+      "second_word": "grand",
+      "continuation": "The groom was a man who was not so grand.<|endoftext|>"
+    },
+    {
+      "status": "no_rhyme",
+      "first_word": "hold",
+      "second_word": "happy",
+      "continuation": "And she was happy, she was bold.<|endoftext|>"
+    },
+    {
+      "status": "rhyme",
+      "first_word": "highway",
+      "second_word": "subway",
+      "continuation": "The highway went above the subway.<|endoftext|>"
+    }
+  ]
+}

@@ -17,10 +17,10 @@ PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3-32B}"
+MODEL_NAME=Qwen/Qwen2.5-72B
 POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-original-truncated-shuffled.jsonl}"
 MODE="${MODE:-both}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/qwen2.5-72B}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
 
 MAX_POEMS_ARG=()
