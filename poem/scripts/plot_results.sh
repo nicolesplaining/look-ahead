@@ -28,15 +28,15 @@ ACC_MAX=1
 # ------------------------------------------------------------------
 # Result slots — set path, label, and color for each
 # ------------------------------------------------------------------
-RESULT1="${RESULT1:-$RESULTS_BASE/i4/experiment_results.json}"
-RESULT2="${RESULT2:-}"
-RESULT3="${RESULT3:-}"
-RESULT4="${RESULT4:-}"
+RESULT1=$RESULTS_BASE/i0/experiment_results.json
+RESULT2=$RESULTS_BASE/i1/experiment_results.json
+RESULT3=$RESULTS_BASE/i2/experiment_results.json
+RESULT4=$RESULTS_BASE/i3/experiment_results.json
 
-LABEL1="${LABEL1:-i=4}"
-LABEL2="${LABEL2:-}"
-LABEL3="${LABEL3:-}"
-LABEL4="${LABEL4:-}"
+LABEL1=i=0
+LABEL2=i=1
+LABEL3=i=2
+LABEL4=i=3
 
 COLOR1="${COLOR1:-steelblue}"
 COLOR2="${COLOR2:-tomato}"
@@ -66,14 +66,23 @@ echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
 echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
+# python -m visualize_results \
+#     "${JSONS[@]}" \
+#     --labels "${LABELS[@]}" \
+#     --colors "${COLORS[@]}" \
+#     --show-val \
+#     --show-top5 \
+#     --show-rhyme \
+#     --show-rhyme5 \
+#     --acc-min "$ACC_MIN" \
+#     --acc-max "$ACC_MAX" \
+#     --output-dir "$OUTPUT_DIR"
+
 python -m visualize_results \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
-    --show-val \
     --show-top5 \
-    --show-rhyme \
-    --show-rhyme5 \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR"

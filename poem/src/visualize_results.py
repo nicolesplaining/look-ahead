@@ -60,19 +60,12 @@ def plot_results(all_results_by_i, labels, colors, output_dir,
 
     multi_metric = len(metric_specs) > 1
 
-    all_i = sorted(set(
-        i for r in all_results_by_i for i in r.keys() if i is not None
-    ))
+    fig, ax = plt.subplots(figsize=(10, 6))
+    plotted = False
 
-    for i_val in all_i:
-        fig, ax = plt.subplots(figsize=(10, 6))
-        plotted = False
-
-        for results_by_i, label, color in zip(all_results_by_i, labels, resolved_colors):
-            if i_val not in results_by_i:
-                continue
+    for results_by_i, label, color in zip(all_results_by_i, labels, resolved_colors):
+        for i_val in sorted(k for k in results_by_i if k is not None):
             for metric_key, metric_name, linestyle in metric_specs:
-                # Filter layers and vals together so they always have the same length
                 pairs = [
                     (layer, m[metric_key])
                     for layer, m in results_by_i[i_val]
@@ -86,26 +79,25 @@ def plot_results(all_results_by_i, labels, colors, output_dir,
                         linestyle=linestyle, color=color, label=legend_label)
                 plotted = True
 
-        if not plotted:
-            plt.close(fig)
-            continue
-
-        ax.set_xlabel('Layer', fontsize=12)
-        ax.set_ylabel('Accuracy', fontsize=12)
-        ax.set_title(f"Accuracy Across Layers (i={i_val})", fontsize=14, fontweight='bold')
-        ax.set_ylim(acc_min, acc_max)
-        ax.grid(True, alpha=0.3)
-        ax.legend(fontsize=11)
-        fig.tight_layout()
-
-        i_str = f"i{i_val}" if i_val >= 0 else f"i_neg{abs(i_val)}"
-        metric_parts = [name.lower().replace('-', '').replace('%', '')
-                        for _, name, _ in metric_specs]
-        filename = f"{'_'.join(metric_parts)}_accuracy_{i_str}.png"
-        output_path = Path(output_dir) / filename
-        fig.savefig(output_path, dpi=300, bbox_inches='tight')
-        print(f"Saved: {output_path}")
+    if not plotted:
         plt.close(fig)
+        return
+
+    ax.set_xlabel('Layer', fontsize=12)
+    ax.set_ylabel('Accuracy', fontsize=12)
+    ax.set_title("Accuracy Across Layers", fontsize=14, fontweight='bold')
+    ax.set_ylim(acc_min, acc_max)
+    ax.grid(True, alpha=0.3)
+    ax.legend(fontsize=11)
+    fig.tight_layout()
+
+    metric_parts = [name.lower().replace('-', '').replace('%', '')
+                    for _, name, _ in metric_specs]
+    filename = f"{'_'.join(metric_parts)}_accuracy.png"
+    output_path = Path(output_dir) / filename
+    fig.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
+    plt.close(fig)
 
 
 def main():
