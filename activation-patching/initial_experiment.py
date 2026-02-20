@@ -2,38 +2,10 @@ import os
 import torch
 import nltk
 import matplotlib.pyplot as plt
-
-# TransformerLens imports BertForPreTraining/T5ForConditionalGeneration, removed in transformers 4.46+.
-# Qwen3 requires transformers >= 4.51. Stub them so we can use Qwen3 (they're only used for BERT/T5).
-import transformers as _tf
-if not hasattr(_tf, "BertForPreTraining"):
-    _tf.BertForPreTraining = type("BertForPreTraining", (), {})
-if not hasattr(_tf, "T5ForConditionalGeneration"):
-    _tf.T5ForConditionalGeneration = type("T5ForConditionalGeneration", (), {})
-
-# Force eager load of Qwen2/Qwen3 so AutoModelForCausalLM finds them (avoids lazy-module lookup failure).
-# Qwen2.5 uses the same qwen2 package in transformers 4.57. Requires Pillow>=9.1 (for PIL.Image.Resampling).
-def _ensure_qwen_models_loaded():
-    for full_mod_name, attr in [
-        ("transformers.models.qwen2.modeling_qwen2", "Qwen2ForCausalLM"),
-        ("transformers.models.qwen3.modeling_qwen3", "Qwen3ForCausalLM"),
-    ]:
-        try:
-            mod = __import__(full_mod_name, fromlist=[attr])
-            cls = getattr(mod, attr, None)
-            if cls is not None:
-                setattr(_tf, attr, cls)
-                # Also inject into the subpackage so lookup in transformers.models.qwen2 succeeds.
-                pkg_name = full_mod_name.rsplit(".", 1)[0]  # e.g. transformers.models.qwen2
-                pkg = __import__(pkg_name, fromlist=[attr])
-                setattr(pkg, attr, cls)
-        except Exception:
-            pass
-_ensure_qwen_models_loaded()
-
 from transformer_lens import HookedTransformer
 
-# Qwen2.5-14B: same scale as Qwen3-14B, stable with TransformerLens + transformers 4.x/5.x
+# ── Config ─────────────────────────────────────────────────────────────────────
+
 MODEL_NAME = "Qwen/Qwen2.5-14B"
 
 CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
@@ -42,7 +14,13 @@ CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
 CLEAN_RHYME_WORD   = "sleep"
 CORRUPT_RHYME_WORD = "rest"
 
+# "newline" → patch at the final newline token (i=0 in paper notation)
+# "r1"      → patch at the r1 token itself ("sleep" / "rest")
+PATCH_MODE = "r1"
+
 MAX_NEW_TOKENS = 20
+
+# ── CMU Rhyme Lookup ───────────────────────────────────────────────────────────
 
 def get_rhyme_tail(phones: list[str]) -> tuple:
     """Return phones from the last stressed vowel onward (defines the rhyme)."""
@@ -80,6 +58,8 @@ def last_word(text: str) -> str:
     words = [w for w in words if w.isalpha()]
     return words[-1].lower() if words else ""
 
+# ── Model Loading ───────────────────────────────────────────────────────────────
+
 def load_model():
     print(f"Loading {MODEL_NAME} via TransformerLens...")
     model = HookedTransformer.from_pretrained(
@@ -93,8 +73,12 @@ def load_model():
     print(f"Loaded. Layers: {model.cfg.n_layers} | d_model: {model.cfg.d_model}")
     return model
 
+# ── Main Experiment ─────────────────────────────────────────────────────────────
+
 def run_experiment():
     model = load_model()
+
+    # --- Build rhyme sets ---
     print(f"\nBuilding rhyme sets from CMU dict...")
     clean_rhymes   = build_rhyme_set(CLEAN_RHYME_WORD)
     corrupt_rhymes = build_rhyme_set(CORRUPT_RHYME_WORD)
@@ -106,50 +90,75 @@ def run_experiment():
     print(f"  '{CLEAN_RHYME_WORD}' rhymes: {len(clean_rhymes)} words, e.g. {list(clean_rhymes)[:6]}")
     print(f"  '{CORRUPT_RHYME_WORD}' rhymes: {len(corrupt_rhymes)} words, e.g. {list(corrupt_rhymes)[:6]}")
 
+    if PATCH_MODE not in ("newline", "r1"):
+        raise ValueError(f"PATCH_MODE must be 'newline' or 'r1', got '{PATCH_MODE}'")
+
+    # --- Tokenize ---
     clean_tokens   = model.to_tokens(CLEAN_PROMPT)
     corrupt_tokens = model.to_tokens(CORRUPT_PROMPT)
 
     if clean_tokens.shape[1] != corrupt_tokens.shape[1]:
         print(f"\nWARNING: token length mismatch ({clean_tokens.shape[1]} vs {corrupt_tokens.shape[1]})")
         print("Prompts should tokenize to the same length for clean positional alignment.")
-    newline_id  = model.to_tokens("\n", prepend_bos=False)[0, 0].item()
-    tok_list    = corrupt_tokens[0].tolist()
-    newline_indices = [i for i, t in enumerate(tok_list) if t == newline_id]
-    if not newline_indices:
-        raise ValueError("No newline token found in corrupt prompt; cannot align patch position.")
-    newline_pos = max(newline_indices)
 
+    tok_list = corrupt_tokens[0].tolist()
+
+    # --- Find patch position based on mode ---
+    if PATCH_MODE == "newline":
+        newline_id = model.to_tokens("\n", prepend_bos=False)[0, 0].item()
+        newline_positions = [i for i, t in enumerate(tok_list) if t == newline_id]
+        if not newline_positions:
+            raise ValueError("No newline token found in corrupt prompt.")
+        patch_pos = max(newline_positions)
+        patch_label = f"newline (i=0, pos={patch_pos})"
+
+    elif PATCH_MODE == "r1":
+        # Find the corrupt r1 token ("rest") — search as " rest" (space-prefixed)
+        corrupt_r1_ids = model.to_tokens(f" {CORRUPT_RHYME_WORD}", prepend_bos=False)[0].tolist()
+        patch_pos = None
+        for i in range(len(tok_list) - len(corrupt_r1_ids), -1, -1):
+            if tok_list[i:i + len(corrupt_r1_ids)] == corrupt_r1_ids:
+                patch_pos = i
+                break
+        if patch_pos is None:
+            raise ValueError(f"Could not find '{CORRUPT_RHYME_WORD}' token in corrupt prompt.")
+        patch_label = f"r1 token ('{CORRUPT_RHYME_WORD}', pos={patch_pos})"
+
+    print(f"\nPatch mode: {PATCH_MODE} → patching at {patch_label}")
     print(f"\nCorrupt tokens:")
     for i, tok in enumerate(corrupt_tokens[0]):
-        marker = f" <-- newline (pos={newline_pos})" if i == newline_pos else ""
+        marker = f" <-- patch target ({patch_label})" if i == patch_pos else ""
         print(f"  pos {i:2d}: {repr(model.to_string(tok.unsqueeze(0)))}{marker}")
+
+    # --- Baseline completions ---
     print("\n── Baseline Completions ──")
     clean_completion   = model.generate(CLEAN_PROMPT,   max_new_tokens=MAX_NEW_TOKENS, temperature=0)
     corrupt_completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
     print(f"Clean   -> {repr(clean_completion)}")
     print(f"Corrupt -> {repr(corrupt_completion)}")
 
-    clean_end   = last_word(clean_completion)
-    corrupt_end = last_word(corrupt_completion)
+    clean_end   = last_word(clean_completion[len(CLEAN_PROMPT):])
+    corrupt_end = last_word(corrupt_completion[len(CORRUPT_PROMPT):])
     print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {clean_end in clean_rhymes}")
     print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {corrupt_end in corrupt_rhymes}")
 
+    # --- Cache clean activations ---
     print("\nCaching clean activations...")
     _, clean_cache = model.run_with_cache(CLEAN_PROMPT)
 
-    print(f"\nPatching clean newline (pos={newline_pos}) into corrupt run, sweeping all {model.cfg.n_layers} layers...")
+    # --- Sweep layers ---
+    print(f"\nPatching at {patch_label} across all {model.cfg.n_layers} layers...")
     print("Running greedy completion for each layer...\n")
 
     results = []
 
     for layer in range(model.cfg.n_layers):
-        clean_vec = clean_cache[f"blocks.{layer}.hook_resid_pre"][:, newline_pos, :].clone()
+        clean_vec = clean_cache[f"blocks.{layer}.hook_resid_pre"][:, patch_pos, :].clone()
 
         def patch_hook(value, hook, vec=clean_vec):
-            # Only patch on the prompt pass (seq has prompt length); generation steps have seq_len=1
-            if value.shape[1] > newline_pos:
+            if value.shape[1] > patch_pos:
                 out = value.clone()
-                out[:, newline_pos, :] = vec
+                out[:, patch_pos, :] = vec
                 return out
             return value
 
@@ -173,11 +182,13 @@ def run_experiment():
                  f"? '{end_word}'"
         print(f"  Layer {layer:2d}: {status}  |  {repr(completion.strip())}")
 
+    # --- Summary ---
     n_transferred = sum(r["rhymes_with_clean"] for r in results)
     print(f"\n── Summary ──")
     print(f"Layers where patch transferred clean rhyme plan: {n_transferred} / {model.cfg.n_layers}")
     print(f"Successful layers: {[r['layer'] for r in results if r['rhymes_with_clean']]}")
 
+    # --- Plot ---
     layers = [r["layer"] for r in results]
     colors = [
         "steelblue" if r["rhymes_with_clean"]   else
@@ -196,11 +207,11 @@ def run_experiment():
         Patch(facecolor="lightgray", label="Neither"),
     ], loc="upper right")
 
-    ax.set_xlabel("Layer patched at newline position")
+    ax.set_xlabel(f"Layer (patch mode: {PATCH_MODE} @ {patch_label})")
     ax.set_yticks([])
     ax.set_xticks(layers)
     ax.set_title(
-        f"Does patching the newline activation transfer the rhyme plan?\n"
+        f"Does patching [{patch_label}] transfer the rhyme plan? (mode={PATCH_MODE})\n"
         f"{MODEL_NAME} | clean r1='{CLEAN_RHYME_WORD}' → corrupt run (r1='{CORRUPT_RHYME_WORD}')"
     )
     ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
@@ -208,7 +219,7 @@ def run_experiment():
     plt.tight_layout()
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
     os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "patching_results_qwen2_5_14b.png")
+    out_path = os.path.join(out_dir, f"patching_results_{PATCH_MODE}.png")
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     print(f"\nPlot saved to {out_path}")
 
