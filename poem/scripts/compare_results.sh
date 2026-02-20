@@ -19,9 +19,9 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_BASE=$PROJECT_ROOT/poem/results/qwen3-32B
-OUTPUT_DIR=$PROJECT_ROOT/poem/results/qwen3-32B/plots
-METRIC=rhyme
+RESULTS_BASE=$PROJECT_ROOT/poem/results/qwen3-32B-all
+OUTPUT_DIR=$PROJECT_ROOT/poem/results/qwen3-32B-all/plots
+METRIC=val
 ACC_MIN=0
 ACC_MAX=1
 
@@ -51,7 +51,7 @@ f="$RESULTS_BASE/i0/experiment_results.json"
 if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=0"); COLORS+=("$COLOR_I0"); STYLES+=("$STYLE_I0"); fi
 
 # i=1..9 — same color and style
-for idx in 1 2 3 4 5 6 7 8 9; do
+for idx in 1 2 3 4 5; do
     f="$RESULTS_BASE/i${idx}/experiment_results.json"
     if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=${idx}"); COLORS+=("$COLOR_REST"); STYLES+=("$STYLE_REST"); fi
 done
