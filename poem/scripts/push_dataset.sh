@@ -12,7 +12,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 HF_REPO="${HF_REPO:-nick-rui/probe-data}"
-MODEL_NAME="${MODEL_NAME:-Qwen/Qwen2.5-7B}"
+MODEL_NAME="${MODEL_NAME:-Qwen/Qwen3-32B}"
 
 # Replace '/' with '--' for use in the repo path (e.g. Qwen/Qwen2.5-7B → Qwen--Qwen2.5-7B)
 MODEL_SLUG="${MODEL_NAME//\//"--"}"

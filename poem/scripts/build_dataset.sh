@@ -14,15 +14,15 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 # poem_probe imports look_ahead_probe, so both src dirs are needed
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME=Qwen/Qwen2.5-7B
+MODEL_NAME=Qwen/Qwen3-32B
 MAX_BACK="${MAX_BACK:-8}"          # tokens before the first-line \n to store (i = -1 ... -MAX_BACK)
 MAX_NEW_TOKENS=16
 MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
 MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
 
-TRAIN_INPUT="$PROJECT_ROOT/poem/data/poems-train.jsonl"
-VAL_INPUT="$PROJECT_ROOT/poem/data/poems-val.jsonl"
+TRAIN_INPUT="$PROJECT_ROOT/poem/data/poems-all-train.jsonl"
+VAL_INPUT="$PROJECT_ROOT/poem/data/poems-all-val.jsonl"
 TRAIN_OUTPUT="$PROJECT_ROOT/poem/data/activations_train.pt"
 VAL_OUTPUT="$PROJECT_ROOT/poem/data/activations_val.pt"
 
