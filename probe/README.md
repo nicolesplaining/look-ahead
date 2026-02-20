@@ -21,7 +21,7 @@ Or bring your own JSONL with a `"text"` field.
 
 ```bash
 bash probe/scripts/build_dataset.sh
-# → probe/data/activations_train.pt      (activations + targets, ~60 GB for 32B)
+# → probe/data/activations_train.pt           (activations + targets, ~60 GB for 32B)
 #   probe/data/activations_train.tokens.jsonl  (raw token IDs, lightweight)
 #   probe/data/activations_train.texts.jsonl   (decoded text, for inspection)
 # same files for val
@@ -81,7 +81,6 @@ N-gram (unigram/bigram/trigram) baselines using skip-k context — same "view" a
 ```bash
 bash probe/scripts/run_baselines.sh
 # → probe/results/baselines/{unigram,bigram,trigram}_results.json
-# Feed any of these into plot_results.sh via RESULTS_PATH=...
 ```
 
 Reads `.tokens.jsonl` by default (exact token IDs, no re-tokenization). Falls back to `.texts.jsonl` or `.pt` if needed (set `MODEL_NAME` for those).
@@ -92,14 +91,26 @@ Reads `.tokens.jsonl` by default (exact token IDs, no re-tokenization). Falls ba
 
 ```
 probe/src/look_ahead_probe/
-├── activation_extraction.py          # generate + extract residual stream
-├── build_look_ahead_activation_dataset.py  # CLI for step 1
-├── train_probe.py                    # single-probe training loop
-├── train_all_layers.py               # train across all layers for one k
-├── train_probes.py                   # CLI for step 2 (loops over k)
-├── probe.py                          # FutureTokenProbe (linear / MLP)
-├── data_loading.py                   # dataset loading utilities
-├── baseline.py                       # n-gram baselines
-├── visualize_results.py              # CLI for step 3 (multi-JSON overlay)
-└── check_model.py                    # inspect model config
+├── activation_extraction.py                   # generate + extract residual stream
+├── build_look_ahead_activation_dataset.py     # CLI for step 1
+├── train_probe.py                             # single-probe training loop
+├── train_all_layers.py                        # train across all layers for one k
+├── train_probes.py                            # CLI for step 2 (loops over k)
+├── probe.py                                   # FutureTokenProbe (linear / MLP)
+├── data_loading.py                            # dataset loading utilities
+├── baseline.py                                # n-gram baselines
+├── visualize_results.py                       # CLI for step 3 (multi-JSON overlay)
+└── check_model.py                             # inspect model config
+
+probe/src/utils/
+└── create_pile_datasets.py                    # sample Pile JSONL for step 0
+
+probe/scripts/
+├── create_pile_datasets.sh                    # step 0
+├── build_dataset.sh                           # step 1
+├── train_probes.sh                            # step 2
+├── plot_results.sh                            # step 3
+├── run_baselines.sh                           # n-gram baselines
+├── check_model.sh                             # inspect model config
+└── push_dataset.sh / pull_dataset.sh
 ```
