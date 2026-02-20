@@ -1,3 +1,4 @@
+import json
 import os
 import torch
 import nltk
@@ -5,6 +6,9 @@ import matplotlib.pyplot as plt
 from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
+
+# Name for this run: outputs go to activation-patching/results/<RUN_NAME>/
+RUN_NAME = "qwen2.5_14b_newline"
 
 MODEL_NAME = "Qwen/Qwen2.5-14B"
 
@@ -16,7 +20,7 @@ CORRUPT_RHYME_WORD = "rest"
 
 # "newline" → patch at the final newline token (i=0 in paper notation)
 # "r1"      → patch at the r1 token itself ("sleep" / "rest")
-PATCH_MODE = "r1"
+PATCH_MODE = "newline"
 
 MAX_NEW_TOKENS = 20
 
@@ -107,9 +111,25 @@ def run_experiment():
     if PATCH_MODE == "newline":
         newline_id = model.to_tokens("\n", prepend_bos=False)[0, 0].item()
         newline_positions = [i for i, t in enumerate(tok_list) if t == newline_id]
-        if not newline_positions:
-            raise ValueError("No newline token found in corrupt prompt.")
-        patch_pos = max(newline_positions)
+        if newline_positions:
+            patch_pos = max(newline_positions)
+        else:
+            # Tokenizer may not have a standalone newline token (e.g. Qwen2.5); find token covering the last "\n" by character offset
+            last_newline_char = CORRUPT_PROMPT.rfind("\n")
+            if last_newline_char == -1:
+                raise ValueError("No newline character in corrupt prompt.")
+            tokenizer = getattr(model, "tokenizer", None)
+            if tokenizer is None:
+                raise ValueError("No newline token found and model has no tokenizer for offset mapping.")
+            enc = tokenizer(CORRUPT_PROMPT, return_offsets_mapping=True, add_special_tokens=True)
+            offset_mapping = enc.get("offset_mapping") or []
+            patch_pos = None
+            for i, (start, end) in enumerate(offset_mapping):
+                if start <= last_newline_char < end:
+                    patch_pos = i
+                    break
+            if patch_pos is None:
+                raise ValueError("Could not find token covering newline in corrupt prompt.")
         patch_label = f"newline (i=0, pos={patch_pos})"
 
     elif PATCH_MODE == "r1":
@@ -165,7 +185,7 @@ def run_experiment():
         with model.hooks(fwd_hooks=[(f"blocks.{layer}.hook_resid_pre", patch_hook)]):
             completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
 
-        end_word            = last_word(completion)
+        end_word            = last_word(completion[len(CORRUPT_PROMPT):])
         rhymes_with_clean   = end_word in clean_rhymes
         rhymes_with_corrupt = end_word in corrupt_rhymes
 
@@ -217,11 +237,47 @@ def run_experiment():
     ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
 
     plt.tight_layout()
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
-    os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, f"patching_results_{PATCH_MODE}.png")
-    plt.savefig(out_path, dpi=150, bbox_inches="tight")
-    print(f"\nPlot saved to {out_path}")
+    results_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
+    run_dir = os.path.join(results_dir, RUN_NAME)
+    os.makedirs(run_dir, exist_ok=True)
+
+    # Save plot
+    image_path = os.path.join(run_dir, f"patching_results_{PATCH_MODE}.png")
+    plt.savefig(image_path, dpi=150, bbox_inches="tight")
+    print(f"\nPlot saved to {image_path}")
+
+    # Save generations and run metadata to JSON
+    export = {
+        "run_name": RUN_NAME,
+        "model_name": MODEL_NAME,
+        "patch_mode": PATCH_MODE,
+        "patch_label": patch_label,
+        "patch_pos": int(patch_pos),
+        "max_new_tokens": MAX_NEW_TOKENS,
+        "clean_prompt": CLEAN_PROMPT,
+        "corrupt_prompt": CORRUPT_PROMPT,
+        "clean_rhyme_word": CLEAN_RHYME_WORD,
+        "corrupt_rhyme_word": CORRUPT_RHYME_WORD,
+        "baseline": {
+            "clean_completion": clean_completion,
+            "corrupt_completion": corrupt_completion,
+        },
+        "n_layers": model.cfg.n_layers,
+        "results": [
+            {
+                "layer": r["layer"],
+                "completion": r["completion"],
+                "end_word": r["end_word"],
+                "rhymes_with_clean": r["rhymes_with_clean"],
+                "rhymes_with_corrupt": r["rhymes_with_corrupt"],
+            }
+            for r in results
+        ],
+    }
+    json_path = os.path.join(run_dir, "generations.json")
+    with open(json_path, "w") as f:
+        json.dump(export, f, indent=2)
+    print(f"Generations saved to {json_path}")
 
     return results
 
