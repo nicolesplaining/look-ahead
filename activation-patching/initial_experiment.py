@@ -7,8 +7,7 @@ from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-# Name for this run: outputs go to activation-patching/results/<RUN_NAME>/
-RUN_NAME = "qwen2.5_14b_newline"
+RUN_NAME = "qwen2.5_14b_newline_sampling"
 
 MODEL_NAME = "Qwen/Qwen2.5-14B"
 
@@ -21,6 +20,12 @@ CORRUPT_RHYME_WORD = "rest"
 # "newline" → patch at the final newline token (i=0 in paper notation)
 # "r1"      → patch at the r1 token itself ("sleep" / "rest")
 PATCH_MODE = "newline"
+
+# False → greedy (one completion per layer, fast)
+# True  → sample N completions per layer, report rhyme rate
+SAMPLING_MODE = True
+SAMPLING_N    = 50    # completions per layer
+SAMPLING_TEMP = 0.7   # temperature for sampling
 
 MAX_NEW_TOKENS = 20
 
@@ -62,6 +67,24 @@ def last_word(text: str) -> str:
     words = [w for w in words if w.isalpha()]
     return words[-1].lower() if words else ""
 
+def sample_completions(model, prompt: str, n: int, temperature: float) -> list[str]:
+    """Draw n sampled completions from the model given a prompt."""
+    completions = []
+    for _ in range(n):
+        completion = model.generate(
+            prompt,
+            max_new_tokens=MAX_NEW_TOKENS,
+            temperature=temperature,
+        )
+        completions.append(completion)
+    return completions
+
+def rhyme_rate(completions: list[str], prompt: str, rhyme_set: set[str]) -> float:
+    """Fraction of completions whose last word is in rhyme_set."""
+    generated = [c[len(prompt):] for c in completions]
+    hits = sum(last_word(g) in rhyme_set for g in generated)
+    return hits / len(completions) if completions else 0.0
+
 # ── Model Loading ───────────────────────────────────────────────────────────────
 
 def load_model():
@@ -82,6 +105,10 @@ def load_model():
 def run_experiment():
     model = load_model()
 
+    # --- Validate flags ---
+    if PATCH_MODE not in ("newline", "r1"):
+        raise ValueError(f"PATCH_MODE must be 'newline' or 'r1', got '{PATCH_MODE}'")
+
     # --- Build rhyme sets ---
     print(f"\nBuilding rhyme sets from CMU dict...")
     clean_rhymes   = build_rhyme_set(CLEAN_RHYME_WORD)
@@ -94,9 +121,6 @@ def run_experiment():
     print(f"  '{CLEAN_RHYME_WORD}' rhymes: {len(clean_rhymes)} words, e.g. {list(clean_rhymes)[:6]}")
     print(f"  '{CORRUPT_RHYME_WORD}' rhymes: {len(corrupt_rhymes)} words, e.g. {list(corrupt_rhymes)[:6]}")
 
-    if PATCH_MODE not in ("newline", "r1"):
-        raise ValueError(f"PATCH_MODE must be 'newline' or 'r1', got '{PATCH_MODE}'")
-
     # --- Tokenize ---
     clean_tokens   = model.to_tokens(CLEAN_PROMPT)
     corrupt_tokens = model.to_tokens(CORRUPT_PROMPT)
@@ -107,14 +131,13 @@ def run_experiment():
 
     tok_list = corrupt_tokens[0].tolist()
 
-    # --- Find patch position based on mode ---
+    # --- Find patch position ---
     if PATCH_MODE == "newline":
         newline_id = model.to_tokens("\n", prepend_bos=False)[0, 0].item()
         newline_positions = [i for i, t in enumerate(tok_list) if t == newline_id]
         if newline_positions:
             patch_pos = max(newline_positions)
         else:
-            # Tokenizer may not have a standalone newline token (e.g. Qwen2.5); find token covering the last "\n" by character offset
             last_newline_char = CORRUPT_PROMPT.rfind("\n")
             if last_newline_char == -1:
                 raise ValueError("No newline character in corrupt prompt.")
@@ -133,7 +156,6 @@ def run_experiment():
         patch_label = f"newline (i=0, pos={patch_pos})"
 
     elif PATCH_MODE == "r1":
-        # Find the corrupt r1 token ("rest") — search as " rest" (space-prefixed)
         corrupt_r1_ids = model.to_tokens(f" {CORRUPT_RHYME_WORD}", prepend_bos=False)[0].tolist()
         patch_pos = None
         for i in range(len(tok_list) - len(corrupt_r1_ids), -1, -1):
@@ -145,22 +167,34 @@ def run_experiment():
         patch_label = f"r1 token ('{CORRUPT_RHYME_WORD}', pos={patch_pos})"
 
     print(f"\nPatch mode: {PATCH_MODE} → patching at {patch_label}")
+    print(f"Sampling mode: {SAMPLING_MODE}" + (f" (N={SAMPLING_N}, T={SAMPLING_TEMP})" if SAMPLING_MODE else " (greedy)"))
     print(f"\nCorrupt tokens:")
     for i, tok in enumerate(corrupt_tokens[0]):
         marker = f" <-- patch target ({patch_label})" if i == patch_pos else ""
         print(f"  pos {i:2d}: {repr(model.to_string(tok.unsqueeze(0)))}{marker}")
 
     # --- Baseline completions ---
-    print("\n── Baseline Completions ──")
+    print("\n── Baseline Completions (greedy) ──")
     clean_completion   = model.generate(CLEAN_PROMPT,   max_new_tokens=MAX_NEW_TOKENS, temperature=0)
     corrupt_completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
     print(f"Clean   -> {repr(clean_completion)}")
     print(f"Corrupt -> {repr(corrupt_completion)}")
-
     clean_end   = last_word(clean_completion[len(CLEAN_PROMPT):])
     corrupt_end = last_word(corrupt_completion[len(CORRUPT_PROMPT):])
     print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {clean_end in clean_rhymes}")
     print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {corrupt_end in corrupt_rhymes}")
+
+    # --- Sampling baseline (unpatched corrupt run) ---
+    if SAMPLING_MODE:
+        print(f"\n── Unpatched Corrupt Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
+        baseline_samples = sample_completions(model, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+        baseline_clean_rate   = rhyme_rate(baseline_samples, CORRUPT_PROMPT, clean_rhymes)
+        baseline_corrupt_rate = rhyme_rate(baseline_samples, CORRUPT_PROMPT, corrupt_rhymes)
+        print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (clean): {baseline_clean_rate:.3f}")
+        print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (corrupt): {baseline_corrupt_rate:.3f}")
+    else:
+        baseline_clean_rate   = None
+        baseline_corrupt_rate = None
 
     # --- Cache clean activations ---
     print("\nCaching clean activations...")
@@ -168,7 +202,7 @@ def run_experiment():
 
     # --- Sweep layers ---
     print(f"\nPatching at {patch_label} across all {model.cfg.n_layers} layers...")
-    print("Running greedy completion for each layer...\n")
+    print(f"Mode: {'sampling (N=' + str(SAMPLING_N) + ', T=' + str(SAMPLING_TEMP) + ')' if SAMPLING_MODE else 'greedy'}\n")
 
     results = []
 
@@ -182,56 +216,86 @@ def run_experiment():
                 return out
             return value
 
-        with model.hooks(fwd_hooks=[(f"blocks.{layer}.hook_resid_pre", patch_hook)]):
-            completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
+        hook = (f"blocks.{layer}.hook_resid_pre", patch_hook)
 
-        end_word            = last_word(completion[len(CORRUPT_PROMPT):])
-        rhymes_with_clean   = end_word in clean_rhymes
-        rhymes_with_corrupt = end_word in corrupt_rhymes
+        if SAMPLING_MODE:
+            with model.hooks(fwd_hooks=[hook]):
+                completions = sample_completions(model, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+            clean_rate   = rhyme_rate(completions, CORRUPT_PROMPT, clean_rhymes)
+            corrupt_rate = rhyme_rate(completions, CORRUPT_PROMPT, corrupt_rhymes)
+            # Store all completions but only log summary
+            result = {
+                "layer": layer,
+                "completions": completions,
+                "clean_rhyme_rate":   clean_rate,
+                "corrupt_rhyme_rate": corrupt_rate,
+                "baseline_clean_rate":   baseline_clean_rate,
+                "baseline_corrupt_rate": baseline_corrupt_rate,
+            }
+            delta = clean_rate - baseline_clean_rate
+            print(f"  Layer {layer:2d}: clean_rhyme_rate={clean_rate:.3f} (baseline={baseline_clean_rate:.3f}, delta={delta:+.3f})")
 
-        results.append({
-            "layer": layer,
-            "completion": completion,
-            "end_word": end_word,
-            "rhymes_with_clean": rhymes_with_clean,
-            "rhymes_with_corrupt": rhymes_with_corrupt,
-        })
+        else:
+            with model.hooks(fwd_hooks=[hook]):
+                completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
+            end_word            = last_word(completion[len(CORRUPT_PROMPT):])
+            rhymes_with_clean   = end_word in clean_rhymes
+            rhymes_with_corrupt = end_word in corrupt_rhymes
+            result = {
+                "layer": layer,
+                "completion": completion,
+                "end_word": end_word,
+                "rhymes_with_clean": rhymes_with_clean,
+                "rhymes_with_corrupt": rhymes_with_corrupt,
+            }
+            status = f"✓ rhymes with '{CLEAN_RHYME_WORD}'" if rhymes_with_clean else \
+                     f"✗ rhymes with '{CORRUPT_RHYME_WORD}'" if rhymes_with_corrupt else \
+                     f"? '{end_word}'"
+            print(f"  Layer {layer:2d}: {status}  |  {repr(completion.strip())}")
 
-        status = f"✓ rhymes with '{CLEAN_RHYME_WORD}'" if rhymes_with_clean else \
-                 f"✗ rhymes with '{CORRUPT_RHYME_WORD}'" if rhymes_with_corrupt else \
-                 f"? '{end_word}'"
-        print(f"  Layer {layer:2d}: {status}  |  {repr(completion.strip())}")
+        results.append(result)
 
     # --- Summary ---
-    n_transferred = sum(r["rhymes_with_clean"] for r in results)
     print(f"\n── Summary ──")
-    print(f"Layers where patch transferred clean rhyme plan: {n_transferred} / {model.cfg.n_layers}")
-    print(f"Successful layers: {[r['layer'] for r in results if r['rhymes_with_clean']]}")
+    if SAMPLING_MODE:
+        best = max(results, key=lambda r: r["clean_rhyme_rate"])
+        print(f"Best layer: {best['layer']} (clean_rhyme_rate={best['clean_rhyme_rate']:.3f}, baseline={baseline_clean_rate:.3f})")
+    else:
+        n_transferred = sum(r["rhymes_with_clean"] for r in results)
+        print(f"Layers where patch transferred clean rhyme plan: {n_transferred} / {model.cfg.n_layers}")
+        print(f"Successful layers: {[r['layer'] for r in results if r['rhymes_with_clean']]}")
 
     # --- Plot ---
     layers = [r["layer"] for r in results]
-    colors = [
-        "steelblue" if r["rhymes_with_clean"]   else
-        "salmon"    if r["rhymes_with_corrupt"]  else
-        "lightgray"
-        for r in results
-    ]
-
     fig, ax = plt.subplots(figsize=(14, 4))
-    ax.bar(layers, [1] * len(layers), color=colors, edgecolor="white", linewidth=0.5)
 
-    from matplotlib.patches import Patch
-    ax.legend(handles=[
-        Patch(facecolor="steelblue", label=f"Ends with '{CLEAN_RHYME_WORD}'-rhyme (transfer ✓)"),
-        Patch(facecolor="salmon",    label=f"Ends with '{CORRUPT_RHYME_WORD}'-rhyme (no transfer)"),
-        Patch(facecolor="lightgray", label="Neither"),
-    ], loc="upper right")
+    if SAMPLING_MODE:
+        clean_rates = [r["clean_rhyme_rate"] for r in results]
+        ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5, label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
+        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_clean_rate:.3f})")
+        ax.set_ylabel(f"Fraction ending with '{CLEAN_RHYME_WORD}'-rhyme")
+        ax.legend(loc="upper right")
+    else:
+        colors = [
+            "steelblue" if r["rhymes_with_clean"]   else
+            "salmon"    if r["rhymes_with_corrupt"]  else
+            "lightgray"
+            for r in results
+        ]
+        ax.bar(layers, [1] * len(layers), color=colors, edgecolor="white", linewidth=0.5)
+        from matplotlib.patches import Patch
+        ax.legend(handles=[
+            Patch(facecolor="steelblue", label=f"Ends with '{CLEAN_RHYME_WORD}'-rhyme (transfer ✓)"),
+            Patch(facecolor="salmon",    label=f"Ends with '{CORRUPT_RHYME_WORD}'-rhyme (no transfer)"),
+            Patch(facecolor="lightgray", label="Neither"),
+        ], loc="upper right")
+        ax.set_yticks([])
 
     ax.set_xlabel(f"Layer (patch mode: {PATCH_MODE} @ {patch_label})")
-    ax.set_yticks([])
     ax.set_xticks(layers)
     ax.set_title(
-        f"Does patching [{patch_label}] transfer the rhyme plan? (mode={PATCH_MODE})\n"
+        f"Does patching [{patch_label}] transfer the rhyme plan? "
+        f"({'sampling N=' + str(SAMPLING_N) + ' T=' + str(SAMPLING_TEMP) if SAMPLING_MODE else 'greedy'})\n"
         f"{MODEL_NAME} | clean r1='{CLEAN_RHYME_WORD}' → corrupt run (r1='{CORRUPT_RHYME_WORD}')"
     )
     ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
@@ -241,18 +305,20 @@ def run_experiment():
     run_dir = os.path.join(results_dir, RUN_NAME)
     os.makedirs(run_dir, exist_ok=True)
 
-    # Save plot
-    image_path = os.path.join(run_dir, f"patching_results_{PATCH_MODE}.png")
+    image_path = os.path.join(run_dir, f"patching_results_{PATCH_MODE}_{'sampling' if SAMPLING_MODE else 'greedy'}.png")
     plt.savefig(image_path, dpi=150, bbox_inches="tight")
     print(f"\nPlot saved to {image_path}")
 
-    # Save generations and run metadata to JSON
+    # --- Save JSON ---
     export = {
         "run_name": RUN_NAME,
         "model_name": MODEL_NAME,
         "patch_mode": PATCH_MODE,
         "patch_label": patch_label,
         "patch_pos": int(patch_pos),
+        "sampling_mode": SAMPLING_MODE,
+        "sampling_n": SAMPLING_N if SAMPLING_MODE else None,
+        "sampling_temp": SAMPLING_TEMP if SAMPLING_MODE else None,
         "max_new_tokens": MAX_NEW_TOKENS,
         "clean_prompt": CLEAN_PROMPT,
         "corrupt_prompt": CORRUPT_PROMPT,
@@ -261,18 +327,11 @@ def run_experiment():
         "baseline": {
             "clean_completion": clean_completion,
             "corrupt_completion": corrupt_completion,
+            "unpatched_corrupt_clean_rhyme_rate": baseline_clean_rate,
+            "unpatched_corrupt_corrupt_rhyme_rate": baseline_corrupt_rate,
         },
         "n_layers": model.cfg.n_layers,
-        "results": [
-            {
-                "layer": r["layer"],
-                "completion": r["completion"],
-                "end_word": r["end_word"],
-                "rhymes_with_clean": r["rhymes_with_clean"],
-                "rhymes_with_corrupt": r["rhymes_with_corrupt"],
-            }
-            for r in results
-        ],
+        "results": results,
     }
     json_path = os.path.join(run_dir, "generations.json")
     with open(json_path, "w") as f:

@@ -1,0 +1,72 @@
+nohup: ignoring input
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+/home/ubuntu/.local/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+2026-02-20 07:16:56.147176: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-02-20 07:16:56.161489: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1771571816.179180   37555 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1771571816.184829   37555 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1771571816.198479   37555 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1771571816.198510   37555 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1771571816.198516   37555 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1771571816.198519   37555 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-02-20 07:16:56.202393: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading Qwen/Qwen2.5-14B via TransformerLens...
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00, 158.68it/s]
+Loaded pretrained model Qwen/Qwen2.5-14B into HookedTransformer
+Loaded. Layers: 48 | d_model: 5120
+
+Building rhyme sets from CMU dict...
+  'sleep' rhymes: 40 words, e.g. ['anandeep', 'bleep', 'kneip', 'weep', 'heap', 'phillipe']
+  'rest' rhymes: 106 words, e.g. ['brest', 'digressed', 'eastern-west', 'natwest', 'impressed', 'caressed']
+
+Patch mode: newline → patching at newline (i=0, pos=14)
+Sampling mode: True (N=50, T=0.7)
+
+Corrupt tokens:
+  pos  0: 'A'
+  pos  1: ' rh'
+  pos  2: 'ym'
+  pos  3: 'ing'
+  pos  4: ' couple'
+  pos  5: 't'
+  pos  6: ':\n'
+  pos  7: 'He'
+  pos  8: ' felt'
+  pos  9: ' a'
+  pos 10: ' sudden'
+  pos 11: ' urge'
+  pos 12: ' to'
+  pos 13: ' rest'
+  pos 14: ',\n' <-- patch target (newline (i=0, pos=14))
+
+── Baseline Completions (greedy) ──
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:06,  2.91it/s] 15%|█▌        | 3/20 [00:00<00:02,  7.39it/s] 25%|██▌       | 5/20 [00:00<00:01, 10.82it/s] 35%|███▌      | 7/20 [00:00<00:00, 13.28it/s] 45%|████▌     | 9/20 [00:00<00:00, 15.04it/s] 50%|█████     | 10/20 [00:00<00:00, 11.29it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.84it/s] 20%|██        | 4/20 [00:00<00:00, 19.01it/s] 30%|███       | 6/20 [00:00<00:00, 19.04it/s] 40%|████      | 8/20 [00:00<00:00, 19.09it/s] 50%|█████     | 10/20 [00:00<00:00, 19.10it/s] 50%|█████     | 10/20 [00:00<00:00, 17.34it/s]
+Clean   -> 'A rhyming couplet:\nHe felt a sudden urge to sleep,\nHis eyelids heavy, his mind to keep.'
+Corrupt -> 'A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.'
+
+Clean ends with:   'keep' — rhymes with 'sleep'?   True
+Corrupt ends with: 'stressed' — rhymes with 'rest'? True
+
+── Unpatched Corrupt Baseline (50 samples, T=0.7) ──
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:00<00:02,  7.29it/s] 15%|█▌        | 3/20 [00:00<00:01, 13.41it/s] 25%|██▌       | 5/20 [00:00<00:00, 15.82it/s] 35%|███▌      | 7/20 [00:00<00:00, 17.05it/s] 45%|████▌     | 9/20 [00:00<00:00, 17.79it/s] 50%|█████     | 10/20 [00:00<00:00, 15.13it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.91it/s] 20%|██        | 4/20 [00:00<00:00, 19.13it/s] 30%|███       | 6/20 [00:00<00:00, 19.16it/s] 40%|████      | 8/20 [00:00<00:00, 19.19it/s] 50%|█████     | 10/20 [00:00<00:00, 19.14it/s] 60%|██████    | 12/20 [00:00<00:00, 19.14it/s] 70%|███████   | 14/20 [00:00<00:00, 19.10it/s] 80%|████████  | 16/20 [00:00<00:00, 19.11it/s] 90%|█████████ | 18/20 [00:00<00:00, 19.07it/s]100%|██████████| 20/20 [00:01<00:00, 19.09it/s]100%|██████████| 20/20 [00:01<00:00, 19.10it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.83it/s] 20%|██        | 4/20 [00:00<00:00, 19.03it/s] 30%|███       | 6/20 [00:00<00:00, 19.05it/s] 40%|████      | 8/20 [00:00<00:00, 19.06it/s] 40%|████      | 8/20 [00:00<00:00, 16.91it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.92it/s] 20%|██        | 4/20 [00:00<00:00, 18.98it/s] 30%|███       | 6/20 [00:00<00:00, 19.02it/s] 40%|████      | 8/20 [00:00<00:00, 19.05it/s] 50%|█████     | 10/20 [00:00<00:00, 19.06it/s] 60%|██████    | 12/20 [00:00<00:00, 19.10it/s] 70%|███████   | 14/20 [00:00<00:00, 19.08it/s] 80%|████████  | 16/20 [00:00<00:00, 19.09it/s] 90%|█████████ | 18/20 [00:00<00:00, 19.09it/s]100%|██████████| 20/20 [00:01<00:00, 19.07it/s]100%|██████████| 20/20 [00:01<00:00, 19.06it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.89it/s] 20%|██        | 4/20 [00:00<00:00, 19.02it/s] 30%|███       | 6/20 [00:00<00:00, 19.10it/s] 40%|████      | 8/20 [00:00<00:00, 19.11it/s] 45%|████▌     | 9/20 [00:00<00:00, 17.16it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.85it/s] 20%|██        | 4/20 [00:00<00:00, 19.03it/s] 30%|███       | 6/20 [00:00<00:00, 19.05it/s] 40%|████      | 8/20 [00:00<00:00, 19.09it/s] 50%|█████     | 10/20 [00:00<00:00, 19.10it/s] 50%|█████     | 10/20 [00:00<00:00, 17.34it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.72it/s] 20%|██        | 4/20 [00:00<00:00, 18.89it/s] 30%|███       | 6/20 [00:00<00:00, 18.97it/s] 40%|████      | 8/20 [00:00<00:00, 19.03it/s] 50%|█████     | 10/20 [00:00<00:00, 19.03it/s] 50%|█████     | 10/20 [00:00<00:00, 17.27it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.85it/s] 20%|██        | 4/20 [00:00<00:00, 19.02it/s] 30%|███       | 6/20 [00:00<00:00, 19.04it/s] 40%|████      | 8/20 [00:00<00:00, 19.07it/s] 45%|████▌     | 9/20 [00:00<00:00, 17.15it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.84it/s] 20%|██        | 4/20 [00:00<00:00, 18.99it/s] 30%|███       | 6/20 [00:00<00:00, 19.06it/s] 40%|████      | 8/20 [00:00<00:00, 19.10it/s] 50%|█████     | 10/20 [00:00<00:00, 19.10it/s] 60%|██████    | 12/20 [00:00<00:00, 19.12it/s] 70%|███████   | 14/20 [00:00<00:00, 19.14it/s] 80%|████████  | 16/20 [00:00<00:00, 19.15it/s] 90%|█████████ | 18/20 [00:00<00:00, 19.14it/s]100%|██████████| 20/20 [00:01<00:00, 19.11it/s]100%|██████████| 20/20 [00:01<00:00, 19.10it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.90it/s] 20%|██        | 4/20 [00:00<00:00, 19.06it/s] 30%|███       | 6/20 [00:00<00:00, 19.11it/s] 40%|████      | 8/20 [00:00<00:00, 19.10it/s] 45%|████▌     | 9/20 [00:00<00:00, 17.17it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.84it/s] 20%|██        | 4/20 [00:00<00:00, 19.03it/s] 30%|███       | 6/20 [00:00<00:00, 19.06it/s] 40%|████      | 8/20 [00:00<00:00, 19.12it/s] 40%|████      | 8/20 [00:00<00:00, 16.96it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.85it/s] 20%|██        | 4/20 [00:00<00:00, 19.01it/s] 30%|███       | 6/20 [00:00<00:00, 19.09it/s] 40%|████      | 8/20 [00:00<00:00, 19.13it/s] 45%|████▌     | 9/20 [00:00<00:00, 17.17it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.85it/s] 20%|██        | 4/20 [00:00<00:00, 19.03it/s] 30%|███       | 6/20 [00:00<00:00, 19.06it/s] 40%|████      | 8/20 [00:00<00:00, 19.05it/s] 50%|█████     | 10/20 [00:00<00:00, 19.08it/s] 50%|█████     | 10/20 [00:00<00:00, 17.33it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.93it/s] 20%|██        | 4/20 [00:00<00:00, 19.07it/s] 30%|███       | 6/20 [00:00<00:00, 19.09it/s] 40%|████      | 8/20 [00:00<00:00, 19.12it/s] 50%|█████     | 10/20 [00:00<00:00, 19.09it/s] 60%|██████    | 12/20 [00:00<00:00, 19.11it/s] 70%|███████   | 14/20 [00:00<00:00, 19.12it/s] 80%|████████  | 16/20 [00:00<00:00, 19.14it/s] 90%|█████████ | 18/20 [00:00<00:00, 19.13it/s]100%|██████████| 20/20 [00:01<00:00, 19.13it/s]100%|██████████| 20/20 [00:01<00:00, 19.11it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.83it/s] 20%|██        | 4/20 [00:00<00:00, 19.00it/s] 30%|███       | 6/20 [00:00<00:00, 19.08it/s] 40%|████      | 8/20 [00:00<00:00, 19.10it/s] 40%|████      | 8/20 [00:00<00:00, 16.95it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:00<00:00, 18.88it/s] 20%|██        | 4/20 [00:00<00:00, 19.03it/s] 30%|███       | 6/20 [00:00<00:00, 19.03it/s] 40%|████      | 8/20 [00:00<00:00, 19.04it/s] 50%|█████     | 10/20 [00:00<00:00, 19.08it/s] 60%|██████    | 12/20 [00:00<00:00, 19.12it/s]
