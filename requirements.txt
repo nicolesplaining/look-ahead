@@ -7,9 +7,17 @@
 
 # NEW (use torch 218 if on GH200)
 torch>=2.0.0
-transformers>=4.41.0
+# 4.51+ for Qwen2/Qwen3; <5.0 avoids lazy-loading that breaks TransformerLens state-dict loading
+transformers>=4.51.0,<5.0
+# transformer-lens 2.17 requires huggingface-hub<1.0
+huggingface-hub>=0.23.2,<1.0
 accelerate>=0.30.0
 safetensors>=0.4.3
 tqdm>=4.66.0
 matplotlib>=3.8.0
 pronouncing>=0.2.0
+argcomplete>=1.9.4
+nltk>=3.9.2
+# transformers qwen2 modeling uses PIL.Image.Resampling (Pillow 9.1+)
+Pillow>=9.1.0
+
