@@ -17,12 +17,12 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/poem/data/activations_train.pt}"
 VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/poem/data/activations_val.pt}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
-TRAIN_POSITION=9                        # i=0 = first-line \n; negative = earlier in first line
+TRAIN_POSITION=0                        # i=0 = first-line \n; negative = earlier in first line
 MODEL_NAME=Qwen/Qwen3-32B            # set to enable decoded_predictions in JSON
 PROBE_TYPE="${PROBE_TYPE:-linear}"
 NUM_EPOCHS="${NUM_EPOCHS:-10}"
 BATCH_SIZE=32
-LEARNING_RATE=2e-4
+LEARNING_RATE=1e-4
 WEIGHT_DECAY="${WEIGHT_DECAY:-1e-3}"
 DEVICE="${DEVICE:-cuda}"
 
