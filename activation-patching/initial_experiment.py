@@ -7,7 +7,7 @@ from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "better_extraction_qwen2.5_14b_newline_sampling"
+RUN_NAME = "qwen2.5_14b_newline_sampling_500_0.8"
 
 MODEL_NAME = "Qwen/Qwen2.5-14B"
 
@@ -24,8 +24,8 @@ PATCH_MODE = "newline"
 # False → greedy (one completion per layer, fast)
 # True  → sample N completions per layer, report rhyme rate
 SAMPLING_MODE = True
-SAMPLING_N    = 100    # completions per layer
-SAMPLING_TEMP = 0.7   # temperature for sampling
+SAMPLING_N    = 500    # completions per layer
+SAMPLING_TEMP = 0.8   # temperature for sampling
 
 MAX_NEW_TOKENS = 20
 
