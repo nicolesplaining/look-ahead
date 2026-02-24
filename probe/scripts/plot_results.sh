@@ -2,13 +2,10 @@
 # Plot experiment results — overlay multiple result JSONs on one plot per k.
 # Can be run from any directory.
 #
-# Usage examples:
-#
-#   # Single result
-#   bash probe/scripts/plot_results.sh
-#
-#   # Override paths via env vars
-#   PROBE_RESULTS=/path/to/experiment_results.json bash probe/scripts/plot_results.sh
+# Override via env vars:
+#   RESULTS_DIR=/path/to/results/dir
+#   OUTPUT_DIR=/path/to/output
+#   ACC_MIN=0  ACC_MAX=0.8
 
 set -e
 
@@ -17,52 +14,26 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-# ------------------------------------------------------------------
-# Paths to result JSONs (edit or override via env vars)
-# ------------------------------------------------------------------
-RESULTS_DIR="$PROJECT_ROOT/probe/results/qwen-3-32B"
-
-PROBE_RESULTS="${PROBE_RESULTS:-$RESULTS_DIR/experiment_results_linear/experiment_results.json}"
-UNIGRAM_RESULTS="${UNIGRAM_RESULTS:-$RESULTS_DIR/baselines/unigram/unigram_results.json}"
-BIGRAM_RESULTS="${BIGRAM_RESULTS:-$RESULTS_DIR/baselines/bigram/bigram_results.json}"
-TRIGRAM_RESULTS="${TRIGRAM_RESULTS:-$RESULTS_DIR/baselines/trigram/trigram_results.json}"
-
+RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/qwen-3-32B}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
-ACC_MAX="${ACC_MAX:-0.5}"
+
+ACC_MAX=0.5
 
 mkdir -p "$OUTPUT_DIR"
 
-# ------------------------------------------------------------------
-# Build the argument list — only include files that exist
-# ------------------------------------------------------------------
 JSONS=()
 LABELS=()
 COLORS=()
 
-if [ -f "$PROBE_RESULTS" ]; then
-    JSONS+=("$PROBE_RESULTS")
-    LABELS+=("Linear Probe")
-    COLORS+=("steelblue")
-fi
+f="$RESULTS_DIR/experiment_results_linear/experiment_results.json"
+if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Linear Probe"); COLORS+=("steelblue"); fi
 
-if [ -f "$TRIGRAM_RESULTS" ]; then
-    JSONS+=("$TRIGRAM_RESULTS")
-    LABELS+=("Trigram")
-    COLORS+=("tomato")
-fi
+f="$RESULTS_DIR/baselines/bigram/bigram_results.json"
+if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Bigram"); COLORS+=("orange"); fi
 
-if [ -f "$BIGRAM_RESULTS" ]; then
-    JSONS+=("$BIGRAM_RESULTS")
-    LABELS+=("Bigram")
-    COLORS+=("orange")
-fi
-
-if [ -f "$UNIGRAM_RESULTS" ]; then
-    JSONS+=("$UNIGRAM_RESULTS")
-    LABELS+=("Unigram")
-    COLORS+=("gray")
-fi
+f="$RESULTS_DIR/baselines/unigram/unigram_results.json"
+if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Unigram"); COLORS+=("gray"); fi
 
 if [ ${#JSONS[@]} -eq 0 ]; then
     echo "ERROR: No result JSONs found. Run train_probes.sh and/or run_baselines.sh first."
