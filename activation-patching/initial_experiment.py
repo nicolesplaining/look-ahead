@@ -9,7 +9,7 @@ from transformer_lens import HookedTransformer
 
 RUN_NAME = "qwen2.5_14b_newline_sampling_500_0.8"
 
-MODEL_NAME = "Qwen/Qwen2.5-14B"
+MODEL_NAME = "Qwen/Qwen2.5-32B"
 
 CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
