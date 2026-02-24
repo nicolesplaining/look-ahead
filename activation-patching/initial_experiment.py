@@ -14,6 +14,11 @@ MODEL_NAME = "Qwen/Qwen2.5-32B"
 CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
 
+
+A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he
+A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he
+
+
 CLEAN_RHYME_WORD   = "sleep"
 CORRUPT_RHYME_WORD = "rest"
 
