@@ -7,7 +7,7 @@ from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen2.5_14b_newline_sampling_500_0.8"
+RUN_NAME = "qwen2.5_32b_newline_sampling_500_0.8"
 
 MODEL_NAME = "Qwen/Qwen2.5-32B"
 
@@ -294,9 +294,12 @@ def run_experiment():
 
     if SAMPLING_MODE:
         clean_rates = [r["clean_rhyme_rate"] for r in results]
+        corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
         ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5, label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
-        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_clean_rate:.3f})")
-        ax.set_ylabel(f"Fraction ending with '{CLEAN_RHYME_WORD}'-rhyme")
+        ax.plot(layers, corrupt_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0, label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
+        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline clean rate ({baseline_clean_rate:.3f})")
+        ax.axhline(baseline_corrupt_rate, color="orange", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
+        ax.set_ylabel("Rhyme rate")
         ax.legend(loc="upper right")
     else:
         colors = [
