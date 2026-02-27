@@ -18,7 +18,7 @@ RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/qwen-3-32B}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
 
-ACC_MAX=0.5
+ACC_MAX=1
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -48,7 +48,7 @@ python -m look_ahead_probe.visualize_results \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
-    --show-val \
+    --show-top5 \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR"
