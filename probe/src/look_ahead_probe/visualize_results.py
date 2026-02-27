@@ -69,9 +69,20 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
 
     filename_parts = [name.lower().replace('-', '') for _, name, _ in metric_specs]
 
-    fig, axes = plt.subplots(1, len(all_k), figsize=(6 * len(all_k), 5), sharey=True)
+    # Overall figure title from which metric(s) are shown
+    if show_val and show_top5:
+        fig_title = "Top-1 and Top-5 Accuracy"
+    elif show_val:
+        fig_title = "Top-1 Accuracy"
+    elif show_top5:
+        fig_title = "Top-5 Accuracy"
+    else:
+        fig_title = "Training Accuracy"
+
+    fig, axes = plt.subplots(1, len(all_k), figsize=(12 * len(all_k), 10), sharey=True)
     if len(all_k) == 1:
         axes = [axes]
+    fig.suptitle(fig_title, fontsize=28, fontweight='bold', y=1.02)
 
     for ax, k in zip(axes, all_k):
         for results_by_k, label, color in zip(all_results_by_k, labels, resolved_colors):
@@ -89,17 +100,18 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
                 if not vals:
                     continue
                 legend_label = f"{label} ({metric_name})" if multi_metric else label
-                ax.plot(layers, vals, linewidth=2,
+                ax.plot(layers, vals, linewidth=4,
                         linestyle=linestyle, color=color, label=legend_label)
 
-        ax.set_title(f"k={k}", fontsize=13, fontweight='bold')
-        ax.set_xlabel('Layer', fontsize=11)
+        ax.set_title(f"k={k}", fontsize=28, fontweight='bold')
+        ax.set_xlabel('Layer', fontsize=24)
         ax.set_ylim(acc_min, acc_max)
         ax.grid(True, alpha=0.3)
-        ax.legend(fontsize=10)
+        ax.tick_params(axis='both', labelsize=24)
+        ax.legend(fontsize=22, loc='upper left')
 
-    axes[0].set_ylabel('Accuracy', fontsize=11)
-    fig.tight_layout()
+    axes[0].set_ylabel('Accuracy', fontsize=24)
+    fig.tight_layout(rect=[0, 0, 1, 0.96])
 
     filename = f"{'_'.join(filename_parts)}_accuracy.png"
     output_path = Path(output_dir) / filename
