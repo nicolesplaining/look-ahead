@@ -1,0 +1,803 @@
+{
+  "timestamp_utc": "2026-02-28T10:38:36.726081Z",
+  "experiment_id": "exp2_newline_asymmetric_context",
+  "run_name": "qwen2.5_32b_exp2_newline_asymmetric_corrupt_to_clean",
+  "model_name": "Qwen/Qwen2.5-32B",
+  "patch_source_mode": "corrupt_to_clean",
+  "target_selector": {
+    "kind": "newline"
+  },
+  "target_patch_label": "newline (pos=7)",
+  "target_patch_pos": 7,
+  "source_selector": {
+    "kind": "newline"
+  },
+  "source_patch_label": "newline (pos=14)",
+  "source_patch_pos": 14,
+  "donor_prompt": null,
+  "sampling_mode": true,
+  "sampling_n": 3,
+  "sampling_temp": 0.8,
+  "max_new_tokens": 3,
+  "clean_prompt": "He felt a sudden urge to rest,\nBut then he",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+  "clean_rhyme_word": "rest",
+  "corrupt_rhyme_word": "sleep",
+  "baseline": {
+    "clean_completion": "He felt a sudden urge to rest,\nBut then he heard a rust",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he woke up and",
+    "unpatched_clean_clean_rhyme_rate": 0.3333333333333333,
+    "unpatched_clean_corrupt_rhyme_rate": 0.0
+  },
+  "n_layers": 64,
+  "results": [
+    {
+      "layer": 0,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a loud",
+        "He felt a sudden urge to rest,\nBut then he heard a ghost",
+        "He felt a sudden urge to rest,\nBut then he shook his head"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 1,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw a terrible",
+        "He felt a sudden urge to rest,\nBut then he thought of what",
+        "He felt a sudden urge to rest,\nBut then he remembered his goal"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 2,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a ghost",
+        "He felt a sudden urge to rest,\nBut then he heard a voice",
+        "He felt a sudden urge to rest,\nBut then he had to go"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 3,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he knew he couldn",
+        "He felt a sudden urge to rest,\nBut then he looked up at",
+        "He felt a sudden urge to rest,\nBut then he snapped out of"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 4,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he found a hidden",
+        "He felt a sudden urge to rest,\nBut then he heard the sound",
+        "He felt a sudden urge to rest,\nBut then he heard a gentle"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 5,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered his quest",
+        "He felt a sudden urge to rest,\nBut then he heard a sound",
+        "He felt a sudden urge to rest,\nBut then he thought of his"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 6,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a call",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he remembered what he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 7,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a loud",
+        "He felt a sudden urge to rest,\nBut then he heard a knocking",
+        "He felt a sudden urge to rest,\nBut then he thought of the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 8,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw the road",
+        "He felt a sudden urge to rest,\nBut then he remembered his work",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 9,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered he had",
+        "He felt a sudden urge to rest,\nBut then he remembered the job",
+        "He felt a sudden urge to rest,\nBut then he thought of his"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 10,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a strange",
+        "He felt a sudden urge to rest,\nBut then he had a spark",
+        "He felt a sudden urge to rest,\nBut then he saw a car"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 11,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he woke up in",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest",
+        "He felt a sudden urge to rest,\nBut then he thought, \""
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 12,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought of the",
+        "He felt a sudden urge to rest,\nBut then he heard a strange",
+        "He felt a sudden urge to rest,\nBut then he was on the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 13,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw a shiny",
+        "He felt a sudden urge to rest,\nBut then he thought of what",
+        "He felt a sudden urge to rest,\nBut then he jumped into the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 14,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered his quest",
+        "He felt a sudden urge to rest,\nBut then he knew he had",
+        "He felt a sudden urge to rest,\nBut then he thought of all"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 15,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered he had",
+        "He felt a sudden urge to rest,\nBut then he remembered, \"",
+        "He felt a sudden urge to rest,\nBut then he was gone,\n"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 16,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he realized why,",
+        "He felt a sudden urge to rest,\nBut then he heard a soft",
+        "He felt a sudden urge to rest,\nBut then he thought of the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 17,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he realized he had",
+        "He felt a sudden urge to rest,\nBut then he saw a door",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 18,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought of all",
+        "He felt a sudden urge to rest,\nBut then he realized, it",
+        "He felt a sudden urge to rest,\nBut then he remembered he had"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 19,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he looked at the",
+        "He felt a sudden urge to rest,\nBut then he heard a voice",
+        "He felt a sudden urge to rest,\nBut then he saw a pond"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 20,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he knew it was",
+        "He felt a sudden urge to rest,\nBut then he felt a sudden",
+        "He felt a sudden urge to rest,\nBut then he heard a strange"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 21,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought that it",
+        "He felt a sudden urge to rest,\nBut then he shook off the",
+        "He felt a sudden urge to rest,\nBut then he thought, \""
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 22,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought of all",
+        "He felt a sudden urge to rest,\nBut then he remembered his goal",
+        "He felt a sudden urge to rest,\nBut then he realized the time"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 23,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought it would",
+        "He felt a sudden urge to rest,\nBut then he cheated death with",
+        "He felt a sudden urge to rest,\nBut then he heard a som"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 24,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he looked at the",
+        "He felt a sudden urge to rest,\nBut then he thought of what",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 25,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he realized it was",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he heard a slight"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 26,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a soft",
+        "He felt a sudden urge to rest,\nBut then he realized the door",
+        "He felt a sudden urge to rest,\nBut then he remembered the day"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 27,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he felt a light"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 28,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a soft",
+        "He felt a sudden urge to rest,\nBut then he noticed a large",
+        "He felt a sudden urge to rest,\nBut then he realized there was"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 29,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered his test",
+        "He felt a sudden urge to rest,\nBut then he thought of what",
+        "He felt a sudden urge to rest,\nBut then he said, \""
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 30,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he took a huge",
+        "He felt a sudden urge to rest,\nBut then he got a text",
+        "He felt a sudden urge to rest,\nBut then he heard a low"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 31,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he realized there was",
+        "He felt a sudden urge to rest,\nBut then he saw it,",
+        "He felt a sudden urge to rest,\nBut then he remembered he had"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 32,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he found his feet",
+        "He felt a sudden urge to rest,\nBut then he thought of what",
+        "He felt a sudden urge to rest,\nBut then he spied a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 33,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a distant",
+        "He felt a sudden urge to rest,\nBut then he remembered his grand",
+        "He felt a sudden urge to rest,\nBut then he felt a sharp"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 34,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he realized he had",
+        "He felt a sudden urge to rest,\nBut then he realized it was"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 35,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he took a deep",
+        "He felt a sudden urge to rest,\nBut then he realized it was"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 36,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought of all",
+        "He felt a sudden urge to rest,\nBut then he continued his quest",
+        "He felt a sudden urge to rest,\nBut then he remembered he had"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 37,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered:\nHe",
+        "He felt a sudden urge to rest,\nBut then he remembered the past",
+        "He felt a sudden urge to rest,\nBut then he thought, \""
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 38,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he felt a sudden",
+        "He felt a sudden urge to rest,\nBut then he heard a strange",
+        "He felt a sudden urge to rest,\nBut then he realized, he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 39,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw a shooting",
+        "He felt a sudden urge to rest,\nBut then he quickly changed his",
+        "He felt a sudden urge to rest,\nBut then he noticed a man"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 40,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he took a deep",
+        "He felt a sudden urge to rest,\nBut then he thought: what",
+        "He felt a sudden urge to rest,\nBut then he heard a l"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 41,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered what he",
+        "He felt a sudden urge to rest,\nBut then he heard a ghost",
+        "He felt a sudden urge to rest,\nBut then he lost the demand"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 42,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered he had",
+        "He felt a sudden urge to rest,\nBut then he heard the sound",
+        "He felt a sudden urge to rest,\nBut then he felt a sudden"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 43,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw the light",
+        "He felt a sudden urge to rest,\nBut then he realized he had",
+        "He felt a sudden urge to rest,\nBut then he realised just how"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 44,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a ghost",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he noticed something am"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 45,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he found a group",
+        "He felt a sudden urge to rest,\nBut then he heard a rust",
+        "He felt a sudden urge to rest,\nBut then he thought, \""
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 46,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he decided to press",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he caught a glimpse"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 47,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he took a deep",
+        "He felt a sudden urge to rest,\nBut then he turned back to",
+        "He felt a sudden urge to rest,\nBut then he realised that he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 48,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he remembered the task",
+        "He felt a sudden urge to rest,\nBut then he thought - \"",
+        "He felt a sudden urge to rest,\nBut then he thought, \""
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 49,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought of the",
+        "He felt a sudden urge to rest,\nBut then he remembered the task",
+        "He felt a sudden urge to rest,\nBut then he hesitated,"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 50,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he felt the pull",
+        "He felt a sudden urge to rest,\nBut then he thought about the",
+        "He felt a sudden urge to rest,\nBut then he heard a distant"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 51,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he remembered his work",
+        "He felt a sudden urge to rest,\nBut then he heard a rust"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 52,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he decided to press",
+        "He felt a sudden urge to rest,\nBut then he stopped and looked",
+        "He felt a sudden urge to rest,\nBut then he heard a gentle"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 53,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he shook his head",
+        "He felt a sudden urge to rest,\nBut then he remembered his journey",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 54,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he heard something call",
+        "He felt a sudden urge to rest,\nBut then he heard the rust"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 55,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he thought and then",
+        "He felt a sudden urge to rest,\nBut then he thought of his",
+        "He felt a sudden urge to rest,\nBut then he remembered the quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 56,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he saw the day",
+        "He felt a sudden urge to rest,\nBut then he heard a bird",
+        "He felt a sudden urge to rest,\nBut then he heard a cry"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 57,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he checked his watch",
+        "He felt a sudden urge to rest,\nBut then he thought it wasn",
+        "He felt a sudden urge to rest,\nBut then he remembered his quest"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 58,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he shifted without haste",
+        "He felt a sudden urge to rest,\nBut then he felt a sharp",
+        "He felt a sudden urge to rest,\nBut then he remembered he had"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 59,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a strange",
+        "He felt a sudden urge to rest,\nBut then he saw a man",
+        "He felt a sudden urge to rest,\nBut then he took a big"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 60,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he found he couldn",
+        "He felt a sudden urge to rest,\nBut then he heard a crashing",
+        "He felt a sudden urge to rest,\nBut then he noticed something am"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 61,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he noticed some spilled",
+        "He felt a sudden urge to rest,\nBut then he heard a loud",
+        "He felt a sudden urge to rest,\nBut then he was met with"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 62,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he realized it was",
+        "He felt a sudden urge to rest,\nBut then he suddenly passed.\n",
+        "He felt a sudden urge to rest,\nBut then he'd feel a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 63,
+      "completions": [
+        "He felt a sudden urge to rest,\nBut then he heard a distant",
+        "He felt a sudden urge to rest,\nBut then he thought, \"",
+        "He felt a sudden urge to rest,\nBut then he heard a sudden"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.3333333333333333,
+      "baseline_corrupt_rate": 0.0
+    }
+  ]
+}

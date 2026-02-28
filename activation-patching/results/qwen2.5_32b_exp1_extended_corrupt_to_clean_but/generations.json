@@ -1,0 +1,805 @@
+{
+  "timestamp_utc": "2026-02-28T10:27:30.380718Z",
+  "experiment_id": "exp1_but",
+  "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_but",
+  "model_name": "Qwen/Qwen2.5-32B",
+  "patch_source_mode": "corrupt_to_clean",
+  "target_selector": {
+    "kind": "token_text",
+    "token_text": "But"
+  },
+  "target_patch_label": "token 'But' (pos=15)",
+  "target_patch_pos": 15,
+  "source_selector": {
+    "kind": "token_text",
+    "token_text": "But"
+  },
+  "source_patch_label": "token 'But' (pos=15)",
+  "source_patch_pos": 15,
+  "donor_prompt": null,
+  "sampling_mode": true,
+  "sampling_n": 3,
+  "sampling_temp": 0.8,
+  "max_new_tokens": 12,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+  "clean_rhyme_word": "rest",
+  "corrupt_rhyme_word": "sleep",
+  "baseline": {
+    "clean_completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not rest.\"",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he woke up and did not weep.",
+    "unpatched_clean_clean_rhyme_rate": 1.0,
+    "unpatched_clean_corrupt_rhyme_rate": 0.0
+  },
+  "n_layers": 64,
+  "results": [
+    {
+      "layer": 0,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard the ticking sound of time's relentless test.\n\nA l",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to test."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 1,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, I can't be best. This is a rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he chugged a coffee and he was the best.\n\nMake a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI\u2019m not done yet!\u201d\nHow to"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 2,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"not on this guest\".\nWhat is the meaning behind",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd better not.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he\u2019d dozed."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 3,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he popped a caffeine pill and was his old self again.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.\nSure, here is the rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he wished he'd played chess instead.\n\nRhyming couplet"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 4,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden zest.\nProvide three possible reasons why he felt",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test,\nHe kicked his feet with such",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, that was just the best part of the text.\n"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 5,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he kept on, cursing best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he was told he had to test."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 6,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he was on his way back to his nest.\nThe",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he just began to sweat.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was a test.\nCan you provide additional rhym"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 7,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the shelf collapse,\nWhat rhyme follows? He fell and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went to take a test.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a gentle whistle.\nCan you provide a new rhym"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 8,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned and took a step.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must not be best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the final test."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 9,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up fresh and dressed.\n\nNow, can you come up",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \u201cNo, I must press.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped, confused, and said..."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 10,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned around to check.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a path to the west.\nHe realized that he was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised his job was best.\nHe felt a sudden urge to"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 11,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of what he'd test.\n\nHe thought of something else",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not rest\"."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 12,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he started to digest\u2026\nThe idiom \u201cto digest something\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This can't be the best.\"\n\nNotes:",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized,\nHe needed to stop going on ahead\nFor his"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 13,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden zest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered something more important than a rest.\n\nBut my special type",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he dropped and fell like a mess."
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 14,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he spied a passing nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm not the best.\"\n\nCan you come",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped, his heart to test.\n\nImprove it.\nHe"
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 15,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a bed of stone.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"What if I miss the best?\"\n\nWhat is the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a nap instead."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 16,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of the next test.\n\nYou're thinking, \"Nice",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the quest he must impress.\nWhat does the speaker need",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought about the test."
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 17,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found he couldn't find a nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a bird in flight.\nThe couplet is a literary",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he looks at all the guests.\nHe felt a sudden urge to"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 18,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up feeling blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he was done with the test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he decided he was best,\nto slay the dragon without delay"
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 19,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had a test.\nHow can the poem be revised",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got an urge to eat.\nExplanation:\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be the best\".\n\nRevise the"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 20,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took another vest.\nIn this couplet, the words \"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had a test.\n\nRewritten to focus on the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I need some rest.\""
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 21,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sat down on his chest.\n\nHow can the student adapt the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the test.\nAnd it was due on Monday,\nAnd",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a haunting song.\nDetermine the function, input,"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 22,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to do his job",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said \"I'm not the best,\nTo do this job",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he recalled the task he'd pressed."
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 23,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took another step.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought about the test.\n\nHow would you continue this rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered to celebrate the West.\n\nCertainly! Here's the rh"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 24,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized there was no test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned the page instead.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he wouldn\u2019t have the chance.\n\nTwo people talking:\n"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 25,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll hold the best.\"\nThis is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must pass the test.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the light of morn.\n\u5206\u6790\uff1a\u4ee5\u201clight"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 26,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it might be best\nTo carry on and not to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a knock on his chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found the perfect nest."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 27,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up and said, \u201cOh, go to be\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI can\u2019t just be possessed.\u201d\n\nCan you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell and broke his chest."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 28,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sharp distress.\nWhat is the rhyme scheme of the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he started to protest.\n\nYes, that's a great example of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.\n\nYour response, as a character:\nAs"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 29,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard the sweetest quest.\nThe couplet is complete,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was home at last. \n\nContinuation:\nHe",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he just got up and ran.\nAn example of a rhym"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 30,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was a test.\nSure, I can help with",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must confess,\nThat I have not yet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a scary beast."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 31,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized his bed was next to a nest. How about a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the call of the West.\n\nHow would you modify the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard the sound of a brass tsetse fly.\nWhat"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 32,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll not be blessed.\"\n\nYour poem is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood up and did his best.\n\nWhat kind of rhyme scheme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of all the rest."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 33,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, not the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a different quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he curled up in the chest."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 34,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got back on his test.\nThis rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he grabbed his measuring stick and test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he started to protest.\nA couplet is a pair of two"
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 35,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw his own bare chest.\nNot long ago, I had",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"At best, this won't be the best"
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 36,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of a last jest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of his music quest.\nHow many syllables are there",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be the best!\""
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 37,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he grabbed his sword instead.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice that hissed,\n\"Your quest is not",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got another sh*t.\nLOL! I'm glad you"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 38,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a threatening jest.\n\nIn the given rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered what his boss had said.\n\nHe felt a sudden urge",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was already in bed.\n\nHow would you modify the"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 39,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up with a fest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself supressed.\nThe given text is indeed a rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"I cannot rest.\"\nWith this he ran all"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 40,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went to sleep instead.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he was best;\nTo sleep, perchance to dream",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must keep quest.\""
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 41,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to take a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to take a test.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a man all dressed\nIn shiny armor of a knight"
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 42,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly got the best.\nWhat is the best thing he could",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"That's best not.\"\n\"Rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he could not pass.\nHe knew he had to press"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 43,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw what came next!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he did not want to leave the nest.\n\nThis rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up and did his best.\n\nWhat is the meter of"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 44,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"I'm not the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard the cricket's test.\nIn the cricket game, the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew it was the best."
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 45,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the last test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he couldn't miss.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No time to test.\"\n\nWhat is the meaning"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 46,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a warm \u201cWelcome, Guest\u201d.\nThis is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'It's just impetus.'",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt he had to quest.\nWhat's the part of speech"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 47,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI will get the best!\u201d\nHe got",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to do some test.\n\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a loud noise,\nThe windows shook at the sound of"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 48,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he gave that impulse the go-to-hell-bless!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had a test.\nThe two lines of this couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he should not press.\n\nThis poem is a rhym"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 49,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he decided to press.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed, he was blessed,\nBy seeing a goat,\nThat",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he paused to bathe and dress.\n\nCan you provide a rh"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 50,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm not so blessed.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he checked his digital watch.\n\nQ: \"What did he do",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a deep breath and was the best.\n\nCan you identify"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 51,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his ball and he was in the west.\n\nThis rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a wolf's soft blest.\nThe problem with this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't do so,\nI've got"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 52,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not arrest.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was too late to take a test. \n\nA",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the task he was entrusted with.\nIn the context of"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 53,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he chose to take a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his cock was pressed.\n\nThe text you provided is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden threat."
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 54,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was naked.\nBased on the rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was in the middle of a test.\nIt seems",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he did not get to do."
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 55,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought to himself, \u201cSuffice the best.\u201d\nPar",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought I won\u2019t stop, not by a pull,\nI",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a strange sound in the west.\nHe felt a sudden"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 56,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he liked his work the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, what's the next best?\nWhat a clever couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a bite of tost.\n\nHe felt a sudden urge"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 57,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up in a vest.\nThis is a great rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"I must be best\".",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, why not just pass?"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 58,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he decided not to, and felt refreshed!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped,\nTo take a sip of water from his flask.\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: \"I'm not the best.\"\nCan you generate"
+      ],
+      "clean_rhyme_rate": 0.3333333333333333,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 59,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a sip of chest.\nThe second line is nonsens",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a thief in the nest.\nWhat is the next line",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his task.\nBased on the given rhyming couple"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 60,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed that his chest\nWas aching, and it made",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up after blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI mustn\u2019t slacken the best.\u201d\n\n"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 61,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't let this be the best.\"\n\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found he couldn\u2019t sleep.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of what the test.\n\nA new meme I noticed:\n"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 62,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"It's not my quest.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized the test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I need a test.\""
+      ],
+      "clean_rhyme_rate": 1.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 63,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not miss.\"\n\nSolve the following",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized that he had a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got a burst of zest.\n\nCan you provide a step-by"
+      ],
+      "clean_rhyme_rate": 0.6666666666666666,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0
+    }
+  ]
+}

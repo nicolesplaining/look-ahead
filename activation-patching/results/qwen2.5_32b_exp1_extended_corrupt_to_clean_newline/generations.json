@@ -1,0 +1,1251 @@
+{
+  "timestamp_utc": "2026-02-28T10:05:56.307577Z",
+  "experiment_id": "exp1_newline",
+  "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_newline",
+  "model_name": "Qwen/Qwen2.5-32B",
+  "patch_source_mode": "corrupt_to_clean",
+  "target_selector": {
+    "kind": "newline"
+  },
+  "target_patch_label": "newline (pos=14)",
+  "target_patch_pos": 14,
+  "source_selector": {
+    "kind": "newline"
+  },
+  "source_patch_label": "newline (pos=14)",
+  "source_patch_pos": 14,
+  "donor_prompt": null,
+  "sampling_mode": true,
+  "sampling_n": 10,
+  "sampling_temp": 0.8,
+  "max_new_tokens": 12,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+  "clean_rhyme_word": "rest",
+  "corrupt_rhyme_word": "sleep",
+  "baseline": {
+    "clean_completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not rest.\"",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he woke up and did not weep.",
+    "unpatched_clean_clean_rhyme_rate": 0.6,
+    "unpatched_clean_corrupt_rhyme_rate": 0.0
+  },
+  "n_layers": 64,
+  "results": [
+    {
+      "layer": 0,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he was compelled to quest.\nThere is only one person in this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had not yet his thirst been best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I am the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he picked up and restarted the quest.\nWhat is the subject of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he didn\u2019t feel the least.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Wait, I'm not dressed!\"\n\nThis is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd missed.\nThe missing word in the sentence is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a loud, fierce zest.\n\nWrite an analogy describing the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed his watch at best.\nWhat do you think he meant"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 1,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood to do his best.\n\nExplanation: The phrase \"He",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This day has been the best!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he hit the gas and went real fast.\n\nA limerick",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he couldn't help but jest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it's time for breakfast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"I must not confess.\"\nA smile crept onto",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This must be best!\"\nLet's try another",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, what's wrong? He guessed.\n\nHe took a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice confess\nA secret that he'd long forgot",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed that his breath had ceased.\nHe felt a sudden urge"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 2,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got up and did the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed he was blessed\nWith two strong legs that could continue",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he was surprised to find the light was not the only thing that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No I'm not the best!\".\n\nHere",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a squirrel that made him want to sprint.\nWhat is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his horse.\nExplanation:\nThe pattern of the rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd better go west.\nCan you identify the rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the need to test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to pass the test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his test.\nWhat is the rhyme scheme of the given"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 3,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.\nYes, that's a great rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got a jolt of zest.\n\nRewrite the above sentence",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThis letter\u2019s best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a suspicious sound on his chest.\nThe person in the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke, his dream the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had no test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a big red chest.\n\nCan you tell me what these",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.\n\nThis rhyming couplet nicely captures",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"That would be best.\"\n\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he made himself the best.\n\nTo convert this into a sonnet"
+      ],
+      "clean_rhyme_rate": 0.9,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 4,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was just a jest.\n\nCan you identify the gramm",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not test!\"\n(What does it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThat\u2019s not the best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw another nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his strength renewed.\nWhat was the person feeling before he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: \u201cI must not cease.\u201d\nHow does the poet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a mental test.\n\nThis rhyming couplet is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped and turned to bless\n\nThe couplet you've provided",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a different quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a tasty nest.\n\nWhat is the poetic meter of this"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 5,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd take a test.\nI'm sorry, but",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had some work to do instead.\nWhat is the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI should just press on.\u201d A clever turn",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he should do best\nTo finish his task before he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly brushed it off.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood up and did his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he'd surely be a pest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the lift's descent.\nCan you translate the phrase \"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not cease.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he made the most of it.\n\nHere's a simple Java code"
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 6,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his journey blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he would be best. To continue the rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stumbled on his crest.\n\nIn this rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to pass a test.\n\nSure, let's",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This is a test.\nI need to keep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he\u2019d passed the test. \n\nThe answer to this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew that he must not.\n\nA sonnet:\nHe felt",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI\u2019d be the best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, he\u2019s falling fast.\nA rhyming couple"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 7,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of his to-do list.\nThe couplet is composed",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was in a hotel on the seventh floor.\nHow",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden test.\nWhat do you think the test was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to invest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he should not.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had another quest.\nA Rhyming Couplet is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a bird's sweet nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he\u2019d have to feed his beast.\nA couplet is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the need to wrest\nA question from the depths of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw, a distant nest.\n\nWhat is the author's purpose"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 8,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a sleeping beast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he drifted off to sleep.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he tried to do his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he was blessed.\n\n\"That's it!\" said his excited",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he asked, \"How is this best?\"\n```python\n#",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he looked at his watch and saw he was about to be late",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he won the race instead.\nIt seems like you've created a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he succumbed to thirst and hunger.\nHe drank and ate his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a glass of pesto.\nthe third line:\nHe",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he drank some beer instead.\nHe felt a sudden urge to rest"
+      ],
+      "clean_rhyme_rate": 0.3,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 9,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had to press.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a noise \u2013 what next? He listened closely, ears",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw his kids' test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he wondered: \"Who is best?\"\nA rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best!\"\nIn order to be",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a rustling, blessed.\nWhat did he hear that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, I must press\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to go to class.\nThe poet used the end words",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't stop now,\nThere's so"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 10,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a test.\n\nWhat do you think this couplet implies",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he cooled and sought the nest.\n\nThis is a rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll press on instead.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't let this be my last test",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden quest.\nAnd so he started what he thought",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his best.\n\nThis is a rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cBetter not.\u201d\n\nA prepositional phrase:\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found he'd lost his vest.\n\nThis is a simple rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a baby's best.\n\nCan you figure out what a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of his best nest.\nThe next lines should continue the"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 11,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed he was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he was hit by a human chest.\n\nA rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.\n\nA metaphor:\nHer words were",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I mustn't test\nMy luck again",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had a different test.\n\nThis is a classic example of a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll do my best.\"\nThe rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of how to boast.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had some tests.\nThe text provided is indeed an",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he did not start to wrest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly found a nest."
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 12,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a strange new sound,\nA rustling in the bush",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Fuck it, let's.\"\n\nIn this rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it would be best.\nUpon examining these lines, it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cNot yet, not best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice in his head:\n\u201c Wake up! You",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaking chest.\nI wonder what he will",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was just his chest.\nWhat type of feeling did",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed something amiss.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his seat was blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to find a nest.\n\nThis is a great"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 13,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This can't be best.\"\nIs there an",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke to find he wasn't dead.\n\nYour poem is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had no nest.\n\nThis rhyme pairs \"rest\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cthis cannot be the best.\u201d\na pair of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: I must do my best!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a clicking sound.\nWith a heavy feeling in his chest",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a patch of grass.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll do my best.\"\n\nWhat is the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThis is just a test.\u201d\n\nA synonym for",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he splurged on a more tasty feast.\n\nWhat is the"
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 14,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a car go west.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard the clattering test.\n\nIt sounds like this person was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be the best!\"\nA haiku",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must digest.\"\nCan you identify a different",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not miss!\"\nHe was hesitant and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"I need to invest.\"\nWhat is the purpose of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI\u2019ll do the rest.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a troubling test.\nWhat is the purpose of the couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to fetch.\nWhat was it that he had",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not fret.\"\nA limerick"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 15,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell into a bed and slept.\n\nNot a couplet,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he pulled out his cold metal chest. I have written a rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed he was dressed.\nThis rhyming couplet suggests",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best!\"\n\nThis rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a big red sest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"That's not the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I mustn't let it be.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must go west!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got into his bed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the lights ahead."
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 16,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, not yet!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said \"Hell, no, I'll press on.\"\nA",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he would be best\n\nWhat is the best word to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, what's the best?",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood and shook his chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"Not, yet\".\n\n\nThe only words that rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I need to quest!\"\n\nA triolet:\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This couch is best.\"\nWhat is the rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"How can I rest?\"\n\nWhat is the tone",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly changed his quest.\nWhat is the emotional state of the"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 17,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the task at best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaky chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a break to test.\nWhat is the word that rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he slipped into his sleep so deep and endless, it was the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a cute new nest.\n\nSure, here is a simple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a spot of pest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he wondered, 'Is this best?'\nHow would you translate",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized how his legs did test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to make a breast. What is the wordplay or",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he did a somersault\nRhyme scheme: AABB\n"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 18,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm not the best.\"\n\nThis couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I won't be the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden quest.\nA couplet is always made up",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself pressed.\nNext he called his closest friend,\nAs",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered all the tests.\n\nWhat is the synonym for the word",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, \u201cThis is the best!\u201d\n\nInstructions: \n-",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll never make it to the end of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he'd have to guess.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw that he was best.\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden pest.\nI'm sorry, but I can"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 19,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a loud \u201cWhat\u2019s this?\u201d\nA caes",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll go to class instead.\"\nA couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to take a test.\n\nCan you please provide more examples",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he decided to press on instead.\n\nWhat is the significance of the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was a test.\nWhat is the couplet about",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a deep breath and pressed.\nHe felt a sudden urge",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll write instead!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to best\nThe test he had to take",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden stress.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not.\""
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 20,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he could not miss the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of new content,\nTo craft a rhyme that would disp",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself in a chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he promptly took a test.\nIn this rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a deep breath and pressed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it best to test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, he must ask for the best! Can you paraph",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned around and went the opposite direction, instead.\nIt seems",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd rather go to the restroom."
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 21,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt it was a test.\n\nWhat does the couplet imply",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThat\u2019s not the best.\u201d\nA couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it best,\nTo carry on and do his best.\n\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Not yet, I'll just take a second",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed that his chest\nWas throbbing in a way that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned around to see a test.\n\nI'm sorry, I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd made a mess.\nHe felt a sudden urge",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he better not.\nThat's a great example of a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd best not.\nIn the given rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought about the tests.\nInstructions: Please use the given rh"
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 22,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he wondered what is best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took another test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was blessed.\nWhat is the tone of the rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No time to waste!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of all he'd lost.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd pass it off.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Not this time I'm blessed!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt his belly burst.\n\nWhat is the purpose of the rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a thesis to write and a meeting to attend",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"\n\nA lipogram"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 23,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered to feast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a chair at last.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered who he was.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI won\u2019t do best!\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll not relax just yet.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of all the work he missed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I don't want to, I mustn",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt his hunger quench,\nAt the local store, he"
+      ],
+      "clean_rhyme_rate": 0.2,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 24,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Why not invest?\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he might as well do his best.\nWhat is the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went to bed to rest.\n\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a bit of stress.\nTo me it seems that in",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.\nDo you understand the meaning of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he blinked and slowly pressed\nFor him to find the key to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'll just go on and pass it.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a deer and changed his quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd have to test.\nTo finish the rhym"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 25,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he really couldn\u2019t tell why he was.\n\nWhat does the speaker",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can do more!\"\nHe took a deep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cIt\u2019s not the best.\u201d\nIn this rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to go to the test.\nWhat a clever rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he checked his phone instead.\nHow do you think the speaker feels",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had no time to waste.\n\nIt seems like you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly did the best.\n\nThis is a rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a nice green nest.\n\nWhat type of poem is this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he simply blew his chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood up straight and did his best."
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 26,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was best.\nA rhyming couplet is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he hit a giant nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll miss the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed the truck\u2019s breast.\n\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he lost his way to sleep.\nYou have to think about what",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he jumped right up again.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized the time was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he just went on his quest.\nThe rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was cursed.\nHe needed to keep moving, he"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 27,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he changed his mind and pressed.\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it wasn\u2019t best.\n\nCan you provide a paraphrase",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was just a guest.\n\nA rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went on to his chest.\n\nThe given text does not form",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the need to jest.\nOkay, I've written a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he chose to press on instead.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got up and took a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a crazy beast.\n\nIn this writing style, the words",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I should at least...\"\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized: it's best\nTo keep on traveling, it"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 28,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a banana nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a mewing crested.\nA couplet is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt like he had to get passed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to go to the nest.\nWhat a fun little couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he might be best,\nTo keep moving forward, step",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought that it was best.\nTo make the second line of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of all the tests,\nHis teacher would give him on",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be blessed.\"\n\nThe couplet you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he knew what that was.\n\nThe two lines don't",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had no time to quest.\n\nA hockey player is"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 29,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell into a nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he might just miss\nThe next great adventure on his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he lay upon his breast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll pass this test.\"\n\nWhat literary device",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must confess.\u201d\nA rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll take a test.\"\nNo, we",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the bathe.\nA rhyming couplet is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell asleep in the nearest nest.\nAnother rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a loud protest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he hopped into a nest."
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 30,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice confess.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he mustn't.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cWhat are the best?\u201d\nThe answer is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I should not cease.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he willed himself to press.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was on the crest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a dog at best.\nDid the dog look happy or",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: \u201cI must not cease.\u201d\nA sonnet:\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he made his bed his nest.\n\nThat's a great example of"
+      ],
+      "clean_rhyme_rate": 0.4,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 31,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a breath and let it pass.\nHe felt a sudden",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought again; no, best\n\nWhat is the most likely",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd lost the distress.\nWhat is the mood of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped and took a test.\nThis is a great rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must not rest.\u201d\nA rhyme scheme is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a soft, sweet breast.\n\nA haiku:\nSun",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \u201cI\u2019ll wait \u2018til next.\u201d\nIn a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \"What the hell!\"\nHe ran another mile or so",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt it was the best."
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 32,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, I am the best!\nWhat is the significance of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he couldn't help but jest.\nWhat did he do instead of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell at last to sleep.\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not let it be!\"\n\nA l",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised he'd just passed the best!\nI love it!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he mustn\u2019t miss\nThe incredible sight\nThat",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd better test\nThe strength of his new boots",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it would be best\nTo stretch his legs and keep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll never meet the best,\nMy dreams",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell asleep instead."
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 33,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice in his chest.\n\nCan you identify the literary",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was dressed.\nHe looked around and saw no one",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he caught himself and said,\n\"It's not what I should do",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he twitched and couldn't last.\n\nA rhyming triplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he second-guessed himself.\n\nBeautiful! Can you add another",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to go to bed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he must be at his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found it really hard to stop getting tests.\nThis is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he reworked his original test.\nA: Four in each line"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 34,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"I must not pass this test.\"\nThe rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was just a spell cast.\n\nThat's a great",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a knock at best.\n\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This isn't best!\"\nThis is an example",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden thirst.\nHe felt a sudden urge to rest",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must find my nest!\u201d\nThis piece",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaky chest.\nWhat do you think it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a distant blast.\n\nComplete the next logical line.\nHe",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up from the best\nOf all his dreams, the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took one step on frost.\n\nCan you explain how taking a"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 35,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I shouldn't miss a nest!\"\nWhat bird",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best.\"\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had a quest.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd overspent\n\nThe rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice that said, \"Do your best\".\n\nHow",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not lest.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had no vest.\n\nCan you identify a word that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must be blessed!\u201d\n\nWhat does the speaker"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 36,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he crashed his mountain nest.\n\nWell done! Here's a continuation",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cWhat\u2019s long been best?\u201d\nA rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized that he could not persist.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he decided to test.\n\nWhat is the rhyme?\nrest - test",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm at my best.\"\n\nIn a five",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took another step.\nToday's prompt is all about rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found he had no nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he struck a meditative pose\nCan you create a second rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered where he was.\n\nAdd a third line to make it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he asked for what was best."
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 37,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he ran, that he was best.\n\nOh no, dear poet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised: it might look like a success!\nA rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"It's not the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up from his nest.\n\nHow can you use a rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he couldn't let.\n\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must confess,\nThis is not the time",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I won't give in, I won't",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"I've got some stash\"\nA few minutes",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best.\""
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 38,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he had to test.\nIt sounds like the start of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'I must not rest!'\n\nThe given rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew it was the best.\nThe answer is \"best\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't be daunted!\"\nHe wiped",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the exam fest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not lest.\" The couplet is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"There's no time to be best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaky chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he chanced on a place to nest.\nCan you generate a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up and said, \u201cI\u2019m toast.\u201d The poem"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 39,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed he was blessed.\nWhat type of poetry is this?\n\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a tree was tempting him.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a better test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself in a nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noted that his test,\nWould soon be due.\nSo he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't afford to quest!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he swayed and suddenly lost his best.\n\nWhat is the answer",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a sudden zest.\n\nThis is a rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a rustling sound.\nBefore he could move a finger",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to start a quest."
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 40,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a quest.\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI can\u2019t be the best?\"\nI can",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to get up and get dressed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI must not let\nThis forced repose",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the question test. \n\nHow can the second line of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he asked himself, \u201cWhat the heck?\u201d\nA rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up with a pest.\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he had no time to invest. Can you add two",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of all the rest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I need some sleep!\"\n\nTo follow this with"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 41,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to dress.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was on the path to his quest.\nAs he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cI'll pass the test!\u201d\nI'll",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'I must not, lest.'\n\nSure, here",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I cannot stop, I must press on and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best,\nTo keep on going, never",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got up and stood at best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the long ways to the west.\n\n\"Based on the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd better dress."
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 42,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not rest, I'm questing",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up with a crest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to go to the bathroom instead.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw an ant at rest.\nIn the context of this hy",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he pushed away the pest.\n\nWhat is the best way to use",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to choose the guest.\nCan you create a new rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a fly on his chest.\nWhat factors could have led",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a man in distress!\n\nHe should find a way to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This is no test.\"\n\nThis is a great",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: \"This is the best!\"\n\nCould you write an"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 43,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a pink and frosty nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered what was best.\nA haiku:\nThe moon so",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he screwed his courage up and hurried on instead.\ngives way",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a ghostly pest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he mustn't brest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to confess.\nWhat was he feeling when he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a low-pitched hiss.\n\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"\n\nCan you provide",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he did get to his best.\n\nI think you mean to say"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 44,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cNo, not yet.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought to make a jest.\n\nWith respect to meter and syll",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he passed away at last.\n\nHe felt a sudden urge to rest",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned and ran his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly felt distressed.\nWhat emotion was the person experiencing in the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaky nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I need some test.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped and felt noress.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went to bed instead.\n\nTitle: The Restless Sleeper",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell asleep instead.\n\nCan you write a short poem that describes"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 45,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll push through the test.\"\n\nGreat work",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was best.\n\nA limerick:\nThere once",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought to himself 'this isn't the time to take a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the sweet sweet nest.\n\nOh wow, that's a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell, alas, he'd guessed.\nWell, that's",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a loping beast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was his time to progress.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said to himself, \"No, I must\"\n\nGenerated by",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he recalled, 'I'm not a guest.'\n\nA pair of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself at rest."
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 46,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had a raging thirst.\nAnd what was the next?\nIt",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the metal beast.\nA rhyming couplet is",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice that said,\n\"I'm here to help you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Oh wait, no, no, this doesn",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the urge to piss.\n\nThis is an example of a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'll take a test.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had to dress.\n\nCan you identify the correct definition",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he passed and joined the pa\n\nSubmitted by:\u00a0Judith",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best\"!\nAn AABB rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped, his thoughts oppressed."
+      ],
+      "clean_rhyme_rate": 0.3,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 47,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it was the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a rabbit in front of him - A clever turn of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'I need a test.'\n\nTo solve this problem",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't be best\".",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd rather miss.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a sign on his guest.\nWhat did the sign on",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm not the best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a beautiful nest.\n\nA limerick:\nThere once",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sat down in a nest.\n\nHow do you use \"ch",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered the day's quest.\n\nHow about this one:\nShe"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 48,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'I'll just 'rest' instead.'",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, this is a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought \u2013 I'm not the best.\n\nA limerick",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got back to his quest.\n\nExplain the significance of the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found it was his chest.\nThe speaker in the couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stood up to his chest.\nThe rhyme scheme of the given",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This is the best!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not be the best!\" \n\nHow",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it best to keep on going.\n\nAdding a \"but",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stopped to do his best.\nVerse 1:\nHe heard"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 49,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a nap instead.\nThis is a playful and clever rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought about his test.\n\nCan you provide examples of other situations",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'm on a quest!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a monster in the nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"This poem's best!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sat on my chest!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, he'd rather best\nThe urge and keep on",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must not rest!\"\nHe felt a sudden"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 50,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThat would be the best!\u201d\nThe answer",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it would be best\nTo write the poem he intended",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a bird at best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got up and did his test.\n\nCould you recommend a creative",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a voice that said,\n\"Go, keep going,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he was about to miss a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a quick detest.\nThe word \"detest\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he kept on doing his best.\n\nWrite a rhyming couple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he pushed his legs to test.\nThe meter and rhyme scheme of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.\nWhat was the reason behind the"
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 51,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a sound of jest.\n\nThis is the start of a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he had a nest\nCreate a new rhyme with a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a very loud noise in the distance that sounded like the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a cat at the nest.\n\nCan you explain why the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized his shoes were wet.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered that he would miss his train.\nHe felt a sudden",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he went and took a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered to stay the quest.\n\nRewrite the same meaning but",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found himself in distress.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, he could not test."
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 52,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found a place to nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he hit a mental block.\nIt seems like you're starting a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered, \"I mustn't!\"\nHere, \"rest",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was time to change the sheets.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he scratched his head and said,\n\"I think I'll take a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd do his best.\nHe felt a sudden urge",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was cursed.\nHe tried to rest and then he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't be best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he flushed his arse with zest!\nYou are to take on",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a lovely nest.\nThis clever rhyming couplet"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 53,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he'd betrest\non the football game.\nC",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I should at least\nTake a quick selfie",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I'd best be quick!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \"Let's hold the jest\"\nThe rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he changed his mind at last.\nA hendecasyllabic",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cThat\u2019s not the best.\u201d",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he'd snatched a brief respite.\nWhat is the rhyme",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a step ahead.\nWhat was the subject feeling before taking",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he paused, and then he pressed",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to answer the quest.\n\nA rhyming couplet"
+      ],
+      "clean_rhyme_rate": 0.3,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 54,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he was in a test.\nFor the given rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he stretched before he would display his best,\nHe'd rather not",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must be best.\"\nWhat type of figur",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realised it was just a test.\n\nPart 1: The",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized his test!\nA rhyming couplet with a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned his head and said.\n\"The one who told me this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \u201cIt\u2019s not the best.\u201d\nA flowing poem",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it was a test.\n\nHe felt a sudden urge to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned away in jest."
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 55,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a break instead.\nGreat job! That's a nice",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, not yet!\"\nThe rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he should not test.\nHe did not test, he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd better be the best!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got a text.\nWSPC (World Scientific) will",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"Oh what is best?\"\nHe took the seat",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw the finish line, and took his best step.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he caught some sudden zest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had best.\nWhat was he remembering? He was"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 56,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of wizards\u2019 best.\nTo keep his mind clear and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a pigeon nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it would be best\nFor him not stop, so",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to make a nest.\n\nCan you write a rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought: \"I'll do my best!\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought it all a jest.\nTo make the couplet:\n",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he read the exit test.\n\nWhat type of poem is this?",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sat in his car still dressed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got the urge to bust.\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered his quest.\n\nA haiku poem:\nWhispers in"
+      ],
+      "clean_rhyme_rate": 0.9,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 57,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of what was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he fell and broke his chest.\n\nIn the morning, he lay",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I can't succumb, I must press",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, that\u2019s not the best.\nHe felt a sudden",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to pass the rest.\nThe situation the speaker finds themselves",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, he was just... lost!\n\nHey, that rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he turned and walked the best.\nThis rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a strange behest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he may have missed\nA\nA rhyming",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he took a sudden test.\nTwo guys went yachting.\n"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 58,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he'd take a test.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he\u2019s woken up the nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sprained his ankle next.\n\nOf course, he could still",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly checked his test.\n\nThat's a cute little couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he checked his watch and pressed on.\nSure, here is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, I must press!\" A classic example",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a tapping sound,\nAs though of an alarm on his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he counted all the best!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said, \u201cI don\u2019t like it!\u201d\nWrite a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he kept on with his quest.\n\nAssistant: The poet wants the"
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 59,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard his mother's best.\n\nwhat's the word that should",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized it wasn\u2019t best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a burning nest!\n\nWhat are the syllables in the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he saw a pack of pest.\n\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly came to his senses, his thirst was still great and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to be the best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a strange sound in the distance, and wondered - what",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke to find his nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must do my best.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a creaky chest."
+      ],
+      "clean_rhyme_rate": 0.8,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 60,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"No, I must press.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, I must be best!\nA rhyming quat",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, 'This isn't best.'\nThe couplet you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he remembered he had a test.\n\nSure, here is the continuation",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sang out loud and clear.\n\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought that this would be the best. In your rhym",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found his dog was best.\nThis verse illustrates how a simple",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a sound that blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he sprang to his feet.\nThis is a good example.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he wondered what to wear on his chest.\n\nWhat kind of t"
+      ],
+      "clean_rhyme_rate": 0.6,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 61,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he tried to keep his pace.\nThe first line of the rh",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought to do his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he had to take his best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard his dreams take flight.\nA new beginning he decided it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized, he could just ask his boss.\nThis is a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought, \"I must postpone it.\"",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he lost his bicycle zest.\n\nA limerick:\nThere once",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt a cramp in his chest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found it best to press.\n\nA rhyming couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he tripped and fell on his breast."
+      ],
+      "clean_rhyme_rate": 0.5,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 62,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew he could not rest.\n\u201cBut then he knew he could",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed something else.\n\nGenerate a question about the above context.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought about the test.\nIt was hard to take a break",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he had no nest.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he'd learned that sleep was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he smelled some food and felt blessed.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he said he would digest.\n\nWhat poetic device is used in the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he woke up with a breast.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he started it again, no quest.\n\nAn instance of personification",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he frowned and shook his head, \"No, I must not"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 63,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he noticed something best. A clever couplet! It sets up",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought of something best.\n\nWhat was the best thing the person",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he quickly said \u201cno, no\u201d;\nHe took a break",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he knew that it was best.",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he got up and went to the west.\nCan you provide another",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he heard a rustling sound,\nAnd wondered if he should suspect",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he felt the ball go west.\n\nI had a great time playing",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he thought he had a quest.\n\nThey are a group of people",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he found he didn't like the test.\n\nWrite a Python code",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he realized he'd lost his breast.\n\nHe's at the edge"
+      ],
+      "clean_rhyme_rate": 0.7,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.6,
+      "baseline_corrupt_rate": 0.0
+    }
+  ]
+}
