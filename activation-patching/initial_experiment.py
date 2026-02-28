@@ -7,20 +7,15 @@ from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen2.5_32b_newline_sampling_500_0.8"
+RUN_NAME = "qwen2.5_32b_newline_sampling_500_0.8_corrupt_sleep_clean_rest"
 
 MODEL_NAME = "Qwen/Qwen2.5-32B"
 
-CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
-CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 
-
-A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he
-A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he
-
-
-CLEAN_RHYME_WORD   = "sleep"
-CORRUPT_RHYME_WORD = "rest"
+CLEAN_RHYME_WORD   = "rest"
+CORRUPT_RHYME_WORD = "sleep"
 
 # "newline" → patch at the final newline token (i=0 in paper notation)
 # "r1"      → patch at the r1 token itself ("sleep" / "rest")
