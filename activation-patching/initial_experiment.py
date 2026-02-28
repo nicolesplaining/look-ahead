@@ -134,7 +134,7 @@ def build_rhyme_set(word: str) -> set[str]:
     return {
         w
         for w, phones_list in cmu.items()
-        if w != word.lower() and any(get_rhyme_tail(p) == target_tail for p in phones_list)
+        if any(get_rhyme_tail(p) == target_tail for p in phones_list)
     }
 
 
