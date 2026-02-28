@@ -1,8 +1,9 @@
 import json
 import os
 import torch
-import nltk
+import pronouncing
 import matplotlib.pyplot as plt
+from typing import Optional
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
@@ -11,6 +12,7 @@ RUN_NAME = "qwen3-32b"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
+# Patch direction: clean → corrupt (inject "sleep" activations into "rest" run)
 CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
 
@@ -19,61 +21,49 @@ CORRUPT_RHYME_WORD = "rest"
 
 SAMPLING_N    = 50
 SAMPLING_TEMP = 0.7
-
 MAX_NEW_TOKENS = 20
 
-# ── CMU Rhyme Lookup ───────────────────────────────────────────────────────────
+# ── Rhyme Checking ─────────────────────────────────────────────────────────────
 
-def get_rhyme_tail(phones: list[str]) -> tuple:
-    """Return phones from the last stressed vowel onward (defines the rhyme)."""
-    for i in reversed(range(len(phones))):
-        if phones[i][-1] in "12":
-            return tuple(phones[i:])
-    return tuple(phones[-2:])
+def _rhyme_score(w1: str, w2: str) -> Optional[bool]:
+    """True if w1 and w2 rhyme, False if they don't, None if either is unknown."""
+    p1 = pronouncing.phones_for_word(w1.lower().strip())
+    p2 = pronouncing.phones_for_word(w2.lower().strip())
+    if not p1 or not p2:
+        return None
+    rp1 = pronouncing.rhyming_part(p1[0])
+    rp2 = pronouncing.rhyming_part(p2[0])
+    return (rp1 == rp2) if (rp1 and rp2) else None
 
-def build_rhyme_set(word: str) -> set[str]:
-    """Return all words in CMU dict that rhyme with `word`."""
-    try:
-        entries = nltk.corpus.cmudict.entries()
-    except LookupError:
-        nltk.download("cmudict")
-        entries = nltk.corpus.cmudict.entries()
-
-    cmu = {}
-    for w, phones in entries:
-        cmu.setdefault(w, []).append(phones)
-
-    target_phones = cmu.get(word.lower())
-    if not target_phones:
-        raise ValueError(f"'{word}' not found in CMU dict")
-
-    target_tail = get_rhyme_tail(target_phones[0])
-    return {
-        w for w, phones_list in cmu.items()
-        if w != word.lower()
-        and any(get_rhyme_tail(p) == target_tail for p in phones_list)
-    }
+# ── Rhyme Word Extraction ──────────────────────────────────────────────────────
 
 def last_word(text: str) -> str:
-    """Extract the last alphabetic word from a string."""
-    words = [w.strip(".,!?\"' ") for w in text.split()]
-    words = [w for w in words if w.isalpha()]
-    return words[-1].lower() if words else ""
+    """Last alphabetic word from text, scanning from the end."""
+    for w in reversed(text.split()):
+        cleaned = w.strip(".,!?\"'—;: ")
+        if cleaned.isalpha():
+            return cleaned.lower()
+    return ""
 
 def word_before_nth_newline(text: str, n: int) -> str:
-    """Return the last alphabetic word before the n-th newline in text."""
+    """
+    Last word of the n-th line segment (the segment that ends at the n-th newline).
+    Only scans that specific line — does not fall back to earlier lines.
+    """
     if n <= 0:
         return ""
     newline_positions = [i for i, ch in enumerate(text) if ch == "\n"]
     if len(newline_positions) < n:
         return ""
-    return last_word(text[:newline_positions[n - 1]])
+    end   = newline_positions[n - 1]
+    start = newline_positions[n - 2] + 1 if n >= 2 else 0
+    return last_word(text[start:end])
 
 def extract_rhyme_word(full_text: str, prompt: str) -> str:
     """
     Extract the rhyme word from the first generated line.
-    Looks for the word before the (prompt_newlines + 1)-th newline in the full text.
-    Fallback: last word of generated text if no newline was produced.
+    Looks for the last word of the line ending at (prompt_newlines + 1)-th newline.
+    Fallback: last word of the generated text if no such newline exists.
     """
     target_newline_index = prompt.count("\n") + 1
     rhyme_word = word_before_nth_newline(full_text, target_newline_index)
@@ -83,9 +73,12 @@ def extract_rhyme_word(full_text: str, prompt: str) -> str:
         return last_word(full_text[len(prompt):])
     return last_word(full_text)
 
-def rhyme_rate(completions: list[str], prompt: str, rhyme_set: set[str]) -> float:
-    """Fraction of completions whose rhyme word is in rhyme_set."""
-    hits = sum(extract_rhyme_word(c, prompt) in rhyme_set for c in completions)
+def rhyme_rate(completions: list[str], prompt: str, rhyme_word: str) -> float:
+    """Fraction of completions whose extracted rhyme word rhymes with rhyme_word."""
+    hits = sum(
+        1 for c in completions
+        if _rhyme_score(extract_rhyme_word(c, prompt), rhyme_word) is True
+    )
     return hits / len(completions) if completions else 0.0
 
 # ── Model Loading ───────────────────────────────────────────────────────────────
@@ -159,18 +152,6 @@ def run_experiment():
     model, tokenizer = load_model()
     n_layers = model.config.num_hidden_layers
 
-    # --- Build rhyme sets ---
-    print(f"\nBuilding rhyme sets from CMU dict...")
-    clean_rhymes   = build_rhyme_set(CLEAN_RHYME_WORD)
-    corrupt_rhymes = build_rhyme_set(CORRUPT_RHYME_WORD)
-    overlap = clean_rhymes & corrupt_rhymes
-    if overlap:
-        print(f"  Removing {len(overlap)} overlapping words from both sets")
-        clean_rhymes   -= overlap
-        corrupt_rhymes -= overlap
-    print(f"  '{CLEAN_RHYME_WORD}' rhymes: {len(clean_rhymes)} words, e.g. {list(clean_rhymes)[:6]}")
-    print(f"  '{CORRUPT_RHYME_WORD}' rhymes: {len(corrupt_rhymes)} words, e.g. {list(corrupt_rhymes)[:6]}")
-
     # --- Tokenize & find patch position ---
     clean_ids   = tokenizer(CLEAN_PROMPT,   return_tensors="pt").input_ids
     corrupt_ids = tokenizer(CORRUPT_PROMPT, return_tensors="pt").input_ids
@@ -189,8 +170,8 @@ def run_experiment():
         raise ValueError("Could not find token covering last newline in clean prompt.")
     patch_label = f"newline (pos={patch_pos})"
 
-    print(f"\nPatch direction: corrupt → clean")
-    print(f"  Injecting '{CORRUPT_RHYME_WORD}' activations into '{CLEAN_RHYME_WORD}' run at {patch_label}")
+    print(f"\nPatch direction: clean → corrupt")
+    print(f"  Injecting '{CLEAN_RHYME_WORD}' activations into '{CORRUPT_RHYME_WORD}' run at {patch_label}")
     print(f"  N={SAMPLING_N}, T={SAMPLING_TEMP}")
 
     print(f"\nClean prompt tokens:")
@@ -206,40 +187,40 @@ def run_experiment():
     print(f"Corrupt -> {repr(corrupt_completion)}")
     clean_end   = extract_rhyme_word(clean_completion,   CLEAN_PROMPT)
     corrupt_end = extract_rhyme_word(corrupt_completion, CORRUPT_PROMPT)
-    print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {clean_end in clean_rhymes}")
-    print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {corrupt_end in corrupt_rhymes}")
+    print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {_rhyme_score(clean_end,   CLEAN_RHYME_WORD)}")
+    print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {_rhyme_score(corrupt_end, CORRUPT_RHYME_WORD)}")
 
-    # --- Sampling baseline: unpatched clean run ---
-    print(f"\n── Unpatched Clean Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-    baseline_samples      = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-    baseline_clean_rate   = rhyme_rate(baseline_samples, CLEAN_PROMPT, clean_rhymes)
-    baseline_corrupt_rate = rhyme_rate(baseline_samples, CLEAN_PROMPT, corrupt_rhymes)
-    print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (expected high): {baseline_clean_rate:.3f}")
-    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected low): {baseline_corrupt_rate:.3f}")
+    # --- Sampling baseline: unpatched corrupt run ---
+    print(f"\n── Unpatched Corrupt Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
+    baseline_samples      = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+    baseline_clean_rate   = rhyme_rate(baseline_samples, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
+    baseline_corrupt_rate = rhyme_rate(baseline_samples, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
+    print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (expected low):  {baseline_clean_rate:.3f}")
+    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected high): {baseline_corrupt_rate:.3f}")
 
-    # --- Cache corrupt activations (source of patch) ---
-    print("\nCaching corrupt activations...")
-    corrupt_hs = cache_hidden_states(model, tokenizer, CORRUPT_PROMPT)
+    # --- Cache clean activations (source of patch) ---
+    print("\nCaching clean activations...")
+    clean_hs = cache_hidden_states(model, tokenizer, CLEAN_PROMPT)
 
     # --- Layer sweep ---
-    print(f"\nPatching {patch_label} across all {n_layers} layers (corrupt→clean, N={SAMPLING_N}, T={SAMPLING_TEMP})...\n")
+    print(f"\nPatching {patch_label} across all {n_layers} layers (clean→corrupt, N={SAMPLING_N}, T={SAMPLING_TEMP})...\n")
 
     results = []
 
     for layer in range(n_layers):
-        corrupt_vec = corrupt_hs[layer][:, patch_pos, :].clone()
+        clean_vec = clean_hs[layer][:, patch_pos, :].clone()
         handle = model.model.layers[layer].register_forward_pre_hook(
-            make_patch_hook(corrupt_vec, patch_pos)
+            make_patch_hook(clean_vec, patch_pos)
         )
         try:
-            completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-            clean_rate   = rhyme_rate(completions, CLEAN_PROMPT, clean_rhymes)
-            corrupt_rate = rhyme_rate(completions, CLEAN_PROMPT, corrupt_rhymes)
+            completions  = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+            clean_rate   = rhyme_rate(completions, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
+            corrupt_rate = rhyme_rate(completions, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
         finally:
             handle.remove()
 
-        delta = corrupt_rate - baseline_corrupt_rate
-        print(f"  Layer {layer:2d}: corrupt_rhyme_rate={corrupt_rate:.3f} (baseline={baseline_corrupt_rate:.3f}, delta={delta:+.3f})")
+        delta = clean_rate - baseline_clean_rate
+        print(f"  Layer {layer:2d}: clean_rhyme_rate={clean_rate:.3f} (baseline={baseline_clean_rate:.3f}, delta={delta:+.3f})")
         results.append({
             "layer": layer,
             "completions": completions,
@@ -251,23 +232,23 @@ def run_experiment():
 
     # --- Summary ---
     print(f"\n── Summary ──")
-    best = max(results, key=lambda r: r["corrupt_rhyme_rate"])
-    print(f"Best layer: {best['layer']} (corrupt_rhyme_rate={best['corrupt_rhyme_rate']:.3f}, baseline={baseline_corrupt_rate:.3f})")
+    best = max(results, key=lambda r: r["clean_rhyme_rate"])
+    print(f"Best layer: {best['layer']} (clean_rhyme_rate={best['clean_rhyme_rate']:.3f}, baseline={baseline_clean_rate:.3f})")
 
     # --- Plot ---
-    layers       = [r["layer"] for r in results]
-    corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
+    layers        = [r["layer"] for r in results]
     clean_rates   = [r["clean_rhyme_rate"]   for r in results]
+    corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
 
     fig, ax = plt.subplots(figsize=(14, 4))
-    ax.bar(layers, corrupt_rates, color="salmon", edgecolor="white", linewidth=0.5,
-           label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
-    ax.plot(layers, clean_rates, color="steelblue", marker="o", markersize=3, linewidth=1.0,
-            label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
-    ax.axhline(baseline_corrupt_rate, color="red", linestyle="--", linewidth=1.5,
-               label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
-    ax.axhline(baseline_clean_rate, color="orange", linestyle="--", linewidth=1.5,
+    ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5,
+           label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
+    ax.plot(layers, corrupt_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0,
+            label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
+    ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5,
                label=f"baseline clean rate ({baseline_clean_rate:.3f})")
+    ax.axhline(baseline_corrupt_rate, color="orange", linestyle="--", linewidth=1.5,
+               label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
     ax.set_xlabel(f"Layer (patch: {patch_label})")
     ax.set_ylabel("Rhyme rate")
     ax.set_xticks(layers)
@@ -275,7 +256,7 @@ def run_experiment():
     ax.set_title(
         f"Does patching [{patch_label}] transfer the rhyme plan? "
         f"(sampling N={SAMPLING_N} T={SAMPLING_TEMP})\n"
-        f"{MODEL_NAME} | corrupt r1='{CORRUPT_RHYME_WORD}' → clean run (r1='{CLEAN_RHYME_WORD}')"
+        f"{MODEL_NAME} | clean r1='{CLEAN_RHYME_WORD}' → corrupt run (r1='{CORRUPT_RHYME_WORD}')"
     )
     ax.legend(loc="upper right")
     plt.tight_layout()
@@ -294,7 +275,7 @@ def run_experiment():
         json.dump({
             "run_name":    RUN_NAME,
             "model_name":  MODEL_NAME,
-            "patch_direction": "corrupt→clean",
+            "patch_direction": "clean→corrupt",
             "patch_label": patch_label,
             "patch_pos":   int(patch_pos),
             "sampling_n":    SAMPLING_N,
@@ -307,8 +288,8 @@ def run_experiment():
             "baseline": {
                 "clean_completion":   clean_completion,
                 "corrupt_completion": corrupt_completion,
-                "unpatched_clean_clean_rhyme_rate":   baseline_clean_rate,
-                "unpatched_clean_corrupt_rhyme_rate": baseline_corrupt_rate,
+                "unpatched_corrupt_clean_rhyme_rate":   baseline_clean_rate,
+                "unpatched_corrupt_corrupt_rhyme_rate": baseline_corrupt_rate,
             },
             "n_layers": n_layers,
             "results":  results,
