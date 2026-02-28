@@ -172,12 +172,18 @@ def run_experiment():
 
     tok_list = clean_ids[0].tolist()
 
-    # --- Find patch position (last newline in the clean/target prompt) ---
-    newline_id = tokenizer("\n", add_special_tokens=False).input_ids[0]
-    newline_positions = [i for i, t in enumerate(tok_list) if t == newline_id]
-    if not newline_positions:
-        raise ValueError("No newline token found in clean prompt.")
-    patch_pos = max(newline_positions)
+    # --- Find patch position (token covering the last newline in the clean prompt) ---
+    # Use offset mapping so this works even when '\n' is merged into a larger token.
+    last_newline_char = CLEAN_PROMPT.rfind("\n")
+    if last_newline_char == -1:
+        raise ValueError("No newline character in clean prompt.")
+    enc = tokenizer(CLEAN_PROMPT, return_offsets_mapping=True, add_special_tokens=True)
+    patch_pos = next(
+        (i for i, (start, end) in enumerate(enc["offset_mapping"]) if start <= last_newline_char < end),
+        None,
+    )
+    if patch_pos is None:
+        raise ValueError("Could not find token covering last newline in clean prompt.")
     patch_label = f"newline (pos={patch_pos})"
 
     print(f"\nPatch direction: corrupt → clean (injecting '{CORRUPT_RHYME_WORD}' activations into '{CLEAN_RHYME_WORD}' run)")
