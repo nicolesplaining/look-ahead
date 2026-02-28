@@ -40,10 +40,9 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
                  show_val=False, show_train=False, show_top5=False,
                  acc_min=0.0, acc_max=1.0):
     """
-    Overlay multiple result sets on a single plot per k value.
+    One subplot per k value, all side by side in a single figure.
 
-    Color  → dataset (one per JSON)
-    Style  → metric type (solid=val, dashed=train, dotted=top-5)
+    Color → series (one per JSON)
     """
     # Resolve colors: fill unspecified slots from matplotlib's default cycle
     prop_cycle = plt.rcParams['axes.prop_cycle']
@@ -53,11 +52,10 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
         for i, c in enumerate(colors)
     ]
 
-    # Which metrics to plot and their visual style
     metric_specs = []
-    if show_val:   metric_specs.append(('val_accuracy',      'Val',   'o', '-'))
-    if show_train: metric_specs.append(('train_accuracy',    'Train', 's', '--'))
-    if show_top5:  metric_specs.append(('val_top5_accuracy', 'Top-5', '^', ':'))
+    if show_val:   metric_specs.append(('val_accuracy',      'Val',   '-'))
+    if show_train: metric_specs.append(('train_accuracy',    'Train', '--'))
+    if show_top5:  metric_specs.append(('val_top5_accuracy', 'Top-5', '-'))
 
     multi_metric = len(metric_specs) > 1
 
@@ -65,19 +63,35 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
         k for r in all_results_by_k for k in r.keys() if k is not None
     ))
 
-    filename_parts = [name.lower().replace('-', '') for _, name, _, _ in metric_specs]
+    if not all_k:
+        print("No k values found; nothing to plot.")
+        return
 
-    for k in all_k:
-        fig, ax = plt.subplots(figsize=(10, 6))
-        plotted = False
+    filename_parts = [name.lower().replace('-', '') for _, name, _ in metric_specs]
 
+    # Overall figure title from which metric(s) are shown
+    if show_val and show_top5:
+        fig_title = "Top-1 and Top-5 Accuracy"
+    elif show_val:
+        fig_title = "Top-1 Accuracy"
+    elif show_top5:
+        fig_title = "Top-5 Accuracy"
+    else:
+        fig_title = "Training Accuracy"
+
+    fig, axes = plt.subplots(1, len(all_k), figsize=(12 * len(all_k), 10), sharey=True)
+    if len(all_k) == 1:
+        axes = [axes]
+    fig.suptitle(fig_title, fontsize=28, fontweight='bold', y=1.02)
+
+    for ax, k in zip(axes, all_k):
         for results_by_k, label, color in zip(all_results_by_k, labels, resolved_colors):
             if k not in results_by_k:
                 continue
 
             layers = [layer for layer, _ in results_by_k[k]]
 
-            for metric_key, metric_name, marker, linestyle in metric_specs:
+            for metric_key, metric_name, linestyle in metric_specs:
                 vals = [
                     m[metric_key]
                     for _, m in results_by_k[k]
@@ -86,27 +100,24 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
                 if not vals:
                     continue
                 legend_label = f"{label} ({metric_name})" if multi_metric else label
-                ax.plot(layers, vals, linewidth=2,
+                ax.plot(layers, vals, linewidth=4,
                         linestyle=linestyle, color=color, label=legend_label)
-                plotted = True
 
-        if not plotted:
-            plt.close(fig)
-            continue
-
-        ax.set_xlabel('Layer', fontsize=12)
-        ax.set_ylabel('Accuracy', fontsize=12)
-        ax.set_title(f"Accuracy Across Layers (k={k})", fontsize=14, fontweight='bold')
+        ax.set_title(f"k={k}", fontsize=28, fontweight='bold')
+        ax.set_xlabel('Layer', fontsize=24)
         ax.set_ylim(acc_min, acc_max)
         ax.grid(True, alpha=0.3)
-        ax.legend(fontsize=11)
-        fig.tight_layout()
+        ax.tick_params(axis='both', labelsize=24)
+        ax.legend(fontsize=22, loc='upper left')
 
-        filename = f"{'_'.join(filename_parts)}_accuracy_k{k}.png"
-        output_path = Path(output_dir) / filename
-        fig.savefig(output_path, dpi=300, bbox_inches='tight')
-        print(f"Saved: {output_path}")
-        plt.close(fig)
+    axes[0].set_ylabel('Accuracy', fontsize=24)
+    fig.tight_layout(rect=[0, 0, 1, 0.96])
+
+    filename = f"{'_'.join(filename_parts)}_accuracy.png"
+    output_path = Path(output_dir) / filename
+    fig.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
+    plt.close(fig)
 
 
 def main():
@@ -168,10 +179,6 @@ def main():
         data = load_results(path)
         all_results_by_k.append(organize_results_by_k(data['results']))
 
-    all_k = sorted(set(
-        k for r in all_results_by_k for k in r.keys() if k is not None
-    ))
-    print(f"k values: {all_k}")
     print(f"Output dir: {output_dir}\n")
 
     plot_results(all_results_by_k, labels, colors, output_dir,

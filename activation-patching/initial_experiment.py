@@ -7,12 +7,17 @@ from transformer_lens import HookedTransformer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen2.5_14b_newline_sampling"
+RUN_NAME = "qwen2.5_32b_newline_sampling_500_0.8"
 
-MODEL_NAME = "Qwen/Qwen2.5-14B"
+MODEL_NAME = "Qwen/Qwen2.5-32B"
 
 CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+
+
+A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he
+A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he
+
 
 CLEAN_RHYME_WORD   = "sleep"
 CORRUPT_RHYME_WORD = "rest"
@@ -24,8 +29,8 @@ PATCH_MODE = "newline"
 # False → greedy (one completion per layer, fast)
 # True  → sample N completions per layer, report rhyme rate
 SAMPLING_MODE = True
-SAMPLING_N    = 50    # completions per layer
-SAMPLING_TEMP = 0.7   # temperature for sampling
+SAMPLING_N    = 500    # completions per layer
+SAMPLING_TEMP = 0.8   # temperature for sampling
 
 MAX_NEW_TOKENS = 20
 
@@ -67,6 +72,30 @@ def last_word(text: str) -> str:
     words = [w for w in words if w.isalpha()]
     return words[-1].lower() if words else ""
 
+def word_before_nth_newline(text: str, n: int) -> str:
+    """Return the last alphabetic word before the n-th newline in text."""
+    if n <= 0:
+        return ""
+    newline_positions = [i for i, ch in enumerate(text) if ch == "\n"]
+    if len(newline_positions) < n:
+        return ""
+    return last_word(text[:newline_positions[n - 1]])
+
+def extract_rhyme_word(full_text: str, prompt: str) -> str:
+    """
+    Extract rhyme word from first generated line.
+    For this prompt, that is the word before the 3rd newline in full text.
+    """
+    # Prompt already contains line breaks; next newline ends first generated line.
+    target_newline_index = prompt.count("\n") + 1
+    rhyme_word = word_before_nth_newline(full_text, target_newline_index)
+    if rhyme_word:
+        return rhyme_word
+    # Fallback: if no newline was generated, use final generated word.
+    if full_text.startswith(prompt):
+        return last_word(full_text[len(prompt):])
+    return last_word(full_text)
+
 def sample_completions(model, prompt: str, n: int, temperature: float) -> list[str]:
     """Draw n sampled completions from the model given a prompt."""
     completions = []
@@ -81,8 +110,7 @@ def sample_completions(model, prompt: str, n: int, temperature: float) -> list[s
 
 def rhyme_rate(completions: list[str], prompt: str, rhyme_set: set[str]) -> float:
     """Fraction of completions whose last word is in rhyme_set."""
-    generated = [c[len(prompt):] for c in completions]
-    hits = sum(last_word(g) in rhyme_set for g in generated)
+    hits = sum(extract_rhyme_word(c, prompt) in rhyme_set for c in completions)
     return hits / len(completions) if completions else 0.0
 
 # ── Model Loading ───────────────────────────────────────────────────────────────
@@ -179,8 +207,8 @@ def run_experiment():
     corrupt_completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
     print(f"Clean   -> {repr(clean_completion)}")
     print(f"Corrupt -> {repr(corrupt_completion)}")
-    clean_end   = last_word(clean_completion[len(CLEAN_PROMPT):])
-    corrupt_end = last_word(corrupt_completion[len(CORRUPT_PROMPT):])
+    clean_end   = extract_rhyme_word(clean_completion, CLEAN_PROMPT)
+    corrupt_end = extract_rhyme_word(corrupt_completion, CORRUPT_PROMPT)
     print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {clean_end in clean_rhymes}")
     print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {corrupt_end in corrupt_rhymes}")
 
@@ -238,7 +266,7 @@ def run_experiment():
         else:
             with model.hooks(fwd_hooks=[hook]):
                 completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
-            end_word            = last_word(completion[len(CORRUPT_PROMPT):])
+            end_word            = extract_rhyme_word(completion, CORRUPT_PROMPT)
             rhymes_with_clean   = end_word in clean_rhymes
             rhymes_with_corrupt = end_word in corrupt_rhymes
             result = {
@@ -271,9 +299,12 @@ def run_experiment():
 
     if SAMPLING_MODE:
         clean_rates = [r["clean_rhyme_rate"] for r in results]
+        corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
         ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5, label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
-        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_clean_rate:.3f})")
-        ax.set_ylabel(f"Fraction ending with '{CLEAN_RHYME_WORD}'-rhyme")
+        ax.plot(layers, corrupt_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0, label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
+        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline clean rate ({baseline_clean_rate:.3f})")
+        ax.axhline(baseline_corrupt_rate, color="orange", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
+        ax.set_ylabel("Rhyme rate")
         ax.legend(loc="upper right")
     else:
         colors = [

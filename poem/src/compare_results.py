@@ -32,10 +32,10 @@ def resolve_linestyle(s):
 
 
 METRIC_KEYS = {
-    'val':    ('val_accuracy',        'Top-1 Val'),
-    'top5':   ('val_top5_accuracy',   'Top-5 Val'),
-    'rhyme':  ('rhyme_accuracy',      'Rhyme@1'),
-    'rhyme5': ('top5_rhyme_accuracy', 'Rhyme@5'),
+    'val':    ('val_accuracy',        'Accuracy'),
+    'top5':   ('val_top5_accuracy',   'Top-5 Accuracy'),
+    'rhyme':  ('rhyme_accuracy',      'Rhyme Accuracy'),
+    'rhyme5': ('top5_rhyme_accuracy', 'Top-5 Rhyme Accuracy'),
 }
 
 
@@ -88,7 +88,7 @@ def main():
             print(f"ERROR: {name} count ({len(lst)}) must match number of JSONs ({n})")
             sys.exit(1)
 
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(20, 6))
     plotted = False
 
     for path, label, color, ls in zip(args.result_jsons, labels, colors, linestyles):
@@ -107,12 +107,13 @@ def main():
         sys.exit(1)
 
     title = args.title or metric_label
-    ax.set_xlabel('Layer', fontsize=12)
-    ax.set_ylabel('Accuracy', fontsize=12)
-    ax.set_title(title, fontsize=14, fontweight='bold')
+    ax.set_xlabel('Layer', fontsize=24)
+    ax.set_ylabel('Accuracy', fontsize=24)
+    ax.set_title(title, fontsize=28, fontweight='bold')
     ax.set_ylim(args.acc_min, args.acc_max)
     ax.grid(True, alpha=0.3)
-    ax.legend(fontsize=11)
+    ax.tick_params(axis='both', labelsize=24)
+    ax.legend(fontsize=22, loc='upper left')
     fig.tight_layout()
 
     output_dir = args.output_dir or str(Path(args.result_jsons[0]).parent)
