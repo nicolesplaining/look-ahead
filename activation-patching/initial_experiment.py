@@ -1,33 +1,108 @@
+import argparse
 import json
 import os
-import torch
-import nltk
+import re
+from datetime import datetime
+from typing import Any
+
 import matplotlib.pyplot as plt
-from transformer_lens import HookedTransformer
+import nltk
+import torch
 
-# ── Config ─────────────────────────────────────────────────────────────────────
-
-RUN_NAME = "qwen2.5_32b_newline_sampling_500_0.8_corrupt_sleep_clean_rest"
+# ── Global Defaults ─────────────────────────────────────────────────────────────
 
 MODEL_NAME = "Qwen/Qwen2.5-32B"
-
-CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
-CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
-
-CLEAN_RHYME_WORD   = "rest"
-CORRUPT_RHYME_WORD = "sleep"
-
-# "newline" → patch at the final newline token (i=0 in paper notation)
-# "r1"      → patch at the r1 token itself ("sleep" / "rest")
-PATCH_MODE = "newline"
-
-# False → greedy (one completion per layer, fast)
-# True  → sample N completions per layer, report rhyme rate
 SAMPLING_MODE = True
-SAMPLING_N    = 500    # completions per layer
-SAMPLING_TEMP = 0.8   # temperature for sampling
-
+SAMPLING_N = 500
+SAMPLING_TEMP = 0.8
 MAX_NEW_TOKENS = 20
+
+# Shared prompt pair used by "OG setup" experiments.
+OG_CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
+OG_CLEAN_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+
+CORRUPT_RHYME_WORD = "sleep"
+CLEAN_RHYME_WORD = "rest"
+
+
+def patch_selector_newline() -> dict[str, str]:
+    return {"kind": "newline"}
+
+
+def patch_selector_token(token_text: str) -> dict[str, str]:
+    return {"kind": "token_text", "token_text": token_text}
+
+
+EXPERIMENT_SPECS: list[dict[str, Any]] = [
+    # Exp 1: extended prompt; separate sweeps for newline / But / then / he.
+    {
+        "id": "exp1_newline",
+        "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_newline",
+        "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+        "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+        "patch_source_mode": "corrupt_to_clean",
+        "target_selector": patch_selector_newline(),
+        "source_selector": patch_selector_newline(),
+    },
+    {
+        "id": "exp1_but",
+        "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_but",
+        "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+        "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+        "patch_source_mode": "corrupt_to_clean",
+        "target_selector": patch_selector_token(" But"),
+        "source_selector": patch_selector_token(" But"),
+    },
+    {
+        "id": "exp1_then",
+        "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_then",
+        "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+        "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+        "patch_source_mode": "corrupt_to_clean",
+        "target_selector": patch_selector_token(" then"),
+        "source_selector": patch_selector_token(" then"),
+    },
+    {
+        "id": "exp1_he",
+        "run_name": "qwen2.5_32b_exp1_extended_corrupt_to_clean_he",
+        "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+        "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+        "patch_source_mode": "corrupt_to_clean",
+        "target_selector": patch_selector_token(" he"),
+        "source_selector": patch_selector_token(" he"),
+    },
+    # Exp 2: asymmetric context, patch newline.
+    {
+        "id": "exp2_newline_asymmetric_context",
+        "run_name": "qwen2.5_32b_exp2_newline_asymmetric_corrupt_to_clean",
+        "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
+        "clean_prompt": "He felt a sudden urge to rest,\nBut then he",
+        "patch_source_mode": "corrupt_to_clean",
+        "target_selector": patch_selector_newline(),
+        "source_selector": patch_selector_newline(),
+    },
+    # Exp 3: OG setup, zero vector at clean newline.
+    {
+        "id": "exp3_og_clean_newline_zero",
+        "run_name": "qwen2.5_32b_exp3_og_clean_newline_zero",
+        "corrupt_prompt": OG_CORRUPT_PROMPT,
+        "clean_prompt": OG_CLEAN_PROMPT,
+        "patch_source_mode": "zero_vector",
+        "target_selector": patch_selector_newline(),
+    },
+    # Exp 4: OG setup, donor newline.
+    {
+        "id": "exp4_og_clean_newline_donor",
+        "run_name": "qwen2.5_32b_exp4_og_clean_newline_donor",
+        "corrupt_prompt": OG_CORRUPT_PROMPT,
+        "clean_prompt": OG_CLEAN_PROMPT,
+        "patch_source_mode": "donor_prompt",
+        "target_selector": patch_selector_newline(),
+        "donor_prompt": "Hello, how are you doing today?\n",
+        "donor_selector": patch_selector_newline(),
+    },
+]
+
 
 # ── CMU Rhyme Lookup ───────────────────────────────────────────────────────────
 
@@ -37,6 +112,7 @@ def get_rhyme_tail(phones: list[str]) -> tuple:
         if phones[i][-1] in "12":
             return tuple(phones[i:])
     return tuple(phones[-2:])
+
 
 def build_rhyme_set(word: str) -> set[str]:
     """Return all words in CMU dict that rhyme with `word`."""
@@ -56,16 +132,18 @@ def build_rhyme_set(word: str) -> set[str]:
 
     target_tail = get_rhyme_tail(target_phones[0])
     return {
-        w for w, phones_list in cmu.items()
-        if w != word.lower()
-        and any(get_rhyme_tail(p) == target_tail for p in phones_list)
+        w
+        for w, phones_list in cmu.items()
+        if w != word.lower() and any(get_rhyme_tail(p) == target_tail for p in phones_list)
     }
+
 
 def last_word(text: str) -> str:
     """Extract the last alphabetic word from a generated completion."""
     words = [w.strip(".,!?\"' ") for w in text.split()]
     words = [w for w in words if w.isalpha()]
     return words[-1].lower() if words else ""
+
 
 def word_before_nth_newline(text: str, n: int) -> str:
     """Return the last alphabetic word before the n-th newline in text."""
@@ -74,43 +152,109 @@ def word_before_nth_newline(text: str, n: int) -> str:
     newline_positions = [i for i, ch in enumerate(text) if ch == "\n"]
     if len(newline_positions) < n:
         return ""
-    return last_word(text[:newline_positions[n - 1]])
+    return last_word(text[: newline_positions[n - 1]])
+
 
 def extract_rhyme_word(full_text: str, prompt: str) -> str:
-    """
-    Extract rhyme word from first generated line.
-    For this prompt, that is the word before the 3rd newline in full text.
-    """
-    # Prompt already contains line breaks; next newline ends first generated line.
+    """Extract rhyme word from first generated line."""
     target_newline_index = prompt.count("\n") + 1
     rhyme_word = word_before_nth_newline(full_text, target_newline_index)
     if rhyme_word:
         return rhyme_word
-    # Fallback: if no newline was generated, use final generated word.
     if full_text.startswith(prompt):
-        return last_word(full_text[len(prompt):])
+        return last_word(full_text[len(prompt) :])
     return last_word(full_text)
 
-def sample_completions(model, prompt: str, n: int, temperature: float) -> list[str]:
+
+def sample_completions(
+    model,
+    prompt: str,
+    n: int,
+    temperature: float,
+    max_new_tokens: int,
+) -> list[str]:
     """Draw n sampled completions from the model given a prompt."""
-    completions = []
+    completions: list[str] = []
     for _ in range(n):
         completion = model.generate(
             prompt,
-            max_new_tokens=MAX_NEW_TOKENS,
+            max_new_tokens=max_new_tokens,
             temperature=temperature,
         )
         completions.append(completion)
     return completions
 
+
 def rhyme_rate(completions: list[str], prompt: str, rhyme_set: set[str]) -> float:
-    """Fraction of completions whose last word is in rhyme_set."""
+    """Fraction of completions whose extracted rhyme word is in rhyme_set."""
     hits = sum(extract_rhyme_word(c, prompt) in rhyme_set for c in completions)
     return hits / len(completions) if completions else 0.0
+
+
+# ── Position Resolution ─────────────────────────────────────────────────────────
+
+def find_last_subsequence(sequence: list[int], subseq: list[int]) -> int | None:
+    if not subseq or len(subseq) > len(sequence):
+        return None
+    for i in range(len(sequence) - len(subseq), -1, -1):
+        if sequence[i : i + len(subseq)] == subseq:
+            return i
+    return None
+
+
+def resolve_newline_pos(model, prompt: str, tok_list: list[int]) -> int:
+    newline_ids = model.to_tokens("\n", prepend_bos=False)[0].tolist()
+    if len(newline_ids) == 1:
+        newline_id = newline_ids[0]
+        newline_positions = [i for i, tok in enumerate(tok_list) if tok == newline_id]
+        if newline_positions:
+            return max(newline_positions)
+
+    last_newline_char = prompt.rfind("\n")
+    if last_newline_char == -1:
+        raise ValueError("No newline character in prompt.")
+
+    tokenizer = getattr(model, "tokenizer", None)
+    if tokenizer is None:
+        raise ValueError("No tokenizer available for fallback offset mapping.")
+
+    enc = tokenizer(prompt, return_offsets_mapping=True, add_special_tokens=True)
+    offset_mapping = enc.get("offset_mapping") or []
+    for i, (start, end) in enumerate(offset_mapping):
+        if start <= last_newline_char < end:
+            return i
+    raise ValueError("Could not find token covering final newline in prompt.")
+
+
+def resolve_patch_position(
+    model,
+    prompt: str,
+    tok_list: list[int],
+    selector: dict[str, str],
+) -> tuple[int, str]:
+    kind = selector.get("kind")
+    if kind == "newline":
+        pos = resolve_newline_pos(model, prompt, tok_list)
+        return pos, f"newline (pos={pos})"
+
+    if kind == "token_text":
+        token_text = selector.get("token_text", "")
+        token_ids = model.to_tokens(token_text, prepend_bos=False)[0].tolist()
+        if not token_ids:
+            raise ValueError(f"Token selector text produced no tokens: {token_text!r}")
+        pos = find_last_subsequence(tok_list, token_ids)
+        if pos is None:
+            raise ValueError(f"Could not find token text {token_text!r} in prompt.")
+        return pos, f"token {token_text!r} (pos={pos})"
+
+    raise ValueError(f"Unknown selector kind: {kind!r}")
+
 
 # ── Model Loading ───────────────────────────────────────────────────────────────
 
 def load_model():
+    from transformer_lens import HookedTransformer
+
     print(f"Loading {MODEL_NAME} via TransformerLens...")
     model = HookedTransformer.from_pretrained(
         MODEL_NAME,
@@ -123,146 +267,167 @@ def load_model():
     print(f"Loaded. Layers: {model.cfg.n_layers} | d_model: {model.cfg.d_model}")
     return model
 
-# ── Main Experiment ─────────────────────────────────────────────────────────────
 
-def run_experiment():
-    model = load_model()
+def sanitize_name(text: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9_.-]+", "_", text).strip("_")
 
-    # --- Validate flags ---
-    if PATCH_MODE not in ("newline", "r1"):
-        raise ValueError(f"PATCH_MODE must be 'newline' or 'r1', got '{PATCH_MODE}'")
 
-    # --- Build rhyme sets ---
-    print(f"\nBuilding rhyme sets from CMU dict...")
-    clean_rhymes   = build_rhyme_set(CLEAN_RHYME_WORD)
+# ── Main Experiment Runner ──────────────────────────────────────────────────────
+
+def run_single_experiment(
+    model,
+    spec: dict[str, Any],
+    sampling_mode: bool,
+    sampling_n: int,
+    sampling_temp: float,
+    max_new_tokens: int,
+) -> dict[str, Any]:
+    run_name = spec["run_name"]
+    corrupt_prompt = spec["corrupt_prompt"]
+    clean_prompt = spec["clean_prompt"]
+    patch_source_mode = spec["patch_source_mode"]
+    target_selector = spec["target_selector"]
+    source_selector = spec.get("source_selector", target_selector)
+    donor_selector = spec.get("donor_selector", patch_selector_newline())
+
+    print("\n" + "=" * 100)
+    print(f"Running {spec['id']} -> {run_name}")
+    print(f"Patch source mode: {patch_source_mode}")
+    print("=" * 100)
+
+    print("\nBuilding rhyme sets from CMU dict...")
+    clean_rhymes = build_rhyme_set(CLEAN_RHYME_WORD)
     corrupt_rhymes = build_rhyme_set(CORRUPT_RHYME_WORD)
     overlap = clean_rhymes & corrupt_rhymes
     if overlap:
         print(f"  Removing {len(overlap)} overlapping words from both sets")
-        clean_rhymes   -= overlap
+        clean_rhymes -= overlap
         corrupt_rhymes -= overlap
-    print(f"  '{CLEAN_RHYME_WORD}' rhymes: {len(clean_rhymes)} words, e.g. {list(clean_rhymes)[:6]}")
-    print(f"  '{CORRUPT_RHYME_WORD}' rhymes: {len(corrupt_rhymes)} words, e.g. {list(corrupt_rhymes)[:6]}")
+    print(f"  '{CLEAN_RHYME_WORD}' rhymes: {len(clean_rhymes)} words")
+    print(f"  '{CORRUPT_RHYME_WORD}' rhymes: {len(corrupt_rhymes)} words")
 
-    # --- Tokenize ---
-    clean_tokens   = model.to_tokens(CLEAN_PROMPT)
-    corrupt_tokens = model.to_tokens(CORRUPT_PROMPT)
+    clean_tokens = model.to_tokens(clean_prompt)
+    corrupt_tokens = model.to_tokens(corrupt_prompt)
+    clean_tok_list = clean_tokens[0].tolist()
+    corrupt_tok_list = corrupt_tokens[0].tolist()
+
+    target_pos, target_label = resolve_patch_position(model, clean_prompt, clean_tok_list, target_selector)
+    print(f"\nTarget position on clean run: {target_label}")
 
     if clean_tokens.shape[1] != corrupt_tokens.shape[1]:
-        print(f"\nWARNING: token length mismatch ({clean_tokens.shape[1]} vs {corrupt_tokens.shape[1]})")
-        print("Prompts should tokenize to the same length for clean positional alignment.")
+        print(
+            f"WARNING: token length mismatch "
+            f"(clean={clean_tokens.shape[1]}, corrupt={corrupt_tokens.shape[1]})."
+        )
 
-    tok_list = corrupt_tokens[0].tolist()
+    source_cache = None
+    source_pos = None
+    source_label = None
+    source_prompt = None
 
-    # --- Find patch position ---
-    if PATCH_MODE == "newline":
-        newline_id = model.to_tokens("\n", prepend_bos=False)[0, 0].item()
-        newline_positions = [i for i, t in enumerate(tok_list) if t == newline_id]
-        if newline_positions:
-            patch_pos = max(newline_positions)
-        else:
-            last_newline_char = CORRUPT_PROMPT.rfind("\n")
-            if last_newline_char == -1:
-                raise ValueError("No newline character in corrupt prompt.")
-            tokenizer = getattr(model, "tokenizer", None)
-            if tokenizer is None:
-                raise ValueError("No newline token found and model has no tokenizer for offset mapping.")
-            enc = tokenizer(CORRUPT_PROMPT, return_offsets_mapping=True, add_special_tokens=True)
-            offset_mapping = enc.get("offset_mapping") or []
-            patch_pos = None
-            for i, (start, end) in enumerate(offset_mapping):
-                if start <= last_newline_char < end:
-                    patch_pos = i
-                    break
-            if patch_pos is None:
-                raise ValueError("Could not find token covering newline in corrupt prompt.")
-        patch_label = f"newline (i=0, pos={patch_pos})"
+    if patch_source_mode == "corrupt_to_clean":
+        source_prompt = corrupt_prompt
+        source_pos, source_label = resolve_patch_position(
+            model, source_prompt, corrupt_tok_list, source_selector
+        )
+        print(f"Source position on corrupt run: {source_label}")
+        print("Caching corrupt activations (source run)...")
+        _, source_cache = model.run_with_cache(source_prompt)
+    elif patch_source_mode == "zero_vector":
+        print("Using zero-vector source at target position.")
+    elif patch_source_mode == "donor_prompt":
+        source_prompt = spec["donor_prompt"]
+        donor_tokens = model.to_tokens(source_prompt)
+        donor_tok_list = donor_tokens[0].tolist()
+        source_pos, source_label = resolve_patch_position(
+            model, source_prompt, donor_tok_list, donor_selector
+        )
+        print(f"Source position on donor prompt: {source_label}")
+        print("Caching donor activations (source run)...")
+        _, source_cache = model.run_with_cache(source_prompt)
+    else:
+        raise ValueError(f"Unknown patch_source_mode: {patch_source_mode!r}")
 
-    elif PATCH_MODE == "r1":
-        corrupt_r1_ids = model.to_tokens(f" {CORRUPT_RHYME_WORD}", prepend_bos=False)[0].tolist()
-        patch_pos = None
-        for i in range(len(tok_list) - len(corrupt_r1_ids), -1, -1):
-            if tok_list[i:i + len(corrupt_r1_ids)] == corrupt_r1_ids:
-                patch_pos = i
-                break
-        if patch_pos is None:
-            raise ValueError(f"Could not find '{CORRUPT_RHYME_WORD}' token in corrupt prompt.")
-        patch_label = f"r1 token ('{CORRUPT_RHYME_WORD}', pos={patch_pos})"
-
-    print(f"\nPatch mode: {PATCH_MODE} → patching at {patch_label}")
-    print(f"Sampling mode: {SAMPLING_MODE}" + (f" (N={SAMPLING_N}, T={SAMPLING_TEMP})" if SAMPLING_MODE else " (greedy)"))
-    print(f"\nCorrupt tokens:")
-    for i, tok in enumerate(corrupt_tokens[0]):
-        marker = f" <-- patch target ({patch_label})" if i == patch_pos else ""
-        print(f"  pos {i:2d}: {repr(model.to_string(tok.unsqueeze(0)))}{marker}")
-
-    # --- Baseline completions ---
     print("\n── Baseline Completions (greedy) ──")
-    clean_completion   = model.generate(CLEAN_PROMPT,   max_new_tokens=MAX_NEW_TOKENS, temperature=0)
-    corrupt_completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
+    clean_completion = model.generate(clean_prompt, max_new_tokens=max_new_tokens, temperature=0)
+    corrupt_completion = model.generate(corrupt_prompt, max_new_tokens=max_new_tokens, temperature=0)
     print(f"Clean   -> {repr(clean_completion)}")
     print(f"Corrupt -> {repr(corrupt_completion)}")
-    clean_end   = extract_rhyme_word(clean_completion, CLEAN_PROMPT)
-    corrupt_end = extract_rhyme_word(corrupt_completion, CORRUPT_PROMPT)
-    print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {clean_end in clean_rhymes}")
-    print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {corrupt_end in corrupt_rhymes}")
+    clean_end = extract_rhyme_word(clean_completion, clean_prompt)
+    corrupt_end = extract_rhyme_word(corrupt_completion, corrupt_prompt)
+    print(f"Clean ends with '{clean_end}', in clean rhyme set? {clean_end in clean_rhymes}")
+    print(f"Corrupt ends with '{corrupt_end}', in corrupt rhyme set? {corrupt_end in corrupt_rhymes}")
 
-    # --- Sampling baseline (unpatched corrupt run) ---
-    if SAMPLING_MODE:
-        print(f"\n── Unpatched Corrupt Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-        baseline_samples = sample_completions(model, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-        baseline_clean_rate   = rhyme_rate(baseline_samples, CORRUPT_PROMPT, clean_rhymes)
-        baseline_corrupt_rate = rhyme_rate(baseline_samples, CORRUPT_PROMPT, corrupt_rhymes)
-        print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (clean): {baseline_clean_rate:.3f}")
-        print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (corrupt): {baseline_corrupt_rate:.3f}")
+    if sampling_mode:
+        print(f"\n── Unpatched Clean Baseline ({sampling_n} samples, T={sampling_temp}) ──")
+        baseline_samples = sample_completions(
+            model=model,
+            prompt=clean_prompt,
+            n=sampling_n,
+            temperature=sampling_temp,
+            max_new_tokens=max_new_tokens,
+        )
+        baseline_clean_rate = rhyme_rate(baseline_samples, clean_prompt, clean_rhymes)
+        baseline_corrupt_rate = rhyme_rate(baseline_samples, clean_prompt, corrupt_rhymes)
+        print(f"  clean_rhyme_rate={baseline_clean_rate:.3f}")
+        print(f"  corrupt_rhyme_rate={baseline_corrupt_rate:.3f}")
     else:
-        baseline_clean_rate   = None
+        baseline_clean_rate = None
         baseline_corrupt_rate = None
 
-    # --- Cache clean activations ---
-    print("\nCaching clean activations...")
-    _, clean_cache = model.run_with_cache(CLEAN_PROMPT)
+    print(
+        f"\nPatching clean target at {target_label} across all {model.cfg.n_layers} layers "
+        f"(source mode: {patch_source_mode})..."
+    )
 
-    # --- Sweep layers ---
-    print(f"\nPatching at {patch_label} across all {model.cfg.n_layers} layers...")
-    print(f"Mode: {'sampling (N=' + str(SAMPLING_N) + ', T=' + str(SAMPLING_TEMP) + ')' if SAMPLING_MODE else 'greedy'}\n")
-
-    results = []
-
+    results: list[dict[str, Any]] = []
     for layer in range(model.cfg.n_layers):
-        clean_vec = clean_cache[f"blocks.{layer}.hook_resid_pre"][:, patch_pos, :].clone()
+        if patch_source_mode in ("corrupt_to_clean", "donor_prompt"):
+            source_vec = source_cache[f"blocks.{layer}.hook_resid_pre"][:, source_pos, :].clone()
+        else:
+            source_vec = None
 
-        def patch_hook(value, hook, vec=clean_vec):
-            if value.shape[1] > patch_pos:
-                out = value.clone()
-                out[:, patch_pos, :] = vec
-                return out
-            return value
+        def patch_hook(value, hook, vec=source_vec, target_pos_=target_pos):
+            if value.shape[1] <= target_pos_:
+                return value
+            out = value.clone()
+            if vec is None:
+                out[:, target_pos_, :] = 0.0
+            else:
+                out[:, target_pos_, :] = vec
+            return out
 
         hook = (f"blocks.{layer}.hook_resid_pre", patch_hook)
 
-        if SAMPLING_MODE:
+        if sampling_mode:
             with model.hooks(fwd_hooks=[hook]):
-                completions = sample_completions(model, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-            clean_rate   = rhyme_rate(completions, CORRUPT_PROMPT, clean_rhymes)
-            corrupt_rate = rhyme_rate(completions, CORRUPT_PROMPT, corrupt_rhymes)
-            # Store all completions but only log summary
+                completions = sample_completions(
+                    model=model,
+                    prompt=clean_prompt,
+                    n=sampling_n,
+                    temperature=sampling_temp,
+                    max_new_tokens=max_new_tokens,
+                )
+            clean_rate = rhyme_rate(completions, clean_prompt, clean_rhymes)
+            corrupt_rate = rhyme_rate(completions, clean_prompt, corrupt_rhymes)
             result = {
                 "layer": layer,
                 "completions": completions,
-                "clean_rhyme_rate":   clean_rate,
+                "clean_rhyme_rate": clean_rate,
                 "corrupt_rhyme_rate": corrupt_rate,
-                "baseline_clean_rate":   baseline_clean_rate,
+                "baseline_clean_rate": baseline_clean_rate,
                 "baseline_corrupt_rate": baseline_corrupt_rate,
             }
-            delta = clean_rate - baseline_clean_rate
-            print(f"  Layer {layer:2d}: clean_rhyme_rate={clean_rate:.3f} (baseline={baseline_clean_rate:.3f}, delta={delta:+.3f})")
-
+            delta = corrupt_rate - baseline_corrupt_rate
+            print(
+                f"  Layer {layer:2d}: corrupt_rhyme_rate={corrupt_rate:.3f} "
+                f"(baseline={baseline_corrupt_rate:.3f}, delta={delta:+.3f})"
+            )
         else:
             with model.hooks(fwd_hooks=[hook]):
-                completion = model.generate(CORRUPT_PROMPT, max_new_tokens=MAX_NEW_TOKENS, temperature=0)
-            end_word            = extract_rhyme_word(completion, CORRUPT_PROMPT)
-            rhymes_with_clean   = end_word in clean_rhymes
+                completion = model.generate(clean_prompt, max_new_tokens=max_new_tokens, temperature=0)
+            end_word = extract_rhyme_word(completion, clean_prompt)
+            rhymes_with_clean = end_word in clean_rhymes
             rhymes_with_corrupt = end_word in corrupt_rhymes
             result = {
                 "layer": layer,
@@ -271,90 +436,117 @@ def run_experiment():
                 "rhymes_with_clean": rhymes_with_clean,
                 "rhymes_with_corrupt": rhymes_with_corrupt,
             }
-            status = f"✓ rhymes with '{CLEAN_RHYME_WORD}'" if rhymes_with_clean else \
-                     f"✗ rhymes with '{CORRUPT_RHYME_WORD}'" if rhymes_with_corrupt else \
-                     f"? '{end_word}'"
-            print(f"  Layer {layer:2d}: {status}  |  {repr(completion.strip())}")
+            print(
+                f"  Layer {layer:2d}: end_word='{end_word}' "
+                f"(clean={rhymes_with_clean}, corrupt={rhymes_with_corrupt})"
+            )
 
         results.append(result)
 
-    # --- Summary ---
-    print(f"\n── Summary ──")
-    if SAMPLING_MODE:
-        best = max(results, key=lambda r: r["clean_rhyme_rate"])
-        print(f"Best layer: {best['layer']} (clean_rhyme_rate={best['clean_rhyme_rate']:.3f}, baseline={baseline_clean_rate:.3f})")
+    print("\n── Summary ──")
+    if sampling_mode:
+        best = max(results, key=lambda r: r["corrupt_rhyme_rate"])
+        print(
+            f"Best layer: {best['layer']} "
+            f"(corrupt_rhyme_rate={best['corrupt_rhyme_rate']:.3f}, "
+            f"baseline={baseline_corrupt_rate:.3f})"
+        )
     else:
-        n_transferred = sum(r["rhymes_with_clean"] for r in results)
-        print(f"Layers where patch transferred clean rhyme plan: {n_transferred} / {model.cfg.n_layers}")
-        print(f"Successful layers: {[r['layer'] for r in results if r['rhymes_with_clean']]}")
+        n_transferred = sum(r["rhymes_with_corrupt"] for r in results)
+        print(f"Layers where patch transferred corrupt rhyme plan: {n_transferred} / {model.cfg.n_layers}")
 
-    # --- Plot ---
     layers = [r["layer"] for r in results]
     fig, ax = plt.subplots(figsize=(14, 4))
-
-    if SAMPLING_MODE:
+    if sampling_mode:
         clean_rates = [r["clean_rhyme_rate"] for r in results]
         corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
-        ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5, label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
-        ax.plot(layers, corrupt_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0, label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
-        ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5, label=f"baseline clean rate ({baseline_clean_rate:.3f})")
-        ax.axhline(baseline_corrupt_rate, color="orange", linestyle="--", linewidth=1.5, label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
+        ax.bar(
+            layers,
+            corrupt_rates,
+            color="darkorange",
+            edgecolor="white",
+            linewidth=0.5,
+            label=f"'{CORRUPT_RHYME_WORD}' rhyme rate (patched)",
+        )
+        ax.plot(
+            layers,
+            clean_rates,
+            color="steelblue",
+            marker="o",
+            markersize=3,
+            linewidth=1.0,
+            label=f"'{CLEAN_RHYME_WORD}' rhyme rate (patched)",
+        )
+        ax.axhline(
+            baseline_corrupt_rate,
+            color="orange",
+            linestyle="--",
+            linewidth=1.5,
+            label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})",
+        )
+        ax.axhline(
+            baseline_clean_rate,
+            color="red",
+            linestyle="--",
+            linewidth=1.5,
+            label=f"baseline clean rate ({baseline_clean_rate:.3f})",
+        )
         ax.set_ylabel("Rhyme rate")
         ax.legend(loc="upper right")
     else:
         colors = [
-            "steelblue" if r["rhymes_with_clean"]   else
-            "salmon"    if r["rhymes_with_corrupt"]  else
-            "lightgray"
+            "darkorange" if r["rhymes_with_corrupt"] else "steelblue" if r["rhymes_with_clean"] else "lightgray"
             for r in results
         ]
         ax.bar(layers, [1] * len(layers), color=colors, edgecolor="white", linewidth=0.5)
-        from matplotlib.patches import Patch
-        ax.legend(handles=[
-            Patch(facecolor="steelblue", label=f"Ends with '{CLEAN_RHYME_WORD}'-rhyme (transfer ✓)"),
-            Patch(facecolor="salmon",    label=f"Ends with '{CORRUPT_RHYME_WORD}'-rhyme (no transfer)"),
-            Patch(facecolor="lightgray", label="Neither"),
-        ], loc="upper right")
         ax.set_yticks([])
 
-    ax.set_xlabel(f"Layer (patch mode: {PATCH_MODE} @ {patch_label})")
+    ax.set_xlabel(f"Layer (target: {target_label})")
     ax.set_xticks(layers)
     ax.set_title(
-        f"Does patching [{patch_label}] transfer the rhyme plan? "
-        f"({'sampling N=' + str(SAMPLING_N) + ' T=' + str(SAMPLING_TEMP) if SAMPLING_MODE else 'greedy'})\n"
-        f"{MODEL_NAME} | clean r1='{CLEAN_RHYME_WORD}' → corrupt run (r1='{CORRUPT_RHYME_WORD}')"
+        f"Patch mode: {patch_source_mode} | {MODEL_NAME}\n"
+        f"corrupt='{CORRUPT_RHYME_WORD}' -> clean='{CLEAN_RHYME_WORD}'"
     )
     ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
-
     plt.tight_layout()
+
     results_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
-    run_dir = os.path.join(results_dir, RUN_NAME)
+    run_dir = os.path.join(results_dir, run_name)
     os.makedirs(run_dir, exist_ok=True)
 
-    image_path = os.path.join(run_dir, f"patching_results_{PATCH_MODE}_{'sampling' if SAMPLING_MODE else 'greedy'}.png")
+    selector_slug = sanitize_name(target_label)
+    mode_slug = "sampling" if sampling_mode else "greedy"
+    image_path = os.path.join(run_dir, f"patching_results_{selector_slug}_{mode_slug}.png")
     plt.savefig(image_path, dpi=150, bbox_inches="tight")
-    print(f"\nPlot saved to {image_path}")
+    print(f"Plot saved to {image_path}")
+    plt.close(fig)
 
-    # --- Save JSON ---
     export = {
-        "run_name": RUN_NAME,
+        "timestamp_utc": datetime.utcnow().isoformat() + "Z",
+        "experiment_id": spec["id"],
+        "run_name": run_name,
         "model_name": MODEL_NAME,
-        "patch_mode": PATCH_MODE,
-        "patch_label": patch_label,
-        "patch_pos": int(patch_pos),
-        "sampling_mode": SAMPLING_MODE,
-        "sampling_n": SAMPLING_N if SAMPLING_MODE else None,
-        "sampling_temp": SAMPLING_TEMP if SAMPLING_MODE else None,
-        "max_new_tokens": MAX_NEW_TOKENS,
-        "clean_prompt": CLEAN_PROMPT,
-        "corrupt_prompt": CORRUPT_PROMPT,
+        "patch_source_mode": patch_source_mode,
+        "target_selector": target_selector,
+        "target_patch_label": target_label,
+        "target_patch_pos": int(target_pos),
+        "source_selector": source_selector if patch_source_mode == "corrupt_to_clean" else None,
+        "source_patch_label": source_label,
+        "source_patch_pos": None if source_pos is None else int(source_pos),
+        "donor_prompt": spec.get("donor_prompt"),
+        "sampling_mode": sampling_mode,
+        "sampling_n": sampling_n if sampling_mode else None,
+        "sampling_temp": sampling_temp if sampling_mode else None,
+        "max_new_tokens": max_new_tokens,
+        "clean_prompt": clean_prompt,
+        "corrupt_prompt": corrupt_prompt,
         "clean_rhyme_word": CLEAN_RHYME_WORD,
         "corrupt_rhyme_word": CORRUPT_RHYME_WORD,
         "baseline": {
             "clean_completion": clean_completion,
             "corrupt_completion": corrupt_completion,
-            "unpatched_corrupt_clean_rhyme_rate": baseline_clean_rate,
-            "unpatched_corrupt_corrupt_rhyme_rate": baseline_corrupt_rate,
+            "unpatched_clean_clean_rhyme_rate": baseline_clean_rate,
+            "unpatched_clean_corrupt_rhyme_rate": baseline_corrupt_rate,
         },
         "n_layers": model.cfg.n_layers,
         "results": results,
@@ -364,8 +556,95 @@ def run_experiment():
         json.dump(export, f, indent=2)
     print(f"Generations saved to {json_path}")
 
-    return results
+    return {
+        "experiment_id": spec["id"],
+        "run_name": run_name,
+        "results_dir": run_dir,
+        "image_path": image_path,
+        "json_path": json_path,
+        "target_label": target_label,
+        "source_label": source_label,
+    }
+
+
+def get_spec_by_id(experiment_id: str) -> dict[str, Any]:
+    for spec in EXPERIMENT_SPECS:
+        if spec["id"] == experiment_id:
+            return spec
+    raise ValueError(f"Unknown experiment id: {experiment_id}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Activation patching experiments (corrupt -> clean).")
+    parser.add_argument(
+        "--experiment-id",
+        type=str,
+        default="all",
+        help="Experiment id to run, or 'all'.",
+    )
+    parser.add_argument("--sampling-n", type=int, default=SAMPLING_N)
+    parser.add_argument("--sampling-temp", type=float, default=SAMPLING_TEMP)
+    parser.add_argument("--max-new-tokens", type=int, default=MAX_NEW_TOKENS)
+    parser.add_argument(
+        "--greedy",
+        action="store_true",
+        help="Use greedy decoding instead of sampling mode.",
+    )
+    parser.add_argument(
+        "--list-experiments",
+        action="store_true",
+        help="List experiment ids and exit.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Validate selected specs and print config without loading model.",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    sampling_mode = not args.greedy
+
+    if args.list_experiments:
+        print("Available experiment ids:")
+        for spec in EXPERIMENT_SPECS:
+            print(f"  - {spec['id']}: {spec['run_name']}")
+        return
+
+    if args.experiment_id == "all":
+        specs = EXPERIMENT_SPECS
+    else:
+        specs = [get_spec_by_id(args.experiment_id)]
+
+    print(f"Selected experiments: {[s['id'] for s in specs]}")
+    if args.dry_run:
+        print("Dry run selected. Spec summary:")
+        for spec in specs:
+            print(
+                f"  {spec['id']}: mode={spec['patch_source_mode']}, "
+                f"target={spec['target_selector']}, run_name={spec['run_name']}"
+            )
+        return
+
+    model = load_model()
+    run_outputs: list[dict[str, Any]] = []
+    for spec in specs:
+        output = run_single_experiment(
+            model=model,
+            spec=spec,
+            sampling_mode=sampling_mode,
+            sampling_n=args.sampling_n,
+            sampling_temp=args.sampling_temp,
+            max_new_tokens=args.max_new_tokens,
+        )
+        run_outputs.append(output)
+
+    print("\nAll requested experiments finished.")
+    for out in run_outputs:
+        print(f"- {out['experiment_id']}: {out['results_dir']}")
 
 
 if __name__ == "__main__":
-    results = run_experiment()
+    main()
