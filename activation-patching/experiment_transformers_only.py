@@ -5,10 +5,11 @@ import pronouncing
 import matplotlib.pyplot as plt
 from typing import Optional
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from tqdm import tqdm
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen3-32b"
+RUN_NAME = "qwen3-32b-N500-T1"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
@@ -19,9 +20,9 @@ CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 CLEAN_RHYME_WORD   = "rest"
 CORRUPT_RHYME_WORD = "sleep"
 
-SAMPLING_N    = 50
-SAMPLING_TEMP = 0.7
-MAX_NEW_TOKENS = 20
+SAMPLING_N    = 500
+SAMPLING_TEMP = 1.0
+MAX_NEW_TOKENS = 12
 
 # ── Rhyme Checking ─────────────────────────────────────────────────────────────
 
@@ -207,7 +208,7 @@ def run_experiment():
 
     results = []
 
-    for layer in range(n_layers):
+    for layer in tqdm(range(n_layers), desc="Layers"):
         corrupt_vec = corrupt_hs[layer][:, patch_pos, :].clone()
         handle = model.model.layers[layer].register_forward_pre_hook(
             make_patch_hook(corrupt_vec, patch_pos)

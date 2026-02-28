@@ -1,0 +1,600 @@
+{
+  "run_name": "qwen3-32b-logit-sample-test",
+  "model_name": "Qwen/Qwen3-32B",
+  "patch_direction": "corrupt\u2192clean",
+  "patch_label": "newline (pos=14)",
+  "patch_pos": 14,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\n",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\n",
+  "clean_rhyme_word": "rest",
+  "corrupt_rhyme_word": "sleep",
+  "n_clean_rhyme_tokens": 57,
+  "n_corrupt_rhyme_tokens": 16,
+  "sampling_n": 100,
+  "sampling_temp": 0.7,
+  "max_new_tokens": 16,
+  "baseline": {
+    "mean_clean_prob_mass": 0.6516857866197825,
+    "mean_corrupt_prob_mass": 0.0,
+    "n_valid": 100
+  },
+  "n_layers": 64,
+  "results": [
+    {
+      "layer": 0,
+      "mean_clean_prob_mass": 0.6529080357588828,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 1,
+      "mean_clean_prob_mass": 0.655409572981298,
+      "mean_corrupt_prob_mass": 0.0010680892318487168,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0010680892318487168,
+      "n_valid": 100
+    },
+    {
+      "layer": 2,
+      "mean_clean_prob_mass": 0.5625412758998573,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 3,
+      "mean_clean_prob_mass": 0.5891056049242616,
+      "mean_corrupt_prob_mass": 0.0025463804602622988,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0025463804602622988,
+      "n_valid": 100
+    },
+    {
+      "layer": 4,
+      "mean_clean_prob_mass": 0.6792341103032231,
+      "mean_corrupt_prob_mass": 0.00977022647857666,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.00977022647857666,
+      "n_valid": 100
+    },
+    {
+      "layer": 5,
+      "mean_clean_prob_mass": 0.5709076280891895,
+      "mean_corrupt_prob_mass": 0.006329226493835449,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.006329226493835449,
+      "n_valid": 100
+    },
+    {
+      "layer": 6,
+      "mean_clean_prob_mass": 0.5769639386981725,
+      "mean_corrupt_prob_mass": 0.00977022647857666,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.00977022647857666,
+      "n_valid": 100
+    },
+    {
+      "layer": 7,
+      "mean_clean_prob_mass": 0.609384303316474,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 8,
+      "mean_clean_prob_mass": 0.5949056195653974,
+      "mean_corrupt_prob_mass": 0.0055980242043733594,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0055980242043733594,
+      "n_valid": 100
+    },
+    {
+      "layer": 9,
+      "mean_clean_prob_mass": 0.6334383463766425,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 10,
+      "mean_clean_prob_mass": 0.5999939582310617,
+      "mean_corrupt_prob_mass": 0.0025422292947769164,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0025422292947769164,
+      "n_valid": 100
+    },
+    {
+      "layer": 11,
+      "mean_clean_prob_mass": 0.5941316694952548,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 12,
+      "mean_clean_prob_mass": 0.574229215895757,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 13,
+      "mean_clean_prob_mass": 0.6968306349031628,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 14,
+      "mean_clean_prob_mass": 0.5690349305048585,
+      "mean_corrupt_prob_mass": 0.0038561403751373293,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0038561403751373293,
+      "n_valid": 100
+    },
+    {
+      "layer": 15,
+      "mean_clean_prob_mass": 0.5871077398490161,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 16,
+      "mean_clean_prob_mass": 0.6164123564213514,
+      "mean_corrupt_prob_mass": 0.003851478099822998,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.003851478099822998,
+      "n_valid": 100
+    },
+    {
+      "layer": 17,
+      "mean_clean_prob_mass": 0.6151626565866173,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 18,
+      "mean_clean_prob_mass": 0.5377025312557816,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 19,
+      "mean_clean_prob_mass": 0.6391297998838127,
+      "mean_corrupt_prob_mass": 0.0025422292947769164,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0025422292947769164,
+      "n_valid": 100
+    },
+    {
+      "layer": 20,
+      "mean_clean_prob_mass": 0.5639459331519902,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 21,
+      "mean_clean_prob_mass": 0.6385071610938757,
+      "mean_corrupt_prob_mass": 0.0010239291191101074,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0010239291191101074,
+      "n_valid": 100
+    },
+    {
+      "layer": 22,
+      "mean_clean_prob_mass": 0.5705564128793776,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 23,
+      "mean_clean_prob_mass": 0.6491188254579902,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 24,
+      "mean_clean_prob_mass": 0.5746752684284001,
+      "mean_corrupt_prob_mass": 8.993878029286861e-05,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 8.993878029286861e-05,
+      "n_valid": 100
+    },
+    {
+      "layer": 25,
+      "mean_clean_prob_mass": 0.6051960323005915,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 26,
+      "mean_clean_prob_mass": 0.61071179818362,
+      "mean_corrupt_prob_mass": 0.01,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.01,
+      "n_valid": 100
+    },
+    {
+      "layer": 27,
+      "mean_clean_prob_mass": 0.6498953816108406,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 28,
+      "mean_clean_prob_mass": 0.5539017296954989,
+      "mean_corrupt_prob_mass": 0.0038571441173553466,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0038571441173553466,
+      "n_valid": 100
+    },
+    {
+      "layer": 29,
+      "mean_clean_prob_mass": 0.6203427502885461,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 30,
+      "mean_clean_prob_mass": 0.6142651417851448,
+      "mean_corrupt_prob_mass": 0.0036974904872477056,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0036974904872477056,
+      "n_valid": 100
+    },
+    {
+      "layer": 31,
+      "mean_clean_prob_mass": 0.6132885254267603,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 32,
+      "mean_clean_prob_mass": 0.5235544492956251,
+      "mean_corrupt_prob_mass": 0.007720828652381897,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.007720828652381897,
+      "n_valid": 100
+    },
+    {
+      "layer": 33,
+      "mean_clean_prob_mass": 0.6267525142803788,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 34,
+      "mean_clean_prob_mass": 0.6197315792553126,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 35,
+      "mean_clean_prob_mass": 0.6099110486824065,
+      "mean_corrupt_prob_mass": 0.0070947927236557,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0070947927236557,
+      "n_valid": 100
+    },
+    {
+      "layer": 36,
+      "mean_clean_prob_mass": 0.6199459546804428,
+      "mean_corrupt_prob_mass": 0.0009967109560966492,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0009967109560966492,
+      "n_valid": 100
+    },
+    {
+      "layer": 37,
+      "mean_clean_prob_mass": 0.6719038342684507,
+      "mean_corrupt_prob_mass": 0.01,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.01,
+      "n_valid": 100
+    },
+    {
+      "layer": 38,
+      "mean_clean_prob_mass": 0.6490613937564195,
+      "mean_corrupt_prob_mass": 0.008773025870323182,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.008773025870323182,
+      "n_valid": 100
+    },
+    {
+      "layer": 39,
+      "mean_clean_prob_mass": 0.6103101561591029,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 40,
+      "mean_clean_prob_mass": 0.6256365995574743,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 41,
+      "mean_clean_prob_mass": 0.62879828710109,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 42,
+      "mean_clean_prob_mass": 0.6553499319404363,
+      "mean_corrupt_prob_mass": 0.0054846108704805375,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0054846108704805375,
+      "n_valid": 100
+    },
+    {
+      "layer": 43,
+      "mean_clean_prob_mass": 0.686666351929307,
+      "mean_corrupt_prob_mass": 0.009541617035865783,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.009541617035865783,
+      "n_valid": 100
+    },
+    {
+      "layer": 44,
+      "mean_clean_prob_mass": 0.6286929623782634,
+      "mean_corrupt_prob_mass": 0.008915430903434753,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.008915430903434753,
+      "n_valid": 100
+    },
+    {
+      "layer": 45,
+      "mean_clean_prob_mass": 0.6860682052001357,
+      "mean_corrupt_prob_mass": 0.0040789774060249325,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0040789774060249325,
+      "n_valid": 100
+    },
+    {
+      "layer": 46,
+      "mean_clean_prob_mass": 0.4969073642604053,
+      "mean_corrupt_prob_mass": 0.00013675106689333915,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.00013675106689333915,
+      "n_valid": 100
+    },
+    {
+      "layer": 47,
+      "mean_clean_prob_mass": 0.4957889672741294,
+      "mean_corrupt_prob_mass": 0.00236537367105484,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.00236537367105484,
+      "n_valid": 100
+    },
+    {
+      "layer": 48,
+      "mean_clean_prob_mass": 0.623823382165283,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 49,
+      "mean_clean_prob_mass": 0.6337508666701615,
+      "mean_corrupt_prob_mass": 0.008749148650094867,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.008749148650094867,
+      "n_valid": 100
+    },
+    {
+      "layer": 50,
+      "mean_clean_prob_mass": 0.6058018973655999,
+      "mean_corrupt_prob_mass": 0.01,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.01,
+      "n_valid": 100
+    },
+    {
+      "layer": 51,
+      "mean_clean_prob_mass": 0.6051399063318967,
+      "mean_corrupt_prob_mass": 0.003659980893135071,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.003659980893135071,
+      "n_valid": 100
+    },
+    {
+      "layer": 52,
+      "mean_clean_prob_mass": 0.5928747435938567,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 53,
+      "mean_clean_prob_mass": 0.5996874775737524,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 54,
+      "mean_clean_prob_mass": 0.5707674967311323,
+      "mean_corrupt_prob_mass": 0.00271183043718338,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.00271183043718338,
+      "n_valid": 100
+    },
+    {
+      "layer": 55,
+      "mean_clean_prob_mass": 0.664782783538103,
+      "mean_corrupt_prob_mass": 0.005405663847923279,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.005405663847923279,
+      "n_valid": 100
+    },
+    {
+      "layer": 56,
+      "mean_clean_prob_mass": 0.6286719942837954,
+      "mean_corrupt_prob_mass": 0.0009724030643701553,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0009724030643701553,
+      "n_valid": 100
+    },
+    {
+      "layer": 57,
+      "mean_clean_prob_mass": 0.629976817779243,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 58,
+      "mean_clean_prob_mass": 0.5872309124376625,
+      "mean_corrupt_prob_mass": 0.009802317321300507,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.009802317321300507,
+      "n_valid": 100
+    },
+    {
+      "layer": 59,
+      "mean_clean_prob_mass": 0.681892361305654,
+      "mean_corrupt_prob_mass": 0.006713477373123169,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.006713477373123169,
+      "n_valid": 100
+    },
+    {
+      "layer": 60,
+      "mean_clean_prob_mass": 0.638292489880696,
+      "mean_corrupt_prob_mass": 0.0,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0,
+      "n_valid": 100
+    },
+    {
+      "layer": 61,
+      "mean_clean_prob_mass": 0.5545557274110615,
+      "mean_corrupt_prob_mass": 0.002707524597644806,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.002707524597644806,
+      "n_valid": 100
+    },
+    {
+      "layer": 62,
+      "mean_clean_prob_mass": 0.6168092988803983,
+      "mean_corrupt_prob_mass": 0.0001279512234032154,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0001279512234032154,
+      "n_valid": 100
+    },
+    {
+      "layer": 63,
+      "mean_clean_prob_mass": 0.6080040354281664,
+      "mean_corrupt_prob_mass": 0.0038528770208358766,
+      "baseline_clean_prob_mass": 0.6516857866197825,
+      "baseline_corrupt_prob_mass": 0.0,
+      "delta_corrupt_mass": 0.0038528770208358766,
+      "n_valid": 100
+    }
+  ]
+}
