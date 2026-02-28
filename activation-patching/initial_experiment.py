@@ -50,8 +50,8 @@ EXPERIMENT_SPECS: list[dict[str, Any]] = [
         "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nBut then he",
         "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
         "patch_source_mode": "corrupt_to_clean",
-        "target_selector": patch_selector_token(" But"),
-        "source_selector": patch_selector_token(" But"),
+        "target_selector": patch_selector_token("But"),
+        "source_selector": patch_selector_token("But"),
     },
     {
         "id": "exp1_then",
@@ -372,6 +372,7 @@ def run_single_experiment(
         print(f"  clean_rhyme_rate={baseline_clean_rate:.3f}")
         print(f"  corrupt_rhyme_rate={baseline_corrupt_rate:.3f}")
     else:
+        baseline_samples = None
         baseline_clean_rate = None
         baseline_corrupt_rate = None
 
@@ -545,6 +546,7 @@ def run_single_experiment(
         "baseline": {
             "clean_completion": clean_completion,
             "corrupt_completion": corrupt_completion,
+            "unpatched_clean_samples": baseline_samples,
             "unpatched_clean_clean_rhyme_rate": baseline_clean_rate,
             "unpatched_clean_corrupt_rhyme_rate": baseline_corrupt_rate,
         },

@@ -1,0 +1,801 @@
+{
+  "timestamp_utc": "2026-02-28T10:43:28.416783Z",
+  "experiment_id": "exp4_og_clean_newline_donor",
+  "run_name": "qwen2.5_32b_exp4_og_clean_newline_donor",
+  "model_name": "Qwen/Qwen2.5-32B",
+  "patch_source_mode": "donor_prompt",
+  "target_selector": {
+    "kind": "newline"
+  },
+  "target_patch_label": "newline (pos=14)",
+  "target_patch_pos": 14,
+  "source_selector": null,
+  "source_patch_label": "newline (pos=7)",
+  "source_patch_pos": 7,
+  "donor_prompt": "Hello, how are you doing today?\n",
+  "sampling_mode": true,
+  "sampling_n": 3,
+  "sampling_temp": 0.8,
+  "max_new_tokens": 3,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\n",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\n",
+  "clean_rhyme_word": "rest",
+  "corrupt_rhyme_word": "sleep",
+  "baseline": {
+    "clean_completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nAnd so he",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nAnd so he",
+    "unpatched_clean_clean_rhyme_rate": 0.0,
+    "unpatched_clean_corrupt_rhyme_rate": 0.0
+  },
+  "n_layers": 64,
+  "results": [
+    {
+      "layer": 0,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe sat so",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nThe tide was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo quietly he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 1,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell into",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAnd took his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe elected to"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 2,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nCould someone please",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhy must he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe stopped before"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 3,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe reached for",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI gave my",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAnd found the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 4,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he found",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHiding in",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhen he began"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 5,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe felt a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhy is he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nThough he had"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 6,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe leaned right",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe lay back",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo in the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 7,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe could not",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe could not",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA little longer"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 8,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nMost likely you",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe was so",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis tired feet"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 9,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut then he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe'd been",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nTill a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 10,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe knew he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell asleep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe hopped"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 11,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAfter a long",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell asleep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 12,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he lay",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis head banging",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe went to"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 13,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe lay beside",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell asleep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nIt was not"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 14,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe lay down",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he took",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe felt a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 15,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe kicked off",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo why not",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe lay down"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 16,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA sense of",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he headed",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAnd settled down"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 17,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhich led him",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis mind was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe hurried to"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 18,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyes closed",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA sweet release",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he took"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 19,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell on",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut his plans"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 20,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he bought",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe wanted to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis patience for"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 21,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he took",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe just spread",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe sat on"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 22,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe decided to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he lay",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe closed his"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 23,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI went to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nThe positive aspect",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 24,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe slowly started",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nto complete his"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 25,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\n\"I'm going",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis mind was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nThis time the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 26,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he jumped",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\na feeling that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe wondered why"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 27,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe collapsed and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nNonetheless,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA nap he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 28,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he slept",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nJust what the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe lay down"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 29,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs he was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis lifeless",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nImagine the minor"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 30,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe collapsed to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAfter his ar",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he stopped"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 31,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe went to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs the day"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 32,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe fell asleep",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nCause he was"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.3333333333333333,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 33,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe stood and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nIt's time",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyes felt"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 34,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs his fatigue",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe tried to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA need to"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 35,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis weary eyes",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nEven now that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhen he sat"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 36,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut, before",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\n|He felt",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nBut must have"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 37,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nThat feeling was",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHow does this",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe wanted his"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 38,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe didn't",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nDoes he need",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA chair that"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 39,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWithout really caring",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI lied to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA feeling not"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 40,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\na brook",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs his weary",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nRested,"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 41,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe went to",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs if his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSurely he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 42,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI'm sorry",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nIn a mood",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs the day"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 43,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI felt sleepy",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he duck",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHeld the"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 44,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI suppose it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs darkness took",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI think he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 45,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhat would be",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs he passed",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs he lay"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 46,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs sleep began",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI felt a",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHe found a"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 47,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nWhat did he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA nap would",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI guess that"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 48,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI think I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHi! I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs clouds above"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 49,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI believe he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs fast as",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI didn't"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 50,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs he stood",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI hope you"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 51,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, how",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI'll give"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 52,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs if it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nA couplet",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI guess he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 53,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, and",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello! I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs he began"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 54,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI knew that",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello there!",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI gave him"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 55,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI think he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 56,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello! Can",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs if his",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 57,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello. What",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, what",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 58,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI think he",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello\nAnother",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello traveler,"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 59,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello to the",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs his tired",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, little"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 60,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello sir!,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, user"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 61,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, I",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, can",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHi yes,"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 62,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI suspect it",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nAs noon approached",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello! How"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    },
+    {
+      "layer": 63,
+      "completions": [
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello world,",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nHello, my",
+        "A rhyming couplet:\nHe felt a sudden urge to rest,\nI guess he"
+      ],
+      "clean_rhyme_rate": 0.0,
+      "corrupt_rhyme_rate": 0.0,
+      "baseline_clean_rate": 0.0,
+      "baseline_corrupt_rate": 0.0
+    }
+  ]
+}
