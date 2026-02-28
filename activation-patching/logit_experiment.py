@@ -59,13 +59,52 @@ def load_model():
 def get_input_device(model) -> torch.device:
     return model.model.embed_tokens.weight.device
 
-def next_token_logits(model, tokenizer, prompt: str) -> torch.Tensor:
-    """Single forward pass; returns logits over vocab for the next token after prompt."""
+def find_rhyme_step(generated_ids: torch.Tensor, tokenizer) -> int | None:
+    """
+    Find generation step index t such that scores[t] = logits at the rhyme word position.
+    The rhyme word is the last alphabetic token before the first newline in generated_ids.
+    Returns None if no valid position found.
+    """
+    id_list = generated_ids.tolist()
+
+    newline_step = None
+    for i, tok_id in enumerate(id_list):
+        if "\n" in tokenizer.decode([tok_id]):
+            newline_step = i
+            break
+
+    search_end = newline_step if newline_step is not None else len(id_list)
+
+    for i in range(search_end - 1, -1, -1):
+        if any(c.isalpha() for c in tokenizer.decode([id_list[i]])):
+            return i
+
+    return None
+
+def greedy_rhyme_logits(model, tokenizer, prompt: str) -> torch.Tensor | None:
+    """
+    Greedy generation; returns logits at the rhyme word position (last alphabetic
+    token before the first newline in the generated portion). Returns None if not found.
+    """
     device = get_input_device(model)
     enc = tokenizer(prompt, return_tensors="pt").to(device)
+    prompt_len = enc.input_ids.shape[1]
+
     with torch.no_grad():
-        outputs = model(**enc)
-    return outputs.logits[0, -1, :].float().cpu()
+        output = model.generate(
+            **enc,
+            max_new_tokens=20,
+            do_sample=False,
+            output_scores=True,
+            return_dict_in_generate=True,
+        )
+
+    generated_ids = output.sequences[0][prompt_len:]
+    rhyme_step = find_rhyme_step(generated_ids, tokenizer)
+    if rhyme_step is None:
+        return None
+
+    return output.scores[rhyme_step][0].float().cpu()
 
 # ── Activation Caching & Patching ──────────────────────────────────────────────
 
@@ -131,9 +170,11 @@ def run_experiment():
         marker = " <-- patch target" if i == patch_pos else ""
         print(f"  pos {i:2d}: {repr(tokenizer.decode([tok_id]))}{marker}")
 
-    # --- Baseline: unpatched clean run ---
-    print("\n── Baseline (unpatched clean run) ──")
-    baseline_logits       = next_token_logits(model, tokenizer, CLEAN_PROMPT)
+    # --- Baseline: unpatched clean run (greedy) ---
+    print("\n── Baseline (unpatched clean run, greedy) ──")
+    baseline_logits       = greedy_rhyme_logits(model, tokenizer, CLEAN_PROMPT)
+    if baseline_logits is None:
+        raise ValueError("Could not find rhyme position in baseline clean generation.")
     baseline_clean_mass   = prob_mass(baseline_logits, clean_tok_ids)
     baseline_corrupt_mass = prob_mass(baseline_logits, corrupt_tok_ids)
     print(f"  Prob mass '{CLEAN_RHYME_WORD}' rhymes   (expected high): {baseline_clean_mass:.4f}")
@@ -154,9 +195,13 @@ def run_experiment():
             make_patch_hook(corrupt_vec, patch_pos)
         )
         try:
-            logits = next_token_logits(model, tokenizer, CLEAN_PROMPT)
+            logits = greedy_rhyme_logits(model, tokenizer, CLEAN_PROMPT)
         finally:
             handle.remove()
+
+        if logits is None:
+            print(f"  Layer {layer:2d}: skipped (no rhyme position found)")
+            continue
 
         clean_mass   = prob_mass(logits, clean_tok_ids)
         corrupt_mass = prob_mass(logits, corrupt_tok_ids)
@@ -196,7 +241,7 @@ def run_experiment():
     ax.set_xlim(-0.5, n_layers - 0.5)
     ax.set_title(
         f"Logit patching [{patch_label}]: corrupt ('{CORRUPT_RHYME_WORD}') → clean ('{CLEAN_RHYME_WORD}') run\n"
-        f"{MODEL_NAME}"
+        f"{MODEL_NAME} | greedy (N=1, T=0)"
     )
     ax.legend(loc="upper right")
     plt.tight_layout()
