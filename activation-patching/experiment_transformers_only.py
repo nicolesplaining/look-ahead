@@ -12,12 +12,12 @@ RUN_NAME = "qwen3-32b"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
-# Patch direction: clean → corrupt (inject "sleep" activations into "rest" run)
-CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
-CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+# Patch direction: corrupt → clean (inject "sleep" activations into "rest" run)
+CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
+CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
 
-CLEAN_RHYME_WORD   = "sleep"
-CORRUPT_RHYME_WORD = "rest"
+CLEAN_RHYME_WORD   = "rest"
+CORRUPT_RHYME_WORD = "sleep"
 
 SAMPLING_N    = 50
 SAMPLING_TEMP = 0.7
@@ -170,8 +170,8 @@ def run_experiment():
         raise ValueError("Could not find token covering last newline in clean prompt.")
     patch_label = f"newline (pos={patch_pos})"
 
-    print(f"\nPatch direction: clean → corrupt")
-    print(f"  Injecting '{CLEAN_RHYME_WORD}' activations into '{CORRUPT_RHYME_WORD}' run at {patch_label}")
+    print(f"\nPatch direction: corrupt → clean")
+    print(f"  Injecting '{CORRUPT_RHYME_WORD}' activations into '{CLEAN_RHYME_WORD}' run at {patch_label}")
     print(f"  N={SAMPLING_N}, T={SAMPLING_TEMP}")
 
     print(f"\nClean prompt tokens:")
@@ -190,37 +190,37 @@ def run_experiment():
     print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {_rhyme_score(clean_end,   CLEAN_RHYME_WORD)}")
     print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {_rhyme_score(corrupt_end, CORRUPT_RHYME_WORD)}")
 
-    # --- Sampling baseline: unpatched corrupt run ---
-    print(f"\n── Unpatched Corrupt Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-    baseline_samples      = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-    baseline_clean_rate   = rhyme_rate(baseline_samples, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
-    baseline_corrupt_rate = rhyme_rate(baseline_samples, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
-    print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (expected low):  {baseline_clean_rate:.3f}")
-    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected high): {baseline_corrupt_rate:.3f}")
+    # --- Sampling baseline: unpatched clean run ---
+    print(f"\n── Unpatched Clean Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
+    baseline_samples      = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+    baseline_clean_rate   = rhyme_rate(baseline_samples, CLEAN_PROMPT, CLEAN_RHYME_WORD)
+    baseline_corrupt_rate = rhyme_rate(baseline_samples, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
+    print(f"  Rhymes with '{CLEAN_RHYME_WORD}' (expected high): {baseline_clean_rate:.3f}")
+    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected low): {baseline_corrupt_rate:.3f}")
 
-    # --- Cache clean activations (source of patch) ---
-    print("\nCaching clean activations...")
-    clean_hs = cache_hidden_states(model, tokenizer, CLEAN_PROMPT)
+    # --- Cache corrupt activations (source of patch) ---
+    print("\nCaching corrupt activations...")
+    corrupt_hs = cache_hidden_states(model, tokenizer, CORRUPT_PROMPT)
 
-    # --- Layer sweep ---
-    print(f"\nPatching {patch_label} across all {n_layers} layers (clean→corrupt, N={SAMPLING_N}, T={SAMPLING_TEMP})...\n")
+    # --- Layer sweep: run CLEAN prompt with corrupt activation patched in ---
+    print(f"\nPatching {patch_label} across all {n_layers} layers (corrupt→clean, N={SAMPLING_N}, T={SAMPLING_TEMP})...\n")
 
     results = []
 
     for layer in range(n_layers):
-        clean_vec = clean_hs[layer][:, patch_pos, :].clone()
+        corrupt_vec = corrupt_hs[layer][:, patch_pos, :].clone()
         handle = model.model.layers[layer].register_forward_pre_hook(
-            make_patch_hook(clean_vec, patch_pos)
+            make_patch_hook(corrupt_vec, patch_pos)
         )
         try:
-            completions  = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-            clean_rate   = rhyme_rate(completions, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
-            corrupt_rate = rhyme_rate(completions, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
+            completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+            clean_rate   = rhyme_rate(completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
+            corrupt_rate = rhyme_rate(completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
         finally:
             handle.remove()
 
-        delta = clean_rate - baseline_clean_rate
-        print(f"  Layer {layer:2d}: clean_rhyme_rate={clean_rate:.3f} (baseline={baseline_clean_rate:.3f}, delta={delta:+.3f})")
+        delta = corrupt_rate - baseline_corrupt_rate
+        print(f"  Layer {layer:2d}: corrupt_rhyme_rate={corrupt_rate:.3f} (baseline={baseline_corrupt_rate:.3f}, delta={delta:+.3f})")
         results.append({
             "layer": layer,
             "completions": completions,
@@ -232,23 +232,23 @@ def run_experiment():
 
     # --- Summary ---
     print(f"\n── Summary ──")
-    best = max(results, key=lambda r: r["clean_rhyme_rate"])
-    print(f"Best layer: {best['layer']} (clean_rhyme_rate={best['clean_rhyme_rate']:.3f}, baseline={baseline_clean_rate:.3f})")
+    best = max(results, key=lambda r: r["corrupt_rhyme_rate"])
+    print(f"Best layer: {best['layer']} (corrupt_rhyme_rate={best['corrupt_rhyme_rate']:.3f}, baseline={baseline_corrupt_rate:.3f})")
 
     # --- Plot ---
     layers        = [r["layer"] for r in results]
-    clean_rates   = [r["clean_rhyme_rate"]   for r in results]
     corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
+    clean_rates   = [r["clean_rhyme_rate"]   for r in results]
 
     fig, ax = plt.subplots(figsize=(14, 4))
-    ax.bar(layers, clean_rates, color="steelblue", edgecolor="white", linewidth=0.5,
-           label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
-    ax.plot(layers, corrupt_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0,
-            label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
-    ax.axhline(baseline_clean_rate, color="red", linestyle="--", linewidth=1.5,
-               label=f"baseline clean rate ({baseline_clean_rate:.3f})")
-    ax.axhline(baseline_corrupt_rate, color="orange", linestyle="--", linewidth=1.5,
+    ax.bar(layers, corrupt_rates, color="steelblue", edgecolor="white", linewidth=0.5,
+           label=f"'{CORRUPT_RHYME_WORD}'-rhyme rate (patched)")
+    ax.plot(layers, clean_rates, color="darkorange", marker="o", markersize=3, linewidth=1.0,
+            label=f"'{CLEAN_RHYME_WORD}'-rhyme rate (patched)")
+    ax.axhline(baseline_corrupt_rate, color="red", linestyle="--", linewidth=1.5,
                label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})")
+    ax.axhline(baseline_clean_rate, color="orange", linestyle="--", linewidth=1.5,
+               label=f"baseline clean rate ({baseline_clean_rate:.3f})")
     ax.set_xlabel(f"Layer (patch: {patch_label})")
     ax.set_ylabel("Rhyme rate")
     ax.set_xticks(layers)
@@ -256,7 +256,7 @@ def run_experiment():
     ax.set_title(
         f"Does patching [{patch_label}] transfer the rhyme plan? "
         f"(sampling N={SAMPLING_N} T={SAMPLING_TEMP})\n"
-        f"{MODEL_NAME} | clean r1='{CLEAN_RHYME_WORD}' → corrupt run (r1='{CORRUPT_RHYME_WORD}')"
+        f"{MODEL_NAME} | corrupt r1='{CORRUPT_RHYME_WORD}' → clean run (r1='{CLEAN_RHYME_WORD}')"
     )
     ax.legend(loc="upper right")
     plt.tight_layout()
@@ -275,7 +275,7 @@ def run_experiment():
         json.dump({
             "run_name":    RUN_NAME,
             "model_name":  MODEL_NAME,
-            "patch_direction": "clean→corrupt",
+            "patch_direction": "corrupt→clean",
             "patch_label": patch_label,
             "patch_pos":   int(patch_pos),
             "sampling_n":    SAMPLING_N,
@@ -288,8 +288,8 @@ def run_experiment():
             "baseline": {
                 "clean_completion":   clean_completion,
                 "corrupt_completion": corrupt_completion,
-                "unpatched_corrupt_clean_rhyme_rate":   baseline_clean_rate,
-                "unpatched_corrupt_corrupt_rhyme_rate": baseline_corrupt_rate,
+                "unpatched_clean_clean_rhyme_rate":   baseline_clean_rate,
+                "unpatched_clean_corrupt_rhyme_rate": baseline_corrupt_rate,
             },
             "n_layers": n_layers,
             "results":  results,
