@@ -457,59 +457,100 @@ def run_single_experiment(
         print(f"Layers where patch transferred corrupt rhyme plan: {n_transferred} / {model.cfg.n_layers}")
 
     layers = [r["layer"] for r in results]
-    fig, ax = plt.subplots(figsize=(14, 4))
     if sampling_mode:
         clean_rates = [r["clean_rhyme_rate"] for r in results]
         corrupt_rates = [r["corrupt_rhyme_rate"] for r in results]
-        ax.bar(
+        no_rhyme_rates = [max(0.0, 1.0 - c - k) for c, k in zip(clean_rates, corrupt_rates)]
+
+        baseline_clean = baseline_clean_rate if baseline_clean_rate is not None else 0.0
+        baseline_corrupt = baseline_corrupt_rate if baseline_corrupt_rate is not None else 0.0
+        baseline_no = max(0.0, 1.0 - baseline_clean - baseline_corrupt)
+
+        fig, axes = plt.subplots(3, 1, figsize=(14, 10), sharex=True)
+
+        axes[0].bar(
+            layers,
+            clean_rates,
+            color="steelblue",
+            edgecolor="white",
+            linewidth=0.5,
+        )
+        axes[0].axhline(
+            baseline_clean,
+            color="red",
+            linestyle="--",
+            linewidth=1.5,
+            label=f"Baseline rate = {baseline_clean:.3f}",
+        )
+        axes[0].set_ylabel("Rate")
+        axes[0].set_title(f"Patched '{CLEAN_RHYME_WORD}' rhyme rate")
+        axes[0].legend(loc="upper right")
+
+        axes[1].bar(
             layers,
             corrupt_rates,
             color="darkorange",
             edgecolor="white",
             linewidth=0.5,
-            label=f"'{CORRUPT_RHYME_WORD}' rhyme rate (patched)",
         )
-        ax.plot(
-            layers,
-            clean_rates,
-            color="steelblue",
-            marker="o",
-            markersize=3,
-            linewidth=1.0,
-            label=f"'{CLEAN_RHYME_WORD}' rhyme rate (patched)",
-        )
-        ax.axhline(
-            baseline_corrupt_rate,
+        axes[1].axhline(
+            baseline_corrupt,
             color="orange",
             linestyle="--",
             linewidth=1.5,
-            label=f"baseline corrupt rate ({baseline_corrupt_rate:.3f})",
+            label=f"Baseline rate = {baseline_corrupt:.3f}",
         )
-        ax.axhline(
-            baseline_clean_rate,
-            color="red",
+        axes[1].set_ylabel("Rate")
+        axes[1].set_title(f"Patched '{CORRUPT_RHYME_WORD}' rhyme rate")
+        axes[1].legend(loc="upper right")
+
+        axes[2].bar(
+            layers,
+            no_rhyme_rates,
+            color="gray",
+            edgecolor="white",
+            linewidth=0.5,
+        )
+        axes[2].axhline(
+            baseline_no,
+            color="black",
             linestyle="--",
             linewidth=1.5,
-            label=f"baseline clean rate ({baseline_clean_rate:.3f})",
+            label=f"Baseline rate = {baseline_no:.3f}",
         )
-        ax.set_ylabel("Rhyme rate")
-        ax.legend(loc="upper right")
+        axes[2].set_ylabel("Rate")
+        axes[2].set_title("Patched no-rhyme rate")
+        axes[2].legend(loc="upper right")
+
+        for ax_row in axes:
+            ax_row.set_xlim(-0.5, model.cfg.n_layers - 0.5)
+            ax_row.set_xticks(layers)
+
+        axes[2].set_xlabel(f"Layer (target: {target_label})")
+        fig.suptitle(
+            f"Patch mode: {patch_source_mode} | {MODEL_NAME}\n"
+            f"corrupt='{CORRUPT_RHYME_WORD}' -> clean='{CLEAN_RHYME_WORD}'",
+            y=0.995,
+            fontweight="bold",
+            ha="center",
+        )
+        plt.tight_layout(rect=[0, 0, 1, 0.97])
     else:
+        fig, ax = plt.subplots(figsize=(14, 4))
         colors = [
             "darkorange" if r["rhymes_with_corrupt"] else "steelblue" if r["rhymes_with_clean"] else "lightgray"
             for r in results
         ]
         ax.bar(layers, [1] * len(layers), color=colors, edgecolor="white", linewidth=0.5)
         ax.set_yticks([])
-
-    ax.set_xlabel(f"Layer (target: {target_label})")
-    ax.set_xticks(layers)
-    ax.set_title(
-        f"Patch mode: {patch_source_mode} | {MODEL_NAME}\n"
-        f"corrupt='{CORRUPT_RHYME_WORD}' -> clean='{CLEAN_RHYME_WORD}'"
-    )
-    ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
-    plt.tight_layout()
+        ax.set_xlabel(f"Layer (target: {target_label})")
+        ax.set_xticks(layers)
+        ax.set_title(
+            f"Patch mode: {patch_source_mode} | {MODEL_NAME}\n"
+            f"corrupt='{CORRUPT_RHYME_WORD}' -> clean='{CLEAN_RHYME_WORD}'"
+        )
+        ax.set_xlim(-0.5, model.cfg.n_layers - 0.5)
+        plt.tight_layout()
 
     results_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
     run_dir = os.path.join(results_dir, run_name)
