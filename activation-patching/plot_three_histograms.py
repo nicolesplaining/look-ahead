@@ -17,8 +17,24 @@ def make_plot(json_path: Path, output_path: Path, swap_labels: bool = False) -> 
     no_rhyme_rates = [max(0.0, 1.0 - c - k) for c, k in zip(clean_rates, corrupt_rates)]
 
     baseline = data.get("baseline", {})
-    baseline_clean = baseline.get("unpatched_corrupt_clean_rhyme_rate", 0.0)
-    baseline_corrupt = baseline.get("unpatched_corrupt_corrupt_rhyme_rate", 0.0)
+    # Prefer corrupt-run baselines if present (older runs), otherwise fall back
+    # to clean-run baselines (newer exp1_* runs), and finally to generic
+    # baseline_* keys if available.
+    if (
+        "unpatched_corrupt_clean_rhyme_rate" in baseline
+        and "unpatched_corrupt_corrupt_rhyme_rate" in baseline
+    ):
+        baseline_clean = baseline["unpatched_corrupt_clean_rhyme_rate"]
+        baseline_corrupt = baseline["unpatched_corrupt_corrupt_rhyme_rate"]
+    elif (
+        "unpatched_clean_clean_rhyme_rate" in baseline
+        and "unpatched_clean_corrupt_rhyme_rate" in baseline
+    ):
+        baseline_clean = baseline["unpatched_clean_clean_rhyme_rate"]
+        baseline_corrupt = baseline["unpatched_clean_corrupt_rhyme_rate"]
+    else:
+        baseline_clean = baseline.get("baseline_clean_rate", 0.0)
+        baseline_corrupt = baseline.get("baseline_corrupt_rate", 0.0)
     baseline_no = max(0.0, 1.0 - baseline_clean - baseline_corrupt)
 
     clean_word = data.get("clean_rhyme_word", "clean")
