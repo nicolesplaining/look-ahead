@@ -9,19 +9,19 @@ from tqdm import tqdm
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen3-32b-N500-T1"
+RUN_NAME = "qwen3-32b-N500-T07-newpoem"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
 # Patch direction: corrupt → clean (inject "sleep" activations into "rest" run)
-CLEAN_PROMPT   = "A rhyming couplet:\nHe felt a sudden urge to rest,\n"
-CORRUPT_PROMPT = "A rhyming couplet:\nHe felt a sudden urge to sleep,\n"
+CLEAN_PROMPT   = "A rhyming couplet:\nShe felt a sudden sense of fear,\n"
+CORRUPT_PROMPT = "A rhyming couplet:\nShe felt a sudden sense of fright,\n"
 
-CLEAN_RHYME_WORD   = "rest"
-CORRUPT_RHYME_WORD = "sleep"
+CLEAN_RHYME_WORD   = "fear"
+CORRUPT_RHYME_WORD = "fright"
 
 SAMPLING_N    = 500
-SAMPLING_TEMP = 1.0
+SAMPLING_TEMP = 0.7
 MAX_NEW_TOKENS = 12
 
 # ── Rhyme Checking ─────────────────────────────────────────────────────────────
