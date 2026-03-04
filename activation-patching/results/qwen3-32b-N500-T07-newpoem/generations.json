@@ -14,8 +14,8 @@
   "baseline": {
     "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nAs if the world was drawing near.\nThe sun was setting",
     "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nAs shadows danced in the night.\nThe wind howled through",
-    "unpatched_clean_clean_rhyme_rate": 0.714,
-    "unpatched_clean_corrupt_rhyme_rate": 0.004
+    "unpatched_clean_clean_rhyme_rate": 0.718,
+    "unpatched_clean_corrupt_rhyme_rate": 0
   },
   "n_layers": 64,
   "results": [
@@ -525,8 +525,8 @@
       ],
       "clean_rhyme_rate": 0.714,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 1,
@@ -1034,8 +1034,8 @@
       ],
       "clean_rhyme_rate": 0.706,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 2,
@@ -1543,8 +1543,8 @@
       ],
       "clean_rhyme_rate": 0.718,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 3,
@@ -2052,8 +2052,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 4,
@@ -2561,8 +2561,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 5,
@@ -3070,8 +3070,8 @@
       ],
       "clean_rhyme_rate": 0.714,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 6,
@@ -3579,8 +3579,8 @@
       ],
       "clean_rhyme_rate": 0.692,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 7,
@@ -4088,8 +4088,8 @@
       ],
       "clean_rhyme_rate": 0.718,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 8,
@@ -4597,8 +4597,8 @@
       ],
       "clean_rhyme_rate": 0.704,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 9,
@@ -5106,8 +5106,8 @@
       ],
       "clean_rhyme_rate": 0.704,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 10,
@@ -5615,8 +5615,8 @@
       ],
       "clean_rhyme_rate": 0.69,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 11,
@@ -6124,8 +6124,8 @@
       ],
       "clean_rhyme_rate": 0.726,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 12,
@@ -6633,8 +6633,8 @@
       ],
       "clean_rhyme_rate": 0.686,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 13,
@@ -7142,8 +7142,8 @@
       ],
       "clean_rhyme_rate": 0.69,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 14,
@@ -7651,8 +7651,8 @@
       ],
       "clean_rhyme_rate": 0.726,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 15,
@@ -8160,8 +8160,8 @@
       ],
       "clean_rhyme_rate": 0.71,
       "corrupt_rhyme_rate": 0.004,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 16,
@@ -8669,8 +8669,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 17,
@@ -9178,8 +9178,8 @@
       ],
       "clean_rhyme_rate": 0.754,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 18,
@@ -9687,8 +9687,8 @@
       ],
       "clean_rhyme_rate": 0.704,
       "corrupt_rhyme_rate": 0.006,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 19,
@@ -10196,8 +10196,8 @@
       ],
       "clean_rhyme_rate": 0.698,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 20,
@@ -10705,8 +10705,8 @@
       ],
       "clean_rhyme_rate": 0.688,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 21,
@@ -11214,8 +11214,8 @@
       ],
       "clean_rhyme_rate": 0.708,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 22,
@@ -11723,8 +11723,8 @@
       ],
       "clean_rhyme_rate": 0.722,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 23,
@@ -12232,8 +12232,8 @@
       ],
       "clean_rhyme_rate": 0.708,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 24,
@@ -12741,8 +12741,8 @@
       ],
       "clean_rhyme_rate": 0.67,
       "corrupt_rhyme_rate": 0.006,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 25,
@@ -13250,8 +13250,8 @@
       ],
       "clean_rhyme_rate": 0.674,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 26,
@@ -13759,8 +13759,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 27,
@@ -14268,8 +14268,8 @@
       ],
       "clean_rhyme_rate": 0.704,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 28,
@@ -14777,8 +14777,8 @@
       ],
       "clean_rhyme_rate": 0.732,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 29,
@@ -15286,8 +15286,8 @@
       ],
       "clean_rhyme_rate": 0.676,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 30,
@@ -15795,8 +15795,8 @@
       ],
       "clean_rhyme_rate": 0.73,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 31,
@@ -16304,8 +16304,8 @@
       ],
       "clean_rhyme_rate": 0.712,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 32,
@@ -16813,8 +16813,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 33,
@@ -17322,8 +17322,8 @@
       ],
       "clean_rhyme_rate": 0.654,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 34,
@@ -17831,8 +17831,8 @@
       ],
       "clean_rhyme_rate": 0.642,
       "corrupt_rhyme_rate": 0.012,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 35,
@@ -18340,8 +18340,8 @@
       ],
       "clean_rhyme_rate": 0.688,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 36,
@@ -18849,8 +18849,8 @@
       ],
       "clean_rhyme_rate": 0.646,
       "corrupt_rhyme_rate": 0.006,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 37,
@@ -19358,8 +19358,8 @@
       ],
       "clean_rhyme_rate": 0.636,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 38,
@@ -19867,8 +19867,8 @@
       ],
       "clean_rhyme_rate": 0.668,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 39,
@@ -20376,8 +20376,8 @@
       ],
       "clean_rhyme_rate": 0.652,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 40,
@@ -20885,8 +20885,8 @@
       ],
       "clean_rhyme_rate": 0.678,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 41,
@@ -21394,8 +21394,8 @@
       ],
       "clean_rhyme_rate": 0.684,
       "corrupt_rhyme_rate": 0.004,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 42,
@@ -21903,8 +21903,8 @@
       ],
       "clean_rhyme_rate": 0.69,
       "corrupt_rhyme_rate": 0.004,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 43,
@@ -22412,8 +22412,8 @@
       ],
       "clean_rhyme_rate": 0.676,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 44,
@@ -22921,8 +22921,8 @@
       ],
       "clean_rhyme_rate": 0.648,
       "corrupt_rhyme_rate": 0.006,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 45,
@@ -23430,8 +23430,8 @@
       ],
       "clean_rhyme_rate": 0.62,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 46,
@@ -23939,8 +23939,8 @@
       ],
       "clean_rhyme_rate": 0.622,
       "corrupt_rhyme_rate": 0.004,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 47,
@@ -24448,8 +24448,8 @@
       ],
       "clean_rhyme_rate": 0.702,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 48,
@@ -24957,8 +24957,8 @@
       ],
       "clean_rhyme_rate": 0.69,
       "corrupt_rhyme_rate": 0.004,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 49,
@@ -25466,8 +25466,8 @@
       ],
       "clean_rhyme_rate": 0.72,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 50,
@@ -25975,8 +25975,8 @@
       ],
       "clean_rhyme_rate": 0.7,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 51,
@@ -26484,8 +26484,8 @@
       ],
       "clean_rhyme_rate": 0.724,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 52,
@@ -26993,8 +26993,8 @@
       ],
       "clean_rhyme_rate": 0.732,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 53,
@@ -27502,8 +27502,8 @@
       ],
       "clean_rhyme_rate": 0.658,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 54,
@@ -28011,8 +28011,8 @@
       ],
       "clean_rhyme_rate": 0.708,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 55,
@@ -28520,8 +28520,8 @@
       ],
       "clean_rhyme_rate": 0.676,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 56,
@@ -29029,8 +29029,8 @@
       ],
       "clean_rhyme_rate": 0.706,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 57,
@@ -29538,8 +29538,8 @@
       ],
       "clean_rhyme_rate": 0.732,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 58,
@@ -30047,8 +30047,8 @@
       ],
       "clean_rhyme_rate": 0.74,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 59,
@@ -30556,8 +30556,8 @@
       ],
       "clean_rhyme_rate": 0.73,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 60,
@@ -31065,8 +31065,8 @@
       ],
       "clean_rhyme_rate": 0.71,
       "corrupt_rhyme_rate": 0.002,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 61,
@@ -31574,8 +31574,8 @@
       ],
       "clean_rhyme_rate": 0.732,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 62,
@@ -32083,8 +32083,8 @@
       ],
       "clean_rhyme_rate": 0.676,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     },
     {
       "layer": 63,
@@ -32592,8 +32592,8 @@
       ],
       "clean_rhyme_rate": 0.716,
       "corrupt_rhyme_rate": 0.0,
-      "baseline_clean_rate": 0.714,
-      "baseline_corrupt_rate": 0.004
+      "baseline_clean_rate": 0.718,
+      "baseline_corrupt_rate": 0
     }
   ]
 }
