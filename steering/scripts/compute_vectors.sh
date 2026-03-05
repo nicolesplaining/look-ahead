@@ -9,7 +9,7 @@ MODEL="${MODEL:-Qwen/Qwen3-32B}"
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-train.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
 CONTEXT_WINDOW="${CONTEXT_WINDOW:-20}"
-LAYERS="${LAYERS:-}"          # space-separated list, e.g. "0 8 16 24 32"; empty = all
+LAYERS="${LAYERS:-}"          # empty = all 64 layers for Qwen3-32B
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
 

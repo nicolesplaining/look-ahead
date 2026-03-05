@@ -15,12 +15,12 @@ DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
 
 # Optional filters (space-separated lists); leave empty to use all
-LAYERS="${LAYERS:-}"           # e.g. "0 8 16 24"
-POSITIONS="${POSITIONS:-}"     # prompt positions, e.g. "-5 -3 -1 0"
-GEN_POSITIONS="${GEN_POSITIONS:-}"  # generation positions, e.g. "1 2 3"
+LAYERS="${LAYERS:-}"           # empty = all layers
+POSITIONS="${POSITIONS:--5 -4 -3 -2 -1 0}"  # prompt positions
+GEN_POSITIONS="${GEN_POSITIONS:-1 2 3}"      # generation positions
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
-SOURCE="${SOURCE:-}"           # source scheme IDs, e.g. "0 1"
-TARGET="${TARGET:-}"           # target scheme IDs, e.g. "2 3"
+SOURCE="${SOURCE:-}"           # empty = all source schemes
+TARGET="${TARGET:-}"           # empty = all target schemes
 
 # Forward extra CLI args
 EXTRA_ARGS=("$@")

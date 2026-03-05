@@ -1,0 +1,6 @@
+transformers
+accelerate
+pronouncing
+matplotlib
+numpy
+# torch is expected to be pre-installed with CUDA support (e.g. RunPod image)
