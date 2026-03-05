@@ -17,7 +17,7 @@ if [ -n "$SCHEME_NAMES" ]; then
     SCHEME_NAMES_FLAG=(--scheme-names "$SCHEME_NAMES")
 fi
 
-export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/steering/src:${PYTHONPATH:-}"
 
 python -m steering_probe.plot_results \
     --results-path "$RESULTS_PATH" \

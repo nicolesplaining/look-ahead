@@ -51,7 +51,7 @@ if [ -n "$TARGET" ]; then
     read -r -a _arr <<< "$TARGET"; TARGET_FLAG=(--target "${_arr[@]}")
 fi
 
-export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/steering/src:${PYTHONPATH:-}"
 
 python -m steering_probe.run_steering \
     --model          "$MODEL" \

@@ -23,7 +23,7 @@ if [ -n "$LAYERS" ]; then
     LAYERS_FLAG=(--layers "${LAYERS_ARR[@]}")
 fi
 
-export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/steering/src:${PYTHONPATH:-}"
 
 python -m steering_probe.compute_vectors \
     --model         "$MODEL" \
