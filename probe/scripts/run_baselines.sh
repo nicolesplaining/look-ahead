@@ -13,7 +13,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME=Qwen/Qwen3-32B 
+MODEL_NAME=Qwen/Qwen3-32B
 
 if [ -f "$PROJECT_ROOT/probe/data/activations_train.tokens.jsonl" ]; then
     TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train.tokens.jsonl}"
