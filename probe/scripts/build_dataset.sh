@@ -13,8 +13,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME="Qwen/Qwen2.5-32B"
-MAX_K=3
+MODEL_NAME=Qwen/Qwen3-32B
+MAX_K=8
 MAX_NEW_TOKENS=32
 MAX_TRAIN_PROMPTS=1000
 MAX_VAL_PROMPTS=100
@@ -36,8 +36,7 @@ echo "max_k:  $MAX_K"
 echo "Device: $DEVICE"
 echo ""
 
-# --- Step 1a: training activations ---
-echo "=== Step 1a: Building training activations ==="
+echo "=== Building training activations ==="
 TRAIN_CMD=(
     python -m look_ahead_probe.build_look_ahead_activation_dataset
     --model_name "$MODEL_NAME"
@@ -52,10 +51,9 @@ if [ -n "$MAX_TRAIN_PROMPTS" ]; then
 fi
 "${TRAIN_CMD[@]}"
 
-# --- Step 1b: validation activations (skip if val file absent) ---
 if [ -f "$VAL_INPUT" ]; then
     echo ""
-    echo "=== Step 1b: Building validation activations ==="
+    echo "=== Building validation activations ==="
     VAL_CMD=(
         python -m look_ahead_probe.build_look_ahead_activation_dataset
         --model_name "$MODEL_NAME"
