@@ -2,10 +2,10 @@
 """
 N-gram baseline models for the look-ahead probe experiment.
 
-Trains unigram, bigram, and trigram models on generated texts from the
-training activation dataset and evaluates them on the validation set.
+Trains unigram and bigram models on generated texts from the training
+activation dataset and evaluates them on the validation set.
 
-Uses skip-k n-grams so the context is always the token(s) at position i
+Uses skip-k n-grams so the context is always the token at position i
 (same "view" as the probe activation), predicting the token at position i+k.
 
 No smoothing: unseen contexts score 0 (conservative baseline).
@@ -19,7 +19,7 @@ import argparse
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import torch
 from tqdm import tqdm
@@ -32,19 +32,17 @@ from tqdm import tqdm
 def build_ngram_tables(
     token_sequences: List[List[int]],
     max_k: int,
-) -> Tuple[Counter, Dict, Dict]:
+) -> Tuple[Counter, Dict]:
     """
-    Build skip-k unigram, bigram, and trigram frequency tables for each k.
+    Build skip-k unigram and bigram frequency tables for each k.
 
     For each k in 1..max_k:
-      - bigram_k[k][ctx]        = Counter {token: count} for P(t_{i+k} | t_i)
-      - trigram_k[k][(p, ctx)]  = Counter {token: count} for P(t_{i+k} | t_{i-1}, t_i)
+      - bigram_k[k][ctx] = Counter {token: count} for P(t_{i+k} | t_i)
 
     Unigram is k-independent: just overall token frequency.
     """
     unigram: Counter = Counter()
     bigram_k: Dict[int, Dict[int, Counter]] = {k: defaultdict(Counter) for k in range(1, max_k + 1)}
-    trigram_k: Dict[int, Dict[Tuple, Counter]] = {k: defaultdict(Counter) for k in range(1, max_k + 1)}
 
     for tokens in token_sequences:
         n = len(tokens)
@@ -57,11 +55,7 @@ def build_ngram_tables(
                 ctx = tokens[i]
                 bigram_k[k][ctx][target] += 1
 
-                if i >= 1:
-                    prev_ctx = tokens[i - 1]
-                    trigram_k[k][(prev_ctx, ctx)][target] += 1
-
-    return unigram, bigram_k, trigram_k
+    return unigram, bigram_k
 
 
 # ---------------------------------------------------------------------------
@@ -80,11 +74,10 @@ def evaluate(
     token_sequences: List[List[int]],
     unigram: Counter,
     bigram_k: Dict,
-    trigram_k: Dict,
     max_k: int,
 ) -> Dict[str, Dict[int, Dict[str, float]]]:
     """
-    Evaluate all three baseline models on token sequences.
+    Evaluate unigram and bigram baseline models on token sequences.
 
     Returns:
         results[model_name][k] = {'top1_acc': float, 'top5_acc': float}
@@ -96,7 +89,7 @@ def evaluate(
     counts = {
         name: {k: {'top1_correct': 0, 'top5_correct': 0, 'total': 0}
                for k in range(1, max_k + 1)}
-        for name in ('unigram', 'bigram', 'trigram')
+        for name in ('unigram', 'bigram')
     }
 
     for tokens in tqdm(token_sequences, desc="Evaluating baselines"):
@@ -105,7 +98,6 @@ def evaluate(
             for i in range(n - k):
                 target = tokens[i + k]
                 ctx = tokens[i]
-                prev_ctx = tokens[i - 1] if i >= 1 else None
 
                 # --- Unigram ---
                 c = counts['unigram'][k]
@@ -124,20 +116,8 @@ def evaluate(
                 if target in bg_preds:
                     c['top5_correct'] += 1
 
-                # --- Trigram ---
-                c = counts['trigram'][k]
-                c['total'] += 1
-                if prev_ctx is not None:
-                    tg_preds = top_k_tokens(trigram_k[k].get((prev_ctx, ctx), Counter()), 5)
-                else:
-                    tg_preds = []
-                if tg_preds and target == tg_preds[0]:
-                    c['top1_correct'] += 1
-                if target in tg_preds:
-                    c['top5_correct'] += 1
-
     results = {}
-    for name in ('unigram', 'bigram', 'trigram'):
+    for name in ('unigram', 'bigram'):
         results[name] = {}
         for k in range(1, max_k + 1):
             c = counts[name][k]
@@ -310,17 +290,16 @@ def main():
     # Build n-gram tables from training set
     # ------------------------------------------------------------------
     print("\nBuilding n-gram tables...")
-    unigram, bigram_k, trigram_k = build_ngram_tables(train_tokens, max_k)
+    unigram, bigram_k = build_ngram_tables(train_tokens, max_k)
     print(f"  Unigram vocabulary: {len(unigram):,} tokens")
     for k in range(1, max_k + 1):
         print(f"  Bigram contexts (k={k}): {len(bigram_k[k]):,}")
-        print(f"  Trigram contexts (k={k}): {len(trigram_k[k]):,}")
 
     # ------------------------------------------------------------------
     # Evaluate on validation set
     # ------------------------------------------------------------------
     print("\nEvaluating on validation set...")
-    results = evaluate(val_tokens, unigram, bigram_k, trigram_k, max_k)
+    results = evaluate(val_tokens, unigram, bigram_k, max_k)
 
     # ------------------------------------------------------------------
     # Print summary
@@ -331,7 +310,7 @@ def main():
         print(f"  k={k} Top1    k={k} Top5 ", end="")
     print()
     print("-" * 70)
-    for name in ('unigram', 'bigram', 'trigram'):
+    for name in ('unigram', 'bigram'):
         print(f"{name:<12}", end="")
         for k in range(1, max_k + 1):
             m = results[name][k]
@@ -343,7 +322,7 @@ def main():
     # Write JSON files
     # ------------------------------------------------------------------
     model_name = metadata.get('model_name', args.model_name)
-    for name in ('unigram', 'bigram', 'trigram'):
+    for name in ('unigram', 'bigram'):
         data = make_results_json(
             model_name=model_name,
             baseline_name=name,
