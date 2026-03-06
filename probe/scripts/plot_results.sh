@@ -14,11 +14,11 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/qwen-3-32B}"
+RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Qwen3-32B-K8}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
 
-ACC_MAX=1
+ACC_MAX=0.65
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -29,10 +29,10 @@ COLORS=()
 f="$RESULTS_DIR/experiment_results_linear/experiment_results.json"
 if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Linear Probe"); COLORS+=("steelblue"); fi
 
-f="$RESULTS_DIR/baselines/bigram/bigram_results.json"
+f="$RESULTS_DIR/baselines/bigram_results.json"
 if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Bigram"); COLORS+=("orange"); fi
 
-f="$RESULTS_DIR/baselines/unigram/unigram_results.json"
+f="$RESULTS_DIR/baselines/unigram_results.json"
 if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Unigram"); COLORS+=("gray"); fi
 
 if [ ${#JSONS[@]} -eq 0 ]; then
@@ -48,7 +48,7 @@ python -m look_ahead_probe.visualize_results \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
-    --show-top5 \
+    --show-val \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR"
