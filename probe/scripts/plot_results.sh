@@ -6,6 +6,8 @@
 #   RESULTS_DIR=/path/to/results/dir
 #   OUTPUT_DIR=/path/to/output
 #   ACC_MIN=0  ACC_MAX=0.8
+#   K_VALUES="1 2 3 8"   (space-separated; default: all k values)
+#                         A dashed separator is drawn between non-consecutive k values.
 
 set -e
 
@@ -17,8 +19,8 @@ export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Qwen3-32B-K8}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
-
 ACC_MAX=0.65
+K_VALUES="1 2 3 8"   # empty = all k values; e.g. "1 2 3 8"
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -44,6 +46,9 @@ echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
 echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
 echo ""
 
+K_VALS_ARG=()
+[ -n "$K_VALUES" ] && K_VALS_ARG=(--k-values $K_VALUES)
+
 python -m look_ahead_probe.visualize_results \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
@@ -51,7 +56,8 @@ python -m look_ahead_probe.visualize_results \
     --show-val \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
-    --output-dir "$OUTPUT_DIR"
+    --output-dir "$OUTPUT_DIR" \
+    "${K_VALS_ARG[@]}"
 
 echo ""
 echo "✓ Plots saved to $OUTPUT_DIR/"

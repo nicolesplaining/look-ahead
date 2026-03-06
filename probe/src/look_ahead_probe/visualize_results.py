@@ -38,11 +38,14 @@ def organize_results_by_k(results):
 
 def plot_results(all_results_by_k, labels, colors, output_dir,
                  show_val=False, show_train=False, show_top5=False,
-                 acc_min=0.0, acc_max=1.0):
+                 acc_min=0.0, acc_max=1.0, k_values=None):
     """
     One subplot per k value, all side by side in a single figure.
 
     Color → series (one per JSON)
+    k_values: list of ints to include; None means all available k values.
+    A dashed vertical separator is drawn between any two subplots whose k
+    values are non-consecutive (gap > 1).
     """
     # Resolve colors: fill unspecified slots from matplotlib's default cycle
     prop_cycle = plt.rcParams['axes.prop_cycle']
@@ -59,9 +62,17 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
 
     multi_metric = len(metric_specs) > 1
 
-    all_k = sorted(set(
+    available_k = sorted(set(
         k for r in all_results_by_k for k in r.keys() if k is not None
     ))
+
+    if k_values is not None:
+        missing = [k for k in k_values if k not in available_k]
+        if missing:
+            print(f"WARNING: requested k values not found in data: {missing}")
+        all_k = [k for k in sorted(k_values) if k in available_k]
+    else:
+        all_k = available_k
 
     if not all_k:
         print("No k values found; nothing to plot.")
@@ -69,20 +80,11 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
 
     filename_parts = [name.lower().replace('-', '') for _, name, _ in metric_specs]
 
-    # Overall figure title from which metric(s) are shown
-    if show_val and show_top5:
-        fig_title = "Top-1 and Top-5 Accuracy"
-    elif show_val:
-        fig_title = "Top-1 Accuracy"
-    elif show_top5:
-        fig_title = "Top-5 Accuracy"
-    else:
-        fig_title = "Training Accuracy"
-
     fig, axes = plt.subplots(1, len(all_k), figsize=(12 * len(all_k), 10), sharey=True)
     if len(all_k) == 1:
         axes = [axes]
-    fig.suptitle(fig_title, fontsize=28, fontweight='bold', y=1.02)
+
+    gap_after = [i for i in range(len(all_k) - 1) if all_k[i + 1] - all_k[i] > 1]
 
     for ax, k in zip(axes, all_k):
         for results_by_k, label, color in zip(all_results_by_k, labels, resolved_colors):
@@ -103,15 +105,27 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
                 ax.plot(layers, vals, linewidth=4,
                         linestyle=linestyle, color=color, label=legend_label)
 
-        ax.set_title(f"k={k}", fontsize=28, fontweight='bold')
+        ax.set_title(f"k={k}", fontsize=40, fontweight='bold')
         ax.set_xlabel('Layer', fontsize=24)
         ax.set_ylim(acc_min, acc_max)
         ax.grid(True, alpha=0.3)
         ax.tick_params(axis='both', labelsize=24)
-        ax.legend(fontsize=22, loc='upper left')
+        ax.legend(fontsize=33, loc='upper left')
 
     axes[0].set_ylabel('Accuracy', fontsize=24)
     fig.tight_layout(rect=[0, 0, 1, 0.96])
+
+    # Draw a dashed vertical separator between non-consecutive k values
+    for i in gap_after:
+        bbox_l = axes[i].get_position()
+        bbox_r = axes[i + 1].get_position()
+        x_sep = (bbox_l.x1 + bbox_r.x0) / 2
+        fig.add_artist(plt.Line2D(
+            [x_sep, x_sep], [0.03, 0.97],
+            transform=fig.transFigure,
+            color='gray', linestyle='--', linewidth=2, alpha=0.7,
+            clip_on=False,
+        ))
 
     filename = f"{'_'.join(filename_parts)}_accuracy.png"
     output_path = Path(output_dir) / filename
@@ -152,6 +166,14 @@ def main():
     parser.add_argument('--show-top5',  action='store_true', help='Plot top-5 validation accuracy')
     parser.add_argument('--acc-min', type=float, default=0.0, help='Y-axis lower bound (default: 0.0)')
     parser.add_argument('--acc-max', type=float, default=1.0, help='Y-axis upper bound (default: 1.0)')
+    parser.add_argument(
+        '--k-values',
+        nargs='+',
+        type=int,
+        default=None,
+        help='Which k values to include as subplots (default: all). '
+             'E.g. --k-values 1 2 3 8  A dashed separator is drawn between non-consecutive k values.',
+    )
 
     args = parser.parse_args()
 
@@ -186,7 +208,8 @@ def main():
                  show_train=args.show_train,
                  show_top5=args.show_top5,
                  acc_min=args.acc_min,
-                 acc_max=args.acc_max)
+                 acc_max=args.acc_max,
+                 k_values=args.k_values)
 
     print("Done!")
 
