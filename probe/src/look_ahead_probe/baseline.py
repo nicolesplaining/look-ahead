@@ -19,7 +19,7 @@ import argparse
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 import torch
 from tqdm import tqdm

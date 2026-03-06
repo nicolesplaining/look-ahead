@@ -26,7 +26,7 @@ else
     VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val.pt}"
 fi
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/probe/results/baselines}"
-MAX_K="${MAX_K:-3}"
+MAX_K=8
 
 if [ ! -f "$TRAIN_DATASET" ]; then
     echo "ERROR: Training dataset not found at $TRAIN_DATASET"
