@@ -7,6 +7,10 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 cd "$PROJECT_ROOT"
 
+# Use /workspace for HF model cache (root volume is tiny on RunPod)
+export HF_HOME="${HF_HOME:-/workspace/tmp/hf_cache}"
+mkdir -p "$HF_HOME"
+
 echo "============================================"
 echo "  Steering Experiment — Full Pipeline"
 echo "  $(date)"

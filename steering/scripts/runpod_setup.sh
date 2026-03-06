@@ -18,6 +18,11 @@ cd "$PROJECT_ROOT"
 
 echo "Working directory: $(pwd)"
 
+# ── Use /workspace for HF cache (root volume is tiny on RunPod) ──────────────
+export HF_HOME=/workspace/tmp/hf_cache
+mkdir -p "$HF_HOME"
+echo "HF_HOME=$HF_HOME"
+
 # ── Verify GPU ────────────────────────────────────────────────────────────────
 echo "GPU info:"
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || { echo "ERROR: no GPU found"; exit 1; }
