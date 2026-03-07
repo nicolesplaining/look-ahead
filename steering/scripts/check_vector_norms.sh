@@ -17,7 +17,8 @@ vectors_path = "$VECTORS_PATH"
 src, tgt = map(int, "$PAIR".split(","))
 stride = int("$STRIDE")
 
-v, _, meta = torch.load(vectors_path, weights_only=False)
+data = torch.load(vectors_path, weights_only=False)
+v, meta = data["vectors"], data["metadata"]
 pair = (src, tgt)
 
 if pair not in v:
