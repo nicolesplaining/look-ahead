@@ -7,17 +7,17 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "qwen3-32b-N500-T07-pos0-all-layers"
+RUN_NAME = "Qwen3-32B-N100-T07-Pos3-all-layers"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
-CLEAN_PROMPT   = "A rhyming couplet:\nShe felt a sudden sense of fear,\n"
-CORRUPT_PROMPT = "A rhyming couplet:\nShe felt a sudden sense of fright,\n"
+CLEAN_PROMPT   = "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that"
+CORRUPT_PROMPT = "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that"
 
-CLEAN_RHYME_WORD   = "fear"
-CORRUPT_RHYME_WORD = "fright"
+CLEAN_RHYME_WORD   = "fright"
+CORRUPT_RHYME_WORD = "fear"
 
-SAMPLING_N    = 500
+SAMPLING_N    = 100
 SAMPLING_TEMP = 0.7
 MAX_NEW_TOKENS = 12
 
@@ -26,7 +26,7 @@ MAX_NEW_TOKENS = 12
 # i=-2 → two tokens before, etc.
 # Note: Qwen may tokenize e.g. ",\n" as a single token; token boundaries are
 # resolved via the tokenizer's offset mapping, so this is always exact.
-PATCH_POSITION = 0
+PATCH_POSITION = 3
 
 # ── Rhyme Checking ─────────────────────────────────────────────────────────────
 
