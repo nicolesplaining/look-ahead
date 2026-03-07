@@ -62,7 +62,8 @@ def main():
     from .extract import get_layers
     n_layers = len(get_layers(model))
     layers = args.layers if args.layers is not None else list(range(n_layers))
-    print(f"Model: {n_layers} layers, hidden_size={model.config.hidden_size}")
+    from .extract import get_hidden_size
+    print(f"Model: {n_layers} layers, hidden_size={get_hidden_size(model)}")
     print(f"Sweeping {len(layers)} layers, context_window={args.context_window}")
 
     print("Extracting activations ...")
