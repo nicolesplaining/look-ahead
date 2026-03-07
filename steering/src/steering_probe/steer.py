@@ -19,13 +19,16 @@ def generate_baseline(
     prompt: str,
     max_new_tokens: int,
     device: str,
+    temperature: float = 0.0,
 ) -> str:
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
+    sample = temperature > 0.0
     with torch.no_grad():
         out = model.generate(
             inputs["input_ids"],
             max_new_tokens=max_new_tokens,
-            do_sample=False,
+            do_sample=sample,
+            temperature=temperature if sample else None,
             pad_token_id=tokenizer.eos_token_id,
         )
     new_ids = out[0, inputs["input_ids"].shape[1]:]
@@ -44,6 +47,7 @@ def generate_with_steering(
     max_new_tokens: int,
     device: str,
     newline_pos: Optional[int] = None,  # required when rel_pos <= 0
+    temperature: float = 0.0,
 ) -> str:
     """
     Generate the couplet completion with a steering vector injected at (layer, rel_pos).
@@ -102,12 +106,14 @@ def generate_with_steering(
     pre_h = model.model.layers[0].register_forward_pre_hook(_pre_hook)
     steer_h = model.model.layers[layer].register_forward_hook(_steer_hook)
 
+    sample = temperature > 0.0
     try:
         with torch.no_grad():
             out = model.generate(
                 input_ids,
                 max_new_tokens=max_new_tokens,
-                do_sample=False,
+                do_sample=sample,
+                temperature=temperature if sample else None,
                 pad_token_id=tokenizer.eos_token_id,
             )
     finally:
