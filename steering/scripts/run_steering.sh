@@ -16,7 +16,7 @@ DTYPE="${DTYPE:-bfloat16}"
 
 # Optional filters (space-separated lists); leave empty to use all
 LAYERS="${LAYERS:-}"           # e.g. "0 8 16 24"
-POSITIONS="${POSITIONS:-}"     # prompt positions, e.g. "-5 -3 -1 0"
+POSITIONS="${POSITIONS:--1 0}" # default: last word + newline token
 GEN_POSITIONS="${GEN_POSITIONS:-}"  # generation positions, e.g. "1 2 3"
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
 SOURCE="${SOURCE:-}"           # source scheme IDs, e.g. "0 1"
