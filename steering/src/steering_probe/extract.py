@@ -40,7 +40,7 @@ def extract_scheme_means(
         {scheme: {layer: {rel_pos: mean_tensor(hidden_dim)}}}
     where rel_pos in [-(context_window), ..., 0].
     """
-    n_layers = model.config.num_hidden_layers
+    n_layers = len(model.model.layers)
     if layers is None:
         layers = list(range(n_layers))
     hidden_dim = model.config.hidden_size

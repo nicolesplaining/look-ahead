@@ -59,7 +59,7 @@ def main():
     )
     model.eval()
 
-    n_layers = model.config.num_hidden_layers
+    n_layers = len(model.model.layers)
     layers = args.layers if args.layers is not None else list(range(n_layers))
     print(f"Model: {n_layers} layers, hidden_size={model.config.hidden_size}")
     print(f"Sweeping {len(layers)} layers, context_window={args.context_window}")
