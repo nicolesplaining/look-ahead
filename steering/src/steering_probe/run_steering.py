@@ -49,7 +49,7 @@ def parse_args():
     p.add_argument("--gen-vector-pos", type=int, default=0,
                    help="Which prompt position's vector to use for generation-position steering "
                         "(default: 0 = newline)")
-    p.add_argument("--alpha", type=float, default=20.0)
+    p.add_argument("--alpha", type=float, default=1.5)
     p.add_argument("--temperature", type=float, default=0.0,
                    help="Sampling temperature (0 = greedy)")
     p.add_argument("--n-samples", type=int, default=1,
@@ -136,15 +136,15 @@ def main():
 
         # Compute baseline once per source scheme
         print(f"\n--- Baseline for scheme {src} ---")
-        baseline_correct = sum(
-            evaluate_rhyme(
-                generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device, args.temperature),
-                scheme_keys[src],
-            )
-            for ex in src_examples
-            for _ in range(args.n_samples)
-            if scheme_keys[src]
-        )
+        baseline_gens = []
+        baseline_correct = 0
+        for ex in src_examples:
+            for _ in range(args.n_samples):
+                gen = generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device, args.temperature)
+                rhymes = bool(scheme_keys[src] and evaluate_rhyme(gen, scheme_keys[src]))
+                baseline_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
+                if rhymes:
+                    baseline_correct += 1
         baseline_pct = baseline_correct / (len(src_examples) * args.n_samples)
         print(f"  baseline rhyme% = {baseline_pct:.1%}")
 
@@ -173,6 +173,7 @@ def main():
                     vec = vectors[(src, tgt)][layer][rel_pos]
 
                     correct = 0
+                    steered_gens = []
                     for ex in src_examples:
                         toks = tokenizer(ex["text"], return_tensors="pt")["input_ids"][0]
                         npos = find_last_newline_pos(toks, newline_id)
@@ -184,14 +185,18 @@ def main():
                                 newline_pos=npos,
                                 temperature=args.temperature,
                             )
-                            if evaluate_rhyme(gen, scheme_keys[tgt]):
+                            rhymes = evaluate_rhyme(gen, scheme_keys[tgt])
+                            steered_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
+                            if rhymes:
                                 correct += 1
 
                     steered_pct = correct / (len(src_examples) * args.n_samples)
                     results[str(src)][str(tgt)][str(layer)][str(rel_pos)] = {
                         "steered_rhyme_pct": steered_pct,
                         "baseline_rhyme_pct": baseline_pct,
-                        "n": len(src_examples),
+                        "n": len(src_examples) * args.n_samples,
+                        "baseline_gens": baseline_gens,
+                        "steered_gens": steered_gens,
                     }
                     print(f"    layer={layer:3d}  pos={rel_pos:4d}  "
                           f"steered={steered_pct:.1%}  baseline={baseline_pct:.1%}")
@@ -209,6 +214,7 @@ def main():
                     vec = vectors[(src, tgt)][layer][args.gen_vector_pos]
 
                     correct = 0
+                    steered_gens = []
                     for ex in src_examples:
                         for _ in range(args.n_samples):
                             gen = generate_with_steering(
@@ -218,7 +224,9 @@ def main():
                                 newline_pos=None,  # not needed for gen positions
                                 temperature=args.temperature,
                             )
-                            if evaluate_rhyme(gen, scheme_keys[tgt]):
+                            rhymes = evaluate_rhyme(gen, scheme_keys[tgt])
+                            steered_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
+                            if rhymes:
                                 correct += 1
 
                     steered_pct = correct / (len(src_examples) * args.n_samples)
@@ -228,8 +236,10 @@ def main():
                     results[str(src)][str(tgt)][lkey][str(gen_pos)] = {
                         "steered_rhyme_pct": steered_pct,
                         "baseline_rhyme_pct": baseline_pct,
-                        "n": len(src_examples),
+                        "n": len(src_examples) * args.n_samples,
                         "gen_vector_pos": args.gen_vector_pos,
+                        "baseline_gens": baseline_gens,
+                        "steered_gens": steered_gens,
                     }
                     print(f"    layer={layer:3d}  gen_pos={gen_pos:3d}  "
                           f"steered={steered_pct:.1%}  baseline={baseline_pct:.1%}")
