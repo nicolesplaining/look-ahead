@@ -127,7 +127,17 @@ def _try_generate(
     if newline2_pos is None or newline2_pos == prompt_length:
         return None
 
-    return generated_ids, newline2_pos - 1  # target_seq_pos
+    # Scan backwards past punctuation to find the last alphabetic token
+    target_seq_pos = newline2_pos - 1
+    while target_seq_pos > prompt_length:
+        decoded = tokenizer.decode([generated_ids[0, target_seq_pos].item()])
+        if any(c.isalpha() for c in decoded):
+            break
+        target_seq_pos -= 1
+    else:
+        return None  # second line has no alphabetic token
+
+    return generated_ids, target_seq_pos
 
 
 def extract_poem_activations(
