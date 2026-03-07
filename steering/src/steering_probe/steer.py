@@ -29,7 +29,8 @@ def generate_baseline(
             pad_token_id=tokenizer.eos_token_id,
         )
     new_ids = out[0, inputs["input_ids"].shape[1]:]
-    return tokenizer.decode(new_ids, skip_special_tokens=True)
+    text = tokenizer.decode(new_ids, skip_special_tokens=True)
+    return text.split("\n")[0]
 
 
 def generate_with_steering(
@@ -114,4 +115,5 @@ def generate_with_steering(
         steer_h.remove()
 
     new_ids = out[0, input_ids.shape[1]:]
-    return tokenizer.decode(new_ids, skip_special_tokens=True)
+    text = tokenizer.decode(new_ids, skip_special_tokens=True)
+    return text.split("\n")[0]
