@@ -4,10 +4,11 @@ import torch
 import pronouncing
 from typing import Optional
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from tqdm import tqdm
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-RUN_NAME = "Qwen3-32B-N100-T07-Pos3-all-layers"
+RUN_NAME = "Qwen3-32B-N100-T07-all-layers"
 
 MODEL_NAME = "Qwen/Qwen3-32B"
 
@@ -21,12 +22,8 @@ SAMPLING_N    = 100
 SAMPLING_TEMP = 0.7
 MAX_NEW_TOKENS = 12
 
-# Position to patch (relative to the second newline token, which is i=0).
-# i=-1 → one token before the second newline (e.g. the rhyme word / punctuation)
-# i=-2 → two tokens before, etc.
-# Note: Qwen may tokenize e.g. ",\n" as a single token; token boundaries are
-# resolved via the tokenizer's offset mapping, so this is always exact.
-PATCH_POSITION = 3
+# Sweep over "fear,\nand hoped that"
+POSITIONS = [-1, 0, 1, 2, 3]
 
 # ── Rhyme Checking ─────────────────────────────────────────────────────────────
 
@@ -105,8 +102,8 @@ def generate_text(model, tokenizer, prompt: str, temperature: float) -> str:
         )
     return tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
-def sample_completions(model, tokenizer, prompt: str, n: int, temperature: float) -> list[str]:
-    return [generate_text(model, tokenizer, prompt, temperature) for _ in range(n)]
+def sample_completions(model, tokenizer, prompt: str, n: int, temperature: float, desc: str = "Sampling") -> list[str]:
+    return [generate_text(model, tokenizer, prompt, temperature) for _ in tqdm(range(n), desc=desc)]
 
 # ── Activation Caching ──────────────────────────────────────────────────────────
 
@@ -181,12 +178,7 @@ def run_experiment():
     model, tokenizer = load_model()
     n_layers = model.config.num_hidden_layers
 
-    # --- Resolve patch position via tokenizer offset mapping ---
-    abs_patch_pos, patch_token, second_nl_tok = resolve_patch_pos(
-        CLEAN_PROMPT, tokenizer, PATCH_POSITION
-    )
-    patch_label = f"i={PATCH_POSITION:+d} (abs={abs_patch_pos}, tok={repr(patch_token)})"
-
+    # --- Tokenize & resolve all positions up front ---
     clean_ids   = tokenizer(CLEAN_PROMPT,   return_tensors="pt").input_ids
     corrupt_ids = tokenizer(CORRUPT_PROMPT, return_tensors="pt").input_ids
     clean_seq_len   = clean_ids.shape[1]
@@ -194,16 +186,23 @@ def run_experiment():
     if clean_seq_len != corrupt_seq_len:
         print(f"\nWARNING: token length mismatch ({clean_seq_len} vs {corrupt_seq_len})")
 
+    resolved = []
+    for pos in POSITIONS:
+        abs_pos, tok_str, second_nl_tok = resolve_patch_pos(CLEAN_PROMPT, tokenizer, pos)
+        resolved.append((pos, abs_pos, tok_str))
+    _, _, second_nl_tok = resolve_patch_pos(CLEAN_PROMPT, tokenizer, 0)
+
     print(f"\nSecond newline token: abs_pos={second_nl_tok} (i=0)")
-    print(f"Patch position: {patch_label}")
     print(f"Patch direction: corrupt → clean, ALL {n_layers} layers simultaneously")
+    print(f"Positions to sweep: {POSITIONS}")
     print(f"N={SAMPLING_N}, T={SAMPLING_TEMP}")
 
     print(f"\nClean prompt tokens:")
+    patch_abs_set = {abs_pos for _, abs_pos, _ in resolved}
     for idx, tok_id in enumerate(clean_ids[0].tolist()):
         offset = idx - second_nl_tok
-        marker = " ← patch target" if idx == abs_patch_pos else ""
-        if idx == second_nl_tok and idx != abs_patch_pos:
+        marker = " ← patch target" if idx in patch_abs_set else ""
+        if idx == second_nl_tok and idx not in patch_abs_set:
             marker = " ← i=0 (2nd newline)"
         print(f"  abs={idx:2d}  i={offset:+3d}  {repr(tokenizer.decode([tok_id]))}{marker}")
 
@@ -218,9 +217,9 @@ def run_experiment():
     print(f"\nClean ends with:   '{clean_end}' — rhymes with '{CLEAN_RHYME_WORD}'?   {_rhyme_score(clean_end,   CLEAN_RHYME_WORD)}")
     print(f"Corrupt ends with: '{corrupt_end}' — rhymes with '{CORRUPT_RHYME_WORD}'? {_rhyme_score(corrupt_end, CORRUPT_RHYME_WORD)}")
 
-    # ── Group 1: Baseline (unpatched clean run) ────────────────────────────────
-    print(f"\n── Group 1: Unpatched Clean Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-    baseline_completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+    # ── Group 0: Baseline (unpatched clean run) ────────────────────────────────
+    print(f"\n── Group 0 (baseline): Unpatched clean run ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
+    baseline_completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP, desc="Group 0 (baseline)")
     baseline_clean_rate   = rhyme_rate(baseline_completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
     baseline_corrupt_rate = rhyme_rate(baseline_completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
     print(f"  Rhymes with '{CLEAN_RHYME_WORD}'   (expected high): {baseline_clean_rate:.3f}")
@@ -230,27 +229,49 @@ def run_experiment():
     print("\nCaching corrupt activations...")
     corrupt_hs = cache_hidden_states(model, tokenizer, CORRUPT_PROMPT)
 
-    # ── Group 2: All layers patched simultaneously at PATCH_POSITION ───────────
-    print(f"\n── Group 2: All {n_layers} layers patched at {patch_label} ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-    handles = []
-    for layer in range(n_layers):
-        patch_vec = corrupt_hs[layer][:, abs_patch_pos, :].clone()
-        handle = model.model.layers[layer].register_forward_pre_hook(
-            make_patch_hook(patch_vec, abs_patch_pos)
-        )
-        handles.append(handle)
+    # ── Groups 1…N: one per position in POSITIONS ─────────────────────────────
+    position_results = []
 
-    try:
-        patched_completions = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-        patched_clean_rate   = rhyme_rate(patched_completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
-        patched_corrupt_rate = rhyme_rate(patched_completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
-    finally:
-        for h in handles:
-            h.remove()
+    for group_idx, (pos_offset, abs_patch_pos, patch_token) in enumerate(resolved, start=1):
+        patch_label = f"i={pos_offset:+d} (abs={abs_patch_pos}, tok={repr(patch_token)})"
+        print(f"\n── Group {group_idx}: All {n_layers} layers patched at {patch_label} ({SAMPLING_N} samples) ──")
 
-    delta = patched_corrupt_rate - baseline_corrupt_rate
-    print(f"  Rhymes with '{CLEAN_RHYME_WORD}'   (expect drop):  {patched_clean_rate:.3f}  (baseline: {baseline_clean_rate:.3f})")
-    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expect rise):  {patched_corrupt_rate:.3f}  (baseline: {baseline_corrupt_rate:.3f}, delta: {delta:+.3f})")
+        handles = []
+        for layer in range(n_layers):
+            patch_vec = corrupt_hs[layer][:, abs_patch_pos, :].clone()
+            handle = model.model.layers[layer].register_forward_pre_hook(
+                make_patch_hook(patch_vec, abs_patch_pos)
+            )
+            handles.append(handle)
+
+        try:
+            completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP, desc=f"Group {group_idx} i={pos_offset:+d}")
+            clean_rate   = rhyme_rate(completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
+            corrupt_rate = rhyme_rate(completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
+        finally:
+            for h in handles:
+                h.remove()
+
+        delta = corrupt_rate - baseline_corrupt_rate
+        print(f"  Rhymes with '{CLEAN_RHYME_WORD}'   (expect drop):  {clean_rate:.3f}  (baseline: {baseline_clean_rate:.3f})")
+        print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expect rise):  {corrupt_rate:.3f}  (baseline: {baseline_corrupt_rate:.3f}, delta: {delta:+.3f})")
+
+        position_results.append({
+            "group":              group_idx,
+            "position_offset":    pos_offset,
+            "abs_patch_pos":      abs_patch_pos,
+            "patch_token":        patch_token,
+            "completions":        completions,
+            "clean_rhyme_rate":   clean_rate,
+            "corrupt_rhyme_rate": corrupt_rate,
+            "delta_corrupt_rate": delta,
+        })
+
+    # --- Summary ---
+    print(f"\n── Summary ──")
+    for r in position_results:
+        print(f"  i={r['position_offset']:+d} tok={repr(r['patch_token']):12s}  "
+              f"corrupt_rate={r['corrupt_rhyme_rate']:.3f}  delta={r['delta_corrupt_rate']:+.3f}")
 
     # --- Save JSON ---
     results_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
@@ -263,11 +284,9 @@ def run_experiment():
             "run_name":           RUN_NAME,
             "model_name":         MODEL_NAME,
             "patch_direction":    "corrupt→clean",
-            "patch_mode":         "single_position_all_layers_simultaneous",
-            "patch_position":     PATCH_POSITION,
+            "patch_mode":         "position_sweep_all_layers_simultaneous",
+            "positions":          POSITIONS,
             "second_nl_tok":      second_nl_tok,
-            "abs_patch_pos":      abs_patch_pos,
-            "patch_token":        patch_token,
             "clean_seq_len":      clean_seq_len,
             "corrupt_seq_len":    corrupt_seq_len,
             "n_layers":           n_layers,
@@ -279,18 +298,13 @@ def run_experiment():
             "clean_rhyme_word":   CLEAN_RHYME_WORD,
             "corrupt_rhyme_word": CORRUPT_RHYME_WORD,
             "baseline": {
-                "clean_completion":                   clean_completion,
-                "corrupt_completion":                 corrupt_completion,
-                "completions":                        baseline_completions,
-                "clean_rhyme_rate":                   baseline_clean_rate,
-                "corrupt_rhyme_rate":                 baseline_corrupt_rate,
+                "clean_completion":   clean_completion,
+                "corrupt_completion": corrupt_completion,
+                "completions":        baseline_completions,
+                "clean_rhyme_rate":   baseline_clean_rate,
+                "corrupt_rhyme_rate": baseline_corrupt_rate,
             },
-            "patched": {
-                "completions":       patched_completions,
-                "clean_rhyme_rate":  patched_clean_rate,
-                "corrupt_rhyme_rate": patched_corrupt_rate,
-                "delta_corrupt_rate": delta,
-            },
+            "position_results": position_results,
         }, f, indent=2)
     print(f"\nGenerations saved to {json_path}")
 
