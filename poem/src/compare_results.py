@@ -88,7 +88,7 @@ def main():
             print(f"ERROR: {name} count ({len(lst)}) must match number of JSONs ({n})")
             sys.exit(1)
 
-    fig, ax = plt.subplots(figsize=(20, 6))
+    fig, ax = plt.subplots(figsize=(10, 6))
     plotted = False
 
     for path, label, color, ls in zip(args.result_jsons, labels, colors, linestyles):
@@ -106,10 +106,8 @@ def main():
         print("ERROR: no data to plot")
         sys.exit(1)
 
-    title = args.title or metric_label
     ax.set_xlabel('Layer', fontsize=24)
     ax.set_ylabel('Accuracy', fontsize=24)
-    ax.set_title(title, fontsize=28, fontweight='bold')
     ax.set_ylim(args.acc_min, args.acc_max)
     ax.grid(True, alpha=0.3)
     ax.tick_params(axis='both', labelsize=24)
