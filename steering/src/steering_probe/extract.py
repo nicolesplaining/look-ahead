@@ -34,6 +34,19 @@ def get_layers(model) -> torch.nn.ModuleList:
     )
 
 
+def get_hidden_size(model) -> int:
+    """Return the hidden dimension for any supported architecture."""
+    cfg = model.config
+    if hasattr(cfg, "hidden_size"):
+        return cfg.hidden_size
+    # Gemma3ForConditionalGeneration: text config is nested
+    if hasattr(cfg, "text_config") and hasattr(cfg.text_config, "hidden_size"):
+        return cfg.text_config.hidden_size
+    # Fallback: infer from the actual layer weights
+    layers = get_layers(model)
+    return next(iter(layers[0].parameters())).shape[-1]
+
+
 def get_newline_token_id(tokenizer: PreTrainedTokenizerBase) -> int:
     ids = tokenizer.encode("\n", add_special_tokens=False)
     return ids[-1]
@@ -66,7 +79,7 @@ def extract_scheme_means(
     n_layers = len(get_layers(model))
     if layers is None:
         layers = list(range(n_layers))
-    hidden_dim = model.config.hidden_size
+    hidden_dim = get_hidden_size(model)
     newline_id = get_newline_token_id(tokenizer)
 
     # Accumulators: scheme -> layer -> rel_pos -> (sum, count)
