@@ -32,6 +32,7 @@ from collections import defaultdict
 from typing import Dict, List, Optional
 
 import torch
+from tqdm import tqdm
 
 
 def parse_args():
@@ -128,6 +129,20 @@ def main():
 
     results: dict = {}
 
+    # --- pre-compute total generation count for progress bar ---
+    valid_pairs = [
+        (s, t) for s in src_schemes for t in tgt_schemes
+        if s != t and (s, t) in vectors and scheme_keys.get(t) is not None
+    ]
+    n_src_examples = {s: len(by_scheme[s]) for s in src_schemes}
+    n_baseline = sum(n_src_examples[s] for s in src_schemes) * args.n_samples
+    n_steered = (
+        len(valid_pairs) * len(layers) *
+        (len(prompt_positions) + len(gen_positions)) *
+        max(n_src_examples.values(), default=1) * args.n_samples
+    )
+    pbar = tqdm(total=n_baseline + n_steered, desc="generations", unit="gen", dynamic_ncols=True)
+
     for src in src_schemes:
         results[str(src)] = {}
         src_examples = by_scheme[src]
@@ -141,6 +156,7 @@ def main():
         for ex in src_examples:
             for _ in range(args.n_samples):
                 gen = generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device, args.temperature)
+                pbar.update(1)
                 rhymes = bool(scheme_keys[src] and evaluate_rhyme(gen, scheme_keys[src]))
                 baseline_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
                 if rhymes:
@@ -185,6 +201,7 @@ def main():
                                 newline_pos=npos,
                                 temperature=args.temperature,
                             )
+                            pbar.update(1)
                             rhymes = evaluate_rhyme(gen, scheme_keys[tgt])
                             steered_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
                             if rhymes:
@@ -224,6 +241,7 @@ def main():
                                 newline_pos=None,  # not needed for gen positions
                                 temperature=args.temperature,
                             )
+                            pbar.update(1)
                             rhymes = evaluate_rhyme(gen, scheme_keys[tgt])
                             steered_gens.append({"prompt": ex["text"], "gen": gen, "rhymes": rhymes})
                             if rhymes:
@@ -243,6 +261,8 @@ def main():
                     }
                     print(f"    layer={layer:3d}  gen_pos={gen_pos:3d}  "
                           f"steered={steered_pct:.1%}  baseline={baseline_pct:.1%}")
+
+    pbar.close()
 
     # --- save ---
     os.makedirs(args.output_dir, exist_ok=True)
