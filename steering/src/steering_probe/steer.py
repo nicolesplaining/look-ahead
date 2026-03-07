@@ -10,7 +10,7 @@ import torch
 from typing import Optional
 from transformers import PreTrainedModel, PreTrainedTokenizerBase
 
-from .extract import find_last_newline_pos, get_newline_token_id
+from .extract import find_last_newline_pos, get_newline_token_id, get_layers
 
 
 def generate_baseline(
@@ -103,8 +103,9 @@ def generate_with_steering(
         return output
 
     # Register on layer 0 (pre-hook for step tracking) and target layer (steer hook)
-    pre_h = model.model.layers[0].register_forward_pre_hook(_pre_hook)
-    steer_h = model.model.layers[layer].register_forward_hook(_steer_hook)
+    layers_list = get_layers(model)
+    pre_h = layers_list[0].register_forward_pre_hook(_pre_hook)
+    steer_h = layers_list[layer].register_forward_hook(_steer_hook)
 
     sample = temperature > 0.0
     try:

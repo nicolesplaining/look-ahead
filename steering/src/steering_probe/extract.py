@@ -11,6 +11,22 @@ from typing import Dict, List, Optional
 from transformers import PreTrainedModel, PreTrainedTokenizerBase
 
 
+def get_layers(model) -> torch.nn.ModuleList:
+    """Return the transformer decoder layers for any supported architecture."""
+    # Standard path: Qwen, Llama, Gemma2, Gemma3 text-only
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        return model.model.layers
+    # Gemma3 VLM loaded via AutoModelForCausalLM
+    if hasattr(model, "language_model"):
+        lm = model.language_model
+        if hasattr(lm, "model") and hasattr(lm.model, "layers"):
+            return lm.model.layers
+    raise AttributeError(
+        f"Cannot find transformer layers for {type(model).__name__}. "
+        "Expected model.model.layers or model.language_model.model.layers."
+    )
+
+
 def get_newline_token_id(tokenizer: PreTrainedTokenizerBase) -> int:
     ids = tokenizer.encode("\n", add_special_tokens=False)
     return ids[-1]
@@ -40,7 +56,7 @@ def extract_scheme_means(
         {scheme: {layer: {rel_pos: mean_tensor(hidden_dim)}}}
     where rel_pos in [-(context_window), ..., 0].
     """
-    n_layers = len(model.model.layers)
+    n_layers = len(get_layers(model))
     if layers is None:
         layers = list(range(n_layers))
     hidden_dim = model.config.hidden_size
@@ -69,7 +85,7 @@ def extract_scheme_means(
                     hs = output[0] if isinstance(output, tuple) else output
                     captured[layer_idx] = hs[0].detach().float().cpu()  # (seq_len, d)
                 return _hook
-            hooks.append(model.model.layers[l].register_forward_hook(_make_hook(l)))
+            hooks.append(get_layers(model)[l].register_forward_hook(_make_hook(l)))
 
         with torch.no_grad():
             model(**inputs)
