@@ -13,17 +13,24 @@ from transformers import PreTrainedModel, PreTrainedTokenizerBase
 
 def get_layers(model) -> torch.nn.ModuleList:
     """Return the transformer decoder layers for any supported architecture."""
-    # Standard path: Qwen, Llama, Gemma2, Gemma3 text-only
+    # Standard path: Qwen, Llama, Gemma2, Gemma3ForCausalLM
     if hasattr(model, "model") and hasattr(model.model, "layers"):
         return model.model.layers
-    # Gemma3 VLM loaded via AutoModelForCausalLM
+    # Gemma3ForConditionalGeneration: model.model.text_model.layers
+    if (hasattr(model, "model") and hasattr(model.model, "text_model")
+            and hasattr(model.model.text_model, "layers")):
+        return model.model.text_model.layers
+    # Fallback: language_model.model.layers or language_model.layers
     if hasattr(model, "language_model"):
         lm = model.language_model
         if hasattr(lm, "model") and hasattr(lm.model, "layers"):
             return lm.model.layers
+        if hasattr(lm, "layers"):
+            return lm.layers
     raise AttributeError(
         f"Cannot find transformer layers for {type(model).__name__}. "
-        "Expected model.model.layers or model.language_model.model.layers."
+        "Tried: model.model.layers, model.model.text_model.layers, "
+        "model.language_model.model.layers, model.language_model.layers."
     )
 
 
