@@ -19,8 +19,8 @@ LAYERS="${LAYERS:-}"           # e.g. "0 8 16 24"
 POSITIONS="${POSITIONS:--1 0}" # default: last word + newline token
 GEN_POSITIONS="${GEN_POSITIONS:-}"  # generation positions, e.g. "1 2 3"
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
-SOURCE="${SOURCE:-}"           # source scheme IDs, e.g. "0 1"
-TARGET="${TARGET:-}"           # target scheme IDs, e.g. "2 3"
+SOURCE="${SOURCE:-0 1 2 3 4}"  # source schemes (half of 10)
+TARGET="${TARGET:-5 6 7 8 9}"  # target schemes (other half) → 25 pairs total
 
 # Forward extra CLI args
 EXTRA_ARGS=("$@")
