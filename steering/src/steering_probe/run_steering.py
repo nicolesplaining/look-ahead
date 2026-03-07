@@ -50,6 +50,10 @@ def parse_args():
                    help="Which prompt position's vector to use for generation-position steering "
                         "(default: 0 = newline)")
     p.add_argument("--alpha", type=float, default=20.0)
+    p.add_argument("--temperature", type=float, default=0.0,
+                   help="Sampling temperature (0 = greedy)")
+    p.add_argument("--n-samples", type=int, default=1,
+                   help="Samples per example; rhyme accuracy = mean across samples")
     p.add_argument("--max-new-tokens", type=int, default=20)
     p.add_argument("--source", nargs="+", type=int, default=None,
                    help="Source scheme IDs (default: all)")
@@ -134,13 +138,14 @@ def main():
         print(f"\n--- Baseline for scheme {src} ---")
         baseline_correct = sum(
             evaluate_rhyme(
-                generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device),
+                generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device, args.temperature),
                 scheme_keys[src],
             )
             for ex in src_examples
+            for _ in range(args.n_samples)
             if scheme_keys[src]
         )
-        baseline_pct = baseline_correct / len(src_examples)
+        baseline_pct = baseline_correct / (len(src_examples) * args.n_samples)
         print(f"  baseline rhyme% = {baseline_pct:.1%}")
 
         for tgt in tgt_schemes:
@@ -171,16 +176,18 @@ def main():
                     for ex in src_examples:
                         toks = tokenizer(ex["text"], return_tensors="pt")["input_ids"][0]
                         npos = find_last_newline_pos(toks, newline_id)
-                        gen = generate_with_steering(
-                            model, tokenizer, ex["text"],
-                            vec, layer, rel_pos, args.alpha,
-                            args.max_new_tokens, args.device,
-                            newline_pos=npos,
-                        )
-                        if evaluate_rhyme(gen, scheme_keys[tgt]):
-                            correct += 1
+                        for _ in range(args.n_samples):
+                            gen = generate_with_steering(
+                                model, tokenizer, ex["text"],
+                                vec, layer, rel_pos, args.alpha,
+                                args.max_new_tokens, args.device,
+                                newline_pos=npos,
+                                temperature=args.temperature,
+                            )
+                            if evaluate_rhyme(gen, scheme_keys[tgt]):
+                                correct += 1
 
-                    steered_pct = correct / len(src_examples)
+                    steered_pct = correct / (len(src_examples) * args.n_samples)
                     results[str(src)][str(tgt)][str(layer)][str(rel_pos)] = {
                         "steered_rhyme_pct": steered_pct,
                         "baseline_rhyme_pct": baseline_pct,
@@ -203,16 +210,18 @@ def main():
 
                     correct = 0
                     for ex in src_examples:
-                        gen = generate_with_steering(
-                            model, tokenizer, ex["text"],
-                            vec, layer, gen_pos, args.alpha,
-                            args.max_new_tokens, args.device,
-                            newline_pos=None,  # not needed for gen positions
-                        )
-                        if evaluate_rhyme(gen, scheme_keys[tgt]):
-                            correct += 1
+                        for _ in range(args.n_samples):
+                            gen = generate_with_steering(
+                                model, tokenizer, ex["text"],
+                                vec, layer, gen_pos, args.alpha,
+                                args.max_new_tokens, args.device,
+                                newline_pos=None,  # not needed for gen positions
+                                temperature=args.temperature,
+                            )
+                            if evaluate_rhyme(gen, scheme_keys[tgt]):
+                                correct += 1
 
-                    steered_pct = correct / len(src_examples)
+                    steered_pct = correct / (len(src_examples) * args.n_samples)
                     lkey = str(layer)
                     if lkey not in results[str(src)][str(tgt)]:
                         results[str(src)][str(tgt)][lkey] = {}

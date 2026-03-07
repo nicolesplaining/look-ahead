@@ -10,6 +10,8 @@ VECTORS_PATH="${VECTORS_PATH:-$PROJECT_ROOT/steering/results/steering_vectors.pt
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-val.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
 ALPHA="${ALPHA:-20.0}"
+TEMPERATURE="${TEMPERATURE:-0.0}"
+N_SAMPLES="${N_SAMPLES:-1}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-20}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
@@ -59,6 +61,8 @@ python -m steering_probe.run_steering \
     --data-path      "$DATA_PATH" \
     --output-dir     "$OUTPUT_DIR" \
     --alpha          "$ALPHA" \
+    --temperature    "$TEMPERATURE" \
+    --n-samples      "$N_SAMPLES" \
     --max-new-tokens "$MAX_NEW_TOKENS" \
     --gen-vector-pos "$GEN_VECTOR_POS" \
     --device         "$DEVICE" \
