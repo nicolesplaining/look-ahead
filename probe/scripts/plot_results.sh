@@ -19,7 +19,7 @@ export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Gemma-3-27B}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
-ACC_MAX=1
+ACC_MAX=0.65
 K_VALUES="1 2 3 8"   # empty = all k values; e.g. "1 2 3 8"
 
 mkdir -p "$OUTPUT_DIR"
@@ -53,7 +53,7 @@ python -m look_ahead_probe.visualize_results \
     "${JSONS[@]}" \
     --labels "${LABELS[@]}" \
     --colors "${COLORS[@]}" \
-    --show-val \
+    --show-top5 \
     --acc-min "$ACC_MIN" \
     --acc-max "$ACC_MAX" \
     --output-dir "$OUTPUT_DIR" \
