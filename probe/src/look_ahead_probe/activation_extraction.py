@@ -7,6 +7,40 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
 
+def _text_cfg(model):
+    """Return the text config for any supported architecture."""
+    cfg = model.config
+    if hasattr(cfg, "text_config"):  # Gemma3ForConditionalGeneration
+        return cfg.text_config
+    return cfg
+
+
+def get_n_layers(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "num_hidden_layers"):
+        return cfg.num_hidden_layers
+    # Fallback: count actual layers
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        return len(model.model.layers)
+    if hasattr(model, "model") and hasattr(model.model, "text_model"):
+        return len(model.model.text_model.layers)
+    raise AttributeError(f"Cannot determine n_layers for {type(model).__name__}")
+
+
+def get_hidden_size(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "hidden_size"):
+        return cfg.hidden_size
+    raise AttributeError(f"Cannot determine hidden_size for {type(model).__name__}")
+
+
+def get_vocab_size(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "vocab_size"):
+        return cfg.vocab_size
+    raise AttributeError(f"Cannot determine vocab_size for {type(model).__name__}")
+
+
 def generate_and_extract_all_layers(
     model: AutoModelForCausalLM,
     tokenizer: AutoTokenizer,
@@ -44,7 +78,7 @@ def generate_and_extract_all_layers(
         generated_texts: List of generated strings
         generated_token_ids: List[List[int]] raw token IDs (no decode/re-encode roundtrip)
     """
-    n_layers = model.config.num_hidden_layers
+    n_layers = get_n_layers(model)
     if layers is None:
         layers = list(range(n_layers))
 

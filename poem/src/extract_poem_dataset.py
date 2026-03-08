@@ -35,6 +35,51 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
 
+def _text_cfg(model):
+    """Return the text config for any supported architecture."""
+    cfg = model.config
+    if hasattr(cfg, "text_config"):  # Gemma3ForConditionalGeneration
+        return cfg.text_config
+    return cfg
+
+
+def _get_model_layers(model):
+    """Return the transformer decoder layer list for any supported architecture."""
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        return model.model.layers
+    if hasattr(model, "model") and hasattr(model.model, "text_model") \
+            and hasattr(model.model.text_model, "layers"):
+        return model.model.text_model.layers
+    if hasattr(model, "language_model"):
+        lm = model.language_model
+        if hasattr(lm, "model") and hasattr(lm.model, "layers"):
+            return lm.model.layers
+        if hasattr(lm, "layers"):
+            return lm.layers
+    raise AttributeError(f"Cannot find transformer layers for {type(model).__name__}")
+
+
+def get_n_layers(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "num_hidden_layers"):
+        return cfg.num_hidden_layers
+    return len(_get_model_layers(model))
+
+
+def get_hidden_size(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "hidden_size"):
+        return cfg.hidden_size
+    return next(iter(_get_model_layers(model)[0].parameters())).shape[-1]
+
+
+def get_vocab_size(model) -> int:
+    cfg = _text_cfg(model)
+    if hasattr(cfg, "vocab_size"):
+        return cfg.vocab_size
+    raise AttributeError(f"Cannot find vocab_size for {type(model).__name__}")
+
+
 def load_poem_prompts(jsonl_path: str, max_prompts: Optional[int] = None) -> List[str]:
     prompts = []
     with open(jsonl_path, 'r') as f:
@@ -82,7 +127,17 @@ def _try_generate(
     if newline2_pos is None or newline2_pos == prompt_length:
         return None
 
-    return generated_ids, newline2_pos - 1  # target_seq_pos
+    # Scan backwards past punctuation to find the last alphabetic token
+    target_seq_pos = newline2_pos - 1
+    while target_seq_pos > prompt_length:
+        decoded = tokenizer.decode([generated_ids[0, target_seq_pos].item()])
+        if any(c.isalpha() for c in decoded):
+            break
+        target_seq_pos -= 1
+    else:
+        return None  # second line has no alphabetic token
+
+    return generated_ids, target_seq_pos
 
 
 def extract_poem_activations(
@@ -110,7 +165,7 @@ def extract_poem_activations(
         generated_texts:   List[str]   one entry per kept poem
     """
     if layers is None:
-        layers = list(range(model.config.num_hidden_layers))
+        layers = list(range(get_n_layers(model)))
 
     layer_act_chunks = {layer_idx: [] for layer_idx in layers}
     layer_act_buf = {layer_idx: [] for layer_idx in layers}
@@ -228,13 +283,14 @@ def main():
     print(f"Loading model: {args.model_name}")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        torch_dtype=torch.bfloat16,
-    ).to(args.device)
+        dtype=torch.bfloat16,
+        device_map=args.device,
+    )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
     print(f"✓ {args.model_name} "
-          f"(layers={model.config.num_hidden_layers}, d_model={model.config.hidden_size})\n")
+          f"(layers={get_n_layers(model)}, d_model={get_hidden_size(model)})\n")
 
     print("Loading poems...")
     prompts = load_poem_prompts(args.poems_path, max_prompts=args.max_prompts)
@@ -266,9 +322,9 @@ def main():
         'max_back': args.max_back,
         'n_poems': len(generated_texts),
         'n_samples': len(targets),
-        'd_model': model.config.hidden_size,
-        'vocab_size': model.config.vocab_size,
-        'layers': layers if layers is not None else list(range(model.config.num_hidden_layers)),
+        'd_model': get_hidden_size(model),
+        'vocab_size': get_vocab_size(model),
+        'layers': layers if layers is not None else list(range(get_n_layers(model))),
         'task': 'poem_rhyme_prediction_i_indexed',
         'i_range': [i_min, i_max],
     }

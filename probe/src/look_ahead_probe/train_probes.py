@@ -21,8 +21,8 @@ def main():
                         help="Path to activations_train.pt")
     parser.add_argument("--val_dataset", type=str, default=None,
                         help="Path to activations_val.pt (optional)")
-    parser.add_argument("--max_k", type=int, required=True,
-                        help="Maximum lookahead distance")
+    parser.add_argument("--k_values", type=str, required=True,
+                        help="Space- or comma-separated list of lookahead distances, e.g. '1 2 3 8'")
     parser.add_argument("--output_dir", type=str, required=True,
                         help="Output directory for probes and results")
     parser.add_argument("--layers", type=str, default=None,
@@ -39,6 +39,9 @@ def main():
                         default="cuda" if torch.cuda.is_available() else "cpu")
 
     args = parser.parse_args()
+
+    # Parse k_values: accept space- or comma-separated integers
+    k_values = [int(x) for x in args.k_values.replace(',', ' ').split()]
 
     layers = None
     if args.layers is not None:
@@ -58,14 +61,14 @@ def main():
     print("=" * 80)
     print(f"Train dataset: {args.train_dataset}")
     print(f"Val dataset:   {args.val_dataset or '(none)'}")
-    print(f"K range:       1 to {args.max_k}")
+    print(f"K values:      {k_values}")
     print(f"Probe type:    {args.probe_type}")
     print(f"Output dir:    {args.output_dir}")
     print("=" * 80)
 
     all_results = {}
 
-    for k in range(1, args.max_k + 1):
+    for k in k_values:
         print(f"\n{'='*80}")
         print(f"Training probes for k={k}")
         print(f"{'='*80}")
@@ -119,7 +122,7 @@ def main():
             'model_name': metadata.get('model_name', 'unknown'),
             'train_dataset': args.train_dataset,
             'val_dataset': args.val_dataset,
-            'max_k': args.max_k,
+            'k_values': k_values,
             'probe_type': args.probe_type,
             'num_epochs': args.num_epochs,
             'batch_size': args.batch_size,
