@@ -19,9 +19,9 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_BASE=$PROJECT_ROOT/poem/results/qwen3-32B-all
-OUTPUT_DIR=$PROJECT_ROOT/poem/results/qwen3-32B-all/plots
-METRIC=rhyme5
+RESULTS_BASE=$PROJECT_ROOT/poem/results/experiment_results_linear
+OUTPUT_DIR=$PROJECT_ROOT/poem/results/experiment_results_linear/plots
+METRIC=rhyme
 ACC_MIN=0
 ACC_MAX=1
 
