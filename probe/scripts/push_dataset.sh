@@ -33,7 +33,7 @@ api.create_repo("${HF_REPO}", repo_type="dataset", exist_ok=True, private=True)
 
 api.upload_file(
     path_or_fileobj="${TRAIN_PT}",
-    path_in_repo="probe/activations_train.pt",
+    path_in_repo="probe/gemma/activations_train.pt",
     repo_id="${HF_REPO}",
     repo_type="dataset",
 )
@@ -46,7 +46,7 @@ from huggingface_hub import HfApi
 api = HfApi()
 api.upload_file(
     path_or_fileobj="${VAL_PT}",
-    path_in_repo="probe/activations_val.pt",
+    path_in_repo="probe/gemma/activations_val.pt",
     repo_id="${HF_REPO}",
     repo_type="dataset",
 )

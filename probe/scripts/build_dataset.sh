@@ -13,7 +13,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-MODEL_NAME=Qwen/Qwen3-32B
+MODEL_NAME=google/gemma-3-27b-it
 MAX_K=8
 MAX_NEW_TOKENS=64
 MAX_TRAIN_PROMPTS=1000
