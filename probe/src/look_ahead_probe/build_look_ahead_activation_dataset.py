@@ -7,7 +7,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from .activation_extraction import generate_and_extract_all_layers
+from .activation_extraction import generate_and_extract_all_layers, get_n_layers, get_hidden_size, get_vocab_size
 from .data_loading import load_jsonl_prompts
 
 
@@ -37,8 +37,9 @@ def main():
     print(f"Loading model: {args.model_name}")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        torch_dtype=torch.bfloat16,
-    ).to(args.device)
+        dtype=torch.bfloat16,
+        device_map=args.device,
+    )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
@@ -80,9 +81,9 @@ def main():
         'max_k': args.max_k,
         'max_new_tokens': args.max_new_tokens,
         'n_prompts': len(prompts),
-        'd_model': model.config.hidden_size,
-        'vocab_size': model.config.vocab_size,
-        'layers': layers if layers is not None else list(range(model.config.num_hidden_layers)),
+        'd_model': get_hidden_size(model),
+        'vocab_size': get_vocab_size(model),
+        'layers': layers if layers is not None else list(range(get_n_layers(model))),
     }
 
     dataset = {
