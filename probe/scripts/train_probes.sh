@@ -16,7 +16,7 @@ export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train.pt}"
 VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val.pt}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/probe/results/experiment_results_linear}"
-MAX_K=8
+K_VALUES="1 2 3 8"
 PROBE_TYPE=linear
 NUM_EPOCHS=10
 BATCH_SIZE=512
@@ -38,7 +38,7 @@ echo ""
 TRAIN_CMD=(
     python -m look_ahead_probe.train_probes
     --train_dataset "$TRAIN_DATASET"
-    --max_k "$MAX_K"
+    --k_values "$K_VALUES"
     --output_dir "$OUTPUT_DIR"
     --probe_type "$PROBE_TYPE"
     --num_epochs "$NUM_EPOCHS"
