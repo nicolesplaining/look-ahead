@@ -16,10 +16,10 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Qwen3-32B-K8}"
+RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Gemma-3-27B}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
-ACC_MAX=0.65
+ACC_MAX=1
 K_VALUES="1 2 3 8"   # empty = all k values; e.g. "1 2 3 8"
 
 mkdir -p "$OUTPUT_DIR"
