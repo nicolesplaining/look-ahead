@@ -22,8 +22,7 @@ echo "Started at $(date)"
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 
 # ── paths ────────────────────────────────────────────────────────────────────
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
+PROJECT_ROOT="/matx/u/$USER/look-ahead"
 cd "$PROJECT_ROOT"
 
 export HF_HOME="/matx/u/$USER/huggingface"
