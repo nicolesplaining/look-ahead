@@ -21,6 +21,16 @@ def parse_args():
         help="Comma-separated id:name pairs, e.g. '0:at,1:ight,2:ing' "
              "(default: use numeric IDs)",
     )
+    p.add_argument(
+        "--figsize", default=None,
+        help="Figure size as WxH, e.g. '14x5' (default: auto)",
+    )
+    p.add_argument(
+        "--title", default=None,
+        help="Plot title (default: auto-generated)",
+    )
+    p.add_argument("--xlabel", default=None, help="X-axis label")
+    p.add_argument("--ylabel", default=None, help="Y-axis label")
     return p.parse_args()
 
 
@@ -36,8 +46,15 @@ def main():
             k, v = pair.strip().split(":")
             scheme_names[int(k)] = v.strip()
 
+    figsize = None
+    if args.figsize:
+        w, h = args.figsize.lower().split("x")
+        figsize = (float(w), float(h))
+
     from .plot import plot_all_pairs
-    plot_all_pairs(results, scheme_names, args.output_dir)
+    plot_all_pairs(results, scheme_names, args.output_dir,
+                   figsize=figsize, title=args.title,
+                   xlabel=args.xlabel, ylabel=args.ylabel)
 
 
 if __name__ == "__main__":
