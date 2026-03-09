@@ -56,7 +56,8 @@ def extract_scheme_means(
             sums[scheme] = {l: {} for l in layers}
             counts[scheme] = {l: {} for l in layers}
 
-        inputs = tokenizer(ex["text"], return_tensors="pt").to(device)
+        dev = device if device != "auto" else next(model.parameters()).device
+        inputs = tokenizer(ex["text"], return_tensors="pt").to(dev)
         input_ids = inputs["input_ids"][0]
         newline_pos = find_last_newline_pos(input_ids, newline_id)
 

@@ -51,7 +51,7 @@ VECTORS_PATH="$PROJECT_ROOT/steering/results/steering_vectors.pt"
 if [ ! -f "$VECTORS_PATH" ]; then
     echo ">>> Steering vectors not found — computing them first ..."
     echo "    Started at $(date)"
-    bash steering/scripts/compute_vectors.sh
+    DEVICE=auto bash steering/scripts/compute_vectors.sh
     echo "    Finished at $(date)"
 else
     echo ">>> Reusing existing steering vectors: $VECTORS_PATH"
