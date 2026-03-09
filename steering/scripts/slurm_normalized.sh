@@ -29,17 +29,6 @@ cd "$PROJECT_ROOT"
 export HF_HOME="/matx/u/$USER/huggingface"
 mkdir -p "$HF_HOME"
 
-# ── compute vectors if missing ────────────────────────────────────────────────
-VECTORS_PATH="$PROJECT_ROOT/steering/results/steering_vectors.pt"
-if [ ! -f "$VECTORS_PATH" ]; then
-    echo ">>> Steering vectors not found — computing them first ..."
-    echo "    Started at $(date)"
-    bash steering/scripts/compute_vectors.sh
-    echo "    Finished at $(date)"
-else
-    echo ">>> Reusing existing steering vectors: $VECTORS_PATH"
-fi
-
 # ── setup/activate env ───────────────────────────────────────────────────────
 ENV_DIR="/matx/u/$USER/steering-env"
 if [ ! -f "$ENV_DIR/bin/activate" ]; then
@@ -57,6 +46,17 @@ fi
 
 echo "Python: $(which python)"
 python -c "import torch; print(f'torch {torch.__version__}, CUDA {torch.version.cuda}, GPUs: {torch.cuda.device_count()}')"
+
+# ── compute vectors if missing ────────────────────────────────────────────────
+VECTORS_PATH="$PROJECT_ROOT/steering/results/steering_vectors.pt"
+if [ ! -f "$VECTORS_PATH" ]; then
+    echo ">>> Steering vectors not found — computing them first ..."
+    echo "    Started at $(date)"
+    bash steering/scripts/compute_vectors.sh
+    echo "    Finished at $(date)"
+else
+    echo ">>> Reusing existing steering vectors: $VECTORS_PATH"
+fi
 
 # ── run ──────────────────────────────────────────────────────────────────────
 OUTPUT_DIR="$PROJECT_ROOT/steering/results/normalized"
