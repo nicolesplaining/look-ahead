@@ -21,6 +21,7 @@ GEN_POSITIONS="${GEN_POSITIONS:-1 2 3}"      # generation positions
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
 SOURCE="${SOURCE:-}"           # empty = all source schemes
 TARGET="${TARGET:-}"           # empty = all target schemes
+NORMALIZE="${NORMALIZE:-}"     # set to 1 to L2-normalize vectors
 
 # Forward extra CLI args
 EXTRA_ARGS=("$@")
@@ -51,6 +52,11 @@ if [ -n "$TARGET" ]; then
     read -r -a _arr <<< "$TARGET"; TARGET_FLAG=(--target "${_arr[@]}")
 fi
 
+NORMALIZE_FLAG=()
+if [ -n "$NORMALIZE" ]; then
+    NORMALIZE_FLAG=(--normalize)
+fi
+
 export PYTHONPATH="$PROJECT_ROOT/steering/src:${PYTHONPATH:-}"
 
 python -m steering_probe.run_steering \
@@ -68,4 +74,5 @@ python -m steering_probe.run_steering \
     "${GEN_POSITIONS_FLAG[@]}" \
     "${SOURCE_FLAG[@]}" \
     "${TARGET_FLAG[@]}" \
+    "${NORMALIZE_FLAG[@]}" \
     "${EXTRA_ARGS[@]}"

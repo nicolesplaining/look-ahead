@@ -58,6 +58,8 @@ def parse_args():
     p.add_argument("--device", default="cuda")
     p.add_argument("--dtype", default="bfloat16",
                    choices=["float32", "float16", "bfloat16"])
+    p.add_argument("--normalize", action="store_true",
+                   help="L2-normalize steering vectors before applying alpha")
     return p.parse_args()
 
 
@@ -176,6 +178,7 @@ def main():
                             vec, layer, rel_pos, args.alpha,
                             args.max_new_tokens, args.device,
                             newline_pos=npos,
+                            normalize=args.normalize,
                         )
                         if evaluate_rhyme(gen, scheme_keys[tgt]):
                             correct += 1
@@ -208,6 +211,7 @@ def main():
                             vec, layer, gen_pos, args.alpha,
                             args.max_new_tokens, args.device,
                             newline_pos=None,  # not needed for gen positions
+                            normalize=args.normalize,
                         )
                         if evaluate_rhyme(gen, scheme_keys[tgt]):
                             correct += 1

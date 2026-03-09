@@ -13,6 +13,13 @@ from transformers import PreTrainedModel, PreTrainedTokenizerBase
 from .extract import find_last_newline_pos, get_newline_token_id
 
 
+def _resolve_device(device: str, model: PreTrainedModel) -> torch.device:
+    """Resolve 'auto' to the device of the model's first parameter."""
+    if device == "auto":
+        return next(model.parameters()).device
+    return torch.device(device)
+
+
 def generate_baseline(
     model: PreTrainedModel,
     tokenizer: PreTrainedTokenizerBase,
@@ -20,7 +27,8 @@ def generate_baseline(
     max_new_tokens: int,
     device: str,
 ) -> str:
-    inputs = tokenizer(prompt, return_tensors="pt").to(device)
+    dev = _resolve_device(device, model)
+    inputs = tokenizer(prompt, return_tensors="pt").to(dev)
     with torch.no_grad():
         out = model.generate(
             inputs["input_ids"],
@@ -43,6 +51,7 @@ def generate_with_steering(
     max_new_tokens: int,
     device: str,
     newline_pos: Optional[int] = None,  # required when rel_pos <= 0
+    normalize: bool = False,
 ) -> str:
     """
     Generate the couplet completion with a steering vector injected at (layer, rel_pos).
@@ -51,14 +60,17 @@ def generate_with_steering(
                        position during the initial prompt forward pass.
     For rel_pos >  0:  vector is added at the rel_pos-th generation step (1-indexed).
     """
-    inputs = tokenizer(prompt, return_tensors="pt").to(device)
+    dev = _resolve_device(device, model)
+    inputs = tokenizer(prompt, return_tensors="pt").to(dev)
     input_ids = inputs["input_ids"]
 
     if rel_pos <= 0:
         assert newline_pos is not None, "newline_pos required for prompt-position steering"
         abs_steer_pos = newline_pos + rel_pos
 
-    vec = vector.to(device=device, dtype=model.dtype)
+    vec = vector.to(device=dev, dtype=model.dtype)
+    if normalize:
+        vec = vec / vec.norm().clamp(min=1e-8)
 
     # --- generation-step counter (shared mutable state for hooks) ---
     # gen_step[0] == 0 before first generated token; incremented by pre-hook.
