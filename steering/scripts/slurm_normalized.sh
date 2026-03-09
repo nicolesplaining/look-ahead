@@ -40,9 +40,20 @@ else
     echo ">>> Reusing existing steering vectors: $VECTORS_PATH"
 fi
 
-# ── activate env ─────────────────────────────────────────────────────────────
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate steering
+# ── setup/activate env ───────────────────────────────────────────────────────
+ENV_DIR="/matx/u/$USER/steering-env"
+if [ ! -f "$ENV_DIR/bin/activate" ]; then
+    echo ">>> Creating venv at $ENV_DIR ..."
+    python3 -m venv "$ENV_DIR"
+fi
+source "$ENV_DIR/bin/activate"
+
+# Install deps if torch is missing (first run)
+if ! python -c "import torch" 2>/dev/null; then
+    echo ">>> Installing Python packages ..."
+    pip install --upgrade pip
+    pip install torch transformers accelerate pronouncing matplotlib numpy
+fi
 
 echo "Python: $(which python)"
 python -c "import torch; print(f'torch {torch.__version__}, CUDA {torch.version.cuda}, GPUs: {torch.cuda.device_count()}')"

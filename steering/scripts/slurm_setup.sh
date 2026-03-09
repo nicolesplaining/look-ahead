@@ -1,28 +1,25 @@
 #!/usr/bin/env bash
-# One-time conda env setup on the MATX cluster.
-# Run this on a login node (sc) — it only installs packages, no GPU needed.
+# One-time venv setup on the MATX cluster.
+# Run this on a login node (sc).
 #
 # Usage: bash steering/scripts/slurm_setup.sh
 set -euo pipefail
 
-ENV_NAME="steering"
-ENV_DIR="/matx/u/$USER/conda/envs/$ENV_NAME"
-
-# Ensure conda uses matx drive
-conda config --add pkgs_dirs "/matx/u/$USER/conda/pkgs" 2>/dev/null || true
-conda config --add envs_dirs "/matx/u/$USER/conda/envs" 2>/dev/null || true
+ENV_DIR="/matx/u/$USER/steering-env"
 
 if [ -d "$ENV_DIR" ]; then
-    echo "Conda env '$ENV_NAME' already exists at $ENV_DIR"
-    echo "To recreate: conda env remove -n $ENV_NAME && bash $0"
+    echo "Venv already exists at $ENV_DIR"
+    echo "To recreate: rm -rf $ENV_DIR && bash $0"
     exit 0
 fi
 
-echo "Creating conda env '$ENV_NAME' ..."
-conda create -n "$ENV_NAME" python=3.11 -y
+echo "Creating venv at $ENV_DIR ..."
+python3 -m venv "$ENV_DIR"
+source "$ENV_DIR/bin/activate"
 
 echo "Installing packages ..."
-conda run -n "$ENV_NAME" pip install torch transformers accelerate pronouncing matplotlib numpy
+pip install --upgrade pip
+pip install torch transformers accelerate pronouncing matplotlib numpy
 
 echo ""
-echo "Done! Activate with: conda activate $ENV_NAME"
+echo "Done! Activate with: source $ENV_DIR/bin/activate"
