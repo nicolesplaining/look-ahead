@@ -7,6 +7,47 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 
 
+def _relative_patch_label(data: dict) -> str:
+    """
+    Build a label like  i=0 ('\\n')  or  i=+1 ('and')  from JSON metadata.
+    Falls back to the raw source_patch_label string if anything fails.
+    """
+    raw_label = data.get("source_patch_label", data.get("target_patch_label", data.get("patch_label", "?")))
+    source_patch_pos = data.get("source_patch_pos")
+    corrupt_prompt = data.get("corrupt_prompt", "")
+    model_name = data.get("model_name", "")
+
+    if source_patch_pos is None or not corrupt_prompt or not model_name:
+        return raw_label
+
+    try:
+        from transformers import AutoTokenizer
+        tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        enc = tokenizer(corrupt_prompt, return_offsets_mapping=True, add_special_tokens=True)
+        offset_mapping = enc["offset_mapping"]
+        token_ids = enc["input_ids"]
+
+        # Find second newline character position in the string
+        newline_chars = [i for i, ch in enumerate(corrupt_prompt) if ch == "\n"]
+        if len(newline_chars) < 2:
+            return raw_label
+        second_nl_char = newline_chars[1]
+
+        second_nl_tok = next(
+            (i for i, (s, e) in enumerate(offset_mapping) if s <= second_nl_char < e),
+            None,
+        )
+        if second_nl_tok is None:
+            return raw_label
+
+        rel_pos = source_patch_pos - second_nl_tok
+        tok_str = tokenizer.decode([token_ids[source_patch_pos]])
+        sign = "+" if rel_pos >= 0 else ""
+        return f"i={sign}{rel_pos} ({repr(tok_str)})"
+    except Exception:
+        return raw_label
+
+
 def make_plot(json_path: Path, output_path: Path, swap_labels: bool = False) -> None:
     data = json.loads(json_path.read_text(encoding="utf-8"))
     results = data["results"]
@@ -44,6 +85,7 @@ def make_plot(json_path: Path, output_path: Path, swap_labels: bool = False) -> 
     patch_label = data.get("patch_label", "?")
     sampling_n = data.get("sampling_n")
     sampling_temp = data.get("sampling_temp")
+    source_patch_label = _relative_patch_label(data)
 
     top_label_word = corrupt_word if swap_labels else clean_word
     mid_label_word = clean_word if swap_labels else corrupt_word
@@ -110,7 +152,7 @@ def make_plot(json_path: Path, output_path: Path, swap_labels: bool = False) -> 
         ax.set_xticks(layers)
 
     axes[2].set_xlabel("Layer")
-    fig.suptitle("Activation Patching", y=0.995, fontweight="bold", ha="center")
+    fig.suptitle(f"Activation Patching | patch at: {source_patch_label}", y=0.995, fontweight="bold", ha="center")
     plt.tight_layout(rect=[0, 0, 1, 0.97])
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
