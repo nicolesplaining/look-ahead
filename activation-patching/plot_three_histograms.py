@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/ubuntu/look-ahead/.venv/bin/python
 
 import argparse
 import json
