@@ -121,7 +121,7 @@ def main():
         ax.set_title(args.title, fontsize=14, fontweight='bold')
     ax.set_ylim(args.acc_min, args.acc_max)
     ax.grid(True, alpha=0.3)
-    ax.legend(fontsize=11)
+    ax.legend(fontsize=11, loc='upper left')
     fig.tight_layout()
 
     output_dir = args.output_dir or str(Path(args.result_json[0]).parent)
