@@ -34,7 +34,7 @@ CORRUPT_PROMPT = "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hope
 CLEAN_RHYME_WORD   = "fright"
 CORRUPT_RHYME_WORD = "fear"
 
-SAMPLING_N    = 500
+SAMPLING_N    = 100
 SAMPLING_TEMP = 0.8
 MAX_NEW_TOKENS = 20
 
