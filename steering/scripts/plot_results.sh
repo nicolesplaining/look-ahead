@@ -6,17 +6,17 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 PYTHONPATH=""
 
 # ── configurable ─────────────────────────────────────────────────────────────
-RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/Gemma3-27B/results.json}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/Gemma3-27B/plots}"
+RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/Qwen3-32B/results.json}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/Qwen3-32B/}"
 # Optional: comma-separated id:name pairs, e.g. "0:at,1:ight,2:ing"
 SCHEME_NAMES="${SCHEME_NAMES:-}"
 # Optional: figure size as WxH, e.g. "14x5"
-FIGSIZE="8x2"
+FIGSIZE="12x3"
 # Optional: plot title string
-TITLE="Mean Steered Rhyme Accuracy"
+TITLE=""
 # Optional: axis labels
 XLABEL="${XLABEL:-}"
-YLABEL="Accuracy"
+YLABEL="Proportion of Steered Rhymes"
 
 EXTRA_ARGS=("$@")
 
