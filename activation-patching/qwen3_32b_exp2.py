@@ -273,21 +273,21 @@ def run_single_experiment(
         marker = " ← PATCH" if i == patch_pos else ""
         print(f"    pos {i:2d}: {repr(tokenizer.decode([tok_list[i]]))}{marker}")
 
-    # --- Cache clean activations at patch_pos ---
-    print(f"  Caching clean activations at pos={clean_patch_pos}...")
-    clean_cache = cache_hidden_states_at_pos(model, tokenizer, CLEAN_PROMPT, clean_patch_pos)
+    # --- Cache corrupt activations at patch_pos ---
+    print(f"  Caching corrupt activations at pos={corrupt_patch_pos}...")
+    corrupt_cache = cache_hidden_states_at_pos(model, tokenizer, CORRUPT_PROMPT, corrupt_patch_pos)
 
-    # --- Layer sweep: run corrupt prompt with clean activation patched in ---
+    # --- Layer sweep: run clean prompt with corrupt activation patched in ---
     print(f"  Sweeping {n_layers} layers (N={SAMPLING_N}, T={SAMPLING_TEMP})...")
     layer_results = []
 
     for layer_idx in tqdm(range(n_layers), desc=f"  {experiment_id}"):
-        clean_vec = clean_cache[layer_idx]
-        with patch_layer_at_pos(model, layer_idx, patch_pos, clean_vec):
-            completions = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+        corrupt_vec = corrupt_cache[layer_idx]
+        with patch_layer_at_pos(model, layer_idx, patch_pos, corrupt_vec):
+            completions = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
 
-        clean_rate   = rhyme_rate(completions, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
-        corrupt_rate = rhyme_rate(completions, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
+        clean_rate   = rhyme_rate(completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
+        corrupt_rate = rhyme_rate(completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
         layer_results.append({
             "layer":             layer_idx,
             "completions":       completions,
@@ -314,11 +314,11 @@ def run_single_experiment(
         "model_name":         MODEL_NAME,
         "patch_source_mode":  "corrupt_to_clean",
         "target_selector":    selector,
-        "target_patch_label": corrupt_patch_label,
-        "target_patch_pos":   corrupt_patch_pos,
+        "target_patch_label": clean_patch_label,
+        "target_patch_pos":   clean_patch_pos,
         "source_selector":    selector,
-        "source_patch_label": clean_patch_label,
-        "source_patch_pos":   clean_patch_pos,
+        "source_patch_label": corrupt_patch_label,
+        "source_patch_pos":   corrupt_patch_pos,
         "sampling_mode":      True,
         "sampling_n":         SAMPLING_N,
         "sampling_temp":      SAMPLING_TEMP,
@@ -332,8 +332,8 @@ def run_single_experiment(
             "clean_completion":   clean_completion,
             "corrupt_completion": corrupt_completion,
             "completions":        baseline_completions,
-            "unpatched_corrupt_clean_rhyme_rate":   baseline_clean_rate,
-            "unpatched_corrupt_corrupt_rhyme_rate": baseline_corrupt_rate,
+            "unpatched_clean_clean_rhyme_rate":   baseline_clean_rate,
+            "unpatched_clean_corrupt_rhyme_rate": baseline_corrupt_rate,
         },
         "results": layer_results,
     }
@@ -364,12 +364,12 @@ def run_all():
     print(f"Clean   -> {repr(clean_completion)}")
     print(f"Corrupt -> {repr(corrupt_completion)}")
 
-    print(f"\n── Unpatched Corrupt Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
-    baseline_completions  = sample_completions(model, tokenizer, CORRUPT_PROMPT, SAMPLING_N, SAMPLING_TEMP)
-    baseline_clean_rate   = rhyme_rate(baseline_completions, CORRUPT_PROMPT, CLEAN_RHYME_WORD)
-    baseline_corrupt_rate = rhyme_rate(baseline_completions, CORRUPT_PROMPT, CORRUPT_RHYME_WORD)
-    print(f"  Rhymes with '{CLEAN_RHYME_WORD}'   (expected low):  {baseline_clean_rate:.3f}")
-    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected high): {baseline_corrupt_rate:.3f}")
+    print(f"\n── Unpatched Clean Baseline ({SAMPLING_N} samples, T={SAMPLING_TEMP}) ──")
+    baseline_completions  = sample_completions(model, tokenizer, CLEAN_PROMPT, SAMPLING_N, SAMPLING_TEMP)
+    baseline_clean_rate   = rhyme_rate(baseline_completions, CLEAN_PROMPT, CLEAN_RHYME_WORD)
+    baseline_corrupt_rate = rhyme_rate(baseline_completions, CLEAN_PROMPT, CORRUPT_RHYME_WORD)
+    print(f"  Rhymes with '{CLEAN_RHYME_WORD}'   (expected high): {baseline_clean_rate:.3f}")
+    print(f"  Rhymes with '{CORRUPT_RHYME_WORD}' (expected low):  {baseline_corrupt_rate:.3f}")
 
     # --- Run each experiment ---
     for exp in EXPERIMENTS:
