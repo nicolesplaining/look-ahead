@@ -39,8 +39,8 @@ POSITIONS = [
 PROMPT_PAIRS = [
     {
         "pair_id":            "doom_dread",
-        "clean_prompt":       "A rhyming couplet:\nThe empty house was filled with silent doom,\nuntil the moment",
-        "corrupt_prompt":     "A rhyming couplet:\nThe empty house was filled with silent dread,\nuntil the moment",
+        "clean_prompt":       "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+        "corrupt_prompt":     "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
         "clean_rhyme_word":   "doom",
         "corrupt_rhyme_word": "dread",
     },
@@ -60,8 +60,8 @@ PROMPT_PAIRS = [
     },
     {
         "pair_id":            "grief_pain",
-        "clean_prompt":       "A rhyming couplet:\nI never knew the depth of such a grief,\nuntil the world",
-        "corrupt_prompt":     "A rhyming couplet:\nI never knew the depth of such a pain,\nuntil the world",
+        "clean_prompt":       "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+        "corrupt_prompt":     "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
         "clean_rhyme_word":   "grief",
         "corrupt_rhyme_word": "pain",
     },
