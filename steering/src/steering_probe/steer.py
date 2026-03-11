@@ -68,7 +68,9 @@ def generate_with_steering(
         assert newline_pos is not None, "newline_pos required for prompt-position steering"
         abs_steer_pos = newline_pos + rel_pos
 
-    vec = vector.to(device=dev, dtype=model.dtype)
+    # Place vec on the target layer's device (may differ from input device when sharded)
+    layer_device = next(model.model.layers[layer].parameters()).device
+    vec = vector.to(device=layer_device, dtype=model.dtype)
     if normalize:
         vec = vec / vec.norm().clamp(min=1e-8)
 

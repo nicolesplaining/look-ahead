@@ -15,6 +15,8 @@
 # Monitor: tail -f /matx/u/$USER/steering-norm-<jobid>.log
 set -euo pipefail
 
+export PYTHONUNBUFFERED=1
+
 echo "=== Normalized Steering Experiment (SLURM) ==="
 echo "Job ID: $SLURM_JOB_ID"
 echo "Node: $(hostname)"
@@ -74,6 +76,7 @@ python -m steering_probe.run_steering \
     --gen-vector-pos 0 \
     --positions      -5 -4 -3 -2 -1 0 \
     --gen-positions  1 2 3 \
+    --layers         0 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 63 \
     --source         0 \
     --target         5 6 7 \
     --device         auto \

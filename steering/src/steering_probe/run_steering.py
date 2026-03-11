@@ -28,6 +28,7 @@ Usage:
 import argparse
 import json
 import os
+import sys
 from collections import defaultdict
 from typing import Dict, List, Optional
 
@@ -63,6 +64,19 @@ def parse_args():
     return p.parse_args()
 
 
+def _save_results(results: dict, output_dir: str):
+    """Save results incrementally so progress is not lost."""
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, "results.json")
+    with open(out_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+
+def _print(msg: str = ""):
+    """Print with immediate flush for SLURM log visibility."""
+    print(msg, flush=True)
+
+
 def main():
     args = parse_args()
 
@@ -73,7 +87,7 @@ def main():
             line = line.strip()
             if line:
                 examples.append(json.loads(line))
-    print(f"Loaded {len(examples)} val examples")
+    _print(f"Loaded {len(examples)} val examples")
 
     by_scheme: Dict[int, List[dict]] = defaultdict(list)
     for ex in examples:
@@ -82,7 +96,7 @@ def main():
     # --- load vectors ---
     from .vectors import load_vectors
     vectors, scheme_means, metadata = load_vectors(args.vectors_path)
-    print(f"Loaded vectors for schemes: {metadata.get('schemes')}")
+    _print(f"Loaded vectors for schemes: {metadata.get('schemes')}")
 
     # --- load model ---
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -93,7 +107,7 @@ def main():
     dtype_map = {"float32": torch.float32, "float16": torch.float16, "bfloat16": torch.bfloat16}
     dtype = dtype_map[args.dtype]
 
-    print(f"Loading model {args.model} ...")
+    _print(f"Loading model {args.model} ...")
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(
         args.model, torch_dtype=dtype, device_map=args.device
@@ -117,7 +131,7 @@ def main():
     scheme_keys: Dict[int, Optional[str]] = {}
     for s, exs in by_scheme.items():
         scheme_keys[s] = scheme_rhyme_key([e["text"] for e in exs])
-        print(f"  Scheme {s} rhyme key: {scheme_keys[s]}")
+        _print(f"  Scheme {s} rhyme key: {scheme_keys[s]}")
 
     # --- determine which pairs to run ---
     all_schemes = sorted(by_scheme.keys())
@@ -133,7 +147,7 @@ def main():
             continue
 
         # Compute baseline once per source scheme
-        print(f"\n--- Baseline for scheme {src} ---")
+        _print(f"\n--- Baseline for scheme {src} ---")
         baseline_correct = sum(
             evaluate_rhyme(
                 generate_baseline(model, tokenizer, ex["text"], args.max_new_tokens, args.device),
@@ -143,20 +157,20 @@ def main():
             if scheme_keys[src]
         )
         baseline_pct = baseline_correct / len(src_examples)
-        print(f"  baseline rhyme% = {baseline_pct:.1%}")
+        _print(f"  baseline rhyme% = {baseline_pct:.1%}")
 
         for tgt in tgt_schemes:
             if tgt == src:
                 continue
             if (src, tgt) not in vectors:
-                print(f"  No vector for ({src},{tgt}), skipping")
+                _print(f"  No vector for ({src},{tgt}), skipping")
                 continue
             if scheme_keys[tgt] is None:
-                print(f"  No rhyme key for scheme {tgt}, skipping")
+                _print(f"  No rhyme key for scheme {tgt}, skipping")
                 continue
 
             results[str(src)][str(tgt)] = {}
-            print(f"\n  Pair ({src} -> {tgt})")
+            _print(f"\n  Pair ({src} -> {tgt})")
 
             # --- prompt positions ---
             for layer in layers:
@@ -189,13 +203,14 @@ def main():
                         "baseline_rhyme_pct": baseline_pct,
                         "n": len(src_examples),
                     }
-                    print(f"    layer={layer:3d}  pos={rel_pos:4d}  "
+                    _print(f"    layer={layer:3d}  pos={rel_pos:4d}  "
                           f"steered={steered_pct:.1%}  baseline={baseline_pct:.1%}")
+                    _save_results(results, args.output_dir)
 
             # --- generation positions (use gen_vector_pos vector) ---
             for gen_pos in gen_positions:
                 if args.gen_vector_pos not in vectors[(src, tgt)].get(available_layers[0], {}):
-                    print(f"  gen_vector_pos={args.gen_vector_pos} not in vectors, skipping gen positions")
+                    _print(f"  gen_vector_pos={args.gen_vector_pos} not in vectors, skipping gen positions")
                     break
                 for layer in layers:
                     if layer not in vectors[(src, tgt)]:
@@ -226,15 +241,16 @@ def main():
                         "n": len(src_examples),
                         "gen_vector_pos": args.gen_vector_pos,
                     }
-                    print(f"    layer={layer:3d}  gen_pos={gen_pos:3d}  "
+                    _print(f"    layer={layer:3d}  gen_pos={gen_pos:3d}  "
                           f"steered={steered_pct:.1%}  baseline={baseline_pct:.1%}")
+                    _save_results(results, args.output_dir)
 
     # --- save ---
     os.makedirs(args.output_dir, exist_ok=True)
     out_path = os.path.join(args.output_dir, "results.json")
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2)
-    print(f"\nResults saved → {out_path}")
+    _print(f"\nResults saved → {out_path}")
 
 
 if __name__ == "__main__":
