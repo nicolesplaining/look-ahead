@@ -29,11 +29,11 @@ MAX_NEW_TOKENS = 20
 
 PROMPT_PAIRS = [
     {
-        "pair_id":            "dread_gloom",
-        "clean_prompt":       "A rhyming couplet:\nThe empty house was filled with silent dread,\nuntil the moment",
-        "corrupt_prompt":     "A rhyming couplet:\nThe empty house was filled with silent gloom,\nuntil the moment",
-        "clean_rhyme_word":   "dread",
-        "corrupt_rhyme_word": "gloom",
+        "pair_id":            "doom_dread",
+        "clean_prompt":       "A rhyming couplet:\nThe empty house was filled with silent doom,\nuntil the moment",
+        "corrupt_prompt":     "A rhyming couplet:\nThe empty house was filled with silent dread,\nuntil the moment",
+        "clean_rhyme_word":   "doom",
+        "corrupt_rhyme_word": "dread",
     },
     {
         "pair_id":            "bliss_joy",
@@ -43,11 +43,11 @@ PROMPT_PAIRS = [
         "corrupt_rhyme_word": "joy",
     },
     {
-        "pair_id":            "night_dark",
-        "clean_prompt":       "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
-        "corrupt_prompt":     "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
-        "clean_rhyme_word":   "night",
-        "corrupt_rhyme_word": "dark",
+        "pair_id":            "dark_night",
+        "clean_prompt":       "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+        "corrupt_prompt":     "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+        "clean_rhyme_word":   "dark",
+        "corrupt_rhyme_word": "night",
     },
     {
         "pair_id":            "grief_pain",
