@@ -1,0 +1,11 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the sun would never shine again.\n\nA haiku:\nDark clouds fill the sky,\nT",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0
+}

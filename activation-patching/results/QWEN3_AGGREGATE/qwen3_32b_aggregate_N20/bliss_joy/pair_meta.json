@@ -1,0 +1,11 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the *.\nWhat word fits the star? The word that fits in the blank (represented by",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all ran out of toys.\nA rhyming couplet:\nThe children laughed in joy,\nuntil they",
+  "baseline_clean_rate": 0.1,
+  "baseline_corrupt_rate": 0.0
+}

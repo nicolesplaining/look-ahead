@@ -1,0 +1,11 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA haiku:\nSoft light in the night,\n",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a wondrous, glowing light.\n\nA haiku:\nDarkness softly falls,\nA",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0
+}
