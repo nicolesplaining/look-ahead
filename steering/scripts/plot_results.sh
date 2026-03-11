@@ -6,8 +6,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 PYTHONPATH=""
 
 # ── configurable ─────────────────────────────────────────────────────────────
-RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/Qwen3-32B/results.json}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/Qwen3-32B/}"
+RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/results.json}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/}"
 # Optional: comma-separated id:name pairs, e.g. "0:at,1:ight,2:ing"
 SCHEME_NAMES="${SCHEME_NAMES:-}"
 # Optional: figure size as WxH, e.g. "14x5"
