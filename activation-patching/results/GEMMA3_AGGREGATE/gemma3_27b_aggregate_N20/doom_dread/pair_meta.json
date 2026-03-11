@@ -1,0 +1,11 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nuntil the moment",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nuntil the moment",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nuntil the moment flowers started to bloom.\n\nA haiku:\nSoft petals unfold,\nColor bursts in quiet",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nuntil the moment the new owners stepped inside instead.\n\nA haiku:\nDust motes dance in light,",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0
+}
