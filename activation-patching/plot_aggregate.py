@@ -38,18 +38,20 @@ POS_LABELS = ["i=-2", "i=-1", "i=0\n(newline)", "i=+1", "i=+2", "i=+3"]
 
 MODELS = [
     {
-        "name":         "Gemma-3-27B-IT",
-        "agg_dir":      "GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20",
-        "fear_prefix":  "gemma3_27b",
-        "fear_subdir":  "GEMMA3_PER_LAYER",
-        "out_prefix":   "gemma3_27b",
+        "name":          "Gemma-3-27B-IT",
+        "agg_dir":       "GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20",
+        "fear_prefix":   "gemma3_27b",
+        "fear_subdir":   "GEMMA3_PER_LAYER",
+        "out_prefix":    "gemma3_27b",
+        "steer_pos_ids": ["i_minus2", "i_0"],
     },
     {
-        "name":         "Qwen3-32B",
-        "agg_dir":      "QWEN3_AGGREGATE/qwen3_32b_aggregate_N20",
-        "fear_prefix":  "qwen3_32b",
-        "fear_subdir":  "QWEN3_PER_LAYER",
-        "out_prefix":   "qwen3_32b",
+        "name":          "Qwen3-32B",
+        "agg_dir":       "QWEN3_AGGREGATE/qwen3_32b_aggregate_N20",
+        "fear_prefix":   "qwen3_32b",
+        "fear_subdir":   "QWEN3_PER_LAYER",
+        "out_prefix":    "qwen3_32b",
+        "steer_pos_ids": ["i_minus1", "i_0"],
     },
 ]
 
@@ -198,35 +200,34 @@ def compute_combined(agg_rates_4pairs, fear_rates):
 def plot_histogram(layers, clean_rates, corrupt_rates,
                    baseline_clean, baseline_corrupt,
                    pos_label, model_name, out_path):
-    """3-panel histogram: clean rhyme / corrupt rhyme / no rhyme per layer."""
+    """Stacked bar chart: clean / corrupt / no-rhyme stacked to 1.0 per layer."""
     no_rhyme_rates   = [max(0.0, 1.0 - c - r) for c, r in zip(clean_rates, corrupt_rates)]
     baseline_norhyme = max(0.0, 1.0 - baseline_clean - baseline_corrupt)
 
-    fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(14, 10), sharex=True)
+    fig, ax = plt.subplots(figsize=(14, 5))
 
-    for ax, rates, baseline, color, label in [
-        (ax1, clean_rates,   baseline_clean,   "steelblue",  "clean rhyme rate"),
-        (ax2, corrupt_rates, baseline_corrupt, "darkorange", "corrupt rhyme rate"),
-        (ax3, no_rhyme_rates, baseline_norhyme, "slategray",  "no rhyme rate"),
-    ]:
-        ax.bar(layers, rates, color=color, edgecolor="white", linewidth=0.5, alpha=0.85)
-        ax.axhline(baseline, color="red" if ax is ax1 else ("orange" if ax is ax2 else "black"),
-                   linestyle="--", linewidth=1.5, label=f"baseline ({baseline:.3f})")
-        ax.set_ylabel(label, fontsize=11)
-        ax.set_ylim(0, max(max(rates) if rates else 0, baseline) * 1.2 + 0.05)
-        ax.legend(loc="upper right", fontsize=9)
-        ax.grid(True, alpha=0.2)
+    ax.bar(layers, no_rhyme_rates,   color="slategray",  edgecolor="white", linewidth=0.3, alpha=0.85, label="no rhyme")
+    ax.bar(layers, corrupt_rates,    color="darkorange",  edgecolor="white", linewidth=0.3, alpha=0.85, label="corrupt rhyme", bottom=no_rhyme_rates)
+    bottom_clean = [n + r for n, r in zip(no_rhyme_rates, corrupt_rates)]
+    ax.bar(layers, clean_rates,      color="steelblue",  edgecolor="white", linewidth=0.3, alpha=0.85, label="clean rhyme",   bottom=bottom_clean)
 
-    ax3.set_xlabel("Layer", fontsize=12)
-    ax3.set_xticks(layers[::4])
-    ax3.set_xlim(-0.5, max(layers) + 0.5)
+    ax.axhline(1.0 - baseline_clean,                     color="steelblue",  linestyle="--", linewidth=1.5, label=f"baseline clean ({baseline_clean:.3f})")
+    ax.axhline(1.0 - baseline_clean - baseline_corrupt,  color="darkorange", linestyle="--", linewidth=1.5, label=f"baseline corrupt ({baseline_corrupt:.3f})")
+
+    ax.set_ylim(0, 1.0)
+    ax.set_xlim(-0.5, max(layers) + 0.5)
+    ax.set_xticks(layers[::4])
+    ax.set_xlabel("Layer", fontsize=13)
+    ax.set_ylabel("Proportion", fontsize=13)
+    ax.legend(loc="upper right", fontsize=10)
+    ax.grid(axis="y", alpha=0.2)
 
     fig.suptitle(
-        f"{model_name} — Aggregate patch histogram [{pos_label}] (5 pairs, N=100)\n"
-        f"Corrupt→Clean: corrupt rhyme rate on clean run",
+        f"{model_name} — Aggregate patch [{pos_label}] (5 pairs, N=100)\n"
+        f"Corrupt→Clean: stacked rhyme rates on clean run",
         fontsize=12,
     )
-    plt.tight_layout(rect=[0, 0, 1, 0.95])
+    plt.tight_layout()
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"  Saved: {out_path}")
@@ -359,6 +360,46 @@ def plot_model(model_cfg):
             model_name     = name,
             out_path       = out_path,
         )
+
+    # ── Plot 4: steering-style grouped bar chart (two positions) ─────────────────
+    STEER_POSITIONS = model_cfg.get("steer_pos_ids", ["i_minus1", "i_0"])
+    STEER_COLOR_LIST = ["#4C72B0", "#DD8452"]
+    STEER_COLORS = {p: STEER_COLOR_LIST[i] for i, p in enumerate(STEER_POSITIONS)}
+    POS_LABEL_MAP = {
+        "i_minus2": "position i=-2 (last word token)",
+        "i_minus1": "position i=-1 (last word token)",
+        "i_0":      "position i=0 (newline token)",
+        "i_plus1":  "position i=+1",
+        "i_plus2":  "position i=+2",
+        "i_plus3":  "position i=+3",
+    }
+    STEER_LABELS = {p: POS_LABEL_MAP[p] for p in STEER_POSITIONS}
+
+    x     = np.arange(n_layers)
+    width = 0.35
+    fig, ax = plt.subplots(figsize=(12, 2))
+
+    for i, pos_id in enumerate(STEER_POSITIONS):
+        values = all_combined[pos_id]
+        offset = (i - 0.5) * width
+        ax.bar(x + offset, values, width,
+               label=STEER_LABELS[pos_id],
+               color=STEER_COLORS[pos_id],
+               alpha=0.85)
+
+    tick_labels = [str(l) if l % 5 == 0 else "" for l in layers]
+    ax.set_xticks(x)
+    ax.set_xticklabels(tick_labels, rotation=45, ha="right", fontsize=7)
+    ax.set_xlabel("Layer")
+    ax.set_ylabel("Corrupt Rhyme Rate")
+    ax.set_ylim(0, 1.05)
+    ax.legend()
+
+    plt.tight_layout()
+    out_path = os.path.join(out_dir, f"{out_prefix}_aggregate_steering_style.png")
+    fig.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"  Saved: {out_path}")
 
 
 # -- Main ------------------------------------------------------------------------
