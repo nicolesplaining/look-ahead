@@ -6,17 +6,17 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 PYTHONPATH=""
 
 # ── configurable ─────────────────────────────────────────────────────────────
-RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/results.json}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/}"
+RESULTS_PATH="${RESULTS_PATH:-$PROJECT_ROOT/steering/results/Qwen3-32B/results.json}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results/Qwen3-32B}"
 # Optional: comma-separated id:name pairs, e.g. "0:at,1:ight,2:ing"
 SCHEME_NAMES="${SCHEME_NAMES:-}"
 # Optional: figure size as WxH, e.g. "14x5"
-FIGSIZE="12x3"
+FIGSIZE="12x2"
 # Optional: plot title string
 TITLE=""
 # Optional: axis labels
 XLABEL="${XLABEL:-}"
-YLABEL="Proportion of Steered Rhymes"
+YLABEL="Fraction of \nSteered Rhymes"
 
 EXTRA_ARGS=("$@")
 
