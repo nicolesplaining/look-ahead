@@ -9,13 +9,13 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-POSITIONS = [-2, 0]
-COLORS = {-2: "#4C72B0", 0: "#DD8452"}
-LABELS = {-2: "position -2 (last word token)", 0: "position 0 (newline token)"}
+# POSITIONS = [-2, 0]
+# COLORS = {-2: "#4C72B0", 0: "#DD8452"}
+# LABELS = {-2: "position -2 (last word token)", 0: "position 0 (newline token)"}
 
-# POSITIONS = [-1, 0]
-# COLORS = {-1: "#4C72B0", 0: "#DD8452"}
-# LABELS = {-1: "position -1 (last word token)", 0: "position 0 (newline token)"}
+POSITIONS = [-1, 0]
+COLORS = {-1: "#4C72B0", 0: "#DD8452"}
+LABELS = {-1: "position -1 (last word token)", 0: "position 0 (newline token)"}
 
 
 def plot_pair_bargraph(
@@ -117,9 +117,9 @@ def plot_all_pairs(
 
     tick_labels = [str(l) if i % 5 == 0 else "" for i, l in enumerate(layers)]
     ax.set_xticks(x)
-    ax.set_xticklabels(tick_labels, rotation=45, ha="right", fontsize=7)
+    ax.set_xticklabels(tick_labels, rotation=45, ha="right", fontsize=9)
     ax.set_xlabel(xlabel or "Layer")
-    ax.set_ylabel(ylabel or "Steered Rhyme % (mean across pairs)")
+    ax.set_ylabel("Fraction of \n Steered Rhyme", fontsize=8)
     ax.set_ylim(0, 1.05)
     # ax.set_title(title or f"Steering effectiveness aggregated over {n_pairs} pairs", fontsize=11)
     ax.legend()
