@@ -38,20 +38,22 @@ POS_LABELS = ["i=-2", "i=-1", "i=0\n(newline)", "i=+1", "i=+2", "i=+3"]
 
 MODELS = [
     {
-        "name":          "Gemma-3-27B-IT",
-        "agg_dir":       "GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20",
-        "fear_prefix":   "gemma3_27b",
-        "fear_subdir":   "GEMMA3_PER_LAYER",
-        "out_prefix":    "gemma3_27b",
-        "steer_pos_ids": ["i_minus2", "i_0"],
+        "name":            "Gemma-3-27B-IT",
+        "agg_dir":         "GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20",
+        "fear_prefix":     "gemma3_27b",
+        "fear_subdir":     "GEMMA3_PER_LAYER",
+        "out_prefix":      "gemma3_27b",
+        "steer_pos_ids":   ["i_minus2", "i_0"],
+        "overlay_skip":    [],
     },
     {
-        "name":          "Qwen3-32B",
-        "agg_dir":       "QWEN3_AGGREGATE/qwen3_32b_aggregate_N20",
-        "fear_prefix":   "qwen3_32b",
-        "fear_subdir":   "QWEN3_PER_LAYER",
-        "out_prefix":    "qwen3_32b",
-        "steer_pos_ids": ["i_minus1", "i_0"],
+        "name":            "Qwen3-32B",
+        "agg_dir":         "QWEN3_AGGREGATE/qwen3_32b_aggregate_N20",
+        "fear_prefix":     "qwen3_32b",
+        "fear_subdir":     "QWEN3_PER_LAYER",
+        "out_prefix":      "qwen3_32b",
+        "steer_pos_ids":   ["i_minus1", "i_0"],
+        "overlay_skip":    ["i_minus2"],
     },
 ]
 
@@ -327,18 +329,19 @@ def plot_model(model_cfg):
     print(f"  Saved: {out_path}")
 
     # ── Plot 2: all positions overlaid ──────────────────────────────────────────
-    colors = cm.tab10(np.linspace(0, 0.6, len(POSITIONS)))
-    fig, ax = plt.subplots(figsize=(12, 5))
+    overlay_skip = model_cfg.get("overlay_skip", [])
+    overlay_positions = [(p, l) for p, l in zip(POSITIONS, POS_LABELS) if p not in overlay_skip]
+    colors = cm.tab10(np.linspace(0, 0.6, len(overlay_positions)))
+    fig, ax = plt.subplots(figsize=(6, 3.5))
 
-    for (pos_id, pos_label), color in zip(zip(POSITIONS, POS_LABELS), colors):
+    for (pos_id, pos_label), color in zip(overlay_positions, colors):
         combined = all_combined[pos_id]
         label = pos_label.replace("\n", " ")
         ax.plot(layers, combined, color=color, linewidth=1.5, label=label)
 
-    ax.set_xlabel("Layer", fontsize=13)
-    ax.set_ylabel("Mean corrupt rhyme rate", fontsize=13)
-    ax.set_title(f"{name} — All positions overlaid (5 pairs, N=100)", fontsize=13)
-    ax.legend(fontsize=11, loc="upper left")
+    ax.set_xlabel("Layer", fontsize=11)
+    ax.set_ylabel("Mean corrupt rhyme rate", fontsize=11)
+    ax.legend(fontsize=9, loc="upper left")
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
     out_path = os.path.join(out_dir, f"{out_prefix}_aggregate_overlay.png")
