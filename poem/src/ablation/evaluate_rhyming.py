@@ -83,7 +83,7 @@ def extract_first_line_word(prompt_text: str) -> Optional[str]:
     return _last_alpha_word(parts[-1])
 
 
-_PUNCT_RE = re.compile(r'[.!?;,]')
+_PUNCT_RE = re.compile(r'[.!?]')
 # Matches special tokens like <end_of_turn> (Gemma) or <|im_end|> (Qwen)
 _SPECIAL_TOKEN_RE = re.compile(r'<[^>]+>')
 

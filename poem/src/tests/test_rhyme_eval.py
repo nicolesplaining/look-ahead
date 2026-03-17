@@ -64,10 +64,15 @@ EXTRACTION_CASES = [
      "night"),
 
     # --- without_newline mode ---
-    ("without_newline: stops at punctuation",
+    ("without_newline: stops at sentence-ending punctuation",
      "without_newline",
      "hoped to stay the night.<end_of_turn>",
      "night"),
+
+    ("without_newline: comma mid-line should not truncate",
+     "without_newline",
+     "A Christmas gift, a joyful sight.<end_of_turn>",
+     "sight"),
 
     ("without_newline: no punctuation, with special token",
      "without_newline",
