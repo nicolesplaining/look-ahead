@@ -19,8 +19,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/Gemma-3-27B}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/Gemma-3-27B/plots}"
+RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear/plots}"
 ACC_MIN=0
 ACC_MAX=1
 
