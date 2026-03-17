@@ -120,7 +120,7 @@ def load_model():
         tokenizer.pad_token_id = tokenizer.eos_token_id
     model = Gemma3ForConditionalGeneration.from_pretrained(
         MODEL_NAME,
-        torch_dtype=torch.bfloat16,
+        dtype=torch.bfloat16,
         device_map="auto",
         trust_remote_code=True,
     )
