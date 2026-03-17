@@ -101,6 +101,7 @@ def _try_generate(
     prompt_length: int,
     max_new_tokens: int,
     pad_token_id: int,
+    terminator_ids: set,
     do_sample: bool = False,
 ) -> Optional[Tuple[torch.Tensor, int]]:
     """
@@ -118,11 +119,10 @@ def _try_generate(
         pad_token_id=pad_token_id,
     )
 
-    eos_id = tokenizer.eos_token_id
     newline2_pos: Optional[int] = None
     for i in range(prompt_length, generated_ids.shape[1]):
         tok_id = generated_ids[0, i].item()
-        if '\n' in tokenizer.decode([tok_id]) or tok_id == eos_id:
+        if '\n' in tokenizer.decode([tok_id]) or tok_id in terminator_ids:
             newline2_pos = i
             break
 
@@ -180,6 +180,12 @@ def extract_poem_activations(
     model.eval()
     pad_token_id = tokenizer.pad_token_id or tokenizer.eos_token_id
 
+    # Build terminator set: EOS + end-of-turn tokens (e.g. Gemma's <end_of_turn>)
+    terminator_ids = {tokenizer.eos_token_id}
+    eot_id = tokenizer.convert_tokens_to_ids("<end_of_turn>")
+    if eot_id != tokenizer.unk_token_id:
+        terminator_ids.add(eot_id)
+
     with torch.no_grad():
         for poem_idx, prompt in enumerate(tqdm(prompts, desc="Extracting poem activations")):
             prompt_tokens = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
@@ -193,7 +199,7 @@ def extract_poem_activations(
             for attempt in range(3):
                 gen_result = _try_generate(
                     model, tokenizer, prompt_tokens, prompt_length,
-                    max_new_tokens, pad_token_id,
+                    max_new_tokens, pad_token_id, terminator_ids,
                     do_sample=(attempt > 0),
                 )
                 if gen_result is not None:
