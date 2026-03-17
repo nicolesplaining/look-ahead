@@ -17,7 +17,7 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/poem/data/activations_train.pt}"
 VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/poem/data/activations_val.pt}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
-TRAIN_POSITION=5                        # i=0 = first-line \n; negative = earlier in first line
+TRAIN_POSITIONS="0 1 2 3 4 5"  # space-separated list, e.g. "0 1 2 3 4 5"
 MODEL_NAME=google/gemma-3-27b-it            # set to enable decoded_predictions in JSON
 PROBE_TYPE="${PROBE_TYPE:-linear}"
 NUM_EPOCHS="${NUM_EPOCHS:-10}"
@@ -33,42 +33,47 @@ if [ ! -f "$TRAIN_DATASET" ]; then
 fi
 
 echo "Training poem probes from: $PROJECT_ROOT"
-echo "Train dataset:  $TRAIN_DATASET"
-echo "Train position: i=$TRAIN_POSITION"
-echo "Output dir:     $OUTPUT_DIR"
+echo "Train dataset:   $TRAIN_DATASET"
+echo "Train positions: $TRAIN_POSITIONS"
+echo "Output dir:      $OUTPUT_DIR"
 echo ""
 
-TRAIN_CMD=(
-    python -m train_probes
-    --train_dataset "$TRAIN_DATASET"
-    --train_position "$TRAIN_POSITION"
-    --output_dir "$OUTPUT_DIR"
-    --probe_type "$PROBE_TYPE"
-    --num_epochs "$NUM_EPOCHS"
-    --batch_size "$BATCH_SIZE"
-    --learning_rate "$LEARNING_RATE"
-    --weight_decay "$WEIGHT_DECAY"
-    --device "$DEVICE"
-)
+for TRAIN_POSITION in $TRAIN_POSITIONS; do
+    echo "----------------------------------------"
+    echo "Training position i=$TRAIN_POSITION"
+    echo "----------------------------------------"
 
-if [ -f "$VAL_DATASET" ]; then
-    TRAIN_CMD+=(--val_dataset "$VAL_DATASET")
-fi
-if [ -n "$MODEL_NAME" ]; then
-    TRAIN_CMD+=(--model_name "$MODEL_NAME")
-fi
+    TRAIN_CMD=(
+        python -m train_probes
+        --train_dataset "$TRAIN_DATASET"
+        --train_position "$TRAIN_POSITION"
+        --output_dir "$OUTPUT_DIR"
+        --probe_type "$PROBE_TYPE"
+        --num_epochs "$NUM_EPOCHS"
+        --batch_size "$BATCH_SIZE"
+        --learning_rate "$LEARNING_RATE"
+        --weight_decay "$WEIGHT_DECAY"
+        --device "$DEVICE"
+    )
 
-"${TRAIN_CMD[@]}"
+    if [ -f "$VAL_DATASET" ]; then
+        TRAIN_CMD+=(--val_dataset "$VAL_DATASET")
+    fi
+    if [ -n "$MODEL_NAME" ]; then
+        TRAIN_CMD+=(--model_name "$MODEL_NAME")
+    fi
 
-# Print a results summary table from the JSON
-if [ "$TRAIN_POSITION" -ge 0 ] 2>/dev/null; then
-    I_LABEL="i${TRAIN_POSITION}"
-else
-    I_LABEL="i_neg${TRAIN_POSITION#-}"
-fi
-RESULTS_FILE="$OUTPUT_DIR/$I_LABEL/experiment_results.json"
+    "${TRAIN_CMD[@]}"
 
-if [ -f "$RESULTS_FILE" ]; then
+    # Print a results summary table from the JSON
+    if [ "$TRAIN_POSITION" -ge 0 ] 2>/dev/null; then
+        I_LABEL="i${TRAIN_POSITION}"
+    else
+        I_LABEL="i_neg${TRAIN_POSITION#-}"
+    fi
+    RESULTS_FILE="$OUTPUT_DIR/$I_LABEL/experiment_results.json"
+
+    if [ -f "$RESULTS_FILE" ]; then
 python - <<EOF
 import json
 
@@ -118,7 +123,9 @@ if has_rhyme5:
     best_r5l = next(e["layer"] for e in entries if e.get("top5_rhyme_accuracy") == best_r5)
     print(f"Best Rhyme@5:    Layer {best_r5l}  ({best_r5:.4f})")
 EOF
-fi
+    fi
 
-echo ""
+    echo ""
+done
+
 echo "✓ Poem training complete! Results in $OUTPUT_DIR/"
