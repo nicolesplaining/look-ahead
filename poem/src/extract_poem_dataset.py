@@ -118,9 +118,11 @@ def _try_generate(
         pad_token_id=pad_token_id,
     )
 
+    eos_id = tokenizer.eos_token_id
     newline2_pos: Optional[int] = None
     for i in range(prompt_length, generated_ids.shape[1]):
-        if '\n' in tokenizer.decode([generated_ids[0, i].item()]):
+        tok_id = generated_ids[0, i].item()
+        if '\n' in tokenizer.decode([tok_id]) or tok_id == eos_id:
             newline2_pos = i
             break
 

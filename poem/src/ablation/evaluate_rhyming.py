@@ -84,28 +84,42 @@ def extract_first_line_word(prompt_text: str) -> Optional[str]:
 
 
 _PUNCT_RE = re.compile(r'[.!?;,]')
+# Matches special tokens like <end_of_turn> (Gemma) or <|im_end|> (Qwen)
+_SPECIAL_TOKEN_RE = re.compile(r'<[^>]+>')
 
 
 def extract_second_line_word_with_newline(continuation: str) -> Optional[str]:
     """
-    Extract the rhyme word from a continuation that terminates at \\n.
-    Takes everything up to the first \\n (or the full string if absent),
-    strips trailing punctuation, and returns the last alphabetic word.
-    Handles the ".<newline>" BPE-fusion case at string level automatically.
+    Extract the rhyme word from a continuation that terminates at \\n or a
+    model-specific end-of-turn token (e.g. Gemma's <end_of_turn>, Qwen's
+    <|im_end|>).  Takes everything up to the first terminator (or the full
+    string if absent), then returns the last alphabetic word.
     """
+    end = len(continuation)
     nl_pos = continuation.find('\n')
-    segment = continuation[:nl_pos] if nl_pos >= 0 else continuation
+    if nl_pos >= 0:
+        end = min(end, nl_pos)
+    st_m = _SPECIAL_TOKEN_RE.search(continuation)
+    if st_m:
+        end = min(end, st_m.start())
+    segment = continuation[:end]
     return _last_alpha_word(segment)
 
 
 def extract_second_line_word_without_newline(continuation: str) -> Optional[str]:
     """
     Extract the rhyme word when \\n is suppressed during generation.
-    Finds the first sentence-ending punctuation mark and takes everything
-    before it as the second line.
+    Finds the first sentence-ending punctuation mark or special token
+    (e.g. <end_of_turn>, <|im_end|>) and takes everything before it.
     """
+    end = len(continuation)
     m = _PUNCT_RE.search(continuation)
-    segment = continuation[:m.start()] if m else continuation
+    if m:
+        end = min(end, m.start())
+    st_m = _SPECIAL_TOKEN_RE.search(continuation)
+    if st_m:
+        end = min(end, st_m.start())
+    segment = continuation[:end]
     return _last_alpha_word(segment)
 
 
