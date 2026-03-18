@@ -5,8 +5,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # ── configurable ─────────────────────────────────────────────────────────────
-# MODEL=Qwen/Qwen3-32B
-MODEL=google/gemma-3-27b-it
+MODEL=Qwen/Qwen3-0.6B
+# MODEL=google/gemma-3-1b-it
 VECTORS_PATH="${VECTORS_PATH:-$PROJECT_ROOT/steering/results/steering_vectors.pt}"
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-val.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
@@ -20,7 +20,7 @@ PYTHONPATH=""
 
 # Optional filters (space-separated lists); leave empty to use all
 LAYERS=""           # e.g. "0 8 16 24"
-POSITIONS="-2 0" # default: last word + newline token
+POSITIONS="-1 0" # default: last word + newline token
 GEN_POSITIONS="${GEN_POSITIONS:-}"  # generation positions, e.g. "1 2 3"
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
 SOURCE="0 1"  # source schemes (half of 10)

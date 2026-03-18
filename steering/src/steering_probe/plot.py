@@ -9,13 +9,13 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-POSITIONS = [-2, 0]
-COLORS = {-2: "#4C72B0", 0: "#DD8452"}
-LABELS = {-2: "position -2 (last word token)", 0: "position 0 (newline token)"}
+# POSITIONS = [-2, 0]
+# COLORS = {-2: "#4C72B0", 0: "#DD8452"}
+# LABELS = {-2: "position -2 (last word token)", 0: "position 0 (newline token)"}
 
-# POSITIONS = [-1, 0]
-# COLORS = {-1: "#4C72B0", 0: "#DD8452"}
-# LABELS = {-1: "position -1 (last word token)", 0: "position 0 (newline token)"}
+POSITIONS = [-1, 0]
+COLORS = {-1: "#4C72B0", 0: "#DD8452"}
+LABELS = {-1: "position -1 (last word token)", 0: "position 0 (newline token)"}
 
 
 def plot_pair_bargraph(
