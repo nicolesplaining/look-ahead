@@ -3,9 +3,9 @@
   "model_name": "Qwen/Qwen3-32B",
   "n_total": 1200,
   "n_attempted": 1200,
-  "n_rhymed": 848,
-  "n_unknown": 14,
-  "rhyme_rate": 0.7066666666666667,
+  "n_rhymed": 682,
+  "n_unknown": 11,
+  "rhyme_rate": 0.5683333333333334,
   "results": [
     {
       "status": "rhyme",
@@ -56,9 +56,9 @@
       "continuation": "The stars were shining bright below. The couplet you've provided is a well"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "clock",
-      "second_word": "shock",
+      "second_word": "town",
       "continuation": "He'd wake the whole town, and that was a shock. The farmer's"
     },
     {
@@ -74,9 +74,9 @@
       "continuation": "To see the world and find a star. The sailor traveled very far, To"
     },
     {
-      "status": "no_rhyme",
+      "status": "rhyme",
       "first_word": "pit",
-      "second_word": "and",
+      "second_word": "pit",
       "continuation": "The shovel dug into the pit, and the shovel dug into the pit, and"
     },
     {
@@ -100,7 +100,7 @@
     {
       "status": "no_rhyme",
       "first_word": "bouquet",
-      "second_word": "trow",
+      "second_word": "roses",
       "continuation": "Of roses, lilies, and violets too, I trow."
     },
     {
@@ -110,9 +110,9 @@
       "continuation": "It made the stars feel quite divine. The restaurant served food so fine, It"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "vat",
-      "second_word": "rat",
+      "second_word": "ghostly",
       "continuation": "And saw a ghostly, soapy rat. A rhyming couplet"
     },
     {
@@ -122,9 +122,9 @@
       "continuation": "And all would sing. The bells would loudly ring, And all would sing."
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "block",
-      "second_word": "clock",
+      "second_word": "strong",
       "continuation": "A fortress strong, a guarded clock. The second line of the couplet is"
     },
     {
@@ -236,9 +236,9 @@
       "continuation": "And thought of all he'd come to know. He watched the river gently flow"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spit",
-      "second_word": "quit",
+      "second_word": "said",
       "continuation": "But the patient said, \"I can't quit!\" To improve the rhym"
     },
     {
@@ -284,9 +284,9 @@
       "continuation": "While the young girl watched with a gentle need. The cattle grazed and would"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pan",
-      "second_word": "tan",
+      "second_word": "sizzled",
       "continuation": "The chicken sizzled, crisp and tan. The rhyme scheme of the given"
     },
     {
@@ -320,15 +320,15 @@
       "continuation": "By the team that was the best one. The championship was easily won, By"
     },
     {
-      "status": "no_rhyme",
+      "status": "rhyme",
       "first_word": "set",
-      "second_word": "smile",
+      "second_word": "yet",
       "continuation": "The guests were all well-fed and yet, The hostess, with a smile"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "dog",
-      "second_word": "log",
+      "second_word": "joy",
       "continuation": "Who ran with joy, a happy log. The stick was fetched by the dog"
     },
     {
@@ -358,7 +358,7 @@
     {
       "status": "no_rhyme",
       "first_word": "sink",
-      "second_word": "the",
+      "second_word": "broke",
       "continuation": "It fell and broke, and that was *link*ed* to the *"
     },
     {
@@ -370,13 +370,13 @@
     {
       "status": "no_rhyme",
       "first_word": "drop",
-      "second_word": "stopped",
+      "second_word": "midair",
       "continuation": "But paused midair, then stopped. The leaf began to slowly drop, But"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "den",
-      "second_word": "zen",
+      "second_word": "honey",
       "continuation": "To dream of honey, soft and zen. The bear retreated to his den,"
     },
     {
@@ -404,9 +404,9 @@
       "continuation": "And vanished in the morning light. A rhyming couplet is a pair"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "beat",
+      "second_word": "snacks",
       "continuation": "He brought snacks, forgot the beat. A rhyming couplet is a"
     },
     {
@@ -422,9 +422,9 @@
       "continuation": "And chased them down the garden path. He saw the whiskers of the cat"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rock",
-      "second_word": "shock",
+      "second_word": "deep",
       "continuation": "And fell into a deep, dark shock. The couplet you've provided is"
     },
     {
@@ -446,9 +446,9 @@
       "continuation": "As he walked through the meadow below. A rhyming couplet is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "block",
-      "second_word": "clock",
+      "second_word": "danced",
       "continuation": "His shadow danced, a ghostly clock. The couplet you've provided is"
     },
     {
@@ -460,7 +460,7 @@
     {
       "status": "rhyme",
       "first_word": "bray",
-      "second_word": "today",
+      "second_word": "say",
       "continuation": "While the horse would just say, \"Not today.\" A rhyming couple"
     },
     {
@@ -482,15 +482,15 @@
       "continuation": "And gave it to the king. The couplet you've provided is a simple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "key",
-      "second_word": "be",
+      "second_word": "lost",
       "continuation": "The key was lost, so who could be\u2014? The answer to the r"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bee",
-      "second_word": "see",
+      "second_word": "true",
       "continuation": "It's true, it's true, you see. The couplet you've"
     },
     {
@@ -520,7 +520,7 @@
     {
       "status": "no_rhyme",
       "first_word": "tall",
-      "second_word": "stars",
+      "second_word": "clouds",
       "continuation": "It reached the clouds, it reached the stars. The tower was incredibly tall,"
     },
     {
@@ -532,7 +532,7 @@
     {
       "status": "no_rhyme",
       "first_word": "renowned",
-      "second_word": "unkind",
+      "second_word": "high",
       "continuation": "But the popcorn was priced too high, unkind. The theater showed plays renowned"
     },
     {
@@ -650,21 +650,21 @@
       "continuation": "The truth was right in front of me here. The message was clear and right"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "plan",
+      "second_word": "followed",
       "continuation": "The hunter followed, not by plan. The deer across the forest ran, The"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "acclaim",
-      "second_word": "name",
+      "second_word": "right",
       "continuation": "A star in her own right, not just a name. The couplet you"
     },
     {
       "status": "no_rhyme",
       "first_word": "stock",
-      "second_word": "not",
+      "second_word": "rich",
       "continuation": "And now he's rich, and we are not. The couplet you've"
     },
     {
@@ -688,7 +688,7 @@
     {
       "status": "no_rhyme",
       "first_word": "pet",
-      "second_word": "fit",
+      "second_word": "small",
       "continuation": "But it was too small, it was not fit. A rhyming couple"
     },
     {
@@ -722,9 +722,9 @@
       "continuation": "A winding path of silver sand. The river through the canyon ran, A winding"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "show",
-      "second_word": "low",
+      "second_word": "came",
       "continuation": "But no one came, and that was low. The artist had a gallery show"
     },
     {
@@ -746,9 +746,9 @@
       "continuation": "But the journey was not tame. The result turned out the same, <br"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "old",
-      "second_word": "cold",
+      "second_word": "changed",
       "continuation": "But the world had changed, and the stories grew cold. The couplet you"
     },
     {
@@ -788,9 +788,9 @@
       "continuation": "And the audience all clapped and away. The musician started to play, And"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "heat",
-      "second_word": "beat",
+      "second_word": "walked",
       "continuation": "But still he walked, and walked, and beat. The second line of the"
     },
     {
@@ -842,21 +842,21 @@
       "continuation": "The trees were in full show. The stream had a trickling flow, The"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "nice",
-      "second_word": "nice",
+      "second_word": "shining",
       "continuation": "The sun was shining, the sky was light blue and nice. The user provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "glen",
-      "second_word": "then",
+      "second_word": "seen",
       "continuation": "A fox was seen, but only then. The morning sun lit up the gl"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gun",
-      "second_word": "fun",
+      "second_word": "beast",
       "continuation": "He'd found the beast, and it was fun. The hunter put away his"
     },
     {
@@ -896,15 +896,15 @@
       "continuation": "But now he's in a wheelchair. The couplet you've provided uses rhyme"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "kit",
-      "second_word": "kit",
+      "second_word": "tight",
       "continuation": "To fix the holes in her tight, tight kit. A clever play on words"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "down",
-      "second_word": "frown",
+      "second_word": "scotch",
       "continuation": "While sipping on his favorite brand of scotch, with a frown."
     },
     {
@@ -962,9 +962,9 @@
       "continuation": "But the memory of the fall still lingers far. The injury left a permanent"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "need",
-      "second_word": "speed",
+      "second_word": "red",
       "continuation": "A dress of red, a sword, and speed. The couplet you've"
     },
     {
@@ -974,9 +974,9 @@
       "continuation": "But she just smiled and took her time. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "nice",
+      "second_word": "water",
       "continuation": "But now it's water, not nice. The drink was better with ice,"
     },
     {
@@ -994,7 +994,7 @@
     {
       "status": "no_rhyme",
       "first_word": "chat",
-      "second_word": "what",
+      "second_word": "fight",
       "continuation": "But it turned into a cat fight, what? The second line of your rh"
     },
     {
@@ -1004,15 +1004,15 @@
       "continuation": "His engine roared with triumph. The biker reached the hilltop, His"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "maintain",
-      "second_word": "sustain",
+      "second_word": "scale",
       "continuation": "The balance of the scale, sustain. The couplet you've written is already"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hat",
-      "second_word": "cat",
+      "second_word": "said",
       "continuation": "But found a ghost who said, \"I'm not a cat.\" Based on"
     },
     {
@@ -1022,15 +1022,15 @@
       "continuation": "To make his life more efficient and nice. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pain",
-      "second_word": "plain",
+      "second_word": "soft",
       "continuation": "With a touch so soft, so kind, so plain. The second line of"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flight",
-      "second_word": "night",
+      "second_word": "moonlit",
       "continuation": "Through the moonlit, starry night. The owl took a silent flight,"
     },
     {
@@ -1040,9 +1040,9 @@
       "continuation": "And sang a song with hopeful hand. The farmer worked the fertile land, And"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cold",
-      "second_word": "gold",
+      "second_word": "smiled",
       "continuation": "But still she smiled, her heart full of gold. The couplet you've"
     },
     {
@@ -1066,7 +1066,7 @@
     {
       "status": "no_rhyme",
       "first_word": "bold",
-      "second_word": "and",
+      "second_word": "heart",
       "continuation": "A hero's heart, both brave and _________. old Let's analyze the"
     },
     {
@@ -1124,9 +1124,9 @@
       "continuation": "But her favorite was the one who was bold. The couplet you've provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mitt",
-      "second_word": "mitt",
+      "second_word": "grin",
       "continuation": "He caught it with a grin, a perfect mitt. The couplet you've"
     },
     {
@@ -1136,27 +1136,27 @@
       "continuation": "And watched the stars come out. The couplet you've provided is a well"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hit",
-      "second_word": "it",
+      "second_word": "out",
       "continuation": "But struck out, and that was it. The batter tried to get a hit"
     },
     {
       "status": "no_rhyme",
       "first_word": "aristocrat",
-      "second_word": "doubt",
+      "second_word": "office",
       "continuation": "While he was away at the vet's office, no doubt. The couplet"
     },
     {
-      "status": "unknown",
+      "status": "no_rhyme",
       "first_word": "drink",
-      "second_word": "slink",
+      "second_word": "down",
       "continuation": "And drank it down, then gave a *slink*! \ud83d\ude3c The"
     },
     {
       "status": "no_rhyme",
       "first_word": "heartache",
-      "second_word": "take",
+      "second_word": "ruins",
       "continuation": "But from the ruins, hope will take. The storm left destruction and heartache"
     },
     {
@@ -1234,7 +1234,7 @@
     {
       "status": "no_rhyme",
       "first_word": "ring",
-      "second_word": "unique",
+      "second_word": "future",
       "continuation": "A call from the future, strange and unique. The phone began to loudly ring"
     },
     {
@@ -1270,7 +1270,7 @@
     {
       "status": "no_rhyme",
       "first_word": "par",
-      "second_word": "was",
+      "second_word": "face",
       "continuation": "With a putter in his hand and a grin on his face, he was"
     },
     {
@@ -1316,9 +1316,9 @@
       "continuation": "And the wolf's howl in the ground. The couplet you've written"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stay",
-      "second_word": "okay",
+      "second_word": "said",
       "continuation": "She said, \"Not if you're not okay.\" Based on the given rh"
     },
     {
@@ -1370,9 +1370,9 @@
       "continuation": "And never let it get too late. The couplet you've provided is well"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "meet",
-      "second_word": "meet",
+      "second_word": "late",
       "continuation": "But the train was late, and he was late to meet. A rhym"
     },
     {
@@ -1394,9 +1394,9 @@
       "continuation": "And watched the fireflies in the fog. The frog sat on a mossy"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bun",
-      "second_word": "run",
+      "second_word": "instead",
       "continuation": "But found a hat instead, and had to run. The rhyme scheme of this"
     },
     {
@@ -1496,9 +1496,9 @@
       "continuation": "And now she's in a world of cold. The couplet you've provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cell",
-      "second_word": "hell",
+      "second_word": "hours",
       "continuation": "He counted the hours, the minutes, the hell. The prisoner sat in his"
     },
     {
@@ -1544,15 +1544,15 @@
       "continuation": "Where the sun shone and the skies were blue. Based on the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flame",
-      "second_word": "fame",
+      "second_word": "peace",
       "continuation": "A symbol of peace, a symbol of fame. The torch carrier held the Olympic"
     },
     {
       "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "black",
+      "second_word": "night",
       "continuation": "And flew into the night, so black. The vampire turned into a flying bat"
     },
     {
@@ -1568,9 +1568,9 @@
       "continuation": "With coffee black and bread with cheese. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rear",
-      "second_word": "near",
+      "second_word": "hair",
       "continuation": "The wind in her hair, the sea near. A rhyming couplet"
     },
     {
@@ -1588,13 +1588,13 @@
     {
       "status": "no_rhyme",
       "first_word": "bar",
-      "second_word": "i",
+      "second_word": "anyway",
       "continuation": "But we found it anyway, my bar and I. The couplet is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "understand",
-      "second_word": "demand",
+      "second_word": "journey",
       "continuation": "That learning is a journey, not a demand. The teacher helped the students understand"
     },
     {
@@ -1612,13 +1612,13 @@
     {
       "status": "no_rhyme",
       "first_word": "stop",
-      "second_word": "course",
+      "second_word": "gas",
       "continuation": "His car ran out of gas, of course. A rhyming couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hen",
-      "second_word": "pen",
+      "second_word": "fox",
       "continuation": "But not for the fox, who had no pen. A rhyming couple"
     },
     {
@@ -1628,9 +1628,9 @@
       "continuation": "The audience gave a standing ovation at the end of the show. A rh"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bold",
-      "second_word": "old",
+      "second_word": "dragon",
       "continuation": "He fought the dragon, fierce and old. The knight was extremely bold, He"
     },
     {
@@ -1640,9 +1640,9 @@
       "continuation": "A rainbow formed in the springtime wink. The fountain began to spray and blink"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rear",
-      "second_word": "clear",
+      "second_word": "front",
       "continuation": "Then placed the couch in the front, clear. The first line ends with \""
     },
     {
@@ -1652,15 +1652,15 @@
       "continuation": "To make a better world for man. A rhyming couplet is two"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mice",
-      "second_word": "device",
+      "second_word": "ruse",
       "continuation": "But the cheese was a ruse, a device. The trap was set for"
     },
     {
       "status": "no_rhyme",
       "first_word": "acrobat",
-      "second_word": "clap",
+      "second_word": "grace",
       "continuation": "Then bowed with grace, the crowd gave a clap. The gymnast performed a"
     },
     {
@@ -1678,7 +1678,7 @@
     {
       "status": "no_rhyme",
       "first_word": "lock",
-      "second_word": "smoke",
+      "second_word": "jewels",
       "continuation": "And took out the jewels, then vanished like smoke. The couplet you've"
     },
     {
@@ -1718,9 +1718,9 @@
       "continuation": "To keep his soul from fading light. A rhyming couplet is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hall",
-      "second_word": "ball",
+      "second_word": "flowers",
       "continuation": "With flowers, candles, and a ball. A rhyming couplet is"
     },
     {
@@ -1768,7 +1768,7 @@
     {
       "status": "no_rhyme",
       "first_word": "weed",
-      "second_word": "instead",
+      "second_word": "place",
       "continuation": "And in its place, a rose instead. The couplet you've provided is"
     },
     {
@@ -1784,9 +1784,9 @@
       "continuation": "But the dragon was not in the night. The warrior was ready for the fight"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "done",
-      "second_word": "won",
+      "second_word": "hard",
       "continuation": "The team had worked hard, they had won. The project was finally done,"
     },
     {
@@ -1796,9 +1796,9 @@
       "continuation": "A crown of stars in his hand. The ruler of the distant land, A"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tree",
-      "second_word": "see",
+      "second_word": "it",
       "continuation": "The cat chased it, but couldn't see.  The squirrel ran up the"
     },
     {
@@ -1858,7 +1858,7 @@
     {
       "status": "no_rhyme",
       "first_word": "men",
-      "second_word": "s",
+      "second_word": "times",
       "continuation": "In ancient times, in ancient fen's. The second line of the couplet"
     },
     {
@@ -1898,21 +1898,21 @@
       "continuation": "As it kicked up some dust on its way. The donkey let out a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bar",
-      "second_word": "far",
+      "second_word": "all",
       "continuation": "And broke the record once and for all, far. The second line of the"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wombat",
-      "second_word": "wombat",
+      "second_word": "large",
       "continuation": "Which is a kind of large, round, flat, fat wombat. The"
     },
     {
       "status": "rhyme",
       "first_word": "grand",
-      "second_word": "stand",
+      "second_word": "hand",
       "continuation": "With a wave of his hand, he made things stand. The magician performed tricks"
     },
     {
@@ -1940,9 +1940,9 @@
       "continuation": "And the world was forever freed. The couplet you've written is quite impactful"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "heed",
-      "second_word": "need",
+      "second_word": "was",
       "continuation": "But the truth was, he had no need. A rhyming couplet"
     },
     {
@@ -1952,9 +1952,9 @@
       "continuation": "But still I saw the stars a-bog.  (I know, it"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "den",
-      "second_word": "pen",
+      "second_word": "asked",
       "continuation": "When one asked, \"What's the best to pen?'' (pen as"
     },
     {
@@ -2006,21 +2006,21 @@
       "continuation": "The moonlight lit its path each day. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mine",
-      "second_word": "fine",
+      "second_word": "diamond",
       "continuation": "He found a diamond, but it was not fine. A rhyming couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "king",
-      "second_word": "thing",
+      "second_word": "juggling",
       "continuation": "A juggling, tumbling, jingling thing. The user provided a"
     },
     {
       "status": "no_rhyme",
       "first_word": "frog",
-      "second_word": "log",
+      "second_word": "one",
       "continuation": "But now there's just one, and it's on a log. The first"
     },
     {
@@ -2030,9 +2030,9 @@
       "continuation": "The sun was high and the heat was far. The couplet you've written"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "show",
+      "second_word": "best",
       "continuation": "He was the best, and they should show. He wanted everyone to know,"
     },
     {
@@ -2060,9 +2060,9 @@
       "continuation": "Then he danced a jolly hop. He ate a cherry lollipop, Then"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sting",
-      "second_word": "thing",
+      "second_word": "danced",
       "continuation": "But still he danced, a joyful thing. The couplet you've provided is"
     },
     {
@@ -2090,9 +2090,9 @@
       "continuation": "But now they're sad and very red.  Please analyze the rhyme scheme and"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stand",
-      "second_word": "land",
+      "second_word": "war",
       "continuation": "But lost the war, and won the land. The couplet you've provided"
     },
     {
@@ -2120,9 +2120,9 @@
       "continuation": "But not a single one was bold. The merchant had his items sold, <"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pen",
-      "second_word": "pen",
+      "second_word": "letter",
       "continuation": "But it was not a letter, it was a pen. A classic example of"
     },
     {
@@ -2138,9 +2138,9 @@
       "continuation": "But the task was still quite surreal. The instructions were perfectly clear, But the"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "go",
+      "second_word": "left",
       "continuation": "But now he's left, and he doesn't go. The second line of"
     },
     {
@@ -2150,9 +2150,9 @@
       "continuation": "The arrow flew and the target was missed by a mile. The archer pulled"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "seed",
-      "second_word": "indeed",
+      "second_word": "green",
       "continuation": "A world of green, a world indeed. The garden sprouted from each seed"
     },
     {
@@ -2200,13 +2200,13 @@
     {
       "status": "no_rhyme",
       "first_word": "crowned",
-      "second_word": "crown",
+      "second_word": "ribbon",
       "continuation": "With a trophy and a ribbon, a spelling crown. A couplet is a"
     },
     {
       "status": "no_rhyme",
       "first_word": "treat",
-      "second_word": "great",
+      "second_word": "sprinkles",
       "continuation": "A chocolate cake with sprinkles, great. The user provided a rhyming"
     },
     {
@@ -2246,9 +2246,9 @@
       "continuation": "A hunter's bullet in his flank. The leopard through the jungle ran, <"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "unfold",
-      "second_word": "gold",
+      "second_word": "world",
       "continuation": "Of a new world, a world of gold. The prophet's vision did unfold"
     },
     {
@@ -2294,9 +2294,9 @@
       "continuation": "He gave it to her with a wink and a grin. A rhyming"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "blow",
-      "second_word": "below",
+      "second_word": "you",
       "continuation": "And thought of you, and thought of you below. The couplet you've"
     },
     {
@@ -2318,9 +2318,9 @@
       "continuation": "So they fixed it with a ___ and a ___? To complete the rhym"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "hand",
+      "second_word": "follow",
       "continuation": "A path to follow, hand in hand. The couplet you've provided is"
     },
     {
@@ -2332,13 +2332,13 @@
     {
       "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "wan",
+      "second_word": "bright",
       "continuation": "The sun shone bright, the breeze was wan.  (wan meaning weak"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hen",
-      "second_word": "pen",
+      "second_word": "eggs",
       "continuation": "The hen laid eggs, ten to a pen. The first line is \"The"
     },
     {
@@ -2368,7 +2368,7 @@
     {
       "status": "no_rhyme",
       "first_word": "yell",
-      "second_word": "a",
+      "second_word": "dog",
       "continuation": "\"I'm not a dog, I'm not a ___!\" Well, the answer"
     },
     {
@@ -2392,7 +2392,7 @@
     {
       "status": "no_rhyme",
       "first_word": "men",
-      "second_word": "begun",
+      "second_word": "wept",
       "continuation": "The women wept, the war had just begun. The rooster crowed"
     },
     {
@@ -2422,7 +2422,7 @@
     {
       "status": "no_rhyme",
       "first_word": "jar",
-      "second_word": "the",
+      "second_word": "here",
       "continuation": "But found a note inside: \"Not here, not there, not in the"
     },
     {
@@ -2444,9 +2444,9 @@
       "continuation": "The moonlight danced on the wet. The fisherman pulled in his net,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "think",
-      "second_word": "drink",
+      "second_word": "said",
       "continuation": "Then said, \"I'm not the kind to drink.\" A rhyming"
     },
     {
@@ -2462,21 +2462,21 @@
       "continuation": "And sang a song to every one. A rhyming couplet is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bold",
-      "second_word": "cold",
+      "second_word": "said",
       "continuation": "So he just said, \"I'm feeling cold.\" The couplet you've"
     },
     {
       "status": "no_rhyme",
       "first_word": "band",
-      "second_word": "man",
+      "second_word": "star",
       "continuation": "Now he's a star, a famous man. A rhyming couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spun",
-      "second_word": "spun",
+      "second_word": "spiders",
       "continuation": "But not by spiders, no, by one\u2014 The web was very finely spun"
     },
     {
@@ -2492,9 +2492,9 @@
       "continuation": "And the highway went above the subway. To craft a rhyming couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pink",
-      "second_word": "blink",
+      "second_word": "fire",
       "continuation": "The sky was on fire, not just in the blink. The first line of"
     },
     {
@@ -2536,7 +2536,7 @@
     {
       "status": "no_rhyme",
       "first_word": "scar",
-      "second_word": "was",
+      "second_word": "patch",
       "continuation": "He wore a patch, but not for far-sight\u2014no, it was"
     },
     {
@@ -2558,9 +2558,9 @@
       "continuation": "The weight of the world on his brain. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tight",
-      "second_word": "flight",
+      "second_word": "open",
       "continuation": "But the wind blew it open, and the cat took flight. The user provided"
     },
     {
@@ -2600,9 +2600,9 @@
       "continuation": "Who nibbled it and then spat it out. The rhyme scheme of the given"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "down",
-      "second_word": "frown",
+      "second_word": "her",
       "continuation": "And thought of her, with a frown. He watched the sun slowly go"
     },
     {
@@ -2612,9 +2612,9 @@
       "continuation": "To guide the lost and set things right. That's a beautiful rhyming"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "land",
-      "second_word": "hand",
+      "second_word": "compass",
       "continuation": "With compass, quill, and hand. The explorer charted the terrain,"
     },
     {
@@ -2630,15 +2630,15 @@
       "continuation": "And pushed the boat from shore to shore. A rhyming couplet is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stop",
-      "second_word": "stop",
+      "second_word": "going",
       "continuation": "But he kept going, going, going, stop. The light told him he"
     },
     {
       "status": "no_rhyme",
       "first_word": "crown",
-      "second_word": "found",
+      "second_word": "head",
       "continuation": "On her head, the crown was found. A rhyming couplet is"
     },
     {
@@ -2732,9 +2732,9 @@
       "continuation": "And made a loaf to feed the crow. The baker kneaded up the dough"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "seed",
-      "second_word": "need",
+      "second_word": "joy",
       "continuation": "With hope and joy, and not with need. The farmer planted every seed,"
     },
     {
@@ -2864,15 +2864,15 @@
       "continuation": "The moon was bright and cold as night. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "bit",
+      "second_word": "dark",
       "continuation": "The room was dark, the night was bit. The second line of this couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "see",
-      "second_word": "free",
+      "second_word": "brightly",
       "continuation": "But the stars were shining brightly, free. The fog made it hard to see"
     },
     {
@@ -2894,9 +2894,9 @@
       "continuation": "The sun would set and stars would wake. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "so",
+      "second_word": "vet",
       "continuation": "And now she's a vet, and she's doing just so. The couple"
     },
     {
@@ -2906,9 +2906,9 @@
       "continuation": "A fox was on the run again. The hunter wandered through the glen,"
     },
     {
-      "status": "no_rhyme",
+      "status": "rhyme",
       "first_word": "play",
-      "second_word": "what",
+      "second_word": "say",
       "continuation": "But he forgot his lines and had to say, \"I don't know what"
     },
     {
@@ -2948,9 +2948,9 @@
       "continuation": "And felt a warm glow. She didn't know how. The second line of"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hall",
-      "second_word": "all",
+      "second_word": "him",
       "continuation": "She knew it was him, after all. The couplet you've provided is"
     },
     {
@@ -3008,9 +3008,9 @@
       "continuation": "The stars danced in the velvet night. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "bit",
+      "second_word": "couch",
       "continuation": "While the couch, with snacks, was his citadel bit by bit. The"
     },
     {
@@ -3038,15 +3038,15 @@
       "continuation": "The crowd all cheered and gave a star. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fold",
-      "second_word": "bold",
+      "second_word": "comfort",
       "continuation": "A cocoon of comfort, soft and bold. She wrapped herself in fabric fold"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "land",
-      "second_word": "grand",
+      "second_word": "trees",
       "continuation": "A forest of trees, a mountain so grand. The user provided a rhym"
     },
     {
@@ -3056,9 +3056,9 @@
       "continuation": "But not the face that stared in its place. The couplet you've provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "foretell",
-      "second_word": "well",
+      "second_word": "future",
       "continuation": "The future, past, and present well. A rhyming couplet is"
     },
     {
@@ -3082,7 +3082,7 @@
     {
       "status": "no_rhyme",
       "first_word": "fun",
-      "second_word": "down",
+      "second_word": "day",
       "continuation": "They played all day, the sun went down. A rhyming couplet"
     },
     {
@@ -3140,9 +3140,9 @@
       "continuation": "To hit the man who hit her pan. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spray",
-      "second_word": "today",
+      "second_word": "said",
       "continuation": "Then said, \"I hope it doesn't make you sick today.\" The couple"
     },
     {
@@ -3248,15 +3248,15 @@
       "continuation": "And sang a song from way back far. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "take",
-      "second_word": "cake",
+      "second_word": "disaster",
       "continuation": "But the cake was a disaster, not a cake. The recipe told her which"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shine",
-      "second_word": "nine",
+      "second_word": "whispered",
       "continuation": "And whispered, \"I'll be there by nine.\" The couplet you've"
     },
     {
@@ -3268,7 +3268,7 @@
     {
       "status": "no_rhyme",
       "first_word": "run",
-      "second_word": "two",
+      "second_word": "falling",
       "continuation": "The snow was falling, two by two. The kids began to laugh and run"
     },
     {
@@ -3278,9 +3278,9 @@
       "continuation": "But found a treasure in the throw. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slice",
-      "second_word": "ice",
+      "second_word": "butter",
       "continuation": "Of bread and butter, and ice. A rhyming couplet is a"
     },
     {
@@ -3308,15 +3308,15 @@
       "continuation": "The groom was a bit of a cad. The bride needed help to understand,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fear",
-      "second_word": "clear",
+      "second_word": "courage",
       "continuation": "With courage, strength, and crystal clear. The second line of the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "old",
+      "second_word": "here",
       "continuation": "But still he's here, and I'm the old. The second line of"
     },
     {
@@ -3344,15 +3344,15 @@
       "continuation": "He gave her a large offering. To continue the rhyming couplet in"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "stand",
+      "second_word": "grains",
       "continuation": "A life in grains, a shifting stand. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bold",
-      "second_word": "cold",
+      "second_word": "dragon",
       "continuation": "He fought the dragon, fierce and cold. The knight's courage was brave and"
     },
     {
@@ -3406,7 +3406,7 @@
     {
       "status": "no_rhyme",
       "first_word": "bureaucrat",
-      "second_word": "great",
+      "second_word": "now",
       "continuation": "But he's one now, and it's not that great. The couplet"
     },
     {
@@ -3452,9 +3452,9 @@
       "continuation": "The steam rose up with mystery. The couplet you've provided is a well"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "row",
-      "second_word": "know",
+      "second_word": "color",
       "continuation": "Each one a different color, you know. The garden beds were planted in a"
     },
     {
@@ -3470,9 +3470,9 @@
       "continuation": "And watched them sprout and grow around. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bit",
-      "second_word": "lit",
+      "second_word": "precise",
       "continuation": "With timing so precise, it was a work of art, not just a lit"
     },
     {
@@ -3488,9 +3488,9 @@
       "continuation": "And then she signed her real name. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tree",
-      "second_word": "free",
+      "second_word": "deep",
       "continuation": "Its roots now deep, its branches free. The couplet you've written is"
     },
     {
@@ -3506,15 +3506,15 @@
       "continuation": "While I was stuck in line. A rhyming couplet is a pair"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "pat",
+      "second_word": "work",
       "continuation": "He wore it to work, then gave it a pat. The couplet you"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fold",
-      "second_word": "bold",
+      "second_word": "himself",
       "continuation": "Then returned to the fold himself, feeling bold. The user's query is a"
     },
     {
@@ -3652,7 +3652,7 @@
     {
       "status": "no_rhyme",
       "first_word": "jet",
-      "second_word": "speed",
+      "second_word": "grace",
       "continuation": "It flew with grace, it flew with speed. A rhyming couplet"
     },
     {
@@ -3674,9 +3674,9 @@
       "continuation": "The moving day had just began. The original couplet has a rhyme between \""
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "run",
-      "second_word": "won",
+      "second_word": "it",
       "continuation": "But I did it, and the race was won. The marathon was hard to"
     },
     {
@@ -3698,9 +3698,9 @@
       "continuation": "The flame will never quit. The couplet you've provided is a well-"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "row",
-      "second_word": "grow",
+      "second_word": "hope",
       "continuation": "With care and hope, they watched them grow. The crops were planted row by"
     },
     {
@@ -3724,7 +3724,7 @@
     {
       "status": "no_rhyme",
       "first_word": "ink",
-      "second_word": "thinks",
+      "second_word": "dry",
       "continuation": "The pen was dry, the writer thinks. The couplet you've provided is"
     },
     {
@@ -3802,7 +3802,7 @@
     {
       "status": "no_rhyme",
       "first_word": "call",
-      "second_word": "s",
+      "second_word": "wail",
       "continuation": "A baby's wail, a mother's ___? The answer is \"wo"
     },
     {
@@ -3824,9 +3824,9 @@
       "continuation": "When a crab came out and took a stand. The kids were playing in the"
     },
     {
-      "status": "rhyme",
+      "status": "unknown",
       "first_word": "feed",
-      "second_word": "seed",
+      "second_word": "flitted",
       "continuation": "While parents flitted, bringing seed. The baby birds opened their mouths wide with"
     },
     {
@@ -3892,7 +3892,7 @@
     {
       "status": "no_rhyme",
       "first_word": "snowflake",
-      "second_word": "safe",
+      "second_word": "said",
       "continuation": "He kissed it and said, \"I'll keep it safe.\" A rhym"
     },
     {
@@ -3938,9 +3938,9 @@
       "continuation": "But the hole was not in the sock. It was in the floor. She"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fear",
-      "second_word": "near",
+      "second_word": "roared",
       "continuation": "He roared, but she drew near. The couplet you've provided is"
     },
     {
@@ -4066,7 +4066,7 @@
     {
       "status": "no_rhyme",
       "first_word": "dog",
-      "second_word": "bogged",
+      "second_word": "along",
       "continuation": "The man just trailed along, quite bogged. The structure of a rhym"
     },
     {
@@ -4082,15 +4082,15 @@
       "continuation": "But not before he'd had his can. The first line is in past tense"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fee",
-      "second_word": "see",
+      "second_word": "said",
       "continuation": "The client said, \"I can't see\u2014\". To complete the rhym"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pan",
-      "second_word": "man",
+      "second_word": "coffee",
       "continuation": "He made a cup of coffee, man. The couplet you've provided is"
     },
     {
@@ -4112,9 +4112,9 @@
       "continuation": "And went to play in the front yard chat. The second line of the couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "drink",
-      "second_word": "drink",
+      "second_word": "said",
       "continuation": "She said, \"I'd rather take a drink.\" \ud83d\ude0f\ud83c\udf4b #Double"
     },
     {
@@ -4148,15 +4148,15 @@
       "continuation": "The cat was sleeping on the ice. The cheese was eaten by the mice,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "play",
-      "second_word": "way",
+      "second_word": "rhyme",
       "continuation": "With rhythm and rhyme, they found their way. A rhyming couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "bit",
+      "second_word": "me",
       "continuation": "But not by me, it's not my bit. The first line of the"
     },
     {
@@ -4220,9 +4220,9 @@
       "continuation": "The wind began to howl and lark. The second line of the couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "snow",
-      "second_word": "low",
+      "second_word": "howling",
       "continuation": "The wind was howling, cold and low. The user has provided a rh"
     },
     {
@@ -4238,9 +4238,9 @@
       "continuation": "Who could juggle and walk a tightrope without a frown. The"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sat",
-      "second_word": "pat",
+      "second_word": "waiting",
       "continuation": "But the cat was waiting, ready to pounce and pat. The mouse sc"
     },
     {
@@ -4276,7 +4276,7 @@
     {
       "status": "no_rhyme",
       "first_word": "frame",
-      "second_word": "pane",
+      "second_word": "windows",
       "continuation": "She made the windows, pane by pane. The couplet you've provided is"
     },
     {
@@ -4288,7 +4288,7 @@
     {
       "status": "no_rhyme",
       "first_word": "hog",
-      "second_word": "log",
+      "second_word": "said",
       "continuation": "But the judge said, \"I can't log.\" Based on the given rh"
     },
     {
@@ -4334,9 +4334,9 @@
       "continuation": "But it was a bit too small in the brand. To improve the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fall",
-      "second_word": "call",
+      "second_word": "her",
       "continuation": "And thought of her, and how it all began to call. The second line"
     },
     {
@@ -4352,9 +4352,9 @@
       "continuation": "But now he's on the winning bet. The couplet you've provided is"
     },
     {
-      "status": "unknown",
+      "status": "no_rhyme",
       "first_word": "found",
-      "second_word": "strewed",
+      "second_word": "gems",
       "continuation": "A treasure chest with gold and gems, the ground was strewed. The"
     },
     {
@@ -4364,9 +4364,9 @@
       "continuation": "With trees and flowers in full bloom twice. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "no",
+      "second_word": "said",
       "continuation": "But he just smiled and said, \"No, no, no, no,"
     },
     {
@@ -4376,9 +4376,9 @@
       "continuation": "And loosed it with all her might. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rock",
-      "second_word": "shock",
+      "second_word": "masterpiece",
       "continuation": "A masterpiece, a work of shock. The couplet you've provided is a"
     },
     {
@@ -4444,7 +4444,7 @@
     {
       "status": "no_rhyme",
       "first_word": "around",
-      "second_word": "course",
+      "second_word": "leash",
       "continuation": "But forgot the leash, of course. He walked the dog around, <br"
     },
     {
@@ -4454,9 +4454,9 @@
       "continuation": "As the storm raged and the winds rolled. He tightened his protective hold,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "plea",
-      "second_word": "me",
+      "second_word": "said",
       "continuation": "He just said, \"I'm not me.\" The couplet you've provided"
     },
     {
@@ -4574,15 +4574,15 @@
       "continuation": "And smiled to see the colors show. A rhyming couplet is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wine",
-      "second_word": "divine",
+      "second_word": "moon",
       "continuation": "And smiled at the moon, so divine. She sipped the sparkling Valentine wine"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bed",
-      "second_word": "spread",
+      "second_word": "plumped",
       "continuation": "The pillows plumped, the blankets spread. Now, let's create a rh"
     },
     {
@@ -4594,7 +4594,7 @@
     {
       "status": "no_rhyme",
       "first_word": "knock",
-      "second_word": "dropped",
+      "second_word": "door",
       "continuation": "He opened the door, and then dropped. The second line of the couplet"
     },
     {
@@ -4652,15 +4652,15 @@
       "continuation": "On a log to rest his aching hat. The couplet you've provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hall",
-      "second_word": "all",
+      "second_word": "memory",
       "continuation": "A ghost of memory, a ghost of all. The second line of the couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tan",
-      "second_word": "man",
+      "second_word": "bikini",
       "continuation": "From lying in the sun in a string bikini, and a man. To improve"
     },
     {
@@ -4714,7 +4714,7 @@
     {
       "status": "no_rhyme",
       "first_word": "star",
-      "second_word": "too",
+      "second_word": "gone",
       "continuation": "The moon was gone, it wasn't far\u2014 The sun was hiding, too"
     },
     {
@@ -4724,9 +4724,9 @@
       "continuation": "And watched the springtime skies. He scattered wildflower seeds, <br>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "set",
-      "second_word": "vet",
+      "second_word": "winner",
       "continuation": "To be a winner, not a vet. The couplet you've provided is"
     },
     {
@@ -4748,9 +4748,9 @@
       "continuation": "To something more divine. She changed her last name to something more divine. She"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "beat",
-      "second_word": "cheat",
+      "second_word": "other",
       "continuation": "The clock and each other, no cheat. The given text is a rhym"
     },
     {
@@ -4780,7 +4780,7 @@
     {
       "status": "no_rhyme",
       "first_word": "game",
-      "second_word": "high",
+      "second_word": "loud",
       "continuation": "The crowd was loud, the stakes were high. The teams competed in the game"
     },
     {
@@ -4790,9 +4790,9 @@
       "continuation": "He looked for signs of shifting sand. The builder inspected where the house would stand"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sound",
-      "second_word": "round",
+      "second_word": "heart",
       "continuation": "Of her own heart, so deep and round. She listened to the drumbeat"
     },
     {
@@ -4826,9 +4826,9 @@
       "continuation": "The treasure map was not a hat. The cave was dark and full of bat"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hand",
-      "second_word": "understand",
+      "second_word": "map",
       "continuation": "A treasure map, so he did understand. He had a map within his hand"
     },
     {
@@ -4852,7 +4852,7 @@
     {
       "status": "no_rhyme",
       "first_word": "slice",
-      "second_word": "smile",
+      "second_word": "sly",
       "continuation": "He took it with a sly, small smile. The couplet you've"
     },
     {
@@ -4886,9 +4886,9 @@
       "continuation": "That spoke in rhymes and wore a hat. The couplet is already complete"
     },
     {
-      "status": "unknown",
+      "status": "no_rhyme",
       "first_word": "caveat",
-      "second_word": "caveated",
+      "second_word": "said",
       "continuation": "But the poet said, \"Let's not be so caveated.\" The couple"
     },
     {
@@ -4958,9 +4958,9 @@
       "continuation": "It fit inside a teacup tall. A rhyming couplet is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "car",
-      "second_word": "far",
+      "second_word": "bright",
       "continuation": "The future bright, the past too far. The couplet you've provided is"
     },
     {
@@ -5020,7 +5020,7 @@
     {
       "status": "no_rhyme",
       "first_word": "wall",
-      "second_word": "gold",
+      "second_word": "bright",
       "continuation": "Its colors bright, its frame of gold. The painting hung upon the wall,"
     },
     {
@@ -5032,13 +5032,13 @@
     {
       "status": "no_rhyme",
       "first_word": "pat",
-      "second_word": "what",
+      "second_word": "whispered",
       "continuation": "And whispered, \"You're a brave little what?\" The answer to the r"
     },
     {
       "status": "no_rhyme",
       "first_word": "rear",
-      "second_word": "where",
+      "second_word": "instead",
       "continuation": "But found the mirror's frame instead, and not the back of where. The"
     },
     {
@@ -5054,9 +5054,9 @@
       "continuation": "But they were only figments of her wall. The second line of the couple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "key",
-      "second_word": "free",
+      "second_word": "love",
       "continuation": "But found a new love, wild and free. The couplet you've provided"
     },
     {
@@ -5096,15 +5096,15 @@
       "continuation": "And the world began to shine. The couplet you've provided is a nice"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ball",
-      "second_word": "tall",
+      "second_word": "danced",
       "continuation": "But no one danced, they all stood tall. The king hosted a royal ball"
     },
     {
       "status": "no_rhyme",
       "first_word": "price",
-      "second_word": "the",
+      "second_word": "warm",
       "continuation": "But now I'm warm, and that's the _______ _______? The"
     },
     {
@@ -5134,7 +5134,7 @@
     {
       "status": "no_rhyme",
       "first_word": "hog",
-      "second_word": "log",
+      "second_word": "county",
       "continuation": "The largest in the county, ogre-log.  (I know, not"
     },
     {
@@ -5144,9 +5144,9 @@
       "continuation": "And never left to have some fun. Based on the rhyming couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fold",
-      "second_word": "rolled",
+      "second_word": "hand",
       "continuation": "But in his hand, it never rolled. The first line of the couplet"
     },
     {
@@ -5174,9 +5174,9 @@
       "continuation": "And opened up a brand new key. The first line uses the word \"key"
     },
     {
-      "status": "unknown",
+      "status": "no_rhyme",
       "first_word": "cold",
-      "second_word": "retold",
+      "second_word": "heart",
       "continuation": "But in my heart, a tale retold. The winter air was bitter cold"
     },
     {
@@ -5200,7 +5200,7 @@
     {
       "status": "no_rhyme",
       "first_word": "holiday",
-      "second_word": "display",
+      "second_word": "tinsel",
       "continuation": "With lights and tinsel, joy to display. She decorated for the holiday"
     },
     {
@@ -5210,9 +5210,9 @@
       "continuation": "And shot the moon from off its bow. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fat",
-      "second_word": "that",
+      "second_word": "lot",
       "continuation": "He ate a lot, and that was that. The structure of a **rh"
     },
     {
@@ -5228,9 +5228,9 @@
       "continuation": "A hint of something gone amiss. The kitchen had a smell of spice,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ground",
-      "second_word": "sound",
+      "second_word": "time",
       "continuation": "A testament to time, both strong and sound. The river carved its path through"
     },
     {
@@ -5252,9 +5252,9 @@
       "continuation": "But now she's stuck on something new. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pen",
-      "second_word": "again",
+      "second_word": "poem",
       "continuation": "He wrote a poem, then again. The second line of the couplet should"
     },
     {
@@ -5282,9 +5282,9 @@
       "continuation": "And danced with moon in silver light. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sign",
-      "second_word": "divine",
+      "second_word": "love",
       "continuation": "A symbol of love, so divine. The message ended with a sign, <"
     },
     {
@@ -5294,9 +5294,9 @@
       "continuation": "While he sipped his tea and watched the snow. The couplet you've"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "writ",
-      "second_word": "fit",
+      "second_word": "starlight",
       "continuation": "By candlelight and by starlight, it fit. The manuscript was carefully writ"
     },
     {
@@ -5354,9 +5354,9 @@
       "continuation": "But the floor was wobbly and the walls were not that. A rh"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "hat",
+      "second_word": "far",
       "continuation": "And flew so far, it vanished from the hat. The ball was hit by"
     },
     {
@@ -5366,15 +5366,15 @@
       "continuation": "But the museum was still bold. A rhyming couplet is a pair"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grand",
-      "second_word": "hand",
+      "second_word": "mortar",
       "continuation": "With stone and mortar, hand by hand. The castle stood with proud might,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bun",
-      "second_word": "son",
+      "second_word": "ketchup",
       "continuation": "The fries are best with ketchup, son. A rhyming couplet"
     },
     {
@@ -5404,7 +5404,7 @@
     {
       "status": "no_rhyme",
       "first_word": "smell",
-      "second_word": "real",
+      "second_word": "perfume",
       "continuation": "Of her mother's perfume, soft and real. The couplet you've provided"
     },
     {
@@ -5450,9 +5450,9 @@
       "continuation": "But it was worth it for the spring. The couplet you've provided is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "glen",
-      "second_word": "men",
+      "second_word": "dark",
       "continuation": "Its shadow dark, a shade of men. The eagle soared above the glen"
     },
     {
@@ -5480,15 +5480,15 @@
       "continuation": "And vanished in a flash of flame and smoke. The couplet you've provided"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "grand",
+      "second_word": "spiral",
       "continuation": "A perfect spiral, smooth and grand. Now, can you continue the story of"
     },
     {
       "status": "no_rhyme",
       "first_word": "hog",
-      "second_word": "log",
+      "second_word": "pie",
       "continuation": "and apple pie, and bread and log. Is this a correct example of a"
     },
     {
@@ -5600,9 +5600,9 @@
       "continuation": "But still he walked, and walked, and walked, and walked, and walked"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shock",
-      "second_word": "clock",
+      "second_word": "work",
       "continuation": "She was late for work, and it was 3 o'clock. The couple"
     },
     {
@@ -5624,9 +5624,9 @@
       "continuation": "And filled it with what he had caught that night. The couplet you've"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grow",
-      "second_word": "know",
+      "second_word": "step",
       "continuation": "With every step, she'd learned to know. The couplet you've provided"
     },
     {
@@ -5666,9 +5666,9 @@
       "continuation": "With wine and cheese and bread and lettuce. The table was already set, <"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "that",
+      "second_word": "squat",
       "continuation": "But some preferred to squat, like that. The yoga teacher showed them sitting flat"
     },
     {
@@ -5708,9 +5708,9 @@
       "continuation": "Of the pie that I had made nice. He took a very large slice,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tight",
-      "second_word": "bright",
+      "second_word": "love",
       "continuation": "A mother's love, a beacon bright. She held her baby nestled tight,"
     },
     {
@@ -5732,9 +5732,9 @@
       "continuation": "But had a heart that was quite tall. The piglet was extremely small,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ground",
-      "second_word": "found",
+      "second_word": "seed",
       "continuation": "To plant a seed, and be found. The second line of the couplet"
     },
     {
@@ -5750,9 +5750,9 @@
       "continuation": "The stars came out to shine so bright. A rhyming couplet is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "around",
-      "second_word": "profound",
+      "second_word": "love",
       "continuation": "A symbol of her love, so profound. She wrapped the scarf tightly around,"
     },
     {
@@ -5768,9 +5768,9 @@
       "continuation": "He'd rather be dead than beget. The second line of the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bread",
-      "second_word": "unsaid",
+      "second_word": "jam",
       "continuation": "And a jar of jam, unsaid. The couplet you've provided is"
     },
     {
@@ -5798,15 +5798,15 @@
       "continuation": "A relic from a time long inked\u2014 A metaphor for the memories that linger"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bow",
-      "second_word": "show",
+      "second_word": "life",
       "continuation": "The end of life, the end of show. The couplet you've written"
     },
     {
       "status": "rhyme",
       "first_word": "fed",
-      "second_word": "red",
+      "second_word": "said",
       "continuation": "When one said, \"O, this grass is red!\" Based on the given"
     },
     {
@@ -5876,21 +5876,21 @@
       "continuation": "The lightning flashed around. The thunder made a booming sound, The lightning flashed around"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tear",
-      "second_word": "clear",
+      "second_word": "smiled",
       "continuation": "And smiled, but it wasn't clear. The second line of the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "man",
-      "second_word": "man",
+      "second_word": "one",
       "continuation": "But he was not a very good one, man. The couplet you've"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "den",
-      "second_word": "then",
+      "second_word": "gone",
       "continuation": "But now he's gone, and it's been ten years since then. The"
     },
     {
@@ -5902,7 +5902,7 @@
     {
       "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "twist",
+      "second_word": "came",
       "continuation": "The answer came, it was a twist. The puzzle piece was a perfect fit"
     },
     {
@@ -5978,9 +5978,9 @@
       "continuation": "Who leapt into the pond from log. A couplet is a pair of"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "need",
-      "second_word": "greed",
+      "second_word": "life",
       "continuation": "To make a new life, and not just for greed. The couplet you"
     },
     {
@@ -6032,15 +6032,15 @@
       "continuation": "It looked as if it would fall though. The moon was hanging very low,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "net",
-      "second_word": "set",
+      "second_word": "wild",
       "continuation": "The crowd went wild, \"Let's get set!\" \ud83c\udfd0\ud83c\udf89 #"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "circle",
       "continuation": "Then made a circle, quite divine. The couplet you've provided is a"
     },
     {
@@ -6110,9 +6110,9 @@
       "continuation": "But then she felt the guilt come on. The next line of the couplet"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "man",
-      "second_word": "man",
+      "second_word": "do",
       "continuation": "He had a lot of work to do, man. The couplet you've"
     },
     {
@@ -6134,9 +6134,9 @@
       "continuation": "He never missed a single _______? The answer is \"day.\" The completed"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "treat",
-      "second_word": "complete",
+      "second_word": "cream",
       "continuation": "With chocolate and cream, it was just the complete. The given text is a"
     },
     {
@@ -6148,13 +6148,13 @@
     {
       "status": "rhyme",
       "first_word": "mat",
-      "second_word": "hat",
+      "second_word": "cat",
       "continuation": "A lazy cat, with a lazy hat. The feline stretched out on the"
     },
     {
       "status": "no_rhyme",
       "first_word": "fat",
-      "second_word": "great",
+      "second_word": "good",
       "continuation": "The soup was good, but not that great. The first line of the couple"
     },
     {
@@ -6170,9 +6170,9 @@
       "continuation": "But still he lost the war he fought for gold. The couplet you've"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hop",
-      "second_word": "crop",
+      "second_word": "deep",
       "continuation": "Then fell into a deep, deep crop. The rabbit did a little hop,"
     },
     {
@@ -6202,7 +6202,7 @@
     {
       "status": "no_rhyme",
       "first_word": "ring",
-      "second_word": "wrong",
+      "second_word": "heart",
       "continuation": "But in his heart, he knew it was wrong. The couplet you've"
     },
     {
@@ -6242,9 +6242,9 @@
       "continuation": "She missed the last one again. The couplet you've written is a simple"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flame",
-      "second_word": "name",
+      "second_word": "firm",
       "continuation": "The knight stood firm, no need to name. The dragon breathed fire and flame"
     },
     {
@@ -6260,9 +6260,9 @@
       "continuation": "A baby in her arms so bold. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "behold",
-      "second_word": "bold",
+      "second_word": "stories",
       "continuation": "A patchwork of stories, both bold. The blanket was a sight to behold"
     },
     {
@@ -6290,9 +6290,9 @@
       "continuation": "And then the ground began to break. A rhyming couplet is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "won",
-      "second_word": "son",
+      "second_word": "first",
       "continuation": "By the one who came first, of course, my son. The user provided"
     },
     {
@@ -6310,7 +6310,7 @@
     {
       "status": "no_rhyme",
       "first_word": "block",
-      "second_word": "smoke",
+      "second_word": "drum",
       "continuation": "His heart a drum, his breath a smoke. The couplet you've written"
     },
     {
@@ -6320,9 +6320,9 @@
       "continuation": "To make a dress for her young daughter's gown. The second line of this"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "deed",
-      "second_word": "need",
+      "second_word": "end",
       "continuation": "But in the end, he lost his need. The couplet you've provided"
     },
     {
@@ -6368,15 +6368,15 @@
       "continuation": "And found a note within it, can you explain it? The rhyme and rhythm"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hand",
-      "second_word": "land",
+      "second_word": "desert",
       "continuation": "But her heart was a desert, so very, very, dry land. The"
     },
     {
       "status": "no_rhyme",
       "first_word": "shell",
-      "second_word": "still",
+      "second_word": "lived",
       "continuation": "A relic of a life once well lived, now still. She examined the empty"
     },
     {
@@ -6386,15 +6386,15 @@
       "continuation": "But not as grand as her hand in hand. The mountain view was truly grand"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "device",
+      "second_word": "heart",
       "continuation": "But in my heart, a warm device. The winter wind was cold as ice"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slow",
-      "second_word": "know",
+      "second_word": "race",
       "continuation": "But he won the race, you know. The snail was incredibly slow,"
     },
     {
@@ -6404,9 +6404,9 @@
       "continuation": "To water the flowers in the garden of her land. The couplet you've"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "won",
-      "second_word": "undone",
+      "second_word": "victory",
       "continuation": "But not the cost of victory, undone. The couplet you've provided is"
     },
     {
@@ -6418,7 +6418,7 @@
     {
       "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "mind",
+      "second_word": "time",
       "continuation": "With care and time, and heart and mind. The poet crafted every line,"
     },
     {
@@ -6440,9 +6440,9 @@
       "continuation": "And felt the world was turning brown. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "stand",
+      "second_word": "said",
       "continuation": "And said, \"This is the world we stand.\" To continue the narrative and"
     },
     {
@@ -6500,9 +6500,9 @@
       "continuation": "To see the world and not remain. To see the world and not remain."
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sun",
-      "second_word": "won",
+      "second_word": "out",
       "continuation": "The stars came out, the night was won. The shadow hid the evening sun"
     },
     {
@@ -6542,9 +6542,9 @@
       "continuation": "The moon was bright and set. The pavement was cold and wet, The moon"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swell",
-      "second_word": "tell",
+      "second_word": "on",
       "continuation": "As the storm raged on, a tempest to tell. The ocean's"
     },
     {
@@ -6560,9 +6560,9 @@
       "continuation": "And thought of the time he was a star. A couplet is a pair"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "nice",
+      "second_word": "sweating",
       "continuation": "The glass was sweating, cold and nice. The drink was filled with crushed ice"
     },
     {
@@ -6644,9 +6644,9 @@
       "continuation": "But one small plant just wouldn't feed. The gardener watered every seed"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slat",
-      "second_word": "that",
+      "second_word": "creation",
       "continuation": "With one of his own creation, at that. The carpenter replaced the sl"
     },
     {
@@ -6698,9 +6698,9 @@
       "continuation": "But his heart was still unbound. The couplet you've provided is a"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hold",
-      "second_word": "told",
+      "second_word": "was",
       "continuation": "Of a love that was, and a love that was told. The couplet"
     },
     {
@@ -6730,7 +6730,7 @@
     {
       "status": "no_rhyme",
       "first_word": "string",
-      "second_word": "all",
+      "second_word": "empty",
       "continuation": "The box was empty, nothing within it at all. The package arrived tied with"
     },
     {
@@ -6776,9 +6776,9 @@
       "continuation": "The moonlight danced on the floor below. The couplet you've written is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "beat",
+      "second_word": "art",
       "continuation": "With books and art, a cozy beat. The apartment was small but neat,"
     },
     {
@@ -6790,19 +6790,19 @@
     {
       "status": "no_rhyme",
       "first_word": "plan",
-      "second_word": "grand",
+      "second_word": "robot",
       "continuation": "To make a robot, small and grand. The scientist had a new plan,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sting",
-      "second_word": "thing",
+      "second_word": "shout",
       "continuation": "The man gave a shout, \"Oh, what a thing!\" The wasp"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tight",
-      "second_word": "light",
+      "second_word": "care",
       "continuation": "With love and care, she gave it light. The couplet you've written"
     },
     {
@@ -6878,9 +6878,9 @@
       "continuation": "To write a tale that was unique. The couplet you've provided is already"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spun",
-      "second_word": "one",
+      "second_word": "web",
       "continuation": "A perfect web, the work of one. The spider's silk was neatly spun"
     },
     {
@@ -6938,15 +6938,15 @@
       "continuation": "But the truth was he was plain. The first line of the couplet is"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "disappear",
-      "second_word": "frontier",
+      "second_word": "life",
       "continuation": "A new life, a new frontier. He watched the coastline disappear, A new"
     },
     {
       "status": "no_rhyme",
       "first_word": "pen",
-      "second_word": "clean",
+      "second_word": "gone",
       "continuation": "The words were gone, the page was clean. The couplet you've written"
     },
     {
@@ -6998,9 +6998,9 @@
       "continuation": "His sword gleamed in the light. The warrior prepared to fight, His sword"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "light",
-      "second_word": "white",
+      "second_word": "fast",
       "continuation": "Her feet so fast, a blur of white. The ballerina pirou"
     },
     {
@@ -7028,9 +7028,9 @@
       "continuation": "He took a swing and hit a hat. What is the rhyme scheme of this"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "name",
-      "second_word": "same",
+      "second_word": "nobody",
       "continuation": "But he was just a nobody, plain as the same. The second line of"
     },
     {
@@ -7082,9 +7082,9 @@
       "continuation": "With sword in hand and heart so strong. He ruled the kingdom like a king"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swing",
-      "second_word": "spring",
+      "second_word": "sorrow",
       "continuation": "From joy to sorrow, from spring to spring. The couplet you've provided"
     },
     {
@@ -7100,9 +7100,9 @@
       "continuation": "For the ride that would make her shine. The ride is likely a metaphor for"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "go",
+      "second_word": "doing",
       "continuation": "What he was doing, or where he'd go.  (1 point)"
     },
     {
@@ -7184,9 +7184,9 @@
       "continuation": "But the ending was a mystery spell. The author had a tale to weave,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "well",
-      "second_word": "hell",
+      "second_word": "water",
       "continuation": "But found no water, only hell. The couplet you've provided is a"
     },
     {

@@ -3,9 +3,9 @@
   "model_name": "google/gemma-3-27b-it",
   "n_total": 1200,
   "n_attempted": 1200,
-  "n_rhymed": 1088,
+  "n_rhymed": 733,
   "n_unknown": 7,
-  "rhyme_rate": 0.9066666666666666,
+  "rhyme_rate": 0.6108333333333333,
   "results": [
     {
       "status": "rhyme",
@@ -32,9 +32,9 @@
       "continuation": "A snail could have put on a show. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "log",
-      "second_word": "dog",
+      "second_word": "playful",
       "continuation": "And watched a playful, bounding dog.<end_of_turn>"
     },
     {
@@ -56,9 +56,9 @@
       "continuation": "As silent as the falling snow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "clock",
-      "second_word": "shock",
+      "second_word": "loud",
       "continuation": "Disturbing the peace with a loud, jarring shock.<end_of_turn>"
     },
     {
@@ -74,9 +74,9 @@
       "continuation": "Guided by a shining star.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pit",
-      "second_word": "bit",
+      "second_word": "buried",
       "continuation": "A secret buried, bit by bit. <end_of_turn>"
     },
     {
@@ -104,15 +104,15 @@
       "continuation": "To brighten someone's day.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fine",
-      "second_word": "divine",
+      "second_word": "experience",
       "continuation": "A culinary experience, truly divine.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "vat",
-      "second_word": "cat",
+      "second_word": "missing",
       "continuation": "And found his missing, fluffy cat.<end_of_turn>"
     },
     {
@@ -128,9 +128,9 @@
       "continuation": "And never once looked at the clock. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sock",
-      "second_word": "rock",
+      "second_word": "house",
       "continuation": "Around the house, he'd quickly rock.<end_of_turn>"
     },
     {
@@ -176,9 +176,9 @@
       "continuation": "A story in its rocks untold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "glow",
-      "second_word": "show",
+      "second_word": "magical",
       "continuation": "A magical, enchanting show. <end_of_turn>"
     },
     {
@@ -190,7 +190,7 @@
     {
       "status": "no_rhyme",
       "first_word": "pet",
-      "second_word": "cat",
+      "second_word": "fluffy",
       "continuation": "A fluffy, purring, ginger cat. <end_of_turn>"
     },
     {
@@ -254,15 +254,15 @@
       "continuation": "And bravely risked his life for all. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tan",
-      "second_word": "plan",
+      "second_word": "beautiful",
       "continuation": "A beautiful, sun-kissed plan.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "old",
+      "second_word": "silence",
       "continuation": "A story in silence, growing old. <end_of_turn>"
     },
     {
@@ -272,21 +272,21 @@
       "continuation": "To plant a garden and sow a seed.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flake",
-      "second_word": "sake",
+      "second_word": "disaster",
       "continuation": "A breakfast disaster, for goodness sake!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feed",
-      "second_word": "creed",
+      "second_word": "scene",
       "continuation": "A tranquil scene, a pastoral creed.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pan",
-      "second_word": "can",
+      "second_word": "sound",
       "continuation": "A sizzling sound, as best it can.<end_of_turn>"
     },
     {
@@ -326,9 +326,9 @@
       "continuation": "A feast we'd never forget.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "dog",
-      "second_word": "log",
+      "second_word": "happy",
       "continuation": "A happy, playful, furry log.<end_of_turn>"
     },
     {
@@ -368,9 +368,9 @@
       "continuation": "And then he promptly fell on his back. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "drop",
-      "second_word": "pop",
+      "second_word": "silent",
       "continuation": "A silent, golden, autumn pop.<end_of_turn>"
     },
     {
@@ -404,15 +404,15 @@
       "continuation": "A majestic and wondrous sight.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "feat",
+      "second_word": "guests",
       "continuation": "Ready for guests, a welcoming feat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "beat",
-      "second_word": "sweet",
+      "second_word": "ballet",
       "continuation": "A watery ballet, graceful and sweet.<end_of_turn>"
     },
     {
@@ -500,15 +500,15 @@
       "continuation": "A peaceful autumn task to take. \ud83c\udf41\ud83c\udf42 \ud83c\udf41\ud83c\udf42 \ud83c\udf41\ud83c\udf42"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "bit",
+      "second_word": "told",
       "continuation": "As stories were told, bit by bit. <end_of_turn>"
     },
     {
       "status": "rhyme",
       "first_word": "sink",
-      "second_word": "mink",
+      "second_word": "pink",
       "continuation": "And I thought of a pink, fluffy mink. <end_of_turn>"
     },
     {
@@ -542,9 +542,9 @@
       "continuation": "To capture the scene just right.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mine",
-      "second_word": "divine",
+      "second_word": "fortune",
       "continuation": "A glittering fortune, truly divine. <end_of_turn>"
     },
     {
@@ -554,9 +554,9 @@
       "continuation": "And drove a bright red motorcar.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "excel",
-      "second_word": "spell",
+      "second_word": "words",
       "continuation": "And with his words, he cast a spell.<end_of_turn>"
     },
     {
@@ -602,9 +602,9 @@
       "continuation": "He loved to chase and play with the cat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wake",
-      "second_word": "sake",
+      "second_word": "day",
       "continuation": "For a brand new day, for goodness sake!<end_of_turn>"
     },
     {
@@ -614,9 +614,9 @@
       "continuation": "To cut the cake in a precise slice.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stink",
-      "second_word": "blink",
+      "second_word": "sprayed",
       "continuation": "A skunk sprayed, quick as a blink. <end_of_turn>"
     },
     {
@@ -626,15 +626,15 @@
       "continuation": "To make the cake taste extra nice.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "far",
-      "second_word": "star",
+      "second_word": "shining",
       "continuation": "To find a shining, guiding star. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "seed",
-      "second_word": "deed",
+      "second_word": "garden",
       "continuation": "A vibrant garden, a colorful deed. \ud83c\udf38\ud83c\udf37\ud83c\udf3b<end_of_turn>"
     },
     {
@@ -650,9 +650,9 @@
       "continuation": "Dispelling all doubt and all fear. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "plan",
+      "second_word": "glimpse",
       "continuation": "A fleeting glimpse, a graceful plan.<end_of_turn>"
     },
     {
@@ -688,7 +688,7 @@
     {
       "status": "no_rhyme",
       "first_word": "pet",
-      "second_word": "cat",
+      "second_word": "fluffy",
       "continuation": "A fluffy, orange tabby cat.<end_of_turn>"
     },
     {
@@ -698,9 +698,9 @@
       "continuation": "But tears fell like the rain. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "clear",
-      "second_word": "fear",
+      "second_word": "night",
       "continuation": "A perfect night, devoid of fear. <end_of_turn>"
     },
     {
@@ -716,9 +716,9 @@
       "continuation": "A happy sight for all to see.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "plan",
+      "second_word": "ribbon",
       "continuation": "A silver ribbon, a wondrous plan. <end_of_turn>"
     },
     {
@@ -746,21 +746,21 @@
       "continuation": "Despite the change in the game.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "old",
-      "second_word": "told",
+      "second_word": "courage",
       "continuation": "Stories of courage, bravely told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ring",
-      "second_word": "thing",
+      "second_word": "sound",
       "continuation": "A joyful sound, a hopeful thing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pine",
-      "second_word": "sign",
+      "second_word": "eternal",
       "continuation": "A love eternal, a timeless sign.<end_of_turn>"
     },
     {
@@ -770,9 +770,9 @@
       "continuation": "A story in each garment told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tree",
-      "second_word": "see",
+      "second_word": "furry",
       "continuation": "A furry, playful sight to see.<end_of_turn>"
     },
     {
@@ -800,15 +800,15 @@
       "continuation": "Then he did a little hop.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grow",
-      "second_word": "show",
+      "second_word": "vibrant",
       "continuation": "A vibrant, colorful, joyful show. \ud83c\udf3b \ud83c\udf37 \ud83c\udf39 \ud83c\udf3c"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fog",
-      "second_word": "dog",
+      "second_word": "mystical",
       "continuation": "Like a mystical, slumbering dog. <end_of_turn>"
     },
     {
@@ -824,9 +824,9 @@
       "continuation": "But tripped and awkwardly fell. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "key",
-      "second_word": "see",
+      "second_word": "instead",
       "continuation": "But found a bumblebee instead, you see!<end_of_turn>"
     },
     {
@@ -842,9 +842,9 @@
       "continuation": "As the gentle breezes did blow.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "nice",
-      "second_word": "price",
+      "second_word": "day",
       "continuation": "A perfect day, beyond all price.<end_of_turn>"
     },
     {
@@ -862,13 +862,13 @@
     {
       "status": "no_rhyme",
       "first_word": "layer",
-      "second_word": "swear",
+      "second_word": "day",
       "continuation": "A perfect drink for a hot day, I swear.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "gold",
+      "second_word": "silver",
       "continuation": "A heart of silver, a spirit of gold.<end_of_turn>"
     },
     {
@@ -896,15 +896,15 @@
       "continuation": "And wished that summer would always be here.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "kit",
-      "second_word": "fit",
+      "second_word": "tear",
       "continuation": "To mend the tear, a perfect fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "down",
-      "second_word": "crown",
+      "second_word": "melancholic",
       "continuation": "A melancholic, watery crown. <end_of_turn>"
     },
     {
@@ -914,9 +914,9 @@
       "continuation": "Knowledge to ease their future pain.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "world",
       "continuation": "And watched the world, a perfect fit. <end_of_turn>"
     },
     {
@@ -944,15 +944,15 @@
       "continuation": "And knew her world was about to fall. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "band",
-      "second_word": "hand",
+      "second_word": "love",
       "continuation": "A symbol of love, close at hand.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wall",
-      "second_word": "small",
+      "second_word": "troubles",
       "continuation": "To keep out troubles, big and small. <end_of_turn>"
     },
     {
@@ -968,15 +968,15 @@
       "continuation": "A quiet moment and a good read. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "advice",
-      "second_word": "nice",
+      "second_word": "responded",
       "continuation": "And she responded, \"That's so nice!\"<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "paradise",
+      "second_word": "cool",
       "continuation": "A cool, refreshing paradise.<end_of_turn>"
     },
     {
@@ -1000,19 +1000,19 @@
     {
       "status": "no_rhyme",
       "first_word": "hilltop",
-      "second_word": "sip",
+      "second_word": "long",
       "continuation": "And took a long, refreshing sip. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "maintain",
-      "second_word": "stain",
+      "second_word": "garden",
       "continuation": "His garden, free from stain. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hat",
-      "second_word": "cat",
+      "second_word": "small",
       "continuation": "And found a small, mischievous, ginger cat. <end_of_turn>"
     },
     {
@@ -1034,21 +1034,21 @@
       "continuation": "Into the darkness of the night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "land",
-      "second_word": "hand",
+      "second_word": "hands",
       "continuation": "With calloused hands, a helping hand.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cold",
-      "second_word": "told",
+      "second_word": "winter",
       "continuation": "A story of winter, bravely told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "led",
-      "second_word": "red",
+      "second_word": "trail",
       "continuation": "A winding trail, a vibrant red. <end_of_turn>"
     },
     {
@@ -1070,9 +1070,9 @@
       "continuation": "A story of bravery to be told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ball",
-      "second_word": "all",
+      "second_word": "summer",
       "continuation": "Enjoying summer, one and all. <end_of_turn>"
     },
     {
@@ -1082,15 +1082,15 @@
       "continuation": "And wished that he could travel far. \ud83c\udf1f\u2728<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pink",
-      "second_word": "think",
+      "second_word": "sharp",
       "continuation": "But its thorns were sharp, I quickly did think.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feet",
-      "second_word": "defeat",
+      "second_word": "comical",
       "continuation": "A comical, awkward defeat.<end_of_turn>"
     },
     {
@@ -1118,15 +1118,15 @@
       "continuation": "A perfect place to sit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "old",
-      "second_word": "bold",
+      "second_word": "adventure",
       "continuation": "And dreams of adventure, brave and bold.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mitt",
-      "second_word": "hit",
+      "second_word": "pitch",
       "continuation": "A perfect pitch, a beautiful hit!<end_of_turn>"
     },
     {
@@ -1138,13 +1138,13 @@
     {
       "status": "no_rhyme",
       "first_word": "hit",
-      "second_word": "misfit",
+      "second_word": "missed",
       "continuation": "But swung and missed, a total misfit.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "aristocrat",
-      "second_word": "fat",
+      "second_word": "persian",
       "continuation": "A fluffy white Persian, sleek and fat.<end_of_turn>"
     },
     {
@@ -1166,9 +1166,9 @@
       "continuation": "And she looked so very exquisite.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bell",
-      "second_word": "farewell",
+      "second_word": "mournful",
       "continuation": "A mournful, echoing farewell. <end_of_turn>"
     },
     {
@@ -1178,9 +1178,9 @@
       "continuation": "And quickly found a friendly habitat. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cold",
-      "second_word": "told",
+      "second_word": "winter",
       "continuation": "A story of winter, bravely told.<end_of_turn>"
     },
     {
@@ -1190,9 +1190,9 @@
       "continuation": "And then he tripped on a bumblebee. \ud83d\udc1d \ud83e\udd23 <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "clear",
-      "second_word": "near",
+      "second_word": "sky",
       "continuation": "Reflecting the sky, so blue and near.<end_of_turn>"
     },
     {
@@ -1208,9 +1208,9 @@
       "continuation": "And then he quickly ran and spun. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "catch",
       "continuation": "Hoping for a catch, a fish divine.<end_of_turn>"
     },
     {
@@ -1238,9 +1238,9 @@
       "continuation": "A message from a friend to bring. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spell",
-      "second_word": "swell",
+      "second_word": "magical",
       "continuation": "A magical, shimmering swell.<end_of_turn>"
     },
     {
@@ -1250,15 +1250,15 @@
       "continuation": "A seashell clutched tight in her hand.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bog",
-      "second_word": "slog",
+      "second_word": "muddy",
       "continuation": "A muddy, squelching, awful slog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bit",
-      "second_word": "commit",
+      "second_word": "died",
       "continuation": "Then died, and wouldn't re-commit. <end_of_turn>"
     },
     {
@@ -1292,9 +1292,9 @@
       "continuation": "Beneath the warm and golden sun.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "led",
-      "second_word": "said",
+      "second_word": "treasure",
       "continuation": "To a hidden treasure, it is said.<end_of_turn>"
     },
     {
@@ -1316,9 +1316,9 @@
       "continuation": "And fell flat on the ground. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stay",
-      "second_word": "day",
+      "second_word": "said",
       "continuation": "But she said, \"Not another day.\"<end_of_turn>"
     },
     {
@@ -1370,9 +1370,9 @@
       "continuation": "And built a future for goodness sake.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "meet",
-      "second_word": "sweet",
+      "second_word": "victory",
       "continuation": "Hoping for a victory, oh so sweet.<end_of_turn>"
     },
     {
@@ -1394,9 +1394,9 @@
       "continuation": "And dreamed of being a polliwog. \ud83d\udc38 \ud83e\udeb5 \ud83d\udcad "
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bun",
-      "second_word": "one",
+      "second_word": "all",
       "continuation": "And ate it all, every single one. <end_of_turn>"
     },
     {
@@ -1430,9 +1430,9 @@
       "continuation": "And heard the joyful songs the people sing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hat",
-      "second_word": "that",
+      "second_word": "puff",
       "continuation": "And vanished in a puff, just like that!<end_of_turn>"
     },
     {
@@ -1460,9 +1460,9 @@
       "continuation": "To pull the treasure from the sand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jar",
-      "second_word": "far",
+      "second_word": "it",
       "continuation": "And wished upon it, near and far.<end_of_turn>"
     },
     {
@@ -1478,21 +1478,21 @@
       "continuation": "And dreamed of racing far away. \ud83d\udc0e\u2728<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sold",
-      "second_word": "told",
+      "second_word": "colors",
       "continuation": "A story in colors, bravely told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "far",
-      "second_word": "star",
+      "second_word": "beacon",
       "continuation": "A shining beacon, like a guiding star. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "bold",
+      "second_word": "fiery",
       "continuation": "A spirit fiery, brave, and bold. <end_of_turn>"
     },
     {
@@ -1520,21 +1520,21 @@
       "continuation": "As I sat down to have a think.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "red",
-      "second_word": "said",
+      "second_word": "treat",
       "continuation": "A perfect treat, it's often said.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "frog",
-      "second_word": "dog",
+      "second_word": "slimy",
       "continuation": "A slimy, green, and bumpy dog. <end_of_turn>"
     },
     {
       "status": "rhyme",
       "first_word": "mat",
-      "second_word": "cat",
+      "second_word": "sat",
       "continuation": "And then she sat, just like a cat.<end_of_turn>"
     },
     {
@@ -1544,21 +1544,21 @@
       "continuation": "Where happiness could always be found. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flame",
-      "second_word": "name",
+      "second_word": "hope",
       "continuation": "A symbol of hope, a world-renowned name. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "that",
+      "second_word": "quickly",
       "continuation": "And vanished quickly, just like that!<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "underground",
-      "second_word": "sound",
+      "second_word": "fearsome",
       "continuation": "A fearsome, earth-shattering sound. <end_of_turn>"
     },
     {
@@ -1574,9 +1574,9 @@
       "continuation": "And wiped away a silent tear. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "drink",
-      "second_word": "wink",
+      "second_word": "lemonade",
       "continuation": "So he ordered a lemonade, quick as a wink.<end_of_turn>"
     },
     {
@@ -1592,9 +1592,9 @@
       "continuation": "A perfect place to see a star.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "understand",
-      "second_word": "hand",
+      "second_word": "knowledge",
       "continuation": "With patience and knowledge, a helping hand.<end_of_turn>"
     },
     {
@@ -1604,9 +1604,9 @@
       "continuation": "He hissed and arched with all his might.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mall",
-      "second_word": "tall",
+      "second_word": "proudly",
       "continuation": "And wore it proudly, standing tall.<end_of_turn>"
     },
     {
@@ -1616,15 +1616,15 @@
       "continuation": "His gas tank was completely drop.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hen",
-      "second_word": "then",
+      "second_word": "said",
       "continuation": "But the farmer said, \"Not yet, not then!\"<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "acclaim",
-      "second_word": "name",
+      "second_word": "cheered",
       "continuation": "And the audience cheered, shouting each name.<end_of_turn>"
     },
     {
@@ -1652,15 +1652,15 @@
       "continuation": "To catch the mischievous little man. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mice",
-      "second_word": "nice",
+      "second_word": "treat",
       "continuation": "A tasty treat, oh so nice!<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "acrobat",
-      "second_word": "that",
+      "second_word": "display",
       "continuation": "A stunning display, just like that!<end_of_turn>"
     },
     {
@@ -1676,9 +1676,9 @@
       "continuation": "And let the chickens out again. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lock",
-      "second_word": "clock",
+      "second_word": "gold",
       "continuation": "And found not gold, but a worn, ticking clock. <end_of_turn>"
     },
     {
@@ -1688,9 +1688,9 @@
       "continuation": "And led her to a promised land. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "fit",
+      "second_word": "silent",
       "continuation": "A silent, smoky, regretful fit. <end_of_turn>"
     },
     {
@@ -1706,9 +1706,9 @@
       "continuation": "As autumn gently settled down. \ud83c\udf41\ud83c\udf42 \ud83e\udde1 \ud83d\udc9b \ud83c\udf41\ud83c\udf42"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "thought",
       "continuation": "And thought, \"This is quite a perfect fit!\"<end_of_turn>"
     },
     {
@@ -1738,7 +1738,7 @@
     {
       "status": "no_rhyme",
       "first_word": "tan",
-      "second_word": "waterman",
+      "second_word": "handsome",
       "continuation": "A handsome, rugged, waterman.<end_of_turn>"
     },
     {
@@ -1748,15 +1748,15 @@
       "continuation": "Easing the farmer's pain.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "knit",
+      "second_word": "gown",
       "continuation": "A beautiful gown, exquisitely knit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sun",
-      "second_word": "done",
+      "second_word": "over",
       "continuation": "The day was over, and the fun was done.<end_of_turn>"
     },
     {
@@ -1766,21 +1766,21 @@
       "continuation": "Wishing her worries would simply fall down. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "weed",
-      "second_word": "need",
+      "second_word": "sun",
       "continuation": "A tiny sun, fulfilling a summer need. \u2600\ufe0f \ud83c\udf3b \ud83c\udf3c "
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "submit",
-      "second_word": "bit",
+      "second_word": "stubborn",
       "continuation": "She's a stubborn, fiery bit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fight",
-      "second_word": "bright",
+      "second_word": "gleaming",
       "continuation": "His armor gleaming, shining bright.<end_of_turn>"
     },
     {
@@ -1826,9 +1826,9 @@
       "continuation": "By playing a very clever game. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fog",
-      "second_word": "dog",
+      "second_word": "ghostly",
       "continuation": "Like a ghostly, silent dog. <end_of_turn>"
     },
     {
@@ -1844,15 +1844,15 @@
       "continuation": "And vanished in the coming night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grow",
-      "second_word": "glow",
+      "second_word": "challenge",
       "continuation": "And with each challenge, a radiant glow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spear",
-      "second_word": "tear",
+      "second_word": "single",
       "continuation": "And cried a single, silent tear. <end_of_turn>"
     },
     {
@@ -1862,9 +1862,9 @@
       "continuation": "To fight for justice now and then. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "car",
-      "second_word": "far",
+      "second_word": "off",
       "continuation": "And we drove off, not very far.<end_of_turn>"
     },
     {
@@ -1880,9 +1880,9 @@
       "continuation": "And shouted his triumph for all to hear.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "that",
+      "second_word": "game",
       "continuation": "Ready for a summer game, just like that!<end_of_turn>"
     },
     {
@@ -1906,25 +1906,25 @@
     {
       "status": "no_rhyme",
       "first_word": "wombat",
-      "second_word": "combat",
+      "second_word": "furry",
       "continuation": "As a furry, digging, rotund combat.<end_of_turn>"
     },
     {
       "status": "rhyme",
       "first_word": "grand",
-      "second_word": "land",
+      "second_word": "hand",
       "continuation": "With a wave of his hand, across the land.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flock",
-      "second_word": "block",
+      "second_word": "barn",
       "continuation": "Around the barn, a sturdy block.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bow",
-      "second_word": "know",
+      "second_word": "hair",
       "continuation": "To tie up her hair, you know. <end_of_turn>"
     },
     {
@@ -1946,9 +1946,9 @@
       "continuation": "And planted a garden with flower and seed.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fog",
-      "second_word": "dog",
+      "second_word": "hidden",
       "continuation": "Like a hidden, silent dog.<end_of_turn>"
     },
     {
@@ -1966,13 +1966,13 @@
     {
       "status": "no_rhyme",
       "first_word": "rice",
-      "second_word": "paradise",
+      "second_word": "fragrant",
       "continuation": "A fragrant, fluffy paradise.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swell",
-      "second_word": "well",
+      "second_word": "tale",
       "continuation": "A mermaid's tale, she knew so well.<end_of_turn>"
     },
     {
@@ -1982,9 +1982,9 @@
       "continuation": "And waited for a brighter day.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feet",
-      "second_word": "sweet",
+      "second_word": "day",
       "continuation": "A summer's day, oh so sweet.<end_of_turn>"
     },
     {
@@ -2006,15 +2006,15 @@
       "continuation": "And vanished in the misty spray.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mine",
-      "second_word": "shine",
+      "second_word": "brilliant",
       "continuation": "A diamond so brilliant, it truly did shine.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "king",
-      "second_word": "thing",
+      "second_word": "joyful",
       "continuation": "A joyful, silly, dancing thing.<end_of_turn>"
     },
     {
@@ -2024,9 +2024,9 @@
       "continuation": "Who leaped and swam among the bog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tar",
-      "second_word": "far",
+      "second_word": "mess",
       "continuation": "A sticky mess, no matter how far.<end_of_turn>"
     },
     {
@@ -2042,15 +2042,15 @@
       "continuation": "So we called a company from afar. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "zing",
-      "second_word": "thing",
+      "second_word": "bloomed",
       "continuation": "And flowers bloomed, a colorful thing. \ud83d\udc1d\ud83c\udf38<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "friend",
       "continuation": "A furry friend, a perfect fit.<end_of_turn>"
     },
     {
@@ -2066,15 +2066,15 @@
       "continuation": "And wished for warmth and early spring.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "snow",
-      "second_word": "flow",
+      "second_word": "task",
       "continuation": "A winter's task, a steady flow.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grit",
-      "second_word": "quit",
+      "second_word": "race",
       "continuation": "To win the race, and not to quit.<end_of_turn>"
     },
     {
@@ -2096,9 +2096,9 @@
       "continuation": "To protect their beloved land. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spun",
-      "second_word": "won",
+      "second_word": "web",
       "continuation": "A perfect web, the spider had won.<end_of_turn>"
     },
     {
@@ -2108,9 +2108,9 @@
       "continuation": "The mysteries of this shifting sand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pine",
-      "second_word": "divine",
+      "second_word": "nature",
       "continuation": "A gift of nature, truly divine. <end_of_turn>"
     },
     {
@@ -2126,9 +2126,9 @@
       "continuation": "And sent it off to his best friend then.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "train",
-      "second_word": "rain",
+      "second_word": "sunshine",
       "continuation": "And wished for sunshine, not the rain. <end_of_turn>"
     },
     {
@@ -2138,27 +2138,27 @@
       "continuation": "But the outcome was filled with fear. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "grow",
+      "second_word": "fell",
       "continuation": "But silence fell, and seeds of doubt did grow. <end_of_turn>"
     },
     {
       "status": "unknown",
       "first_word": "bowstring",
-      "second_word": "thing",
+      "second_word": "arrow",
       "continuation": "A feathered arrow, a swift, soaring thing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "seed",
-      "second_word": "deed",
+      "second_word": "vibrant",
       "continuation": "A vibrant, colorful, floral deed.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "creed",
+      "second_word": "endurance",
       "continuation": "A test of endurance, a runner's creed.<end_of_turn>"
     },
     {
@@ -2186,9 +2186,9 @@
       "continuation": "Right over the flower pot.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "land",
+      "second_word": "lonely",
       "continuation": "A lonely, barren, silent land.<end_of_turn>"
     },
     {
@@ -2204,9 +2204,9 @@
       "continuation": "The best speller in the whole town around.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "treat",
-      "second_word": "sweet",
+      "second_word": "cake",
       "continuation": "A delicious cake, oh so sweet!<end_of_turn>"
     },
     {
@@ -2216,9 +2216,9 @@
       "continuation": "A story of his life must be told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feet",
-      "second_word": "beat",
+      "second_word": "joyful",
       "continuation": "A joyful, rhythmic beat.<end_of_turn>"
     },
     {
@@ -2228,33 +2228,33 @@
       "continuation": "And didn't seem to mind at all.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "quit",
-      "second_word": "fit",
+      "second_word": "determination",
       "continuation": "And with determination, she did fit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sing",
-      "second_word": "wing",
+      "second_word": "noise",
       "continuation": "A joyful noise, on hopeful wing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "plan",
+      "second_word": "blur",
       "continuation": "A spotted blur, a wild, swift plan.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "unfold",
-      "second_word": "told",
+      "second_word": "bright",
       "continuation": "A future bright, in stories told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "vat",
-      "second_word": "that",
+      "second_word": "vintage",
       "continuation": "A perfect vintage, just like that.<end_of_turn>"
     },
     {
@@ -2270,9 +2270,9 @@
       "continuation": "Her love for the pouring rain. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "vat",
-      "second_word": "splat",
+      "second_word": "creamy",
       "continuation": "A creamy, white and bubbly splat.<end_of_turn>"
     },
     {
@@ -2294,15 +2294,15 @@
       "continuation": "And heard the wedding bells sweetly sing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "blow",
-      "second_word": "glow",
+      "second_word": "warmth",
       "continuation": "And wished for warmth, a gentle glow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "town",
-      "second_word": "crown",
+      "second_word": "beautiful",
       "continuation": "And wore a beautiful, floral crown.<end_of_turn>"
     },
     {
@@ -2324,15 +2324,15 @@
       "continuation": "A fragile hope within a barren land. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bog",
-      "second_word": "dog",
+      "second_word": "traveler",
       "continuation": "A weary traveler, like a lost dog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "plan",
+      "second_word": "glimpse",
       "continuation": "A fleeting glimpse, a noble plan. \ud83d\udc0e\u2728<end_of_turn>"
     },
     {
@@ -2348,9 +2348,9 @@
       "continuation": "For parking where he shouldn't be.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "car",
-      "second_word": "far",
+      "second_word": "art",
       "continuation": "A vibrant work of art, by far.<end_of_turn>"
     },
     {
@@ -2384,9 +2384,9 @@
       "continuation": "A beacon shining in the night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lock",
-      "second_word": "shock",
+      "second_word": "bed",
       "continuation": "And then went to bed, without a shock.<end_of_turn>"
     },
     {
@@ -2396,9 +2396,9 @@
       "continuation": "To wake them up and work again.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "retreat",
+      "second_word": "home",
       "continuation": "A tidy home, a cozy retreat.<end_of_turn>"
     },
     {
@@ -2420,15 +2420,15 @@
       "continuation": "A joyful sight for all to see.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jar",
-      "second_word": "far",
+      "second_word": "treat",
       "continuation": "And found a treat, not very far. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "told",
+      "second_word": "power",
       "continuation": "A story of power, bravely told. <end_of_turn>"
     },
     {
@@ -2480,9 +2480,9 @@
       "continuation": "A perfect trap for everyone. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "knit",
+      "second_word": "suit",
       "continuation": "A stylish suit, exquisitely knit.<end_of_turn>"
     },
     {
@@ -2510,9 +2510,9 @@
       "continuation": "To see the stars so clear and bright.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "call",
-      "second_word": "tall",
+      "second_word": "best",
       "continuation": "And gave his very best, standing tall. <end_of_turn>"
     },
     {
@@ -2522,15 +2522,15 @@
       "continuation": "And danced with joy throughout the night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bog",
-      "second_word": "slog",
+      "second_word": "muddy",
       "continuation": "A muddy, awful, swampy slog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "can",
-      "second_word": "man",
+      "second_word": "lonely",
       "continuation": "A lonely, frustrated man. <end_of_turn>"
     },
     {
@@ -2546,9 +2546,9 @@
       "continuation": "And then he promptly sat. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "dock",
-      "second_word": "shock",
+      "second_word": "creaking",
       "continuation": "With a creaking, groaning shock.<end_of_turn>"
     },
     {
@@ -2566,7 +2566,7 @@
     {
       "status": "rhyme",
       "first_word": "band",
-      "second_word": "land",
+      "second_word": "hand",
       "continuation": "With sticks in hand, across the land.<end_of_turn>"
     },
     {
@@ -2588,9 +2588,9 @@
       "continuation": "And wished for a life that wasn't so far.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fear",
-      "second_word": "near",
+      "second_word": "lengthened",
       "continuation": "As shadows lengthened, drawing near. <end_of_turn>"
     },
     {
@@ -2606,9 +2606,9 @@
       "continuation": "Lost in thought in the quiet town. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "dance",
       "continuation": "A cosmic dance, truly divine.<end_of_turn>"
     },
     {
@@ -2632,19 +2632,19 @@
     {
       "status": "no_rhyme",
       "first_word": "stop",
-      "second_word": "dropped",
+      "second_word": "on",
       "continuation": "But he drove on, and then he dropped. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "crown",
-      "second_word": "renown",
+      "second_word": "head",
       "continuation": "Upon her head, with great renown.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "awake",
-      "second_word": "take",
+      "second_word": "sleepiness",
       "continuation": "But sleepiness, his mind did take. <end_of_turn>"
     },
     {
@@ -2660,9 +2660,9 @@
       "continuation": "As the ship began to slowly sink.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "plea",
-      "second_word": "me",
+      "second_word": "please",
       "continuation": "\"Please, kind sir, have mercy on me!\"<end_of_turn>"
     },
     {
@@ -2678,9 +2678,9 @@
       "continuation": "Hoping the joy it would surely bring.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "awake",
-      "second_word": "break",
+      "second_word": "fiery",
       "continuation": "A fiery, rumbling, earth-shaking break. \ud83c\udf0b\ud83d\udd25\ud83d\udca5"
     },
     {
@@ -2692,7 +2692,7 @@
     {
       "status": "no_rhyme",
       "first_word": "doormat",
-      "second_word": "hat",
+      "second_word": "tripped",
       "continuation": "And tripped, landing flat on his hat.<end_of_turn>"
     },
     {
@@ -2744,9 +2744,9 @@
       "continuation": "To see the world both clear and bright.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ring",
-      "second_word": "thing",
+      "second_word": "sound",
       "continuation": "A joyful sound, a happy thing.<end_of_turn>"
     },
     {
@@ -2768,9 +2768,9 @@
       "continuation": "A very elegant woman. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rice",
-      "second_word": "nice",
+      "second_word": "meal",
       "continuation": "A simple meal, oh so nice.<end_of_turn>"
     },
     {
@@ -2780,15 +2780,15 @@
       "continuation": "As time ticked by with a gentle knock.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "world",
       "continuation": "And watched the world, a perfect fit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spring",
-      "second_word": "bring",
+      "second_word": "charm",
       "continuation": "A lucky charm, joy it did bring.<end_of_turn>"
     },
     {
@@ -2864,15 +2864,15 @@
       "continuation": "As darkness fell and brought the night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "fit",
+      "second_word": "soft",
       "continuation": "And the room was filled with a soft, warm fit.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "see",
-      "second_word": "mystery",
+      "second_word": "ghostly",
       "continuation": "A ghostly, grey mystery.<end_of_turn>"
     },
     {
@@ -2960,15 +2960,15 @@
       "continuation": "To keep the wolves of hunger at bay.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fall",
-      "second_word": "all",
+      "second_word": "silent",
       "continuation": "A silent, colorful, farewell to all.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sled",
-      "second_word": "fled",
+      "second_word": "time",
       "continuation": "A joyful time, as quickly fled. \u2744\ufe0f \u2603\ufe0f \ud83e\udde3"
     },
     {
@@ -2990,9 +2990,9 @@
       "continuation": "Without a single sound. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "dice",
-      "second_word": "nice",
+      "second_word": "roll",
       "continuation": "A lucky roll, oh so nice!<end_of_turn>"
     },
     {
@@ -3026,21 +3026,21 @@
       "continuation": "To students who were starting to fall.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sweet",
-      "second_word": "beat",
+      "second_word": "day",
       "continuation": "A perfect summer day, can't be beat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "far",
-      "second_word": "star",
+      "second_word": "run",
       "continuation": "A home run, a shining star!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fold",
-      "second_word": "old",
+      "second_word": "pattern",
       "continuation": "A story in each pattern, new and old. <end_of_turn>"
     },
     {
@@ -3074,9 +3074,9 @@
       "continuation": "A risky move for goodness sake.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "street",
-      "second_word": "feet",
+      "second_word": "happy",
       "continuation": "With happy, dancing, nimble feet.<end_of_turn>"
     },
     {
@@ -3128,9 +3128,9 @@
       "continuation": "To brighten up her every day. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "show",
-      "second_word": "glow",
+      "second_word": "rabbits",
       "continuation": "With rabbits, doves, and a rainbow glow.<end_of_turn>"
     },
     {
@@ -3146,15 +3146,15 @@
       "continuation": "And danced the night and the blues away.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spun",
-      "second_word": "done",
+      "second_word": "fly",
       "continuation": "Awaiting a fly, its work was done. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "champion",
       "continuation": "A champion, truly divine.<end_of_turn>"
     },
     {
@@ -3164,9 +3164,9 @@
       "continuation": "To gamble with a tempting price.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swing",
-      "second_word": "thing",
+      "second_word": "dance",
       "continuation": "A graceful dance, a powerful thing.<end_of_turn>"
     },
     {
@@ -3188,15 +3188,15 @@
       "continuation": "And danced with dreams inside her head.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "met",
-      "second_word": "forget",
+      "second_word": "match",
       "continuation": "A perfect match, he couldn't forget.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rice",
-      "second_word": "nice",
+      "second_word": "meal",
       "continuation": "A simple meal, but oh so nice.<end_of_turn>"
     },
     {
@@ -3218,21 +3218,21 @@
       "continuation": "A story in silver and gold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "dock",
-      "second_word": "shock",
+      "second_word": "salty",
       "continuation": "A salty, briny, ocean shock.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "kit",
-      "second_word": "quit",
+      "second_word": "way",
       "continuation": "To find his way, and not to quit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "smell",
-      "second_word": "tell",
+      "second_word": "treat",
       "continuation": "A delightful treat, I could tell.<end_of_turn>"
     },
     {
@@ -3248,15 +3248,15 @@
       "continuation": "A melody that traveled far.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "take",
-      "second_word": "cake",
+      "second_word": "delicious",
       "continuation": "To bake a delicious, beautiful cake.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shine",
-      "second_word": "divine",
+      "second_word": "glow",
       "continuation": "A silver glow, so soft, divine.<end_of_turn>"
     },
     {
@@ -3284,9 +3284,9 @@
       "continuation": "And ate it in a trice.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "it",
-      "second_word": "it",
+      "second_word": "snack",
       "continuation": "A tasty snack, he couldn't have lacked it.<end_of_turn>"
     },
     {
@@ -3308,15 +3308,15 @@
       "continuation": "The groom's strange habit of collecting sand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fear",
-      "second_word": "year",
+      "second_word": "brighter",
       "continuation": "And found a brighter, hopeful year.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "gold",
+      "second_word": "wild",
       "continuation": "A spirit wild, a heart of gold.<end_of_turn>"
     },
     {
@@ -3326,9 +3326,9 @@
       "continuation": "And wished he'd stayed in bed instead.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "nice",
+      "second_word": "wonderland",
       "continuation": "A winter wonderland, so very nice.<end_of_turn>"
     },
     {
@@ -3340,7 +3340,7 @@
     {
       "status": "no_rhyme",
       "first_word": "offering",
-      "second_word": "ing",
+      "second_word": "gods",
       "continuation": "To the gods, a hopeful sing-ing.<end_of_turn>"
     },
     {
@@ -3370,13 +3370,13 @@
     {
       "status": "unknown",
       "first_word": "glit",
-      "second_word": "fit",
+      "second_word": "reflection",
       "continuation": "A shining reflection, a beautiful fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "set",
-      "second_word": "forget",
+      "second_word": "glow",
       "continuation": "A fiery glow, we won't forget.<end_of_turn>"
     },
     {
@@ -3434,9 +3434,9 @@
       "continuation": "Whose wisdom made the kingdom sing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "told",
-      "second_word": "gold",
+      "second_word": "silver",
       "continuation": "A heart of silver, more precious than gold.<end_of_turn>"
     },
     {
@@ -3458,9 +3458,9 @@
       "continuation": "And soon the seeds would sprout and grow.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "hope",
       "continuation": "A journey of hope, a future divine. <end_of_turn>"
     },
     {
@@ -3470,9 +3470,9 @@
       "continuation": "Where beauty and delight were found. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bit",
-      "second_word": "smit",
+      "second_word": "roared",
       "continuation": "And the audience roared, completely smit.<end_of_turn>"
     },
     {
@@ -3500,9 +3500,9 @@
       "continuation": "And did quite remarkably well.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shine",
-      "second_word": "divine",
+      "second_word": "day",
       "continuation": "A perfect day, truly divine.<end_of_turn>"
     },
     {
@@ -3548,9 +3548,9 @@
       "continuation": "As winter's icy winds began to blow.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "sat",
+      "second_word": "lookout",
       "continuation": "A tiny lookout, where the coyotes sat. \ud83d\udc15\u200d\ufffd\ufffd\ufffd"
     },
     {
@@ -3562,13 +3562,13 @@
     {
       "status": "no_rhyme",
       "first_word": "nice",
-      "second_word": "paradise",
+      "second_word": "place",
       "continuation": "A perfect place, a paradise.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "need",
+      "second_word": "victory",
       "continuation": "A champion's victory, a fulfilled need.<end_of_turn>"
     },
     {
@@ -3598,7 +3598,7 @@
     {
       "status": "no_rhyme",
       "first_word": "cat",
-      "second_word": "acrobat",
+      "second_word": "purring",
       "continuation": "A purring, furry acrobat.<end_of_turn>"
     },
     {
@@ -3614,9 +3614,9 @@
       "continuation": "And wished for somewhere else to go.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "line",
-      "second_word": "divine",
+      "second_word": "message",
       "continuation": "A secret message, truly divine. <end_of_turn>"
     },
     {
@@ -3626,9 +3626,9 @@
       "continuation": "And greet the brand new day. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bee",
-      "second_word": "me",
+      "second_word": "sweet",
       "continuation": "A sweet, golden gift for you and me.<end_of_turn>"
     },
     {
@@ -3638,21 +3638,21 @@
       "continuation": "And then she counted it again. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "branch",
       "continuation": "Upon the branch, a perfect fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "knit",
-      "second_word": "fit",
+      "second_word": "garment",
       "continuation": "A beautiful garment, perfectly fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jet",
-      "second_word": "bet",
+      "second_word": "light",
       "continuation": "A streak of light, you can bet.<end_of_turn>"
     },
     {
@@ -3662,15 +3662,15 @@
       "continuation": "Into a wishing well. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "hit",
+      "second_word": "match",
       "continuation": "A perfect match, a joyful hit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "van",
-      "second_word": "plan",
+      "second_word": "day",
       "continuation": "A moving day, according to plan. <end_of_turn>"
     },
     {
@@ -3692,9 +3692,9 @@
       "continuation": "As snowflakes started to plop.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "fit",
+      "second_word": "glorious",
       "continuation": "A glorious, fiery fit. <end_of_turn>"
     },
     {
@@ -3704,9 +3704,9 @@
       "continuation": "Hoping for a bountiful show. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "hand",
+      "second_word": "message",
       "continuation": "A fleeting message, close at hand. \ud83c\udf0a\u270d\ufe0f \u2600\ufe0f \ud83d\udc1a"
     },
     {
@@ -3716,9 +3716,9 @@
       "continuation": "Like a bird learning how to sing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mar",
-      "second_word": "far",
+      "second_word": "blue",
       "continuation": "A sky of blue, so near and far. <end_of_turn>"
     },
     {
@@ -3734,9 +3734,9 @@
       "continuation": "His story had already been told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sled",
-      "second_word": "led",
+      "second_word": "day",
       "continuation": "A winter's day, joyfully led.<end_of_turn>"
     },
     {
@@ -3746,9 +3746,9 @@
       "continuation": "Who always had a helpful plan. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pet",
-      "second_word": "bet",
+      "second_word": "treat",
       "continuation": "So she gave him a tasty treat, you bet!<end_of_turn>"
     },
     {
@@ -3764,9 +3764,9 @@
       "continuation": "To save his honor and name. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "know",
-      "second_word": "grow",
+      "second_word": "planted",
       "continuation": "From the seeds that he planted, and watched them grow. <end_of_turn>"
     },
     {
@@ -3794,9 +3794,9 @@
       "continuation": "And I almost lost my grip on it. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bet",
-      "second_word": "bet",
+      "second_word": "lot",
       "continuation": "And so he lost a lot, you bet!<end_of_turn>"
     },
     {
@@ -3806,15 +3806,15 @@
       "continuation": "And knew that winter was for all. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "command",
-      "second_word": "hand",
+      "second_word": "friend",
       "continuation": "A loyal friend, close at hand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "town",
-      "second_word": "crown",
+      "second_word": "bright",
       "continuation": "Wearing a bright, floral crown.<end_of_turn>"
     },
     {
@@ -3824,9 +3824,9 @@
       "continuation": "A castle built by a tiny hand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feed",
-      "second_word": "need",
+      "second_word": "chorus",
       "continuation": "A hungry chorus, a desperate need. <end_of_turn>"
     },
     {
@@ -3842,9 +3842,9 @@
       "continuation": "And then he quickly did a flop. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "told",
+      "second_word": "year",
       "continuation": "A story of the year, now told.<end_of_turn>"
     },
     {
@@ -3860,15 +3860,15 @@
       "continuation": "When she forgot her lover's name. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wet",
-      "second_word": "yet",
+      "second_word": "rain",
       "continuation": "From the rain, he hadn't finished yet.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bright",
-      "second_word": "sight",
+      "second_word": "dazzling",
       "continuation": "A dazzling, captivating sight.<end_of_turn>"
     },
     {
@@ -3892,7 +3892,7 @@
     {
       "status": "no_rhyme",
       "first_word": "snowflake",
-      "second_word": "wake",
+      "second_word": "fragile",
       "continuation": "A fragile, fleeting, icy wake. <end_of_turn>"
     },
     {
@@ -3902,21 +3902,21 @@
       "continuation": "\"May I please go out and play?\"<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fall",
-      "second_word": "all",
+      "second_word": "tumbled",
       "continuation": "But stumbled and tumbled, losing it all.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "grapevine",
-      "second_word": "sign",
+      "second_word": "juicy",
       "continuation": "A sweet and juicy, purple sign.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "thing",
-      "second_word": "sing",
+      "second_word": "peak",
       "continuation": "And to its peak, the birds would sing.<end_of_turn>"
     },
     {
@@ -3946,7 +3946,7 @@
     {
       "status": "no_rhyme",
       "first_word": "sea",
-      "second_word": "tranquility",
+      "second_word": "salty",
       "continuation": "A salty, wild tranquility.<end_of_turn>"
     },
     {
@@ -3970,13 +3970,13 @@
     {
       "status": "no_rhyme",
       "first_word": "sake",
-      "second_word": "undertake",
+      "second_word": "joy",
       "continuation": "A life of joy, she'd undertake.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "seashell",
-      "second_word": "well",
+      "second_word": "close",
       "continuation": "And held it close, knowing it felt well. <end_of_turn>"
     },
     {
@@ -3998,9 +3998,9 @@
       "continuation": "The prettiest dress in all the town.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mice",
-      "second_word": "nice",
+      "second_word": "chase",
       "continuation": "A playful chase, so quick and nice.<end_of_turn>"
     },
     {
@@ -4022,15 +4022,15 @@
       "continuation": "To feed the horses every day.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wing",
-      "second_word": "spring",
+      "second_word": "sight",
       "continuation": "A beautiful sight, a gift of spring.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "combat",
-      "second_word": "acrobat",
+      "second_word": "mix",
       "continuation": "A strange mix, a verbal acrobat. <end_of_turn>"
     },
     {
@@ -4060,7 +4060,7 @@
     {
       "status": "unknown",
       "first_word": "wristband",
-      "second_word": "hand",
+      "second_word": "fun",
       "continuation": "A reminder of the fun, close at hand. <end_of_turn>"
     },
     {
@@ -4076,9 +4076,9 @@
       "continuation": "To make sure it was perfectly precise.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "can",
-      "second_word": "plan",
+      "second_word": "act",
       "continuation": "A careless act, not part of the plan. <end_of_turn>"
     },
     {
@@ -4106,9 +4106,9 @@
       "continuation": "A victory hard-won.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "that",
+      "second_word": "first",
       "continuation": "And ran to first, just like that!<end_of_turn>"
     },
     {
@@ -4130,9 +4130,9 @@
       "continuation": "And whispered softly her sweet name. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "fit",
+      "second_word": "inferno",
       "continuation": "A blazing inferno, a fiery fit. <end_of_turn>"
     },
     {
@@ -4154,9 +4154,9 @@
       "continuation": "And hoped his verses would brighten the day.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "bit",
+      "second_word": "hope",
       "continuation": "A beacon of hope, a shining bit. <end_of_turn>"
     },
     {
@@ -4178,9 +4178,9 @@
       "continuation": "And found her purpose every day. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "twice",
-      "second_word": "nice",
+      "second_word": "eyes",
       "continuation": "To fall for her eyes, so nice.<end_of_turn>"
     },
     {
@@ -4196,9 +4196,9 @@
       "continuation": "And went to lie in his warm bed.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "feed",
-      "second_word": "deed",
+      "second_word": "berries",
       "continuation": "On the berries, a colorful deed.<end_of_turn>"
     },
     {
@@ -4214,15 +4214,15 @@
       "continuation": "A voice that was grand.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "drop",
-      "second_word": "stop",
+      "second_word": "night",
       "continuation": "A cozy night, I couldn't stop. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "snow",
-      "second_word": "glow",
+      "second_word": "silent",
       "continuation": "A silent, peaceful, winter glow.<end_of_turn>"
     },
     {
@@ -4244,9 +4244,9 @@
       "continuation": "A tasty treat for a tiny cat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shame",
-      "second_word": "game",
+      "second_word": "foolish",
       "continuation": "For playing a foolish, hurtful game. <end_of_turn>"
     },
     {
@@ -4256,9 +4256,9 @@
       "continuation": "To follow scents through the misty bog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mold",
-      "second_word": "unfold",
+      "second_word": "steel",
       "continuation": "A story in steel, waiting to unfold. <end_of_turn>"
     },
     {
@@ -4268,9 +4268,9 @@
       "continuation": "And then went out to have some fun.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ran",
-      "second_word": "man",
+      "second_word": "champion",
       "continuation": "A champion, a truly gifted man.<end_of_turn>"
     },
     {
@@ -4288,7 +4288,7 @@
     {
       "status": "no_rhyme",
       "first_word": "hog",
-      "second_word": "dog",
+      "second_word": "large",
       "continuation": "A very large, pink, muddy dog. <end_of_turn>"
     },
     {
@@ -4304,9 +4304,9 @@
       "continuation": "As winter's tale was getting old. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "deed",
+      "second_word": "act",
       "continuation": "A foolish act, a dangerous deed.<end_of_turn>"
     },
     {
@@ -4316,15 +4316,15 @@
       "continuation": "But all she found was tangled weed. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "told",
+      "second_word": "love",
       "continuation": "A story of love, forever told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "hit",
+      "second_word": "seam",
       "continuation": "A perfect seam, a stylish hit.<end_of_turn>"
     },
     {
@@ -4334,9 +4334,9 @@
       "continuation": "But it didn't quite fit his hand. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fall",
-      "second_word": "all",
+      "second_word": "umbrella",
       "continuation": "And wished he'd brought an umbrella, after all.<end_of_turn>"
     },
     {
@@ -4376,9 +4376,9 @@
       "continuation": "And pierced the apple with all her might. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rock",
-      "second_word": "shock",
+      "second_word": "beauty",
       "continuation": "A timeless beauty, a stunning shock.<end_of_turn>"
     },
     {
@@ -4388,15 +4388,15 @@
       "continuation": "A vibrant beauty to enthrall. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "cold",
+      "second_word": "riches",
       "continuation": "A story of riches, yet feeling cold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cold",
-      "second_word": "told",
+      "second_word": "eyes",
       "continuation": "A story in his eyes, yet to be told. <end_of_turn>"
     },
     {
@@ -4430,15 +4430,15 @@
       "continuation": "And watched the golden harvest flow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "light",
-      "second_word": "night",
+      "second_word": "comfort",
       "continuation": "A perfect comfort, day and night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "hand",
+      "second_word": "moment",
       "continuation": "A fleeting moment, close at hand. <end_of_turn>"
     },
     {
@@ -4466,9 +4466,9 @@
       "continuation": "Without a care on the ground. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "call",
-      "second_word": "all",
+      "second_word": "news",
       "continuation": "To tell him the news, and to share it with all.<end_of_turn>"
     },
     {
@@ -4544,15 +4544,15 @@
       "continuation": "The secrets hidden inside the clock.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lit",
-      "second_word": "fit",
+      "second_word": "warm",
       "continuation": "A warm, golden glow, a beautiful fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "chat",
-      "second_word": "that",
+      "second_word": "parted",
       "continuation": "And then they parted, just like that.<end_of_turn>"
     },
     {
@@ -4562,15 +4562,15 @@
       "continuation": "And took to the wing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "so",
-      "second_word": "grow",
+      "second_word": "secretly",
       "continuation": "But secretly, her feelings did grow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "grow",
-      "second_word": "show",
+      "second_word": "vibrant",
       "continuation": "A vibrant, colorful, joyful show. \ud83c\udf38\ud83c\udf37\ud83c\udf39\ud83c\udf3b<end_of_turn>"
     },
     {
@@ -4604,21 +4604,21 @@
       "continuation": "A story of riches to be told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ball",
-      "second_word": "all",
+      "second_word": "vision",
       "continuation": "A graceful vision, enchanting all.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "knee",
-      "second_word": "me",
+      "second_word": "cried",
       "continuation": "And cried, \"Oh, woe is me!\"<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "skit",
+      "second_word": "joy",
       "continuation": "And danced with joy, a happy skit.<end_of_turn>"
     },
     {
@@ -4630,7 +4630,7 @@
     {
       "status": "rhyme",
       "first_word": "call",
-      "second_word": "tall",
+      "second_word": "all",
       "continuation": "And saved them all, standing tall.<end_of_turn>"
     },
     {
@@ -4646,9 +4646,9 @@
       "continuation": "A frown upon his face in town. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sat",
-      "second_word": "mat",
+      "second_word": "comfy",
       "continuation": "Upon a comfy, mossy mat.<end_of_turn>"
     },
     {
@@ -4670,9 +4670,9 @@
       "continuation": "And wove a dream inside his head. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pine",
-      "second_word": "shine",
+      "second_word": "festive",
       "continuation": "And a festive, warm glow did shine. \ud83c\udf84\u2728<end_of_turn>"
     },
     {
@@ -4688,9 +4688,9 @@
       "continuation": "And banished the darkness of night.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pain",
-      "second_word": "again",
+      "second_word": "sting",
       "continuation": "Like a bee sting, again and again. \ud83d\udc1d \ud83e\udd15 \ud83d\udc94 "
     },
     {
@@ -4712,9 +4712,9 @@
       "continuation": "A story it was eager to tell. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "star",
-      "second_word": "far",
+      "second_word": "night",
       "continuation": "A lonely night, no matter how far.<end_of_turn>"
     },
     {
@@ -4736,9 +4736,9 @@
       "continuation": "Where birds would come and sweetly sing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "fit",
+      "second_word": "worked",
       "continuation": "And found it worked, a perfect fit!<end_of_turn>"
     },
     {
@@ -4760,9 +4760,9 @@
       "continuation": "The best in all the land.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "stock",
-      "second_word": "clock",
+      "second_word": "spices",
       "continuation": "With herbs and spices, around the clock.<end_of_turn>"
     },
     {
@@ -4802,9 +4802,9 @@
       "continuation": "A bouncy castle in a wonderland. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "maintain",
-      "second_word": "pain",
+      "second_word": "body",
       "continuation": "A healthy body, free from pain.<end_of_turn>"
     },
     {
@@ -4820,9 +4820,9 @@
       "continuation": "And hoped his voice would sweetly ring. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "cat",
+      "second_word": "spooky",
       "continuation": "A spooky, scary, furry cat. \ud83e\udd87\ud83d\udc08\u200d\u2b1b\ufe0f \ud83d\udc7b"
     },
     {
@@ -4844,15 +4844,15 @@
       "continuation": "And had a wonderful time with all.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sold",
-      "second_word": "told",
+      "second_word": "riches",
       "continuation": "A tale of riches, bravely told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slice",
-      "second_word": "nice",
+      "second_word": "treat",
       "continuation": "A sour treat, not very nice. <end_of_turn>"
     },
     {
@@ -4888,7 +4888,7 @@
     {
       "status": "no_rhyme",
       "first_word": "caveat",
-      "second_word": "threat",
+      "second_word": "truth",
       "continuation": "\"Beware of the truth, it can be quite a threat.\"<end_of_turn>"
     },
     {
@@ -4916,9 +4916,9 @@
       "continuation": "A message of joy it would bring. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spring",
-      "second_word": "bring",
+      "second_word": "joy",
       "continuation": "A vision of joy, the joy she'd bring.<end_of_turn>"
     },
     {
@@ -4994,21 +4994,21 @@
       "continuation": "Right on top of a lollipop. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pit",
-      "second_word": "fit",
+      "second_word": "sweet",
       "continuation": "And the peach was sweet, a perfect fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "beat",
-      "second_word": "feet",
+      "second_word": "weary",
       "continuation": "With weary, blistered, aching feet.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fog",
-      "second_word": "dog",
+      "second_word": "lonely",
       "continuation": "Like a lonely, wandering dog.<end_of_turn>"
     },
     {
@@ -5018,27 +5018,27 @@
       "continuation": "And smiled to see the beauty around. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wall",
-      "second_word": "all",
+      "second_word": "story",
       "continuation": "A silent story, captivating all. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "aim",
-      "second_word": "fame",
+      "second_word": "tournament",
       "continuation": "And won the tournament, gaining fame.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pat",
-      "second_word": "that",
+      "second_word": "gallop",
       "continuation": "And watched him gallop, just like that.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "rear",
-      "second_word": "sphere",
+      "second_word": "sheep",
       "continuation": "And saw a flock of sheep, a woolly, bleating sphere. "
     },
     {
@@ -5060,9 +5060,9 @@
       "continuation": "Now all her treasures she can't see.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "knee",
-      "second_word": "me",
+      "second_word": "asked",
       "continuation": "And asked, \"Will you marry me?\"<end_of_turn>"
     },
     {
@@ -5072,9 +5072,9 @@
       "continuation": "As winter winds began to blow. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "need",
-      "second_word": "deed",
+      "second_word": "heart",
       "continuation": "A generous heart, a noble deed.<end_of_turn>"
     },
     {
@@ -5096,21 +5096,21 @@
       "continuation": "Hoping for a Valentine. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ball",
-      "second_word": "small",
+      "second_word": "subjects",
       "continuation": "For all his subjects, big and small. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "price",
-      "second_word": "nice",
+      "second_word": "it",
       "continuation": "But it was worth it, oh so nice!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "untold",
+      "second_word": "sun",
       "continuation": "A story in the sun, untold. <end_of_turn>"
     },
     {
@@ -5156,9 +5156,9 @@
       "continuation": "And thought of all he didn't think. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "steed",
-      "second_word": "need",
+      "second_word": "champion",
       "continuation": "A champion, fulfilling every need. \ud83d\udc0e\ud83c\udfc6\u2728<end_of_turn>"
     },
     {
@@ -5222,21 +5222,21 @@
       "continuation": "So he just turned and walked away.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spice",
-      "second_word": "price",
+      "second_word": "cozy",
       "continuation": "A cozy, warm, and welcome price. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ground",
-      "second_word": "profound",
+      "second_word": "beauty",
       "continuation": "A timeless beauty, peacefully profound.<end_of_turn>"
     },
     {
       "status": "rhyme",
       "first_word": "shed",
-      "second_word": "said",
+      "second_word": "head",
       "continuation": "And bumped his head, it's often said. \ud83e\udeb4 \ud83e\udd15 "
     },
     {
@@ -5288,39 +5288,39 @@
       "continuation": "\"Please leave your troubles far behind.\" <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "row",
-      "second_word": "show",
+      "second_word": "vibrant",
       "continuation": "A vibrant, colorful, beautiful show.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "writ",
-      "second_word": "wit",
+      "second_word": "courage",
       "continuation": "A tale of courage, strength, and wit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sold",
-      "second_word": "told",
+      "second_word": "past",
       "continuation": "A story of the past, now to be told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "lead",
-      "second_word": "seed",
+      "second_word": "beautiful",
       "continuation": "And planted a beautiful, bountiful seed. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "unfold",
-      "second_word": "bold",
+      "second_word": "courage",
       "continuation": "A tale of courage, brave and bold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "debt",
-      "second_word": "forget",
+      "second_word": "habits",
       "continuation": "But his spending habits, he couldn't forget.<end_of_turn>"
     },
     {
@@ -5342,27 +5342,27 @@
       "continuation": "As the rain came tumbling down.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "feat",
+      "second_word": "beautiful",
       "continuation": "A beautiful, fragrant, floral feat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "that",
+      "second_word": "tiles",
       "continuation": "Then laid the new tiles, just like that!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "that",
+      "second_word": "high",
       "continuation": "And flew so high, just like that!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "old",
-      "second_word": "told",
+      "second_word": "silence",
       "continuation": "Their stories in silence, bravely told.<end_of_turn>"
     },
     {
@@ -5372,21 +5372,21 @@
       "continuation": "A fortress of power in the land. \ud83c\udff0\u2728<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bun",
-      "second_word": "none",
+      "second_word": "perfect",
       "continuation": "To make it perfect, second to none.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jet",
-      "second_word": "regret",
+      "second_word": "heart",
       "continuation": "With a hopeful heart, and no regret.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "seed",
+      "second_word": "all",
       "continuation": "A blur to all, a planted seed. <end_of_turn>"
     },
     {
@@ -5492,15 +5492,15 @@
       "continuation": "A feast for man and hungry dog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "white",
-      "second_word": "bright",
+      "second_word": "shining",
       "continuation": "A beacon shining, pure and bright.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "retreat",
+      "second_word": "space",
       "continuation": "A tidy space, a sweet retreat.<end_of_turn>"
     },
     {
@@ -5516,15 +5516,15 @@
       "continuation": "And now he's happily sitting on a mat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "that",
+      "second_word": "circumstance",
       "continuation": "A most unfortunate circumstance, that's that.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jet",
-      "second_word": "forget",
+      "second_word": "sight",
       "continuation": "A wondrous sight, I won't forget.<end_of_turn>"
     },
     {
@@ -5642,9 +5642,9 @@
       "continuation": "A story in legends told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "feat",
+      "second_word": "desk",
       "continuation": "A tidy desk, a welcome feat.<end_of_turn>"
     },
     {
@@ -5666,9 +5666,9 @@
       "continuation": "With a feast we'd never forget.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flat",
-      "second_word": "cat",
+      "second_word": "pose",
       "continuation": "A peaceful pose, just like a happy cat.<end_of_turn>"
     },
     {
@@ -5708,9 +5708,9 @@
       "continuation": "And ate it in a trice.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tight",
-      "second_word": "light",
+      "second_word": "love",
       "continuation": "A beacon of love, a shining light. <end_of_turn>"
     },
     {
@@ -5722,7 +5722,7 @@
     {
       "status": "no_rhyme",
       "first_word": "down",
-      "second_word": "sound",
+      "second_word": "drop",
       "continuation": "A sudden drop, without a sound. <end_of_turn>"
     },
     {
@@ -5744,9 +5744,9 @@
       "continuation": "And wished for a magical spell. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "night",
-      "second_word": "light",
+      "second_word": "dark",
       "continuation": "Everything was dark, without a light.<end_of_turn>"
     },
     {
@@ -5786,33 +5786,33 @@
       "continuation": "To keep the sheep from having a fall. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "string",
-      "second_word": "sing",
+      "second_word": "play",
       "continuation": "And began to play, making the room sing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pink",
-      "second_word": "think",
+      "second_word": "it",
       "continuation": "I wore it, I didn't even think.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bow",
-      "second_word": "now",
+      "second_word": "up",
       "continuation": "His time was up, and finished now. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fed",
-      "second_word": "red",
+      "second_word": "down",
       "continuation": "As the sun went down, turning the sky red.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "at",
-      "second_word": "at",
+      "second_word": "planned",
       "continuation": "A journey planned, where we would be at. <end_of_turn>"
     },
     {
@@ -5828,9 +5828,9 @@
       "continuation": "But the trainer was determined to win the game.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "scan",
-      "second_word": "can",
+      "second_word": "artwork",
       "continuation": "Of the artwork, as best as it can.<end_of_turn>"
     },
     {
@@ -5840,15 +5840,15 @@
       "continuation": "Then ran like hell. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pen",
-      "second_word": "again",
+      "second_word": "story",
       "continuation": "A messy story, again and again.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "world",
       "continuation": "And watch the world, a perfect fit. <end_of_turn>"
     },
     {
@@ -5858,15 +5858,15 @@
       "continuation": "A symbol of the joy love can bring.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wing",
-      "second_word": "thing",
+      "second_word": "above",
       "continuation": "And soared above, a joyful thing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slow",
-      "second_word": "grow",
+      "second_word": "determination",
       "continuation": "But with determination, he began to grow. <end_of_turn>"
     },
     {
@@ -5876,9 +5876,9 @@
       "continuation": "As raindrops fell upon the ground.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tear",
-      "second_word": "near",
+      "second_word": "whispered",
       "continuation": "And whispered, \"Hope is always near.\"<end_of_turn>"
     },
     {
@@ -5900,27 +5900,27 @@
       "continuation": "A perfect place for a cowboy's hat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "knit",
+      "second_word": "part",
       "continuation": "A missing part, now beautifully knit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bold",
-      "second_word": "gold",
+      "second_word": "courage",
       "continuation": "A story of courage, in silver and gold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sing",
-      "second_word": "thing",
+      "second_word": "noise",
       "continuation": "A joyful noise, a beautiful thing.<end_of_turn>"
     },
     {
       "status": "no_rhyme",
       "first_word": "meet",
-      "second_word": "bittersweet",
+      "second_word": "life",
       "continuation": "A humble life, bittersweet.<end_of_turn>"
     },
     {
@@ -5930,9 +5930,9 @@
       "continuation": "And left the others in a mental pit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "deed",
+      "second_word": "tale",
       "continuation": "A captivating tale, a wondrous deed.<end_of_turn>"
     },
     {
@@ -5954,9 +5954,9 @@
       "continuation": "But missed the whole game. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ball",
-      "second_word": "all",
+      "second_word": "soar",
       "continuation": "And watched it soar, above all.<end_of_turn>"
     },
     {
@@ -5966,9 +5966,9 @@
       "continuation": "And then he did a joyful hop.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "knit",
-      "second_word": "fit",
+      "second_word": "scarf",
       "continuation": "And made a warm scarf, a perfect fit.<end_of_turn>"
     },
     {
@@ -5984,15 +5984,15 @@
       "continuation": "To plant a beautiful garden seed. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sea",
-      "second_word": "decree",
+      "second_word": "lonely",
       "continuation": "A lonely, wild, and watery decree.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shine",
-      "second_word": "divine",
+      "second_word": "sight",
       "continuation": "A beautiful sight, truly divine.<end_of_turn>"
     },
     {
@@ -6062,9 +6062,9 @@
       "continuation": "And I was sad to have to spit. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "round",
-      "second_word": "sound",
+      "second_word": "joyful",
       "continuation": "With a joyful, musical sound.<end_of_turn>"
     },
     {
@@ -6074,15 +6074,15 @@
       "continuation": "To make the story truly fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fall",
-      "second_word": "all",
+      "second_word": "wonder",
       "continuation": "A natural wonder, enthralling all.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "told",
+      "second_word": "power",
       "continuation": "A story of power, bravely told.<end_of_turn>"
     },
     {
@@ -6104,9 +6104,9 @@
       "continuation": "Chasing the shadows of night away.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bun",
-      "second_word": "one",
+      "second_word": "quickly",
       "continuation": "And ate it quickly, one by one.<end_of_turn>"
     },
     {
@@ -6116,27 +6116,27 @@
       "continuation": "Always working with a plan. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "can",
-      "second_word": "man",
+      "second_word": "girl",
       "continuation": "A simple task for a farm girl, man.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fog",
-      "second_word": "dog",
+      "second_word": "ghostly",
       "continuation": "A ghostly, silent, watery dog. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "year",
-      "second_word": "near",
+      "second_word": "kindness",
       "continuation": "Dispensing kindness, far and near. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "treat",
-      "second_word": "sweet",
+      "second_word": "ending",
       "continuation": "A sugary ending, oh so sweet!<end_of_turn>"
     },
     {
@@ -6146,15 +6146,15 @@
       "continuation": "A gentle hush embraced us all. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "mat",
-      "second_word": "cat",
+      "second_word": "purring",
       "continuation": "A purring, fluffy, contented cat.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fat",
-      "second_word": "that",
+      "second_word": "dessert",
       "continuation": "A perfect dessert, just like that!<end_of_turn>"
     },
     {
@@ -6164,9 +6164,9 @@
       "continuation": "And hoped his flight wouldn't be hit. \u2708\ufe0f \ufffd\ufffd"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hold",
-      "second_word": "bold",
+      "second_word": "courage",
       "continuation": "A heart of courage, brave and bold.<end_of_turn>"
     },
     {
@@ -6188,9 +6188,9 @@
       "continuation": "Then sat to read a book upon the dock.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "debt",
-      "second_word": "bet",
+      "second_word": "cash",
       "continuation": "So he paid with cash, you can bet.<end_of_turn>"
     },
     {
@@ -6200,9 +6200,9 @@
       "continuation": "So she let the telephone fall. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ring",
-      "second_word": "thing",
+      "second_word": "sound",
       "continuation": "A joyful sound, a hopeful thing.<end_of_turn>"
     },
     {
@@ -6224,9 +6224,9 @@
       "continuation": "To clean the floor from top to top.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "frame",
-      "second_word": "name",
+      "second_word": "masterpiece",
       "continuation": "A masterpiece, whispering her name. <end_of_turn>"
     },
     {
@@ -6242,27 +6242,27 @@
       "continuation": "And escaped the pouring rain.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "flame",
-      "second_word": "same",
+      "second_word": "forest",
       "continuation": "And scorched the forest, all the same.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sake",
-      "second_word": "wake",
+      "second_word": "hunter",
       "continuation": "A silent hunter, a deadly wake.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hold",
-      "second_word": "untold",
+      "second_word": "eyes",
       "continuation": "A story in her eyes, untold. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "behold",
-      "second_word": "told",
+      "second_word": "patterns",
       "continuation": "A story in its patterns, bravely told. \ud83e\uddf5\u2728 \ud83c\udfa8 \ud83e\uddf6"
     },
     {
@@ -6280,13 +6280,13 @@
     {
       "status": "no_rhyme",
       "first_word": "log",
-      "second_word": "frog",
+      "second_word": "snap",
       "continuation": "A sudden snap, like a startled frog. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shake",
-      "second_word": "sake",
+      "second_word": "tremor",
       "continuation": "A sudden tremor, for goodness sake!<end_of_turn>"
     },
     {
@@ -6296,9 +6296,9 @@
       "continuation": "Beneath the setting sun.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bow",
-      "second_word": "low",
+      "second_word": "tune",
       "continuation": "And played a tune, soft and low. <end_of_turn>"
     },
     {
@@ -6308,27 +6308,27 @@
       "continuation": "And the crowd erupted with a joyful sound.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "block",
-      "second_word": "flock",
+      "second_word": "speed",
       "continuation": "With a burst of speed, around the track he did flock. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "brown",
-      "second_word": "gown",
+      "second_word": "lovely",
       "continuation": "To make a lovely, flowing gown. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "deed",
-      "second_word": "indeed",
+      "second_word": "fell",
       "continuation": "But tripped and fell, a sight indeed!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "white",
-      "second_word": "night",
+      "second_word": "peaceful",
       "continuation": "A peaceful, beautiful, winter's night.<end_of_turn>"
     },
     {
@@ -6392,9 +6392,9 @@
       "continuation": "A perfect day for something nice. \u2744\ufe0f \u2615\ufe0f \ud83d\udcda "
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "slow",
-      "second_word": "low",
+      "second_word": "went",
       "continuation": "Wherever he went, he took it low. \ud83d\udc0c \ud83d\udc0c \ud83d\udc0c "
     },
     {
@@ -6404,9 +6404,9 @@
       "continuation": "To help her garden grow as planned. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "won",
-      "second_word": "none",
+      "second_word": "victory",
       "continuation": "A glorious victory, second to none.<end_of_turn>"
     },
     {
@@ -6440,9 +6440,9 @@
       "continuation": "A silent tear rolled from her crown. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sand",
-      "second_word": "hand",
+      "second_word": "artwork",
       "continuation": "A fleeting artwork, close at hand. <end_of_turn>"
     },
     {
@@ -6458,15 +6458,15 @@
       "continuation": "And danced the night and the day away.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "gold",
-      "second_word": "told",
+      "second_word": "adventure",
       "continuation": "A story of adventure, bravely told.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "disappear",
-      "second_word": "fear",
+      "second_word": "clouds",
       "continuation": "Lost in the clouds, and filled with fear. <end_of_turn>"
     },
     {
@@ -6482,9 +6482,9 @@
       "continuation": "A misty shroud embracing all. \ud83c\udf41\ud83c\udf42\ud83c\udf27\ufe0f \u2614\ufe0f \ud83c\udf2c"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "spring",
-      "second_word": "sing",
+      "second_word": "sight",
       "continuation": "A joyful sight, the birds did sing.<end_of_turn>"
     },
     {
@@ -6500,9 +6500,9 @@
       "continuation": "To escape the pouring rain.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sun",
-      "second_word": "done",
+      "second_word": "over",
       "continuation": "The day was over, work was done.<end_of_turn>"
     },
     {
@@ -6536,21 +6536,21 @@
       "continuation": "And won with a mischievous flame.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wet",
-      "second_word": "cigarette",
+      "second_word": "lonely",
       "continuation": "A lonely, forgotten cigarette. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swell",
-      "second_word": "spell",
+      "second_word": "salty",
       "continuation": "A salty, briny, magical spell.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "speed",
-      "second_word": "need",
+      "second_word": "peace",
       "continuation": "A moment's peace, a quiet need. <end_of_turn>"
     },
     {
@@ -6560,15 +6560,15 @@
       "continuation": "And wished he was driving a fancy car.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "ice",
-      "second_word": "nice",
+      "second_word": "treat",
       "continuation": "A summer treat, oh so nice!<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "round",
-      "second_word": "sound",
+      "second_word": "happy",
       "continuation": "A happy, playful, joyful sound.<end_of_turn>"
     },
     {
@@ -6584,9 +6584,9 @@
       "continuation": "And dreamed of days when she could sing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sweet",
-      "second_word": "treat",
+      "second_word": "delicious",
       "continuation": "A delicious, sugary treat.<end_of_turn>"
     },
     {
@@ -6634,13 +6634,13 @@
     {
       "status": "no_rhyme",
       "first_word": "deer",
-      "second_word": "disappeared",
+      "second_word": "vision",
       "continuation": "A fleeting vision, then it disappeared.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "seed",
-      "second_word": "deed",
+      "second_word": "blossoms",
       "continuation": "Hoping for blossoms, a colorful deed.<end_of_turn>"
     },
     {
@@ -6686,9 +6686,9 @@
       "continuation": "A perfect place to set. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "shake",
-      "second_word": "sake",
+      "second_word": "fear",
       "continuation": "A sudden fear, for goodness sake!<end_of_turn>"
     },
     {
@@ -6710,15 +6710,15 @@
       "continuation": "A story of the season told. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bog",
-      "second_word": "frog",
+      "second_word": "slimy",
       "continuation": "Filled with a slimy, green frog.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fat",
-      "second_word": "that",
+      "second_word": "circle",
       "continuation": "A golden circle, just like that!<end_of_turn>"
     },
     {
@@ -6728,15 +6728,15 @@
       "continuation": "As the volcano put on a fiery show.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "string",
-      "second_word": "thing",
+      "second_word": "surprise",
       "continuation": "A joyful surprise, a beautiful thing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pop",
-      "second_word": "top",
+      "second_word": "very",
       "continuation": "Right to the very, very top.<end_of_turn>"
     },
     {
@@ -6748,7 +6748,7 @@
     {
       "status": "no_rhyme",
       "first_word": "feet",
-      "second_word": "bittersweet",
+      "second_word": "soul",
       "continuation": "A weary soul, bittersweet.<end_of_turn>"
     },
     {
@@ -6758,27 +6758,27 @@
       "continuation": "And followed through with every plan. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "row",
-      "second_word": "show",
+      "second_word": "vibrant",
       "continuation": "Watching the vibrant, colorful show. <end_of_turn>"
     },
     {
       "status": "unknown",
       "first_word": "firepit",
-      "second_word": "fit",
+      "second_word": "glow",
       "continuation": "And watched the embers glow, a beautiful fit.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "blow",
-      "second_word": "low",
+      "second_word": "whispered",
       "continuation": "A secret whispered, soft and low.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "neat",
-      "second_word": "retreat",
+      "second_word": "cozy",
       "continuation": "A cozy, comfortable retreat.<end_of_turn>"
     },
     {
@@ -6788,9 +6788,9 @@
       "continuation": "And knew her dreams would soon align. \ud83c\udf1f \ud83c\udfad \u2728<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "plan",
-      "second_word": "man",
+      "second_word": "robot",
       "continuation": "To build a robot, a mechanical man. <end_of_turn>"
     },
     {
@@ -6800,9 +6800,9 @@
       "continuation": "A painful reminder of summer's thing.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tight",
-      "second_word": "delight",
+      "second_word": "gift",
       "continuation": "A perfect gift, a pure delight.<end_of_turn>"
     },
     {
@@ -6818,15 +6818,15 @@
       "continuation": "And covered all the world in snow.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "night",
-      "second_word": "bright",
+      "second_word": "shining",
       "continuation": "A beacon shining, warm and bright.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "prey",
-      "second_word": "day",
+      "second_word": "long",
       "continuation": "At the end of a long, cold day.<end_of_turn>"
     },
     {
@@ -6842,21 +6842,21 @@
       "continuation": "But his jokes were often a bit hit or miss.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "tall",
-      "second_word": "all",
+      "second_word": "ages",
       "continuation": "It stood for ages, watching all. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wine",
-      "second_word": "divine",
+      "second_word": "taste",
       "continuation": "A vintage taste, truly divine.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fat",
-      "second_word": "at",
+      "second_word": "win",
       "continuation": "He couldn't win, just where he was at.<end_of_turn>"
     },
     {
@@ -6866,9 +6866,9 @@
       "continuation": "As shadows danced in the pale moonlight.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sea",
-      "second_word": "me",
+      "second_word": "land",
       "continuation": "And wished for land, for you and me.<end_of_turn>"
     },
     {
@@ -6938,15 +6938,15 @@
       "continuation": "But fell into the rain. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "disappear",
-      "second_word": "fear",
+      "second_word": "thought",
       "continuation": "Lost in thought, and filled with fear.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pen",
-      "second_word": "again",
+      "second_word": "story",
       "continuation": "A silent story, once again. <end_of_turn>"
     },
     {
@@ -7010,9 +7010,9 @@
       "continuation": "With laughter and joy all around.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "king",
-      "second_word": "thing",
+      "second_word": "roar",
       "continuation": "A mighty roar, a fearsome thing.<end_of_turn>"
     },
     {
@@ -7022,9 +7022,9 @@
       "continuation": "And conjured up a mischievous cat. \ud83e\uddd9\u200d\u2640\ufe0f\ud83d\udc08\u200d\u2b1b\ufe0f "
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "bat",
-      "second_word": "that",
+      "second_word": "hit",
       "continuation": "Ready to hit, just like that!<end_of_turn>"
     },
     {
@@ -7046,9 +7046,9 @@
       "continuation": "And continued to play the game.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "wing",
-      "second_word": "thing",
+      "second_word": "above",
       "continuation": "To soar above, a majestic thing.<end_of_turn>"
     },
     {
@@ -7058,9 +7058,9 @@
       "continuation": "To plant a tiny mustard seed. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "treat",
-      "second_word": "sweet",
+      "second_word": "delight",
       "continuation": "A summer delight, oh so sweet!<end_of_turn>"
     },
     {
@@ -7072,7 +7072,7 @@
     {
       "status": "no_rhyme",
       "first_word": "down",
-      "second_word": "sound",
+      "second_word": "rolled",
       "continuation": "But a single tear rolled, without a sound. <end_of_turn>"
     },
     {
@@ -7082,15 +7082,15 @@
       "continuation": "And joy to all his people did bring.<end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "swing",
-      "second_word": "thing",
+      "second_word": "silent",
       "continuation": "A silent, rhythmic, hopeful thing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "hit",
-      "second_word": "bit",
+      "second_word": "stitches",
       "continuation": "Leaving the audience in stitches, bit by bit.<end_of_turn>"
     },
     {
@@ -7124,9 +7124,9 @@
       "continuation": "A victory for everyone. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "cake",
-      "second_word": "make",
+      "second_word": "friend",
       "continuation": "For her friend, a sweet treat to make.<end_of_turn>"
     },
     {
@@ -7136,9 +7136,9 @@
       "continuation": "To make the perfect birthday cake. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "jog",
-      "second_word": "frog",
+      "second_word": "playful",
       "continuation": "Like a playful, bounding frog.<end_of_turn>"
     },
     {
@@ -7160,9 +7160,9 @@
       "continuation": "And made the old guitar sing. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sweet",
-      "second_word": "treat",
+      "second_word": "sugary",
       "continuation": "A sugary, delightful treat.<end_of_turn>"
     },
     {
@@ -7184,9 +7184,9 @@
       "continuation": "And wrote it down remarkably well. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "well",
-      "second_word": "tell",
+      "second_word": "water",
       "continuation": "Hoping for water, a story to tell. <end_of_turn>"
     },
     {
@@ -7196,9 +7196,9 @@
       "continuation": "As the world spun without a sound. <end_of_turn>"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "bit",
+      "second_word": "truth",
       "continuation": "Hoping to find the truth, bit by bit. <end_of_turn>"
     },
     {

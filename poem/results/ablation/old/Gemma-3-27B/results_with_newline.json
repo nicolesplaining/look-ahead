@@ -3,9 +3,9 @@
   "model_name": "google/gemma-3-27b-it",
   "n_total": 1200,
   "n_attempted": 1200,
-  "n_rhymed": 1088,
+  "n_rhymed": 1084,
   "n_unknown": 7,
-  "rhyme_rate": 0.9066666666666666,
+  "rhyme_rate": 0.9033333333333333,
   "results": [
     {
       "status": "rhyme",
@@ -1706,9 +1706,9 @@
       "continuation": "As autumn gently settled down.\n\nA haiku:\nGolden leaves descend,"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "sit",
-      "second_word": "fit",
+      "second_word": "turn",
       "continuation": "And thought, \"This is quite a perfect fit!\"<end_of_turn>"
     },
     {
@@ -2342,9 +2342,9 @@
       "continuation": "Who dreamed of flying now and then.\n\nA haiku:\nGreen grass"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fee",
-      "second_word": "be",
+      "second_word": "turn",
       "continuation": "For parking where he shouldn't be.<end_of_turn>"
     },
     {
@@ -3746,9 +3746,9 @@
       "continuation": "Who always had a helpful plan.\n\nA haiku:\nGreen leaves softly"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "pet",
-      "second_word": "bet",
+      "second_word": "turn",
       "continuation": "So she gave him a tasty treat, you bet!<end_of_turn>"
     },
     {
@@ -4736,9 +4736,9 @@
       "continuation": "Where birds would come and sweetly sing.\n\nA haiku:\nGreen leaves"
     },
     {
-      "status": "rhyme",
+      "status": "no_rhyme",
       "first_word": "fit",
-      "second_word": "fit",
+      "second_word": "turn",
       "continuation": "And found it worked, a perfect fit!<end_of_turn>"
     },
     {
