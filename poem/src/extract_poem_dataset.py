@@ -31,7 +31,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from tqdm import tqdm
 
 
@@ -281,6 +281,10 @@ def main():
                         default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--layers", type=str, default=None,
                         help="Comma-separated layer indices (default: all)")
+    parser.add_argument("--quantization", type=str, default=None,
+                        choices=["4bit", "8bit"],
+                        help="Quantize the model: '8bit' halves bfloat16 memory, "
+                             "'4bit' quarters it (requires bitsandbytes)")
 
     args = parser.parse_args()
 
@@ -288,10 +292,17 @@ def main():
     if args.layers is not None:
         layers = [int(x.strip()) for x in args.layers.split(',')]
 
-    print(f"Loading model: {args.model_name}")
+    bnb_config = None
+    if args.quantization == "8bit":
+        bnb_config = BitsAndBytesConfig(load_in_8bit=True)
+    elif args.quantization == "4bit":
+        bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
+
+    print(f"Loading model: {args.model_name}"
+          + (f" [{args.quantization} quantization]" if args.quantization else ""))
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        dtype=torch.bfloat16,
+        **({"quantization_config": bnb_config} if bnb_config else {"torch_dtype": torch.bfloat16}),
         device_map=args.device,
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)

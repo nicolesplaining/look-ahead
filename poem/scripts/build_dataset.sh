@@ -21,6 +21,7 @@ MAX_NEW_TOKENS=16
 MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
 MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 
 TRAIN_INPUT="$PROJECT_ROOT/poem/data/poems-all-train.jsonl"
 VAL_INPUT="$PROJECT_ROOT/poem/data/poems-all-val.jsonl"
@@ -37,6 +38,7 @@ echo "Model:          $MODEL_NAME"
 echo "max_back:       $MAX_BACK"
 echo "max_new_tokens: $MAX_NEW_TOKENS"
 echo "Device:         $DEVICE"
+echo "Quantization:   ${QUANTIZATION:-none}"
 echo ""
 
 # --- Step 1a: training activations ---
@@ -52,6 +54,9 @@ TRAIN_CMD=(
 )
 if [ -n "$MAX_TRAIN_PROMPTS" ]; then
     TRAIN_CMD+=(--max_prompts "$MAX_TRAIN_PROMPTS")
+fi
+if [ -n "$QUANTIZATION" ]; then
+    TRAIN_CMD+=(--quantization "$QUANTIZATION")
 fi
 "${TRAIN_CMD[@]}"
 
@@ -70,6 +75,9 @@ if [ -f "$VAL_INPUT" ]; then
     )
     if [ -n "$MAX_VAL_PROMPTS" ]; then
         VAL_CMD+=(--max_prompts "$MAX_VAL_PROMPTS")
+    fi
+    if [ -n "$QUANTIZATION" ]; then
+        VAL_CMD+=(--quantization "$QUANTIZATION")
     fi
     "${VAL_CMD[@]}"
 else
