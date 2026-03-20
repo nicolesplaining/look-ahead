@@ -5,8 +5,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # ── configurable ─────────────────────────────────────────────────────────────
-MODEL=Qwen/Qwen3-0.6B
+# MODEL=Qwen/Qwen3-0.6B
 # MODEL=google/gemma-3-1b-it
+MODEL=meta-llama/Llama-3.2-1B
 VECTORS_PATH="${VECTORS_PATH:-$PROJECT_ROOT/steering/results/steering_vectors.pt}"
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-val.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"

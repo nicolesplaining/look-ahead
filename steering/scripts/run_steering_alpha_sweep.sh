@@ -18,7 +18,7 @@ DTYPE="${DTYPE:-bfloat16}"
 PYTHONPATH=""
 
 # Alpha values to sweep
-ALPHAS=(0.5 1.0 1.5 2.0 2.5 3.0)
+ALPHAS=(0.5 1.0 1.5 2.0 10)
 
 # Optional filters (space-separated lists); leave empty to use all
 LAYERS=""           # e.g. "0 8 16 24"

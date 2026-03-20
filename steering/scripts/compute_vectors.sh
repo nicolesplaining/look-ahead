@@ -5,8 +5,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # ── configurable via env vars or CLI overrides ──────────────────────────────
-MODEL=Qwen/Qwen3-0.6B
-# MODEL=google/gemma-3-1b-it
+# MODEL=Qwen/Qwen3-0.6B
+# MODEL=google/gemma-3-27b-it
+MODEL=meta-llama/Llama-3.2-1B
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-train.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
 CONTEXT_WINDOW="${CONTEXT_WINDOW:-20}"
