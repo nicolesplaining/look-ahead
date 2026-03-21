@@ -14,6 +14,7 @@ CONTEXT_WINDOW="${CONTEXT_WINDOW:-20}"
 LAYERS="${LAYERS:-}"          # space-separated list, e.g. "0 8 16 24 32"; empty = all
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 PYTHONPATH=""
 
 # Forward extra CLI args (e.g. --layers 0 8 16)
@@ -28,6 +29,11 @@ fi
 
 export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
 
+QUANTIZATION_FLAG=()
+if [ -n "$QUANTIZATION" ]; then
+    QUANTIZATION_FLAG=(--quantization "$QUANTIZATION")
+fi
+
 python -m steering_probe.compute_vectors \
     --model         "$MODEL" \
     --data-path     "$DATA_PATH" \
@@ -36,4 +42,5 @@ python -m steering_probe.compute_vectors \
     --device        "$DEVICE" \
     --dtype         "$DTYPE" \
     "${LAYERS_FLAG[@]}" \
+    "${QUANTIZATION_FLAG[@]}" \
     "${EXTRA_ARGS[@]}"

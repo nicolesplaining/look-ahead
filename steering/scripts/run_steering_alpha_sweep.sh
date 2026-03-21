@@ -15,6 +15,7 @@ N_SAMPLES=1
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-20}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 PYTHONPATH=""
 
 # Alpha values to sweep
@@ -57,6 +58,11 @@ if [ -n "$TARGET" ]; then
     read -r -a _arr <<< "$TARGET"; TARGET_FLAG=(--target "${_arr[@]}")
 fi
 
+QUANTIZATION_FLAG=()
+if [ -n "$QUANTIZATION" ]; then
+    QUANTIZATION_FLAG=(--quantization "$QUANTIZATION")
+fi
+
 export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
 
 # ── sweep ─────────────────────────────────────────────────────────────────────
@@ -86,6 +92,7 @@ for ALPHA in "${ALPHAS[@]}"; do
         "${GEN_POSITIONS_FLAG[@]}" \
         "${SOURCE_FLAG[@]}" \
         "${TARGET_FLAG[@]}" \
+        "${QUANTIZATION_FLAG[@]}" \
         "${EXTRA_ARGS[@]}"
 
     mv "$TMP_DIR/results.json" "$OUTPUT_DIR/results_alpha${ALPHA_TAG}.json"

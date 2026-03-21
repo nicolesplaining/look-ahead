@@ -17,6 +17,7 @@ N_SAMPLES=1
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-20}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 PYTHONPATH=""
 
 # Optional filters (space-separated lists); leave empty to use all
@@ -56,6 +57,11 @@ if [ -n "$TARGET" ]; then
     read -r -a _arr <<< "$TARGET"; TARGET_FLAG=(--target "${_arr[@]}")
 fi
 
+QUANTIZATION_FLAG=()
+if [ -n "$QUANTIZATION" ]; then
+    QUANTIZATION_FLAG=(--quantization "$QUANTIZATION")
+fi
+
 export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
 
 python -m steering_probe.run_steering \
@@ -75,4 +81,5 @@ python -m steering_probe.run_steering \
     "${GEN_POSITIONS_FLAG[@]}" \
     "${SOURCE_FLAG[@]}" \
     "${TARGET_FLAG[@]}" \
+    "${QUANTIZATION_FLAG[@]}" \
     "${EXTRA_ARGS[@]}"
