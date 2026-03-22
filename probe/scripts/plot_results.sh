@@ -1,13 +1,13 @@
 #!/bin/bash
-# Plot experiment results — overlay multiple result JSONs on one plot per k.
+# Plot experiment results — single plot with one line per k value.
 # Can be run from any directory.
 #
 # Override via env vars:
-#   RESULTS_DIR=/path/to/results/dir
+#   EXPERIMENT_JSON=/path/to/experiment_results.json
+#   UNIGRAM_JSON=/path/to/unigram_results.json   (set to "" to disable)
 #   OUTPUT_DIR=/path/to/output
-#   ACC_MIN=0  ACC_MAX=0.8
 #   K_VALUES="1 2 3 8"   (space-separated; default: all k values)
-#                         A dashed separator is drawn between non-consecutive k values.
+#   ACC_MIN=0  ACC_MAX=0.65
 
 set -e
 
@@ -16,48 +16,55 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR="${RESULTS_DIR:-$PROJECT_ROOT/probe/results/Gemma-3-27B}"
+RESULTS_DIR=$PROJECT_ROOT/probe/results/Qwen3-32B-K8
+EXPERIMENT_JSON="${EXPERIMENT_JSON:-$RESULTS_DIR/experiment_results_linear/experiment_results.json}"
+UNIGRAM_JSON="${UNIGRAM_JSON:-$RESULTS_DIR/baselines/unigram_results.json}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"
 ACC_MIN="${ACC_MIN:-0}"
-ACC_MAX=0.65
-K_VALUES="1 2 3 8"   # empty = all k values; e.g. "1 2 3 8"
+ACC_MAX=0.7
+K_VALUES="${K_VALUES:-1 2 3 8}"   # empty = all k values
 
 mkdir -p "$OUTPUT_DIR"
 
-JSONS=()
-LABELS=()
-COLORS=()
-
-f="$RESULTS_DIR/experiment_results_linear/experiment_results.json"
-if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Linear Probe"); COLORS+=("steelblue"); fi
-
-f="$RESULTS_DIR/baselines/bigram_results.json"
-if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Bigram"); COLORS+=("orange"); fi
-
-f="$RESULTS_DIR/baselines/unigram_results.json"
-if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("Unigram"); COLORS+=("gray"); fi
-
-if [ ${#JSONS[@]} -eq 0 ]; then
-    echo "ERROR: No result JSONs found. Run train_probes.sh and/or run_baselines.sh first."
+if [ ! -f "$EXPERIMENT_JSON" ]; then
+    echo "ERROR: experiment JSON not found: $EXPERIMENT_JSON"
+    echo "Set EXPERIMENT_JSON= or run train_probes.sh first."
     exit 1
 fi
 
-echo "Plotting ${#JSONS[@]} result(s) → $OUTPUT_DIR"
-echo "Accuracy y-axis: [$ACC_MIN, $ACC_MAX]"
+echo "Experiment JSON : $EXPERIMENT_JSON"
+
+UNIGRAM_ARG=()
+if [ -n "$UNIGRAM_JSON" ] && [ -f "$UNIGRAM_JSON" ]; then
+    echo "Unigram baseline: $UNIGRAM_JSON"
+    UNIGRAM_ARG=(--unigram-json "$UNIGRAM_JSON")
+else
+    echo "Unigram baseline: (none)"
+fi
+
+echo "Output dir      : $OUTPUT_DIR"
+echo "Accuracy y-axis : [$ACC_MIN, $ACC_MAX]"
 echo ""
 
 K_VALS_ARG=()
 [ -n "$K_VALUES" ] && K_VALS_ARG=(--k-values $K_VALUES)
 
-python -m look_ahead_probe.visualize_results \
-    "${JSONS[@]}" \
-    --labels "${LABELS[@]}" \
-    --colors "${COLORS[@]}" \
-    --show-top5 \
-    --acc-min "$ACC_MIN" \
-    --acc-max "$ACC_MAX" \
-    --output-dir "$OUTPUT_DIR" \
+# Decreasing shades of blue for k=1,2,3,8 (dark → light)
+BLUE_GRADIENT=("#2676AD" "#4195C3" "#6AAFD4" "#93C4E0")
+
+COMMON_ARGS=(
+    "$EXPERIMENT_JSON"
+    --single-plot
+    "${UNIGRAM_ARG[@]}"
+    --colors "${BLUE_GRADIENT[@]}"
+    --acc-min "$ACC_MIN"
+    --acc-max "$ACC_MAX"
+    --output-dir "$OUTPUT_DIR"
     "${K_VALS_ARG[@]}"
+)
+
+python -m look_ahead_probe.visualize_results "${COMMON_ARGS[@]}" --show-val   --file-name val_accuracy.png
+python -m look_ahead_probe.visualize_results "${COMMON_ARGS[@]}" --show-top5  --file-name top5_accuracy.png
 
 echo ""
-echo "✓ Plots saved to $OUTPUT_DIR/"
+echo "Plots saved to $OUTPUT_DIR/"

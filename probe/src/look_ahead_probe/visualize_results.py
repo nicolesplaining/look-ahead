@@ -134,6 +134,111 @@ def plot_results(all_results_by_k, labels, colors, output_dir,
     plt.close(fig)
 
 
+def get_unigram_accuracy(unigram_json_path, metric_key='val_accuracy'):
+    """Returns the unigram accuracy for the given metric key (single value, same for all k)."""
+    with open(unigram_json_path, 'r') as f:
+        data = json.load(f)
+    results = data.get('results', {})
+    for entry in results.values():
+        acc = entry.get(metric_key)
+        if acc is not None:
+            return acc
+    return None
+
+
+def plot_single(results_by_k, output_dir, file_name,
+                show_val=False, show_train=False, show_top5=False,
+                acc_min=0.0, acc_max=1.0, k_values=None,
+                unigram_acc=None, colors=None):
+    """
+    Single plot: one line per k value, all on one axes.
+    X = layer, Y = accuracy.
+    If unigram_by_k is provided, draws a horizontal dashed line per k
+    at the unigram accuracy for that k (same color as the k line).
+    """
+    prop_cycle = plt.rcParams['axes.prop_cycle']
+    default_colors = [p['color'] for p in prop_cycle]
+
+    available_k = sorted(k for k in results_by_k if k is not None)
+
+    if k_values is not None:
+        missing = [k for k in k_values if k not in available_k]
+        if missing:
+            print(f"WARNING: requested k values not found in data: {missing}")
+        all_k = [k for k in sorted(k_values) if k in available_k]
+    else:
+        all_k = available_k
+
+    if not all_k:
+        print("No k values found; nothing to plot.")
+        return
+
+    # Resolve per-k colors
+    if colors and len(colors) >= len(all_k):
+        k_colors = list(colors[:len(all_k)])
+    else:
+        k_colors = [default_colors[i % len(default_colors)] for i in range(len(all_k))]
+
+    metric_specs = []
+    if show_val:   metric_specs.append(('val_accuracy',      'Val',   '-'))
+    if show_train: metric_specs.append(('train_accuracy',    'Train', '--'))
+    if show_top5:  metric_specs.append(('val_top5_accuracy', 'Top-5', '-'))
+
+    if not metric_specs:
+        print("No metric selected; nothing to plot.")
+        return
+
+    multi_metric = len(metric_specs) > 1
+
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+
+    for k, color in zip(all_k, k_colors):
+        if k not in results_by_k:
+            continue
+        layers = [layer for layer, _ in results_by_k[k]]
+        for metric_key, metric_name, linestyle in metric_specs:
+            vals = [
+                m[metric_key]
+                for _, m in results_by_k[k]
+                if m.get(metric_key) is not None
+            ]
+            if not vals:
+                continue
+            label = f"k={k}" + (f" ({metric_name})" if multi_metric else "")
+            ax.plot(layers, vals, linewidth=2, linestyle=linestyle,
+                    color=color, label=label)
+
+    if unigram_acc is not None:
+        ax.axhline(unigram_acc, linestyle='--', linewidth=2,
+                   color='gray', alpha=0.7, label='Unigram')
+
+    ax.set_xlabel('Layer', fontsize=12)
+    ax.set_ylabel('Accuracy', fontsize=12)
+    ax.set_ylim(acc_min, acc_max)
+    ax.grid(True, alpha=0.3)
+
+    # Insert a "..." separator in the legend between any non-consecutive k values
+    handles, leg_labels = ax.get_legend_handles_labels()
+    new_handles, new_labels = [], []
+    k_indices = [i for i, lbl in enumerate(leg_labels) if lbl.startswith('k=')]
+    k_vals_in_legend = [int(leg_labels[i].split('=')[1].split()[0]) for i in k_indices]
+    gap_positions = {k_indices[i] for i in range(len(k_indices) - 1)
+                     if k_vals_in_legend[i + 1] - k_vals_in_legend[i] > 1}
+    for i, (h, lbl) in enumerate(zip(handles, leg_labels)):
+        new_handles.append(h)
+        new_labels.append(lbl)
+        if i in gap_positions:
+            new_handles.append(plt.Line2D([], [], color='none'))
+            new_labels.append('...')
+    ax.legend(new_handles, new_labels, fontsize=11, loc='upper left')
+    fig.tight_layout()
+
+    output_path = Path(output_dir) / file_name
+    fig.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
+    plt.close(fig)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description='Overlay multiple layer-k probe result JSONs on a single plot per k.'
@@ -171,8 +276,25 @@ def main():
         nargs='+',
         type=int,
         default=None,
-        help='Which k values to include as subplots (default: all). '
-             'E.g. --k-values 1 2 3 8  A dashed separator is drawn between non-consecutive k values.',
+        help='Which k values to include (default: all). E.g. --k-values 1 2 3 8',
+    )
+    parser.add_argument(
+        '--single-plot',
+        action='store_true',
+        help='Single-plot mode: one line per k on one axes (requires exactly one results JSON). '
+             'Use --unigram-json to add a horizontal baseline per k.',
+    )
+    parser.add_argument(
+        '--unigram-json',
+        type=str,
+        default=None,
+        help='Path to unigram baseline JSON (used with --single-plot).',
+    )
+    parser.add_argument(
+        '--file-name',
+        type=str,
+        default=None,
+        help='Output filename (used with --single-plot; default: val_accuracy.png etc.).',
     )
 
     args = parser.parse_args()
@@ -181,35 +303,64 @@ def main():
         print("ERROR: specify at least one of --show-val, --show-train, --show-top5")
         sys.exit(1)
 
-    n = len(args.results_json)
-
-    labels = args.labels or [Path(p).stem for p in args.results_json]
-    if len(labels) != n:
-        print(f"ERROR: --labels count ({len(labels)}) must match number of JSONs ({n})")
-        sys.exit(1)
-
-    colors = list(args.colors) if args.colors else [None] * n
-    if len(colors) != n:
-        print(f"ERROR: --colors count ({len(colors)}) must match number of JSONs ({n})")
-        sys.exit(1)
-
     output_dir = args.output_dir or str(Path(args.results_json[0]).parent)
-
-    all_results_by_k = []
-    for path in args.results_json:
-        print(f"Loading: {path}")
-        data = load_results(path)
-        all_results_by_k.append(organize_results_by_k(data['results']))
-
     print(f"Output dir: {output_dir}\n")
 
-    plot_results(all_results_by_k, labels, colors, output_dir,
-                 show_val=args.show_val,
-                 show_train=args.show_train,
-                 show_top5=args.show_top5,
-                 acc_min=args.acc_min,
-                 acc_max=args.acc_max,
-                 k_values=args.k_values)
+    if args.single_plot:
+        if len(args.results_json) != 1:
+            print("ERROR: --single-plot requires exactly one results JSON")
+            sys.exit(1)
+        print(f"Loading: {args.results_json[0]}")
+        data = load_results(args.results_json[0])
+        results_by_k = organize_results_by_k(data['results'])
+
+        unigram_acc = None
+        if args.unigram_json:
+            print(f"Loading unigram baseline: {args.unigram_json}")
+            unigram_metric = ('val_top5_accuracy' if args.show_top5 else
+                              'train_accuracy'    if args.show_train else
+                              'val_accuracy')
+            unigram_acc = get_unigram_accuracy(args.unigram_json, metric_key=unigram_metric)
+
+        metric_tag = ('top5' if args.show_top5 else
+                      'train' if args.show_train else 'val')
+        file_name = args.file_name or f"{metric_tag}_accuracy.png"
+
+        plot_single(results_by_k, output_dir, file_name,
+                    show_val=args.show_val,
+                    show_train=args.show_train,
+                    show_top5=args.show_top5,
+                    acc_min=args.acc_min,
+                    acc_max=args.acc_max,
+                    k_values=args.k_values,
+                    unigram_acc=unigram_acc,
+                    colors=list(args.colors) if args.colors else None)
+    else:
+        n = len(args.results_json)
+
+        labels = args.labels or [Path(p).stem for p in args.results_json]
+        if len(labels) != n:
+            print(f"ERROR: --labels count ({len(labels)}) must match number of JSONs ({n})")
+            sys.exit(1)
+
+        colors = list(args.colors) if args.colors else [None] * n
+        if len(colors) != n:
+            print(f"ERROR: --colors count ({len(colors)}) must match number of JSONs ({n})")
+            sys.exit(1)
+
+        all_results_by_k = []
+        for path in args.results_json:
+            print(f"Loading: {path}")
+            data = load_results(path)
+            all_results_by_k.append(organize_results_by_k(data['results']))
+
+        plot_results(all_results_by_k, labels, colors, output_dir,
+                     show_val=args.show_val,
+                     show_train=args.show_train,
+                     show_top5=args.show_top5,
+                     acc_min=args.acc_min,
+                     acc_max=args.acc_max,
+                     k_values=args.k_values)
 
     print("Done!")
 
