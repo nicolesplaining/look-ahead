@@ -19,6 +19,7 @@ MAX_NEW_TOKENS=64
 MAX_TRAIN_PROMPTS=1000
 MAX_VAL_PROMPTS=200
 DEVICE="${DEVICE:-cuda}"
+QUANTIZATION="8bit"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 
 TRAIN_INPUT="$PROJECT_ROOT/probe/data/train-pile.jsonl"
 VAL_INPUT="$PROJECT_ROOT/probe/data/val-pile.jsonl"
@@ -31,9 +32,10 @@ if [ ! -f "$TRAIN_INPUT" ]; then
 fi
 
 echo "Building activation datasets from: $PROJECT_ROOT"
-echo "Model:  $MODEL_NAME"
-echo "max_k:  $MAX_K"
-echo "Device: $DEVICE"
+echo "Model:         $MODEL_NAME"
+echo "max_k:         $MAX_K"
+echo "Device:        $DEVICE"
+echo "Quantization:  ${QUANTIZATION:-none}"
 echo ""
 
 echo "=== Building training activations ==="
@@ -48,6 +50,9 @@ TRAIN_CMD=(
 )
 if [ -n "$MAX_TRAIN_PROMPTS" ]; then
     TRAIN_CMD+=(--max_prompts "$MAX_TRAIN_PROMPTS")
+fi
+if [ -n "$QUANTIZATION" ]; then
+    TRAIN_CMD+=(--quantization "$QUANTIZATION")
 fi
 "${TRAIN_CMD[@]}"
 
@@ -65,6 +70,9 @@ if [ -f "$VAL_INPUT" ]; then
     )
     if [ -n "$MAX_VAL_PROMPTS" ]; then
         VAL_CMD+=(--max_prompts "$MAX_VAL_PROMPTS")
+    fi
+    if [ -n "$QUANTIZATION" ]; then
+        VAL_CMD+=(--quantization "$QUANTIZATION")
     fi
     "${VAL_CMD[@]}"
 else

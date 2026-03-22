@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 from .activation_extraction import generate_and_extract_all_layers, get_n_layers, get_hidden_size, get_vocab_size
 from .data_loading import load_jsonl_prompts
@@ -31,13 +31,24 @@ def main():
                         help="Comma-separated layer indices or None for all layers")
 
     parser.add_argument("--output_path", type=str, required=True)
+    parser.add_argument("--quantization", type=str, default=None,
+                        choices=["4bit", "8bit"],
+                        help="Quantize the model: '8bit' halves bfloat16 memory, "
+                             "'4bit' quarters it (requires bitsandbytes)")
 
     args = parser.parse_args()
 
-    print(f"Loading model: {args.model_name}")
+    bnb_config = None
+    if args.quantization == "8bit":
+        bnb_config = BitsAndBytesConfig(load_in_8bit=True)
+    elif args.quantization == "4bit":
+        bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
+
+    print(f"Loading model: {args.model_name}"
+          + (f" [{args.quantization} quantization]" if args.quantization else ""))
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        dtype=torch.bfloat16,
+        **({"quantization_config": bnb_config} if bnb_config else {"torch_dtype": torch.bfloat16}),
         device_map=args.device,
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
