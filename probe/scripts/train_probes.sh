@@ -13,8 +13,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train.pt}"
-VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val.pt}"
+TRAIN_DATASET="${TRAIN_DATASET:-$PROJECT_ROOT/probe/data/activations_train}"
+VAL_DATASET="${VAL_DATASET:-$PROJECT_ROOT/probe/data/activations_val}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/probe/results/experiment_results_linear}"
 K_VALUES="1 2 3 8"
 PROBE_TYPE=linear
@@ -24,7 +24,7 @@ LEARNING_RATE=1e-4
 WEIGHT_DECAY=1e-3
 DEVICE="${DEVICE:-cuda}"
 
-if [ ! -f "$TRAIN_DATASET" ]; then
+if [ ! -e "$TRAIN_DATASET" ]; then
     echo "ERROR: Training activations not found at $TRAIN_DATASET"
     echo "Run build_dataset.sh first."
     exit 1
@@ -48,7 +48,7 @@ TRAIN_CMD=(
     --device "$DEVICE"
 )
 
-if [ -f "$VAL_DATASET" ]; then
+if [ -e "$VAL_DATASET" ]; then
     TRAIN_CMD+=(--val_dataset "$VAL_DATASET")
 fi
 

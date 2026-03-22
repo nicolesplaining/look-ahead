@@ -212,24 +212,28 @@ def main():
         If path is .texts.jsonl or .pt, re-tokenizes (requires tokenizer).
         """
         p = Path(path)
+        def _load_companion_meta(stem_path: Path) -> dict:
+            """Load metadata from companion .pt file or directory."""
+            pt = stem_path.with_suffix('.pt')
+            if pt.exists():
+                return torch.load(pt, weights_only=False)['metadata']
+            meta_json = stem_path / 'metadata.json'
+            if meta_json.exists():
+                with open(meta_json, encoding='utf-8') as fj:
+                    return json.load(fj)
+            return {}
+
         if p.name.endswith('.tokens.jsonl'):
             token_seqs = [json.loads(line)['tokens'] for line in open(p, encoding='utf-8')]
-            # Try companion .pt for metadata
-            pt_path = p.with_name(p.name.replace('.tokens.jsonl', '.pt'))
-            if pt_path.exists():
-                meta = torch.load(pt_path, weights_only=False)['metadata']
-                layers = meta.get('layers', [])
-            else:
-                meta, layers = {}, []
+            stem_path = p.with_name(p.name.replace('.tokens.jsonl', ''))
+            meta = _load_companion_meta(stem_path)
+            layers = meta.get('layers', [])
             return token_seqs, meta, layers, False  # False = no tokenizer needed
         elif p.name.endswith('.texts.jsonl'):
             texts = [json.loads(line)['text'] for line in open(p, encoding='utf-8')]
-            pt_path = p.with_name(p.name.replace('.texts.jsonl', '.pt'))
-            if pt_path.exists():
-                meta = torch.load(pt_path, weights_only=False)['metadata']
-                layers = meta.get('layers', [])
-            else:
-                meta, layers = {}, []
+            stem_path = p.with_name(p.name.replace('.texts.jsonl', ''))
+            meta = _load_companion_meta(stem_path)
+            layers = meta.get('layers', [])
             return texts, meta, layers, True  # True = needs tokenization
         else:
             data = torch.load(path, weights_only=False)

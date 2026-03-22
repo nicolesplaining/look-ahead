@@ -23,8 +23,8 @@ QUANTIZATION="8bit"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requi
 
 TRAIN_INPUT="$PROJECT_ROOT/probe/data/train-pile.jsonl"
 VAL_INPUT="$PROJECT_ROOT/probe/data/val-pile.jsonl"
-TRAIN_OUTPUT="$PROJECT_ROOT/probe/data/activations_train.pt"
-VAL_OUTPUT="$PROJECT_ROOT/probe/data/activations_val.pt"
+TRAIN_OUTPUT="$PROJECT_ROOT/probe/data/activations_train"
+VAL_OUTPUT="$PROJECT_ROOT/probe/data/activations_val"
 
 if [ ! -f "$TRAIN_INPUT" ]; then
     echo "ERROR: Training data not found at $TRAIN_INPUT"

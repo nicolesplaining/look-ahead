@@ -1,5 +1,6 @@
 """Activation extraction from language models using HuggingFace Transformers."""
 
+from pathlib import Path
 from typing import List, Optional, Tuple
 
 import torch
@@ -50,7 +51,8 @@ def generate_and_extract_all_layers(
     device: str = "cuda",
     layers: Optional[List[int]] = None,
     chunk_size: int = 128,
-) -> Tuple[dict, torch.Tensor, List[str], List[List[int]]]:
+    chunk_dir: Optional[str] = None,
+) -> Tuple[Optional[dict], torch.Tensor, List[str], List[List[int]]]:
     """
     Generate text and extract residual-stream activations from all layers.
 
@@ -71,9 +73,12 @@ def generate_and_extract_all_layers(
         device: Device for input tensors
         layers: Layer indices to extract (None = all)
         chunk_size: Consolidate every this many prompts to bound CPU RAM
+        chunk_dir: If given, write activation chunks to this directory instead of
+                   accumulating in RAM. Call merge_layer_chunks() afterwards.
+                   Returns None for layer_activations when used.
 
     Returns:
-        layer_activations: Dict layer_idx -> Tensor[n_samples, d_model]
+        layer_activations: Dict layer_idx -> Tensor[n_samples, d_model], or None if chunk_dir used
         targets: Tensor[n_samples, max_k]
         generated_texts: List of generated strings
         generated_token_ids: List[List[int]] raw token IDs (no decode/re-encode roundtrip)
@@ -82,11 +87,17 @@ def generate_and_extract_all_layers(
     if layers is None:
         layers = list(range(n_layers))
 
-    layer_act_chunks = {layer_idx: [] for layer_idx in layers}
+    streaming = chunk_dir is not None
+    if streaming:
+        chunk_dir_path = Path(chunk_dir)
+        chunk_dir_path.mkdir(parents=True, exist_ok=True)
+
+    layer_act_chunks = {layer_idx: [] for layer_idx in layers}  # used when not streaming
     layer_act_buf = {layer_idx: [] for layer_idx in layers}
     all_targets = []
     generated_texts = []
-    generated_token_ids = []  # raw token ID sequences, no decode/re-encode roundtrip
+    generated_token_ids = []
+    chunk_idx = 0
 
     model.eval()
     pad_token_id = tokenizer.pad_token_id or tokenizer.eos_token_id
@@ -128,24 +139,68 @@ def generate_and_extract_all_layers(
             del outputs
             torch.cuda.empty_cache()
 
-            # Consolidate every chunk_size prompts to keep CPU RAM bounded
+            # Consolidate every chunk_size prompts
             if (prompt_idx + 1) % chunk_size == 0:
                 for layer_idx in layers:
                     if layer_act_buf[layer_idx]:
-                        layer_act_chunks[layer_idx].append(
-                            torch.stack(layer_act_buf[layer_idx])
-                        )
+                        chunk_tensor = torch.stack(layer_act_buf[layer_idx])
+                        if streaming:
+                            torch.save(chunk_tensor,
+                                       chunk_dir_path / f'layer_{layer_idx}_chunk_{chunk_idx:05d}.pt')
+                        else:
+                            layer_act_chunks[layer_idx].append(chunk_tensor)
                         layer_act_buf[layer_idx] = []
+                chunk_idx += 1
 
-    # Final consolidation
+    # Final consolidation of any remaining buffer
     for layer_idx in layers:
         if layer_act_buf[layer_idx]:
-            layer_act_chunks[layer_idx].append(torch.stack(layer_act_buf[layer_idx]))
+            chunk_tensor = torch.stack(layer_act_buf[layer_idx])
+            if streaming:
+                torch.save(chunk_tensor,
+                           chunk_dir_path / f'layer_{layer_idx}_chunk_{chunk_idx:05d}.pt')
+            else:
+                layer_act_chunks[layer_idx].append(chunk_tensor)
+
+    targets = torch.stack(all_targets)
+
+    if streaming:
+        return None, targets, generated_texts, generated_token_ids
 
     layer_activations = {
         layer_idx: torch.cat(layer_act_chunks[layer_idx])
         for layer_idx in layers
     }
-    targets = torch.stack(all_targets)
-
     return layer_activations, targets, generated_texts, generated_token_ids
+
+
+def merge_layer_chunks(chunk_dir: str, output_dir: str, layers: List[int]) -> None:
+    """
+    Merge per-layer chunk files written by generate_and_extract_all_layers into
+    final layer_N.pt files. Processes one layer at a time to keep peak RAM low.
+    Deletes chunk files after merging each layer.
+    """
+    chunk_dir_path = Path(chunk_dir)
+    output_dir_path = Path(output_dir)
+    output_dir_path.mkdir(parents=True, exist_ok=True)
+
+    for layer_idx in layers:
+        chunk_files = sorted(chunk_dir_path.glob(f'layer_{layer_idx}_chunk_*.pt'))
+        if not chunk_files:
+            print(f"  WARNING: no chunks found for layer {layer_idx}")
+            continue
+        chunks = [torch.load(f, weights_only=False) for f in chunk_files]
+        merged = torch.cat(chunks)
+        del chunks
+        torch.save(merged, output_dir_path / f'layer_{layer_idx}.pt')
+        n_samples = merged.shape[0]
+        del merged
+        for f in chunk_files:
+            f.unlink()
+        print(f"  layer {layer_idx}: {n_samples} samples")
+
+    # Remove chunk dir if now empty
+    try:
+        chunk_dir_path.rmdir()
+    except OSError:
+        pass

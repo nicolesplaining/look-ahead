@@ -190,7 +190,7 @@ def plot_single(results_by_k, output_dir, file_name,
 
     multi_metric = len(metric_specs) > 1
 
-    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+    fig, ax = plt.subplots(figsize=(5.5, 4.5))
 
     for k, color in zip(all_k, k_colors):
         if k not in results_by_k:
@@ -217,20 +217,19 @@ def plot_single(results_by_k, output_dir, file_name,
     ax.set_ylim(acc_min, acc_max)
     ax.grid(True, alpha=0.3)
 
-    # Insert a "..." separator in the legend between any non-consecutive k values
+    # 2-column legend: find the gap between non-consecutive k values and split there.
+    # matplotlib fills column-major with ncol=2, so just pass in natural order.
     handles, leg_labels = ax.get_legend_handles_labels()
-    new_handles, new_labels = [], []
     k_indices = [i for i, lbl in enumerate(leg_labels) if lbl.startswith('k=')]
     k_vals_in_legend = [int(leg_labels[i].split('=')[1].split()[0]) for i in k_indices]
-    gap_positions = {k_indices[i] for i in range(len(k_indices) - 1)
-                     if k_vals_in_legend[i + 1] - k_vals_in_legend[i] > 1}
-    for i, (h, lbl) in enumerate(zip(handles, leg_labels)):
-        new_handles.append(h)
-        new_labels.append(lbl)
-        if i in gap_positions:
-            new_handles.append(plt.Line2D([], [], color='none'))
-            new_labels.append('...')
-    ax.legend(new_handles, new_labels, fontsize=11, loc='upper left')
+    has_gap = any(
+        k_vals_in_legend[i + 1] - k_vals_in_legend[i] > 1
+        for i in range(len(k_indices) - 1)
+    )
+    if has_gap:
+        ax.legend(handles, leg_labels, fontsize=14, loc='upper left', ncol=2)
+    else:
+        ax.legend(handles, leg_labels, fontsize=11, loc='upper left')
     fig.tight_layout()
 
     output_path = Path(output_dir) / file_name

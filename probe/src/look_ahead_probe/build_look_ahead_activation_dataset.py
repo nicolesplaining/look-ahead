@@ -7,7 +7,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
-from .activation_extraction import generate_and_extract_all_layers, get_n_layers, get_hidden_size, get_vocab_size
+from .activation_extraction import generate_and_extract_all_layers, merge_layer_chunks, get_n_layers, get_hidden_size, get_vocab_size
 from .data_loading import load_jsonl_prompts
 
 
@@ -55,6 +55,10 @@ def main():
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
+    output_dir = Path(args.output_path)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    chunk_dir = output_dir / '.chunks'
+
     if args.layers is not None:
         layers = [int(x.strip()) for x in args.layers.split(',')]
     else:
@@ -77,16 +81,7 @@ def main():
 
     print(f"Loaded {len(prompts)} prompts")
 
-    print(f"Extracting activations (max_k={args.max_k})...")
-    layer_activations, targets, generated_texts, generated_token_ids = generate_and_extract_all_layers(
-        model=model, tokenizer=tokenizer, prompts=prompts, max_k=args.max_k,
-        max_new_tokens=args.max_new_tokens, device=args.device, layers=layers
-    )
-
-    print(f"\nExample texts (first 3):")
-    for i, text in enumerate(generated_texts[:3]):
-        print(f"  {i+1}. {text[:100]}...")
-
+    resolved_layers = layers if layers is not None else list(range(get_n_layers(model)))
     metadata = {
         'model_name': args.model_name,
         'max_k': args.max_k,
@@ -94,37 +89,43 @@ def main():
         'n_prompts': len(prompts),
         'd_model': get_hidden_size(model),
         'vocab_size': get_vocab_size(model),
-        'layers': layers if layers is not None else list(range(get_n_layers(model))),
+        'layers': resolved_layers,
     }
 
-    dataset = {
-        'layer_activations': layer_activations,
-        'targets': targets,  # [n_samples, max_k]
-        'generated_texts': generated_texts,
-        'metadata': metadata
-    }
+    print(f"Extracting activations (max_k={args.max_k})...")
+    _, targets, generated_texts, generated_token_ids = generate_and_extract_all_layers(
+        model=model, tokenizer=tokenizer, prompts=prompts, max_k=args.max_k,
+        max_new_tokens=args.max_new_tokens, device=args.device, layers=layers,
+        chunk_dir=str(chunk_dir),
+    )
 
-    output_path = Path(args.output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    torch.save(dataset, output_path)
+    print(f"\nExample texts (first 3):")
+    for i, text in enumerate(generated_texts[:3]):
+        print(f"  {i+1}. {text[:100]}...")
 
-    # Save raw token IDs as a lightweight JSONL sidecar.
-    # Baselines use these directly — no decode/re-encode roundtrip.
-    tokens_path = output_path.with_suffix('.tokens.jsonl')
+    print(f"\nMerging layer chunks (one layer at a time)...")
+    merge_layer_chunks(str(chunk_dir), str(output_dir), resolved_layers)
+
+    torch.save(targets, output_dir / 'targets.pt')
+    with open(output_dir / 'metadata.json', 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, indent=2)
+
+    # Sidecar files saved as siblings to the output directory.
+    # Baselines use .tokens.jsonl directly — no decode/re-encode roundtrip.
+    tokens_path = output_dir.parent / (output_dir.name + '.tokens.jsonl')
     with open(tokens_path, 'w', encoding='utf-8') as f:
         for token_ids in generated_token_ids:
             f.write(json.dumps({'tokens': token_ids}) + '\n')
 
-    # Also save human-readable texts for inspection.
-    texts_path = output_path.with_suffix('.texts.jsonl')
+    texts_path = output_dir.parent / (output_dir.name + '.texts.jsonl')
     with open(texts_path, 'w', encoding='utf-8') as f:
         for text in generated_texts:
             f.write(json.dumps({'text': text}) + '\n')
 
-    print(f"\nDataset saved to:  {output_path}")
+    print(f"\nDataset saved to:   {output_dir}/")
     print(f"Token IDs saved to: {tokens_path}  ({tokens_path.stat().st_size // 1024} KB)")
-    print(f"Texts saved to:    {texts_path}  ({texts_path.stat().st_size // 1024} KB)")
-    print(f"Layers: {sorted(layer_activations.keys())}")
+    print(f"Texts saved to:     {texts_path}  ({texts_path.stat().st_size // 1024} KB)")
+    print(f"Layers: {resolved_layers}")
     print(f"Samples: {len(targets)}, Targets shape: {targets.shape}")
 
 
