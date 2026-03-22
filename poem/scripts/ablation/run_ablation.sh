@@ -22,6 +22,7 @@ export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:${PYTHONPATH:-
 MODEL_NAME=google/gemma-3-27b-it
 # MODEL_NAME=Qwen/Qwen3-32B
 POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.jsonl}"
+POEMS_PATH_NO_NEWLINE="${POEMS_PATH_NO_NEWLINE:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled-no-newline.jsonl}"
 MODE="${MODE:-both}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/NEW}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
@@ -36,6 +37,7 @@ mkdir -p "$OUTPUT_DIR"
 echo "Ablation: rhyming evaluation"
 echo "  model:          $MODEL_NAME"
 echo "  poems:          $POEMS_PATH"
+echo "  poems(no-nl):   $POEMS_PATH_NO_NEWLINE"
 echo "  mode:           $MODE"
 echo "  max_new_tokens: $MAX_NEW_TOKENS"
 echo "  temperature:    $TEMPERATURE"
@@ -44,13 +46,14 @@ echo "  output_dir:     $OUTPUT_DIR"
 echo ""
 
 python -m ablation.evaluate_rhyming \
-    --model_name     "$MODEL_NAME" \
-    --poems_path     "$POEMS_PATH" \
-    --mode           "$MODE" \
-    --max_new_tokens "$MAX_NEW_TOKENS" \
-    --temperature    "$TEMPERATURE" \
-    --n_samples      "$NUM_SAMPLES" \
-    --output_dir     "$OUTPUT_DIR" \
+    --model_name            "$MODEL_NAME" \
+    --poems_path            "$POEMS_PATH" \
+    --poems_path_no_newline "$POEMS_PATH_NO_NEWLINE" \
+    --mode                  "$MODE" \
+    --max_new_tokens        "$MAX_NEW_TOKENS" \
+    --temperature           "$TEMPERATURE" \
+    --n_samples             "$NUM_SAMPLES" \
+    --output_dir            "$OUTPUT_DIR" \
     "${MAX_POEMS_ARG[@]}"
 
 echo ""

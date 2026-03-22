@@ -153,21 +153,6 @@ def extract_second_line_word_without_newline(continuation: str) -> Optional[str]
 
 
 # ---------------------------------------------------------------------------
-# Generation helpers
-# ---------------------------------------------------------------------------
-
-def _newline_bad_word_ids(tokenizer) -> List[List[int]]:
-    """
-    Return bad_words_ids for every token whose decoded form contains \\n.
-    """
-    bad = []
-    for tid in range(tokenizer.vocab_size):
-        if '\n' in tokenizer.decode([tid], skip_special_tokens=False):
-            bad.append([tid])
-    return bad
-
-
-# ---------------------------------------------------------------------------
 # Evaluation loop
 # ---------------------------------------------------------------------------
 
@@ -193,12 +178,6 @@ def evaluate(
 
     do_sampling = temperature > 0.0 and n_samples > 1
     effective_n_samples = n_samples if do_sampling else 1
-
-    bad_words_ids = None
-    if mode == 'without_newline':
-        print("Computing bad_words_ids for newline suppression…")
-        bad_words_ids = _newline_bad_word_ids(tokenizer)
-        print(f"  Suppressing {len(bad_words_ids)} token(s) that contain '\\n'")
 
     pad_token_id = tokenizer.pad_token_id or tokenizer.eos_token_id
     model.eval()
@@ -230,9 +209,6 @@ def evaluate(
                 )
             else:
                 gen_kwargs['do_sample'] = False
-
-            if bad_words_ids:
-                gen_kwargs['bad_words_ids'] = bad_words_ids
 
             # generated_ids: [n_samples, seq_len]
             generated_ids = model.generate(
@@ -347,7 +323,9 @@ def main():
     parser.add_argument("--model_name",     type=str, required=True,
                         help="HuggingFace model name")
     parser.add_argument("--poems_path",     type=str, required=True,
-                        help="Path to JSONL file with poem prompts")
+                        help="Path to JSONL file with poem prompts (used for with_newline mode)")
+    parser.add_argument("--poems_path_no_newline", type=str, default=None,
+                        help="Path to JSONL file for without_newline mode (default: same as --poems_path)")
     parser.add_argument("--output_dir",     type=str, default=None,
                         help="Directory to write per-mode JSON results (optional)")
     parser.add_argument("--mode",           type=str, default="both",
@@ -364,17 +342,27 @@ def main():
 
     modes = ["with_newline", "without_newline"] if args.mode == "both" else [args.mode]
 
-    # Load prompts
-    prompts = []
-    with open(args.poems_path) as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            prompts.append(json.loads(line)['text'])
-    if args.max_poems:
-        prompts = prompts[:args.max_poems]
-    print(f"Loaded {len(prompts)} prompts from {args.poems_path}")
+    def load_prompts(path):
+        items = []
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                items.append(json.loads(line)['text'])
+        if args.max_poems:
+            items = items[:args.max_poems]
+        print(f"Loaded {len(items)} prompts from {path}")
+        return items
+
+    prompts_with = load_prompts(args.poems_path)
+    prompts_without = load_prompts(
+        args.poems_path_no_newline if args.poems_path_no_newline else args.poems_path
+    )
+    prompts_by_mode = {
+        'with_newline':    prompts_with,
+        'without_newline': prompts_without,
+    }
 
     # Load model + tokenizer once
     print(f"Loading model: {args.model_name}")
@@ -393,7 +381,7 @@ def main():
     all_results = {}
     for mode in modes:
         out = evaluate(
-            model, tokenizer, prompts,
+            model, tokenizer, prompts_by_mode[mode],
             mode=mode,
             max_new_tokens=args.max_new_tokens,
             device=input_device,
