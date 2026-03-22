@@ -2,7 +2,7 @@
 # Plot poem probe results (Step 3 of decoupled pipeline).
 # Can be run from any directory.
 #
-# Defaults: i=0 in one color, i=1..9 in another, Rhyme@5 only.
+# Defaults: i=-2,-1 in yellow, i=0 in tomato, i=1..9 in blue, Rhyme@5 only.
 # Override via env vars:
 #   RESULTS_BASE=/path/to/results/dir
 #   OUTPUT_DIR=/path/to/output
@@ -19,8 +19,12 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/experiment_results_linear}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/experiment_results_linear/plots}"
+# MODEL_NAME=Gemma-3-27B
+MODEL_NAME=Qwen3-32B
+# MODEL_NAME=Llama-3.1-70B-Instruct
+
+RESULTS_BASE="${RESULTS_BASE:-$PROJECT_ROOT/poem/results/$MODEL_NAME}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/$MODEL_NAME/plots}"
 ACC_MIN=0
 ACC_MAX=1
 
@@ -48,13 +52,21 @@ LABELS=()
 COLORS=()
 STYLES=()
 
+# i=-2,-1 — yellowish
+f="$RESULTS_BASE/i_neg2/experiment_results.json"
+if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=-2"); COLORS+=("#F4D03F"); STYLES+=("$STYLE_I0"); fi
+
+f="$RESULTS_BASE/i_neg1/experiment_results.json"
+if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=-1"); COLORS+=("#F4D03F"); STYLES+=("$STYLE_I0"); fi
+
 # i=0 — distinct color and style
 f="$RESULTS_BASE/i0/experiment_results.json"
 if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=0"); COLORS+=("$COLOR_I0"); STYLES+=("$STYLE_I0"); fi
 
 # i=1..5 — subtle light-to-dark blue gradient
-BLUE_GRADIENT=("#93C4E0" "#6AAFD4" "#4195C3" "#2676AD" "#145A96")
-for idx in 1 2 3 4 5; do
+# BLUE_GRADIENT=("#93C4E0" "#6AAFD4" "#4195C3" "#2676AD" "#145A96")
+BLUE_GRADIENT=("#93C4E0" "#6AAFD4" "#4195C3")
+for idx in 1 2 3; do
     f="$RESULTS_BASE/i${idx}/experiment_results.json"
     color="${BLUE_GRADIENT[$((idx-1))]}"
     if [ -f "$f" ]; then JSONS+=("$f"); LABELS+=("i=${idx}"); COLORS+=("$color"); STYLES+=("$STYLE_REST"); fi

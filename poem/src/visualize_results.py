@@ -82,7 +82,7 @@ def main():
     prop_cycle = plt.rcParams['axes.prop_cycle']
     default_colors = [p['color'] for p in prop_cycle]
 
-    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+    fig, ax = plt.subplots(figsize=(5.5, 4.5))
 
     if n == 1:
         # Single-file mode: one line per metric
@@ -121,7 +121,7 @@ def main():
         ax.set_title(args.title, fontsize=14, fontweight='bold')
     ax.set_ylim(args.acc_min, args.acc_max)
     ax.grid(True, alpha=0.3)
-    ax.legend(fontsize=11, loc='upper left')
+    ax.legend(fontsize=14, loc='upper left', ncols=2)
     fig.tight_layout()
 
     output_dir = args.output_dir or str(Path(args.result_json[0]).parent)

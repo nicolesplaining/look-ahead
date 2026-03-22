@@ -9,13 +9,15 @@
 #   OUTPUT_DIR=/path/to/output
 #   MAX_NEW_TOKENS=16
 #   MAX_POEMS=600              # default: all
+#   TEMPERATURE=0.8            # 0 = greedy; >0 = sampling
+#   NUM_SAMPLES=10             # completions per poem when TEMPERATURE > 0
 
 set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
 
-export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:${PYTHONPATH:-}"
 
 MODEL_NAME=google/gemma-3-27b-it
 # MODEL_NAME=Qwen/Qwen3-32B
@@ -23,9 +25,11 @@ POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.j
 MODE="${MODE:-both}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/NEW}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
+TEMPERATURE="${TEMPERATURE:-0}"
+NUM_SAMPLES="${NUM_SAMPLES:-1}"
 
 MAX_POEMS_ARG=()
-[ -n "$MAX_POEMS" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
+[ -n "${MAX_POEMS:-}" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -34,6 +38,8 @@ echo "  model:          $MODEL_NAME"
 echo "  poems:          $POEMS_PATH"
 echo "  mode:           $MODE"
 echo "  max_new_tokens: $MAX_NEW_TOKENS"
+echo "  temperature:    $TEMPERATURE"
+echo "  num_samples:    $NUM_SAMPLES"
 echo "  output_dir:     $OUTPUT_DIR"
 echo ""
 
@@ -42,6 +48,8 @@ python -m ablation.evaluate_rhyming \
     --poems_path     "$POEMS_PATH" \
     --mode           "$MODE" \
     --max_new_tokens "$MAX_NEW_TOKENS" \
+    --temperature    "$TEMPERATURE" \
+    --n_samples      "$NUM_SAMPLES" \
     --output_dir     "$OUTPUT_DIR" \
     "${MAX_POEMS_ARG[@]}"
 
