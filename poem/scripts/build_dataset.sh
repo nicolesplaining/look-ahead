@@ -14,14 +14,14 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 # poem_probe imports look_ahead_probe, so both src dirs are needed
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-# MODEL_NAME=Qwen/Qwen3-0.6B
-MODEL_NAME=meta-llama/Llama-3.1-70B-Instruct
+MODEL_NAME=google/gemma-3-27b-it
+# MODEL_NAME=meta-llama/Llama-3.1-70B-Instruct
 MAX_BACK="${MAX_BACK:-8}"          # tokens before the first-line \n to store (i = -1 ... -MAX_BACK)
 MAX_NEW_TOKENS=16
 MAX_TRAIN_PROMPTS="${MAX_TRAIN_PROMPTS:-}"
 MAX_VAL_PROMPTS="${MAX_VAL_PROMPTS:-}"
 DEVICE="${DEVICE:-cuda}"
-QUANTIZATION="8bit"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
+# QUANTIZATION="8bit"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 
 TRAIN_INPUT="$PROJECT_ROOT/poem/data/poems-all-train.jsonl"
 VAL_INPUT="$PROJECT_ROOT/poem/data/poems-all-val.jsonl"
