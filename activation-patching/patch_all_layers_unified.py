@@ -95,12 +95,10 @@ SUPPORTED_MODELS = {
     "Qwen/Qwen3-4B":     "qwen3_4b",
     "Qwen/Qwen3-8B":     "qwen3_8b",
     "Qwen/Qwen3-14B":    "qwen3_14b",
-    "Qwen/Qwen3-32B":    "qwen3_32b",
     # Gemma-3 family (instruct)
     "google/gemma-3-1b-it":  "gemma3_1b",
     "google/gemma-3-4b-it":  "gemma3_4b",
     "google/gemma-3-12b-it": "gemma3_12b",
-    "google/gemma-3-27b-it": "gemma3_27b",
     # Llama family (instruct)
     "meta-llama/Llama-3.2-1B-Instruct":  "llama3.2_1b_instruct",
     "meta-llama/Llama-3.2-3B-Instruct":  "llama3.2_3b_instruct",

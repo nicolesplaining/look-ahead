@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back to her own.\nThe couplet is in the form of a rhyme scheme of:\nA",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she came back to her own.\nShe was not a woman, but a man.\nThe couplet is",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.1,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back home to find her heart\na new place where she was.\nThe poem is written in",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met her lover.\nShe left her heart to the wind,\nand found her love in the sky.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back with her heart still.\nThe second line is the same as the first line in a couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back with a heart full of joy.\nShe had no one to take her back,\nbut she",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she went to the other side,\nand she came back again to the same place,\nand so on for",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back, and then she came back.\nAnd so on, and so on... and so on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she turned back.\nThe wind was cold and the trees were silent.\nAnd then she turned back.\nThe",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a place to rest and go.\nShe wandered home again, and again, and again,\nand",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she walked back the road again.\nShe had a heart of silver, but no more.\nShe walked the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back to find\nthe door locked with a key,\nand then she\nlooked\nup",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back home with a heart full of smiles.\nThe first line is a person and the second line",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the door open.\nShe came back home with a heart full,\nand then she gave him a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found her heart's love was a fire.\nShe wandered home again, and found her heart's love",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she returned to her room,\nshe sat by the window and read a book,\nand then she turned to",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back, she came back again.\nAnd so she continued, and so she continued, \nuntil",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back to the same place.\nShe had not returned, but she returned to the same place.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back home to the light.\nAnd the moon, she found, was the same,\nand the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found her heart in a place that was\nnot her.\nShe wandered home alone again, and then",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back home again.\nShe returned home, she said, and she said,\nshe did not know",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she came back again to the light,\nand then she turned back again and walked,\nand then she turned"
+  ]
+}
