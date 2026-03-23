@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a place to rest her head.\nShe found a place to rest her head,\nand then she",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she found a place where the stars were bright.\nShe found a place where the stars were bright,\nand",
+  "baseline_clean_rate": 0.15,
+  "baseline_corrupt_rate": 0.1,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shadow that was not her own.\nBut she didn't know she was being watched,\nand",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a hidden, empty room.\nShe opened the door and looked inside,\nand saw a mirror reflecting",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shadow that she thought was a man.\nBut he was just a shadow, a shadow of",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she thought she heard a voice.\nBut when she turned, she found it was just the dark.\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she said, \"I\u2019m not going back.\"\n\nThe woman\u2019s voice was calm, almost serene,\nand",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sound that made her start.\nThe sound was a door, the door was wide and open",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a small, old, and warm.\nWith a small, old, and warm, she did",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a secret place to start.\nThe dark was a mystery, the place a secret,\na place",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the place where she had been.\nThe night was cold and the wind was loud,\nand the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sound that made her start.\nA sound that was not a bird, not a cat,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a small, empty box.\nThe box was a gift from a friend,\nbut it was a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a strange, cold, and stark.\nShe walked and walked, and the night kept on,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt the strange, cold, and strange, the cold, and the strange.\nAnd then she felt",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a quiet place to fall asleep.\nHer heart was light, and she was very calm,\nand",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she said, \"I'm not going anywhere near the dark.\"\n\nWhat is the meaning of this line?",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a face in the mirror.\nBut it wasn't her own, it was a ghost,\nthat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice like a lark.\n\nBut the voice was not a lark, it was not",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she turned to face the night.\nHer heart was heavy, her soul was sad,\nbut she still walked",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she whispered, \u201cI love you, I do.\u201d\nThe last line is the first line of the next",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing orange light.\nShe stepped forward with a trembling heart,\nand then she saw a beautiful"
+  ]
+}

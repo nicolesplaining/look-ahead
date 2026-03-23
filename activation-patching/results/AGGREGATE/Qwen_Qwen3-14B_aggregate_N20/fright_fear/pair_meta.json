@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would not be right.\n\nOkay, I need to come up with a rhyming couplet",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that this was not the year.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.95,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would last all right.\n\nOkay, so I need to come up with a rhyming",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be caught in the night.\nOkay, let's see. The user provided a rh",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was just the light.\nOkay, I need to come up with a rhyming couplet",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would be her last night.\nOkay, so I need to create a rhyming couplet",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would be the last night.\n\nOkay, let's see. The user wants a rhyming",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would be alright.\n\nOkay, the user wants a rhyming couplet. Let me start",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nOkay, I need to come up with a rhyming couplet based",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nOkay, I need to come up with a rhyming couplet.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would bring her light.\n\nOkay, let me try to figure out how to approach this rhym",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would not be right.\n\nOkay, I need to create a rhyming couplet. Let",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would go right.\nOkay, I need to create a rhyming couplet based on the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this was not her night.\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nOkay, that's a start. Let me think about how to expand this",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would be the night.  Okay, I need to create a rhyming couplet based",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would never bright.\n\nOkay, that's a start. Let me try to figure out how to",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would be alright.\n\nOkay, that's a rhyming couplet. Let me check if",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would be alright.\nOkay, so I need to come up with a rhyming couplet",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon be right.\n\nOkay, so I need to come up with a rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would bring her light. \n\nOkay, so I need to create a rhyming couplet"
+  ]
+}

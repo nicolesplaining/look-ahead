@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn in two.\nBut I have seen the world torn in two,\nand I have",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had been torn in two.\nBut I have seen the world torn in two,\nand I have",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn apart.\nBut here I am, a ghost in the dust,\nstill walking where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended at my feet.\nBut I have learned the truth that I have come to know,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had been split open\nby a blade of fire and the sky\nwas a sky that could",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had cracked, and the ground had been split,\nthe earth and the sea had been torn apart",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen from the sky.\nThe pain of losing a child, so close,\nwas like a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the wind had snatched a flower from the earth.\nBut then I saw a child, in a hospital",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been cut in two.\nAnd I, a man of little means,\nwas struck by the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended in the night.\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been uprooted from the earth.\nIt was not the sound of a scream,\nbut",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the universe had been cut in half.\nBut then, I learned that grief is not a state of mind",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were to be undone.\nBut in my heart, I knew it was true,\nas I stood",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had been cut in two,\nand the moon had fallen from the sky,\nand the world had",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very earth had been torn from under me.\nI saw the man, and he was gone,\nand",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a void.\nBut I did know the weight of this pain,\nand how it",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had shattered in two.\nBut I have known the height of such a pain,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from me.\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the whole of my life had been a dream.\nBut now I see that the loss is not a dream",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heavens had a secret to keep.\nBut I have seen the faces of the dead,\ntheir tears,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were broken in two parts.\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been a ghostly shell,\nand the air, a breath of cold despair,\nthe sky"
+  ]
+}

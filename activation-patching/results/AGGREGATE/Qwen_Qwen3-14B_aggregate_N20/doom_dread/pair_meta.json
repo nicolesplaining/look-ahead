@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, I need to come up with a rhyming couplet that continues",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a ghostly tread.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.65,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking room.\nOkay, let's see. The user provided a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a low, deep gloom.\nOkay, let's see. The user provided a rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the ghostly gloom.\n\nOkay, I need to create a rhyming couplet based",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mournful tune.\nOkay, I need to come up with a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, I need to come up with a rhyming couplet based on",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nOkay, I need to create a rhyming couplet based",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a thunderous room.\n\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint and spooky tune. \n\nNow, turn the above into a haiku.\n\nOkay,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a thunderous boom.\n\nOkay, let's see. The user wants a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud \"boom!\"\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, let's see. The user provided a rhyming couplet and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking room.\n\nOkay, so I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the ghostly loom.\n\nOkay, so I need to create a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream. \n\nOkay, so I need to come up with a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a muffled loom.\n\nOkay, so I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the howl of gloom.\nOkay, I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the howl of gloom.\nOkay, I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, I need to come up with a rhyming couplet that follows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, let's see. The user provided a rhyming couplet and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nOkay, let's see. The user provided a rhyming"
+  ]
+}

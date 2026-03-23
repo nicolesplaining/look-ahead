@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its sheen.\n\nOkay, let's see. The user provided a rhyming",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had turned to rain.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.5,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been stripped of all relief.\n\nOkay, let's see. The user provided a rhym",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had gone to grief.\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had lost their sheen.\nThe world felt muted, a hushed belief,\nas if the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had vanished from the sky.\nOkay, let me try to work on this rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars themselves lost their gleam.\nThat's a beautiful rhyming couplet. The imagery of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had lost its chief. The user provided a rhyming couplet and is likely looking for",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a grief.\n\nThat's a nice start! Here's a rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to grief.\nOkay, let me try to figure out how to approach this. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nThis is a rhyming couplet with a consistent meter, likely",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the void of silence had left me bereft. \n\nOkay, that's the first couplet. Now",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was gone to grief. Alright, let me try to work on this rhyming couplet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had lost its leaf.\n\nOkay, let me try to figure out how to approach this rhym",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to grief.\n\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was robbed of its leaf.\nThe first line is \"I never knew the depth of such grief",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had suddenly left.\nOkay, that's a start. Let me think about how to improve it",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very world was bereft.\nThe couplet you've provided is:\n\n\"I never knew the depth of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had lost their sheen.\n\nThe user is asking for a rhyming couplet. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\nThe couplet you've provided is quite poignant and effectively uses rhyme and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a leaf. The rhyming couplet you provided is:\n\n\"I never knew"
+  ]
+}

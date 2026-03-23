@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and left in gloom.\nThe house was once a place of joy and mirth,\n",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came, and the door was left.\nThe house was once a home, but now it's a",
+  "baseline_clean_rate": 0.25,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with no warning.\nThe moonlight danced on the windowsill,\nand the old man's shadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and left it all.\nThe house, once a sanctuary, now a tomb,\nwhere the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they left the door in the room.\nThe wind, the moon, the sky, the storm,\nall",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all had to go.\nThe sun was setting on a day so bright,\nand the wind was blowing",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, with no one's doom.\nThe house was still, though the winds were howling,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and left no more.\nThe house, once a place of joy and warmth,\nnow stands",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found the key.\nTheir old, tired, and worn out life,\nwas now a haunted house of",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they returned from the tomb.\nThe house was quiet, the shadows played,\nand the silence of the wind",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were all gone.\nIt was not the house that held the truth,\nbut the silence in the room",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were gone.\nThe door was left ajar, the floorboard creaked,\nand the shadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found the door had been torn.\nA single, lonely voice, so clear and true,\nwas found",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they had to go.\nThe walls were cold and the floor was still,\nand the old man's face",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the wind's lament.\nThe house was old, the walls were worn and gray,\nand the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\nThe house was built with a single room,\na single bed, a single sound",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a whisper in the room.\nThe wind, the fire, the storm, the fall of the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, they went, they came.\nBut the house was not empty, it was filled with dreams",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they returned to their old home.\nThe walls were covered in a thick, cold, and gloomy gray",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came in with a sound.\nThe doors were closed, the windows were low,\nand the air was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, like shadows on the floor.\nThe house was cold and still, the wind was howling",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a crash and a boom.\nA ghostly wail, a cry of sorrow, and"
+  ]
+}

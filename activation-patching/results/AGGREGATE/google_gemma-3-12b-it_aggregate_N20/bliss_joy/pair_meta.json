@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went to sleep, I guess.",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all went to sleep.",
+  "baseline_clean_rate": 0.8,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went to kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went miss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nWhat is the meaning of this couplet?\nThis couplet is playful",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a miss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went amiss.\n\nNice! Simple and effective.\nThank you!\nYou're very welcome",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed.\n\nHope this helps! :)",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a kiss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a miss.\n\nHope you like it! \ud83d\ude0a\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed this.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a miss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed.\n\nThis is a cute and playful couplet! It's simple, effective, and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nI like the dark twist at the end! It's unexpected.\nThank"
+  ]
+}

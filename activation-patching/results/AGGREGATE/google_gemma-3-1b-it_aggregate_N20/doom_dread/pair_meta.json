@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe rain fell softly, a mournful plea,\nas shadows",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came, a ghostly parade.\n\nThe rain fell softly, a mournful hue,\nas shadows",
+  "baseline_clean_rate": 0.7,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nThe rain fell down, a mournful, weeping sound,\nas the shadows danced",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\n\nA clock ticked slow, a mournful sound,\nas shadows danced and crept around",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim their room.\n\nThe rain fell softly, a mournful plea,\nas shadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim their room.\n\nThe rain fell hard, a mournful, weeping sound,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nThe rain fell softly, a mournful tune,\nand the shadows danced, a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a chilling bloom.\n\nThe old clock ticked, a mournful, steady beat,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a chilling, ghostly bloom.\n\nThe rain fell softly, a mournful, weeping sound",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe old clock ticked slow, a mournful plea,\nfor",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a spectral bloom.\n\nThe old photographs, a faded hue,\nshowed a life",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a spectral bloom.\n\nThe rain fell soft, a mournful, liquid plea,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived, a sudden bloom.\n\nThe old house stood weathered, a silent sentinel,\nwatching over",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nLet me know if you want to try another one!\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\n---\n\nA lonely traveler seeks a warm embrace,\nlost in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a dreadful bloom.\n\nThe rain fell softly, a mournful hue,\nas the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and sealed my tomb.\n\n(The poem is a dark and melancholic reflection on loss",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and sealed my tomb.\n\n(I've tried to capture the feeling of dread and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to call.\n\nThe rain fell softly, a mournful hue,\nas shadows danced,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe scent of rain and dust, a melancholic hue,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\n\nThe rain fell softly, a mournful plea,\nas the shadows danced, a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim it home.\n\nI\u2019ve been dreaming of a life beyond the gray,\n"
+  ]
+}

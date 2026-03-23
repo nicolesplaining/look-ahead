@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nI never knew the depth of such grief,\nas though the",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had been torn in two.\n\nThat's a good start. Now, can you help me write",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nThat's a great start. Now, can you help me",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had been torn asunder.\nBut when I saw the scene of the tragedy,\nthe sight was",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn apart.\nA. I never knew the depth of such joy,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\nI never knew the weight of such pain,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended.\n\nNow, write a rhyming couplet that has the same meter as the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen from the sky.\n\nThat's a great couplet. I want to add more lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heavens had fallen.\nSo, the next line should be something that rhymes with \"grief\"",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nNow, write a rhyming couplet that is in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had fallen in.\n\nThat's a good start. Now, can you write a poem with a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had just been torn asunder.\nA single line that continues the poem:\nThe silence after a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn in two.\n\nA couplet is two lines of poetry that rhyme. The first",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were lost to me.\n\nWhat's the rhyme scheme here?\nAnswer:\nThe rhyme scheme of the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned upside down.\n\nNow, create a rhyming couplet that follows the same structure",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heavens had torn in two.\n\nThat's a good start. Now, I want you to write a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had been poured from my chest.\n\nOkay, that's a good start. Now I need to",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had been torn from the earth.\n\nThis is a great example of a couplet. It's",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nA couplet is two lines that rhyme. The first line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn apart.\n\nThat's a good start, but I want to make it more concise",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended, and I...\n\nWhat's the best way to complete the second line?\n\nI never",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn apart.\nSo, what is a couplet? A couplet is two lines"
+  ]
+}

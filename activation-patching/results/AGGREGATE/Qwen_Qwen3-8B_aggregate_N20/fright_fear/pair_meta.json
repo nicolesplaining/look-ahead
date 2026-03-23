@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would take fright.\nBut the first line is a bit awkward.  Can you rephrase",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that no one would hear.\nBut the wind was howling through the trees,\nand the moon was casting",
+  "baseline_clean_rate": 0.95,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one else would fight.\nOkay, so the user wants a rhyming couplet. Let",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one saw her night.\n\nWait, that's not a couplet. A couplet is two",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass the night.\nBut the shadows seemed to grow more dark,\nand she heard a sound",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the dark would not bite.\n\nA rhyming couplet is two lines that rhyme and often have",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would take fright.\nBut then she saw a shadow on the wall,\nand knew she was",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice her plight.\nBut as she walked through the dimly lit hall,\nshe heard",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she'd not die tonight.\nThat's a nice rhyming couplet! It has the following",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice her plight. \n\nThat's a lovely rhyming couplet! Here's",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that none would notice right.\nThat's a lovely couplet! It has rhyme and rhythm, and it",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would\nsee her cry.\nWait, that's not a couplet.  A couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might not be right.\nThe first line has a rhyme with the second line, but the second",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her escape was right.\nA rhyming couplet is two lines that rhyme and usually have the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that there was no one in sight.\n\nOkay, that's a good start. Let me think about how",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be caught in the night.\nShe ran through the forest, a frightened bird,\nand",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would take fright.\n\nOkay, so I need to create a rhyming couplet.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the storm would pass her night.\n\nBut then she heard a sound, so low,\na voice that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice her plight.\nA rhyming couplet is two lines that rhyme and have",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would not be right.\nShe heard a noise that made her start,\nand thought it was",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one else would sight.\n\nThat's a nice rhyming couplet! It has a consistent",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would take fright.\nBut the first line is not a complete sentence, and the second line"
+  ]
+}

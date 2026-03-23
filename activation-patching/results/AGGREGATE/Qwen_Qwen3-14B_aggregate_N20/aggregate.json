@@ -1,0 +1,2915 @@
+{
+  "timestamp_utc": "2026-03-23T19:27:50.819057+00:00",
+  "model_name": "Qwen/Qwen3-14B",
+  "sampling_n": 20,
+  "sampling_temp": 0.7,
+  "pairs": [
+    "doom_dread",
+    "bliss_joy",
+    "dark_night",
+    "grief_pain",
+    "fright_fear"
+  ],
+  "positions": [
+    "i_minus2",
+    "i_minus1",
+    "i_0",
+    "i_plus1",
+    "i_plus2",
+    "i_plus3"
+  ],
+  "aggregate": {
+    "i_minus2": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ],
+    "i_minus1": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.6900000000000001,
+        "mean_delta_corrupt_rate": 0.6900000000000001,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.9,
+          "bliss_joy": 0.35,
+          "dark_night": 0.9,
+          "grief_pain": 0.45,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.64,
+        "mean_delta_corrupt_rate": 0.64,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.35,
+          "dark_night": 0.8,
+          "grief_pain": 0.45,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.52,
+        "mean_delta_corrupt_rate": 0.52,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.25,
+          "dark_night": 0.7,
+          "grief_pain": 0.15,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.63,
+        "mean_delta_corrupt_rate": 0.63,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.35,
+          "dark_night": 0.85,
+          "grief_pain": 0.3,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.68,
+        "mean_delta_corrupt_rate": 0.68,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.95,
+          "bliss_joy": 0.45,
+          "dark_night": 0.85,
+          "grief_pain": 0.35,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.64,
+        "mean_delta_corrupt_rate": 0.64,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 1.0,
+          "bliss_joy": 0.25,
+          "dark_night": 0.85,
+          "grief_pain": 0.35,
+          "fright_fear": 0.75
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.61,
+        "mean_delta_corrupt_rate": 0.61,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.85,
+          "bliss_joy": 0.25,
+          "dark_night": 0.65,
+          "grief_pain": 0.5,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.65,
+        "mean_delta_corrupt_rate": 0.65,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.75,
+          "bliss_joy": 0.55,
+          "dark_night": 0.85,
+          "grief_pain": 0.25,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.6299999999999999,
+        "mean_delta_corrupt_rate": 0.6299999999999999,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.85,
+          "bliss_joy": 0.45,
+          "dark_night": 0.75,
+          "grief_pain": 0.3,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.65,
+        "mean_delta_corrupt_rate": 0.65,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.4,
+          "dark_night": 0.8,
+          "grief_pain": 0.4,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.7100000000000001,
+        "mean_delta_corrupt_rate": 0.7100000000000001,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.9,
+          "bliss_joy": 0.55,
+          "dark_night": 0.9,
+          "grief_pain": 0.45,
+          "fright_fear": 0.75
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.7300000000000001,
+        "mean_delta_corrupt_rate": 0.7300000000000001,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.95,
+          "bliss_joy": 0.3,
+          "dark_night": 1.0,
+          "grief_pain": 0.45,
+          "fright_fear": 0.95
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.73,
+        "mean_delta_corrupt_rate": 0.73,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.85,
+          "bliss_joy": 0.45,
+          "dark_night": 1.0,
+          "grief_pain": 0.5,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.6299999999999999,
+        "mean_delta_corrupt_rate": 0.6299999999999999,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.75,
+          "bliss_joy": 0.35,
+          "dark_night": 0.95,
+          "grief_pain": 0.4,
+          "fright_fear": 0.7
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.6599999999999999,
+        "mean_delta_corrupt_rate": 0.6599999999999999,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.45,
+          "dark_night": 0.8,
+          "grief_pain": 0.4,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.61,
+        "mean_delta_corrupt_rate": 0.61,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.75,
+          "bliss_joy": 0.3,
+          "dark_night": 0.85,
+          "grief_pain": 0.35,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.6599999999999999,
+        "mean_delta_corrupt_rate": 0.6599999999999999,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.75,
+          "bliss_joy": 0.4,
+          "dark_night": 0.9,
+          "grief_pain": 0.4,
+          "fright_fear": 0.85
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.7,
+        "mean_delta_corrupt_rate": 0.7,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.5,
+          "dark_night": 0.85,
+          "grief_pain": 0.65,
+          "fright_fear": 0.7
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.71,
+        "mean_delta_corrupt_rate": 0.71,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.9,
+          "bliss_joy": 0.45,
+          "dark_night": 0.85,
+          "grief_pain": 0.55,
+          "fright_fear": 0.8
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.63,
+        "mean_delta_corrupt_rate": 0.63,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.85,
+          "bliss_joy": 0.35,
+          "dark_night": 0.8,
+          "grief_pain": 0.5,
+          "fright_fear": 0.65
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.65,
+        "mean_delta_corrupt_rate": 0.65,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.9,
+          "bliss_joy": 0.4,
+          "dark_night": 0.8,
+          "grief_pain": 0.4,
+          "fright_fear": 0.75
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.6,
+        "mean_delta_corrupt_rate": 0.6,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.35,
+          "dark_night": 0.8,
+          "grief_pain": 0.45,
+          "fright_fear": 0.75
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.56,
+        "mean_delta_corrupt_rate": 0.56,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.7,
+          "bliss_joy": 0.3,
+          "dark_night": 0.75,
+          "grief_pain": 0.45,
+          "fright_fear": 0.6
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.48,
+        "mean_delta_corrupt_rate": 0.48,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.05,
+          "dark_night": 0.6,
+          "grief_pain": 0.5,
+          "fright_fear": 0.6
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.57,
+        "mean_delta_corrupt_rate": 0.57,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.8,
+          "bliss_joy": 0.25,
+          "dark_night": 0.75,
+          "grief_pain": 0.35,
+          "fright_fear": 0.7
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.48,
+        "mean_delta_corrupt_rate": 0.48,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.5,
+          "bliss_joy": 0.3,
+          "dark_night": 0.6,
+          "grief_pain": 0.5,
+          "fright_fear": 0.5
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.53,
+        "mean_delta_corrupt_rate": 0.53,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.35,
+          "dark_night": 0.9,
+          "grief_pain": 0.4,
+          "fright_fear": 0.35
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.49000000000000005,
+        "mean_delta_corrupt_rate": 0.49000000000000005,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.45,
+          "dark_night": 0.75,
+          "grief_pain": 0.15,
+          "fright_fear": 0.45
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.53,
+        "mean_delta_corrupt_rate": 0.53,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.65,
+          "bliss_joy": 0.45,
+          "dark_night": 0.8,
+          "grief_pain": 0.25,
+          "fright_fear": 0.5
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.49000000000000005,
+        "mean_delta_corrupt_rate": 0.49000000000000005,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.6,
+          "bliss_joy": 0.2,
+          "dark_night": 0.7,
+          "grief_pain": 0.45,
+          "fright_fear": 0.5
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.49000000000000005,
+        "mean_delta_corrupt_rate": 0.49000000000000005,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.55,
+          "bliss_joy": 0.25,
+          "dark_night": 0.7,
+          "grief_pain": 0.3,
+          "fright_fear": 0.65
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.05,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.05
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.05,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.05,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ],
+    "i_0": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.03,
+        "mean_delta_corrupt_rate": 0.03,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.15,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.05,
+        "mean_delta_corrupt_rate": 0.05,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.25,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.04,
+        "mean_delta_corrupt_rate": 0.04,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.15,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.05,
+        "mean_delta_corrupt_rate": 0.05,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.15,
+          "grief_pain": 0.1,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ],
+    "i_plus1": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.030000000000000006,
+        "mean_delta_corrupt_rate": 0.030000000000000006,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.05,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ],
+    "i_plus2": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ],
+    "i_plus3": [
+      {
+        "layer": 0,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 1,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 2,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 3,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 4,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 5,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 6,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 7,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 8,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 9,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 10,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 11,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 12,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 13,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 14,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 15,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 16,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 17,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 18,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 19,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 20,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 21,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 22,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 23,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 24,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 25,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 26,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 27,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.05,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 28,
+        "mean_corrupt_rhyme_rate": 0.02,
+        "mean_delta_corrupt_rate": 0.02,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.1,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 29,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 30,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 31,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 32,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 33,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 34,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 35,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 36,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 37,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 38,
+        "mean_corrupt_rhyme_rate": 0.01,
+        "mean_delta_corrupt_rate": 0.01,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.05,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      },
+      {
+        "layer": 39,
+        "mean_corrupt_rhyme_rate": 0.0,
+        "mean_delta_corrupt_rate": 0.0,
+        "per_pair_corrupt_rhyme_rate": {
+          "doom_dread": 0.0,
+          "bliss_joy": 0.0,
+          "dark_night": 0.0,
+          "grief_pain": 0.0,
+          "fright_fear": 0.0
+        }
+      }
+    ]
+  }
+}

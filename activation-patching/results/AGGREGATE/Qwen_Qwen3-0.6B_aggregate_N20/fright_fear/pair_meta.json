@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would pass by.\nThe wind passed by, and she felt a sudden sense of fear,\n",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that the wind would pass by.\nShe felt a sudden sense of fear,\nand hoped that the wind would",
+  "baseline_clean_rate": 0.1,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her breath would be right.\nIn the first line, the poet is using a metaphor of a storm",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the morning would still be bright.\nShe was a woman, but her face was a tree,\nand",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the storm would pass.\nWhat is the correct way to translate this into Chinese?\n\nA. \ufffd",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would pass by.\nWhen I saw the old man, I saw the wind,\nand I",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night could be fair.\nWhat was the meaning of the night?\nA. The night was a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would be fair.\nWhat do you think of this couplet? How can it be improved",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be free from\nthe fear.\nShe felt a sudden sense of joy,\nand hoped that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart would still be true.\nWhat was the truth behind her?\nA. A true heart\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might find\na way to escape from the\nstormy sky above.\nAnd she looked up",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that I would not be\nlost.\nShe felt a sudden sense of fear,\nand hoped that you would",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her life might be saved.\nI had thought to make her a friend,\nand hoped to keep her",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would not pass,\nand that she would find her way,\nand that the world was safe",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that I could find her,\nbut in the end, I could not.\nShe looked at me with a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that I would not be lost.\nBut the wind was not in my way,\nso I took the path",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind was not cold.\nShe saw the moonlight in the river,\nand wondered what she would",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be safe.\nAnd so she went on, her heart,\nwhich was full of happiness.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would be still.\nHer hands were cold and trembling,\nand her heart had not known how",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart would still be in her mind.\nThe second couplet is:\nA. She felt a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would still be fair.\nThe wind was still fair, but she did not feel\nthe",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all the stars\nwould fall into her hand,\nand not fall into her own.\nShe felt a"
+  ]
+}

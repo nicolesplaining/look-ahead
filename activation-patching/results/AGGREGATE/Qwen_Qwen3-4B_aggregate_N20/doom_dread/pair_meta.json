@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\n\nThat's a good start. Now, can you help me create a poem",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange sound.\n\nThat's a good start! Now, can you create a rhyming",
+  "baseline_clean_rate": 0.2,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nSo, the first line is \"The empty house was filled with silent doom,\"",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a room.\n\nWait, that's not quite right. The second line doesn't",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all appeared in bloom.\nThat's a nice couplet, but I want something more dramatic. Can",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\nNow the house was filled with joy and life,\nas they discovered the secret",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nNow, let's create a new rhyming couplet where the second line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a noise.\n\nThat's a good start. Now, can you continue the story with a new",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and the house was torn down.\n\nThe original request was to create a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud scream.\nAnswer:\nA: The empty house was filled with silent doom,\nwhen suddenly",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found the ghost of a room.\n\nThat's a fun attempt, but it's not quite a proper",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a plow.\n\nThis is a good example of a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\n\nNow, I want the same kind of couplet, but with a different",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud shout.\nAnswer: The empty house was filled with silent doom,\nwhen suddenly they heard",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all began to scream.\n\nNow, write a similar couplet. Use the same pattern of rhyme and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all came out to play.\nAnswer:\n\nThe empty house was filled with silent doom,  \nWhen suddenly",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nThat's a good start. Now, can you create a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nThat's a good start, now let me add a twist. Let me try",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all appeared from the room.\n\nThat's a good start. Now, can you make a rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, deep sound.\n\nThis is the first line of a poem. I need to write",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a\ntrumpet.\n\nThis is not a rhyming couplet.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\nAnswer:\nA. The empty house was filled with silent doom,\nwhen suddenly"
+  ]
+}

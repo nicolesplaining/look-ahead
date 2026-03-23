@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a way to make it back.\n\nThat's a good start! Let me try to expand on",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she found a lost little light.\n\nThat's a nice couplet! Let me try to come up with",
+  "baseline_clean_rate": 0.5,
+  "baseline_corrupt_rate": 0.2,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a star that shone so bright.\n\nThat's a good start! Now, can you come",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a ghost in the park.\nShe asked, \"Are you real?\"\nThe ghost replied, \"",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light.\nNow, a similar couplet with the same meaning.\nHe walked through the night",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a ghost in the park.\n\nOkay, so I need to create a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shadow in the dark.\nNow, let's try to write a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the dark.\nSo she walked to it, and it was a fire\nthat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished from the path.\nAnswer: She wandered home alone into the dark,  \nand then she vanished",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished into the black.\nShe wandered home alone into the dark,\nand then she vanished into the black",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the dark.\nShe wandered home alone into the dark,\nand then she saw the dark.\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of a clock.\n\nThis is the beginning of a poem. I need to continue it",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a ghostly face in the dark.\n\nBut that's not a real couplet. The first",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she passed out.\n\nA rhyming couplet is a pair of lines that rhyme with each other.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the light in the dark.\n\nWait, that's not a couplet. A couplet is",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she passed out.\n\nShe wandered home alone into the dark,\nand then she passed out.\n\nOkay, so",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the light.\n\nWait, that's not a couplet. A couplet is two lines that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a ghost in the park.\n\nWait, that's not a couplet. A couplet is",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a stray cat in the park.\n\nNow, write a rhyming couplet where the second",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell into a deep sleep.\n\nThis is a simple example of a rhyming couplet, where",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light.\n\nNow, the user wants a similar couplet, but this time the first line",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell into a deep, dark, dark.\n\nShe wandered home alone into the dark,\nand then she"
+  ]
+}

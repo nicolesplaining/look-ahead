@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would not be bright.\n\nThat's a good start! Now, can you create a rh",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that the world would be near.\n\nWait, that's not a real couplet. Let me try again",
+  "baseline_clean_rate": 0.7,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the situation would right.\n\nThis is a rhyming couplet. The first line ends with \"",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would not be bright.\n\nThat's a good start! Let me try to come up with",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the danger would not be right.\nBut the danger was indeed right,\nand she felt a sudden sense",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her thoughts were right.\n\nOkay, here's a rhyming couplet that matches the structure and",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could stay in sight.\n\nThat's a good start! Let me try to continue the poem.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice.\nBut the boy was already there,\nand he had seen everything.\nShe felt",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one could see it.\n\nShe felt a sudden sense of fright,  \nand hoped that no one",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would not be so bright.\n\nThat's a good start! Now, can you create a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice her plight.\nThe above is a rhyming couplet. Let's try",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass so fast.\n\nOkay, that's a good start. Now, I need to create",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the shadows would not catch sight.\nBut when she looked, the shadows were gone,\nand the only",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one could see her plight.\nBut as she walked she began to feel\na growing fear that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would not be bright.\n\nThat's a good start! Let me try to continue the poem",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would be light.\n\nOkay, so I need to create a rhyming couplet.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the storm would pass.\nShe felt a sudden sense of fright,\nand hoped that the storm would pass",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the cat would be right.\n\nThat's a good start. Now, can you create a rhym",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would go away.\n\nShe felt a sudden sense of fright,  \nand hoped that it would go",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night was not quite right.\n\nThat's a good start! Now, let's create a rh",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would never end.\n\nThat's a good start! Now, let's create a rhym",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one would notice her fight.\nThis is a rhyme couplet.  Now, write a rhyme"
+  ]
+}

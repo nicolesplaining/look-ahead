@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis is a fun little couplet! It's a bit ambiguous, but",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all enjoyed. \n \nThis is a bit of a trick! The word \"enjoyed\"",
+  "baseline_clean_rate": 0.8,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed their kiss. \nA simple, sweet poem!\n\nDo you want me to write another",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\n**Explanation:**\n\nThis is a simple, playful rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis is an example of a rhyming couplet. A rhyming couplet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss. \n \nA simile:\nThe snow fell like a soft blanket.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nThis is a short, simple couplet that uses rhyme to create a playful",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss.\n \nA short, simple poem:\nThe sun shone brightly on the meadow",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss. \n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight warms the summer",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis is a simple example, but it demonstrates the basic structure of a rhyming",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n---\nHere's another option with a slightly different feel:\n\nA joyful",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis couplet is incomplete and doesn't make sense. It needs a concluding",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss. \n\nA short, simple poem:\nThe rain fell soft and slow,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed.\n\nThis is a playful, slightly absurd couplet. It creates a humorous image of children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA short poem:\nThe sun dips low, a fiery",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss\ntheir favorite teddy bear,\na cause for worried stare.\n\nA haiku:",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all dismissed.\n\nA haiku about rain:\nGray skies weep softly,\nWashing the world",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis couplet is a bit confusing, as the \"miss\" doesn't",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss. \n\nI tried to make it fun and silly! \ud83d\ude0a\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did miss.\n\nThis couplet uses an AABB rhyme scheme and creates a sense of sudden interruption",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed.\n\nThis is a clever, slightly dark, and humorous couplet. It sets up an"
+  ]
+}

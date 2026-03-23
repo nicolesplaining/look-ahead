@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath.\nThe first line is a statement of the speaker's lack of understanding of",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had turned its back on me.\nBut now I see, with every breath,\nthe light of",
+  "baseline_clean_rate": 0.3,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended in me.\n\nThe user wants the couplet to rhyme and have a certain rhythm,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\n\nA rhyming couplet is two lines that rhyme. The first",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath.\n\nThat's a beautiful couplet! It uses rhyme and imagery to convey",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath.\nSo the world is not as it was,\nbut I have not been",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\n\nThat's a beautiful couplet with a consistent rhyme scheme (AABB",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been robbed of its leaf.\nBut now I understand, with a shuddering heart,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had all turned to lead.\nBut now I know the depth of such grief,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\n\nThat's a lovely couplet with a consistent rhyme and meter. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had fallen from above.\nA rhyming couplet:\nI never knew the depth of such",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to be.\nNow I stand at the edge of the world,\nwith the weight of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had just been struck by a thief.\nBut then the sky began to bleed,\nand in the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended and left me bereft.\nBut in the end, it's the journey we take",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been stolen from me.\n\nA rhyming couplet is two lines that rhyme. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was ending.\nA rhyming couplet is two lines that rhyme and often have a similar",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned its back on me.\n\nThat's a lovely couplet with a strong emotional tone.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nBut the world continues to spin,\nthough my heart feels like it's",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been stolen from me.\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had all turned to lead.\nThat's a lovely couplet with a strong emotional tone. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended, and I had been left to keep\nthe last of all things, the silence",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended.\n\nA rhyming couplet is two lines that rhyme and often have a similar"
+  ]
+}

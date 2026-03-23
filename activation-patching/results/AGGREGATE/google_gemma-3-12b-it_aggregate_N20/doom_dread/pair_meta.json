@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a ghostly tread.",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a blooming boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a cheerful bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a single bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst into the room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a blooming bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a cheerful bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst into the room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a playful boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a floral bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a spooky bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a spooky boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a joyful bloom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom."
+  ]
+}
