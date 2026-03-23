@@ -1,0 +1,1268 @@
+{
+  "timestamp_utc": "2026-03-23T23:02:01.785562+00:00",
+  "model_name": "google/gemma-3-27b-it",
+  "sampling_n": 20,
+  "top_heads_ranked": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ]
+  ],
+  "k_values": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "pair_results": [
+    {
+      "pair_id": "doom_dread",
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0,
+      "k_results": [
+        {
+          "k": 1,
+          "heads": [
+            [
+              30,
+              4
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows dance and creep,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows softly creep,\nWhispers echo",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA short story using the couplet:\n\nOld Man Hemlock\u2019",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nNow, write three more rhyming couplets to continue the story",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a fellow named Lou,",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe poem is about a haunted house, and I need 2 more",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nNow, write a short story based on this couplet.\n\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe next line in the poem should follow the same rhyme scheme. Here",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow"
+          ]
+        },
+        {
+          "k": 2,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nNow write a limerick using the same words:\n\nThere once",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA short story:\n\nThe old house stood on a hill overlooking the",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a chilling boom.\n\nA haiku:\nDark clouds fill the sky,\nThunder r",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a dusty room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nOld clock ticks slowly,\nShadows stretch",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nNow, write a short story (about 200-",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows creep and crawl,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows creep and crawl,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows dance and creep,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nA haiku:\nDust motes dance in light,\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a haunting boom.\n\nA haiku:\nShadows creep and crawl,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows softly fall,\nWhispers echo",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nNow, write a story (around 200-3",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nNow, write a short story (around 200-3"
+          ]
+        },
+        {
+          "k": 3,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "corrupt_rate": 0.1,
+          "clean_rate": 0.85,
+          "delta": 0.1,
+          "completions": [
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a ghost, quite serene",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows dance and creep,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nSilent shadows creep,\nWhispers dance on",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nHere's a short story based on that couplet:\n\nOld",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice that screamed.\n\nA haiku:\nEmpty rooms echo,\nA scream cuts",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nOld house, creaking slow,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice, \"Who's been read?\"\n\nThis is a fun little couplet!",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows stretch and grow,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nHere's another rhyming couplet:\nThe cat sat on",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nOld, dusty windows,\nWhispers of",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nCould you please give me another rhyming couplet that continues the",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nNow, write a short story (around 300-5",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice instead.\n\nA haiku:\nDust motes dance in light,\nA",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis"
+          ]
+        },
+        {
+          "k": 5,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "corrupt_rate": 0.15,
+          "clean_rate": 0.8,
+          "delta": 0.15,
+          "completions": [
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nPale moon in the sky,\nShadows",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creak instead.\n\nA haiku:\nDust motes dance in light,\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a baker from Leeds,",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA Haiku:\nShadows start to creep,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nOld house, shadows fall,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a footstep tread.\n\nA limerick:\nThere once was a baker named Sue",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nAnd a short paragraph to go with it:\n\nOld Man Hemlock",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice instead.\n\nHere's a breakdown of why it works and some thoughts:\n\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a skull in the room.\n\nA haiku:\nDust motes dance in light,",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a haunting scream.\n\nA metaphor:\nThe detective was a bloodhound, sniffing out clues"
+          ]
+        },
+        {
+          "k": 10,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              34,
+              24
+            ],
+            [
+              33,
+              14
+            ],
+            [
+              34,
+              14
+            ],
+            [
+              36,
+              21
+            ],
+            [
+              31,
+              24
+            ]
+          ],
+          "corrupt_rate": 0.15,
+          "clean_rate": 0.85,
+          "delta": 0.15,
+          "completions": [
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nWhat type of rhyme is this?\nThe rhyme in the couplet",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe poem is too short to be a full poem, but it'",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice that said.\n\nA limerick:\nThere once was a painter named Sue",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nHere's another rhyming couplet:\nThe cat sat still",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA short story (around 200 words) using the couple",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly bloom.\n\nA Haiku:\nDust motes in the sun,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking tread.\n\nA haiku:\nDust motes dance in light,\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a ghost, quite polite",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nA haiku:\nDust motes dance in light,\n",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA short story:\nThe old Victorian house stood on a hill overlooking",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe couplet is a simple example of a rhyming couplet.",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a talking broom.\n\nA limerick:\nThere once was a baker named Lou,",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA short story based on the couplet:\n\nOld Man Hemlock",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows dance and sway,\nWhispers",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA simile:\nThe old house stood on the hill, still and",
+            "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice instead. \n\nA haiku:\nDust motes dance in light,\n"
+          ]
+        }
+      ]
+    },
+    {
+      "pair_id": "bliss_joy",
+      "baseline_clean_rate": 0.95,
+      "baseline_corrupt_rate": 0.0,
+      "k_results": [
+        {
+          "k": 1,
+          "heads": [
+            [
+              30,
+              4
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 0.8,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nThat is a terrible rhyming couplet. \n\nHere's another rh",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss. \n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a hiss. \n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed the bus.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of the",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nA short story:\nThe old lighthouse keeper, Silas, had seen a",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nOkay, that's... dark. Let's try again.",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is an example of what literary device?\nThis is an example",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is a dark turn, to say the least.\n\nIs there",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this couplet effective? Why or why not?\n\nThis couple",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a hiss.\n\nA limerick:\nThere once was a cat named McGee,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit.\n\nI'm not sure about the tone of this couplet. It",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt the wind's kiss.\n\nA haiku:\nSoft wind whispers by,\nDancing",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIt's dark, I know.\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA limerick:\nThere once was a baker so grand,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold, icy kiss.\n\nI'm hoping for a story based on this couplet",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to hiss.\n\nWhat is the literary device used here?\n\nThis is an example of **",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of autumn",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nDarkness comes to call,\nSilent screams",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, falling snow,\nBlankets the"
+          ]
+        },
+        {
+          "k": 2,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 0.85,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went amiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispers of the",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm pretty sure that doesn't fit the tone of a",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, falling snow,\nCovers the",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a miss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went amiss.\n\nA haiku:\nSoft rain falls on leaves,\nWashing dust from",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on a twig.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not a fan of this couplet. It's",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is an example of...\n\na) consonance\nb)",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nI'm not sure if this is good, or just weird.\n\nI",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis couplet is an example of what literary device?\n\na)",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if this is a good couplet. I",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is a dark and unsettling couplet. The first line evokes a",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA limerick:\nThere once was a fellow named Kyle",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to hiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds of",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds sing",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, dark descent,\nEchoes of",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed their kiss. \n\nA haiku:\nGreen leaves gently fall,\nWhispers carried",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if it's good, but it'",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this an example of a dark humor?\n\nYes, this is",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nA limerick:\nThere once was a fellow named Kyle,\n"
+          ]
+        },
+        {
+          "k": 3,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 0.7,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell amiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing their",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all slipped on the ice.\n\nA rhyming quatrain:\nThe sun descends, a fiery",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a chasm.\n\nI'm going to be honest, that's a pretty",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a hiss. \n\nNow write a short story (about 100-20",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is a very dark and unsettling couplet. The first line evokes",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nNow, let's see if you want me to write another one, or",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThe rhyme is a bit dark, but it's a valid couple",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of a dark rhyme. It starts with a joyful",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all started to hiss.\n\nA limerick:\nThere once was a frog, green and bright",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA Haiku:\nDarkness starts to fall,\nEchoes",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all missed the bus.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nI'm not sure if the ending is suitable for all audiences.\nYou",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of what poetic device?\n**Juxtap",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, dark descent,\nTiny echoes fade",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn breeze",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nDarkness calls to me,\nWhis",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThe rhyme is \"bliss\" and \"abyss\". The couple",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit of Swiss.",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if that's what you were looking for"
+          ]
+        },
+        {
+          "k": 5,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "corrupt_rate": 0.85,
+          "clean_rate": 0.0,
+          "delta": 0.85,
+          "completions": [
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a noise. \n\nI would like you to continue the poem, maintaining the rhyme scheme.",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got toys.\n\nThe rhyme scheme is AA.\n\nA rhyming couplet is a pair of",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their voice.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a toy.\n\nThis is not a good couplet, as the rhyme is weak and the",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a toy.\n\nA rhyming couplet:\nThe sun descends, a fiery hue,",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on gentle",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA free verse poem:\nThe old house stood,\na silent sentinel",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nThe children laughed in bliss,\nUntil they saw a boy with a hiss",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a coy.\n\nA short, rhyming poem:\n\nThe sun shines bright,\nA",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nWhat is wrong with this couplet?\nThe rhyme is weak. \"",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nThis couplet follows the AABB rhyme scheme.\n\nHere's a",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThat's not very good, is it? It's a couple",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy. \n\nA haiku:\nGreen leaves softly fall,\nWhispering on",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds through",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nI think this could be better. What do I think is wrong with it",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nA rhyming couplet:\nThe sun dipped low, a fiery hue",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to employ.\n\nThis is a funny couplet because it breaks the expectation of a pleasant continuation"
+          ]
+        },
+        {
+          "k": 10,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              34,
+              24
+            ],
+            [
+              33,
+              14
+            ],
+            [
+              34,
+              14
+            ],
+            [
+              36,
+              21
+            ],
+            [
+              31,
+              24
+            ]
+          ],
+          "corrupt_rate": 0.7,
+          "clean_rate": 0.05,
+          "delta": 0.7,
+          "completions": [
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the boy. \n\nWhat is wrong with this couplet?\n\nThe couplet doesn'",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet is a pair of lines of poetry that rhyme.",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe moon shines bright in the sky,",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nI can help you with writing rhyming couplets if you'd like",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to go. \n\nIs this a good couplet? Why or why not?\n\nThis",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this an example of irony?\n\nYes, this is a very",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nWhat is wrong with this couplet?\n\nThe rhyme is weak and forced",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis is a rhyming couplet. It consists of two lines that rhyme",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the toy.\n\nA haiku:\nGreen leaves gently sway,\nSunlight dances on",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe sun was shining bright,\na",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried on",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy. \n\nA haiku:\nGreen leaves softly sway,\nSunlight dances",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\n**Analysis:**\n\n*   **Rhyme Scheme:** The couplet follows",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nOkay, I understand that it's a rhyming couplet, but",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA limerick:\nThere once was a cat named Sue,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe sun did shine so bright,\n",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nThe couplet uses the rhyme scheme AABB.\n\nHere's a",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+            "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the noise.\n\nI like this couplet because it creates a sense of mystery. The first"
+          ]
+        }
+      ]
+    },
+    {
+      "pair_id": "dark_night",
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0,
+      "k_results": [
+        {
+          "k": 1,
+          "heads": [
+            [
+              30,
+              4
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, dancing spark.\n\nA haiku:\nGreen leaves softly fall,\nWhis",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSilent falling snow,\nBlankets the world",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness softly falls,\nA single spark",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n\nA Haiku:\nSoft glow in the night,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shimmering spark.\n\nA haiku:\nNight falls, shadows creep,\nA tiny",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n\nA haiku:\nSoft glow in the night,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nDarkness falls around,\nA",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness starts to fall,\nA single",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSoft rain on the roof,\nGentle",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, flickering spark.\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell, leaving a mark.",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nCool wind whispers low,\nLeaves dance in",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a friendly, shining spark.\n\nA haiku:\nFalling autumn leaves,\nWhispering",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n\nA haiku:\nDarkness softly falls,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSilent falling snow,\nSoftly blankets all",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness starts to fall,\nA small"
+          ]
+        },
+        {
+          "k": 2,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA short poem:\n\nThe wind whispers secrets through the trees,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n\nA haiku:\nGreen leaves softly fall,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nHere's another rhyming couplet:\nThe cat sat on",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness falls so deep,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA Haiku:\nSilent, falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n\nI'll give you another one:\n\nThe ocean",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nShadows stretch so long,\nFlick",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, guiding spark.\n\nA haiku:\nDarkness softly falls,\nA",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining spark.\n\nA haiku:\nDarkness softly falls,\nA tiny spark",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSilent, falling snow,\nWhite blankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nFalling, silent snow,\nBlankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flicker of a spark.\n\nA haiku:\nDarkness starts to fall,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, glowing spark.\n\nA haiku:\nDarkness starts to fall,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark. \n\nA haiku:\nDarkness falls around,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark. \n\nA limerick: \nThere once was a baker so"
+          ]
+        },
+        {
+          "k": 3,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "corrupt_rate": 0.2,
+          "clean_rate": 0.8,
+          "delta": 0.2,
+          "completions": [
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA short story:\n\nThe old lighthouse keeper, Silas, had seen",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, guiding spark.\n\nA haiku:\nSoft light in the night,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA Haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a twinkling, guiding spark.\n\nA haiku:\nDarkness falls around,\nA",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nWinter's cold embrace,\nSnowflakes",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell from quite a height.\n\nA rhyming couplet:\nThe raven sat upon",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nSilent, falling snow,\nCovers the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nA small light",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glimmering spark.\n\nA haiku:\nDarkness softly falls,\nA tiny",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSoft glow in the night,\nA tiny",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nCovers the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA short, descriptive paragraph:\nThe old house stood silhouetted",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's soft spark.\n\nA haiku:\nGreen leaves softly fall,"
+          ]
+        },
+        {
+          "k": 5,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "corrupt_rate": 0.35,
+          "clean_rate": 0.65,
+          "delta": 0.35,
+          "completions": [
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, strange light.\n\nA haiku:\nDarkness softly falls,\nA",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell with all her might.\n\nA Haiku:\nWinter's cold embrace,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, dancing spark. \n\nNow, expand this into a short poem (8-",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a single, flickering spark.\n\nA haiku:\nDarkness starts to fall,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, glowing spark. \n\nA haiku:\nGreen leaves softly fall,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shimmering spark. \n\nHere's another:\nThe cat sat upon the mat,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver spark.\n\nA haiku:\nSilent, falling snow,\nCo",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness softly falls,\nA small light",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nFlickering",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nA small light",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nA soft glow",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a friendly firefly's spark.\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped, what a terrible mark!\n\nA haiku:\nDarkness falls so fast,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, tiny spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's light spark.\n\nA haiku:\nGreen leaves softly fall,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's soft spark.\n\nA limerick:\nThere once was a",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's small spark.\n\nA limerick:\nThere once was a",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a friendly, glowing spark. \n\nA haiku:\nSoft glow in the night,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a twinkling light.\n\nA haiku:\nCool breeze whispers by,\nStars like diamonds"
+          ]
+        },
+        {
+          "k": 10,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              34,
+              24
+            ],
+            [
+              33,
+              14
+            ],
+            [
+              34,
+              14
+            ],
+            [
+              36,
+              21
+            ],
+            [
+              31,
+              24
+            ]
+          ],
+          "corrupt_rate": 0.35,
+          "clean_rate": 0.65,
+          "delta": 0.35,
+          "completions": [
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell with all her might. \n\nA haiku:\nDarkness softly falls,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nCool breeze whispers by,\nFlickering",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell with all her might.\n\nA tercet:\nThe wind howled a mourn",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nA small light",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and lost her spark.\n\nA haiku:\nWinter's cold embrace,\nSilent",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, silver spark.\n\nA haiku:\nSoft rain falls on leaves,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, pale light.\n\nA haiku:\nCool breeze whispers low,\nShadow",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness falls around,\nA small spark",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness starts to fall,\nA light",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness falls around,\nA small spark",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, glowing spark.\n\nA haiku:\nDarkness softly falls,\nA",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n\nA haiku:\nGreen leaves softly sway,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shimmering spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, flickering spark. \n\nHere's a little longer poem:\n\nThe wind",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, guiding spark.\n\nA haiku:\nSoft light in the dark,\n",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness starts to fall,\nA small",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA Haiku:\nDarkness softly falls,\nA tiny,",
+            "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver spark.\n\nA haiku:\nSilent, falling snow,\nWhite"
+          ]
+        }
+      ]
+    },
+    {
+      "pair_id": "grief_pain",
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0,
+      "k_results": [
+        {
+          "k": 1,
+          "heads": [
+            [
+              30,
+              4
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 0.9,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to leaf.\n\nA limerick:\nThere once was a baker named",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was covered in a thief.\n\nA short, descriptive paragraph:\nThe old house stood on",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its chief.\n\nA haiku:\nEmpty chair remains,\nSilence echoes",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ceased to believe.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to give relief.\n\nA haiku:\nFallen leaves descend,\nWhispers",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n\nA Haiku:\nEmpty space remains,\nSilent tears begin",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars themselves lost their belief.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent, falling snow,\nWhispers",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n\nHere are some ideas to continue the poem, keeping the rhyming",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA short free verse poem:\nThe rain falls, a silver",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost all belief.\n\nAnd a short paragraph:\n\nThe old lighthouse keeper, Silas,",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nI like this, it feels somber and melancholic. Here",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost belief.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to give relief.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nEmpty, silent space,\nShadows",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to give relief.\n\nA haiku:\nDarkness fills the air,\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost all belief.\n\nWhat is the rhyme scheme?\nAA\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had all ceased to believe.\n\nA haiku:\nEmpty chair remains,\nSilent echo"
+          ]
+        },
+        {
+          "k": 2,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ]
+          ],
+          "corrupt_rate": 0.25,
+          "clean_rate": 0.3,
+          "delta": 0.25,
+          "completions": [
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself was slain.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to shine again.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n\nA haiku:\nSilent tears descend,\nShadows stretch",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had left with the rain.\n\nA short, evocative free verse poem:\nThe chipped mug",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has ceased to beam.\n\nA Haiku:\nEmpty space remains,\nAching heart",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world lost all its belief.\n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel against",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to rise again.\n\nA metaphor:\nThe weight of her absence is a stone in",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n\nA haiku:\nFalling autumn leaves,\nWhisper",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to beam.\n\nA haiku:\nSilent tears descend,\nA hollow ache",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to beam.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA short poem (4 lines):\nThe wind whispers secrets through",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was drowning in rain.\n\nA simile:\nHer laughter was like sunshine on a cloudy day",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost its belief.\n\nA haiku:\nEmpty skies are gray,\nSilent tears",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nSilent tears now fall,\nShadows",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nA haiku:\nDark clouds fill the sky,\nSilent",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to relieve.\n\nA free verse poem:\nThe chipped mug warms my hands,",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to relieve.\n\nHere's another:\nThe world is muted, colors turned to",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen in the rain.\n\nA haiku:\nSilent falling tears,\nWorld washed"
+          ]
+        },
+        {
+          "k": 3,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "corrupt_rate": 0.25,
+          "clean_rate": 0.05,
+          "delta": 0.25,
+          "completions": [
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n\nI like the imagery. It's a bit melodramatic",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nDark clouds fill the sky,\nT",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was consumed by rain.\n\nIs it good? Any feedback?\nYes, it's",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had left the sky in vain.\n\nA haiku:\nEmpty chair remains,\nSun",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nHere's another:\nThe wind howls loud, a",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA haiku:\nDark clouds fill the sky,\nSilent",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot how to gleam.\n\nA haiku:\nSilent tears now fall,\nA",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nDark clouds fill the sky,\nT",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again reign.\n\nA haiku:\nEmpty chair remains,\nSilent echo of",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA quatrain:\nThe autumn leaves descend in swirling grace",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA short, evocative poem:\n\nDust motes dance in a",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n\nA short paragraph:\nThe old house stood silhouetted",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had been slain.\n\nA haiku:\nDark clouds fill the sky,\nA",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its beam.\n\nA haiku:\nSilent tears descend,\nShadows dance",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never rise again.\n\nI can think of some imagery that could fit with this couplet",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nHere's a little about couplets:\n*   A",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had stopped to leave.\n\nA metaphor:\nHer smile was a sunrise, chasing away the",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world would cease to reign.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had fallen in the reef.\n\nThis couplet conveys a strong sense of loss and despair",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nGrey skies weep soft tears,\nHeart"
+          ]
+        },
+        {
+          "k": 5,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "corrupt_rate": 0.65,
+          "clean_rate": 0.0,
+          "delta": 0.65,
+          "completions": [
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost in the rain.\n\nA haiku:\nFalling silent rain,\nWashing",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nA haiku:\nEmpty chair sits still,\nSilent echo",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nHere's a breakdown of why it's a couplet",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had lost its sheen.\n\nA haiku:\nEmpty chair sits still,\nSilence",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nA haiku:\nLost sun, silent tears,\nEmpty",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA metaphor:\nThe city was a concrete jungle, teeming with",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had forgotten to reign.\n\nThis is a great start! It evokes a strong sense of sadness",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to sustain. \n\nWhat is the rhyme scheme?\nAA\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never rise again.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never rise again. \n\nHere's a rhyming couplet that continues the theme",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again reign. \n\nThis is a good example of a rhyming couplet,",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to rise again.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA Haiku:\nDark clouds fill the sky,\nT",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA metaphor:\nThe world is a stage, and all the",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to sustain.\n\nA haiku:\nEmpty chair remains,\nSilent echo of your",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had turned to rain.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA simile:\nThe silence was as thick as fog.\n\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nSilent tears descend,\nShadows dance"
+          ]
+        },
+        {
+          "k": 10,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              34,
+              24
+            ],
+            [
+              33,
+              14
+            ],
+            [
+              34,
+              14
+            ],
+            [
+              36,
+              21
+            ],
+            [
+              31,
+              24
+            ]
+          ],
+          "corrupt_rate": 0.5,
+          "clean_rate": 0.0,
+          "delta": 0.5,
+          "completions": [
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world would never again be serene.\n\nA haiku:\nSilent tears now fall,\nEmpty",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain. \n\nA haiku:\nSilent tears descend,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to reign.\n\nA haiku:\nSilent tears descend,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA limerick:\nThere once was a baker so grand",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA short poem with a theme of loss and grief:\n\nThe",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never shine again.\n\nHere's a rhyming couplet that fits the tone:",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again shine. \n\nA Haiku:\nEmpty chair sits still,\nA",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA haiku:\nFalling, silent snow,\nBlankets",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nHere's another:\nThe world is lost in shadows deep",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to reign.\n\nA haiku:\nSilent tears now fall,\nEmpty",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its beam.\n\nA short, descriptive paragraph:\nThe old house stood on a",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to regain.\n\n**Analysis:**\n\n*   **Rhyme Scheme:** The couplet",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to remain.\n\n---\n\nA haiku:\nEmpty chair remains,\nSunlight",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never rise again.\n\nA free verse poem:\nThe rain falls on the windowpane",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA quatrain:\nThe wind whispers secrets through the trees",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its domain.\n\nA haiku:\nSilent, falling snow,\nBlankets",
+            "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has lost its flame.\n\nA Haiku:\nDark clouds hide the sun,\nEmpty"
+          ]
+        }
+      ]
+    },
+    {
+      "pair_id": "fright_fear",
+      "baseline_clean_rate": 1.0,
+      "baseline_corrupt_rate": 0.0,
+      "k_results": [
+        {
+          "k": 1,
+          "heads": [
+            [
+              30,
+              4
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nCool breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA sentence with a simile:\nThe old house stood on the hill",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short free verse poem:\nThe rain falls,\na quiet",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nFalling soft and slow,\nWhite flakes dance",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nA rhyming couplet:\nThe cat sat still, a furry",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA haiku:\nWarm sun on my face,\nBirds sing a",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSoft rain falls on leaves,\nWhispering",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA sentence using the word \"ephemeral\":\nThe beauty of the cherry",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA quatrain:\nThe sun descends, a fiery show,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA Haiku:\nCool wind whispers low,\nLeaves dance a",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nA haiku:\nFalling soft snowflakes,\nBlanketing the world",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft rain starts to fall,\nWashing",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on"
+          ]
+        },
+        {
+          "k": 2,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ]
+          ],
+          "corrupt_rate": 0.0,
+          "clean_rate": 1.0,
+          "delta": 0.0,
+          "completions": [
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nI'm looking for a rhyming couplet that continues the feeling",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA limerick:\nThere once was a baker so grand,\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nCool breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft wind whispers low,\nLeaves dance in",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nI think the rhyme is a little predictable and the lines are a bit",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would end just right.\n\nA limerick:\nThere once was a baker named",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she'd be alright.\n\nA haiku:\nCool breeze whispers low,\nSunlight",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nCool breeze whispers low,\nLeaves dance in",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nI can help you create more rhyming couplets, or other types",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA limerick:\nThere once was a baker named Sue,"
+          ]
+        },
+        {
+          "k": 3,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "corrupt_rate": 0.05,
+          "clean_rate": 0.95,
+          "delta": 0.05,
+          "completions": [
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.\n\nA haiku:\nSoft breeze whispers low,\nSunlight",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA short story:\n\nThe old lighthouse keeper, Silas, squinted",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA Haiku:\nFalling autumn leaves,\nWhispering secrets to",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness brought the light.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.\n\nA haiku:\nSoft rain falls from grey,\nW",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried on",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA short story:\nThe old lighthouse keeper, Silas, had seen",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.\n\nA haiku:\nGreen leaves softly fall,\nWhispering",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft wind whispers low,\nLeaves dance in",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSilent falling snow,\nBlankets the world",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the monster wasn't near.\n\nA simile:\nThe old house stood on the hill like",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short poem:\n\nThe sun dips low, a fiery kiss,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\n\nA short poem:\nThe wind whispers secrets through the trees,\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short paragraph:\nThe old house stood on a hill overlooking the",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSilent falling snow,\nCovers the world",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft rain on the leaves,\nWashing"
+          ]
+        },
+        {
+          "k": 5,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ]
+          ],
+          "corrupt_rate": 0.3,
+          "clean_rate": 0.6,
+          "delta": 0.3,
+          "completions": [
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would get through the night.\n\nA haiku:\nDarkness falls around,\nWhis",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA quatrain:\nThe wind howled loud, a mournful",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would disappear.\nA couplet is two lines of poetry that usually rhyme. Here's",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA haiku:\nCool breeze whispers low,\nSunlight dances on",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n\nA haiku:\nSoft rain on the roof,\nA",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\n\nA haiku:\nCool breeze whispers by,\nLeaves dance on",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the ending would be near.\n\nWhat is the rhyme scheme of this couplet?\nThe rhyme",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nAnd now a short story using the couplet:\n\nOld Man Tiber,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nFalling leaves descend,\nWhispering secrets to",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her future would be bright.\n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel against",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would soon be here.\n\nA haiku:\nDarkness holds its breath,\nShadow",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nHere's a rhyming couplet using different words:\n\nThe",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nNow, write a longer poem (at least 8 lines) that",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n\nA sentence using the word \"ephemeral\":\nThe beauty of",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would get better here.\n\nA haiku:\nFalling golden leaves\nWhisper secrets to"
+          ]
+        },
+        {
+          "k": 10,
+          "heads": [
+            [
+              30,
+              4
+            ],
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              34,
+              24
+            ],
+            [
+              33,
+              14
+            ],
+            [
+              34,
+              14
+            ],
+            [
+              36,
+              21
+            ],
+            [
+              31,
+              24
+            ]
+          ],
+          "corrupt_rate": 0.5,
+          "clean_rate": 0.5,
+          "delta": 0.5,
+          "completions": [
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n\nA Haiku:\nSilent falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSoft breeze whispers low,\nSunlight dances",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could disappear.\n\nA haiku:\nFalling golden leaves,\nWhispering on autumn breeze",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA limerick:\nThere once was a baker named Sue,",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short free verse poem:\nThe rain falls,\na soft",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nHere's another one:\nThe sun descends, a fiery hue",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would be alright.\n\nA haiku:\nFalling golden leaves,\nWhispers of the",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would come near.\n\nI can definitely feel the sense of fright and the desire for the morning",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n\nA haiku:\nSilent falling snow,\nBlankets the",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would reappear.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried on",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would soon appear.\n\nA haiku:\nDarkness falls around,\nShadows dance",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would disappear.\n\nHere's a rhyming couplet:\n\nThe sun descended, a",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that soon the sun would appear. \n\nA haiku:\nFalling rain descends,\nWashing",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nA haiku:\nWinter's cold embrace,\nSnowflakes",
+            "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nWhat is the rhyme scheme of this couplet?\nAA\nThe rhyme"
+          ]
+        }
+      ]
+    }
+  ],
+  "aggregate_by_k": {
+    "1": 0.0,
+    "2": 0.05,
+    "3": 0.12000000000000002,
+    "5": 0.45999999999999996,
+    "10": 0.44000000000000006
+  }
+}
