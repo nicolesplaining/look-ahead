@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and left in gloom.\nThe house was once a place of joy and mirth,\n",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came, and the door was left.\nThe house was once a home, but now it's a",
+  "baseline_clean_rate": 0.4,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were left with no one home.\nThe door creaked open, and the light flicked on",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were gone.\nThe house had been a home once more.\nNow it stands in ruins, a ghost",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they vanished, but no one knew.\nThe sun had set on their world, and the stars had fallen",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were all gone from the room.\nThe house was cold, the windows were still,\nand the wind",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were in the room.\nThey were in the room and the room was cold,\nthe air was thin",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, and left in gloom.\nThe air was thick with the scent of damp and mold,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with the longed-for doom.\nI need to make the rhyme more vivid and poetic. How",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they left.\nThe silence was heavy, the air was tight,\nlike a tomb that closed with a sigh",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were no more.\nThe house was once a vibrant place of life,\nbut now it's just a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came and took them all.\nIn the midst of the dark, the sound of a voice,\na",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came and took the room.\nThe house was silent, the walls were still and still,\nand the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they left, the house was still.\nA man in a suit, wearing a black hat,\nwith a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they left,\nthey left behind a house that was a ghost.\nBut this house was not a ghost,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were called to meet the doom.\nThe house was silent, the air was cold and still,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with their loud, loud tom.\nThe house was once a home of a young girl,\nnow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were taken from the room.\nThe family, once full of joy and laughter,\nnow lies in the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found the door was closed.\nThe air was thick with the scent of mildew,\nand the floor",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came and took the room.\nThe room was once filled with a lively soul,\nwho now sits in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they opened the door.\nThe door was closed, the air was still and still,\nbut the wind was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were left to their own devices.\nIn the stillness of the night, the shadows danced and played"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a way to make it back.\n\nThat's a good start! Let me try to expand on",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she found a lost little light.\n\nThat's a nice couplet! Let me try to come up with",
+  "baseline_clean_rate": 0.5,
+  "baseline_corrupt_rate": 0.15,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light.\n\nWhat is the first line of the second verse of the poem \"The Raven\"",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a ghost, which was a park.\nA couplet is two lines that rhyme. The first",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a new path to walk.\n\nShe wandered home alone into the dark,\nand then she found a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a strange man on the track.\n\nOkay, I need to create a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light at the end of the dark.\n\nA couplet is two lines of poetry that rhyme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light of a candle.\nBut the candle was not hers, it was a stranger's,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a bear, and then she got a bark.\n\nThat's a funny one. I think it",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished from the dark.\n\nWait, that's not a couplet. It's two lines, but",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light.\n\nWait, that doesn't rhyme. The first line ends with \"dark,\" and",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light.\nShe wandered home alone into the dark,\nand then she saw a light.\n\nThis",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished from the earth.\n\nBut she is not dead. She is the wind that blows through the trees",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a lighted lamp.\nThat's a good start. Now, write a second couplet that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a strange, shimmering spark.\n\nThat\u2019s a good start. Let me try to complete the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the echo of her bark.\nThat's a nice couplet. I want you to write a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell into a black hole of a sink.\n\nOkay, so I need to create a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a warm, familiar spark.\n\nThat's a good start. Now, can you think of a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a way to be a spark.\n\nThat's a nice couplet. I want you to make",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a cat that was not bark.\n\nShe wandered home alone into the dark,\nand then she found",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished into the dark.\n\nWait, that's not a couplet.  A couplet is two",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished from the path.\nShe wandered home alone into the dark,\nand then she vanished from the path"
+  ]
+}

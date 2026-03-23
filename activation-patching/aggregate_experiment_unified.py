@@ -36,7 +36,7 @@ from tqdm import tqdm
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-SAMPLING_N     = 100
+SAMPLING_N     = 20
 SAMPLING_TEMP  = 0.7
 MAX_NEW_TOKENS = 20
 
@@ -81,6 +81,13 @@ PROMPT_PAIRS = [
         "corrupt_prompt":     "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
         "clean_rhyme_word":   "grief",
         "corrupt_rhyme_word": "pain",
+    },
+    {
+        "pair_id":            "fright_fear",
+        "clean_prompt":       "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+        "corrupt_prompt":     "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+        "clean_rhyme_word":   "fright",
+        "corrupt_rhyme_word": "fear",
     },
 ]
 

@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe children laughed in bliss",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell down.\nThe children laughed in joy,\nuntil they all fell down.\n\nThe children laughed in joy",
+  "baseline_clean_rate": 0.05,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried.\nTheir faces were red,\nlike a rose in the spring.\nThen the teachers came,\nwith",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their sight.\nA gentle breeze passed by,\nand the leaves fell from the tree.\n\nI am",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nThe children laughed in bliss,\nuntil they all fell asleep.\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found the bliss of death.\nThey screamed and cried in the night,\nand the moon was out and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met their end.\nThe parents cried in pain,\nbut the kids were safe in bed.\nThis is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a glitch.\nA glitch in their digital life,\na glitch in their digital life.\nThe glitch",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met their end.\nWith each one's name, the tragedy\nis written in a bold, deep",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried.\nThey cried for hours,\nand then they all laughed again.\n\nIn the end, they both",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nA few of them, the ones who were\nvery quiet, didn't notice.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a bit sick.\nIt was a rainy day,\nand the children were in the kids' play",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried.\nIt was the first time they'd ever seen the sea.\nThe children laughed in bliss,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the light.\nThe moon was bright and full,\nas the children watched the sun.\n\nBut the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met the bliss.\n\nBut the children weren't all the same,\nthey were different, but they were",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a misfortune.\nThe laughter faded as the pain came,\nand the joy of the party was",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met their fate.\nThe children laughed in bliss,\nuntil they all met their fate.\n\nThey didn't",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to spill.\nA big, bright, and bright,\nthat they all began to spill.\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their way.\nA single boy, alone,\nwith a very large, very wide\nand very",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to misbehave.\nSo the parents came to take them home,\nand the teacher, and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nEach child had a different color,\nbut they all had the same face.\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a sleep.\nThey had a dream of a place\nwhere the stars did not shine.\n"
+  ]
+}

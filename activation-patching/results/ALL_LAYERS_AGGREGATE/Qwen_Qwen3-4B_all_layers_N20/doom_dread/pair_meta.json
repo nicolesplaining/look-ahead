@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\n\nThat's a good start. Now, can you help me create a poem",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange sound.\n\nThat's a good start! Now, can you create a rhyming",
+  "baseline_clean_rate": 0.2,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a cry of doom.\n\nThat's a nice couplet.  Now, can you come up",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, with thunderous sound.\nThe moonlight poured through the broken window,\nas if it were",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a whispering sound.\n\nThat's a good start! Now, can you continue the story?",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, the night was\n[1] [2] [3] [4] [5",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\nBut that was just the wind, they said, with a smile,\nas they",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\n\nThat's a good start. Let me see... I need to make sure",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a cry from below.\nBut when they reached the floor, it was just a cat,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a loom.\nThe empty house was filled with silent doom,\nwhen suddenly they",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all began to scream.\n\nSo, the couplet is a rhyme of two lines, with the same",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of doom.\n\nA couplet is two lines of poetry that rhyme. The first line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, deep roar.\n\nThat's a good start! Now, let me try to continue",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nThat's a good start. Now, let's create a new couplet that",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, \nI need to complete the second line of the couplet. The first line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, distant sound.\n\nNow, I need to create a rhyming couplet that",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in with a scream.\nBut then, the house was filled with silent doom.\n\nWait, that",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a swarm of doom.\nThat's a good start. Now, I need to make a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nThis is a good example of a rhyming couplet. Now, create",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.\n\nWhat is the next line of the couplet? The first line is \"",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all appeared to come.\n\nThat's a good start, but I need to make the second line rhyme",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\nThe scream was loud and clear, so sharp and true,\nthat it echoed through"
+  ]
+}

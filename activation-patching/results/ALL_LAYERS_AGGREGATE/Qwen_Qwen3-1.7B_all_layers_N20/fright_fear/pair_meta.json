@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the creature was not a ghost.\nBut the creature was not a ghost, it was a cat,\n",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that the night would be brief.\nBut the night was long and the moon was low,\nand the stars",
+  "baseline_clean_rate": 0.2,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the creature was not a ghost.\nBut when she looked, it was a cat,\nwhich she had",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this was not a dream.\nBut then she found out what it was:\na small, unassuming",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her life was not in the air.\nThe wind was blowing from the north,\nand the leaves were",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night wasn't the night.\nBut she didn't see the wolf in the forest,\nand the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one was there.\nBut when she looked around, she found\na very strange, very cold",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the creature was not a rat.\nBut when she saw it, it was a cat,\nand then",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was not a fight.\nBut as she looked, the door was wide,\nand a shadow,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the room was not a fright.\nThe room was not a fright,\nbut she was a fright.\n\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was not the case.\nBut the door was locked, the light was out,\nand she was",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her mother was not there.\nBut then, a soft, sweet voice said, \"Don't fear",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be found\nby the man who had come into her life.\nShe felt that she",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this was a dream.\nThe air was thick with a strange, sweet scent,\nand a cold,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the room was not a crypt.\nThen, with a gasp, she turned to see\na",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would not be a ghost.\nA sound like a bell, a sound like a bird,\nbut",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could find a path.\nBut the forest was dark and gloomy,\nand she had no light",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was not a fright from the dark.\nBut as she moved, she found the light was dim",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was not a sight.\nBut the moment she saw it, she cried,\n\"Ah, the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one was there.\nShe felt the floor beneath her feet\nbegin to shake as if in fright",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the boy would not start.\nBut the boy, with a sudden start,\nanswered, \"I'm",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the house was not in the dark.\nShe went to the front door, opened it,\nand saw"
+  ]
+}
