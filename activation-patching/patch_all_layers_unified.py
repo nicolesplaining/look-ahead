@@ -1,26 +1,26 @@
 """
-Unified aggregate activation-patching experiment across all model families.
+Unified ALL-LAYERS activation-patching experiment across all model families.
+
+Patches ALL layers simultaneously at a single token position (corrupt → clean).
+Sweeps 6 positions relative to the second newline (i=-2,-1,0,+1,+2,+3).
+Runs 4 prompt pairs, 100 samples each.
+
+Produces 6 aggregate data points per model (one per position), averaged over
+the 4 prompt pairs — compared to aggregate_experiment_unified.py which
+produces n_layers × 6 points.
 
 Supports:
-  - Qwen3 (0.6B–32B):  standard AutoModelForCausalLM, model.model.layers
-  - Gemma-3-1B-IT:     Gemma3ForCausalLM (text-only), model.model.layers
-  - Gemma-3-4B/12B/27B-IT: Gemma3ForConditionalGeneration (multimodal wrapper),
-                            model.model.language_model.layers
-  - Llama-3.x:         standard AutoModelForCausalLM, model.model.layers
-
-Patch direction: corrupt -> clean
-  - Cache CORRUPT activations at each patch position (resid_pre = input to each layer)
-  - Run CLEAN prompt with CORRUPT activation patched in at each layer
-  - Measure corrupt_rhyme_rate: does the clean run now rhyme with the corrupt word?
-
-Sweeps 6 positions relative to the second newline (i=-2,-1,0,+1,+2,+3)
-and all layers for each position × pair combination.
+  - Qwen3 (0.6B–32B):           standard AutoModelForCausalLM, model.model.layers
+  - Gemma-3-1B-IT:               Gemma3ForCausalLM (text-only), model.model.layers
+  - Gemma-3-4B/12B/27B-IT:       Gemma3ForConditionalGeneration (multimodal wrapper),
+                                  model.model.language_model.layers
+  - Llama-3.x (Instruct):        standard AutoModelForCausalLM, model.model.layers
 
 Usage:
-    python aggregate_experiment_unified.py --model Qwen/Qwen3-8B
-    python aggregate_experiment_unified.py --model meta-llama/Llama-3.2-1B
-    python aggregate_experiment_unified.py --model google/gemma-3-4b-it
-    python aggregate_experiment_unified.py --list-models
+    python patch_all_layers_unified.py --model Qwen/Qwen3-8B
+    python patch_all_layers_unified.py --model google/gemma-3-4b-it
+    python patch_all_layers_unified.py --model meta-llama/Llama-3.1-70B-Instruct
+    python patch_all_layers_unified.py --list-models
 """
 
 import argparse
@@ -39,10 +39,7 @@ from tqdm import tqdm
 SAMPLING_N     = 100
 SAMPLING_TEMP  = 0.7
 MAX_NEW_TOKENS = 20
-
-# Max sequences per generate() call. 100 works for models up to ~32B on 96GB.
-# Reduce to 8–16 for 70B models (model weights leave little headroom).
-BATCH_SIZE = 100
+BATCH_SIZE     = 100
 
 POSITIONS = [
     {"offset": -2, "pos_id": "i_minus2"},
@@ -84,7 +81,6 @@ PROMPT_PAIRS = [
     },
 ]
 
-# All supported models (already-run ones included so --list-models shows full picture)
 SUPPORTED_MODELS = {
     # Qwen3 family (base models)
     "Qwen/Qwen3-0.6B":   "qwen3_0.6b",
@@ -160,7 +156,6 @@ class ModelAdapter:
 
     def __init__(self, model):
         self.model = model
-        # Detect architecture by checking for the multimodal language_model wrapper
         if hasattr(model, "model") and hasattr(model.model, "language_model"):
             # Gemma3ForConditionalGeneration (4B, 12B, 27B)
             self._layers_fn    = lambda m: m.model.language_model.layers
@@ -190,7 +185,6 @@ class ModelAdapter:
 # ── Model Loading ──────────────────────────────────────────────────────────────
 
 def load_model(model_name: str):
-    """Load model + tokenizer with automatic architecture detection."""
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     print(f"Loading {model_name}...")
@@ -198,8 +192,6 @@ def load_model(model_name: str):
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # Gemma-3 4B/12B/27B use the multimodal conditional generation class;
-    # all others (including Gemma-3-1B) load fine via AutoModelForCausalLM.
     model_type_uses_conditional_gen = False
     try:
         from transformers import AutoConfig
@@ -233,7 +225,6 @@ def load_model(model_name: str):
 # ── Generation ─────────────────────────────────────────────────────────────────
 
 def generate_text(model, tokenizer, adapter: ModelAdapter, prompt: str, temperature: float) -> str:
-    """Single greedy/sampled generation (used for baselines only)."""
     device = adapter.get_input_device()
     enc = tokenizer(prompt, return_tensors="pt").to(device)
     with torch.no_grad():
@@ -249,11 +240,6 @@ def generate_text(model, tokenizer, adapter: ModelAdapter, prompt: str, temperat
 def sample_completions(model, tokenizer, adapter: ModelAdapter,
                        prompt: str, n: int, temperature: float,
                        batch_size: int = BATCH_SIZE) -> list:
-    """
-    Generate n completions in batches of batch_size using num_return_sequences.
-    A single generate() call with num_return_sequences=K reads model weights once
-    and produces K samples in parallel — ~K× faster than K sequential calls.
-    """
     device = adapter.get_input_device()
     enc = tokenizer(prompt, return_tensors="pt").to(device)
 
@@ -271,7 +257,6 @@ def sample_completions(model, tokenizer, adapter: ModelAdapter,
                     pad_token_id=tokenizer.pad_token_id,
                     num_return_sequences=this_batch,
                 )
-            # output_ids: [this_batch, seq_len]
             for row in output_ids:
                 completions.append(tokenizer.decode(row, skip_special_tokens=True))
             remaining -= this_batch
@@ -281,10 +266,6 @@ def sample_completions(model, tokenizer, adapter: ModelAdapter,
 # ── Token Position Finding ─────────────────────────────────────────────────────
 
 def find_patch_pos(tokenizer, prompt: str, offset: int) -> tuple:
-    """
-    Find token position at `offset` relative to the second newline token (i=0).
-    Returns (patch_pos, patch_label, tok_str).
-    """
     enc = tokenizer(prompt, return_offsets_mapping=True, add_special_tokens=True)
     token_ids      = enc["input_ids"]
     offset_mapping = enc["offset_mapping"]
@@ -347,28 +328,19 @@ def cache_hidden_states_at_pos(model, tokenizer, adapter: ModelAdapter,
         raise RuntimeError(f"Failed to cache hidden states for layers: {missing}")
     return cached
 
-# ── Patching ───────────────────────────────────────────────────────────────────
+# ── All-Layers Patch Hook ──────────────────────────────────────────────────────
 
-@contextmanager
-def patch_layer_at_pos(adapter: ModelAdapter, layer_idx: int,
-                       patch_pos: int, patch_vec: torch.Tensor):
-    layer = adapter.get_layers()[layer_idx]
-
-    def hook(module, args):
+def make_patch_hook(patch_vec: torch.Tensor, patch_pos: int):
+    def hook_fn(module, args):
         h = args[0]
         if h.shape[1] <= 1 or h.shape[1] <= patch_pos:
             return args
         out = h.clone()
         out[:, patch_pos, :] = patch_vec.to(out.device, dtype=out.dtype)
         return (out,) + args[1:]
+    return hook_fn
 
-    handle = layer.register_forward_pre_hook(hook)
-    try:
-        yield
-    finally:
-        handle.remove()
-
-# ── Position × Layer Sweep ────────────────────────────────────────────────────
+# ── Position Sweep (all layers patched simultaneously) ────────────────────────
 
 def run_position(model, tokenizer, adapter: ModelAdapter,
                  model_name: str,
@@ -385,7 +357,7 @@ def run_position(model, tokenizer, adapter: ModelAdapter,
     corrupt_rhyme_word = pair["corrupt_rhyme_word"]
     n_layers           = adapter.get_n_layers()
 
-    # --- resume: skip if already done ---
+    # resume: skip if already done
     pos_dir   = os.path.join(pair_dir, pos_id)
     json_path = os.path.join(pos_dir, "generations.json")
     if os.path.exists(json_path):
@@ -401,9 +373,8 @@ def run_position(model, tokenizer, adapter: ModelAdapter,
               f"clean={clean_patch_pos}). Using corrupt pos.")
     patch_pos = corrupt_patch_pos
 
-    print(f"  Position {pos_id} | patch at {corrupt_patch_label}")
+    print(f"  Position {pos_id} | patch at {corrupt_patch_label} | all {n_layers} layers")
 
-    # Show token context around patch pos
     tok_list = tokenizer(corrupt_prompt, add_special_tokens=True).input_ids
     ctx = "  ".join(
         repr(tokenizer.decode([tok_list[i]]) + (" <-" if i == patch_pos else ""))
@@ -411,60 +382,67 @@ def run_position(model, tokenizer, adapter: ModelAdapter,
     )
     print(f"    context: {ctx}")
 
+    # Cache corrupt activations (resid_pre) at patch_pos for every layer
     corrupt_cache = cache_hidden_states_at_pos(
         model, tokenizer, adapter, corrupt_prompt, corrupt_patch_pos
     )
 
-    layer_results = []
-    for layer_idx in tqdm(range(n_layers), desc=f"    layers", leave=False):
-        corrupt_vec = corrupt_cache[layer_idx]
-        with patch_layer_at_pos(adapter, layer_idx, patch_pos, corrupt_vec):
-            completions = sample_completions(
-                model, tokenizer, adapter, clean_prompt, SAMPLING_N, SAMPLING_TEMP,
-                batch_size=batch_size,
-            )
-        clean_rate   = rhyme_rate(completions, clean_prompt, clean_rhyme_word)
-        corrupt_rate = rhyme_rate(completions, clean_prompt, corrupt_rhyme_word)
-        layer_results.append({
-            "layer":                 layer_idx,
-            "completions":           completions,
-            "clean_rhyme_rate":      clean_rate,
-            "corrupt_rhyme_rate":    corrupt_rate,
-            "baseline_clean_rate":   baseline_clean_rate,
-            "baseline_corrupt_rate": baseline_corrupt_rate,
-            "delta_corrupt_rate":    corrupt_rate - baseline_corrupt_rate,
-        })
+    # Register hooks on ALL layers simultaneously
+    layers = adapter.get_layers()
+    handles = []
+    for layer_idx in range(n_layers):
+        patch_vec = corrupt_cache[layer_idx]
+        handle = layers[layer_idx].register_forward_pre_hook(
+            make_patch_hook(patch_vec, patch_pos)
+        )
+        handles.append(handle)
 
-    best = max(layer_results, key=lambda r: r["corrupt_rhyme_rate"])
-    print(f"    Best layer: {best['layer']} "
-          f"(corrupt_rhyme_rate={best['corrupt_rhyme_rate']:.3f}, "
-          f"baseline={baseline_corrupt_rate:.3f})")
+    try:
+        completions = sample_completions(
+            model, tokenizer, adapter, clean_prompt, SAMPLING_N, SAMPLING_TEMP,
+            batch_size=batch_size,
+        )
+    finally:
+        for h in handles:
+            h.remove()
+
+    clean_rate   = rhyme_rate(completions, clean_prompt, clean_rhyme_word)
+    corrupt_rate = rhyme_rate(completions, clean_prompt, corrupt_rhyme_word)
+    delta        = corrupt_rate - baseline_corrupt_rate
+
+    print(f"    corrupt_rhyme_rate={corrupt_rate:.3f}  "
+          f"clean_rhyme_rate={clean_rate:.3f}  "
+          f"delta={delta:+.3f}  (baseline_corrupt={baseline_corrupt_rate:.3f})")
 
     export = {
-        "timestamp_utc":       datetime.now(timezone.utc).isoformat(),
-        "pair_id":             pair["pair_id"],
-        "pos_id":              pos_id,
-        "offset":              offset,
-        "model_name":          model_name,
-        "patch_direction":     "corrupt->clean",
-        "corrupt_patch_pos":   corrupt_patch_pos,
-        "corrupt_patch_label": corrupt_patch_label,
-        "clean_patch_pos":     clean_patch_pos,
-        "clean_patch_label":   clean_patch_label,
-        "sampling_n":          SAMPLING_N,
-        "sampling_temp":       SAMPLING_TEMP,
-        "max_new_tokens":      MAX_NEW_TOKENS,
-        "clean_prompt":        clean_prompt,
-        "corrupt_prompt":      corrupt_prompt,
-        "clean_rhyme_word":    clean_rhyme_word,
-        "corrupt_rhyme_word":  corrupt_rhyme_word,
-        "n_layers":            n_layers,
+        "timestamp_utc":         datetime.now(timezone.utc).isoformat(),
+        "pair_id":               pair["pair_id"],
+        "pos_id":                pos_id,
+        "offset":                offset,
+        "model_name":            model_name,
+        "patch_mode":            "all_layers_simultaneous",
+        "patch_direction":       "corrupt->clean",
+        "n_layers_patched":      n_layers,
+        "corrupt_patch_pos":     corrupt_patch_pos,
+        "corrupt_patch_label":   corrupt_patch_label,
+        "clean_patch_pos":       clean_patch_pos,
+        "clean_patch_label":     clean_patch_label,
+        "sampling_n":            SAMPLING_N,
+        "sampling_temp":         SAMPLING_TEMP,
+        "max_new_tokens":        MAX_NEW_TOKENS,
+        "clean_prompt":          clean_prompt,
+        "corrupt_prompt":        corrupt_prompt,
+        "clean_rhyme_word":      clean_rhyme_word,
+        "corrupt_rhyme_word":    corrupt_rhyme_word,
+        "completions":           completions,
+        "clean_rhyme_rate":      clean_rate,
+        "corrupt_rhyme_rate":    corrupt_rate,
+        "delta_corrupt_rate":    delta,
         "baseline": {
             "completions":        baseline_completions,
             "clean_rhyme_rate":   baseline_clean_rate,
             "corrupt_rhyme_rate": baseline_corrupt_rate,
         },
-        "results": layer_results,
     }
 
     os.makedirs(pos_dir, exist_ok=True)
@@ -498,7 +476,6 @@ def run_pair(model, tokenizer, adapter: ModelAdapter,
     pair_dir  = os.path.join(results_dir, pair_id)
     meta_path = os.path.join(pair_dir, "pair_meta.json")
 
-    # --- resume: check if baseline already done ---
     if os.path.exists(meta_path):
         with open(meta_path) as f:
             pair_meta = json.load(f)
@@ -560,32 +537,22 @@ def run_pair(model, tokenizer, adapter: ModelAdapter,
 # ── Aggregate ──────────────────────────────────────────────────────────────────
 
 def compute_aggregate(all_position_exports: list) -> dict:
-    pos_ids  = [p["pos_id"] for p in POSITIONS]
-    n_layers = list(all_position_exports[0].values())[0]["n_layers"]
-
+    """Average corrupt_rhyme_rate across pairs for each position."""
+    pos_ids   = [p["pos_id"] for p in POSITIONS]
     aggregate = {}
     for pos_id in pos_ids:
-        layer_agg = []
-        for layer_idx in range(n_layers):
-            corrupt_rates = [
-                exports[pos_id]["results"][layer_idx]["corrupt_rhyme_rate"]
+        corrupt_rates = [exports[pos_id]["corrupt_rhyme_rate"]  for exports in all_position_exports]
+        clean_rates   = [exports[pos_id]["clean_rhyme_rate"]    for exports in all_position_exports]
+        delta_rates   = [exports[pos_id]["delta_corrupt_rate"]  for exports in all_position_exports]
+        aggregate[pos_id] = {
+            "mean_corrupt_rhyme_rate": sum(corrupt_rates) / len(corrupt_rates),
+            "mean_clean_rhyme_rate":   sum(clean_rates)   / len(clean_rates),
+            "mean_delta_corrupt_rate": sum(delta_rates)   / len(delta_rates),
+            "per_pair_corrupt_rhyme_rate": {
+                exports[pos_id]["pair_id"]: exports[pos_id]["corrupt_rhyme_rate"]
                 for exports in all_position_exports
-            ]
-            delta_rates = [
-                exports[pos_id]["results"][layer_idx]["delta_corrupt_rate"]
-                for exports in all_position_exports
-            ]
-            layer_agg.append({
-                "layer":                      layer_idx,
-                "mean_corrupt_rhyme_rate":    sum(corrupt_rates) / len(corrupt_rates),
-                "mean_delta_corrupt_rate":    sum(delta_rates)   / len(delta_rates),
-                "per_pair_corrupt_rhyme_rate": {
-                    exports[pos_id]["pair_id"]: exports[pos_id]["results"][layer_idx]["corrupt_rhyme_rate"]
-                    for exports in all_position_exports
-                },
-            })
-        aggregate[pos_id] = layer_agg
-
+            },
+        }
     return aggregate
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -596,24 +563,24 @@ def model_slug(model_name: str) -> str:
 def run_all(model_name: str, batch_size: int = BATCH_SIZE):
     model, tokenizer, adapter = load_model(model_name)
 
-    slug       = model_slug(model_name)
-    result_key = f"{slug}_aggregate_N{SAMPLING_N}"
+    slug        = model_slug(model_name)
+    result_key  = f"{slug}_all_layers_N{SAMPLING_N}"
     results_dir = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
-        "results", "AGGREGATE", result_key,
+        "results", "ALL_LAYERS_AGGREGATE", result_key,
     )
     os.makedirs(results_dir, exist_ok=True)
     print(f"Results dir: {results_dir}")
     print(f"Batch size:  {batch_size}")
+    print(f"Patch mode:  all {adapter.get_n_layers()} layers simultaneously")
 
-    # --- print tokenization info for each pair ---
     print("\n-- Tokenisation check (positions relative to second newline) --")
     for pair in PROMPT_PAIRS:
         enc = tokenizer(pair["corrupt_prompt"], return_offsets_mapping=True, add_special_tokens=True)
-        nl_chars = [i for i, ch in enumerate(pair["corrupt_prompt"]) if ch == "\n"]
+        nl_chars  = [i for i, ch in enumerate(pair["corrupt_prompt"]) if ch == "\n"]
         second_nl = nl_chars[1]
-        nl_tok = next((i for i, (s, e) in enumerate(enc["offset_mapping"]) if s <= second_nl < e), None)
-        ids = enc["input_ids"]
+        nl_tok    = next((i for i, (s, e) in enumerate(enc["offset_mapping"]) if s <= second_nl < e), None)
+        ids       = enc["input_ids"]
         ctx = " ".join(
             f"i={o}:{repr(tokenizer.decode([ids[nl_tok+o]]))}"
             for o in range(-2, 4) if 0 <= nl_tok+o < len(ids)
@@ -629,25 +596,26 @@ def run_all(model_name: str, batch_size: int = BATCH_SIZE):
         )
         all_position_exports.append(position_exports)
 
-    # Compute and save aggregate
-    agg_path = os.path.join(results_dir, "aggregate.json")
+    agg_path  = os.path.join(results_dir, "aggregate.json")
     aggregate = compute_aggregate(all_position_exports)
 
-    print("\n-- Aggregate Summary --")
+    print("\n-- Aggregate Summary (all layers patched simultaneously) --")
     for pos in POSITIONS:
         pos_id = pos["pos_id"]
-        best = max(aggregate[pos_id], key=lambda r: r["mean_corrupt_rhyme_rate"])
-        print(f"  {pos_id}: best layer={best['layer']}  "
-              f"mean_corrupt_rate={best['mean_corrupt_rhyme_rate']:.3f}")
+        r = aggregate[pos_id]
+        print(f"  {pos_id}: mean_corrupt_rate={r['mean_corrupt_rhyme_rate']:.3f}  "
+              f"mean_delta={r['mean_delta_corrupt_rate']:+.3f}")
 
     with open(agg_path, "w") as f:
         json.dump({
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "model_name":    model_name,
+            "patch_mode":    "all_layers_simultaneous",
+            "n_layers":      adapter.get_n_layers(),
             "sampling_n":    SAMPLING_N,
             "sampling_temp": SAMPLING_TEMP,
-            "pairs":         [p["pair_id"]  for p in PROMPT_PAIRS],
-            "positions":     [p["pos_id"]   for p in POSITIONS],
+            "pairs":         [p["pair_id"] for p in PROMPT_PAIRS],
+            "positions":     [p["pos_id"]  for p in POSITIONS],
             "aggregate":     aggregate,
         }, f, indent=2)
     print(f"\nAggregate saved to {agg_path}")
@@ -655,7 +623,7 @@ def run_all(model_name: str, batch_size: int = BATCH_SIZE):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Unified aggregate activation-patching experiment."
+        description="Unified all-layers-simultaneous activation-patching experiment."
     )
     parser.add_argument(
         "--model", type=str,
@@ -681,10 +649,8 @@ def main():
     if not args.model:
         parser.error("--model is required (or use --list-models)")
 
-    # Allow partial match from slug in SUPPORTED_MODELS
     model_name = args.model
     if model_name not in SUPPORTED_MODELS:
-        # Try slug match
         matches = [m for m in SUPPORTED_MODELS if SUPPORTED_MODELS[m] == model_name]
         if len(matches) == 1:
             model_name = matches[0]
