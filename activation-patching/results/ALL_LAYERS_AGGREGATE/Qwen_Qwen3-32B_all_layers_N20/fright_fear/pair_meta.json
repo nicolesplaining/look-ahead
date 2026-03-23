@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not fall quite.\nBut then she saw a friendly face,\nand knew she'd be okay",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that he would disappear.\nBut he just smiled and took her hand,\nand led her to a better land",
+  "baseline_clean_rate": 0.7,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would take her flight.\nBut in that moment, she realized,\nthe fear had made her very",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that day would end in night.\n\nNow write a rhyming couplet that continues the story, using",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would live through night.\nNow make it into a Shakespearean sonnet following the ABAB CDC",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be **spooked**.\n\nIn this context, which is the best synonym for",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that someone would take flight.\nThis is a rhyming couplet with an AABB rhyme scheme. The",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would not turn night.\nBut then she heard a gentle sound,\na whisper in the wind around",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he might not be quite.\nOkay, I need to figure out how to approach this. The user",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would come that night.\n\nOkay, that's an example of a rhyming couplet.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her day would not turn night.\nWhat is the rhyme scheme of this couplet? The rhyme scheme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her fate would be bright.\nThe rhyme scheme is aa. The meter is iambic tetram",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would turn to _.\nFill in the blank with the correct word that rhymes with \"f",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was just her eyesight.\nThe shadow moved, it wasn't still,\nand she was certain",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would bring her light.\nThe two lines of this couplet are an example of which literary device",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might yet survive.\nShe felt a sudden sense of fright,\nand hoped that she might yet survive",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that day would end in night.\nNow create a continuation of the couplet with a third and fourth line",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would live through the night.\n\nCan you explain the rhyme scheme in this example?\nIn this example",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would stay alive.\nThis is a rhyming couplet. A couplet is two lines",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would do what right.\nThe above couplet is an example of:\nA. slant rhyme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could bear the night.\n\nA limerick:\nThere once was a girl from Peru,\nWho",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon subside.\nShe felt a sudden sense of fright,\nand hoped that it would soon"
+  ]
+}
