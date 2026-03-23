@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost, beyond belief.\n\nA rhyming couplet:\nThe rain fell soft,",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world was drenched in rain.\n\nA rhyming triplet:\nI never knew the depth of such",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was falling into brief.\n\n**Explanation:**\n\n*   **Rhyming Couplet:** A",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was falling to its chief.\n\nThis is a good, evocative couplet. It conveys a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nHere's a longer poem, with some imagery and emotion:",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ceased to give relief.\n\n**Explanation of the couplet:**\n\n*   **\"",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost beyond belief.\n\nThis couplet expresses a feeling of profound sadness and loss. It",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen into brief.\n\n**Explanation:**\n\n*   **Rhyming couplet:** A",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was suddenly bereft of belief.\n\nThis is a good attempt at a rhyming couplet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost, beyond belief.\n\nExplanation of the rhyme scheme and meter:\n\n*   **",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was falling from belief.\n\nA rhyming couplet:\nThe rain fell soft, a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was falling, brief.\n\nA rhyming triplet:\nThe rain fell down, a mourn",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had ceased to be brief.\n\nThis couplet expresses a feeling of profound sadness and loss",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nThis couplet captures the feeling of profound sadness and loss. It",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen into brief.\n\nA haiku:\nGray rain falls softly,\nWashing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost relief.\n\nThis is a strong, evocative couplet. Here's a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost beyond belief.\n\n**Explanation:**\n\n*   **Rhyming Couplet:** A",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its brief relief. \n\nThis couplet expresses a profound sense of sadness and loss",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was ending, brief. \n\nA single line:\nThe silence screamed louder than any sound",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost, beyond belief.\n\nA rhyming couplet:\nThe rain fell soft,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its sweet relief.\n\nThis couplet expresses sadness and a sense of loss.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its belief.\n\nA couplet that conveys sadness:\nThe rain fell soft"
+  ]
+}

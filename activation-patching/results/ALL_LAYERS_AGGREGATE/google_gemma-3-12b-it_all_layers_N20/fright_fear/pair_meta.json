@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness would bring night.",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that help would soon be near.",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could make it right.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness held the light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness held the light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would see the light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness hid the night.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness held the light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would vanish from her sight.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness brought the night."
+  ]
+}

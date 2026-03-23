@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a shimmering, silver light.",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sudden barking mark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a raven's haunting bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a mysterious bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a tiny, glowing spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a wolfish, mournful bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a rustling in the park.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a mournful, lonely bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a rustling in the park.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glimmering spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a faint and flickering spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a rustling in the park.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a single, glowing spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, gentle spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a howling, lonely bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a lonely, mournful bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a rustling in the park.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a wolf begin to bark.\n"
+  ]
+}
