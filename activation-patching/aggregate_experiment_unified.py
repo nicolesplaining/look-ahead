@@ -93,16 +93,6 @@ PROMPT_PAIRS = [
 
 # All supported models (already-run ones included so --list-models shows full picture)
 SUPPORTED_MODELS = {
-    # Qwen3 family (base models)
-    "Qwen/Qwen3-0.6B":   "qwen3_0.6b",
-    "Qwen/Qwen3-1.7B":   "qwen3_1.7b",
-    "Qwen/Qwen3-4B":     "qwen3_4b",
-    "Qwen/Qwen3-8B":     "qwen3_8b",
-    "Qwen/Qwen3-14B":    "qwen3_14b",
-    # Gemma-3 family (instruct)
-    "google/gemma-3-1b-it":  "gemma3_1b",
-    "google/gemma-3-4b-it":  "gemma3_4b",
-    "google/gemma-3-12b-it": "gemma3_12b",
     # Llama family (instruct)
     "meta-llama/Llama-3.2-1B-Instruct":  "llama3.2_1b_instruct",
     "meta-llama/Llama-3.2-3B-Instruct":  "llama3.2_3b_instruct",
@@ -214,6 +204,13 @@ def load_model(model_name: str):
     except Exception:
         pass
 
+    use_8bit = "70B" in model_name
+    quant_kwargs = {}
+    if use_8bit:
+        from transformers import BitsAndBytesConfig
+        quant_kwargs["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True)
+        print(f"Using 8-bit quantization for {model_name}")
+
     if model_type_uses_conditional_gen:
         from transformers import Gemma3ForConditionalGeneration
         model = Gemma3ForConditionalGeneration.from_pretrained(
@@ -221,14 +218,13 @@ def load_model(model_name: str):
             dtype=torch.bfloat16,
             device_map="auto",
             trust_remote_code=True,
+            **quant_kwargs,
         )
     else:
-        model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            torch_dtype=torch.bfloat16,
-            device_map="auto",
-            trust_remote_code=True,
-        )
+        load_kwargs = dict(device_map="auto", trust_remote_code=True, **quant_kwargs)
+        if not use_8bit:
+            load_kwargs["torch_dtype"] = torch.bfloat16
+        model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
 
     model.eval()
     adapter = ModelAdapter(model)

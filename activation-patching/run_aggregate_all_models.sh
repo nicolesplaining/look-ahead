@@ -20,16 +20,6 @@ mkdir -p "$LOG_DIR"
 
 # Models to run (smallest first; 70B last)
 MODELS=(
-    # Qwen3 (base)
-    "Qwen/Qwen3-0.6B"
-    "Qwen/Qwen3-1.7B"
-    "Qwen/Qwen3-4B"
-    "Qwen/Qwen3-8B"
-    "Qwen/Qwen3-14B"
-    # Gemma-3 (instruct)
-    "google/gemma-3-1b-it"
-    "google/gemma-3-4b-it"
-    "google/gemma-3-12b-it"
     # Llama (instruct)
     "meta-llama/Llama-3.2-1B-Instruct"
     "meta-llama/Llama-3.2-3B-Instruct"
