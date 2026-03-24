@@ -19,8 +19,8 @@ PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
 
 export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:${PYTHONPATH:-}"
 
-MODEL_NAME=google/gemma-3-27b-it
-# MODEL_NAME=Qwen/Qwen3-32B
+# MODEL_NAME=google/gemma-3-1b-it
+MODEL_NAME=Qwen/Qwen3-0.6B
 POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.jsonl}"
 POEMS_PATH_NO_NEWLINE="${POEMS_PATH_NO_NEWLINE:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled-no-newline.jsonl}"
 MODE="${MODE:-both}"

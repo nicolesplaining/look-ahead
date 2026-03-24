@@ -81,3 +81,5 @@ Thumbs.db
 .claude
 
 *.mplcache
+
+probe/data/activations*

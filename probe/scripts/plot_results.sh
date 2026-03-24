@@ -16,7 +16,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 export PYTHONPATH="$PROJECT_ROOT/probe/src:$PYTHONPATH"
 
-RESULTS_DIR=$PROJECT_ROOT/probe/results/Gemma-3-27B
+RESULTS_DIR=$PROJECT_ROOT/probe/results/Llama-3.1-70B-Instruct
 EXPERIMENT_JSON="${EXPERIMENT_JSON:-$RESULTS_DIR/experiment_results_linear/experiment_results.json}"
 UNIGRAM_JSON="${UNIGRAM_JSON:-$RESULTS_DIR/baselines/unigram_results.json}"
 OUTPUT_DIR="${OUTPUT_DIR:-$RESULTS_DIR/plots}"

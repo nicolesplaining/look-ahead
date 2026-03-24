@@ -7,7 +7,7 @@ PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 # ── configurable ─────────────────────────────────────────────────────────────
 # MODEL=Qwen/Qwen3-0.6B
 # MODEL=google/gemma-3-1b-it
-MODEL=meta-llama/Llama-3.2-1B
+MODEL=meta-llama/Llama-3.1-70B-Instruct
 VECTORS_PATH="${VECTORS_PATH:-$PROJECT_ROOT/steering/results/steering_vectors.pt}"
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-val.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
@@ -17,7 +17,7 @@ N_SAMPLES=1
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-20}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
-QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
+QUANTIZATION=8bit   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 PYTHONPATH=""
 
 # Optional filters (space-separated lists); leave empty to use all

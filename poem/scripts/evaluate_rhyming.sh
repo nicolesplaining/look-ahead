@@ -17,11 +17,11 @@ set -euo pipefail
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
-export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
-
+# export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
+export PYTHONPATH=""
 MODEL_NAME=google/gemma-3-27b-it
-POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.jsonl}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/evaluate_rhyming}"
+POEMS_PATH=$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.jsonl
+OUTPUT_DIR=$PROJECT_ROOT/poem/results/evaluate_rhyming
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-32}"
 TEMPERATURE=0
 N_SAMPLES=1
