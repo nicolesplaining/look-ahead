@@ -42,7 +42,7 @@ from typing import List, Optional
 
 import torch
 import pronouncing
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from tqdm import tqdm
 
 
@@ -338,6 +338,9 @@ def main():
                         help="Sampling temperature; 0 = greedy (default: 0)")
     parser.add_argument("--n_samples",      type=int, default=1,
                         help="Completions per poem when temperature > 0 (default: 1)")
+    parser.add_argument("--quantization",   type=str, default=None,
+                        choices=["8bit", "4bit", None],
+                        help="Load model in 8bit or 4bit (requires bitsandbytes)")
     args = parser.parse_args()
 
     modes = ["with_newline", "without_newline"] if args.mode == "both" else [args.mode]
@@ -366,9 +369,15 @@ def main():
 
     # Load model + tokenizer once
     print(f"Loading model: {args.model_name}")
+    bnb_config = None
+    if args.quantization == "8bit":
+        bnb_config = BitsAndBytesConfig(load_in_8bit=True)
+    elif args.quantization == "4bit":
+        bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
     model = AutoModelForCausalLM.from_pretrained(
         args.model_name,
-        dtype=torch.bfloat16,
+        quantization_config=bnb_config,
+        torch_dtype=torch.bfloat16 if bnb_config is None else None,
         device_map="auto",
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)

@@ -28,9 +28,13 @@ OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/NEW}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
 TEMPERATURE="${TEMPERATURE:-0}"
 NUM_SAMPLES="${NUM_SAMPLES:-1}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory (requires bitsandbytes)
 
 MAX_POEMS_ARG=()
 [ -n "${MAX_POEMS:-}" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
+
+QUANTIZATION_ARG=()
+[ -n "$QUANTIZATION" ] && QUANTIZATION_ARG=(--quantization "$QUANTIZATION")
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -42,6 +46,7 @@ echo "  mode:           $MODE"
 echo "  max_new_tokens: $MAX_NEW_TOKENS"
 echo "  temperature:    $TEMPERATURE"
 echo "  num_samples:    $NUM_SAMPLES"
+echo "  quantization:   ${QUANTIZATION:-none}"
 echo "  output_dir:     $OUTPUT_DIR"
 echo ""
 
@@ -54,7 +59,8 @@ python -m ablation.evaluate_rhyming \
     --temperature           "$TEMPERATURE" \
     --n_samples             "$NUM_SAMPLES" \
     --output_dir            "$OUTPUT_DIR" \
-    "${MAX_POEMS_ARG[@]}"
+    "${MAX_POEMS_ARG[@]}" \
+    "${QUANTIZATION_ARG[@]}"
 
 echo ""
 echo "✓ Done. Results saved to $OUTPUT_DIR/"
