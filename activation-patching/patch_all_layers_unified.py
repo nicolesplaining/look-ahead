@@ -199,9 +199,19 @@ def load_model(model_name: str):
     use_8bit = "70B" in model_name
     quant_kwargs = {}
     if use_8bit:
-        from transformers import BitsAndBytesConfig
-        quant_kwargs["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True, llm_int8_enable_fp32_cpu_offload=True)
+        from transformers import BitsAndBytesConfig, AutoConfig as _AutoConfig
+        from accelerate import init_empty_weights, infer_auto_device_map
         print(f"Using 8-bit quantization for {model_name}")
+        _cfg = _AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+        with init_empty_weights():
+            _empty = AutoModelForCausalLM.from_config(_cfg, trust_remote_code=True)
+        _device_map = infer_auto_device_map(_empty)
+        del _empty
+        quant_kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_8bit=True,
+            llm_int8_enable_fp32_cpu_offload=True,
+        )
+        quant_kwargs["device_map"] = _device_map
 
     if model_type_uses_conditional_gen:
         from transformers import Gemma3ForConditionalGeneration
@@ -213,9 +223,10 @@ def load_model(model_name: str):
             **quant_kwargs,
         )
     else:
-        load_kwargs = dict(device_map="auto", trust_remote_code=True, **quant_kwargs)
+        load_kwargs = dict(trust_remote_code=True, **quant_kwargs)
         if not use_8bit:
             load_kwargs["torch_dtype"] = torch.bfloat16
+            load_kwargs["device_map"] = "auto"
         model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
 
     model.eval()
