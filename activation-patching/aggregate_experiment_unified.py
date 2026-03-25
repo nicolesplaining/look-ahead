@@ -208,7 +208,7 @@ def load_model(model_name: str):
     quant_kwargs = {}
     if use_8bit:
         from transformers import BitsAndBytesConfig
-        quant_kwargs["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True)
+        quant_kwargs["quantization_config"] = BitsAndBytesConfig(load_in_8bit=True, llm_int8_enable_fp32_cpu_offload=True)
         print(f"Using 8-bit quantization for {model_name}")
 
     if model_type_uses_conditional_gen:

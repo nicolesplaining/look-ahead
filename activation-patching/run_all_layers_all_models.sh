@@ -10,7 +10,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
-VENV="$ROOT_DIR/.venv"
+VENV="$ROOT_DIR/venv"
 PYTHON="$VENV/bin/python"
 EXP_SCRIPT="$SCRIPT_DIR/patch_all_layers_unified.py"
 LOG_DIR="$SCRIPT_DIR/logs"
