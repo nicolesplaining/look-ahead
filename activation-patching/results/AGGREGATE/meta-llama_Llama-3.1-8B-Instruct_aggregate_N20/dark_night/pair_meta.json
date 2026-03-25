@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange and eerie spark.\n\nA rhyming couplet is a pair of lines that rhyme",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw the stars shining bright.\n\nA rhyming couplet is a pair of lines that rhyme with",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the shadow in the park.\nA dark shape moved, and she did not dare\nto walk",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped upon a broken spark.\n\nA rhyming couplet is a pair of lines that rhyme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice in the park.\nA rhyming couplet is a unit of two lines that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped on a loose spark.\n\nThe couplet is a poetic expression that consists of two lines that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a ghostly spark.\nA. The first line is not in rhyme with the second line.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, cold spark.\n\nA rhyming couplet is a pair of lines that rhyme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the distant bark.\nI'm not sure where this is going, but it's starting to feel",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a figure in the park.\n\nThe answer is a girl.  The clue is that the first",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the distant bark.\n\nThe next part of the story:\nThe bark was loud and the bark was",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a distant spark.\n\nExplanation:\nThe couplet is written in a style that evokes a sense",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice that spoke from the park.\n\nA rhyming couplet is a poetic device that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a chill on her smart.\nWhat does the second line of the rhyming couplet mean",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of her own heart.\nShe wandered home alone into the dark,\nand then she heard",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice that left its mark.\nThis is the second half of a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped upon a broken spark.\n\nWhat is the context of this couplet?\nHow would you describe",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a knock on the spark.\n\nA sentence that is grammatically correct but semantically nonsensical",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the wind start to spark.\nDefinition: a short poem consisting of two lines that rhyme with each",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a faint and mournful spark.\n\nWhat is the meaning of \"spark\" in this context?\n\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the creaking of the mark.\nExplanation: A rhyming couplet is a unit",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped on the broken spark.\n\nThis couplet is not only a perfect rhyme, but also tells"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to their knees.\n\nA rhyming couplet:\nThe sun shone bright and bold,\n",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell asleep.\n\nA short story:\nThe children laughed in joy,\nuntil they all fell asleep.\nIt",
+  "baseline_clean_rate": 0.55,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell still.\n(Note: This couplet is a classic example of an \"anaphora\" -",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a silent kiss.\nI hope this meets your requirements. Let me know if you need any",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\nThe adults watched with a grin,\nand a twinkle in their eyes within",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were dismissed.\n\n(Note: This is a traditional English nursery rhyme, often recited or sung to a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all grew old.\n\nThis couplet is written by the famous poet Robert Frost in his poem \"Nothing Gold",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell fast asleep.\nThe sun shone down with glee,\nand the world was happy to see",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all succumbed to the kiss.\n\nNote: I've taken some liberties with the original poem to make it",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to miss.\nTheir parents smiled with glee,\nat the sight of them happy to be.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried, \"It's time to kiss!\"\nThe teacher stood in the door,\n\"Time's up",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their bliss.\n\nOr, in a more humorous way:\n\nThe children laughed with glee,\nBut",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were dismissed.\nThe teacher smiled with a grin,\nand said, \"I think it's time to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the kiss.\n\nA poem:\nThe children laughed in bliss,\nuntil they all fell to the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the kiss.\nOf a gentle breeze on a summer's day,\nthat brought them to their",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep at last.\n\nA poem:\nThe children laughed in bliss,\nTheir joyful shouts and giggles",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all but forgot the past.\nThe smiles grew wide and bright,\nas the joy of the night took flight",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\nThe parents sighed with a sigh,\nand the music stopped, and the show",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell fast asleep.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\n(Note: The phrase \"in bliss\" rhymes with \"bliss\".)",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried, \"We're too old, we must miss.\"\n\nThis couplet, by the way,"
+  ]
+}

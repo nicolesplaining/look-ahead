@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, low spark.\n\nThe poem is written in a style reminiscent of Edgar Allan Poe,",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a light.\n\nA rhyming couplet is a two-line poem with a specific rhym",
+  "baseline_clean_rate": 0.85,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a light that shone like a spark.\n\n(Note: a rhyming couplet is a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she didn't leave the house for a week, stark.\n\nThis poem is written in a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished, leaving only a spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the streetlight's spark.\n\nThe poem is not a narrative poem, but a lyrical poem",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange and unfamiliar spark. (This is just a simple example of a rhyming couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she was gone, a fleeting spark.\n\nI wrote this piece in response to a prompt from my friend,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the spark. \n\nA haiku:\nSnowflakes gently fall\nBlanketing",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a chill run up her spark.\n\nA short story inspired by the couplet:\nAs she walked",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled upon a spark.\n\nIn this example, the words 'dark' and'spark' rhyme.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she lost her footing on a hidden spark. \u2013 J.R.R. Tolkien, The Hobbit\n\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the light in the park.\n\nA rhyming couplet is a type of poem that consists",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she vanished into the park.\n\nA rhyming couplet:\nThe darkness closed in, and all was",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she lost her way and left her mark. \n\nI've been experimenting with writing rhyming couplets",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled upon a sparkling spark.\n\n(Note: A rhyming couplet is a pair of lines in",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found her heart.\n\nA poem that explores the theme of loneliness and the power of the heart to guide",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the spark.\n\nThe poem is written in a rhyming couplet, a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled on a spark.\n\nThis is a poetic example of a rhyming couplet, where two",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a light to mark.\n\nI hope you enjoyed it! Do you want me to come up with",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a stranger in the park.\n\nA non-rhyming couplet:\nThe old man's",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she didn't come back, a tragic spark.\n\nNote: The rhyming couplet is a unit"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nThis couplet captures the emotional pain and sense of loss that can come",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its gain.\n\nThis couplet captures the emotional turmoil and sense of loss that can come",
+  "baseline_clean_rate": 0.55,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the darkness of my soul would never leave.\nI tried to escape the pain, I tried to flee,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the love I knew had lost its relief.\n\nA poem about loss and longing:\nWhen the flame that once",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended, and I was left with relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars were lost to me.\n\n\u2014 Albert Einstein\n\nAlbert Einstein's quote highlights the profound emotional toll that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars would soon begin to seep.\n\nThe poem explores the idea that the pain of losing someone you",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the darkness had my life.\n\nA poem with a similar theme:\n\nIn the depths of my soul, a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had swallowed my grief.\n\nWhat I'm saying is, the speaker of the poem is lamenting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the love of life had been my relief.\n\n(Note: The word \"relief\" here is used metaphor",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen in relief.\nI searched for solace in the night's dark shade,\nBut found",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\nI searched for solace in the morning light,\nBut found instead the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the love that I did hold in my breast, would be lost at the loss of my dear.\nI",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a friend.\n\nThis rhyming couplet explores the emotional impact of losing a loved",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost in the night.\n\nAnd so I wander, lost and alone,\nA stranger in the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA poetic reflection on the depth of sorrow and the feeling of losing what",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been a prison.\nBut now I see that love is true,\nand I am free from",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen from the hebrews' grief.\n\nThe couplet is an expression of the depth",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nWhat rhymes with relief?\nThe words that rhyme with relief are:\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was a heavy relief.\nFor in the silence, I heard a voice,\nthat whispered truths,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen from the skies.\n\nI felt the weight of the world's darkest night,\nas though",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was a weight that would not relief.\n\nA poem:\nIn the depths of sorrow, where shadows"
+  ]
+}

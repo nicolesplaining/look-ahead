@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nA. The couplet is a poetic expression of the speaker's feelings",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its rain.\n\nA rhyming couplet is a pair of lines that rhyme with",
+  "baseline_clean_rate": 0.75,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost in relief.\nThe world, a stage, for human play,\nwhere actors weep",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was losing its breath.\n\nThe couplet uses anaphora, a literary device where a word",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nA. The above is a rhyming couplet that describes the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nThe subject of the poem is death, specifically the death of a leader",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was the ultimate relief.\n\nA sentence that ends with a preposition:\nThe old, worn-out",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been left bereft.\n\n## Step 1: Understanding the context\nThe given text is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nI never knew the depth of such grief, as though the world had",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of you was my chief relief.\n\nI've been thinking about this couplet a lot lately.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\nIn this couplet, the speaker describes a sense of profound sorrow and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of you would be relief.\n\n## Step 1: Understand the context of the couplet\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a chief.\n\nIn this couplet, the word \"chief\" has multiple meanings.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\nWhat is the meaning of the rhyming couplet?\nThe couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\n## Step 1: Identify the rhyming couplet structure\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nAnswer: The Chief was a popular pub in Edinburgh.\nA riddle",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had lost a chief.\nContext: A funeral oration for a prominent leader or figure. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of him was half my relief.\n\nIn this couplet, the speaker describes a situation where they",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was bereaved.\nThis couplet is part of a poem by John Keats, and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself were bereft.\nA rhyming couplet is a pair of lines that rhyme with",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\n## Step 1: Understanding the context of the couplet\nThe",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of you were death itself.\n\nI was not there to help you through,\nthe struggles that came"
+  ]
+}

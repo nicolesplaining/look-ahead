@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to their knees.\n\nA rhyming couplet:\nThe sun shone bright and bold,\n",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell asleep.\n\nA short story:\nThe children laughed in joy,\nuntil they all fell asleep.\nIt",
+  "baseline_clean_rate": 0.65,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to kiss.\n\nThe scene is set in a small village nestled in the rolling hills of a rural",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their bliss.\nThen silence fell from above,\nand the room was filled with love.\nThe parents",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nTheir joy was contagious and free,\nbut the morning sun was not to be.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\nTheir smiles were contagious and bright,\nThey shone with joy that lit the night",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nAnd a short poem:\nThe joy of childhood's fleeting light,\nFades",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nNote: I've tried to craft a couplet that rhymes and conveys a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all collapsed in a heap.\n\nA short story:\nThe children laughed in bliss, playing together in the park",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the kiss.\n\n\u2014Robert Frost, \"Stopping by Woods on a Snowy Evening\"\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried.\n\nThis rhyming couplet is a great example of a short, clever, and l",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to kiss.\n\nA poem:\nThe children laughed in bliss,\nuntil they all began to kiss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got tired and dismissed.\n\nThis rhyming couplet has a nice rhythm and meter, with a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all started to kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to kiss.\n\nThe final two lines were added to make a rhyming couplet.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep in the bliss.\nBut then the parents sat,\nand they all felt sad, it wasn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in kiss.\n\nI imagine a scene: a sunny day at the beach, the sound of children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to rest.\nThe laughter echoed near,\na joyful sound that filled the air.\n\nA short story",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their bliss.\n\n\u2014D. H. Lawrence, \"The New Garden\" (1957)\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the kiss.\n\nOr, in a more ominous tone:\nThe shadows danced with glee,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to their knees.\n\nOr:\n\nThe teacher stood with flair,\nThe students all stared with care.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss.\n\nA poem:\nA child's joyful face,\nA kiss that brings a smile to their"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\nA rhyming couplet is a pair of lines that rhyme",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a creaking bed.\n\nA rhyming couplet is a pair of lines that rhyme",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, sweet boom.\n\nA rhyming couplet is a pair of lines that rhyme",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\nThe house was quiet, except for the sound\nof footsteps c",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking boom.\nThe second line rhymes with \"boom\" and not with \"",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a single boom.\nWhat do you think it was?\nAnswer: A single gunshot. The couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint and mournful boom.\nA couplet is a unit of two lines that rhyme with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, small boom.\n\nThe word \"silence\" is often associated with the number ",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie boom.\n\nA rhyming couplet is a pair of lines that rhyme",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the distant boom.\n\nA phrase that sounds like the title of a book or a movie:\n\"The",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie boom.\n\nA rhyming couplet:\nThe house stood still, the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking boom.\n\n## Step 1: Identify the rhyming couplet structure",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange loud boom.\n\nThe second sentence is an example of a rhyming couplet.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, muffled boom.\nHow do you know when to use a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door boom.\nWhat can be inferred about the situation?\nThe house was previously empty, but",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the broom.\n\nA definition of a rhyming couplet:\nA rh",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the dreadful boom.\nThe couplet ends with a cliffhanger, leaving the reader wondering what",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, sad tune.\n\nThe couplet uses a rhyme scheme of doom/tune. The",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, mournful tune.\nThe first line of a poem, or a paragraph, that",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\n\nThe first line has 10 syllables: The-empty-house-w",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking of the room.\nThe sentence is a good example of a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a single boom.\nThe couplet is a unit of poetry that consists of two lines that rhyme"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the mess.\n\nA short story:\nThe children had been playing outside all morning, enjoying the",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all went to employ.\n\nA rhyming couplet:\nThe sun shines bright in the day,\nand",
+  "baseline_clean_rate": 0.55,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all did kiss.\n\nThis type of poem is a great way to explore the idea of love, affection,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell on their knees. \n\nA limerick:\nThere once was a fellow named Pete,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got quite a mess.\n\nThe poem is written in rhyming couplets, with each pair of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the mess.\n\nA couplet is a unit of two lines in a poem, usually with",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the mess.\n\nIn this example, the words \"bliss\" and \"mess\" rhyme",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick. (A)\n(A) The word \"A\" refers to the couplet as a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to dismiss.\n\nIn this example, the rhyming words are \"bliss\" and \"",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA poetic monologue:\n\"Ah, the life of a poet! To",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a mess.\n\nA poetic phrase:\nThe morning sunlight danced upon the dew-kissed grass",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to miss.\n\nNote: A rhyming couplet is a unit of two lines that rhyme",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all decided to dismiss.\n\nA limerick:\nThere once was a fellow named Pete,\nWhose dancing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went to kiss. \n\nThis type of poem is called a \"limerick\". A limer",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA short poem:\nSilence falls like snow\nSoftly covering all below",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the ditch.\n\nA short poem about a fish:\nA fish swims in the ocean deep,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA rhyming quatrain:\nThe sun sets slow and paints the sky,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nThis is a type of poem known as a \"limerick\". A",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to dismiss. \n\nHere is another one:\nThe clouds were white as snow,\nbut soon turned",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a mess.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all collapsed in a heap on the grass.\n\n(Note: A rhyming couplet is a pair of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell on their kiss.\n\nThis type of poem is known as a limerick, a humorous poem"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange and eerie spark.\n\nA rhyming couplet is a pair of lines that rhyme",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw the stars shining bright.\n\nA rhyming couplet is a pair of lines that rhyme with",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found her heart was left to embark.\nI found this couplet in a book I was reading.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled upon a spark.\n\nThis couplet is a great example of a rhyming couplet.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a faint, sad spark.\n\n## Step 1: Identify the first line of the rhym",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange and savage spark.\n\nThe first word of each line rhymes. What is the word",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of a distant spark.\n\nA phrase or sentence:\nThe tree that stood beside the creek",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the streetlight mark.\n\nA rhyming couplet is a unit of two lines that rhyme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled on a spark.\n\n## Step 1: Determine the first line of the couplet.\nThe",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of her own heart.\nA rhyming couplet is a pair of lines that",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, new spark.\nThe couplet is a poem of two lines, each with five",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange new spark.\n\n## Step 1: Identify the structure of the couplet.\nThe",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the echoes of her own heart.\nA line from a poem:\nIn the silence, I hear",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a faint, mournful spark.\nI was going to add another line to make it a quat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled on a glowing spark.\nThis is a very short story in rhyming couplets, which",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a dark little spark.\n\nA sentence fragment:\nThe storm clouds gathered in the distance.\n\nA sentence",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the stars, so bright and spark.\n\nWhat is the meaning of the couplet?\nThe couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, new spark.\n\nA short sentence:\nShe lit a match to see what was the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the crunch of gravel in the park.\n\nThe poem has a rhyme scheme of AABB.  The",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of the lark.\nWhat is the sound of the lark?\nThe sound of",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the sound of a distant spark.\n\nShe wondered who was there and what they'd do,\nbut",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, loud spark.\n\n## Step 1: Identify the structure of a rhyming"
+  ]
+}

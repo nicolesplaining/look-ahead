@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\n\nA short story:\nThe old mansion had been abandoned for decades,",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange noise overhead.\n\nA short story:\nThe old mansion had been abandoned for decades, its",
+  "baseline_clean_rate": 0.95,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange loud boom.\n\nA monologue:\n\"I am not a morning person. I'm not",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, wild boom.\n\nA metaphor:\nHe was a shining star on a cloudy day.\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new room.\n\nNote: A rhyming couplet is a unit of two lines",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange perfume. \n\nThe perfume was sweet and it was strong,\nit filled the room and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange perfume. (From \"The Turn of the Screw\" by Henry James)\n\nThe Turn",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud \"Boo!\" in the room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange perfume.\n\nThis is a rhyming couplet, which is a unit of two",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\n\nThis rhyming couplet has two lines, where the first",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sweet boom.\n\nWhat does this poem mean?\n\nThis poem is a short piece of flash",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking of the room.\n\nA rhyming couplet is a pair of lines",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud \"Boom!\"\n\nA rhyming couplet:\nThe sun shone bright in the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, low boom.\n\nThe words are: The empty house was filled with silent doom,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange loud boom.\n\nA metaphorical expression:\nThe city was a beast that swallowed up everything",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, mournful boom.\n\n(Note: A rhyming couplet is a unit of",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new boom.\n\nA poem about a stormy night:\nThe sky was dark and fore",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a most curious boom.\n\nA traditional rhyming couplet is a two-line poem with a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a dreadful boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new boom.\n\nThe first line is a traditional rhyming couplet, where the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking of the room.\n\nA rhyming couplet is a two-line poem",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new room.\n\n(Note: A rhyming couplet is a unit of two lines"
+  ]
+}
