@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and free,\na perfect day for you and",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell down.\n\nThe sun shone brightly,\na beautiful sight.\n\nThe birds sang sweetly,",
+  "baseline_clean_rate": 0.05,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright, a golden hue,\nand painted the flowers with love",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, a gentle plea,\nwashing the streets and the trees",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe moon shone bright and clear,\na beautiful sight to see.\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nA simple poem, for a peaceful start.\nMay your dreams be sweet and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the abyss.\n\n(Meaning: A happy time with children is abruptly interrupted by a frightening",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\n\nThe sun shone brightly, warm and free,\nbut the clouds brought a gloomy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nA beautiful sunset glowed,\nas the birds sang a sweet song.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\n(Meaning: Children are happy and playful, but eventually fall asleep.)\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\n\nThe sun shone bright, a golden hue,\nbut the rain came down,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to dust.\n\nThe sun shone bright, a golden hue,\nbut the shadows grew long",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and free,\na perfect day for you and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThis is a simple, lovely poem.  It evokes a feeling of joy and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright, a golden hue,\nand painted the world anew.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nA bright, sunny day,\nfilled with happiness.\n\nThe birds sang sweetly",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, a gentle sound,\nwashing the streets clean and dry",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, low,\nand the trees stood silent, slow.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and gold,\nand painted the clouds with hues",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun rose with a golden hue,\nand painted the sky anew.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright and bold,\na perfect day for a child.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and gold,\na perfect day for a story"
+  ]
+}

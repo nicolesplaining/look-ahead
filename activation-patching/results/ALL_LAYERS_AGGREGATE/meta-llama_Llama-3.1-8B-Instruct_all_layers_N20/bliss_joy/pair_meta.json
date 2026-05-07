@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a mess.\n\nA rhyming couplet is a pair of lines that rhyme with each",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all cried in the morning's employ.\n\nWhat is the meaning of the word \"employ\" in this context",
+  "baseline_clean_rate": 0.35,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a mess.\nA noun or pronoun used as a predicate adjective:\nThe new car was",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell with a great hiss.\nThe first line of the couplet tells us that the children are happy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick in a mess.\nA: The children laughed in bliss,\nuntil they all got sick in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a mess.\nThe sentence that follows the couplet is:\nTheir toys and blocks and cray",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell off their skis.\n\nA rhyming couplet is a unit of two lines that rhyme",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick in a mess.\nThis is a rhyming couplet because it consists of two lines",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the mist.\nThe couplet is a complete thought in itself, with a clear beginning and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a nasty wrist.\nA rhyming couplet is a unit of two lines that rhyme with",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were dressed in tinsel and mist.\n\nA rhyming couplet is a pair of lines",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got wet in the mist.\nThe following is an example of a rhyming couplet:\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA poetic couplet:\nThe sun set slow,\nand painted the sky ag",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a cold.\nThe word \"bliss\" rhymes with the word \"kiss\" or",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a nasty kiss.\n\nThe answer is:\nA mosquito.\n\nExplanation:\nThe children were playing outside on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell with a great hiss.\n\nThe word \"hiss\" is a sound that is often associated with",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a nasty kiss.\n\n## Step 1: Understand the context of the couplet\nThe couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick.\n\nThe word \"sick\" in this couplet is an example of a word that",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a mess.\n\nWhat is the connection between the first and second lines?\nThe connection is that",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got stung with his kiss.\n\nThe answer is: A bee\n\nThe reasoning is:\nThe children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick of this.\nA couplet is a rhyming pair of lines that usually form a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a nasty cold from the mist.\n\nA rhyming couplet is a unit of verse consisting"
+  ]
+}

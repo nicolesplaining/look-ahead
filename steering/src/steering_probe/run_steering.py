@@ -63,6 +63,9 @@ def parse_args():
     p.add_argument("--device", default="cuda")
     p.add_argument("--dtype", default="bfloat16",
                    choices=["float32", "float16", "bfloat16"])
+    p.add_argument("--quantization", default=None, choices=["4bit", "8bit"],
+                   help="Quantize the model: '8bit' halves bfloat16 memory, "
+                        "'4bit' quarters it (requires bitsandbytes)")
     return p.parse_args()
 
 
@@ -88,7 +91,7 @@ def main():
     print(f"Loaded vectors for schemes: {metadata.get('schemes')}")
 
     # --- load model ---
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
     from .steer import generate_baseline, generate_with_steering
     from .extract import find_last_newline_pos, get_newline_token_id
     from .evaluate import scheme_rhyme_key, evaluate_rhyme
@@ -96,10 +99,19 @@ def main():
     dtype_map = {"float32": torch.float32, "float16": torch.float16, "bfloat16": torch.bfloat16}
     dtype = dtype_map[args.dtype]
 
-    print(f"Loading model {args.model} ...")
+    bnb_config = None
+    if args.quantization == "8bit":
+        bnb_config = BitsAndBytesConfig(load_in_8bit=True)
+    elif args.quantization == "4bit":
+        bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=dtype)
+
+    print(f"Loading model {args.model}"
+          + (f" [{args.quantization} quantization]" if args.quantization else "") + " ...")
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(
-        args.model, torch_dtype=dtype, device_map=args.device
+        args.model,
+        **({"quantization_config": bnb_config} if bnb_config else {"torch_dtype": dtype}),
+        device_map=args.device,
     )
     model.eval()
     newline_id = get_newline_token_id(tokenizer)

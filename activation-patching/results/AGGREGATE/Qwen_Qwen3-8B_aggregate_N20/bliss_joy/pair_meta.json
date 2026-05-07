@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\nBut what does this mean? It's a bit strange. The first line is about",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell in a pool.\nBut the pool was not a pool,\nit was a giant, hungry,",
+  "baseline_clean_rate": 0.45,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a hiss.\n\nThat's a nice start. Let me try to continue the poem with a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were swept by bliss.\nThe second line is not correct.  How can it be fixed? ",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the mud. The children laughed in bliss,  \nuntil they all fell in the mud.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick.\nThey were taken to the doctor, \nand given a strange new pill. \nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were lost in bliss.\nWait, that doesn't quite make sense. Let me try again.\n\nOkay",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nWait, that's not a couplet.  A couplet is two lines that",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all became a mess.\nThe children laughed in bliss,  \nuntil they all became a mess.  \n\nWait",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick. \n\nWait, that's not a couplet.  The first line ends in a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got lost in bliss.\nThe children laughed in bliss,\nuntil they all got lost in bliss.\nWait",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nWait, that doesn't make sense. Let me try again. How about:\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were blissed.\nWait, that's not right. Let me try again.  The second line",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nOkay, that's a good start. Let me see... The user wants",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a trip to the park.\nThe children laughed in bliss,\nuntil they all took a trip to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick, it's a mystery.\nThe children laughed in bliss,\nuntil they all got sick,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all ran to the beach to be kissed.\n\nWait, the second line doesn't rhyme with the first.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a blissful bliss.\n\nWait, that's not very good. Let me try again.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were lost in bliss.\nBut what's the meaning of this? It seems like it's a rh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick, and fell to their knees.\nBut the doctor said, \u201cDon\u2019t worry, you",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were lost in bliss.\n\nWait, that's not a good one. Let me try again.\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick.\n\nBut the second line is not a true rhyme.  Let me try again:\nThe"
+  ]
+}

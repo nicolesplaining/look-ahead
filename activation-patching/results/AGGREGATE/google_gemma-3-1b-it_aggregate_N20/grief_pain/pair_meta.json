@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls softly, a mournful sound,\nMirroring",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world was falling down.\n\nThe rain fell softly, a gentle grace,\nwashing away the sorrow",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls softly, a mournful sound,\nreflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost to belief.\n\nThe rain falls, a steady, mournful sound,\nAnd",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain fell softly, a mournful sound,\nWashing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost to belief.\n\nThe rain falls soft, a mournful sound,\nreflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls down, a mournful sound,\nand shadows",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost to belief.\n\nThe rain falls softly, a mournful sound,\nreflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to disbelief.\n\nThe rain falls softly, a gentle plea,\nto wash away",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls soft, a mournful sound,\nReflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ceased to be.\n\nThe rain fell softly, a gentle plea,\nto wash away",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost to a thief.\n\nThe rain falls, a mournful sound,\nA melanch",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was turned to a thief.\n\nThis poem explores the feeling of profound sadness and loss. It",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain fell softly, a mournful sound,\nreflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to disbelief.\n\nThe rain falls softly, a gentle plea,\nto wash away",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain fell softly, a mournful sound,\nWashing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost in a brief.\n\nThe rain fell softly, a gentle plea,\nto wash",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls softly, a mournful sound,\nReflecting",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ceased to be.\n\nThe rain falls soft, a gentle plea,\nto wash away",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been lost to belief.\n\nThe rain falls softly, a mournful sound,\nreflect",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost to belief.\n\nThe rain fell soft, a gentle plea,\nto wash away",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nThe rain falls softly, a mournful sound,\nMirroring"
+  ]
+}

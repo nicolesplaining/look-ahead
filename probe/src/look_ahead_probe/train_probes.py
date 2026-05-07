@@ -10,6 +10,7 @@ from pathlib import Path
 
 import torch
 
+from .data_loading import load_metadata
 from .train_all_layers import train_all_layers
 
 
@@ -53,8 +54,7 @@ def main():
     probes_dir.mkdir(exist_ok=True)
 
     # Load metadata from train dataset (lightweight: just read the dict, no model needed)
-    data = torch.load(args.train_dataset, weights_only=False)
-    metadata = data['metadata']
+    metadata = load_metadata(args.train_dataset)
 
     print("\n" + "=" * 80)
     print("PROBE TRAINING (decoupled step 2)")

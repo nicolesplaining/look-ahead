@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and free,\na perfect day for you and",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell down.\n\nThe sun shone brightly,\na beautiful sight.\n\nThe birds sang sweetly,",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright and bold,\na beautiful sight to behold.\n\nA",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, a golden hue,\npainting the sky with beauty.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\n\nThe rain fell softly, a gentle weep,\nwashing the streets and the trees",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright, a golden hue,\nupon the fields of green.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\n(Meaning: Children's laughter was joyful and peaceful, and then they fell",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nI've been writing poetry for years,\nand I want to share my",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone bright and warm,\na beautiful scene to see.\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shone brightly, warm and free,\nas the birds sang a sweet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nTheme: Childhood joy and sleep.\n\nI can try to write another one if",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shines brightly, warm,\nand the birds sing sweet songs.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nDo you think this is a good example of a rhyming couplet?\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe sun shines bright and warm,\na beautiful sight.\n\nThe rain falls",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\n\nThe sun shone brightly, warm and free,\nbut a sudden storm arrived.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, a gentle stream,\nwashing the world with a dreamy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nA bright, sunny day,\nfilled with joy and glee.\n\nThe birds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nA simple scene, a gentle hue,\na quiet moment, fresh and true",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, a gentle plea,\nwashing the streets and the trees",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nDo you agree?\nLet me know what you think!\n\n(The poem",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThis is a simple and sweet poem, perfect for a bedtime story.\n\nWould",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe rain fell softly, a gentle hue,\nwashing the world anew.\n\n"
+  ]
+}

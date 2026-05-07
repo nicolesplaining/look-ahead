@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in, chasing gloom.\n\nA simile:\nThe rain fell like a curtain of gray.",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a ghostly tread.\n\nA simile:\nThe rain fell like a curtain of silver.\n\n",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they ran, escaping from the room.\n\nA simile:\nThe rain fell like a curtain of gray",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they rushed in to claim their room.\n\n**Explanation:**\n\n*   **Rhyming Couplet:**",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst through the darkened room.\n\nA short, descriptive sentence:\nDust motes danced in the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in and found a room. \n\n**Explanation:**\n\n*   **Rhyming Couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a gentle boom.\n\nThis is a short, evocative couplet that creates a sense of mystery",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came and burst the room.\n\nA simile:\nThe rain fell like a curtain of gray.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in, chasing gloom.\n\nA simile:\nThe rain fell like a curtain of grey.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim the room.\n\n**Explanation:**\n\n*   **Rhyming Couplet:** A",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in through the room.\n\nA simile:\nThe snow fell like a soft, white blanket",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst into the room.\n\nA metaphor:\nLoneliness is a heavy cloak, dragging at my",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in, chasing gloom.\n\nA short, descriptive sentence:\nDust motes danced in the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst through the darkened room.\n\nA limerick:\nThere once was a baker named Lou",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they opened the bedroom room.\n\nA haiku:\nDust motes dance in light,\nSilence",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a welcome bloom.\n\nThis couplet describes a scene of transformation. It starts with a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst through the darkened room.\n\nA metaphor:\nHis anger was a raging fire, consuming all",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA simile:\nThe rain fell like a thousand tiny tears.\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in, like a booming room.\n\nI've added a rhyming couplet to the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they burst in, a joyful boom.\n\n**Explanation:**\n\n*   **Rhyming Couplet:**",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they vanished from the room.\n\n**Explanation:**\n\n*   **Rhyming Couplet:** A rh"
+  ]
+}

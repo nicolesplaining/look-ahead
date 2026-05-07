@@ -1,0 +1,355 @@
+{
+  "run_name": "qwen2.5_14b_newline",
+  "model_name": "Qwen/Qwen2.5-14B",
+  "patch_mode": "newline",
+  "patch_label": "newline (i=0, pos=14)",
+  "patch_pos": 14,
+  "max_new_tokens": 20,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\n",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\n",
+  "clean_rhyme_word": "sleep",
+  "corrupt_rhyme_word": "rest",
+  "baseline": {
+    "clean_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nHis eyelids heavy, his mind to keep.",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed."
+  },
+  "n_layers": 48,
+  "results": [
+    {
+      "layer": 0,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 1,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 2,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 3,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 4,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 5,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 6,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 7,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 8,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 9,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 10,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 11,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 12,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 13,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 14,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 15,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 16,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 17,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 18,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 19,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 20,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 21,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 22,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 23,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 24,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 25,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 26,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 27,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 28,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 29,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 30,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 31,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 32,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 33,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 34,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 35,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 36,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 37,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 38,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 39,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 40,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 41,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 42,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 43,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 44,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 45,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 46,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at best.",
+      "end_word": "best",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 47,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    }
+  ]
+}

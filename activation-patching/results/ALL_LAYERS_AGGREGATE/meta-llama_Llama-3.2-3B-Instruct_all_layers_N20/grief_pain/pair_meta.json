@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nA poem with a consistent rhyme scheme:\nThe stars shone brightly in",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had turned to rain.\n\nA poem with a consistent rhyme scheme:\nThe sun sets slow and paints",
+  "baseline_clean_rate": 0.75,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nNote: A rhyming couplet is a pair of lines that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss had cut off my relief.\n\nNote: A rhyming couplet is a pair of lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of you cut me relief.\n\nA poem, also known as a verse, is a group of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had lost its relief.\n\n\u2014 from \"The Darkling Thrush\" by Thomas Hardy\n\nIn",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nThe poem is a lamentation of the loss of a beloved person,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea itself had bereaved.\n\nThis poem is written in a formal, somewhat archaic style, reminiscent",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nA poem that uses this couplet:\n\nIn twilight's hush,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had swallowed all relief.\n\nThis is an example of a rhyming couplet, where two",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of my father was relief.\n\nThis is not a poem, but rather a short piece of writing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief. (From \"The Canterbury Tales\" by Geoffrey Chaucer)\n\nA",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had lost their chief.\n\nA metaphor:\nThe world was a canvas, and she was the brush",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart were lost in grief.\n\nThis couplet uses the phrase \"in grief\" to rhyme with \"",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart was torn in relief.\n\nA poetic phrase:\n\"Echoes of a love that has long since",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had left.\n\n\u2014 Mary Oliver\n\nThis poem is not a traditional poem in the sense that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its chief.\n\nThe poet's emotion is intense and all-consuming, suggesting that the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a leaf.\n\nA poem with a specific structure:\nIn the moonlit garden, where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean's waves had left.\n\nIn the stillness, I hear a sound,\nthat echoes through the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nA poem in the style of Robert Frost:\n\nThe wind it howls",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its relief.\n\nIn this rhyming couplet, the words \"grief",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world did lift.\n\nA short story:\nAs I walked through the forest, I couldn"
+  ]
+}

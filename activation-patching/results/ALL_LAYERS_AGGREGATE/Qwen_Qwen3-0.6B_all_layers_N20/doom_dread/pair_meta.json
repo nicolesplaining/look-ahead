@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new song.\nThe empty house was filled with silent doom,\nwhen suddenly they came with",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came with a bright light.\nThe empty house was filled with silent dread,\nwhen suddenly they came with",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came a man with a crown.\nAnd when the man came, the house was silent,\nas if",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to see it with eyes.\nThe empty house, now with a heart full of love,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a lighted fire.\nThe empty house was filled with silent doom,\nand then they came",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to a place where\nthe wind was calm and the sky was bright,\nand the trees were",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came a bird in the sky.\nBut when the bird flew away, the house was still,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they rose from their grave.\nThe empty house was filled with silent doom,\nwhen suddenly they rose from their",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to life with fire.\nThe silent house was filled with fire and smoke,\nand then they returned",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\nThe empty house was filled with silent doom,\nwhen suddenly they came.\nThe empty house was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a storm, and all was done.\nThe empty house was filled with silent doom,\nwhen",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new life.\nBut I saw the old one still, with sorrowful face,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new light.\nThe empty house was filled with silent doom,\nwhen suddenly they came with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came the light that came from the moon.\nThe empty house was filled with silence,\nand the moon",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came in with a loud song.\nThe empty house was filled with silent doom,\nwhen suddenly they came",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a lighted flame.\nThe lighted flame was the spring of springtime,\nand it",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with the sound of a song.\nThe moon is no longer a quiet goddess,\nbut a star",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a lighted moon.\nThe man who came was a man, not a beast,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered with a light\nfire.\n\nThe house with a light, as they passed, was filled\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to the door.\nThe house was full of voices, and they were all in tune,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\nIt is a very simple couplet.\nBut the question is, what do the lines mean",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\nThe wind whispered secrets of the old man,\nand the fire danced in the deep blue sky"
+  ]
+}

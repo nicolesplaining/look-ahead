@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nThis couplet captures the emotional pain and sense of loss that can come",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its gain.\n\nThis couplet captures the emotional turmoil and sense of loss that can come",
+  "baseline_clean_rate": 0.5,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had been left to grief.\n\nIn this poem, the speaker reflects on the pain of losing a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of love had never ceased.\n\n\u2014William Wordsworth, \"The Prelude\"\n\nIn this beautiful couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain of love was relief.\n\nThis rhyming couplet captures the intensity and all-consuming nature of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had my soul in relief.\n\nThe poem expresses a sense of overwhelming sadness and loss, suggesting that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the darkness had a name.\nIn the stillness of the evening air,\nI heard the whispers of my",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was my own relief.\n\u2014 Emily Dickinson\n\nThis poem is a beautiful expression of the emotional pain",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been a cruel relief.\nBut then I realized that I was not alone,\nfor in the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain of losing my wife,\nWould cut through the very fabric of my soul,\nAnd leave me shattered",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the darkness were my grief.\nIt is a feeling I've yet to find,\nthat I am drowning in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its light.\nI saw the world in colors bold,\nBut now I see the beauty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss would be my life.\nYet, I felt a pain so profound,\nthat I felt my heart",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the love I lost was a rift.\n\u2014William Wordsworth\n\nWordsworth's poem reflects his deep emotional",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was the very breath I'd breathe.\nThe memory of you, it still remains,\nand though",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the memories of love were relief.\n\nThis couplet suggests that the speaker had hoped to find solace in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the love I held was bereft.\n\nA more poetic way to express the same idea:\n\nMy heart was",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a child, and it would leave me bereft.\nA friend who had been by",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\u2014 John Green\n\nA classic example of a couplet is a short",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had left me to grief.\n\nThis poem is a powerful expression of the emotional pain and desperation that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had suddenly lost its light.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain of love had left its relief.\nBut then I saw the way she looked at me,\nand"
+  ]
+}

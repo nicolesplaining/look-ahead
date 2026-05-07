@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nThe door creaked open, and a figure came in,\nWith a",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange sound.\n\nA knock at the door, a voice so clear,\n\"Hello, I",
+  "baseline_clean_rate": 0.2,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nThis couplet has a rhyming scheme of AA, where \"do",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange noise, it seemed.\n\nWhat is the main point of the poem?\nThe main point",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud noise.\nThe family rushed in, with a frightened face,\nand found the burglar",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange echo boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange scream, it seemed.\nThey rushed inside to find a ghostly sight,\nA figure",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a noise, it was a clown.\n\nIt seems like the clown was trying to break the silent",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange knock.\n\nNow, let's see if we can come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud shout.\n\nA man stood in the doorway, his eyes aglow,\n\"I've come",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nIt was a ghostly melody, a haunting sigh,\nthat echoed through the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud scream.\n\nThe next day, they were shocked to find that a ghost\nwas dancing",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nIt was a melody so sweet and so fine,\nThat made them dance and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, booming boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound.\nA loud knock on the door, it seemed,\nAnd out came a friend,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, hollow boom.\n\nA figure emerged from the shadows, looking pale,\nand the couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a knock at the door.\nI'm not sure what's going on, but I must investigate",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice whisper \"Come home\".\n\nThis is a classic example of a \"narrative device",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie tune.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud boom.\n\nThe neighbors heard the sound and ran to the door,\nand found their old",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange noise, it seemed.\nA scratching sound on the walls, a faint hum,\nThey"
+  ]
+}

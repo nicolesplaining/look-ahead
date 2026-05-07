@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA rhyming couplet is a pair of lines that rhyme with each",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that no one was near.\n\n## Step 1: Identify the structure of a rhyming couplet",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA poem in free verse:\nHer eyes met his, a spark of recognition",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be light.\n\nA rhyming couplet is a pair of lines that rhyme with each",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would get through the night.\n\nA rhyming quatrain:\nShe felt a sudden sense of",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all was still right.\n\nA couplet is a unit of verse that consists of two lines which rhyme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would soon be light.\nWhat is the rhyming couplet?\nA rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would soon take flight.\n\nThe words \"fright\" and \"flight\" rhyme, so",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one saw her plight.\nDefinition of a rhyming couplet:\nA rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\nA rhyming couplet is a pair of lines that rhyme with each",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\n## Step 1: Identify the structure of a rhyming couplet",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass in the night.\nAnswer: A rhyming couplet is a pair of lines",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\nThe couplet is rhyming because the words \"fright\" and",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA stanza with a rhyme scheme of ABAB:\nIn the stillness of",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she was not in flight.\nA non-rhyming couplet:\nShe felt a sudden sense",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all was right.\nA rhyme is a sequence of words that have the same ending sound. Rhym",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nExplanation:\nThe first line, \"She felt a sudden sense of fright,\"",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA couplet is a unit of two lines that rhyme with each other.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she was not in flight.\n\n## Step 1: Understand the context of the rhyming couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA rhyming couplet is a pair of lines that rhyme with each",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would take flight.\nThe couplet uses the rhyme scheme \"fright-flight\" to create",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would take flight.\n\nA rhyming couplet is a pair of lines that rhyme with"
+  ]
+}

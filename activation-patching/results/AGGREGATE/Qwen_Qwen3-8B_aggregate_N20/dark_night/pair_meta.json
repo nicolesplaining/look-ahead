@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the distance spark.\nThe light grew brighter, it seemed to call,\nand then",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she found a ghostly light.\nThe ghostly light was not a light,\nbut a ghostly light",
+  "baseline_clean_rate": 0.6,
+  "baseline_corrupt_rate": 0.2,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she couldn't find the dark anymore.\nA rhyming couplet is two lines that rhyme and usually",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light, a warm, soft spark.\nThe light was soft, it danced and played,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the dark.\nThe light was soft, it danced on the trees,\nand then",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sound, a faint, soft bark.\n\nOkay, so the user wants a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the ghost of her lost friend Mark.\n\nThat's a great start! Here's a completed rh",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light, and knew she was not.\n\nOkay, that's a good start. Let me",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a man with a spark.\nHe was dancing in the street, with a light,\nand the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a figure, a shadow, a spark.\nThe figure moved with a grace so fine,\nbut",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sound, a soft, low bark.\nA hound, a hound, with eyes",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the moon in her hands.  \u8fd9\u4e2a\u8bd7\u7684\u89e3\u6790\n\u8fd9\u9996\u8bd7\u7684\u6807\u9898\u662f",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found that she had lost her spark.\n\nOkay, that's a rhyming couplet. Let",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found herself in the night.\nA rhyming couplet:\nShe wandered home alone into the dark",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in the distance.\nThe light was warm and soft and bright,\nand she felt her",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a light.\nShe wandered home alone into the dark,\nand then she found a light.\nOkay",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the light.\nA rhyming couplet is two lines that rhyme.  The first line",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a box of old, old bark.\nWhat's the next line? The box was full of",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sound, a whisper in the park.\nA voice said, \"You're lost, little",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light that made her bark.\nWhat's the next line? Well, let's see.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a man who seemed to spark.\nBut what he said was, \"You're not alone,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the light.\nThe couplet is structured as a pair of lines that rhyme, which fits the"
+  ]
+}

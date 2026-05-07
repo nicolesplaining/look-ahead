@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, mournful spark.\n\nWhat is the meaning of the couplet?\n\nThe couplet",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she fell asleep with a gentle light.\n\nA rhyming couplet:\nThe stars shone bright in",
+  "baseline_clean_rate": 0.7,
+  "baseline_corrupt_rate": 0.1,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep, and her heart was not to embark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a stranger, with a heart so stark.\n\nWhat rhyming words are present in this couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a figure in the light.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw him standing there.\nWith a heart full of fear and a soul so bright,\nshe took a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw him, with a troubled mark.\nHis eyes, a deep well, that seemed to hold a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep.\n\nThis rhyming couplet has a nice flow and rhyme scheme. The first and",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, eerie spark.\nA glow that seemed to follow her to her door,\nand then",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice that made her heart embark.\nIt was a gentle whisper, soft and low,\nthat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a faint, mournful spark.\n\nThis rhyming couplet has a sense of foreb",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep, and the next morning there was no one left.\n\n\u2014Ruth S. Gru",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep and lost her spark.\n\nI was trying to capture the essence of a person who is lost",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep.\nThe night air was filled with strange noises and the sound of a distant rumble.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a safe place to park.\n\nA rhyming couplet:\nShe found a place to hide",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled upon a stranger's mark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a strange and eerie spark.\n\nThis couplet is from the poem \"The Raven\" by Edgar",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep in the dark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard her own voice to embark.\nA gentle breeze, a whispered name,\nled her to a place",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she fell asleep, with a heart that was dark.\n\n(Note: The couplet is a traditional form of",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt safe, no longer left in the dark.\n\nThis poem explores the theme of feeling safe and secure",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found her way back to the light.\n\nThe poem describes a person who has walked alone at night,"
+  ]
+}

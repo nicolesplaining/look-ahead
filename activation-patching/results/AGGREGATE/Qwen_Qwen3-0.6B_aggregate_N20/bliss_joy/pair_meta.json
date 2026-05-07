@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe wind blew through the trees,\nand the stars were bright.\nThe children laughed",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell to sleep.\nThe wind blew through the trees,\nand the stars were bright.\nThe children laughed",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell.\nThe winds stirred with joy,\nand the moonlight danced.\nAnswer: The children laughed in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nThey all fell asleep,\nand the moon was bright.\nThe first line and the second",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried,\nas the day passed.\nThe first line ends with the word \" bliss.\" The second line",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe children laughed in bliss,\nuntil they all fell to sleep.\n\nA child is to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell.\nThe last line should be a rhyme with the first line.\nThe first line is a rhyme",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell.\nThey laughed in bliss,\nuntil they all fell.\nAnswer:\nThe correct answer is C.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all\ndanced in joy.\nAnd the moon shone bright,\nas the stars were all\ngone",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to the ground,\nand a few were still\nstanding on the roof.\nThe children laughed in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe children laughed in bliss,\nuntil they all fell asleep.\n\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all\nwere old and grown.\nThey were once\nin a garden of light,\nand now they\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\nThe children laughed in bliss,\nuntil they all fell down.\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down to sleep.\n\nThe children laughed in bliss,\nuntil they all fell to sleep.\n\nWhich one",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all laughed again.\nThe sky was blue,\nand the world was still.\nThe children laughed in bliss,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell\nto sleep, and the night\nbegan to grow\nlonger.\n\nIn the first",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep,\nthen they came back to sleep,\nand the night came to sleep.\nThe answer",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nThe wind howled in sorrow,\nand the trees stood still.\nThe rhyme is formed",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into\na deep sleep.\nThe sky was so clear,\nand the moon was full of light",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to their knees.\nThe old man laughed too,\nand all the children laughed.\nAnd when they",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went to sleep.\nThe children laughed in bliss,\nuntil they all went to sleep.\n\nThe children laughed",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe world was silent,\nand the moon was still.\nThe children laughed in bliss"
+  ]
+}

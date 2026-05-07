@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.\n\nThis couplet is a good example of a rhyming couplet because",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that her heart would clear.\nShe took a deep breath, calm and bright,\nand let her spirit take",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would pass in the morning light.\nThe darkness was a heavy weight,\nbut she stood firm,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would end in night.\n\nThis couplet describes the feelings of fear and anxiety that someone might",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart was in sight.\nShe took a deep breath, and stood tall,\nand let her courage",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be alright.\nShe closed her eyes and took a breath,\nand the fear began to se",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not take flight.\n\nThis couplet is meant to be a clever and witty way of describing",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA person is experiencing a sudden and unexpected fear, which is a common response",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon take flight.\n\nThis couplet is meant to convey a sense of fear or apprehension",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart would take flight.\n\nThis couplet illustrates a person experiencing fear, but also shows hope that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not take flight.\n\nThis couplet has a rhyming scheme of ABAB, where",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nThe poem describes a moment of fear or anxiety that someone experiences, and the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon take flight.\nShe took a deep breath and stood tall,\nand faced her fears,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.\nShe looked around, and saw a sight,\nThat made her heart feel just",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it wouldn't be too late tonight.\nShe jumped up and ran with all her might,\nto find",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the storm would take flight.\nIt rained all night, and woke her with a sound,\nthat",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that nothing would take flight.\n\nThis rhyming couplet describes a person who is scared or frightened.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might find it right.\n\nThis is a rhyming couplet because it consists of two lines",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would take flight.\nThe lights in her home, she knew so well,\nwould soon be",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the dawn would be bright.\n\nThe poem describes a moment of fear or anxiety that someone feels, and",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be alright.\n\nThe poem describes a woman who feels a sudden and intense fear, and is",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the storm would take flight.\nShe closed her eyes and held her breath,\nand prayed that the tem"
+  ]
+}

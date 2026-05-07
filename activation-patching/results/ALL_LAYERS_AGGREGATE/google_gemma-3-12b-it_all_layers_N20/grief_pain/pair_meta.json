@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the sun had lost its golden reign.",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world held no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world offered no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost its relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a leaf.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world would offer no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen all relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world offered no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nI like it! Simple, evocative, and the rhyme works well",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen all relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky was falling, like a falling leaf.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was but a withered leaf.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world offered no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world offered no relief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves have fallen, a silent relief."
+  ]
+}

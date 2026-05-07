@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nA poem with a consistent rhyme scheme:\nThe stars shone brightly in",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had turned to rain.\n\nA poem with a consistent rhyme scheme:\nThe sun sets slow and paints",
+  "baseline_clean_rate": 0.85,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA short story:\nIn the quiet hours of the night, when the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the waves crashed over my grief.\n\n(Note: A rhyming couplet is a unit of two lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a piece of relief.\n\nThe poem is a reflection on the pain of losing someone close",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had taken my relief.\n\nThis poem is a good example of a rhyming couplet,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was in perpetual relief.\n\nThe poem is written in a style that is reminiscent of the Romantic poets",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world's relief.\n\nA haiku:\nSnowflakes gently fall\nBlanketing the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of my sorrow could relief.\n\nNote: A rhyming couplet is a pair of lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart were pierced with a knife.\n\nThis poem is an example of what type of poetry?\n\nA)",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nIn this rhyming couplet, the first and second lines rhyme",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the darkness would never leave.\n\nIn this poem, the rhyming couplet is:\ngrief -",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart itself did grief.\n\n(Note: A rhyming couplet is a unit of two lines that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended in relief. (From \"The Waste Land\" by T.S. Eliot)\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nThis is an example of a rhyming couplet, a type",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was dying in relief.\n\nThis poem is quite unique in its theme, which I'll describe briefly",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had come to grief.\n\nAnd here's a short poem, inspired by the couplet:\n\nIn",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth itself had grief.\n\nA quote from John Donne:\n\"Love is not love which alters when it",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had lost its chief.\n\nIn this rhyming couplet, the words \"grief\"",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had taken to relief. \n\nNote: I have followed the rhyming couplet pattern of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost relief.\n\nThis poem is an example of a rhyming couplet. The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had come to grief.\n\nA monologue:\n\n(speaking to an audience, with a sense"
+  ]
+}

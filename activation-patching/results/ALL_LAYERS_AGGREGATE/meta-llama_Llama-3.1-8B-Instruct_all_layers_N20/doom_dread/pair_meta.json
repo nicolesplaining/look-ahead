@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\nA rhyming couplet is a pair of lines that rhyme",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a creaking bed.\n\nA rhyming couplet is a pair of lines that rhyme",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\nThe couplet is not very good, I know, but I was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking boom.\nA rhyming couplet is a poetic form that consists of",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange loud boom.\nWhat is the meaning of the word \"doom\" in the context",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the tomb.\n\nA rhyming couplet is a pair of lines that rhyme",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\nWhat rhymes with \"boom\"?  I'm having trouble thinking",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mournful boom.\n\nA poetic fragment:\n...the moon hung low in the darkening sky",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faintest room.\n\nThe couplet is a good example of a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, cold gloom.\n\nA rhyming couplet is a pair of lines that",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, mournful tune.\n\n## Step 1: Identify the components of the rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new tune.\nWhat is the subject of the rhyming couplet?\nThe subject",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking boom.\nA rhyme scheme:\nAABB CCDD\nWhere the first and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creaking boom.\n\nThis is the first stanza of a poem. I will give you",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, mournful boom.\n\nThe couplet suggests that something ominous or foreboding is",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the broom.\nThis is a good example of a rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the floor creak in gloom.\nThis couplet is a great example of a rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a haunting boom.\n\n## Step 1: Identify the elements of the rhyming couplet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creak in gloom.\n\nThe rhyming couplet is used to create a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, sad boom.\n\nThe first line has 8 syllables (8-8 is",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mournful boom.\n\nA couplet is a unit of two lines that rhyme with each other",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint \"Boo!\" to the room.\nA rhyming couplet is a unit"
+  ]
+}

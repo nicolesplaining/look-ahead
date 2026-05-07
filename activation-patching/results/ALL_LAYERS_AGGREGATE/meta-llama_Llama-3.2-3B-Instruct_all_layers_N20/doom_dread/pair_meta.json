@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\n\nA short story:\nThe old mansion had been abandoned for decades,",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange noise overhead.\n\nA short story:\nThe old mansion had been abandoned for decades, its",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange perfume.\n\nThis is the start of a poem, and I would like to continue it",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom. \n\nI was just practicing rhyming couplets, and I",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new boom.\n\nA haiku:\nSnowflakes gently fall\nBlanketing the landscape",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new tune. \n(Alternate versions)\nThe empty house was filled with silent space,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange loud boom.\n\nA rhyming couplet:\nThe sun was setting over the rolling",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creepy loom.\n\n(Note: A rhyming couplet is a unit of two lines",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud \"Boo!\" from the room. - Edgar Allan Poe\n\nPoe's use",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creepy boom.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the creak of the door's room. (Note: I used the word \"doom",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a most curious boom.\n\nThe first line describes a sense of foreboding or dread, with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange new room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a dreadful boom.\n\nThis is an example of a rhyming couplet, a two-line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, low boom.\n\nThis is a classic example of a rhyming couplet,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, hollow boom.\n\nThe empty house was filled with silent doom,\nwhen suddenly they heard",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creak open in the room.\n\n(Note: A rhyming couplet is a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, low boom.\n\nThe story of the house is not entirely told,\nthe mystery remains",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creaking to the room.\n\nThis is an example of a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\n\nThe phrase \"silent doom\" is an example of a metaphorical",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie boom.\n\nThe story behind this poem, if you want to know,\nIs",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creak back to its room.\n\nThis is a classic example of a rhyming"
+  ]
+}

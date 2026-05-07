@@ -9,40 +9,58 @@
 #   OUTPUT_DIR=/path/to/output
 #   MAX_NEW_TOKENS=16
 #   MAX_POEMS=600              # default: all
+#   TEMPERATURE=0.8            # 0 = greedy; >0 = sampling
+#   NUM_SAMPLES=10             # completions per poem when TEMPERATURE > 0
 
 set -e
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
 
-export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:$PYTHONPATH"
+export PYTHONPATH="$PROJECT_ROOT/poem/src:$PROJECT_ROOT/probe/src:${PYTHONPATH:-}"
 
-MODEL_NAME=Qwen/Qwen2.5-72B
-POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-original-truncated-shuffled.jsonl}"
+# MODEL_NAME=google/gemma-3-1b-it
+MODEL_NAME=Qwen/Qwen3-0.6B
+POEMS_PATH="${POEMS_PATH:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled.jsonl}"
+POEMS_PATH_NO_NEWLINE="${POEMS_PATH_NO_NEWLINE:-$PROJECT_ROOT/poem/data/poems-all-truncated-shuffled-no-newline.jsonl}"
 MODE="${MODE:-both}"
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/qwen2.5-72B}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/poem/results/ablation/NEW}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16}"
+TEMPERATURE="${TEMPERATURE:-0}"
+NUM_SAMPLES="${NUM_SAMPLES:-1}"
+QUANTIZATION="${QUANTIZATION:-}"   # "8bit" halves bfloat16 memory (requires bitsandbytes)
 
 MAX_POEMS_ARG=()
-[ -n "$MAX_POEMS" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
+[ -n "${MAX_POEMS:-}" ] && MAX_POEMS_ARG=(--max_poems "$MAX_POEMS")
+
+QUANTIZATION_ARG=()
+[ -n "$QUANTIZATION" ] && QUANTIZATION_ARG=(--quantization "$QUANTIZATION")
 
 mkdir -p "$OUTPUT_DIR"
 
 echo "Ablation: rhyming evaluation"
 echo "  model:          $MODEL_NAME"
 echo "  poems:          $POEMS_PATH"
+echo "  poems(no-nl):   $POEMS_PATH_NO_NEWLINE"
 echo "  mode:           $MODE"
 echo "  max_new_tokens: $MAX_NEW_TOKENS"
+echo "  temperature:    $TEMPERATURE"
+echo "  num_samples:    $NUM_SAMPLES"
+echo "  quantization:   ${QUANTIZATION:-none}"
 echo "  output_dir:     $OUTPUT_DIR"
 echo ""
 
 python -m ablation.evaluate_rhyming \
-    --model_name     "$MODEL_NAME" \
-    --poems_path     "$POEMS_PATH" \
-    --mode           "$MODE" \
-    --max_new_tokens "$MAX_NEW_TOKENS" \
-    --output_dir     "$OUTPUT_DIR" \
-    "${MAX_POEMS_ARG[@]}"
+    --model_name            "$MODEL_NAME" \
+    --poems_path            "$POEMS_PATH" \
+    --poems_path_no_newline "$POEMS_PATH_NO_NEWLINE" \
+    --mode                  "$MODE" \
+    --max_new_tokens        "$MAX_NEW_TOKENS" \
+    --temperature           "$TEMPERATURE" \
+    --n_samples             "$NUM_SAMPLES" \
+    --output_dir            "$OUTPUT_DIR" \
+    "${MAX_POEMS_ARG[@]}" \
+    "${QUANTIZATION_ARG[@]}"
 
 echo ""
 echo "✓ Done. Results saved to $OUTPUT_DIR/"

@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a friendly, glowing spark.\n\nThis is a simple, evocative couplet. It creates a",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a beautiful, shining light.\n\nA haiku:\nDarkness softly falls,\nStars",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a friendly, glowing spark.\n\nThis is a classic example of a rhyming couplet.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a single, shimmering spark.\n\nThis is an example of a rhyming couplet. It",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, unsettling spark. \n\nA short, descriptive sentence:\nThe rain hammered against",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a wolf's mournful bark.\n\nThis is a good example of a rhyming couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a light, a shining spark.\n\nThis is a simple, evocative couplet that creates a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a shining, silver spark.\n\nA limerick:\nThere once was a girl named",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a sudden, chilling spark.\n\nI tried to use the words \"wandered\" and \"",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she met a mysterious, handsome lark.\n\nA limerick:\nThere once was a girl,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a lonely, sparkling spark.\n\nI've added a little bit of description to the second",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a friendly spark.\n\nThis is a simple, descriptive couplet that evokes a sense of mystery",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a mysterious bark.\n\nA simile:\nThe rain fell like tiny silver needles.\n\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a distant, haunting spark.\n\nI tried to create a sense of mystery and a little bit",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a mysterious, gentle spark.\n\n**Explanation:**\n\n*   **Rhyming couplet:**",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a tiny, flickering spark.\n\nA rhyming couplet:\nThe rain fell softly on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, lovely spark.\n\n**Explanation:**\n\n*   **Rhyming Couplet:**",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a sudden, chilling spark. \n\nThis is a simple, evocative couplet. It creates",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she thought, \"I'll leave my mark.\"\n\nThis couplet is an example of:\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a sudden, awful spark.\n\nThis couplet evokes a sense of mystery and perhaps even danger",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she started to feel a little spark.\n\nThis is a good example of a rhyming couplet!",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a shining, golden spark. \n\nA short story based on the couplet:\n\nThe"
+  ]
+}

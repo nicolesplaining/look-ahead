@@ -1,0 +1,11 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a light in every park.\nThe first line is a statement of fact. The second line is",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a light.\nThe light was green and strange and bright,\nand it was moving through the sky",
+  "baseline_clean_rate": 0.75,
+  "baseline_corrupt_rate": 0.05
+}

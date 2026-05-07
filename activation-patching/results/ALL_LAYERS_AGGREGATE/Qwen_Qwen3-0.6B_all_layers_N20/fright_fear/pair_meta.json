@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would pass by.\nThe wind passed by, and she felt a sudden sense of fear,\n",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that the wind would pass by.\nShe felt a sudden sense of fear,\nand hoped that the wind would",
+  "baseline_clean_rate": 0.1,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the sun might still be bright.\nHer heart quickened with longing,\nand she looked at the stars",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her dreams could be saved.\nA: A girl with a dream\nB: A girl who dreams",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would still be fair.\nThe second line should rhyme with the first line.\nThe first line",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the sun would rise again.\nShe felt a sudden sense of fear,\nand hoped that the night would",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might not be\na prey to her own desires.\nThe next line in the rhyme is:\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could find a way to pass.\nThen she looked up at the sky,\nand saw a cloud",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would end.\nShe had no idea, but her heart would be:\nA. (A",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would end;\nShe heard the cries of the dogs,\nand whispered to the sky;\nBut",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the wind would pass by.\nShe felt a sudden sense of fright,\nand hoped that the wind would",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her fear would pass.\nWith a smile, she looked forward to the day,\nand smiled again in",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she might not fall.\nA.\nShe felt a sudden sense of fear,\nand hoped that she might",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the world would be fair.\nBut in the end, she found that\nshe had only the pain",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that I would feel the same.\nShe felt a sudden sense of fear,\nand hoped that I would feel",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night was fair.\nWith her heart full of longing,\nshe thought of the moon above.\nA",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the light would not escape.\nWhat are the two lines?\nA. She felt a sudden sense of",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart would beat\nin peace, in a quiet room.\nBut the wind had brushed her face",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all was well.\nThe poet used to dream in a way that he could see\nthrough the eyes",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the night would pass.\nBut in the end, the night did not pass,\nand she cried out",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the winds could be still.\nThe wind in the house of her mother\nwas a sound of sorrow",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could escape from the night.\nThen she saw a shadow that appeared in the air,\nand cried"
+  ]
+}

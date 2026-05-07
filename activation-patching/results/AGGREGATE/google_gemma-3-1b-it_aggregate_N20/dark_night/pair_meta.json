@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper, a ghostly spark.\n\nThe rain fell softly, a mournful sound,\n",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a beautiful, shining light.\n\nThe light was a star, a celestial grace,\nand",
+  "baseline_clean_rate": 0.3,
+  "baseline_corrupt_rate": 0.25,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice, a welcome spark.\n\n(I tried to capture a slightly melancholic and lonely",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a chilling sound.\n\nThe house was old and filled with shadows,\na forgotten history.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper, a chilling dark.\n\nThe rain fell softly, a gentle plea,\nto",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a friendly face.\n\nI hope this is what you were looking for. Let me know if",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper of a fright.\n\nThe rain fell softly, a gentle grace,\nwashing away",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper.\n\nThe wind, a gentle, mournful sound,\ncarried a forgotten sorrow",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper.\n\nThe rain fell softly, a silver sheen,\nreflecting the moonlight on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a strange, mournful sound.\n\nThe moon, a pale and silent witness, watched as",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper, a chilling dark.\n\nThe rain fell softly, a gentle plea,\nas",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper, a frightened dark.\n\nThe moon, a silver coin, hung high above,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a cold, chilling fright.\n\nThe shadows danced, a ghostly, slow dance,\nwhile",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a cold, sharp fear.\n\nThe moon hung low, a silver tear,\nreflecting",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a strange, cold touch.\n\nThe rain fell softly, a mournful sound,\nas",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper, a dreadful sound.\n\nThe shadows danced with a chilling grace,\nand the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shadow, a ghostly spark.\n\nThe rain fell softly, a mournful sound,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a ghostly call.\n\nThe moon, a pale and silver sheen,\nreflected on the lonely",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a chilling, silent fright.\n\nThe shadows danced, a spectral show,\nand the air",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a chilling, ghostly spark.\n\nThe trees stood silent, a mournful hue,\nas",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a cold, silent fright.\n\nThe rain fell softly, a gentle plea,\nto wash",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a chill, a fright.\n\nThe wind whispered secrets through the trees,\na mournful"
+  ]
+}

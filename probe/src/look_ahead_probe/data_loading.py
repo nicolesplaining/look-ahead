@@ -77,13 +77,23 @@ class ActivationDataset(Dataset):
         return self.activations[idx], self.targets[idx]
 
 
+def load_metadata(dataset_path: str) -> dict:
+    """Load only the metadata from a dataset (directory or legacy .pt file)."""
+    p = Path(dataset_path)
+    if p.is_dir():
+        with open(p / 'metadata.json', encoding='utf-8') as f:
+            return json.load(f)
+    return torch.load(dataset_path, weights_only=False)['metadata']
+
+
 def load_extracted_dataset(dataset_path: str, layer_idx: Optional[int] = None, k: Optional[int] = None):
     """
     Load extracted activation dataset.
 
     Args:
-        dataset_path: Path to .pt file
-        layer_idx: Layer index to load (None = all layers)
+        dataset_path: Path to dataset directory (new format) or legacy .pt file
+        layer_idx: Layer index to load (None = all layers). When using the directory
+                   format with a specific layer_idx, only that layer is loaded into RAM.
         k: Lookahead distance to use (None = return all targets)
 
     Returns:
@@ -92,11 +102,34 @@ def load_extracted_dataset(dataset_path: str, layer_idx: Optional[int] = None, k
         - targets: [n_samples] if k specified, else [n_samples, max_k]
         - metadata: dict
     """
-    data = torch.load(dataset_path)
+    p = Path(dataset_path)
 
-    layer_activations = data['layer_activations']
-    all_targets = data['targets']  # [n_samples, max_k]
-    metadata = data['metadata']
+    if p.is_dir():
+        metadata = load_metadata(dataset_path)
+        all_targets = torch.load(p / 'targets.pt', weights_only=False)
+
+        if layer_idx is not None:
+            layer_file = p / f'layer_{layer_idx}.pt'
+            if not layer_file.exists():
+                available = sorted(int(f.stem.split('_')[1]) for f in p.glob('layer_*.pt'))
+                raise ValueError(f"Layer {layer_idx} not in dataset. Available: {available}")
+            layer_activations = torch.load(layer_file, weights_only=False)
+        else:
+            layer_activations = {
+                int(f.stem.split('_')[1]): torch.load(f, weights_only=False)
+                for f in sorted(p.glob('layer_*.pt'), key=lambda f: int(f.stem.split('_')[1]))
+            }
+    else:
+        data = torch.load(dataset_path, weights_only=False)
+        layer_activations = data['layer_activations']
+        all_targets = data['targets']
+        metadata = data['metadata']
+
+        if layer_idx is not None:
+            if layer_idx not in layer_activations:
+                available_layers = sorted(layer_activations.keys())
+                raise ValueError(f"Layer {layer_idx} not in dataset. Available: {available_layers}")
+            layer_activations = layer_activations[layer_idx]
 
     # Select targets for specific k if requested
     if k is not None:
@@ -106,13 +139,4 @@ def load_extracted_dataset(dataset_path: str, layer_idx: Optional[int] = None, k
     else:
         targets = all_targets
 
-    # Select specific layer if requested
-    if layer_idx is not None:
-        if layer_idx not in layer_activations:
-            available_layers = sorted(layer_activations.keys())
-            raise ValueError(
-                f"Layer {layer_idx} not in dataset. Available: {available_layers}"
-            )
-        return layer_activations[layer_idx], targets, metadata
-    else:
-        return layer_activations, targets, metadata
+    return layer_activations, targets, metadata

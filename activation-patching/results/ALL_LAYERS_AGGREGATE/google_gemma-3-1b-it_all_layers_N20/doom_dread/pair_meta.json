@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe rain fell softly, a mournful plea,\nas shadows",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came, a ghostly parade.\n\nThe rain fell softly, a mournful hue,\nas shadows",
+  "baseline_clean_rate": 0.55,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim my room.\n\nI tried to reason, but my mind was numb,\nas",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a chilling bloom.\n\nThe garden was overgrown, a tangled mess,\nwith faded memories",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe old man sat, his eyes reflecting blue,\na memory",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nThe rain fell like tears, a sorrowful stream,\nwashing away the past'",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim it home.\n\nThe rain fell softly, a mournful tune,\nas shadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly gloom.\n\n---\n\nA brief story about a lost dog:\n\nThe rain",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nI\u2019ve been waiting for a long time,\nfor a simple, happy moment",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim the room.\n\nThe rain fell softly, a mournful hue,\nreflecting",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a terrible bloom.\n\nThe rain fell hard, a mournful, grey cascade,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a spectral bloom.\n\nI sought to capture the beauty of the fading light,\nbut",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nA quiet, lonely place, it seemed to be,\na haven for the lost",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\n\nA single, weathered, wooden chair,\nstood in the doorway, a lonely,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim it home.\n\nThe rain fell softly, a melancholic hue,\nas shadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nThe rain fell hard, a mournful, chilling plea,\nas shadows danced on",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they arrived.\n\nThe rain fell softly, a mournful hue,\nas the shadows lengthened, a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, a ghostly bloom.\n\nThe rain fell softly, a mournful hue,\nwashing away",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim the room.\n\nThe rain fell softly, a melancholic hue,\nas the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, escaping the gloom.\n\n(A bit more descriptive, perhaps.  I've aimed",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came.\n\nI felt a chill, a creeping dread,\nas the darkness spread, a silent",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to claim my room.\n\nI\u2019ve been lost in the labyrinth of my mind,\n"
+  ]
+}

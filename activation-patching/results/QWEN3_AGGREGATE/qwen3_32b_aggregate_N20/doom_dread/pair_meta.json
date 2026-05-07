@@ -1,0 +1,11 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nThe wind outside began to howl and wail,\nas if",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a creaking bed.\nThe empty house was filled with silent dread,\nwhen suddenly they heard",
+  "baseline_clean_rate": 0.8,
+  "baseline_corrupt_rate": 0.0
+}

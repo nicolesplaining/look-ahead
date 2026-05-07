@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nThe door creaked open, and a figure came in,\nWith a",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a strange sound.\n\nA knock at the door, a voice so clear,\n\"Hello, I",
+  "baseline_clean_rate": 0.25,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a knock on the room.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nWhat are the rhyming words in this couplet?\nThe empty house",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a noise, and it seemed to come from the room below.\nThey cautiously made their way downstairs",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud rumble and boom.\n\nWhat do you think might have caused the loud noise?\nIs",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the door.\n\nA classic setup for a mystery or thriller, and a great example",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\n\nThey rushed to the door and flung it wide,\nand found the door",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.\nA musical note, a whispered sigh,\nA voice that seemed to come from",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange sound.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, mournful tune.\n\nThis sounds like a mystery story to me. What do you",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mysterious tune.\nThe music seemed to come from nowhere at all,\nand the windows shook with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud boom.\nThe fire alarm went off, and they all ran,\nto the door,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mysterious tune.\n\nThis is an example of a \"limerick\", a type of humorous",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creak out.\n\nThis rhyming couplet describes a scene where the main characters",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a dog.\n\nThe sound of the dog was barking loud,\nand the couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud scream.\n\nThis poem is a reflection on the idea of the empty house being a symbol",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange voice.\n\nThe door creaked open, and a figure stood tall,\nWith eyes",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud knock.\n\nThe door creaked open with a groan and a sigh,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange perfume.\nIt wafted through the air, a sweet, enticing smell,\nthat",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange tune.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice that came to boom.\nThe music was loud and a jarring sound,\nas a"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nA soft, low hum, like a distant tune,\nthat echoed through the halls",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a sound, a dread.\n\nWait, that's not quite right. The second line should rhyme",
+  "baseline_clean_rate": 0.15,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a secret room.\n\nWait, that's not a couplet. A couplet is two lines",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant boom.\nThe boom was coming from the old well,\nwhere a creature, both dead",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant sound.\nA low, mournful wail, like a ghostly moan,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nThe house was old, its walls were thin,\nbut no one could hear the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nIt was a voice from the other side,\ntelling them to open the door",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound. The sound came from the basement, where the light was on. They had long",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a treasure room.\nThe treasure room was filled with gold and gems,\nbut there was a r",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant scream.\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nOkay, so I need to create a rhyming couplet based on the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nA crash, a scream, and then a distant shout,\nas shadows danced in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nThe sound was soft, but it was not a dream,\nas the ghostly",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nIt wasn't wind, it wasn't thunder's roar,\nbut something more,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a mouse. \u8fd9\u4e2a\u62bc\u97f5\u662f\u5426\u6b63\u786e\uff1f\n\u662f\u7684\uff0c\u8fd9\u4e2a\u62bc\u97f5\u662f\u6b63\u786e\u7684",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nA door opened, and from the dark\ncame a soft, glowing light.\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nA soft, low hum, that echoed through the halls,\nlike something crawling on",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nThe sound was not from the walls or the floor,\nbut from the window,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\n\nThe empty house was filled with silent doom,  \nWhen suddenly they heard a sound",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint sound.\nBut it was just the wind, or maybe the trees,\nor the ticking",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a sound.\nIt wasn't the wind, nor a cat in the room,\nbut something that"
+  ]
+}

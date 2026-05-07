@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby the big, red, round balloon,\nwhich popped with a sound.\n\nOkay,",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all were joyless and destroyed.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.1,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby a giant, squishy, gooey,\nsponge that fell from the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick from the bliss.\nOkay, so I need to come up with a rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby a giant, friendly bear,\nwho gave them each a treat.\n\nOkay, so",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby the big, red, round balloon,\nwhich was full of something... gloomy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nOkay, so I need to come up with a rhyming couplet. The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nOkay, let's see. The user wants a rhyming couplet. The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby the big red dragon,\nwho was really a fella.\nOkay, let's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell ill with the disease.\nOkay, I need to come up with a rhyming couplet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nOkay, so I need to come up with a rhyming couplet based on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt ill and missed\nthe morning's sun, which had been\nhidden by a cloud that hadn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby the giant, grumpy, red-faced,\nand slightly overweight,\ngrumpy old",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell ill with this.\n\nThe answer is a disease that is spread by coughing and sneezing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick from the dish. \n\nA haiku:\nThe sun sets in the west,\nA rainbow",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nWhat is the meaning of the poem? The poem uses a rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got ______.\nThe answer is \"blisters\" because they were playing outside in the hot sun",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got bit by the\nOkay, here's a rhyming couplet to finish that line:\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kicked in the nuts.\n\nOkay, I need to create a rhyming couplet based on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\nOkay, let's see. The user provided a rhyming couplet:\n\n\"The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed\nby a giant, green, sticky,\nsilly string surprise!\n\nOkay, I need",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell sick.\n\nOkay, the user wants a rhyming couplet. Let me start by understanding"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nA. The couplet is a poetic expression of the speaker's feelings",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its rain.\n\nA rhyming couplet is a pair of lines that rhyme with",
+  "baseline_clean_rate": 0.7,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nIn this couplet, the speaker expresses a sense of profound sorrow and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a chief.\nDefinition: A rhyming couplet is a unit of two lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a chief.\nWho was this chief, you ask?\nKing Richard III of England,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was bereft.\nLabels: bereavement, grief, loss, rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost relief.\nThe poem above is an example of a rhyming couplet.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of him would be my relief.\n\nA rhyming couplet is a pair of lines that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThis rhyming couplet is a poem about the loss of someone",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had ceased to breathe.\nA line from a poem:\nThe world is too much with us",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a chief.\n\nThe phrase \"such grief\" in the couplet is an example of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart itself had left.\n\nThis is the first line of a poem that I started writing a while back",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nA line from a poem:\nThe world is too much with us;",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThe couplet expresses a sense of profound loss and shock, suggesting that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss was my own relief.\n\u2014 William S. Burroughs\n\n# Contents\n1. Introduction",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very sky had turned relief.\nThe rhyming couplet is a poetic device in which two lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was bereft.\nThis line describes the feelings of a person who has lost someone they loved",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the loss of you was my relief.\n\nA rhyming couplet is a poetic device in which two",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\n\nThe chief in question is likely John F. Kennedy, who was assass",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was bereaved.\nA rhyming couplet is a unit of poetry consisting of two",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost relief.\n\nThis rhyming couplet was created by a human, but what",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was bereft.\n\nDefinition:\nThe term \"rhyming couplet\" refers to a"
+  ]
+}

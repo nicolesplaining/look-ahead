@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright.\n\nA haiku:\nRain falls on the leaves,\nSilent drops",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that she was safe here.\n\nA haiku:\nRain falls on the leaves,\nSilent drops",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could win the fight.\n\nA rhyming triplet:\nShe felt a sudden sense of fright",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness held no blight.\n\nA limerick:\nThere once was a girl named Sue,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning brought the light.\n\nA rhyming couplet:\nThe rain fell soft, a gentle",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would quickly be right.\n\nThis is a simple, effective couplet. Here's a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he was doing alright.\n\nThis couplet evokes a feeling of worry and concern for someone's",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.\n\nI tried to create a simple, evocative image with this couplet.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright.\n\nA simile:\nThe rain fell like a curtain of grey.\n\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA simile:\nThe rain fell like a curtain of tears.\n\nA",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning brought the light.\n\nI tried to make it evocative and a little bit mysterious, with a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness wouldn't bite.\n\nA haiku:\nShadows lengthen slow,\nWhispers",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would quickly light.\n\nThis is a simple example of a rhyming couplet. A couple",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness wasn't quite right.\n\nThis is an example of a rhyming couplet. It",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would soon be right.\n\nThis is a good example of a rhyming couplet.  ",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon be night.\n\nA haiku:\nDarkness starts to creep,\nShadow",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning brought the light.\n\nI tried to capture a feeling of apprehension and a desire for a brighter",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright.\n\nA haiku:\nRain falls on the leaves,\nA quiet",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would come tonight.\n\nA simile:\nHer smile was as bright as the sun.\n\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that darkness held no fright. \n\nThis couplet is effective because:\n\n*   **It rhymes",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright. \n\nA short, descriptive sentence:\nThe rain fell in sheets,"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new song.\nThe empty house was filled with silent doom,\nwhen suddenly they came with",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they came with a bright light.\nThe empty house was filled with silent dread,\nwhen suddenly they came with",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a spring in their eyes.\nAnd I, who was so afraid, felt the light within",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new day.\nThe empty house was filled with silent doom,\nwhen suddenly they came with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a lighted flame.\nThe empty house was filled with silent doom,\nwhen suddenly they came",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a new sound.\nThey were the birds, and the stars were bright,\nand the wind",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came a man in a green coat,\nand told them to go to the city to stay.\nWhat",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found the keys were not there.\nBut when the keys were found, the house was full,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were all at peace.\nThe empty house was filled with silent doom,\nwhen suddenly they were all at",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came,\nthe wind blew in the house,\nthe tree stood still.\nThe couplet is the rhyme",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to speak with the moon,\nand with the moon they said: \"Oh, what a day",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a lark.\nThe empty house was filled with silence, with sound,\nwhen",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they were there again.\nThe empty house was filled with silence again,\nwhen suddenly they were there again.\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a warm breeze,\nso the house was filled with a warm breeze,\nand the house was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came the birds of spring.\nThe empty house was filled with silent doom,\nwhen suddenly they came the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came,\nThe wind, the rain, the thunder, the storm,\nThe silent house was filled with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to life.\nThe wind howled in the dark forest, \nand the stars were born again",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a great wind.\nBut the wind was not a wind, it was a song of death",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to visit.\nThe empty house was filled with silent hope,\nwhen suddenly they came to leave.\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came with a sudden rain.\nThe first part is a short story. The second part is a short",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came, they came with a song.\nA single bird flew in the sky,\nand a single bird",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they came to their old home.\nThe empty house was filled with silent doom,\nwhen suddenly they came to"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe wind blew through the trees,\nand the stars were bright.\nThe children laughed",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all fell to sleep.\nThe wind blew through the trees,\nand the stars were bright.\nThe children laughed",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe wind whispered through the trees,\nand the leaves were soft in the breeze.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went to sleep.\nThe night was bright and full of light,\nand the stars were bright in the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all became\nA\nA\nA\nIn the beginning,\nthe sun rose from the sea.\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell.\nThe children laughed in bliss,\nuntil they all fell.\nThey did not fall in a straight",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all went home.\nWith a mother's cry,\nthe world was a different place.\nWhat is the correct",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were gone,\nthe birds sang in the trees,\nand the sun was gone.\nThe wind was gone",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all cried.\nIn the morning, they were back,\nwith the same joy.\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were gone,\nand then again,\nthey came back, but with a heart of gold.\n\nAnd so",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe wind blew through the trees,\nand the stars were bright.\nAnd so the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all died young.\n\nThe children laughed in bliss,\nuntil they all died young.\n\nSo the rhyme is:\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell\nto sleep.\nA rhyme is the same in both lines.\nBut this is not a good",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep.\nThe sky blue sky,\nand the green grass,\nthe stars in the sky,\nand",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell;\ntheir faces were like snow,\ntheir eyes were like fire.\nAnswer: \nA. The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell\nto the earth,\nand cried,\nuntil they all rose,\nand sang,\nand danced,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep.\nThe moon was bright in the sky,\nand the stars were in the night.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down.\nBut when the light was dimmed,\nthe stars would rise again.\nThe children laughed",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell\nto sleep.\n\nThe rhyme is:\nA.\nThey\nB. They\nC. They",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to sleep;\nThe stars were bright and wide,\nand all the night was bright.\nThe children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all sat down.\nAnd the mother said, \"What is this? A song?\"\nThe children laughed again",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all\nsighed at the end of the night.\n\nThe children laughed in bliss,\nuntil they all"
+  ]
+}

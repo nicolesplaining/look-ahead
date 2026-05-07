@@ -33,3 +33,12 @@ pip install -r "$REQ_FILE"
 
 echo "Done."
 echo "To activate later, run: source \"$VENV_DIR/bin/activate\""
+
+echo "Installing Claude Code..."
+if ! command -v npm >/dev/null 2>&1; then
+  echo "npm not found. Installing Node.js via NodeSource..."
+  curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+  sudo apt-get install -y nodejs
+fi
+sudo npm install -g @anthropic-ai/claude-code
+echo "Claude Code installed."

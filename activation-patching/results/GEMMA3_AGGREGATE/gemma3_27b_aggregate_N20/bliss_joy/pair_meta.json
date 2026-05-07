@@ -1,0 +1,11 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all became a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+  "baseline_clean_rate": 0.85,
+  "baseline_corrupt_rate": 0.0
+}

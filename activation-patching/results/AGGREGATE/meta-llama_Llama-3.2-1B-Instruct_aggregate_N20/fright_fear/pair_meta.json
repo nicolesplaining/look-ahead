@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.\n\nThis couplet is a good example of a rhyming couplet because",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that her heart would clear.\nShe took a deep breath, calm and bright,\nand let her spirit take",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would soon take flight.\nShe was scared of the dark of night,\nand shivered with a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring light.\nThe darkness receded from her sight,\nand she took a deep breath in",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would bring a peaceful night.\nShe took a deep breath and stood tall,\nand tried to calm",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would end in flight.\nShe tried to shake off the feeling of fear,\nbut it lingered",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass in the night.\n\nThis couplet describes a situation where someone is feeling scared or anxious",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass in the night.\n\nWhat is the word for the emotion she felt?\nWhat is the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her heart was right.\nHer hands were shaking with fear,\nand her mind was filled with tears.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the fire would not ignite.\nHer heart was racing with every beat,\nas she tried to calm her",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would bring a brighter light.\n\n(Note: The couplet follows a specific rhyming scheme,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it was not her own life.\n\nHe tried to calm her down with words so bright,\nbut she",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she'd make it through the night.\n\nA rhyming couplet:\nHe lay in bed,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would be just in time.\n\nA couplet with a more ominous tone:\nBut then she heard",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be bright.\nBut when the sun rose high and high,\nShe saw that the birds were",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that nothing was amiss tonight.\n\nHer husband, who was sitting by her side,\nwas trying to calm",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\nAs she walked through the darkened night,\nshe stumbled upon a gentle light",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the lights would stay bright.\nIn the dark, the room felt quite tight,\nand she trembled",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her life would be alright.\nShe tried to calm herself down,\nand think of a way to wear",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would be alright.\n\nThis couplet is a rhyming couplet because it has a matching",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one was in sight.\nShe took a step back, and then a pace,\nAnd called out",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass in the night.\n\nA rhyming couplet:\nHer heart was racing, her"
+  ]
+}

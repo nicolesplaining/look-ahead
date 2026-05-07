@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had been broken by a storm.\nThe second line is the first line of the poem, and",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the heart had been torn from the chest.\nThe couplet is written in the style of a poem that",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the soul were a candle\nthat had burned out in the night.\nSo I rise again, I rise",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sorrow were a song.\nThe lines continue:\nHe who has lost his heart,\nand his soul,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had broken into pieces.\nBut in my heart, I still see the light,\nthe light of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart was a rose with no bloom.\nThe two lines are the same, the lines are the same",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sorrow had been a song.\nSo how long has the sorrow lived?\nI have never known it before",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart were a blade that had been cut.\nI am a man who has seen the world,\nand",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had been cut by the sword.\nAnd so the sorrow would not be broken,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart was a leaf on a breeze,\nI felt the pain in the soul, and then\nI",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been broken.\nA couplet in the style of a poem in the style of a couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had been pierced by a sword.\nIt is not a tragedy, nor a love's loss,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart were a mountain of stone.\nBut when I look upon the sky and the sea,\nI see",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the wind had passed through a tree,\nand the leaves had fallen in the sky.\nThe answer is\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain had a soul,\nI knew it only if I knew the truth,\nas it was in the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain were a flame that burns.\nThe couplet is:\n(A) the first line only, (",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain were in my eyes,\nand I could not find the way to go,\nbut the pain was",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the wind had passed through my heart,\nI could not feel the weight of the world,\nbut the light",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been broken.\nWhat is the rhyme scheme for this couplet?\nA. ABAB\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the wind had blown upon the heart\nand the sorrow had been lost in the sea.\nBut when the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart was in the depths of the soul.\nThe couplet is a poem composed of two lines,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had been torn by the cold.\nI never knew the depth of such sorrow,\nas though the"
+  ]
+}

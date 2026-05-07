@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nI never knew the depth of such grief,\nas though the",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had been torn in two.\n\nThat's a good start. Now, can you help me write",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were lost to me.\nBut now, I see the truth of it all:\nthe world is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the moon had fallen from the sky.\n\nOkay, let's see. The user wants a rhyming",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn apart.\n\nOkay, so the user wants a rhyming couplet. Let",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended in me.\n\nSo, the user wants a rhyming couplet. The first",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had been split in two.\nI never knew the weight of such pain,\nas though the earth",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from me.\n\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had been torn apart.\nIn the end, the truth was revealed,\nand the two of us",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the moon had lost its light.\nBut now I understand the pain,\nof seeing a loved one vanish in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from me.\nI never knew the weight of such love,\nas though my soul",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended in one day.\n\nI never knew the depth of such grief,  \nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth were broken in two.\n\nOkay, so I need to create a rhyming couplet.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were torn from me.\n\nThat's a good start. Now, let me add a third line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from me.\n\nThat's a good start, but I want to make it more",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn from my hands.\n\nI never knew the depth of such grief,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were lost to me.\nThe couplet you've written is a fine example of a rhym",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars had fallen from the sky.\n\nSo, I need a rhyming couplet that matches the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had just been torn apart.\n\nA couplet is two lines of verse that rhyme. Each line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had fallen from above.\n\nBut now I understand, it's not the sky that fell,\nbut",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had been torn asunder.\n\nThis is a rhyming couplet, with the second line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had crumbled beneath me.\n\nNow, write a rhyming couplet using the same rhyme"
+  ]
+}

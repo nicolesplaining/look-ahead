@@ -1,0 +1,355 @@
+{
+  "run_name": "qwen2.5_14b_r1",
+  "model_name": "Qwen/Qwen2.5-14B",
+  "patch_mode": "r1",
+  "patch_label": "r1 token ('rest', pos=13)",
+  "patch_pos": 13,
+  "max_new_tokens": 20,
+  "clean_prompt": "A rhyming couplet:\nHe felt a sudden urge to sleep,\n",
+  "corrupt_prompt": "A rhyming couplet:\nHe felt a sudden urge to rest,\n",
+  "clean_rhyme_word": "sleep",
+  "corrupt_rhyme_word": "rest",
+  "baseline": {
+    "clean_completion": "A rhyming couplet:\nHe felt a sudden urge to sleep,\nHis eyelids heavy, his mind to keep.",
+    "corrupt_completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed."
+  },
+  "n_layers": 48,
+  "results": [
+    {
+      "layer": 0,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 1,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 2,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 3,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 4,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 5,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 6,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 7,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 8,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 9,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 10,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 11,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 12,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 13,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 14,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 15,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 16,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 17,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 18,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 19,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 20,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 21,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 22,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 23,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 24,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his body weak.",
+      "end_word": "weak",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 25,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his body weak.",
+      "end_word": "weak",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 26,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids drooped, his head did peep.",
+      "end_word": "peep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 27,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his mind to keep.",
+      "end_word": "keep",
+      "rhymes_with_clean": true,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 28,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his body weak.",
+      "end_word": "weak",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 29,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his body weak.",
+      "end_word": "weak",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 30,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, his body weak.",
+      "end_word": "weak",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 31,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he closed his eyes and took a deep breath.",
+      "end_word": "breath",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 32,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nSo he lay down and took a nap.",
+      "end_word": "nap",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 33,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis eyelids heavy, he couldn't resist.",
+      "end_word": "resist",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 34,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 35,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 36,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 37,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 38,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 39,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 40,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 41,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 42,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis body ached, his mind at rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 43,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 44,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis legs were tired, he couldn't rest.",
+      "end_word": "rest",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": false
+    },
+    {
+      "layer": 45,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired and his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 46,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    },
+    {
+      "layer": 47,
+      "completion": "A rhyming couplet:\nHe felt a sudden urge to rest,\nHis feet were tired, his legs were stressed.",
+      "end_word": "stressed",
+      "rhymes_with_clean": false,
+      "rhymes_with_corrupt": true
+    }
+  ]
+}

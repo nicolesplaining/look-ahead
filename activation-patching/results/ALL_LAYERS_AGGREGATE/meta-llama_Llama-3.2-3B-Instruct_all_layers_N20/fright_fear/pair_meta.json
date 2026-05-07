@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA rhyming couplet is a unit of two lines that rhyme with",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that her loved one was near.\n\nA rhyming couplet is a unit of two lines that rhyme",
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nThis is a rhyming couplet, which is a unit of two lines",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA rhyming couplet is a two-line stanza with a rhyming",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright. \n\nThis is a rhyming couplet because it has two lines,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nIn this example, the two lines form a rhyming couplet,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all was right.\n\nThis type of poem is called a couplet. A couplet is a unit",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\n\nA stanza of verse:\nIn the stillness of the night\nThe stars",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nThe two lines form a rhyming couplet because the words \"fright",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all was right.\n\nThis is a rhyming couplet, which is a two-line poem with",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nThe poet's use of language and form in this couplet is notable.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nI see you've written a rhyming couplet, a short poem",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nThis poem is an example of a rhyming couplet, where two",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would get through the night.\n\nI think this rhyming couplet is quite effective because it",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA rhyming couplet is a unit of two lines in poetry that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass through the night.\n\nThe couplet is a rhyming pair of lines, with",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would pass through the night.\n\nThis is an example of a rhyming couplet, a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nThis rhyming couplet uses the rhyming words \"fright",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would come soon in sight.\n\n(Note: A rhyming couplet is a stanza or verse",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nThis poem is a rhyming couplet, a unit of two lines",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nThe words of the couplet are in the rhyming pattern A-B"
+  ]
+}

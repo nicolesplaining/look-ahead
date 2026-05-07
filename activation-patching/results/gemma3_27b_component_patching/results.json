@@ -1,0 +1,5138 @@
+{
+  "timestamp_utc": "2026-03-17T15:33:10.707961+00:00",
+  "model_name": "google/gemma-3-27b-it",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "newline_patch_pos": 16,
+  "layer_range": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "num_q_heads": 32,
+  "head_dim": 128,
+  "sampling_n": 20,
+  "sampling_temp": 0.8,
+  "baselines": {
+    "clean_rhyme_rate": 1.0,
+    "corrupt_rhyme_rate": 0.0
+  },
+  "head_path_patching": {
+    "27": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "28": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "29": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "30": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "31": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "32": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "33": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "34": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "35": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "36": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "37": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "38": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "39": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "40": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "41": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "42": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "43": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "44": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "45": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    }
+  },
+  "mlp_path_patching": {
+    "27": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "28": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "29": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "30": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "31": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "32": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "33": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "34": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "35": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "36": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "37": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "38": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "39": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "40": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "41": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "42": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "43": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "44": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "45": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    }
+  },
+  "head_ablation": {
+    "27": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "28": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "29": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "30": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "31": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "32": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "33": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "34": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "35": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "36": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "37": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "38": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "39": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "40": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "41": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "42": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "43": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "44": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    },
+    "45": {
+      "0": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "1": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "2": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "3": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "4": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "5": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "6": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "7": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "8": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "9": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "10": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "11": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "12": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "13": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "14": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "15": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "16": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "17": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "18": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "19": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "20": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "21": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "22": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "23": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "24": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "25": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "26": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "27": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "28": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "29": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "30": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      },
+      "31": {
+        "corrupt_rhyme_rate": 0.0,
+        "clean_rhyme_rate": 1.0
+      }
+    }
+  },
+  "mlp_ablation": {
+    "27": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "28": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "29": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "30": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "31": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "32": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "33": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "34": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "35": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "36": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "37": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "38": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "39": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "40": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "41": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "42": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "43": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "44": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    },
+    "45": {
+      "corrupt_rhyme_rate": 0.0,
+      "clean_rhyme_rate": 1.0
+    }
+  }
+}

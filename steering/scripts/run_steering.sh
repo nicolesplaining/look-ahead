@@ -5,25 +5,28 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # ── configurable ─────────────────────────────────────────────────────────────
-MODEL=google/gemma-3-27b-it
+# MODEL=Qwen/Qwen3-0.6B
+# MODEL=google/gemma-3-1b-it
+MODEL=meta-llama/Llama-3.1-70B-Instruct
 VECTORS_PATH="${VECTORS_PATH:-$PROJECT_ROOT/steering/results/steering_vectors.pt}"
 DATA_PATH="${DATA_PATH:-$PROJECT_ROOT/steering/data/poems-val.jsonl}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/steering/results}"
 ALPHA="${ALPHA:-1.5}"
-TEMPERATURE=0.7
-N_SAMPLES=5
+TEMPERATURE=0
+N_SAMPLES=1
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-20}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
+QUANTIZATION=8bit   # "8bit" halves bfloat16 memory; "4bit" quarters it (requires bitsandbytes)
 PYTHONPATH=""
 
 # Optional filters (space-separated lists); leave empty to use all
 LAYERS=""           # e.g. "0 8 16 24"
-POSITIONS="${POSITIONS:--1 0}" # default: last word + newline token
+POSITIONS="-1 0" # default: last word + newline token
 GEN_POSITIONS="${GEN_POSITIONS:-}"  # generation positions, e.g. "1 2 3"
 GEN_VECTOR_POS="${GEN_VECTOR_POS:-0}"
-SOURCE="0"  # source schemes (half of 10)
-TARGET="5 6 7"  # target schemes (other half) → 10 pairs total
+SOURCE="0 1"  # source schemes (half of 10)
+TARGET="5 6 7 8 9"  # target schemes (other half) → 10 pairs total
 
 # Forward extra CLI args
 EXTRA_ARGS=("$@")
@@ -54,6 +57,11 @@ if [ -n "$TARGET" ]; then
     read -r -a _arr <<< "$TARGET"; TARGET_FLAG=(--target "${_arr[@]}")
 fi
 
+QUANTIZATION_FLAG=()
+if [ -n "$QUANTIZATION" ]; then
+    QUANTIZATION_FLAG=(--quantization "$QUANTIZATION")
+fi
+
 export PYTHONPATH="$PROJECT_ROOT/steering/src:$PYTHONPATH"
 
 python -m steering_probe.run_steering \
@@ -73,4 +81,5 @@ python -m steering_probe.run_steering \
     "${GEN_POSITIONS_FLAG[@]}" \
     "${SOURCE_FLAG[@]}" \
     "${TARGET_FLAG[@]}" \
+    "${QUANTIZATION_FLAG[@]}" \
     "${EXTRA_ARGS[@]}"

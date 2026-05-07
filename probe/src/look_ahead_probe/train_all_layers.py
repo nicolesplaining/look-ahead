@@ -6,7 +6,7 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 
-from .data_loading import ActivationDataset, load_extracted_dataset
+from .data_loading import ActivationDataset, load_extracted_dataset, load_metadata
 from .probe import FutureTokenProbe
 from .train_probe import train_probe, evaluate_probe
 
@@ -26,27 +26,25 @@ def train_all_layers(
     device: str = "cuda"
 ):
     """Train probes on all specified layers."""
-    print("Loading datasets...")
-    train_layer_acts, train_targets, metadata = load_extracted_dataset(
-        train_dataset_path, layer_idx=None, k=k
-    )
+    # Load metadata and discover available layers without pulling activations into RAM
+    metadata = load_metadata(train_dataset_path)
+    available_layers = sorted(metadata.get('layers', []))
 
-    available_layers = sorted(train_layer_acts.keys())
     if layers is None:
         layers = available_layers
     else:
-        for layer in layers:
-            if layer not in available_layers:
-                raise ValueError(f"Layer {layer} not in dataset. Available: {available_layers}")
+        missing = [l for l in layers if l not in available_layers]
+        if missing:
+            raise ValueError(f"Layers {missing} not in dataset. Available: {available_layers}")
 
     print(f"Training on layers: {layers}, k={k}")
 
-    val_layer_acts = None
+    # Load targets once (small: n_samples × max_k integers)
+    print("Loading targets...")
+    _, train_targets, _ = load_extracted_dataset(train_dataset_path, layer_idx=available_layers[0], k=k)
     val_targets = None
     if val_dataset_path is not None:
-        val_layer_acts, val_targets, _ = load_extracted_dataset(
-            val_dataset_path, layer_idx=None, k=k
-        )
+        _, val_targets, _ = load_extracted_dataset(val_dataset_path, layer_idx=available_layers[0], k=k)
 
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
@@ -58,15 +56,18 @@ def train_all_layers(
         print(f"Layer {layer_idx}")
         print(f"{'='*60}")
 
-        train_acts = train_layer_acts[layer_idx]
+        # Load one layer at a time — keeps peak RAM to a single layer's activations
+        train_acts, _, _ = load_extracted_dataset(train_dataset_path, layer_idx=layer_idx, k=k)
         train_dataset = ActivationDataset(train_acts, train_targets)
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+        del train_acts
 
         val_loader = None
-        if val_layer_acts is not None:
-            val_acts = val_layer_acts[layer_idx]
+        if val_dataset_path is not None:
+            val_acts, _, _ = load_extracted_dataset(val_dataset_path, layer_idx=layer_idx, k=k)
             val_dataset = ActivationDataset(val_acts, val_targets)
             val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+            del val_acts
 
         probe = FutureTokenProbe(
             input_dim=metadata['d_model'],

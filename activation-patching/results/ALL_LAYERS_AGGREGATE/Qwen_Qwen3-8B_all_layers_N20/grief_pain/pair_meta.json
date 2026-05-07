@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath.\nThe first line is a statement of the speaker's lack of understanding of",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had turned its back on me.\nBut now I see, with every breath,\nthe light of",
+  "baseline_clean_rate": 0.35,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were ending.\n\nThis is a rhyming couplet, as it consists of two lines that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nThe world has lost its leaf? That's a nice metaphor. Maybe",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had just ended.\nBut I was wrong.\nI've only just begun.\n\nA rhyming",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was ending.\nA couplet is two lines that rhyme. The first line ends with \"g",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\n\nA rhyming couplet is two lines that rhyme.  The",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was ending, yet I could not weep.\n\nThe rhyme is AABB, with the two lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nThe poem is a rhyming couplet, with the two lines",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were ending, so brief.\nThe first line is a bit clunky, but the second line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended.\nBut when I saw the light in your eyes,\nI knew the world had not",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had just lost its leaf.\nI never knew the depth of such grief,\nas though the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath.\n\nBut I have found a way to heal,\nwith each sunrise, I",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its breath. \n\nThat's a beautiful couplet! It's a rhyming",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nA rhyming couplet is two lines that rhyme and usually have",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had been extinguished.\nThe second line is about the sun being extinguished. What does that",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had come to an end.\nBut when I saw her in the mirror,\nthe world was gone",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its leaf.\nThe first line is a statement of the speaker's lack of understanding of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were ending.\nI never knew the depth of such grief,\nas though the world were ending.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was ending.\nA rhyming couplet is two lines that rhyme. Let me create one",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended.\n\nThat's a beautiful couplet with a strong emotional impact. The rhyme and rhythm",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ended and left me bereft.\nI had no idea what I was missing,\nuntil I"
+  ]
+}

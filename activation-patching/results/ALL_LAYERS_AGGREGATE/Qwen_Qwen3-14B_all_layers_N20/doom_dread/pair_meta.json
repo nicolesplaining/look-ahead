@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, I need to come up with a rhyming couplet that continues",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a ghostly tread.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.6,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream. To make the rhyming couplet, I need to find a second line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, let's see. The user provided a rhyming couplet and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mournful loom. \n\nOkay, that's a start. Now, I need to",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly loom. \n\nAlright, let's see. The user provided a rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\n\nOkay, let's see. The user provided a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\nThe scream came from a hidden room,\nwhere shadows danced in spectral gloom.\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking room.\n\nOkay, let's see. The user wants a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking room.\n\nOkay, so I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking loom. \n\nOkay, let's see. The user provided a rh",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, so I need to come up with a rhyming couplet based",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a thunderous gloom.\n\nOkay, I need to come up with a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a thunderous gloom.\n\nOkay, so I need to come up with a rhyming",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream, then gloom.\n\nOkay, let me try to figure out how to approach this",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly loom.\nThe rhyme is good, but the meter is off. Can you",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the thunderous boom.\n\nOkay, so I need to come up with a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream.\n\nOkay, let's see. The user wants a rhyming couplet.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a scream. \n\nA rhyme scheme is a pattern of rhymes at the end of each line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud \"boom.\"\n\nOkay, let's see. The user provided a rhyming couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a bloodcurdling scream. The user has provided a rhyming couplet and is likely",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a bloodcurdling scream. Alright, let's tackle this rhyming couplet. The"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pair_id": "dark_night",
+  "clean_prompt": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she",
+  "corrupt_prompt": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she",
+  "clean_rhyme_word": "dark",
+  "corrupt_rhyme_word": "night",
+  "clean_completion": "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light that burned so bright.\n\nOkay, I need to create a rhyming couplet",
+  "corrupt_completion": "A rhyming couplet:\nShe wandered home alone into the night,\nand then she saw a ghostly light.\n\nOkay, I need to come up with a rhyming couplet",
+  "baseline_clean_rate": 0.35,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light from her own heart. \n\nThe user has given me a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice that was not hers.\nOkay, I need to come up with a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice, both soft and stark.\n\nOkay, let me try to figure out what the user",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light of stars.\n\nOkay, I need to create a rhyming couplet based on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt a presence, very stark.\n\nOkay, so the user wants a rhyming couplet.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a cat.\n\nOkay, let's see. The user wants a rhyming couplet.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the light from his garage.\n\nOkay, I need to create a rhyming couplet based",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the door was locked. The rhyme scheme of the couplet is AABB, but the user's",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she felt the touch of something stark.\nOkay, I need to come up with a rhyming couple",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a man with a broken heart.\nOkay, I need to come up with a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the footsteps in the park.\nOkay, that's a rhyming couplet. The lines",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found a cat.\n\nOkay, I need to come up with a rhyming couplet based on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard the footsteps in the park.\n\nThat's a nice rhyming couplet! The rhyme scheme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a ghost with a lantern in the park.\n\nOkay, so the user provided a rhyming",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a knock upon the wall.\n\nOkay, the user wants a rhyming couplet. Let",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a voice from deep within the park. The rhyme scheme of the couplet is AABB. The",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw the man with a broken heart.\n\nOkay, I need to create a rhyming couplet",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a noise that made her start.\n\nOkay, so I need to come up with a rhym",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she found the door was locked.\n\nOkay, I need to create a rhyming couplet based on",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a whisper in the park.\n\nOkay, so I need to come up with a rhyming"
+  ]
+}
