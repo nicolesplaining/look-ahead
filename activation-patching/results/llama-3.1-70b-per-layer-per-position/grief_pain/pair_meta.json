@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThe first line is a statement of the speaker's emotional state, while",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its refrain.\nThe first line is a statement of the speaker's emotional state, while",
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of all my losses were chief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen off my chief.\nI had to re-read the poem to see what I was missing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world was my chief.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nA few days later, the news of the death of the famous poet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very fabric of life would soon be rife.\n\nIt is hard to write poetry about such a deep",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very heart of me had been bereft.\n\n(Note: The second line is a slight modification of the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart was shattered, split in chief.\n\nThe line \"as though the heart was shattered, split in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world was my chief.\n\nBut I know now, the pain that I feel,\nis",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had given up its chief.\nThe use of the metaphor of the ocean to describe the depth of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very fabric of life had relief.\nI tried to write something to express my feelings, but it's",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had swallowed up all relief.\nThe use of the word \"grief\" to describe the speaker",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very fabric of my soul was torn in relief.\n\nAs I walked through the garden, I saw the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had opened wide, and all\nmy sorrow poured into its dark relief.\nAnd then the tears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world had shifted, leaving an unfillable relief.\nA poetic attempt to describe the un",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had swallowed me in relief.\nThe first line, \"I never knew the depth of such grief",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had suddenly turned to relief.\nThe second line can be read as a complete sentence, but it",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world was my chief.\nMy heart is heavy, my soul is worn,\nthe weight",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sea had swallowed up all relief.\n\nThe sea was a powerful symbol in the Victorian era, often representing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world was my chief.\n\nThe second stanza is a tercet with a rhym",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very heart of me were chief.\nThe final couplet is an interesting variation of the rhyming"
+  ],
+  "baseline_clean_rate": 0.85,
+  "baseline_corrupt_rate": 0.0
+}

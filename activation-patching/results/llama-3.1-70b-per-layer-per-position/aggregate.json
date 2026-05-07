@@ -1,0 +1,659 @@
+{
+  "run_name": "llama-3.1-70b-per-layer-per-position",
+  "model_name": "meta-llama/Llama-3.1-70B-Instruct",
+  "n_layers": 80,
+  "positions": [
+    "i_minus1",
+    "i_0"
+  ],
+  "n_pairs": 5,
+  "sampling_n": 20,
+  "sampling_temp": 0.7,
+  "max_new_tokens": 20,
+  "aggregate": {
+    "i_minus1": [
+      {
+        "layer": 0,
+        "corrupt_rhyme_rate": 0.7300000000000001
+      },
+      {
+        "layer": 1,
+        "corrupt_rhyme_rate": 0.76
+      },
+      {
+        "layer": 2,
+        "corrupt_rhyme_rate": 0.7100000000000001
+      },
+      {
+        "layer": 3,
+        "corrupt_rhyme_rate": 0.8300000000000001
+      },
+      {
+        "layer": 4,
+        "corrupt_rhyme_rate": 0.7700000000000001
+      },
+      {
+        "layer": 5,
+        "corrupt_rhyme_rate": 0.76
+      },
+      {
+        "layer": 6,
+        "corrupt_rhyme_rate": 0.76
+      },
+      {
+        "layer": 7,
+        "corrupt_rhyme_rate": 0.78
+      },
+      {
+        "layer": 8,
+        "corrupt_rhyme_rate": 0.79
+      },
+      {
+        "layer": 9,
+        "corrupt_rhyme_rate": 0.82
+      },
+      {
+        "layer": 10,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 11,
+        "corrupt_rhyme_rate": 0.78
+      },
+      {
+        "layer": 12,
+        "corrupt_rhyme_rate": 0.8100000000000002
+      },
+      {
+        "layer": 13,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 14,
+        "corrupt_rhyme_rate": 0.79
+      },
+      {
+        "layer": 15,
+        "corrupt_rhyme_rate": 0.8099999999999999
+      },
+      {
+        "layer": 16,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 17,
+        "corrupt_rhyme_rate": 0.8400000000000001
+      },
+      {
+        "layer": 18,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 19,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 20,
+        "corrupt_rhyme_rate": 0.8099999999999999
+      },
+      {
+        "layer": 21,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 22,
+        "corrupt_rhyme_rate": 0.8300000000000001
+      },
+      {
+        "layer": 23,
+        "corrupt_rhyme_rate": 0.8099999999999999
+      },
+      {
+        "layer": 24,
+        "corrupt_rhyme_rate": 0.7999999999999999
+      },
+      {
+        "layer": 25,
+        "corrupt_rhyme_rate": 0.8099999999999999
+      },
+      {
+        "layer": 26,
+        "corrupt_rhyme_rate": 0.8300000000000001
+      },
+      {
+        "layer": 27,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 28,
+        "corrupt_rhyme_rate": 0.8300000000000001
+      },
+      {
+        "layer": 29,
+        "corrupt_rhyme_rate": 0.8099999999999999
+      },
+      {
+        "layer": 30,
+        "corrupt_rhyme_rate": 0.76
+      },
+      {
+        "layer": 31,
+        "corrupt_rhyme_rate": 0.82
+      },
+      {
+        "layer": 32,
+        "corrupt_rhyme_rate": 0.86
+      },
+      {
+        "layer": 33,
+        "corrupt_rhyme_rate": 0.78
+      },
+      {
+        "layer": 34,
+        "corrupt_rhyme_rate": 0.74
+      },
+      {
+        "layer": 35,
+        "corrupt_rhyme_rate": 0.82
+      },
+      {
+        "layer": 36,
+        "corrupt_rhyme_rate": 0.8299999999999998
+      },
+      {
+        "layer": 37,
+        "corrupt_rhyme_rate": 0.7699999999999999
+      },
+      {
+        "layer": 38,
+        "corrupt_rhyme_rate": 0.7899999999999998
+      },
+      {
+        "layer": 39,
+        "corrupt_rhyme_rate": 0.8299999999999998
+      },
+      {
+        "layer": 40,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 41,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 42,
+        "corrupt_rhyme_rate": 0.73
+      },
+      {
+        "layer": 43,
+        "corrupt_rhyme_rate": 0.8200000000000001
+      },
+      {
+        "layer": 44,
+        "corrupt_rhyme_rate": 0.6799999999999999
+      },
+      {
+        "layer": 45,
+        "corrupt_rhyme_rate": 0.6900000000000001
+      },
+      {
+        "layer": 46,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 47,
+        "corrupt_rhyme_rate": 0.74
+      },
+      {
+        "layer": 48,
+        "corrupt_rhyme_rate": 0.7300000000000001
+      },
+      {
+        "layer": 49,
+        "corrupt_rhyme_rate": 0.74
+      },
+      {
+        "layer": 50,
+        "corrupt_rhyme_rate": 0.76
+      },
+      {
+        "layer": 51,
+        "corrupt_rhyme_rate": 0.7599999999999999
+      },
+      {
+        "layer": 52,
+        "corrupt_rhyme_rate": 0.8
+      },
+      {
+        "layer": 53,
+        "corrupt_rhyme_rate": 0.74
+      },
+      {
+        "layer": 54,
+        "corrupt_rhyme_rate": 0.43
+      },
+      {
+        "layer": 55,
+        "corrupt_rhyme_rate": 0.55
+      },
+      {
+        "layer": 56,
+        "corrupt_rhyme_rate": 0.47000000000000003
+      },
+      {
+        "layer": 57,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 58,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 59,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 60,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 61,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 62,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 63,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 64,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 65,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 66,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 67,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 68,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 69,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 70,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 71,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 72,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 73,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 74,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 75,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 76,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 77,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 78,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 79,
+        "corrupt_rhyme_rate": 0.0
+      }
+    ],
+    "i_0": [
+      {
+        "layer": 0,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 1,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 2,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 3,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 4,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 5,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 6,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 7,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 8,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 9,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 10,
+        "corrupt_rhyme_rate": 0.02
+      },
+      {
+        "layer": 11,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 12,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 13,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 14,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 15,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 16,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 17,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 18,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 19,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 20,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 21,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 22,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 23,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 24,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 25,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 26,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 27,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 28,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 29,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 30,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 31,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 32,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 33,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 34,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 35,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 36,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 37,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 38,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 39,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 40,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 41,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 42,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 43,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 44,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 45,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 46,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 47,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 48,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 49,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 50,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 51,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 52,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 53,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 54,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 55,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 56,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 57,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 58,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 59,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 60,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 61,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 62,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 63,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 64,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 65,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 66,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 67,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 68,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 69,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 70,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 71,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 72,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 73,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 74,
+        "corrupt_rhyme_rate": 0.01
+      },
+      {
+        "layer": 75,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 76,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 77,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 78,
+        "corrupt_rhyme_rate": 0.0
+      },
+      {
+        "layer": 79,
+        "corrupt_rhyme_rate": 0.0
+      }
+    ]
+  }
+}

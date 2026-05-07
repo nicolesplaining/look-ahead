@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, low boom.\nThe sound was loud, it echoed through the hall,\nand made",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a faint knock on the head.\nThe first line sets up the atmosphere of the empty house,",
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe two friends stood still in fear and fright,\nas the ghostly",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie boom.\nA rhyming triplet:\nThe empty house was filled with silent",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange noise in the room.\nAs they approached the sound, they saw a sight most rare",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the floor creak in the room.\nA great, heavy, iron key,\nWas turned in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking in the room.\nThe creaking grew, it grew to a gro",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint \"Boo!\" from the room.\n\n### Step 5: Create a rhym",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a boom!\nThe use of alliteration in the second line creates a sense of",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, eerie boom.\nA few lines later:\nThe creaking floorboards groaned",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking boom.\n\nIn the stillness, they heard the floorboards sigh,\nas",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a knock on the tomb.\nA short poem with a rhyming couplet:\nThe empty",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a knock at the room.\nA new poem with the same rhyme and meter:\nThe moon was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mouse's gloomy tune.\n\nThe second example is a AA rhyming couplet with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the ghostly boom.\nThe rhyming words are \"doom\" and \"boom\".\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a broom.\nThe sound was loud and it was very clear,\nit was",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the door creak, boom!\nNote that the rhyming words are \"doom\"",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the room.\nAnd here is a limerick:\nThere once was a poet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the boom.\nThe couplet is a rhyming one, but it's",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the old man's tomb.\n\nThe tomb is a great image, but I'm not sure it",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint, mournful boom.\nThe boom echoed through the empty halls,\nand seemed to come",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a curious boom.\nHere's a non-rhyming couplet:\nThe empty house was"
+  ],
+  "baseline_clean_rate": 0.95,
+  "baseline_corrupt_rate": 0.0
+}

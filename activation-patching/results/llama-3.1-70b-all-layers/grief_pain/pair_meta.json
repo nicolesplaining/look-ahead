@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThe first line is a statement of the speaker's emotional state, while",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its refrain.\nThe first line is a statement of the speaker's emotional state, while",
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had opened its chief.\nThe image of the ocean is not only a common poetic trope, but",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had swallowed all relief.\nThis is a common poetic device, using the earth as a metaphor for",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very core of me would never find relief.\nMy heart felt shattered, a thousand shards of pain,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its relief.\nThe finality of death is like a stone\nThat sinks within",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean itself were relief.\nI do not know the first line's context, but the second line is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth was shaking, the skies were relief.\nThe last two lines are another rhyming couplet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of the world had shifted on my chief.\nIt was as though I had been born in a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was cut in chief.\nThe \"chief\" here is the top or upper part of the world",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were lost in an endless relief.\n\nThe first line is a straightforward statement of the speaker's emotional",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the very foundations of life have relief.\nIt is true that I have felt the sting of loss and pain",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all its relief.\nThis is the last stanza of a poem that has been exploring the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its chief.\nIn the second quatrain, he addresses his wife directly, speaking",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain itself would be relief.\nI did not know that I could feel so low,\nas though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the pain of loss was a thief.\nAAB rhyming couplet:\nMy heart is shattered into",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThe use of metaphor in the second line, where the world is person",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nHere is an example of an ABBA rhyming couplet:\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the weight of all the world's relief.\nThis is a very simple example of a rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine relief.\nHere's a limerick:\nThere once was a sorrow so sore",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world were a hollowed relief.\nThis couplet has the same structure as the previous example, but",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the universe had given me a thief.\nI could not speak or eat or sleep,\nMy heart was heavy"
+  ],
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0
+}

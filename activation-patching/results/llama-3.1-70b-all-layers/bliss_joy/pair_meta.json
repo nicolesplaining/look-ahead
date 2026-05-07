@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a blissful kiss.\nThe rhyming couplet is a common poetic device used to",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all employed\na new game to play.\nThe children laughed in joy,\nuntil they all employed\na",
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell down in a heap and a mess.\nThe next morning, they were up at the break of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all ran out of breath.\n\nHere's a rhyming couplet with a more formal structure:\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to miss.\nAA rhyming couplet:\nThe children laughed in bliss,\nTheir joy was",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to dismiss.\n\nThe children laughed in bliss,\nuntil they all had to dismiss.\n\nThe children laughed",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a bliss. (line 6)\nThe children laughed in bliss,\nuntil they all fell",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a heap.\nThe children laughed in bliss,\ntheir joy was contagious, what a bliss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a great big mess.\nThis is an example of a rhyming couplet because the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got dismissed.\nThe couplet consists of two lines that rhyme. The words \"bliss\" and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a heap and kissed.\nHere is a rhyming triplet:\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit of misery and distress.\nA poem with a rhyming couplet that has",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a mess.\n\nB) A non-rhyming couplet:\nThe children laughed in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell asleep in a heap.\n\nAnd here's an example of a rhyming triplet:\nThe children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a great big kiss.\n\n## Step 1: Identify the rhyming words in the couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to dismiss.\nAA rhyming couplet:\nThe children laughed in bliss,\nand then they",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to a kiss.\n\nThe poem has a clear rhythm and meter, with each line having a consistent",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell to a kiss.\nWhat is the most likely reason that the children fell to a kiss?\nA",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a heap, what a mess!\n\nThe children laughed in bliss,\nuntil they all fell down",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all collapsed in a heap of happiness.\nThe above couplet has a rhyme scheme of AA. The end",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all took a big diss.\nThe rhyming couplet is a poetic device that has been used throughout",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a deep sleep's kiss.\n\nHere is the second stanza:\nThe next morning, the children"
+  ],
+  "baseline_clean_rate": 0.45,
+  "baseline_corrupt_rate": 0.0
+}

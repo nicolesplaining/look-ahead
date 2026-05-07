@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, low boom.\nThe sound was loud, it echoed through the hall,\nand made",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a faint knock on the head.\nThe first line sets up the atmosphere of the empty house,",
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange gloom.\nThe rhyming words are \"doom\" and \"gloom",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint perfume.\nThe words \"silent doom\" are an example of alliteration, which is",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint boom.\nB. A rhyming couplet with a caesura:\nThe",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the old clock's boom.\nThe couplet is a common poetic form, but I don't",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud, eerie boom.\nIt's a bit of a trick, but the last two lines",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant boom.\n\nA rhyming couplet is two lines that rhyme with each other,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a distant boom.\nAA rhyming couplet:\nThe empty house was filled",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a gloomy tomb.\nThe effect is one of an eerie, suspenseful atmosphere",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a gloomy tomb.\nI think I see what you mean about the first example",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange and mournful boom.\nThe second couplet:\nThe mournful sound came from the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint perfume.\n\nIn the next stanza, they introduce a character:\nThen out of the shadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a faint perfume.\nThe first line sets the scene and establishes the atmosphere, while the second line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the phone's loud boom.\nThe following lines are a rhyming couplet:\nThe morning",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a strange, loud boom.\nThe rhyming couplet is often used in ballads,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a loom.\nA loom? How did it get there? And who",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of the loom.\nThis couplet uses the traditional device of a sudden, often",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mouse in the room.\nThe rhyming words are \"doom\" and \"room",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud and mournful boom.\nThe use of the word \"mournful\" adds a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant boom.\nA third line, not part of the rhyming couplet, continues",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the sound of a distant boom.\nAABBA rhyming quatrain:\nThe waves crashed"
+  ],
+  "baseline_clean_rate": 1.0,
+  "baseline_corrupt_rate": 0.0
+}
