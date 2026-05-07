@@ -28,6 +28,8 @@
 
 \icmltitlerunning{Where's the Plan? Pinpointing Latent Planning in Language Models}
 
+\setlength{\emergencystretch}{3em}
+
 \begin{document}
 
 \twocolumn[
@@ -48,7 +50,7 @@
 \printAffiliationsAndNotice{}
 
 \begin{abstract}
-Prior work establishes that language models exhibit evidence of latent planning, but does not address $\textit{where and how}$ planning mechanisms form. We introduce the notion of $\textit{planning site formation}$ and investigate it across Qwen3, Gemma-3, and Llama-3 model families at multiple scales using lightweight mechanistic methods on poem generation tasks. Probing reveals substantial cross-model and cross-scale diversity in planning-compatible representations at the newline token. Activation patching reveals that planning-compatible representations do not imply causal planning behavior. We find that only Gemma-3-27B forms a causally active planning site at the newline via an information routing handoff, implemented by a sparse set of attention heads. All other models condition on the last word token throughout generation despite exhibiting planning-compatible representations, suggesting planning site formation is a distinct emergent phenomenon, not a general property of capable language models. Unlike transcoders or steering vectors, our activation patching methods require orders of magnitude less compute and data, making them a more scalable framework for studying latent planning across model families.
+Prior work establishes that language models exhibit evidence of latent planning, but does not address \textit{where and how} planning mechanisms form. We introduce the notion of \textit{planning site formation} and investigate it across Qwen3, Gemma-3, and Llama-3 model families at multiple scales using lightweight mechanistic methods on poem generation tasks. Probing reveals substantial cross-model and cross-scale diversity in planning-compatible representations at the newline token. Activation patching reveals that planning-compatible representations do not imply causal planning behavior. We find that only Gemma-3-27B forms a causally active planning site at the newline via an information routing handoff, implemented by a sparse set of attention heads. All other models condition on the last word token throughout generation despite exhibiting planning-compatible representations, suggesting planning site formation is a distinct emergent phenomenon, not a general property of capable language models. Unlike transcoders or steering vectors, our activation patching methods require orders of magnitude less compute and data, making them a more scalable framework for studying latent planning across model families.
 \end{abstract}
 
 
@@ -69,12 +71,7 @@ Probing reveals that planning-compatible representations emerge at the newline t
 \label{sec:2}
 In this paper, we study rhyming couplet generation as an example of latent planning.
 A rhyming couplet is a two-line poem where the last word of the first line, denoted $r_1$, rhymes with the last word of the second line, denoted $r_2$.
-We task language models to complete rhyming couplets, (i.e., given context containing $r_1$, generate a completion where $r_2$ rhymes with $r_1$). For example,
-\begin{align*}
-    \text{Prompt: }& \texttt{A rhyming couplet:\textbackslash nShe felt a sudden sense of fright,\textbackslash n} \\
-    \text{Completion: }& \texttt{and hoped that dawn would end the night.\textbackslash n}
-\end{align*}
-where $r_1 = \texttt{fright}$ and $r_2 = \texttt{night}$.
+We task language models to complete rhyming couplets, (i.e., given context containing $r_1$, generate a completion where $r_2$ rhymes with $r_1$). For example, given the prompt \texttt{"A rhyming couplet:\textbackslash nShe felt a sudden sense of fright,\textbackslash n"}, the model should produce a completion such as \texttt{"and hoped that dawn would end the night.\textbackslash n"}, where $r_1 = \texttt{fright}$ and $r_2 = \texttt{night}$.
 
 Consider an autoregressive transformer language model with $L$ layers and hidden dimension $d$.
 Let $\mathbf{h}_{\ell,i} \in \mathbb{R}^d$ denote the hidden state vector after the $\ell$-th transformer block at position $i$.
@@ -119,7 +116,7 @@ We compare against a baseline unigram model (trained on the corpus of all model 
         \subcaption[]{Llama-3.1-70B}
         \includegraphics[width=\linewidth]{media/results-probe/gemma-top5.png}
     \end{subfigure}
-    \caption{Top-5 accuracy of linear probes predicting $k$ tokens ahead in general text.}
+    \caption{Top-5 accuracy of linear probes predicting $k$ tokens ahead in general text (Pile). Accuracy degrades monotonically with look-ahead distance $k$ and falls to the unigram baseline by $k=8$ across all layers, confirming that planning-compatible representations are not a generic feature of the residual stream.}
     \label{fig:probe-results}
 \end{figure*}
 
@@ -177,7 +174,7 @@ If a model constructs a planning-compatible representation at the newline before
         \subcaption[]{Llama-3.1-70B (Rhyme Acc.)}
         \includegraphics[width=\linewidth]{media/results-poem/llama-rhyme1.png}
     \end{subfigure}
-    \caption{Top-5 and rhyme accuracy of linear probes trained to predict $r_2$ from hidden states at various layers and positions.}
+    \caption{Top-5 and rhyme accuracy of linear probes trained to predict $r_2$ from hidden states at various layers and positions. Probes at the last word ($i\leq-1$) and newline ($i=0$) positions substantially outperform probes at subsequent generated positions ($i>0$), indicating that rhyme-relevant information is selectively concentrated at these structural positions.}
     \label{fig:poem-results}
 \end{figure*}
 
@@ -205,7 +202,7 @@ Replicating this experiment on smaller Qwen, Gemma, and Llama models reveals the
         \includegraphics[width=\linewidth]{media/results-poem/scaling-rhyme1.png}
         \subcaption[]{Rhyme Accuracy Difference}
     \end{subfigure}
-    \caption{Maximum accuracy difference across layers between probes trained on position 0 (newline activations) and position 1.}
+    \caption{Maximum accuracy gap across layers between probes at the newline ($i=0$) and the first generated position ($i=1$), plotted against model size. The gap increases with scale across all three model families, suggesting that planning-compatible representations at the newline are an emergent property of larger models.}
     \label{fig:poem-scaling}
 \end{figure*}
 
@@ -355,7 +352,7 @@ For probing experiments, we also evaluated on top-1 accuracy. Note these are sim
         \subcaption[]{Gemma-3-27B.}
         \includegraphics[width=\linewidth]{media/results-probe/gemma-top1.png}
     \end{subfigure}
-    \caption{Top-1 probe accuracy on general text. Mirrors top-5 results.}
+    \caption{Top-1 probe accuracy predicting $k$ tokens ahead in general text (Pile). Mirrors the top-5 pattern: accuracy degrades monotonically with $k$ and falls to unigram baseline by $k=8$.}
     \label{fig:appendix-probe}
 \end{figure}
 
@@ -376,7 +373,7 @@ For probing experiments, we also evaluated on top-1 accuracy. Note these are sim
         \subcaption[]{Llama-3.1-8B}
         \includegraphics[width=\linewidth]{media/results-poem/llama-top1.png}
     \end{subfigure}
-    \caption{Top-1 probe accuracy on rhyming couplets. Mirrors top-5 and rhyme accuracy results.}
+    \caption{Top-1 probe accuracy predicting $r_2$ on rhyming couplets. Mirrors the top-5 and rhyme accuracy results: the $i\leq0$ probes show substantially higher accuracy in middle-to-late layers than probes at $i>0$.}
     \label{fig:appendix-poem}
 \end{figure}
 
@@ -394,7 +391,7 @@ Figure~\ref{fig:patching-baselines} shows results for Qwen3-32B (at $i=-1$) and 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{media/results-patching/patching_baselines.png}
-    \caption{Corrupt rhyme rate for true activation patching versus zero-vector and donor-prompt controls.}
+    \caption{Corrupt rhyme rate under true activation patching versus zero-vector and donor-prompt baseline controls at the last word position. Both baselines yield near-zero rates across all layers, confirming that the patching effect is specific to the corrupt rhyme word's identity rather than an artifact of residual stream disruption.}
     \label{fig:patching-baselines}
 \end{figure}
 
@@ -438,7 +435,7 @@ Family & Model & Last Word & $i=0$ \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{media/results-patching/patching_summary_bars.png}
-    \caption{Peak corrupt rhyme rate (max across layers) per position and model size.}
+    \caption{Peak corrupt rhyme rate (maximum across all layers) for the last word token and newline ($i=0$) at each model size. Gemma-3-27B is the only model for which newline patching reaches a substantial level; all Qwen3 and Llama-3 models show near-zero newline effectiveness regardless of scale.}
     \label{fig:appendix-patch-summary}
 \end{figure}
 
@@ -506,30 +503,32 @@ Family & Model & Last Word & $i=0$ \\
 For each pair, we show the clean prompt, the corrupt prompt, and an example patched completion
 where activation patching was successful in steering the rhyme scheme.
 
-\medskip\noindent\textbf{Pair 1: doom / dread, $\ell=10$, $i=-1$:}\\
-Clean: \texttt{A rhyming couplet:\textbackslash n The empty house was filled with silent doom,\textbackslash n when suddenly they}\\
-Corrupt: \texttt{A rhyming couplet:\textbackslash n The empty house was filled with silent dread,\textbackslash n when suddenly they}\\
-Patched: \texttt{when suddenly they heard a creaking bed.}
+{\small
+\medskip\noindent\textbf{Pair 1: doom/dread, $\ell=10$, $i=-1$}\\
+\textit{Clean:} \texttt{...filled with silent doom,\textbackslash n when suddenly they}\\
+\textit{Corrupt:} \texttt{...filled with silent dread,\textbackslash n when suddenly they}\\
+\textit{Patched:} \texttt{when suddenly they heard a creaking bed.}
 
-\medskip\noindent\textbf{Pair 2: bliss / joy, $\ell=1$, $i=-2$:}\\
-Clean: \texttt{A rhyming couplet:\textbackslash n The children laughed in bliss,\textbackslash n until they all}\\
-Corrupt: \texttt{A rhyming couplet:\textbackslash n The children laughed in joy,\textbackslash n until they all}\\
-Patched: \texttt{until they all became a toy.}
+\medskip\noindent\textbf{Pair 2: bliss/joy, $\ell=1$, $i=-2$}\\
+\textit{Clean:} \texttt{...The children laughed in bliss,\textbackslash n until they all}\\
+\textit{Corrupt:} \texttt{...The children laughed in joy,\textbackslash n until they all}\\
+\textit{Patched:} \texttt{until they all became a toy.}
 
-\medskip\noindent\textbf{Pair 3: dark / night, $\ell=0$, $i=-2$:}\\
-Clean: \texttt{A rhyming couplet:\textbackslash n She wandered home alone into the dark,\textbackslash n and then she}\\
-Corrupt: \texttt{A rhyming couplet:\textbackslash n She wandered home alone into the night,\textbackslash n and then she}\\
-Patched: \texttt{and then she saw a strange and eerie light.}
+\medskip\noindent\textbf{Pair 3: dark/night, $\ell=0$, $i=-2$}\\
+\textit{Clean:} \texttt{...She wandered home alone into the dark,\textbackslash n and then she}\\
+\textit{Corrupt:} \texttt{...She wandered home alone into the night,\textbackslash n and then she}\\
+\textit{Patched:} \texttt{and then she saw a strange and eerie light.}
 
-\medskip\noindent\textbf{Pair 4: grief / pain, $\ell=2$, $i=-1$:}\\
-Clean: \texttt{A rhyming couplet:\textbackslash n I never knew the depth of such grief,\textbackslash n as though the}\\
-Corrupt: \texttt{A rhyming couplet:\textbackslash n I never knew the depth of such pain,\textbackslash n as though the}\\
-Patched: \texttt{as though the sky had lost its rain.}
+\medskip\noindent\textbf{Pair 4: grief/pain, $\ell=2$, $i=-1$}\\
+\textit{Clean:} \texttt{...I never knew the depth of such grief,\textbackslash n as though the}\\
+\textit{Corrupt:} \texttt{...I never knew the depth of such pain,\textbackslash n as though the}\\
+\textit{Patched:} \texttt{as though the sky had lost its rain.}
 
-\medskip\noindent\textbf{Pair 5: fright / fear, $\ell=1$, $i=-1$:}\\
-Clean: \texttt{A rhyming couplet:\textbackslash n She felt a sudden sense of fright,\textbackslash n and hoped that}\\
-Corrupt: \texttt{A rhyming couplet:\textbackslash n She felt a sudden sense of fear,\textbackslash n and hoped that}\\
-Patched: \texttt{and hoped that someone would appear.}
+\medskip\noindent\textbf{Pair 5: fright/fear, $\ell=1$, $i=-1$}\\
+\textit{Clean:} \texttt{...She felt a sudden sense of fright,\textbackslash n and hoped that}\\
+\textit{Corrupt:} \texttt{...She felt a sudden sense of fear,\textbackslash n and hoped that}\\
+\textit{Patched:} \texttt{and hoped that someone would appear.}
+}
 
 \begin{figure}[H]
     \centering
