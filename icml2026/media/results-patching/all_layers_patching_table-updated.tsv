@@ -1,0 +1,15 @@
+Family	Size	LastWord %	LW 95% CI	Newline %	NL 95% CI	N	Notes
+Qwen3	0.6B	1	[0,5]	7	[3,14]	100	5 pairs × N=20
+Qwen3	1.7B	15	[9,23]	2	[1,7]	100	5 pairs × N=20
+Qwen3	4B	42	[33,52]	7	[3,14]	100	5 pairs × N=20
+Qwen3	8B	53	[43,62]	2	[1,7]	100	5 pairs × N=20
+Qwen3	14B	63	[53,72]	7	[3,14]	100	5 pairs × N=20
+Gemma-3	1B	37	[28,47]	1	[0,5]	100	5 pairs × N=20
+Gemma-3	4B	78	[69,85]	0	[0,4]	100	5 pairs × N=20
+Gemma-3	12B	90	[83,94]	0	[0,4]	100	5 pairs × N=20
+Llama-3	1B	59	[49,68]	2	[1,7]	100	5 pairs × N=20
+Llama-3	3B	87	[79,92]	0	[0,4]	100	5 pairs × N=20
+Llama-3	8B	79	[70,86]	0	[0,4]	100	5 pairs × N=20
+Qwen3	32B	96	[90,98]	9	[5,16]	100	single fright/fear prompt, N=100
+Gemma-3	27B	100	[96,100]	73	[64,81]	100	single fright/fear prompt, N=100
+Llama-3	70B	75	[66,82]	—	—	100	5 pairs × N=20; i=0 not in all-layers run

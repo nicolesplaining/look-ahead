@@ -53,7 +53,7 @@
 \printAffiliationsAndNotice{}
 
 \begin{abstract}
-Prior work establishes that language models exhibit latent planning, but \textit{where and how} do planning mechanisms form in the network? We introduce the notion of \textit{planning site formation} and investigate it across Qwen3, Gemma-3, and Llama-3 model families at more than ten scales using linear probing and activation patching on rhyming couplet generation. Probing reveals that planning-compatible representations emerge at the newline token with scale across all three families, yet their strength and layer profile vary substantially across architectures. Activation patching reveals a sharp dissociation: only Gemma-3-27B forms a causally active planning site at the newline, via a representational handoff in which causal influence migrates from the last word token to the newline mid-network. We further localize this handoff to a sparse set of five attention heads that jointly account for ${\sim}73\%$ of the full patching effect. All other models, including all Qwen3 sizes up to 32B and all Llama-3 sizes up to 70B, condition on the last word token throughout generation despite exhibiting strong probe signal, showing that planning-compatible representations do not imply causal planning behavior. Our activation patching approach requires no transcoder training and far less data than steering vector approaches, making it a scalable framework for studying latent planning across architectures.
+Prior work establishes that language models exhibit latent planning, but \textit{where and how} do planning mechanisms form in the network? We introduce the notion of \textit{planning site formation} and investigate it across Qwen3, Gemma-3, and Llama-3 model families at more than ten scales using linear probing and activation patching on rhyming couplet generation. Probing reveals that planning-compatible representations emerge at the newline token with scale across all three families, yet their strength and layer profile vary substantially across architectures. Activation patching reveals a sharp dissociation: only Gemma-3-27B forms a causally active planning site at the newline, via a representational handoff in which causal influence migrates from the last word token to the newline mid-network. We further localize this handoff to a sparse set of five attention heads that jointly account for $0.71$ [95\% CI 0.46, 0.88] of the full patching effect. All other models, including all Qwen3 sizes up to 32B and all Llama-3 sizes up to 70B, condition on the last word token throughout generation despite exhibiting strong probe signal (Table~\ref{tab:patch-all-layers}: every non-Gemma-27B model has all-layers newline patching $\leq 9\%$ with 95\% CI upper bounds $\leq 16\%$), showing that planning-compatible representations do not imply causal planning behavior. Our activation patching approach requires no transcoder training and far less data than steering vector approaches, making it a scalable framework for studying latent planning across architectures. All headline rates are reported with 95\% confidence intervals (cluster bootstrap over prompt pairs for patching, Wilson intervals for proportions); see Section~\ref{sec:stats} for details.
 \end{abstract}
 
 
@@ -94,6 +94,10 @@ Let $\mathcal V$ be the vocabulary (set of all tokens) and $\Delta \mathcal V$ t
 Each linear probe is a parameterized function $f_{(W,b)}(\mathbf{h}): \mathbb{R}^d \to \Delta \mathcal V$ where $f_{(W,b)}(\mathbf{h}) = \text{softmax}(W\mathbf{h} + \mathbf{b})$.
 Probes are trained by minimizing cross-entropy loss. Probe parameters are optimized with AdamW~\citep{adamw} with learning rate $10^{-4}$, weight decay $10^{-3}$, batch size 32, for 10 epochs.
 
+\paragraph{Statistical reporting.}
+\label{sec:stats}
+We attach 95\% confidence intervals to every reported proportion. For probe accuracies and table cells, we use Wilson score intervals~\citep{wilson1927}. For the activation-patching figures, the unit of independence is the prompt pair (the same five word pairs are used across layers and positions); we report cluster bootstrap intervals (10{,}000 resamples of pairs with replacement). Where we compute a ratio across two experiments (e.g.\ k-head vs.\ full residual stream), we use a joint cluster bootstrap that resamples shared pair indices in numerator and denominator. Per-pair sample sizes are stated alongside each result.
+
 \subsection{Probing general text as a negative control}
 \label{sec:probe-general}
 
@@ -107,26 +111,23 @@ We compare against a baseline unigram model (trained on the corpus of all model 
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Qwen3-32B}
-        \includegraphics[width=\linewidth]{media/results-probe/qwen-top5.png}
+        \includegraphics[width=\linewidth]{media/results-probe/pile-qwen-top5-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Gemma-3-27B}
-        \includegraphics[width=\linewidth]{media/results-probe/gemma-top5.png}
+        \includegraphics[width=\linewidth]{media/results-probe/pile-gemma-top5-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Llama-3.1-70B}
-        \includegraphics[width=\linewidth]{media/results-probe/llama-top5.png}
+        \includegraphics[width=\linewidth]{media/results-probe/pile-llama-top5-updated.png}
     \end{subfigure}
-    \caption{Top-5 accuracy of linear probes predicting $k$ tokens ahead in general text (Pile). Accuracy degrades monotonically with look-ahead distance $k$ and falls to the unigram baseline by $k=8$ across all layers, confirming that planning-compatible representations are not a generic feature of the residual stream.}
+    \caption{Top-5 accuracy of linear probes predicting $k$ tokens ahead in general text (Pile). Wilson 95\% CI bands are drawn but visually imperceptible: per-token $N{\approx}21{,}000$ gives a half-width of ${\sim}0.005$ at typical $p$, so the curves are essentially noise-free at this sample size. Accuracy degrades monotonically with $k$ and the $k=8$ curve overlaps the unigram baseline (gray dashed line) across all layers, confirming that planning-compatible representations are not a generic feature of the residual stream.}
     \label{fig:probe-results}
 \end{figure*}
 
-We find probe accuracy degrades monotonically with $k$ and falls to baseline by $k=8$ across all
-layers and both models (Figure~\ref{fig:probe-results}), confirming that
-planning-compatible representations are not a generic property of the residual stream.
-This provides a negative control establishing that probe signal in Section~\ref{sec:probe-couplets} is significant.
+We find probe accuracy degrades monotonically with $k$ and the $k=8$ confidence band overlaps the unigram baseline across all layers in all three models (Figure~\ref{fig:probe-results}), confirming that planning-compatible representations are not a generic property of the residual stream. This provides a negative control establishing that probe signal in Section~\ref{sec:probe-couplets} is significant.
 
 \subsection{Probing rhyming couplets}
 \label{sec:probe-couplets}
@@ -149,35 +150,35 @@ If a model constructs a planning-compatible representation at the newline before
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Qwen3-32B (Top-5 Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/qwen-top5.png}
+        \includegraphics[width=\linewidth]{media/results-poem/qwen-top5-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Gemma-3-27B (Top-5 Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/gemma-top5.png}
+        \includegraphics[width=\linewidth]{media/results-poem/gemma-top5-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Llama-3.1-70B (Top-5 Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/llama-top5.png}
+        \includegraphics[width=\linewidth]{media/results-poem/llama-top5-updated.png}
     \end{subfigure}
     \centering
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Qwen3-32B (Rhyme Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/qwen-rhyme1.png}
+        \includegraphics[width=\linewidth]{media/results-poem/qwen-rhyme1-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Gemma-3-27B (Rhyme Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/gemma-rhyme1.png}
+        \includegraphics[width=\linewidth]{media/results-poem/gemma-rhyme1-updated.png}
     \end{subfigure}
     \begin{subfigure}{0.325\linewidth}
         \centering
         \subcaption[]{Llama-3.1-70B (Rhyme Acc.)}
-        \includegraphics[width=\linewidth]{media/results-poem/llama-rhyme1.png}
+        \includegraphics[width=\linewidth]{media/results-poem/llama-rhyme1-updated.png}
     \end{subfigure}
-    \caption{Top-5 and rhyme accuracy of linear probes trained to predict $r_2$ from hidden states at various layers and positions. Probes at the last word ($i\leq-1$) and newline ($i=0$) positions substantially outperform probes at subsequent generated positions ($i>0$), indicating that rhyme-relevant information is selectively concentrated at these structural positions.}
+    \caption{Top-5 and rhyme accuracy of linear probes trained to predict $r_2$ from hidden states at various layers and positions. Shaded bands are Wilson 95\% CIs computed from $N=200$ validation items. Probes at the last word ($i\leq-1$) and newline ($i=0$) positions substantially outperform probes at subsequent generated positions ($i>0$); the bands at the peak layers do not overlap with $i\geq1$ bands in any of the three models, indicating that rhyme-relevant information is selectively concentrated at these structural positions.}
     \label{fig:poem-results}
 \end{figure*}
 
@@ -191,21 +192,21 @@ Notably, probes trained on activations at the last word position all peak in acc
 
 However, it is nontrivial that probes trained at the newline position also do perform well, hinting at the possibility of latent planning occurring at the newline token. Notably, probes trained at both positions vastly differ in the shape of their accuracy curves between layers compared to probes at $i>0$, which seem to follow a similar shape throughout. This suggests that the newline and last word tokens undergo qualitatively different computations across layers, consistent with these positions playing a specialized role in encoding rhyme-relevant information rather than passively accumulating context like later positions.
 
-Replicating this experiment on smaller Qwen, Gemma, and Llama models reveals these planning-compatible representations at the newline token emerge with scale. For each model, we record the largest accuracy gap across layers between probes trained at the newline token and probes trained at the next token. We find that this accuracy gap increases significantly with scale (Figure~\ref{fig:poem-scaling}), suggesting that planning-compatible representations are an emergent property.
+Replicating this experiment on smaller Qwen, Gemma, and Llama models reveals these planning-compatible representations at the newline token emerge with scale. For each model, we record the largest accuracy gap across layers between probes trained at the newline token and probes trained at the next token. We find that this accuracy gap increases with scale (Figure~\ref{fig:poem-scaling}). Within Qwen3 and Llama-3, the gap CIs of the smallest models (Qwen3 0.6B--8B; Llama-3 1B--8B) all overlap zero, while their largest model has a clearly nonzero gap (Qwen3-32B top-5 gap $0.24$ [0.16, 0.32]; Llama-3-70B $0.21$ [0.12, 0.29]). Gemma-3 shows a positive gap at every scale and the cleanest monotonic trend (1B $0.11$ [0.04, 0.19] $\to$ 27B $0.38$ [0.29, 0.47]). This pattern is consistent with planning-compatible representations being an emergent property of larger models.
 
 \begin{figure*}[t]
     \centering
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{media/results-poem/scaling-top5.png}
+        \includegraphics[width=\linewidth]{media/results-poem/scaling-top5-updated.png}
         \subcaption[]{Top-5 Accuracy Difference}
     \end{subfigure}
     \begin{subfigure}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{media/results-poem/scaling-rhyme1.png}
+        \includegraphics[width=\linewidth]{media/results-poem/scaling-rhyme1-updated.png}
         \subcaption[]{Rhyme Accuracy Difference}
     \end{subfigure}
-    \caption{Maximum accuracy gap across layers between probes at the newline ($i=0$) and the first generated position ($i=1$), plotted against model size. The gap increases with scale across all three model families, suggesting that planning-compatible representations at the newline are an emergent property of larger models.}
+    \caption{Maximum accuracy gap across layers between probes at the newline ($i=0$) and the first generated position ($i=1$), plotted against model size. Black error bars are 95\% CIs at the chosen peak layer (paired-difference Wald approximation; per-sample correctness was not stored, so the interval is conservative relative to the true paired CI). For Qwen3 sizes 0.6B--8B and Llama-3 sizes 1B--8B, the CI on the gap includes zero, while every Gemma-3 size and the largest Qwen/Llama models have CIs strictly above zero, supporting the emergent-property interpretation.}
     \label{fig:poem-scaling}
 \end{figure*}
 
@@ -239,39 +240,39 @@ While probing reveals that future token information is encoded in hidden states,
     \centering
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{media/results-patching/patching_qwen3_32b.png}
+        \includegraphics[width=\linewidth]{media/results-patching/patching_qwen3_32b-updated.png}
         \caption{Qwen3-32B.}
         \label{fig:patch-qwen}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{media/results-patching/patching_gemma3_27b.png}
+        \includegraphics[width=\linewidth]{media/results-patching/patching_gemma3_27b-updated.png}
         \caption{Gemma-3-27B.}
         \label{fig:patch-gemma}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{media/results-patching/patching_llama_70b.png}
+        \includegraphics[width=\linewidth]{media/results-patching/patching_llama_70b-updated.png}
         \caption{Llama-3.1-70B.}
         \label{fig:patch-llama}
     \end{subfigure}
-    \caption{Per-layer activation patching at the last word token and newline ($i=0$) for the largest model in each family. Full results for all model sizes are in Appendix~\ref{sec:additional-patching-details}.}
+    \caption{Per-layer activation patching at the last word token and newline ($i=0$) for the largest model in each family. Black error bars are cluster-bootstrap 95\% CIs over prompt pairs (4 pairs $\times\ N{=}20$ for Qwen3-32B and Gemma-3-27B; 5 pairs $\times\ N{=}20$ for Llama-3.1-70B). Full results for all model sizes are in Appendix~\ref{sec:additional-patching-details}.}
     \label{fig:patch-results}
 \end{figure*}
 
-We apply activation patching at two positions: the last word token (position $i=-1$ in Qwen3 and Llama-3, $i=-2$ in Gemma-3 due to its tokenization of the line-ending comma; see Appendix~\ref{sec:model-config}) and the newline token ($i=0$), sweeping across all layers individually. For each layer, we report the corrupt rhyme rate averaged over 5 prompt pairs (20 samples each, 100 samples per layer). Figure~\ref{fig:patch-results} shows results for the largest model in each family.
+We apply activation patching at two positions: the last word token (position $i=-1$ in Qwen3 and Llama-3, $i=-2$ in Gemma-3 due to its tokenization of the line-ending comma; see Appendix~\ref{sec:model-config}) and the newline token ($i=0$), sweeping across all layers individually. For each layer, we draw $N=20$ stochastic samples per prompt pair; the main per-layer figures (Figure~\ref{fig:patch-results}) average over 4 prompt pairs ($N{=}80$) for Qwen3-32B and Gemma-3-27B and 5 prompt pairs ($N{=}100$) for Llama-3.1-70B. We additionally include the omitted \texttt{fright/fear} pair as a separate $N{=}100$ run for Gemma-3-27B (used in joint analyses below).
 
-In Gemma-3-27B (Figure~\ref{fig:patch-gemma}), last-word patching is highly effective in early layers but drops sharply around layer 30, while newline patching rises simultaneously to a peak corrupt rhyme rate of ${\sim}0.63$ at layers 33--35. This crossover, which we term the \textit{representational handoff}, is the mechanistic signature of \textit{planning site formation}: the causal locus migrates from the last word token to the newline, which becomes the primary read-out site for the phonological constraint. In contrast, Qwen3-32B (Figure~\ref{fig:patch-qwen}) and Llama-3.1-70B (Figure~\ref{fig:patch-llama}) show uniformly high last-word patching and near-zero newline patching across all layers, indicating that no such migration occurs. These models condition on the last word token throughout generation. Per-layer results for all model sizes within each family are provided in Appendix~\ref{sec:additional-patching-details}.
+In Gemma-3-27B (Figure~\ref{fig:patch-gemma}), last-word patching is highly effective in early layers but drops sharply around layer 30, while newline patching rises simultaneously to a peak corrupt rhyme rate of $0.64$ [95\% CI 0.45, 0.82] at layer 33 (4 pairs); the 5-pair estimate including \texttt{fright/fear} is $0.65$ [0.49, 0.80]. This crossover, which we term the \textit{representational handoff}, is the mechanistic signature of \textit{planning site formation}: the causal locus migrates from the last word token to the newline, which becomes the primary read-out site for the phonological constraint. The wide CI reflects pair-to-pair variability (one of four pairs at L33 has rate $0.10$, the other three exceed $0.75$); the qualitative migration is consistent across pairs even though its magnitude varies. In contrast, Qwen3-32B (Figure~\ref{fig:patch-qwen}) and Llama-3.1-70B (Figure~\ref{fig:patch-llama}) show uniformly high last-word patching (peak $0.74$ [0.55, 0.93] and $0.86$ [0.74, 0.96], respectively) and near-zero newline patching (peak $0.04$ [0.00, 0.11] and $0.02$ [0.00, 0.06]), with non-overlapping CIs separating the two positions across every layer. These models condition on the last word token throughout generation. Per-layer results for all model sizes within each family are provided in Appendix~\ref{sec:additional-patching-details}.
 
 \subsection{Localizing the Handoff to a Sparse Set of Attention Heads}
 \label{sec:head-patching}
 
 \begin{figure*}[!t]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/topk_head_patching.png}
-    \caption{Localizing the planning site handoff in Gemma-3-27B to a sparse set of attention heads. \textbf{(a)} Attention weight from the newline token ($i=0$) to the last word token ($i=-2$) across heads in layers 27--45. Red stars mark the top-5 heads by attention weight. \textbf{(b)} Corrupt rhyme rate when patching the top-$k$ highest-attending heads simultaneously at the newline. The dashed line shows the reference level from full residual-stream patching at the best single layer (${\sim}0.63$).}
+    \includegraphics[width=\linewidth]{media/results-patching/topk_head_patching-updated.png}
+    \caption{Localizing the planning site handoff in Gemma-3-27B to a sparse set of attention heads. \textbf{(a)} Attention weight from the newline token ($i=0$) to the last word token ($i=-2$) across heads in layers 27--45. Red stars mark the top-5 heads by attention weight. \textbf{(b)} Corrupt rhyme rate when patching the top-$k$ highest-attending heads simultaneously at the newline (5 prompt pairs $\times\ N{=}20$). Black error bars are cluster-bootstrap 95\% CIs over pairs. The dashed line and shaded gray band show the full-residual-stream peak at the best single layer (5-pair joint estimate $0.65$ [0.49, 0.80]).}
     \label{fig:topk-heads}
 \end{figure*}
 
@@ -279,9 +280,9 @@ Having established that the planning site forms at the newline token in Gemma-3-
 
 Specifically, we extract the attention weight from the newline token ($i=0$) to the last word token ($i=-2$) for each head in layers 27--45 of both clean and corrupt forward passes, and rank heads by this weight. Figure~\ref{fig:topk-heads}a shows the resulting heatmap: attention to $i=-2$ is highly concentrated: three heads attend almost exclusively to the last word token from the newline, namely layer 30 head 4 (weight ${\approx}0.99$), layer 28 head 14 (${\approx}0.97$), and layer 28 head 15 (${\approx}0.95$). A second cluster of heads in layers 28--36 shows moderate attention weights (0.35--0.55).
 
-We then patch the top-$k$ heads by attention weight simultaneously, replacing their outputs at the newline position with those from the corrupt forward pass, and measure the resulting corrupt rhyme rate. Figure~\ref{fig:topk-heads}b shows that $k=1,2,3$ produce near-zero corrupt rhyme rates (0.00, 0.05, and 0.12, respectively), indicating that even the three highest-attending heads are individually and jointly insufficient to carry the full phonological signal. At $k=5$, the corrupt rhyme rate jumps to ${\sim}0.46$, comparable to the peak achieved by full residual stream patching at the best single layer (${\sim}0.63$, shown as a dashed reference). Adding further heads ($k=10$) does not improve the rate, which plateaus at ${\sim}0.44$.
+We then patch the top-$k$ heads by attention weight simultaneously, replacing their outputs at the newline position with those from the corrupt forward pass, and measure the resulting corrupt rhyme rate. Figure~\ref{fig:topk-heads}b shows that $k=1,2,3$ produce near-zero corrupt rhyme rates ($0.00$ [0.00, 0.00], $0.05$ [0.00, 0.15], $0.12$ [0.04, 0.20]), indicating that even the three highest-attending heads are individually and jointly insufficient to carry the full phonological signal. At $k=5$ the rate jumps to $0.46$ [0.25, 0.69], non-overlapping with $k=3$ and comparable to the full-residual-stream peak. The headline ratio (top-5 head patching divided by full-residual peak) computed via joint cluster bootstrap over the same five prompt pairs is $0.71$ [0.46, 0.88], confirming that this small subset of heads carries most --- but, with a wide CI, possibly not all --- of the patching effect attainable from the full residual stream. Adding further heads ($k=10$) does not improve the rate, which plateaus at $0.44$ [0.27, 0.59].
 
-These results reveal a sparse but distributed implementation of the handoff: a set of five attention heads spanning layers 28--34 collectively account for the bulk of the rhyme information routed to the newline, while individual heads or smaller subsets are insufficient. The top five heads by attention weight are (layer 30, head 4), (layer 28, head 14), (layer 28, head 15), (layer 30, head 5), and (layer 28, head 29). We also verified that patching top-$k$ MLP layer outputs at the same position yields zero corrupt rhyme rate for all $k$, confirming that the handoff is mediated by attention rather than feed-forward computation.
+These results reveal a sparse but distributed implementation of the handoff: a set of five attention heads spanning layers 28--34 collectively account for the bulk of the rhyme information routed to the newline, while individual heads or smaller subsets are insufficient. The top five heads by attention weight are (layer 30, head 4), (layer 28, head 14), (layer 28, head 15), (layer 30, head 5), and (layer 28, head 29). We also verified that patching top-$k$ MLP layer outputs at the same position yields a corrupt rhyme rate of $0.00$ at every $k$ tested, with Wilson 95\% upper bound $\leq 0.04$ ($N{=}100$); the head-patching effect $0.46$ [0.25, 0.69] at $k=5$ is well above this MLP upper bound, confirming that the handoff is mediated by attention rather than feed-forward computation.
 
 
 \section{Conclusion}
@@ -290,7 +291,7 @@ We introduced the notion of \textit{planning site formation} and investigated it
 
 The Qwen3 family provides the paper's sharpest methodological lesson. Probing reveals strong, scale-dependent planning-compatible representations at the newline across all Qwen3 sizes, yet activation patching shows near-zero causal effect at every scale. Planning-compatible representations and causally active planning sites are dissociable: probe signal is not sufficient evidence of a planning site, and activation patching is required to establish causal relevance.
 
-Beyond the layer-level analysis, we localize the handoff in Gemma-3-27B to a sparse set of five attention heads in layers 28--34, identified via attention weight ranking followed by simultaneous head patching. Patching these five heads at the newline recovers ${\sim}73\%$ of the effect achievable by full residual-stream patching, while single-head patching and MLP patching produce no effect. This circuit-level specificity, with a handful of attention heads implementing a representational handoff, suggests that planning site formation, when it occurs, is a structured computational phenomenon rather than a diffuse property of many model components.
+Beyond the layer-level analysis, we localize the handoff in Gemma-3-27B to a sparse set of five attention heads in layers 28--34, identified via attention weight ranking followed by simultaneous head patching. Patching these five heads at the newline recovers $0.71$ [95\% CI 0.46, 0.88] of the effect achievable by full residual-stream patching (joint cluster bootstrap over five prompt pairs); MLP patching at the same position produces a corrupt rhyme rate of $0.00$ with Wilson 95\% upper bound $\leq 0.04$, and single-head patching produces no measurable signal. The 95\% CI on the head-patching ratio is wide because we have only five prompt pairs as the unit of independence, but its lower bound (${\geq}0.46$) is well above the MLP upper bound, so the qualitative claim --- attention-mediated handoff implemented by a sparse head set --- is robust. This circuit-level specificity, with a handful of attention heads implementing a representational handoff, suggests that planning site formation, when it occurs, is a structured computational phenomenon rather than a diffuse property of many model components.
 
 Our activation patching approach requires no transcoder training and far less data than steering vector approaches, making it scalable to large models across many architectures. The results, however, also surface important open questions and limitations that future work should address.
 
@@ -391,12 +392,19 @@ For probing experiments, we also evaluated on top-1 accuracy. Note these are sim
 
 To verify that the observed corrupt rhyme rates reflect the specific encoding of the corrupt rhyme word rather than a generic effect of perturbing the residual stream, we run two control conditions. The \textit{zero-vector} baseline replaces the patched hidden state with an all-zeros vector. The \textit{donor-prompt} baseline replaces it with a hidden state cached from the same token position in a semantically unrelated sentence (``The weather outside is warm and sunny today, and the birds are singing.'').
 
-Figure~\ref{fig:patching-baselines} shows results for Qwen3-32B (at $i=-1$) and Gemma-3-27B (at $i=-2$), averaged over all prompt pairs. Both control conditions produce corrupt rhyme rates near zero across all layers, while true activation patching reaches ${\sim}0.80$ for Gemma-3-27B and ${\sim}0.70$ for Qwen3-32B at their peak layers.
+Figure~\ref{fig:patching-baselines} shows results for Qwen3-32B (at $i=-1$) and Gemma-3-27B (at $i=-2$), averaged over all prompt pairs. Both control conditions produce corrupt rhyme rates near zero across all layers, while true activation patching reaches a peak of $0.96$ for Gemma-3-27B and $0.90$ for Qwen3-32B (single fright/fear prompt with $N{=}100$). Quantifying ``near zero'' via Wilson 95\% upper bounds across all layers (pooled $N\approx 80$ per layer per condition): Qwen3-32B zero-vector $\leq 0.17$ and donor-prompt $\leq 0.14$; Gemma-3-27B zero-vector $\leq 0.05$ and donor-prompt $\leq 0.07$. In every case the upper-CI of the baseline is well below the true patching peak, supporting the claim that the effect is specific to the corrupt rhyme word's identity.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/patching_baselines.png}
-    \caption{Corrupt rhyme rate under true activation patching versus zero-vector and donor-prompt baseline controls at the last word position. Both baselines yield near-zero rates across all layers, confirming that the patching effect is specific to the corrupt rhyme word's identity rather than an artifact of residual stream disruption.}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/results-patching/baselines_qwen3_32b-updated.png}
+    \end{subfigure}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/results-patching/baselines_gemma3_27b-updated.png}
+    \end{subfigure}
+    \caption{Corrupt rhyme rate under true activation patching versus zero-vector and donor-prompt baselines at the last word position. Shaded bands are Wilson 95\% CIs (true patching $N{=}100$ per layer; baselines pooled across pairs $N\approx 80$ per layer). Both baselines yield near-zero rates across all layers, confirming that the patching effect is specific to the corrupt rhyme word's identity rather than an artifact of residual stream disruption.}
     \label{fig:patching-baselines}
 \end{figure}
 
@@ -407,32 +415,33 @@ Table~\ref{tab:patch-all-layers} reports corrupt rhyme rates when all layers are
 
 \begin{table}[h]
 \centering
+\small
 \begin{tabular}{llcc}
 \toprule
-Family & Model & Last Word & $i=0$ \\
+Family & Model & Last Word [95\% CI] & $i=0$ [95\% CI] \\
 \midrule
 \multirow{6}{*}{Qwen3}
- & 0.6B  &  1 &  7 \\
- & 1.7B  & 15 &  2 \\
- & 4B    & 42 &  7 \\
- & 8B    & 53 &  2 \\
- & 14B   & 63 &  7 \\
- & 32B   & 96 &  9 \\
+ & 0.6B  & 1 [0, 5]    & 7 [3, 14]  \\
+ & 1.7B  & 15 [9, 23]  & 2 [1, 7]   \\
+ & 4B    & 42 [33, 52] & 7 [3, 14]  \\
+ & 8B    & 53 [43, 62] & 2 [1, 7]   \\
+ & 14B   & 63 [53, 72] & 7 [3, 14]  \\
+ & 32B$^{\dagger}$ & 96 [90, 98] & 9 [5, 16]  \\
 \midrule
 \multirow{4}{*}{Gemma-3}
- & 1B    & 37 &  1 \\
- & 4B    & 78 &  0 \\
- & 12B   & 90 &  0 \\
- & 27B   & 100 & 73 \\
+ & 1B    & 37 [28, 47] & 1 [0, 5]   \\
+ & 4B    & 78 [69, 85] & 0 [0, 4]   \\
+ & 12B   & 90 [83, 94] & 0 [0, 4]   \\
+ & 27B$^{\dagger}$ & 100 [96, 100] & 73 [64, 81] \\
 \midrule
 \multirow{4}{*}{Llama-3}
- & 1B    & 59 &  2 \\
- & 3B    & 87 &  0 \\
- & 8B    & 79 &  0 \\
- & 70B   & 75 &  2 \\
+ & 1B    & 59 [49, 68] & 2 [1, 7]   \\
+ & 3B    & 87 [79, 92] & 0 [0, 4]   \\
+ & 8B    & 79 [70, 86] & 0 [0, 4]   \\
+ & 70B   & 75 [66, 82] & ---        \\
 \bottomrule
 \end{tabular}
-\caption{Corrupt rhyme rate (\%) when all layers are patched simultaneously. Gemma-3-27B is the only model with substantial newline effectiveness.}
+\caption{Corrupt rhyme rate (\%) when all layers are patched simultaneously, with Wilson 95\% CIs. All cells use $N{=}100$ (5 prompt pairs $\times\ N{=}20$); $^{\dagger}$ indicates the row uses a single \texttt{fright/fear} prompt with $N{=}100$. Llama-3 70B $i=0$ was not captured in the all-layers run. Gemma-3-27B is the only model whose newline-patching CI does not overlap zero, separated by a wide margin from every other model.}
 \label{tab:patch-all-layers}
 \end{table}
 
@@ -440,36 +449,36 @@ Family & Model & Last Word & $i=0$ \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/patching_summary_bars.png}
-    \caption{Peak corrupt rhyme rate (maximum across all layers) for the last word token and newline ($i=0$) at each model size. Gemma-3-27B is the only model for which newline patching reaches a substantial level; all Qwen3 and Llama-3 models show near-zero newline effectiveness regardless of scale.}
+    \includegraphics[width=\linewidth]{media/results-patching/patching_summary_bars-updated.png}
+    \caption{Peak corrupt rhyme rate (maximum across all layers) for the last word token and newline ($i=0$) at each model size. Black error bars are 95\% cluster bootstrap CIs over prompt pairs (5 pairs per model except Qwen3-32B and Gemma-3-27B at 4). Gemma-3-27B is the only model whose newline CI is clearly separated from zero (0.64 [0.45, 0.82]); every other model has a newline CI upper bound $\leq 0.21$ regardless of scale, while last-word patching is broadly effective from $\sim$3B parameters onward in every family.}
     \label{fig:appendix-patch-summary}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Qwen3_small.png}
-    \caption{Per-layer activation patching, Qwen3 0.6B--4B.}
+    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Qwen3_small-updated.png}
+    \caption{Per-layer activation patching, Qwen3 0.6B--4B. Black bars are 95\% cluster bootstrap CIs (5 pairs $\times\ N{=}20$). Last-word patching becomes effective only from 4B (peak 0.48 [0.25, 0.72]); 0.6B and 1.7B have peak CIs that nearly span zero. Newline ($i=0$) patching is at noise across all sizes (peak CI upper bounds $\leq 0.21$).}
     \label{fig:appendix-patch-qwen3-small}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Qwen3_large.png}
-    \caption{Per-layer activation patching, Qwen3 8B--32B.}
+    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Qwen3_large-updated.png}
+    \caption{Per-layer activation patching, Qwen3 8B--32B. Black bars are 95\% cluster bootstrap CIs. Last-word peaks rise smoothly with scale (8B 0.54 [0.35, 0.72]; 14B 0.73 [0.46, 0.97]; 32B 0.74 [0.55, 0.93]). Newline patching remains at noise across all three sizes (CI upper bounds $\leq 0.21$).}
     \label{fig:appendix-patch-qwen3-large}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Gemma3.png}
-    \caption{Per-layer activation patching, Gemma-3 1B--27B.}
+    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Gemma3-updated.png}
+    \caption{Per-layer activation patching, Gemma-3 1B--27B. Black bars are 95\% cluster bootstrap CIs. The newline ($i=0$) channel is silent at every size below 27B (peak CI [0.00, 0.00] for 4B and 12B), and only emerges at 27B with peak 0.64 [0.45, 0.82] at L33. Last-word ($i=-2$) patching is effective from 1B onward.}
     \label{fig:appendix-patch-gemma3}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Llama3.png}
-    \caption{Per-layer activation patching, Llama-3 1B--70B.}
+    \includegraphics[width=\linewidth]{media/results-patching/appendix_patching_Llama3-updated.png}
+    \caption{Per-layer activation patching, Llama-3 1B--70B. Black bars are 95\% cluster bootstrap CIs. Last-word peaks are uniformly high (3B 0.91 [0.86, 0.96]; 8B 0.85 [0.73, 0.97]; 70B 0.86 [0.74, 0.96]). Newline patching is at noise across all four sizes (CI upper bounds $\leq 0.09$).}
     \label{fig:appendix-patch-llama3}
 \end{figure}
 
