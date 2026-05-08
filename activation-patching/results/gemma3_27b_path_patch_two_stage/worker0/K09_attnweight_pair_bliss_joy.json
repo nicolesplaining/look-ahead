@@ -1,0 +1,71 @@
+{
+  "key": "K09_attnweight_pair_bliss_joy",
+  "K": 9,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ]
+  ],
+  "corrupt_rhyme_rate": 1.0,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThe children laughed in bliss,\nuntil they saw a fearsome abyss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a toy.\n\nA rhyming quatrain:\nThe sun descends, a fiery hue",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a decoy.\n\nA rhyming couplet:\nThe sun did shine so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe cat sat on the mat,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to deploy.\n\nIs this appropriate for a children's book?\n\n**No, absolutely",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nIs this a good example of a rhyming couplet?\nNo,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nIs this a good couplet? Why or why not?\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA limerick:\nThere once was a cat named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the toy.\n\nI need a continuation of this poem, following the same rhyming scheme (",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA limerick:\nThere once was a fellow named Hugh,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA rhyming couplet:\nThe cat sat on the mat,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a decoy.\n\nThe children laughed in bliss,\nTheir joy was a sight to kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the boy.\n\nIt's a bit of a cliffhanger, isn't it?",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nWhat is wrong with this couplet?\n\nThe rhyme is weak. \"",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nThis is an example of a rhyming couplet. A rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy. \n\nThe children laughed in bliss,\nA wondrous sight, a joyful kiss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nI'd like to see a couplet that continues this poem, that",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:19:17.934805+00:00"
+}

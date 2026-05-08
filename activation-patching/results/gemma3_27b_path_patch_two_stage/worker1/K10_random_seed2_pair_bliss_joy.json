@@ -1,0 +1,75 @@
+{
+  "key": "K10_random_seed2_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 2,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      9,
+      19
+    ],
+    [
+      18,
+      30
+    ],
+    [
+      3,
+      21
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      38,
+      8
+    ],
+    [
+      22,
+      11
+    ],
+    [
+      38,
+      31
+    ],
+    [
+      26,
+      8
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      6,
+      27
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a baker named Sue,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA rhyming quatrain:\nThe sun descends, a fiery hue",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA rhyming couplet:\nThe cat sat on the mat,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, falling snow,\nBlanketing the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers in the breeze",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight warms the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel against the crashing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nThis is an example of a **perfect rhyme**. \n\nHere'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nThis is an example of a dark or macabre couplet,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA limerick:\nThere once was a bear in a zoo",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nAnd here's a limerick:\nThere once was a baker"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:53:13.519895+00:00"
+}

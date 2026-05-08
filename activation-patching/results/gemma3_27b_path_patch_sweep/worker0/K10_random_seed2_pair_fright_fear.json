@@ -1,0 +1,74 @@
+{
+  "key": "K10_random_seed2_pair_fright_fear",
+  "K": 10,
+  "ranking": "random",
+  "seed": 2,
+  "pair_id": "fright_fear",
+  "head_set": [
+    [
+      9,
+      19
+    ],
+    [
+      18,
+      30
+    ],
+    [
+      3,
+      21
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      38,
+      8
+    ],
+    [
+      22,
+      11
+    ],
+    [
+      38,
+      31
+    ],
+    [
+      26,
+      8
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      6,
+      27
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short free verse poem:\nThe chipped mug warms my hands.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSilent shadows fall,\nWhispers in the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nDark clouds fill the sky,\nRain begins",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft rain on the roof,\nWhispering",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would be alright.\n\nI can write more rhyming couplets if you like! Or if",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nCool breeze whispers low,\nSunlight dances",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSoft breeze whispers low,\nSunlight dances",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she'd be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nCool breeze whispers low,\nSunlight dances",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA short poem:\nThe sun dips low, a fiery kiss,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA limerick:\nThere once was a baker so grand,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds"
+  ],
+  "timestamp_utc": "2026-05-08T00:47:54.468711+00:00"
+}

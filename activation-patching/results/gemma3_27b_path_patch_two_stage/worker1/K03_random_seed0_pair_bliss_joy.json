@@ -1,0 +1,47 @@
+{
+  "key": "K03_random_seed0_pair_bliss_joy",
+  "K": 3,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      16,
+      7
+    ],
+    [
+      38,
+      29
+    ],
+    [
+      35,
+      26
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.8,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is a very dark and disturbing couplet.  It starts with",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis couplet is an example of:\n\na) Elegy\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a baker so grand,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\nA haiku:\nDarkness claims the light,\nTiny hands",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this considered dark humor?\n\nYes, this is absolutely considered dark",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA short, rhyming poem:\n\nThe sun does shine,\nA lovely",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nThe meaning of the poem is ambiguous. It could be a sweet, innocent",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds through the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of a dark and ironic couplet. The first",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nI'm sorry I don't know how to create an image of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA rhyming triplet:\nThe ocean waves crashed on the shore,\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nWhat is the tone of the poem? \n\nA. Joy"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:45:03.347653+00:00"
+}

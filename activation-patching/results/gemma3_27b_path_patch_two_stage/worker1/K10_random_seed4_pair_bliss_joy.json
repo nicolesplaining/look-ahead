@@ -1,0 +1,75 @@
+{
+  "key": "K10_random_seed4_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 4,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      4,
+      30
+    ],
+    [
+      32,
+      5
+    ],
+    [
+      28,
+      5
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      25,
+      30
+    ],
+    [
+      9,
+      23
+    ],
+    [
+      6,
+      19
+    ],
+    [
+      31,
+      31
+    ],
+    [
+      5,
+      31
+    ],
+    [
+      7,
+      9
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.95,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nWhile technically a rhyming couplet, it's a dark one",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nDarkness starts to fall,\nSilent",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight warms the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this an example of dark humor?\n\nYes, this is a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nPlease provide a contrast to this couplet. This contrast should also be",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nI'm not sure if that is appropriate. It's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a baker named Sue,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\n(I know this is dark, but it's a rh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nIs this a good couplet? Why or why not?\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nI will now give you a rhyming couplet. You respond with another",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nI'm trying to create something similar, a rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'd rate this poem as **poor**. Here's why",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if this is a good couplet. Is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nIs this dark humor?\n\nYes, this is definitely dark humor"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:53:50.610074+00:00"
+}

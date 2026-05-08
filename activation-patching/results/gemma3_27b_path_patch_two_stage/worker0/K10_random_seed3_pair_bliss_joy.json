@@ -1,0 +1,75 @@
+{
+  "key": "K10_random_seed3_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      11,
+      3
+    ],
+    [
+      31,
+      21
+    ],
+    [
+      27,
+      5
+    ],
+    [
+      37,
+      21
+    ],
+    [
+      28,
+      27
+    ],
+    [
+      19,
+      29
+    ],
+    [
+      20,
+      29
+    ],
+    [
+      21,
+      4
+    ],
+    [
+      19,
+      14
+    ],
+    [
+      24,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.85,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis couplet is an example of...\n\na) assonance\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nIs this a good couplet? Why or why not?\n\nThis is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds of autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThe rhyming scheme is AA. \n\nA limerick:",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nThe rhyme is \"bliss\" and \"kiss\".\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nSilent, dark descent,\nEchoes of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nThis couplet is slightly unsettling. It's the ambiguity of who did the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nDarkness starts to creep,\nSilent screams",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is a dark joke, but the rhyming couplet structure is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly sway,\nSunlight dances",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI know it's dark humor, but it's effective in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker so grand,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss. \n\nThe meaning is rather odd, but the rhyme scheme is there.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had kissed.\n\nI'm not sure if that's appropriate.\n\nHow about:\n\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:52:52.676107+00:00"
+}

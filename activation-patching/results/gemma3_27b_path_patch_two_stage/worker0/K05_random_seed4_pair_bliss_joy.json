@@ -1,0 +1,55 @@
+{
+  "key": "K05_random_seed4_pair_bliss_joy",
+  "K": 5,
+  "ranking": "random",
+  "seed": 4,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      11,
+      22
+    ],
+    [
+      33,
+      25
+    ],
+    [
+      16,
+      27
+    ],
+    [
+      37,
+      14
+    ],
+    [
+      29,
+      3
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.7,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI think I'm in love with this couplet. It'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nI'd like you to expand on this couplet, creating a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\n(Please note this is a dark example and is meant to illustrate",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA rhyming couplet is two lines of poetry that rhyme.\n\nHere",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nIs this a good couplet? Why or why not?\n\nThis couplet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed!\n\nA rhyming couplet is two lines of poetry that rhyme and usually have the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit of abyss.\n\nI need help coming up with a rhyming couplet to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds carry them",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of the coming",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA quatrain:\nThe sun descends, a fiery show,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed. \n\nI think this couplet is a bit... unsettling. Is there a way",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nI think it's funny!\nI think the rhyme scheme is AABB",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure how to feel about that. It's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:50:52.040924+00:00"
+}

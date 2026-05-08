@@ -1,0 +1,95 @@
+{
+  "key": "K15_random_seed3_pair_doom_dread",
+  "K": 15,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      38,
+      5
+    ],
+    [
+      38,
+      21
+    ],
+    [
+      30,
+      2
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      26,
+      29
+    ],
+    [
+      14,
+      11
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      31,
+      18
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      21,
+      12
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      27,
+      15
+    ],
+    [
+      30,
+      7
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      30,
+      8
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nA haiku:\nEmpty rooms are cold,\nFootsteps echo",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the living room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nShadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nShadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room. \n\nA short, descriptive paragraph:\nDust motes danced in the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nThe couplet evokes a sense of mystery and anticipation. The first line",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nNow write a limerick based on the same theme.\nThere",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked in with a boom.\n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA short poem about a mysterious discovery:\n\nDust motes danced in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA Haiku:\nEmpty halls echo,\nFootsteps break the quiet",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all appeared in the room.\n\nA haiku:\nDust motes in the sun,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nA haiku:\nDust motes dance in light,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA Haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nFootsteps",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud boom!\n\nAnd here's a haiku:\nDust motes dance in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nI like the imagery and the suspenseful feeling.  It sets the"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:56:47.653091+00:00"
+}

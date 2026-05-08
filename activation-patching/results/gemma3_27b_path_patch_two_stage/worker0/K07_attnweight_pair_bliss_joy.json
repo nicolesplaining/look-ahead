@@ -1,0 +1,63 @@
+{
+  "key": "K07_attnweight_pair_bliss_joy",
+  "K": 7,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ]
+  ],
+  "corrupt_rhyme_rate": 1.0,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all discovered a toy.\n\nThe poem is lacking a sense of completeness. It feels like it is setting",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis is an example of a:\na) ballad\nb) son",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nThe following is an attempt at a poem:\nThe children laughed in bliss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nI think it's okay, but it seems a bit abrupt.  ",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the toy.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a coy.\n\nIs this a good couplet? Why or why not?\n\nThis couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis couplet is an example of a **heroic couplet**.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA short poem:\n\nThe sun dipped low, a fiery kiss,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nThe question is:\nWhat is the significance of the boy?\n\n**",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nHow could you improve this couplet to make it more poetic and engaging?",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a scary toy.\n\nWrite a rhyming couplet that continues the story:\n\nThe children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe sun doth shine so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a boy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on gentle",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy. \n\nA rhyming couplet:\nThe sun does shine so bright,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\n**Explanation:**\n\n*   **Rhyming Couplet:** A rhyming",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all noticed a toy.\n\nI need a rhyming couplet that continues the story.\n\nHere are",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering secrets to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the boy.\n\nWhat is the rhyme scheme?\nAA\nThe rhyme scheme is **AA",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a scary toy.\n\nA limerick:\nThere once was a cat named Sue,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a spooky toy.\n\nThis is an example of a **rhyming couplet**.\n\nHere"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:52:09.437562+00:00"
+}

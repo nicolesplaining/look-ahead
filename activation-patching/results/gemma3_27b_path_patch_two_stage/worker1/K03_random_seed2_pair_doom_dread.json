@@ -1,0 +1,47 @@
+{
+  "key": "K03_random_seed2_pair_doom_dread",
+  "K": 3,
+  "ranking": "random",
+  "seed": 2,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      34,
+      29
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      22,
+      31
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the darkened room.\n\nA short paragraph:\nThe old house stood on a hill overlooking the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a rhythmic boom.\n\nA quatrain:\nThe wind howled fierce, a chilling",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA quatrain:\nThe wind howled fierce, a mournful",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a chilling boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nShadows softly fall,\nWhispers echo in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a crash in the room.\n\nA limerick:\nThere once was a fellow named",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a cracking boom.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom!\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the darkened room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA Haiku:\nCold wind whispers low,\nShadows dance in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows softly creep,\nWhispers echo",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nI need a rhyming couplet to follow this. Here are a few",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nA haiku:\nDust motes dance in light,\nFoot",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom!\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nShadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a dreadful boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom.\n\nA haiku:\nDust motes in the sun,\nA",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:46:26.680633+00:00"
+}

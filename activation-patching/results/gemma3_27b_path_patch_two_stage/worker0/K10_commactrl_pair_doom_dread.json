@@ -1,0 +1,75 @@
+{
+  "key": "K10_commactrl_pair_doom_dread",
+  "K": 10,
+  "ranking": "commactrl",
+  "seed": null,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      3,
+      24
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      7,
+      16
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      27
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a spectral boom.\n\nA haiku:\nShadows dance and creep,\nWhispers",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nHere is a Haiku:\nSoft rain on the roof,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA short story:\n\nThe old house stood on a hill overlooking the town",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA short, descriptive paragraph:\nDust motes danced in the shafts of",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all went to their room.\n\nA Haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a booming boom.\n\nA Haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a spectral boom.\n\nA haiku:\nShadows start to creep,\nA chill",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all entered the room.\n\nA haiku:\nDust motes dance in sun,\nEmpty",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nHere's a short story inspired by the couplet:\n\nOld",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room. \n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA short limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a spectral boom. \n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the living room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the darkened room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room. \n\nA haiku:\nDust motes dance in light,\nFoot",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all stepped from the room.\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all walked into the room.\n\nA limerick:\nThere once was a fellow named Lou",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes in the sun,\nFootsteps"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:51:51.905030+00:00"
+}

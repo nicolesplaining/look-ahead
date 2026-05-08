@@ -1,0 +1,39 @@
+{
+  "key": "K01_random_seed2_pair_grief_pain",
+  "K": 1,
+  "ranking": "random",
+  "seed": 2,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      28,
+      19
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself had lost its leaf.\n\nA haiku:\nEmpty space remains,\nWhere a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves had fallen from my belief.\n\nA haiku:\nEmpty space remains,\nWhere laughter",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself found no relief.\n\nA haiku:\nDark clouds fill the sky,\nT",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nSilent tears descend,\nA hollow ache",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nEmpty, silent room,\nGhost of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart itself had lost its leaf.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief. \n\nA short poem:\nThe rain falls soft, a silver",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart had fallen from a leaf.\n\nA haiku:\nFalling, golden leaves,\nWhis",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nShadows dance",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost all belief.\n\nA metaphor:\nThe world is a stage, and all the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA Haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the stars themselves found no relief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen its relief.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen, beyond belief.\n\nA simile:\nHer voice was as smooth as velvet.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nFalling, silent snow,\nBlankets"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:42:52.198585+00:00"
+}

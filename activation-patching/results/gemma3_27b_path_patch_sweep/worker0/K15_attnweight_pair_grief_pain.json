@@ -1,0 +1,94 @@
+{
+  "key": "K15_attnweight_pair_grief_pain",
+  "K": 15,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      13,
+      31
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.75,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its refrain.\n\nI need a rhyming couplet that continues the feeling of loss",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA short, descriptive paragraph:\nThe old house stood on a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has ceased to reign. \n\nA metaphor: \nMy heart is a shattered vase,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its golden sheen.\n\nWhat literary device is used in the second line?\nA",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to reign.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never again be seen.\n\nA Haiku:\nDark clouds fill the sky,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nSilent tears descend,\nShadows dance",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself would cease to reign.\n\nA free verse poem:\nThe chipped mug warms my hands",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its golden sheen.\n\nA quatrain:\nThe world feels muted, colors",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had lost its sheen.\n\nA short, descriptive paragraph:\nThe old house stood sil",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA simile:\nHer heart was as cold as ice.\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA short poem about loss:\n\nThe world feels muted, colors",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nI like this couplet because it uses strong imagery and evokes a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nEmpty chair sits still,\nSilence echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA metaphor:\nThe city was a concrete jungle, teeming with",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to reign.\n\nA haiku:\nSilent tears descend,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to rise again.\n\nA haiku:\nLost in shadows deep,\nSilent tears"
+  ],
+  "timestamp_utc": "2026-05-08T00:49:19.555260+00:00"
+}

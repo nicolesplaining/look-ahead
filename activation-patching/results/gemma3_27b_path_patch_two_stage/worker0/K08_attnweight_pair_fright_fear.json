@@ -1,0 +1,67 @@
+{
+  "key": "K08_attnweight_pair_fright_fear",
+  "K": 8,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "fright_fear",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.4,
+  "clean_rhyme_rate": 0.6,
+  "completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA haiku:\nSun warms gentle face,\nWhispers of a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would disappear.\n\nA haiku:\nDarkness all around,\nFearful heart",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the shadows would disappear.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the day would soon be clear.\n\nA haiku:\nGreen leaves softly fall,\nWhis",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nSilent, falling snow,\nCovers the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA sentence using alliteration:\nPeter Piper picked a peck of pickled",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nNow, I need a couplet to follow this one, maintaining the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispers carried",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would make it through the night.\n\nA haiku:\nDarkness falls so slow,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nFalling soft snow flakes,\nBlanket the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that soon would disappear.\n\nA rhyming quatrain:\nThe sun descends, a fiery hue",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that morning would soon be near.\n\nA haiku:\nDarkness all around,\nHeartbeat"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:05:07.197524+00:00"
+}

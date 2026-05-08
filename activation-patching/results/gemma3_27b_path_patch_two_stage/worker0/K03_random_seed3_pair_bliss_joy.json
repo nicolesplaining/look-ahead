@@ -1,0 +1,47 @@
+{
+  "key": "K03_random_seed3_pair_bliss_joy",
+  "K": 3,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      2,
+      5
+    ],
+    [
+      18,
+      18
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.95,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss. \n\nA limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA limerick:\nThere once was a fellow named Lou,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nThis is an example of a dark humor couplet. \n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering secrets",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nFalling through the dark,\nTiny screams echo",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss.\n\nNow, write a rhyming couplet that is about a cat.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nIs this a good couplet? Why or why not?\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nDarkness falls around,\nSilent screams echo",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis couplet is a bit... dark. Is there a way to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nA haiku:\nFirst snow starts to fall,\nQuietly",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\nA haiku:\nDarkness starts to fall,\nChildren'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nNow, a short paragraph explaining the couplet:\n\nThis simple couplet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis couplet is unsettling due to the juxtaposition of cheerful imagery (\"laug",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA rhyming triplet:\nThe sun shone bright and bold,\nA"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:47:00.516978+00:00"
+}

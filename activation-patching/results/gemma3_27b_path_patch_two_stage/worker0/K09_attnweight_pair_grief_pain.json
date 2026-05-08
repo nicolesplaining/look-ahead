@@ -1,0 +1,71 @@
+{
+  "key": "K09_attnweight_pair_grief_pain",
+  "K": 9,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.85,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its beam, and the rain.\n\nA haiku:\nSilent tears now fall",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never shine again.\n\nA simile:\nHer smile was as bright as the sun.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nI like it! It's evocative and has a nice,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to sustain.\n\nA haiku:\nSilent tears now fall,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA short paragraph using the imagery of a dying ember:\nThe",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nThis is a great couplet. It evokes a strong feeling of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its refrain.\n\nA haiku:\nEmpty chair remains,\nSilence echoes through",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nThe first line has 10 syllables.\nThe second line",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nHere's a breakdown of why it's a couplet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has lost its refrain.\n\nA limerick:\nThere once was a fellow named Lou",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain. \n\nThis is a good example of a rhyming couplet because",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to reign.\n\nThis is a good example of a rhyming couplet. Here'",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was in pain.\n\nA haiku:\nDark clouds fill the sky,\nT",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was lost in a rain.\n\nAnd a haiku:\nSilent tears descend,\nWorld",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again reign.\n\nA haiku:\nDarkness fills the sky,\nA",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its terrain.\n\nA haiku:\nSilent, falling snow,\nCovers",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself was in pain. \n\nA haiku:\nEmpty chair remains,\nSilent echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to reign. \n\nA quatrain (four-line stanza):\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to sustain.\n\nA haiku:\nSilent tears now fall,\nEmpty space"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:19:43.490020+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "key": "K09_random_seed3_pair_bliss_joy",
+  "K": 9,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      38,
+      10
+    ],
+    [
+      32,
+      23
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      29,
+      8
+    ],
+    [
+      26,
+      19
+    ],
+    [
+      36,
+      6
+    ],
+    [
+      17,
+      25
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      7,
+      27
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.75,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn's breath",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nThis is a silly little couplet.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nThat's a bit creepy, isn't it? I tried to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a baker so grand,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers in the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit.\n\nThis couplet is an example of a **dramatic irony**.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another rhyming couplet:\nThe sun does shine so",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? No.\n\nWhy not?\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA rhyming couplet:\nThe sun did shine so bright,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nThis is a silly, simple couplet. It uses rhyme to create a sense",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nThis is a couplet because it has two lines that rhyme, bliss and kiss"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:25:52.456172+00:00"
+}

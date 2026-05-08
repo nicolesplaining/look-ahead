@@ -1,0 +1,54 @@
+{
+  "key": "K05_commactrl_pair_bliss_joy",
+  "K": 5,
+  "ranking": "commactrl",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      3,
+      24
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit. \n\nI want a rhyming couplet that is similarly dark/unexpected",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another one:\nThe sun shines bright and bold,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a fellow named Lou,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all shared a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nNow, write a rhyming couplet that continues the rhyme scheme, but",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI have a love-hate relationship with that couplet. It'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this an example of irony?\n\nYes, this is a very",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nThis is a dark couplet. It starts with joy, but",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit of abyss.\n\nIs this a good couplet? Why or why not?",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if you're looking for a critique or",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another one:\nThe sun does shine so bright,\n"
+  ],
+  "timestamp_utc": "2026-05-08T00:35:52.458394+00:00"
+}

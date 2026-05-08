@@ -1,0 +1,55 @@
+{
+  "key": "K05_random_seed3_pair_doom_dread",
+  "K": 5,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      32,
+      0
+    ],
+    [
+      18,
+      31
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      25,
+      12
+    ],
+    [
+      23,
+      6
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows start to creep,\nWhispers",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the living room. \n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nNow, write a short story based on that couplet.\n\n---\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nI like this couplet because it creates a sense of mystery and anticipation",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a baker named Sue,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nShadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nA short story:\nThe old house stood on a hill overlooking the",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they all appeared in the room.\n\nWrite a story that continues from this couplet.\n\n---\n\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nOld house, quiet still,\nShadows dance",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA short, descriptive paragraph:\nDust motes danced in the single shaft",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room. \n\nNow write a story based on that couplet.\n\n## The",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nHere's a short poem:\n\nThe old clock ticks, a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA limerick:\nThere once was a house, old and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe line \"when suddenly they heard a ghostly boom\" is an example",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room. \n\nHere's another:\nThe old clock ticked, a steady"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:50:55.086480+00:00"
+}

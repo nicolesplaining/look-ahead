@@ -1,0 +1,54 @@
+{
+  "key": "K05_random_seed4_pair_grief_pain",
+  "K": 5,
+  "ranking": "random",
+  "seed": 4,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      11,
+      22
+    ],
+    [
+      33,
+      25
+    ],
+    [
+      16,
+      27
+    ],
+    [
+      37,
+      14
+    ],
+    [
+      29,
+      3
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen my belief.\n\nA short poem with internal rhyme:\nThe rain in Spain falls",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA quatrain:\nThe sun descends, a fiery hue",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief. \n\nHere's a little more about rhyming couplets:",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nA simile:\nHer voice was as smooth as silk.\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a fallen leaf.\n\nA haiku:\nSilent tears descend,\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was stripped of relief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was a falling leaf.\n\nA haiku:\nSilent tears descend,\nLost within the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost all relief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was a fallen leaf.\n\nA haiku:\nFalling, silent tears,\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief. \n\nA haiku:\nLost love's gentle touch,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen my belief.\n\nA haiku:\nEmpty space remains,\nWhere a warm",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the wind had stolen every leaf.\n\nA haiku:\nEmpty branch now sways,\nGhosts",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to give relief.\n\nA short poem:\n\nThe world feels muted, colors turned to",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nNow, write me another rhyming couplet with the same rhyme"
+  ],
+  "timestamp_utc": "2026-05-08T00:45:47.096673+00:00"
+}

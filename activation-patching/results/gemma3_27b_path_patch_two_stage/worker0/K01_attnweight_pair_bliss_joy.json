@@ -1,0 +1,39 @@
+{
+  "key": "K01_attnweight_pair_bliss_joy",
+  "K": 1,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to hiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nNot appropriate for children.\n\nI understand you are looking for a rh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nWhat kind of tone does this couplet have?\nThe tone of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA short story:\n\nThe old lighthouse keeper, Silas, had seen",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit of Swiss.\n\nA haiku:\nGreen leaves softly fall,\nWhis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nSilent, dark descent,\nEchoes of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of:\nA. Metaphor\nB.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this an example of:\na) Dark Humor\nb)",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nSilent, dark descent,\nEchoes",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIt's a bit dark, but fulfills the request.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nDarkness takes its toll,\nLaughter",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit of abyss.\n\nA limerick:\nThere once was a fellow named",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI think this couplet is effective because it creates a jarring contrast.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispers of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all began to hiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nThis is a silly couplet, but it does rhyme. \n\nNow",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet?\nNo, this is not a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed. \n\nHere's a rhyming couplet about a cat:\n\nA fluffy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA rhyming couplet:\nThe sun did shine so bright"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:40:03.103361+00:00"
+}

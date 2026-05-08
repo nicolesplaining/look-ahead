@@ -1,0 +1,47 @@
+{
+  "key": "K03_commactrl_pair_grief_pain",
+  "K": 3,
+  "ranking": "commactrl",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      3,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nI'm looking for other rhyming couplets that evoke a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen my belief.\n\nI'm glad you like it. Would you like me to",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nA limerick:\nThere once was a baker so grand",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was stripped of all relief.\n\nA haiku:\nSilent tears descend,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself was a thief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA short, evocative sentence:\nThe rain tasted of ash and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA short poem:\nThe rain falls soft, a whispered plea",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was stripped of its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself brought disbelief.\n\nA haiku:\nSilent tears now fall,\nA sunless",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was stripped of all relief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nEmpty space remains,\nA silent,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nIs this a good couplet? Let's analyze:\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:45:25.097858+00:00"
+}

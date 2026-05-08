@@ -1,0 +1,74 @@
+{
+  "key": "K10_commactrl_pair_dark_night",
+  "K": 10,
+  "ranking": "commactrl",
+  "seed": null,
+  "pair_id": "dark_night",
+  "head_set": [
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      3,
+      24
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      7,
+      16
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      27
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a little glowing spark.\n\nI'm trying to expand this into a longer poem. Here",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver arc.\n\nA haiku:\nDarkness softly falls,\nSilver",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness falls around,\nA tiny spark",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark. \n\nHere's another rhyming couplet:\nThe cat sat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA limerick:\nThere once was a baker named",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA short, free verse poem:\nThe rain smells like dust and",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, distant spark.\n\nA haiku:\nFalling, silent snow,\nBlank",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nDarkness softly falls,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness falls so slow,\nA small",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, playful spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver arc.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a little glowing spark.\n\nA haiku:\nDarkness starts to fall,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark. \n\nA haiku:\nSoft glow in the night,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she stumbled over a park.\n\nThis is a terrible couplet. It rhymes, but it makes no",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSoft light in the trees,\nA fire",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nI like the use of \"spark\" to represent hope or",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell and left a mark.\n\nA haiku:\nDarkness gently falls,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, shining spark.\n\nA haiku:\nDarkness softly falls,\nA"
+  ],
+  "timestamp_utc": "2026-05-08T00:46:18.473151+00:00"
+}

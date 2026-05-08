@@ -1,0 +1,59 @@
+{
+  "key": "K06_attnweight_pair_dark_night",
+  "K": 6,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "dark_night",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.25,
+  "clean_rhyme_rate": 0.75,
+  "completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nSoft glow in the night,\nGuiding",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a twinkling, guiding light.\n\nA haiku:\nDarkness falls around,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a strange, glowing spark.\n\nA haiku:\nSilent night descends,\nStars like",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing firefly's spark.\n\nA haiku:\nGreen leaves softly fall,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nPale moon in the sky,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell from quite a height.\n\nThis is a very bleak couplet. It paints a",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n\nA haiku:\nGreen leaves softly fall,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nSilent, falling snow,\nWorld",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n\nA haiku:\nGreen leaves softly fall,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nPale moon in the sky,\nShadows",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, guiding spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n\nA haiku:\nGreen leaves softly fall,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell from quite a height.\n\nWhat is the rhyme scheme of the couplet?\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, distant spark.\n\nA limerick:\nThere once was a fellow named",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and lost her spark. \n\nA haiku:\nDarkness starts to fall,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nCool wind whispers low,\nShadows dance",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:37:34.770393+00:00"
+}

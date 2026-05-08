@@ -1,0 +1,67 @@
+{
+  "key": "K08_attnweight_pair_grief_pain",
+  "K": 8,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.8,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to regain.\n\nHere's a bit more about rhyming couplets:\n\n*",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nA Haiku:\nEmpty chair remains,\nSilence echoes in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had forgotten to reign.\n\nA haiku:\nSilent tears descend,\nShadows stretch",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never shine again.\n\nA haiku:\nDark clouds fill the sky,\nT",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain.\n\nA haiku:\nEmpty chair remains,\nSilence echoes with",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to sustain.\n\nA haiku:\nEmpty space remains,\nWhere warmth and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to sustain.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never shine again.\n\nA haiku:\nGrey skies weep soft tears,\nHeart",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nDark clouds fill the sky,\nT",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had vanished from the lane.\n\nNow, write a short paragraph (around 500",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA Haiku:\nEmpty swing set sways,\nGhost",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had been slain.\n\nA quatrain:\nThe world is full of shadows and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had forgotten to reign.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot how to reign.\n\nA haiku:\nDark clouds fill the sky,\nT",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nSilent tears descend,\nShadows fall",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA short, free-verse poem:\nThe chipped mug,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had vanished, leaving only rain.\n\nA haiku:\nSilent tears descend,\nShadow"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:05:34.842865+00:00"
+}

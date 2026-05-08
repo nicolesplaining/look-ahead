@@ -1,0 +1,74 @@
+{
+  "key": "K10_attnweight_pair_grief_pain",
+  "K": 10,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.6,
+  "clean_rhyme_rate": 0.05,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had ceased to remain.\n\nA metaphor:\nThe world was a broken vase, shattered and",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA haiku:\nEmpty chair remains,\nSilence echoes in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had lost its sheen.\n\nA haiku:\nSilent tears now fall,\nShadow",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its domain.\n\nAnd a haiku:\nEmpty chair sits still,\nSilence",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its golden sheen.\n\nA haiku:\nSilent tears descend,\nShadows",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun will never shine again.\n\nA short poem, 4 lines:\nThe wind whispers secrets",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nDarkness falls so slow,\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain. \n\nWhat is the mood of this couplet?\nThe mood",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to regain. \n\nI like this. It's simple, and evocative.  ",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its refrain. \n\nIs the rhyme scheme correct?\nYes, the rhyme scheme",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its golden sheen.\n\nA haiku:\nEmpty chair remains,\nSilent tears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its beam again.\n\nA haiku:\nSilent tears descend,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nThis couplet evokes a sense of profound sadness and loss, comparing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to rise again.\n\nAnd a short poem:\n\nThe rain falls soft on window pane",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to reign.\n\nA haiku:\nSilent, falling snow,\nBlank",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world would fall and cease to reign.\n\nA limerick:\nThere once was a fellow",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to sustain.\n\nA short, free-verse poem:\nThe chipped mug warms my",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world lost all its relief.\n\nA haiku:\nSilent tears now fall,\nEmpty space"
+  ],
+  "timestamp_utc": "2026-05-08T00:46:07.546857+00:00"
+}

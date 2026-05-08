@@ -1,0 +1,47 @@
+{
+  "key": "K03_attnweight_pair_grief_pain",
+  "K": 3,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.15,
+  "clean_rhyme_rate": 0.2,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost its relief.\n\nA haiku:\nEmpty space remains,\nAching heart",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA haiku:\nSilent tears descend,\nShadows stretch",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had fallen from the heavens, leaving me in rain.\n\nAnd a short free verse:\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA quatrain:\nThe wind whispers secrets through the trees",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had fallen in the sea.\n\nA haiku:\nSilent tears descend,\nDarkness",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself would never regain.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again gleam.\n\nA haiku:\nEmpty chair remains,\nSilent echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had stopped to leave.\n\nHere's another rhyming couplet:\nThe world feels",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nSilent tears now fall,\nA heart",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n\nA short story:\n\nThe chipped porcelain mug warmed Elara",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was caught in a reef.\n\nI'd like to see a couplet that is the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again gleam.\n\nA haiku:\nEmpty swing set sways,\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself has ceased to beam.\n\nHere are a few more options, varying in tone and style",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost its relief. \n\nHere's another rhyming couplet:\nThe stars",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nWhat does this couplet suggest about the speaker's emotional state",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to beam again.\n\nA haiku:\nSilent tears descend,\nShadows stretch",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to bring relief.\n\nHere are a few more couplets, with different tones:\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has lost its sheen.\n\nIs this a good couplet? Why or why not?\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again be seen.\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:44:14.101565+00:00"
+}

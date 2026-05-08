@@ -1,0 +1,94 @@
+{
+  "key": "K15_attnweight_pair_bliss_joy",
+  "K": 15,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      13,
+      31
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.65,
+  "clean_rhyme_rate": 0.0,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel against the crashing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a toy.\n\nA limerick:\nThere once was a baker so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a monstrous toy.\n\nA short story:\n\nThe attic was a forbidden kingdom. Dust mot",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a poisonous snake, oh boy!\n\nA haiku:\nGreen snake, coiled and still",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a noise.\n\nA short story:\nOld Man Tiber lived alone in a small cottage at",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nHow does this couplet create a sense of mystery or suspense?\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a boy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nAnd here's a limerick:\nThere once was a fellow",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nThis is an example of a **rhyming couplet**.\n\nHere'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a frog!\n\nA limerick:\nThere once was a frog green and bright,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a giant frog. \n\n**Here's a breakdown of why it's a couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all noticed a strange noise.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all heard a noise.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt coy.\n\nA limerick:\nThere once was a baker named Sue,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a boy.\n\nNow write a third line that continues the rhyme: \nThe children laughed",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing"
+  ],
+  "timestamp_utc": "2026-05-08T00:48:58.291472+00:00"
+}

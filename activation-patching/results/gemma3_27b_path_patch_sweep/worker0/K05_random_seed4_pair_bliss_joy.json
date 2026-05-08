@@ -1,0 +1,54 @@
+{
+  "key": "K05_random_seed4_pair_bliss_joy",
+  "K": 5,
+  "ranking": "random",
+  "seed": 4,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      11,
+      22
+    ],
+    [
+      33,
+      25
+    ],
+    [
+      16,
+      27
+    ],
+    [
+      37,
+      14
+    ],
+    [
+      29,
+      3
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.85,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this considered dark humor?\n\nYes, this is **definitely",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThat's... dark.\nYou're right to point that",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA limerick:\nThere once was a baker named Lou,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nA haiku:\nSilent, dark descent,\nChildren'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA limerick:\nThere once was a fellow named Kyle,\nWh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn's gentle",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nA limerick:\nThere once was a fellow named Kyle",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent falling leaves,\nWhispers of a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a deep abyss. \n\nThis is a good example of a rhyming couplet.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nNow write a rhyming couplet about a dog. \n\nThe dog",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed. \n\nA rhyming couplet:\nThe sky was blue, a lovely sight",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a chilly kiss.\n\nNow, write another rhyming couplet that continues the story.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nAnd a riddle:\n\nI have cities, but no houses,\nForests"
+  ],
+  "timestamp_utc": "2026-05-08T00:45:02.768250+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "key": "K08_random_seed3_pair_bliss_joy",
+  "K": 8,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      8,
+      20
+    ],
+    [
+      28,
+      17
+    ],
+    [
+      35,
+      18
+    ],
+    [
+      20,
+      28
+    ],
+    [
+      29,
+      26
+    ],
+    [
+      38,
+      18
+    ],
+    [
+      30,
+      3
+    ],
+    [
+      21,
+      14
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.85,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nIs this a good rhyming couplet? Why or why not",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis couplet is an example of a **darkly humorous** or",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nI like the contrast between the joy and the tragedy. \n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\n(I understand this is dark and unsettling, and I apologize if",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nOkay, I'll give it a shot. Here's a rhyming",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIt's a bit dark, but it fulfills the request.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nI'm not sure how to interpret this. Is it about a friendly,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a ditch.\n\nA limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI think the rhyme is good, but the subject matter is very dark",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis is an example of:\nA. Allusion\nB.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a gentle kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nWhat is this poem likely about?\n\n(A) A joyous celebration",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nOh dear. That's...dark.\n\nOkay, let'"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:16:09.086332+00:00"
+}

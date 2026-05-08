@@ -1,0 +1,95 @@
+{
+  "key": "K15_random_seed0_pair_doom_dread",
+  "K": 15,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      14,
+      11
+    ],
+    [
+      1,
+      23
+    ],
+    [
+      34,
+      11
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      16,
+      9
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      16
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      24,
+      16
+    ],
+    [
+      16,
+      10
+    ],
+    [
+      8,
+      15
+    ],
+    [
+      22,
+      20
+    ],
+    [
+      30,
+      27
+    ],
+    [
+      23,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room. \n\nThe first line establishes a mood of dread and foreboding with",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a crashing boom.\n\nNow, write a short story (around 200-3",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nFootsteps",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nShadows",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nWrite another rhyming couplet that continues the story.\n\nHere'",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a crashing boom.\n\nA haiku:\nShadows softly fall,\nWhispers in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDark clouds fill the sky,\nWhispers",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nI like the rhyming and the imagery. It's a good",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA quatrain:\nThe wind howled loud, a mournful",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the room.\n\nA haiku:\nDust motes dance in light,\nFootsteps",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked in the room.\n\nA short poem:\n\nDust motes danced in fading light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking boom.\n\nWrite another rhyming couplet that continues the story.\nHere",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they walked into the room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they entered the living room.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a hidden room.\n\nA haiku:\nDust motes dance in light,\nSecrets",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:54:06.992352+00:00"
+}

@@ -1,0 +1,74 @@
+{
+  "key": "K10_random_seed0_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      37,
+      18
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      31,
+      28
+    ],
+    [
+      37,
+      31
+    ],
+    [
+      1,
+      30
+    ],
+    [
+      14,
+      6
+    ],
+    [
+      30,
+      19
+    ],
+    [
+      32,
+      14
+    ],
+    [
+      18,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.95,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of...\n\na) a paradox\nb)",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not a fan of the second line. It's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering tales of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves softly sway,\nSunlight warms",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nWhat is the tone of this couplet?\n\nThe tone of this",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet?\nNo, this is not a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThat's...dark. \ud83d\ude05\n\nHere's another attempt",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI love the contrast between the innocence of the first line and the darkness",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA limerick:\nThere once was a baker so grand,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed!\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n"
+  ],
+  "timestamp_utc": "2026-05-08T00:46:40.382015+00:00"
+}

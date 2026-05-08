@@ -1,0 +1,75 @@
+{
+  "key": "K10_random_seed1_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 1,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      6,
+      3
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      6,
+      18
+    ],
+    [
+      9,
+      27
+    ],
+    [
+      35,
+      11
+    ],
+    [
+      12,
+      27
+    ],
+    [
+      4,
+      27
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      32,
+      24
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.95,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds through",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'd like a rhyming couplet that follows a similar dark",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm pretty sure that is a rhyming couplet, but",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nI can't help but feel like this couplet is a little bit suggestive",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is an example of a dark rhyme. It starts out light and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss. \n\nA limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nHere's another example:\nThe sun does shine so bright,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA short poem about a cat:\nA furry friend, so sleek and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nI'm not a fan of that ending. Here are some",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all shared a kiss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA Haiku:\nGreen leaves softly fall,\nAutumn whispers through the"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:52:18.868896+00:00"
+}

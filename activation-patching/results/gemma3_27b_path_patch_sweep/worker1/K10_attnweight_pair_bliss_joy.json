@@ -1,0 +1,74 @@
+{
+  "key": "K10_attnweight_pair_bliss_joy",
+  "K": 10,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.8,
+  "clean_rhyme_rate": 0.05,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA rhyming couplet:\nThe cat sat on the mat,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nAnd here's a short poem:\n\nThe sun dips low, a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds through",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nIs this a good couplet? Why or why not?\n\nThis couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nA rhyming triplet:\nThe sun shone bright,\nA beautiful sight",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all broke their toys.\n\nI'd like to see a rhyming couplet that uses the words",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis couplet is not very good, because:\n\n*   **The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy. \n\nNow, write a short story, no more than 300",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nI'm not sure what the story is about, but here's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a toy.\n\nHow could the couplet be improved?\n\nHere are a few ways",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nIs this a good couplet? Why or why not?\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy. \n\nWhat is the rhyme scheme of this couplet?\n\n*   A",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a toy.\n\nA limerick:\nThere once was a fellow named Hugh,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a boy.\n\nThis is an example of a couplet. \n\nCouplet is a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis is not a very good couplet. It doesn't really make",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the boy.\n\nIs it good? What are your thoughts?\n\nI think it's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThe children laughed in bliss,\nuntil they saw a scary fish.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing"
+  ],
+  "timestamp_utc": "2026-05-08T00:45:45.715480+00:00"
+}

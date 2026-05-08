@@ -1,0 +1,71 @@
+{
+  "key": "K09_random_seed3_pair_grief_pain",
+  "K": 9,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      38,
+      10
+    ],
+    [
+      32,
+      23
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      29,
+      8
+    ],
+    [
+      26,
+      19
+    ],
+    [
+      36,
+      6
+    ],
+    [
+      17,
+      25
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      7,
+      27
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nA heart fractured",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA Haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen my belief.\n\nA limerick:\nThere once was a baker so grand",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nEmpty chair remains,\nSilent echo of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the heart has lost its belief.\n\nA Haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears descend,\nA hollow ache",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself found no relief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nEmpty, silent space,\nTears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nA quatrain:\nThe sun descends, a fiery kiss",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the earth had lost its relief.\n\nAnd a sentence using the word \"relief\":\nAfter a long",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA limerick:\nThere once was a baker named Sue",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was beyond relief. \n\nI need 5 more rhyming couplets to continue the poem",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n\nA free verse poem:\nThe silence after the phone call is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves had fallen from my belief.\n\nThe couplet uses the following poetic devices:\n\n*   ",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves had fallen from my belief.\n\nA haiku:\nEmpty chair remains,\nSilent echo",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all relief.\n\nHere's another one:\n\nThe sun descends, a fiery",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was stripped of all relief.\n\nA haiku:\nSilent tears descend,\nEmpty space"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:26:21.113709+00:00"
+}

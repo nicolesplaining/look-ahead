@@ -1,0 +1,55 @@
+{
+  "key": "K05_attnweight_pair_bliss_joy",
+  "K": 5,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.85,
+  "clean_rhyme_rate": 0.05,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all grew coy.\n\nI like the simplicity of the rhyme, but I'm not sure \"c",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy. \n\nThat's a rhyming couplet, but it's not",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nI'm not sure that that's a great couplet. It",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nA rhyming couplet:\nThe sun did shine so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a spooky ghost.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nA rhyming couplet:\nThe sun began to set,\nand",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nWhat's wrong with this couplet?\n\nThe rhyme is forced and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis is a poor couplet because the rhyme is weak and doesn't",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all played with the boy.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had to destroy.\n\nThis is a bad couplet because it is nonsensical.\n\nI need",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all broke a toy. \n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the toy. \n\nAnd a rhyming couplet that is more complex:\nThe world",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA rhyming couplet:\nThe sun does shine so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy. \n\n**Explanation:**\n\n*   **Rhyming Couplet:** A rh",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all ran out of toys.\n\nA limerick:\nThere once was a fellow named Lou,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nThis is an example of:\n\na) assonance\nb"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:48:06.390480+00:00"
+}

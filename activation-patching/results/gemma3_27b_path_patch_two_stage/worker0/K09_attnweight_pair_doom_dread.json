@@ -1,0 +1,71 @@
+{
+  "key": "K09_attnweight_pair_doom_dread",
+  "K": 9,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "doom_dread",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.2,
+  "clean_rhyme_rate": 0.7,
+  "completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows softly creep,\nWhispers echo",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a chilling scream instead.\n\nThe couplet is good, but to make it even better,",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nThe first line is a statement of atmosphere. The second line introduces an",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a chilling boom.\n\nA haiku:\nShadows creep and crawl,\nWhispers",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly bloom.\n\nA limerick:\nThere once was a ghost, pale and",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nShadows softly creep,\nWhispers echo",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a missing groom.\n\nA limerick:\nThere once was a groom, quite a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA limerick:\nThere once was a ghost, quite astute",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly bloom. \n\nNow, write a story based on that couplet.\n\n##",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom. \n\nA haiku:\nDust motes dance in light,\n",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice, it said...\n\nThe next line is to be written by you.\nThe",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they found a dusty room. \n\nNow write a short story (around 500 words)",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nA haiku:\nDust motes dance in light,\nShadow",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly boom.\n\nNow write a limerick about the same scene.\nThere once",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice instead.\n\nA Haiku:\nDust motes dance in light,\nA",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a voice instead.\n\nA haiku:\nDust motes dance in sun,\nWhis",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly hum.\n\nA haiku:\nShadows stretch and fall,\nWhispers",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a mournful hum.\n\nI love this little couplet. It evokes a sense of mystery"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:19:30.704403+00:00"
+}

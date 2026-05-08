@@ -1,0 +1,54 @@
+{
+  "key": "K05_random_seed1_pair_bliss_joy",
+  "K": 5,
+  "ranking": "random",
+  "seed": 1,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      27,
+      19
+    ],
+    [
+      13,
+      7
+    ],
+    [
+      12,
+      11
+    ],
+    [
+      13,
+      24
+    ],
+    [
+      19,
+      10
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nFalling, dark and deep,\nLaughter",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a gentle kiss.\n\nIs this a good couplet? Explain.\n\nThe couplet is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all shared a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA haiku:\nSilent, dark descent,\nEchoes of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if that's a good couplet,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all shared a kiss.\n\nA short poem:\nThe sun dips low, a fiery hue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA short rhyming poem:\n\nThe sun shines bright,\nA lovely",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed. \n\nThis is an example of a...\nA. Limerick\nB. Ha",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI don't know why I wrote that. It just came to",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another rhyming couplet:\nThe sun is shining,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss. \n\nI'll give you another one:\nThe sun did brightly shine",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nDarkness calls to me,\nWhispers",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of"
+  ],
+  "timestamp_utc": "2026-05-08T00:39:57.125264+00:00"
+}

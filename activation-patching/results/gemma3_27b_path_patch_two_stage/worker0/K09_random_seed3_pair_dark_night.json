@@ -1,0 +1,71 @@
+{
+  "key": "K09_random_seed3_pair_dark_night",
+  "K": 9,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "dark_night",
+  "head_set": [
+    [
+      38,
+      10
+    ],
+    [
+      32,
+      23
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      29,
+      8
+    ],
+    [
+      26,
+      19
+    ],
+    [
+      36,
+      6
+    ],
+    [
+      17,
+      25
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      7,
+      27
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a dog bark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell, leaving a mark.\n\nA haiku:\nGreen leaves softly fall,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness softly falls,\nA tiny,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nDarkness softly falls,\nA small light",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, fiery spark.\n\nA haiku:\nDarkness softly falls,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell upon a lark. \n\nIs this a good couplet? Why or why not",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nSoft rain falls gently,\nWashing the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, dark forest,\nA single fire",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a sudden, chilling bark.\n\nA haiku:\nDarkness falls so slow,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, fiery spark.\n\nA haiku:\nDarkness softly falls,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver arc.\n\nA haiku:\nSoft glow in the night,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she heard a dog's distinct bark.\n\nA short free verse poem:\nThe chipped mug warms",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA Haiku:\nGreen leaves softly fall,\nWhis",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, fiery spark.\n\nA short story:\n\nThe rain hammered against the windowpane",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell and left a mark.\n\nA haiku:\nFalling into night,\nA"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:27:37.364599+00:00"
+}

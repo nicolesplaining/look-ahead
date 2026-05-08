@@ -1,0 +1,55 @@
+{
+  "key": "K05_random_seed3_pair_bliss_joy",
+  "K": 5,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      32,
+      0
+    ],
+    [
+      18,
+      31
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      25,
+      12
+    ],
+    [
+      23,
+      6
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.85,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nWhat is wrong with this couplet?\nThe rhyme is very weak. \"",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA rhyming couplet is two lines of poetry that rhyme.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if I should post this. It's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is a dark and unexpected twist.\n\nI like it.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped and fell into the abyss. \n\nIs this good poetry?\n\nNo, this is **",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, dark descent,\nEchoes of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another one:\nThe sun does shine so bright,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThat's... dark.\n\nLet's try another one:",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs it a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA short poem:\nThe sun dips low, a fiery hue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nWhile this is a rhyming couplet, it is also a dark",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI can't help but feel disturbed by that. It's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit of abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI think the contrast between the joyful first line and the dark second line",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nWhat is the rhyme scheme?\nAA\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nWhat is the tone of this couplet?\nThe tone of this"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:50:29.348031+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "key": "K06_commactrl_pair_bliss_joy",
+  "K": 6,
+  "ranking": "commactrl",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      3,
+      24
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      7,
+      16
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss. \n\nA limerick:\nThere once was a baker named Sue,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed. \n\nNow write a short story using those lines as the last two lines of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nThis couplet is an example of a dark humor. The first line",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently sway,\nSunlight warms the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nGreen leaves softly fall,\nWhispering",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI am looking for a rhyming couplet that is dark/mor",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nAnd a haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nWhat could \"this\" be?\n\nThis is a classic riddle! The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nOkay, but it's a little bit... creepy. Here's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nWhat do you think happened next? \nWrite a continuation of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nIt's a bit... unsettling, isn't it?\n\nThat'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped over this.\n\nAnd a riddle:\n\nI have cities, but no houses,\nForest",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nI can also write a limerick, haiku, or other forms",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a baker named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA haiku:\nGreen leaves gently sway,\nSunlight dances",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is a jarring juxtaposition, and the second line completely subverts the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this a good couplet? Explain why or why not.\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:38:39.335110+00:00"
+}

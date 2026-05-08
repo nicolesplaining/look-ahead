@@ -1,0 +1,67 @@
+{
+  "key": "K08_random_seed1_pair_bliss_joy",
+  "K": 8,
+  "ranking": "random",
+  "seed": 1,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      18,
+      4
+    ],
+    [
+      33,
+      12
+    ],
+    [
+      17,
+      11
+    ],
+    [
+      25,
+      26
+    ],
+    [
+      18,
+      21
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      33,
+      5
+    ],
+    [
+      7,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.95,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA rhyming tercet:\nThe sun shone bright and warm,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all shared a kiss.\n\nThe couplet is an example of a **rhyming couplet**.\n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on gentle",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThe image is disturbing, but the rhyme is good.\nI would",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nThe children laughed in bliss,\nuntil they all felt a cold kiss",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss. \n\nOkay, let's create a rhyming couplet:\n\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another rhyming couplet:\nThe sun did brightly shine",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all had a kiss. \n\nI think this is a good couplet because it has a simple rhyme",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA quatrain:\nThe sun descends, a fiery hue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nA haiku:\nCold wind whispers by,\nLeaves dance a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nA haiku:\nGreen leaves softly fall,\nWhispers",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nI'm not sure about the tone of this couplet.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold kiss.\n\nA limerick:\nThere once was a bear in a zoo",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed. \n\nI don't think that's very good. It is a bit",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped over this!"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:11:18.943059+00:00"
+}

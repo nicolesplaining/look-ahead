@@ -1,0 +1,71 @@
+{
+  "key": "K09_random_seed1_pair_bliss_joy",
+  "K": 9,
+  "ranking": "random",
+  "seed": 1,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      16,
+      26
+    ],
+    [
+      10,
+      23
+    ],
+    [
+      11,
+      26
+    ],
+    [
+      21,
+      30
+    ],
+    [
+      11,
+      24
+    ],
+    [
+      34,
+      17
+    ],
+    [
+      38,
+      8
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      19,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold, wet kiss.\n\nI think this could be improved. The second line feels a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nThis is a bit dark, but it fulfills the prompt.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nThis is a really dark couplet. It starts off with a happy",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nThe children laughed in bliss,\nuntil they all were missed.\n\nThe children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nIs this good poetry?\nNo, this is not good poetry",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nI'm not sure how to feel about that. It'",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI know this is dark, but it fulfills the prompt.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if this is what you were looking for,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA rhyming triplet:\nThe sun shone bright,\nA glorious sight",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA limerick:\nThere once was a fellow named Kyle,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a kiss.\n\nNow write two more rhyming couplets that follow the story. \n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA short poem:\n\nThe sun dips low, a fiery hue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nWhat does this couplet suggest about the nature of happiness?\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nThis is a bit silly, but it fulfills the requirements.\n\nAnother option,"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:22:46.229169+00:00"
+}

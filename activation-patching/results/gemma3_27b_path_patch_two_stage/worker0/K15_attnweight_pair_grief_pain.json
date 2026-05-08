@@ -1,0 +1,95 @@
+{
+  "key": "K15_attnweight_pair_grief_pain",
+  "K": 15,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      13,
+      31
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.35,
+  "clean_rhyme_rate": 0.05,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was in a rain.\n\nThis is a good example of a rhyming couplet. It",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA simile:\nHer heart was as cold as ice.\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world would never again be the same.\n\nA haiku:\nEmpty space remains,\nA",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to reign.\n\nA haiku:\nDark clouds fill the sky,\nTears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its reign.\n\nA simile:\nHer voice was as smooth as silk.\n\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to rise again.\n\nA short poem:\nThe old lighthouse stands, a stoic",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to remain.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all its relief.\n\nA haiku:\nSilent tears now fall,\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself has lost its beam.\n\nA Haiku:\nSilent tears descend,\nShadows",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its shine, and started to rain.\n\nA haiku:\nSilent tears descend",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nI have a question about the second line: \"as though the",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nSilent tears descend,\nShadows dance",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has lost its golden sheen.\n\nA haiku:\nEmpty chair remains,\nSilence echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its beam, and I was left in rain.\n\nA haiku:\nEmpty",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA short, descriptive sentence:\nThe ancient oak stood sentinel,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nSilent tears descend,\nA heart broken",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n\nA haiku:\nDark clouds fill the sky,\nSilent",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its golden sheen.\n\nHere's another couplet:\nThe wind whispers secrets",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun has lost its beam.\n\nA haiku:\nEmpty, silent room,\nDust mot",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun forgot to rise again.\n\nA haiku:\nSilent tears descend,\nShadows cling"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:53:39.923645+00:00"
+}

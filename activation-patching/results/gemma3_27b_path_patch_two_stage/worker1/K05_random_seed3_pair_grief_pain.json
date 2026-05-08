@@ -1,0 +1,55 @@
+{
+  "key": "K05_random_seed3_pair_grief_pain",
+  "K": 5,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      32,
+      0
+    ],
+    [
+      18,
+      31
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      25,
+      12
+    ],
+    [
+      23,
+      6
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a thief.\n\nA haiku:\nEmpty chair remains,\nSilent echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nEmpty space remains,\nA silent,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its belief.\n\nA haiku:\nSilent, falling snow,\nBlankets",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen its brief.\n\nA haiku:\nEmpty chair remains,\nSilent echo of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves fell from my belief. \n\nA haiku:\nEmpty, silent space,\nWhere",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA metaphor:\nThe silence was a thick blanket, smothering",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was a fallen leaf.\n\nA haiku:\nFalling, golden leaves,\nWhispers",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent, falling snow,\nBlankets",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was beyond belief. \n\nWhat is a rhyming couplet?\nA rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself found no relief.\n\nA haiku:\nEmpty chair sits still,\nSilence echoes",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was a fallen leaf.\n\nHere are some other rhyming couplets:\n\nThe sun descends",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief. \n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nI'm looking for a couplet that would follow this,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had stolen my belief.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA quatrain:\nThe sun descends, a fiery hue",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to give relief.\n\nA haiku:\nSilent tears descend,\nShadows dance"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:51:02.169955+00:00"
+}

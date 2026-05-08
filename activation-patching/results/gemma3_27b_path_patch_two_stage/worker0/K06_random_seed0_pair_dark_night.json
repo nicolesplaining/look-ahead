@@ -1,0 +1,59 @@
+{
+  "key": "K06_random_seed0_pair_dark_night",
+  "K": 6,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "dark_night",
+  "head_set": [
+    [
+      37,
+      23
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      32,
+      1
+    ],
+    [
+      17,
+      23
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell into the park.\n\nA rhyming triplet:\nThe cat sat on the mat",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent night descends,\nA single star softly",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, golden spark.\n\nA haiku:\nSilent, falling snow,\nBlank",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral arc.\n\nA limerick:\nThere once was a witch with",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell and left a mark.\n\nA limerick:\nThere once was a fellow",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and stumbled on a lark.\n\nThe lark is a bird.\n\nIs the lark a literal",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped, leaving quite a mark. \n\nNow, write a limerick about the same scenario",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, friendly spark.\n\nA haiku:\nSilent night descends,\nStars like",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell and left a mark.\n\nA limerick:\nThere once was a lady",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nDarkness starts to fall,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, silver arc.\n\nA haiku:\nDarkness falls so slow,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent night descends,\nStars like diamonds softly",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nA haiku:\nDarkness softly falls,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shimmering spark.\n\nA haiku:\nDarkness softly falls,\nA small light",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she tripped and fell, leaving a mark.\n\nA haiku:\nDarkness softly falls,\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark. \n\nA limerick:\nThere once was a baker so grand",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nHere's another rhyming couplet:\nThe cat sat still",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nSilent, falling snow,\nCovers the",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark. \n\nThis is an example of a **rhyming couplet**. "
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:42:02.634469+00:00"
+}

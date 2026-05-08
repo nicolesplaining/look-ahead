@@ -1,0 +1,95 @@
+{
+  "key": "K15_attnweight_pair_bliss_joy",
+  "K": 15,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      13,
+      31
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.5,
+  "clean_rhyme_rate": 0.05,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nWhat kind of rhyme is this?\n*   **Perfect rhyme:** This",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost a tooth.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nThis is a simple example.\nA rhyming couplet is two lines",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost their toys.\n\nI need a rhyming couplet that evokes a similar feeling of innocence and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a boy.\n\nA short rhyming poem:\nThe sun shines bright,\nA lovely",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a coy.\n\nAnd a limerick:\n\nThere once was a coy little mouse,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on a toy.\n\nThe couplet above has a rhyme scheme of **AA**. \n\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a scary noise.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all lost a tooth. \n\nThis couplet is a bit silly, and could be expanded upon,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a poisonous snake, oh boy!",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw the noise.\n\nThe noise, of course, is something that's scared them. I",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a large frog.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a large koi.\n\nA haiku:\nGreen leaves softly fall,\nWhispering tales",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all met a large, grumpy noise. \n\nA haiku:\nGreen leaves softly fall,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a muddy abyss. \n\nThat's a good start! Here's a bit",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got annoyed.\n\nWhat is the rhyme scheme of the couplet?\n\nThe rhyme scheme of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all broke a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering tales of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all found a toy.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all saw a toy.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:53:26.362562+00:00"
+}

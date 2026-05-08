@@ -1,0 +1,55 @@
+{
+  "key": "K05_random_seed0_pair_bliss_joy",
+  "K": 5,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      17,
+      11
+    ],
+    [
+      23,
+      30
+    ],
+    [
+      34,
+      29
+    ],
+    [
+      2,
+      27
+    ],
+    [
+      30,
+      25
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.9,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA limerick:\nThere once was a fellow named Lou,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nAnd a haiku:\nDarkness comes so fast,\nL",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if I should post this or not. It",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss. \n\nOkay, that's a bit dark. Here's a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a pit.\n\nI can definitely see this being used in a story, but it is",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\nOof. That's...dark.\nYou are not wrong",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA rhyming couplet about the sea:\nThe ocean waves crash on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nAutumn whispers on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nOkay, that's a bit dark, but it fulfills the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nDarkness fills the void,\nTiny hands",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if this is good or bad, but I",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI feel like this is a bit dark for a children's poem",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nNow, let's turn this into a short poem, expanding on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nThe next line should be a third line that rhymes with the previous two:",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA short, silly story:\n\nBertram the badger was having a terrible Tuesday",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nHere's another rhyming couplet:\nThe cat sat on"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:48:53.460796+00:00"
+}

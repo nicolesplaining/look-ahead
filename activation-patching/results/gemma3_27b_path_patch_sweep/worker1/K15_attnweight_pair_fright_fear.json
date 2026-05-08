@@ -1,0 +1,94 @@
+{
+  "key": "K15_attnweight_pair_fright_fear",
+  "K": 15,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "fright_fear",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ],
+    [
+      34,
+      14
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      31,
+      24
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      13,
+      31
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      22,
+      20
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.4,
+  "clean_rhyme_rate": 0.6,
+  "completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could disappear. \n\nA haiku:\nDark clouds fill the sky,\nRaindrops",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nHere's another:\nThe cat sat on a mat so blue",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that he would disappear.\n\nA haiku:\nCold wind whispers low,\nShadows dance in",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nSilent, falling snow,\nBlankets the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything was clear.\n\nA haiku:\nSoft wind whispers low,\nSunlight dances on",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that the darkness would soon be clear.\n\nA haiku:\nSilent, dark, and deep,",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be alright.\n\nA haiku:\nFalling leaves descend,\nWhispering on autumn",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n\nA haiku:\nCool wind whispers low,\nLeaves dance",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nA short, descriptive sentence:\nThe old lighthouse stood sentinel against the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that things would turn out right.\n\nA haiku:\nGreen leaves softly fall,\nWhispering",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be all right.\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could disappear.\n\nA limerick:\nThere once was a lady named Sue,\n",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that everything would be clear.\n\nA haiku:\nSoft rain on the roof,\nWhispers",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be alright.\n\nA haiku:\nCool breeze whispers low,\nLeaves dance a",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that all would be all right.\n\nA haiku:\nGreen leaves softly fall,\nWhispers"
+  ],
+  "timestamp_utc": "2026-05-08T00:50:58.475982+00:00"
+}

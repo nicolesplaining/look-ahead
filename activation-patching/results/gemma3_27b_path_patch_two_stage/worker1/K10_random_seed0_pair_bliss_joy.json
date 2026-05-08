@@ -1,0 +1,75 @@
+{
+  "key": "K10_random_seed0_pair_bliss_joy",
+  "K": 10,
+  "ranking": "random",
+  "seed": 0,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      37,
+      18
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      31,
+      28
+    ],
+    [
+      37,
+      31
+    ],
+    [
+      1,
+      30
+    ],
+    [
+      14,
+      6
+    ],
+    [
+      30,
+      19
+    ],
+    [
+      32,
+      14
+    ],
+    [
+      18,
+      24
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nI'm not sure if this is appropriate, as it's",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss. \n\nA limerick:\nThere once was a baker named Sue,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nWhat is the tone of this couplet?\n\nThe tone of this",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all tripped on this.\n\nA limerick:\nThere once was a snail named Sue,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a hole, like this.\n\nA limerick:\nThere once was a fellow",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n---\n\nI think it's a little dark. I would suggest",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nHere's another rhyming couplet:\nThe sun did shine,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a ticklish kiss.\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nI'm not sure if that's good or bad. It",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nThat's pretty dark. It's a sudden shift in",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\nI'm not sure if that's appropriate or not, but",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA Haiku:\nGreen leaves softly fall,\nAutumn whispers on the"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T02:52:18.568808+00:00"
+}

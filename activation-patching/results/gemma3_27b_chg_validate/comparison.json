@@ -1,0 +1,498 @@
+{
+  "timestamp_utc": "2026-05-07T18:54:53.747385+00:00",
+  "model_name": "google/gemma-3-27b-it",
+  "k": 5,
+  "n_random_draws": 10,
+  "head_sets": {
+    "attn_topk": [
+      [
+        30,
+        4
+      ],
+      [
+        28,
+        14
+      ],
+      [
+        28,
+        15
+      ],
+      [
+        30,
+        5
+      ],
+      [
+        28,
+        29
+      ]
+    ],
+    "comma_ctrl": [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "chg_topk": [
+      [
+        27,
+        2
+      ],
+      [
+        27,
+        26
+      ],
+      [
+        34,
+        5
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        27,
+        14
+      ]
+    ],
+    "chg_top10": [
+      [
+        27,
+        2
+      ],
+      [
+        27,
+        26
+      ],
+      [
+        34,
+        5
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        27,
+        14
+      ],
+      [
+        28,
+        16
+      ],
+      [
+        34,
+        0
+      ],
+      [
+        39,
+        4
+      ],
+      [
+        27,
+        15
+      ],
+      [
+        30,
+        10
+      ]
+    ],
+    "random_sets": [
+      [
+        [
+          35,
+          7
+        ],
+        [
+          26,
+          25
+        ],
+        [
+          25,
+          12
+        ],
+        [
+          36,
+          27
+        ],
+        [
+          29,
+          12
+        ]
+      ],
+      [
+        [
+          28,
+          29
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          27,
+          7
+        ],
+        [
+          36,
+          25
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      [
+        [
+          35,
+          26
+        ],
+        [
+          36,
+          27
+        ],
+        [
+          33,
+          23
+        ],
+        [
+          26,
+          12
+        ],
+        [
+          34,
+          14
+        ]
+      ],
+      [
+        [
+          31,
+          24
+        ],
+        [
+          25,
+          16
+        ],
+        [
+          25,
+          15
+        ],
+        [
+          26,
+          15
+        ],
+        [
+          28,
+          15
+        ]
+      ],
+      [
+        [
+          28,
+          23
+        ],
+        [
+          33,
+          2
+        ],
+        [
+          34,
+          20
+        ],
+        [
+          25,
+          13
+        ],
+        [
+          33,
+          31
+        ]
+      ],
+      [
+        [
+          28,
+          5
+        ],
+        [
+          36,
+          14
+        ],
+        [
+          35,
+          12
+        ],
+        [
+          36,
+          7
+        ],
+        [
+          33,
+          23
+        ]
+      ],
+      [
+        [
+          31,
+          22
+        ],
+        [
+          28,
+          16
+        ],
+        [
+          32,
+          5
+        ],
+        [
+          34,
+          13
+        ],
+        [
+          29,
+          14
+        ]
+      ],
+      [
+        [
+          25,
+          3
+        ],
+        [
+          27,
+          17
+        ],
+        [
+          36,
+          5
+        ],
+        [
+          31,
+          24
+        ],
+        [
+          30,
+          14
+        ]
+      ],
+      [
+        [
+          29,
+          14
+        ],
+        [
+          27,
+          15
+        ],
+        [
+          28,
+          14
+        ],
+        [
+          30,
+          12
+        ],
+        [
+          26,
+          20
+        ]
+      ],
+      [
+        [
+          26,
+          15
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          26,
+          17
+        ],
+        [
+          30,
+          23
+        ],
+        [
+          30,
+          16
+        ]
+      ]
+    ]
+  },
+  "summary": {
+    "attn_topk": {
+      "mean_corrupt_rhyme_rate": 0.5599999999999999,
+      "per_pair": {
+        "doom_dread": 0.2,
+        "bliss_joy": 1.0,
+        "dark_night": 0.4,
+        "grief_pain": 0.7,
+        "fright_fear": 0.5
+      }
+    },
+    "comma_ctrl": {
+      "mean_corrupt_rhyme_rate": 0.0,
+      "per_pair": {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      }
+    },
+    "chg_topk": {
+      "mean_corrupt_rhyme_rate": 0.0,
+      "per_pair": {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      }
+    },
+    "chg_top10": {
+      "mean_corrupt_rhyme_rate": 0.0,
+      "per_pair": {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      }
+    },
+    "random_baseline": {
+      "mean_corrupt_rhyme_rate": 0.0,
+      "std_corrupt_rhyme_rate": 0.0,
+      "per_draw_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "all_results": {
+    "attn_topk": {
+      "doom_dread": 0.2,
+      "bliss_joy": 1.0,
+      "dark_night": 0.4,
+      "grief_pain": 0.7,
+      "fright_fear": 0.5
+    },
+    "comma_ctrl": {
+      "doom_dread": 0.0,
+      "bliss_joy": 0.0,
+      "dark_night": 0.0,
+      "grief_pain": 0.0,
+      "fright_fear": 0.0
+    },
+    "chg_topk": {
+      "doom_dread": 0.0,
+      "bliss_joy": 0.0,
+      "dark_night": 0.0,
+      "grief_pain": 0.0,
+      "fright_fear": 0.0
+    },
+    "chg_top10": {
+      "doom_dread": 0.0,
+      "bliss_joy": 0.0,
+      "dark_night": 0.0,
+      "grief_pain": 0.0,
+      "fright_fear": 0.0
+    },
+    "random_baseline": [
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      },
+      {
+        "doom_dread": 0.0,
+        "bliss_joy": 0.0,
+        "dark_night": 0.0,
+        "grief_pain": 0.0,
+        "fright_fear": 0.0
+      }
+    ]
+  }
+}

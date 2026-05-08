@@ -1,0 +1,59 @@
+{
+  "key": "K06_random_seed3_pair_bliss_joy",
+  "K": 6,
+  "ranking": "random",
+  "seed": 3,
+  "pair_id": "bliss_joy",
+  "head_set": [
+    [
+      36,
+      26
+    ],
+    [
+      31,
+      21
+    ],
+    [
+      15,
+      25
+    ],
+    [
+      31,
+      31
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      34,
+      1
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 0.85,
+  "completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Lou,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nI think it's a pretty good couplet. It has a simple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in the abyss.\n\nA limerick:\nThere once was a fellow named Lou,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nA haiku:\nGreen leaves gently fall,\nWhispering winds of autumn",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell in a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering tales",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nThis is an example of a:\n\na) sonnet\nb)",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a little amiss.\n\nA Haiku:\nGreen leaves softly fall,\nWhispering winds",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss. \n\nI am aware that this is a dark couplet, but I",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\n\nA couplet can be a simple two-line rhyme. It's a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA limerick:\nThere once was a fellow named Kyle,\n",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all felt a cold, wet kiss. \n\nThis is an example of:\na) free verse",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA quatrain:\nThe sun sets low, a fiery hue,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into a pit.\n\nI can't help but feel this is a dark turn for a",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves gently sway,\nSunlight dances on",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all received a kiss.\n\nA haiku:\nGreen leaves softly fall,\nWhispering winds sing",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got a kiss.\n\nA haiku:\nGreen leaves gently fall,\nWhispering on the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nA haiku:\nSilent, dark descent,\nTiny echoes fade",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell into the abyss.\n\nIs this a good couplet? Why or why not?\n\nThis"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:47:53.741373+00:00"
+}

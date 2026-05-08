@@ -1,0 +1,71 @@
+{
+  "key": "K09_random_seed1_pair_grief_pain",
+  "K": 9,
+  "ranking": "random",
+  "seed": 1,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      16,
+      26
+    ],
+    [
+      10,
+      23
+    ],
+    [
+      11,
+      26
+    ],
+    [
+      21,
+      30
+    ],
+    [
+      11,
+      24
+    ],
+    [
+      34,
+      17
+    ],
+    [
+      38,
+      8
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      19,
+      0
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.0,
+  "clean_rhyme_rate": 1.0,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen into relief. \n\nThis couplet presents a paradox. Explain what the paradox is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned to a leaf.\n\nA haiku:\nFalling golden leaves,\nWhispers",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the leaves had fallen from my belief.\n\nA short, descriptive paragraph:\nThe old lighthouse stood sentinel",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nFalling autumn leaves,\nWhispers of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief. \n\nA limerick:\nThere once was a baker named",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief. \n\nA short paragraph describing the scene:\n\nThe rain fell in",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nEmpty chair sits still,\nSilent tears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself gave no relief.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was beyond belief.\n\nA haiku:\nSilent tears now fall,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned into a thief.\n\nA haiku:\nSilent tears descend,\nEmpty space",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief. \n\nHere's another one:\nThe sun descends, a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost all belief.\n\nA haiku:\nEmpty chair remains,\nSilent tears fall",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had turned into a thief.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its relief.\n\nI think it's pretty good. What do you think?",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself found no relief.\n\nI like this couplet because it conveys a sense of profound sadness",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has stolen my belief.\n\nA short poem about loss and finding strength:\n\nThe world feels",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its belief.\n\nA haiku:\nEmpty, silent space,\nTears"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T04:23:37.831082+00:00"
+}

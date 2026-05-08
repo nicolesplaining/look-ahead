@@ -1,0 +1,46 @@
+{
+  "key": "K03_attnweight_pair_grief_pain",
+  "K": 3,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "grief_pain",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.2,
+  "clean_rhyme_rate": 0.2,
+  "completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never again gleam.\n\nI'm not sure it's a good one.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its relief.\n\nA haiku:\nSilent tears descend,\nShadows dance",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun would never shine again.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam. \n\nHere's a breakdown of why it's a",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nA haiku:\nEmpty chair remains,\nSilent echoes fill",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its relief.\n\nAnd here's a limerick:\nThere once was",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had fallen in the rain.\n\nA haiku:\nEmpty chair sits still,\nSilent",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its relief.\n\nWhat is the meter of these lines?\nThe meter of these",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to gleam. \n\nIs this a good couplet? Why or why not",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to shine again.\n\nA sentence fragment:\nLost in thought.\n\nA metaphor",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sheen.\n\nI need a rhyming couplet to follow it. Here are",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun refused to reign.\n\nA metaphor:\nThe rain was a curtain drawn across the city,",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its sunbeam.\n\nI think the couplet is a little weak. Here'",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had forgotten to gleam.\n\nI like it. It is succinct, and the imagery is",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had ceased to beam.\n\nWhat is the rhyme scheme of the couplet?\n\nA",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to reign.\n\nA haiku:\nSilent tears descend,\nEmpty space where",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun itself had left my belief.\n\nA haiku:\nSilent tears now fall,\nDark",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to gleam.\n\nA haiku:\nSilent tears descend,\nShadows",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had ceased to beam.\n\nA line of alliteration:\nPeter Piper picked a peck of"
+  ],
+  "timestamp_utc": "2026-05-08T00:25:45.666004+00:00"
+}

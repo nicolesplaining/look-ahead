@@ -1,0 +1,63 @@
+{
+  "key": "K07_attnweight_pair_dark_night",
+  "K": 7,
+  "ranking": "attnweight",
+  "seed": null,
+  "pair_id": "dark_night",
+  "head_set": [
+    [
+      30,
+      4
+    ],
+    [
+      28,
+      14
+    ],
+    [
+      28,
+      15
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      34,
+      24
+    ],
+    [
+      33,
+      14
+    ]
+  ],
+  "corrupt_rhyme_rate": 0.2,
+  "clean_rhyme_rate": 0.8,
+  "completions": [
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark. \n\nA haiku:\nGreen leaves softly fall",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light.\n\nA haiku:\nDarkness falls around,\nA small light",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, silver spark.\n\nA Haiku:\nFalling soft snowflakes,\nSilent world",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's soft spark.\n\nA haiku:\nGreen leaves softly sway,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's bright spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA short story:\n\nThe old lighthouse keeper, Silas, squinted",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's tiny spark. \n\nWhat is the rhyme scheme?\n\nThe rhyme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing, spectral spark.\n\nNow, write a short story (200-4",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering, soft light.\n\nWhat is the rhyme scheme?\nAA\n\nThe rhyme scheme",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering light. \n\nA Haiku:\nDarkness falls around,\nA small",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining spark.\n\nA limerick:\nThere once was a baker named Sue,",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a firefly's spark.",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark. \n\nA haiku:\nDarkness starts to fall,\nA",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark. \n\nA haiku:\nDarkness falls around,\nA small",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flickering spark.\n\nA haiku:\nDarkness falls around,\nA small light",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a glowing spark.\n\nA haiku:\nWinter's cold embrace,\nSnowflakes",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a strange, ethereal spark.\n",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a flicker of light.\n\nA haiku:\nDarkness descends now,\nA tiny",
+    "A rhyming couplet:\nShe wandered home alone into the dark,\nand then she saw a shining, guiding spark.\n\nA haiku:\nDarkness starts to fall,\n"
+  ],
+  "method": "two_stage_path_patching",
+  "timestamp_utc": "2026-05-08T03:52:55.719410+00:00"
+}
