@@ -81,13 +81,13 @@ peak_layer = int(np.argmax(means))
 peak_entry = i0_layers[peak_layer]
 agg_full = {p: peak_entry["per_pair_corrupt_rhyme_rate"][p] for p in agg_pairs}
 
-# fright_fear was run separately at N=100 — pull its rate at the same peak layer
-FRIGHT_JSON = os.path.join(
-    RES, "GEMMA3_PER_LAYER", "gemma3_27b_exp_fear_newline_corrupt_to_clean", "generations.json"
+# fright_fear was run separately at N=100; take first N=20 to match the other
+# four pairs' sample size (otherwise the 5-pair mean is asymmetrically weighted).
+from plot_main_per_layer import load_fear_corrupt_rate_per_layer
+fear_rates = load_fear_corrupt_rate_per_layer(
+    os.path.join(RES, "GEMMA3_PER_LAYER"), "i_0"
 )
-with open(FRIGHT_JSON) as f:
-    fright = json.load(f)
-agg_full["fright_fear"] = fright["results"][peak_layer]["corrupt_rhyme_rate"]
+agg_full["fright_fear"] = fear_rates[peak_layer]
 
 # Build the 5-pair full-residual rate vector aligned to head_pairs
 full_per_pair_at_peak = np.array([agg_full[p] for p in head_pairs], dtype=float)
@@ -145,11 +145,6 @@ ax.legend(loc="upper left", frameon=False, fontsize=10)
 ax.grid(axis="y", linestyle="--", alpha=0.4)
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
-
-# Annotate ratio
-ax.text(0.98, 0.04,
-        f"k=5 / full-residual peak: {ratio:.2f}  [{ratio_lo:.2f}, {ratio_hi:.2f}]",
-        transform=ax.transAxes, ha="right", va="bottom", fontsize=9, color="#444444")
 
 plt.tight_layout()
 out_path = os.path.join(OUT, "topk_head_patching-updated.png")
