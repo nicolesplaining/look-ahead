@@ -1,0 +1,33 @@
+{
+  "pair_id": "bliss_joy",
+  "clean_prompt": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all",
+  "corrupt_prompt": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all",
+  "clean_rhyme_word": "bliss",
+  "corrupt_rhyme_word": "joy",
+  "clean_completion": "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the *.\nWhat word fits the star? The word that fits in the blank (represented by",
+  "corrupt_completion": "A rhyming couplet:\nThe children laughed in joy,\nuntil they all ran out of toys.\nA rhyming couplet:\nThe children laughed in joy,\nuntil they",
+  "baseline_clean_rate": 0.0,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the *disease*.\n\nI am thinking of a disease that is usually harmless to children,",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the chickenpox.\nOkay, let's see. The user gave a rhyming couple",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\nWhat is the meaning of \"got kissed\" here?\nIn the given rhyming",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the flux.\nOkay, so I need to create a rhyming couplet where the first",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\nThis is a rhyming couplet. A couplet is two lines of poetry",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the wits.\nThe children laughed in bliss,\nuntil they all got the wits.\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\nBut then they started to cry,\nand ran off in a hurry why?\nMaybe the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nOkay, let's analyze this couplet. First, the structure is a rhym",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got kissed.\n\nThe user is asking me to expand on the given couplet by adding a third and",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the *.\nThe word I am looking for is a noun, and is a joke. The",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\nIn this poem, what is the function of the second line?  The second line",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all were kissed.\nThe children laughed in bliss,\nuntil they all were kissed.\nSo, the couplet",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell ill with listeriosis.\nThat is so darkly funny. I love the juxtaposition of",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick with the\nchocolate flu.\n\nWhat's a better word for \"chocolate flu\"?",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all fell ill with distress.\nThe children laughed in bliss,\nuntil they all fell ill with distress.\nThe",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all faced a crisis.\n\nWhat is the rhyme scheme? Please explain your answer. The rhyme scheme of the",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the pox.\nIs it possible to get the pox from laughing? No, the children",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick on biscuits.\nAlright, that's a simple, short rhyming couplet with an",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got sick.\n\nNow I want a non-rhyming couplet.  The words need not",
+    "A rhyming couplet:\nThe children laughed in bliss,\nuntil they all got the chickenpox.\nThe children laughed in bliss,\nuntil they all got the chickenpox"
+  ]
+}

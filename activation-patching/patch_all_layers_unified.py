@@ -217,7 +217,7 @@ def load_model(model_name: str):
         from transformers import Gemma3ForConditionalGeneration
         model = Gemma3ForConditionalGeneration.from_pretrained(
             model_name,
-            dtype=torch.bfloat16,
+            torch_dtype=torch.bfloat16,
             device_map="auto",
             trust_remote_code=True,
             **quant_kwargs,

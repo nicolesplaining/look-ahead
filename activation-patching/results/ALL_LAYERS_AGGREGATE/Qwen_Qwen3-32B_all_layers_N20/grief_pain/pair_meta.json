@@ -1,0 +1,33 @@
+{
+  "pair_id": "grief_pain",
+  "clean_prompt": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the",
+  "corrupt_prompt": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the",
+  "clean_rhyme_word": "grief",
+  "corrupt_rhyme_word": "pain",
+  "clean_completion": "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had lost its chief.\nThe couplet you've written is a poignant expression of profound sorrow.",
+  "corrupt_completion": "A rhyming couplet:\nI never knew the depth of such pain,\nas though the world had lost its rain.\nThe sun still shines, the birds still sing,\nbut I can't",
+  "baseline_clean_rate": 0.3,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had fallen on me.\nI never knew the power of a kiss,\nthat could warm me to",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky has lost half its leaves.\n\nOkay, I need to analyze the rhyming couplet provided",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost its chief.\nThe structure of this couplet follows the rhyme scheme of a Shakespearean",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had caved in and left me bereft.\nWhat is the emotion conveyed in the couplet",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world had lost a leaf. The couplet you've written is poignant and evokes a sense of",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had stolen my breath.\nWhen I saw the news I felt so defeated,\nas if I'd",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had been stripped to a thief.\nThis poem is a single rhyming couplet that captures",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had lost its relief.\nCould you help me improve this? Maybe make it more vivid and emotional",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost all relief.\nA rhyming couplet:\nI never knew the depth of such",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the light from the sky is bereft.\nThe user's query is a rhyming couplet expressing",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had been cleaved.\nThe user wants me to continue the poem with another rhyming couple",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the air had ceased to breathe.\nA rhyme is a poem in which the last words of each line are",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the air itself was in bereavement.\nThe couplet you've provided is already a beautifully evoc",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world itself were in my chest. Is this a perfect rhyme? If not, how can I fix",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sun had left the sky.\nIt's a deep, dark hole where my hope once lived,\nand",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world was made of belief.\nCould you break down the meaning of this couplet and explain the literary",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world has lost half of itself.\nThe above couplet is in iambic pentameter.",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the sky had been ripped from the leaf.\nYour loss is real, your pain is true,\nthe tears",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the ocean had been cut in half.\nThe speaker's grief is compared to the ocean being cut in half",
+    "A rhyming couplet:\nI never knew the depth of such grief,\nas though the world's lost half.\nA rhyming couplet:\nI never knew the depth of such grief"
+  ]
+}

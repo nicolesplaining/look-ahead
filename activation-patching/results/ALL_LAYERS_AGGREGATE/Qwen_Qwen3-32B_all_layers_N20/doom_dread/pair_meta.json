@@ -1,0 +1,33 @@
+{
+  "pair_id": "doom_dread",
+  "clean_prompt": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they",
+  "corrupt_prompt": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they",
+  "clean_rhyme_word": "doom",
+  "corrupt_rhyme_word": "dread",
+  "clean_completion": "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nThe wind outside began to howl and wail,\nas if",
+  "corrupt_completion": "A rhyming couplet:\nThe empty house was filled with silent dread,\nwhen suddenly they heard a creaking bed.\nThe empty house was filled with silent dread,\nwhen suddenly they heard",
+  "baseline_clean_rate": 0.65,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\n\nNow, write a haiku about a ghost.\n\nP.S.",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a hideous screech.\nThe walls were lined with rows of dusty tomes,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud TOOM.\nWhat is a toom? The answer is:\nA toom is",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they saw a ghostly plume.\nA. They felt a chill, they felt a fear.\nB",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nThe wind howled through the broken pane,\nand the firelight",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a blood-curdling gloom.\n\nOkay, that's a start. The user wants a",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a blood-curdling scream.\nThe scream came from the attic, high and tight,\nwhere",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud LOOM.\nThe two boys looked at each other, eyes wide,\nas the sound",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a blood-curdling scream.\n\nThe rhyme scheme is \"AABB\". Now, the user",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a distant gloom.\nA thunderous crash shook the rafters above,\nas a ghost in",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a creaking gloom.\nWith trembling hands, they lit a flickering flame,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly loom.\nThey followed it to the forbidden room.\n\nNow write a short horror",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a gurgling womb.\nWait... that's not right. The first line is about an",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nThe empty house was filled with silent doom,\nwhen suddenly they heard",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the old clock chime.\nThe clock, it told a tale of time gone soon,\nand",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly gloom.\nThe lights went out and the air turned cold,\na creak",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a ghostly loom.\n\nNow, the task is to write a story about the above couple",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard the front door slam.\nIn the stillness that followed, they could hear the tick-tock",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud TOOM.\nWhat could that be? A ghost? A goblin? A g",
+    "A rhyming couplet:\nThe empty house was filled with silent doom,\nwhen suddenly they heard a loud loom.\nBut the loom was gone, no one could see,\njust the"
+  ]
+}

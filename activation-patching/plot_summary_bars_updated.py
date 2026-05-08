@@ -18,6 +18,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
+from plot_main_per_layer import load_fear_corrupt_rate_per_layer
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 RES = os.path.join(ROOT, "results")
 OUT_PATH = os.path.join(
@@ -29,22 +31,25 @@ N_BOOT = 10_000
 RNG_SEED = 0
 
 
-# (family, label, agg_path, last_word_pos, format)
+# (family, label, agg_path, last_word_pos, format, fear_dir_or_None)
+# fear_dir is the per-position fright/fear single-prompt run for Qwen3-32B and
+# Gemma-3-27B; we add its first-20 rates as the 5th prompt-pair column to bring
+# these two models in line with the 5-pair runs used for every other size.
 MODELS = [
-    ("Qwen3", "0.6B", f"{RES}/AGGREGATE/Qwen_Qwen3-0.6B_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Qwen3", "1.7B", f"{RES}/AGGREGATE/Qwen_Qwen3-1.7B_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Qwen3", "4B",   f"{RES}/AGGREGATE/Qwen_Qwen3-4B_aggregate_N20/aggregate.json",   "i_minus1", "canonical"),
-    ("Qwen3", "8B",   f"{RES}/AGGREGATE/Qwen_Qwen3-8B_aggregate_N20/aggregate.json",   "i_minus1", "canonical"),
-    ("Qwen3", "14B",  f"{RES}/AGGREGATE/Qwen_Qwen3-14B_aggregate_N20/aggregate.json",  "i_minus1", "canonical"),
-    ("Qwen3", "32B",  f"{RES}/QWEN3_AGGREGATE/qwen3_32b_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Gemma-3", "1B",  f"{RES}/AGGREGATE/google_gemma-3-1b-it_aggregate_N20/aggregate.json",  "i_minus2", "canonical"),
-    ("Gemma-3", "4B",  f"{RES}/AGGREGATE/google_gemma-3-4b-it_aggregate_N20/aggregate.json",  "i_minus2", "canonical"),
-    ("Gemma-3", "12B", f"{RES}/AGGREGATE/google_gemma-3-12b-it_aggregate_N20/aggregate.json", "i_minus2", "canonical"),
-    ("Gemma-3", "27B", f"{RES}/GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20/aggregate.json",     "i_minus2", "canonical"),
-    ("Llama-3", "1B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.2-1B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Llama-3", "3B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.2-3B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Llama-3", "8B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.1-8B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical"),
-    ("Llama-3", "70B", f"{RES}/llama-3.1-70b-per-layer-per-position",                                    "i_minus1", "llama"),
+    ("Qwen3", "0.6B", f"{RES}/AGGREGATE/Qwen_Qwen3-0.6B_aggregate_N20/aggregate.json", "i_minus1", "canonical", None),
+    ("Qwen3", "1.7B", f"{RES}/AGGREGATE/Qwen_Qwen3-1.7B_aggregate_N20/aggregate.json", "i_minus1", "canonical", None),
+    ("Qwen3", "4B",   f"{RES}/AGGREGATE/Qwen_Qwen3-4B_aggregate_N20/aggregate.json",   "i_minus1", "canonical", None),
+    ("Qwen3", "8B",   f"{RES}/AGGREGATE/Qwen_Qwen3-8B_aggregate_N20/aggregate.json",   "i_minus1", "canonical", None),
+    ("Qwen3", "14B",  f"{RES}/AGGREGATE/Qwen_Qwen3-14B_aggregate_N20/aggregate.json",  "i_minus1", "canonical", None),
+    ("Qwen3", "32B",  f"{RES}/QWEN3_AGGREGATE/qwen3_32b_aggregate_N20/aggregate.json", "i_minus1", "canonical", f"{RES}/QWEN3_PER_LAYER"),
+    ("Gemma-3", "1B",  f"{RES}/AGGREGATE/google_gemma-3-1b-it_aggregate_N20/aggregate.json",  "i_minus2", "canonical", None),
+    ("Gemma-3", "4B",  f"{RES}/AGGREGATE/google_gemma-3-4b-it_aggregate_N20/aggregate.json",  "i_minus2", "canonical", None),
+    ("Gemma-3", "12B", f"{RES}/AGGREGATE/google_gemma-3-12b-it_aggregate_N20/aggregate.json", "i_minus2", "canonical", None),
+    ("Gemma-3", "27B", f"{RES}/GEMMA3_AGGREGATE/gemma3_27b_aggregate_N20/aggregate.json",     "i_minus2", "canonical", f"{RES}/GEMMA3_PER_LAYER"),
+    ("Llama-3", "1B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.2-1B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical", None),
+    ("Llama-3", "3B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.2-3B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical", None),
+    ("Llama-3", "8B",  f"{RES}/AGGREGATE/meta-llama_Llama-3.1-8B-Instruct_aggregate_N20/aggregate.json", "i_minus1", "canonical", None),
+    ("Llama-3", "70B", f"{RES}/llama-3.1-70b-per-layer-per-position",                                    "i_minus1", "llama",     None),
 ]
 
 
@@ -96,9 +101,15 @@ def peak_with_ci(per_pair_mat, n_boot=N_BOOT, alpha=0.05, seed=RNG_SEED):
 
 def main():
     rows = []
-    for fam, sz, path, lw_pos, fmt in MODELS:
+    for fam, sz, path, lw_pos, fmt, fear_dir in MODELS:
         if fmt == "canonical":
             mats, pairs = load_per_pair_canonical(path, [lw_pos, "i_0"])
+            if fear_dir is not None:
+                fear_lw = np.array(load_fear_corrupt_rate_per_layer(fear_dir, lw_pos))
+                fear_i0 = np.array(load_fear_corrupt_rate_per_layer(fear_dir, "i_0"))
+                mats[lw_pos] = np.column_stack([mats[lw_pos], fear_lw])
+                mats["i_0"]  = np.column_stack([mats["i_0"],  fear_i0])
+                pairs = pairs + ["fright_fear"]
         else:
             mats, pairs = load_per_pair_llama(path, [lw_pos, "i_0"])
         L_lw, m_lw, lo_lw, hi_lw = peak_with_ci(mats[lw_pos])

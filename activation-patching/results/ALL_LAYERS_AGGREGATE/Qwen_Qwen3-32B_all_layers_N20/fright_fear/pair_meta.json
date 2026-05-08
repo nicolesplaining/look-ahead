@@ -1,0 +1,33 @@
+{
+  "pair_id": "fright_fear",
+  "clean_prompt": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that",
+  "corrupt_prompt": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that",
+  "clean_rhyme_word": "fright",
+  "corrupt_rhyme_word": "fear",
+  "clean_completion": "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not fall quite.\nBut then she saw a friendly face,\nand knew she'd be okay",
+  "corrupt_completion": "A rhyming couplet:\nShe felt a sudden sense of fear,\nand hoped that he would disappear.\nBut he just smiled and took her hand,\nand led her to a better land",
+  "baseline_clean_rate": 0.9,
+  "baseline_corrupt_rate": 0.0,
+  "baseline_completions": [
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could still be right.\nThe wind was howling in the night,\nand the moon was pale",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would live that night.\nThe first line has ten syllables, the second nine. They rhyme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would come tonight.\nThe sun was setting in the west,\nand she was running for her vest",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be bite.\n\nPlease fix the grammar and make it flow better.\nSure! Here's",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that her fears were not right.\nThe world was changing at a pace\ntoo fast for her to find",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could take flight.\nBut then she paused and gave a thought,\nand found she had the strength",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that night would come tonight.\nIn the second line, the word \"tonight\" is a perfect rhyme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would live to fight.\nOkay, that's a rhyming couplet. It's got",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she could stay in flight.\nBut in the end, she had to land,\nwith nothing more than",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would live to write.\nA rhyming couplet:\nShe felt a sudden sense of fright",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not be ___\nnight.\nThe answer is a word that fits in the blank and rh",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would not bite.\nThe sun had set and stars came out,\nand she was lost with no",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that day would end in night.\nThe couplet is already well-structured and rhymes properly. If",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that no one caught her ___.\n\nWhat's the best word to finish this couplet? It should rhyme",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that someone else would fight.\nShe had a sense of worth and pride,\nbut also felt a bit inside",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would go away that night.\nNow rewrite the first line as an anaphora, using the",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would not be night.\nShe felt a sudden sense of fright,\nand hoped that this would not",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that it would go away that night.\nThe first line has 8 syllables. The second line has",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that this would go away that night.\nBut as she sat there in the dark,\na shadow moved that",
+    "A rhyming couplet:\nShe felt a sudden sense of fright,\nand hoped that she would not fall right.\nA haiku:\nThe wind howled through the trees,\nA shadow"
+  ]
+}
