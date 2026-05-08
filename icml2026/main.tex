@@ -258,7 +258,7 @@ While probing reveals that future token information is encoded in hidden states,
 
 We apply activation patching at two positions: the last word token (position $i=-1$ in Qwen3 and Llama-3, $i=-2$ in Gemma-3 due to its tokenization of the line-ending comma; see Appendix~\ref{sec:model-config}) and the newline token ($i=0$), sweeping across all layers individually. For each layer, we draw $N=20$ stochastic samples per prompt pair; the main per-layer figures (Figure~\ref{fig:patch-results}) average over 4 prompt pairs ($N{=}80$) for Qwen3-32B and Gemma-3-27B and 5 prompt pairs ($N{=}100$) for Llama-3.1-70B. We additionally include the omitted \texttt{fright/fear} pair as a separate $N{=}100$ run for Gemma-3-27B (used in joint analyses below). Because the same word pairs are reused across layers and positions, the prompt pair is the natural unit of independence; we report 95\% cluster bootstrap intervals (10{,}000 pair-level resamples) on every patching rate, and use a joint cluster bootstrap with shared pair indices when comparing two patching conditions on the same pairs.
 
-In Gemma-3-27B (Figure~\ref{fig:patch-gemma}), last-word patching is highly effective in early layers but drops sharply around layer 30, while newline patching rises simultaneously to a peak corrupt rhyme rate of 0.64 [95\% CI 0.45, 0.82] at layer 33. We term this crossover the \textit{representational handoff}: the causal locus migrates from the last word token to the newline, which becomes the primary read-out site for the phonological constraint. The wide CI reflects pair-to-pair variability---one pair sits at 0.10 at layer 33 while the others exceed 0.75---but the qualitative migration is consistent across pairs. By contrast, Qwen3-32B (Figure~\ref{fig:patch-qwen}) and Llama-3.1-70B (Figure~\ref{fig:patch-llama}) show uniformly high last-word patching and near-zero newline patching across every layer, with non-overlapping CIs separating the two positions. These models condition on the last word token throughout generation. Per-layer results for all model sizes are provided in Appendix~\ref{sec:additional-patching-details}.
+In Gemma-3-27B (Figure~\ref{fig:patch-gemma}), last-word patching is highly effective in early layers but drops sharply around layer 30, while newline patching rises simultaneously to a peak corrupt rhyme rate of 0.64 [95\% CI 0.45, 0.82] at layer 33. We term this crossover the \textit{representational handoff}: the causal locus migrates from the last word token to the newline, which becomes the primary read-out site for the phonological constraint. The wide CI reflects pair-to-pair variability---one pair sits at 0.10 at layer 33 while the others exceed 0.75---but the qualitative migration is consistent across pairs. By contrast, Qwen3-32B (Figure~\ref{fig:patch-qwen}) and Llama-3.1-70B (Figure~\ref{fig:patch-llama}) show uniformly high last-word patching and near-zero newline patching across every layer, with non-overlapping CIs separating the two positions. These models condition on the last word token throughout generation. Per-layer results for all model sizes are provided in Appendix~\ref{sec:additional-patching-details}, and a steering-vector replication of the same three-model picture is in Appendix~\ref{sec:steering}.
 
 \subsection{Localizing the Handoff to a Sparse Set of Attention Heads}
 \label{sec:head-patching}
@@ -566,5 +566,44 @@ where activation patching was successful in steering the rhyme scheme.
     \caption{Corrupt rhyme rate across all six swept token positions, averaged over 5 prompt pairs. For Gemma-3-27B, the comma token at $i=-1$ is near zero throughout, confirming the handoff is specific to the newline token.}
     \label{fig:patching-all-positions}
 \end{figure}
+
+
+\section{Steering Vectors}
+\label{sec:steering}
+
+We also replicate the main finding with a steering vector intervention~\citep{turner2023activation,maar2026whatsplanmetricsimplicit}. For each rhyme-scheme pair $(s, t)$ and each $(\ell, i)$, the steering vector $\mathbf{v}_{\ell,i}^{(s\to t)} = \bar{\mathbf{h}}_{\ell,i}^{(t)} - \bar{\mathbf{h}}_{\ell,i}^{(s)}$ is the mean difference of residual activations at $(\ell, i)$ between prompts ending in scheme $s$ and prompts ending in scheme $t$ (Figure~\ref{fig:steer-diagram}). At inference time we add $\alpha\mathbf{v}_{\ell,i}^{(s\to t)}$ at $(\ell, i)$ during generation on a held-out scheme-$s$ prompt and measure the fraction of completions that rhyme in scheme $t$. We use ten schemes, $\alpha = 1.5$, and the same CMU rhyme matcher as the patching evaluation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth,page=2]{media/diagrams/steer-diagram.pdf}
+    \caption{Steering vectors are mean-difference vectors between residual activations on prompts in two different rhyme schemes; adding $\alpha\mathbf{v}_{\ell,i}^{(s\to t)}$ at $(\ell, i)$ during generation should redirect the rhyme toward scheme $t$.}
+    \label{fig:steer-diagram}
+\end{figure}
+
+Computing the vectors requires 10 schemes $\times$ 100 train prompts $=$ 1{,}000 hooked forward passes, and the evaluation sweep covers every $(\ell, i)$ across scheme pairs at 20 held-out prompts each. The patching runs in Section~\ref{sec:patching} use 5 prompt pairs $\times$ $N{=}20$ samples per cell. Same causal question, one to two orders of magnitude more data; we therefore treat steering as a cross-check rather than the primary method.
+
+Figure~\ref{fig:steer-results} shows the steered rhyme fraction at the last word and newline across all layers for Qwen3-32B, Gemma-3-27B, and Llama-3.1-70B; the qualitative picture matches Figure~\ref{fig:patch-results}. In Gemma-3-27B, last-word steering is effective in early layers and drops sharply around layer 30 while newline steering rises simultaneously into the $0.85$--$0.95$ range across layers 30--40---the same handoff. Qwen3-32B and Llama-3.1-70B show effective last-word steering at every swept layer with newline steering at noise. The handoff and its absence both reappear under steering, and the rate estimates are tighter than the patching CIs because of the larger evaluation set.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{\linewidth}
+        \centering
+        \subcaption[]{Qwen3-32B.}
+        \includegraphics[width=\linewidth]{media/results-steer/qwen-steer.png}
+    \end{subfigure}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \subcaption[]{Gemma-3-27B.}
+        \includegraphics[width=\linewidth]{media/results-steer/gemma-steer.png}
+    \end{subfigure}
+    \begin{subfigure}{\linewidth}
+        \centering
+        \subcaption[]{Llama-3.1-70B.}
+        \includegraphics[width=\linewidth]{media/results-steer/llama-steer.png}
+    \end{subfigure}
+    \caption{Steered rhyme fraction at the last word and newline across all layers, averaged over scheme pairs ($\alpha{=}1.5$, 100 train prompts per scheme). The picture mirrors Figure~\ref{fig:patch-results}: Gemma-3-27B shows the same handoff (last-word effect drops near layer 30 as the newline effect rises to $0.85$--$0.95$), while Qwen3-32B and Llama-3.1-70B show effective last-word steering at every swept layer with newline steering at noise.}
+    \label{fig:steer-results}
+\end{figure}
+
 
 \end{document}
